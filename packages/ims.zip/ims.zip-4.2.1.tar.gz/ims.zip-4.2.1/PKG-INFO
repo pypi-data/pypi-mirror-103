@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ims.zip
+Version: 4.2.1
+Summary: zip and unzip folder contents
+Home-page: https://github.com/imsweb/ims.zip
+Author: Eric Wohnlich
+Author-email: wohnlice@imsweb.com
+License: GPL
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Framework :: Plone :: 5.0
+Classifier: Framework :: Plone :: 5.1
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Provides-Extra: test
