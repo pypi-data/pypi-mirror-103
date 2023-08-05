@@ -1,0 +1,9 @@
+convenient_formsets/__init__.py,sha256=X3_5nn-RJSG6a5r3U8FevItcvP_YW6MYB5fVzF_r9_U,262
+convenient_formsets/apps.py,sha256=bLjDQTK9gzcQtALvWpSfLW9ZUt7i5JpY0XdwB-F1c0s,153
+convenient_formsets/formsets.py,sha256=TjXD6zmGPP4zlmAYpInpcqVJKs_oYtmVjzHvwSsR21Q,1224
+convenient_formsets/static/convenient_formsets/convenient_formsets.js,sha256=fWpwEhk8rwllULMAEgB06CGiIR1yqMOCU1US6vvxoh8,14034
+django_convenient_formsets-0.9.2.dist-info/LICENSE,sha256=mWJu7pndjPShcKG2zwf37wZd6a_RiE0G05MkLv8Y72I,1524
+django_convenient_formsets-0.9.2.dist-info/METADATA,sha256=c6g3uDNgmy1Cxr6bGVzzlJM3P0_3OtLWAdh1E_8nIO0,8825
+django_convenient_formsets-0.9.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_convenient_formsets-0.9.2.dist-info/top_level.txt,sha256=uRdOuTn-AMmQ5bQT-1X-sXm-IYs1mwKuLTz05xjEVdc,20
+django_convenient_formsets-0.9.2.dist-info/RECORD,,
