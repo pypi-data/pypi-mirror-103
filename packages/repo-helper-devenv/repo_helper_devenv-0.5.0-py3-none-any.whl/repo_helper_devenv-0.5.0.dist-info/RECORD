@@ -1,0 +1,9 @@
+repo_helper_devenv/__init__.py,sha256=rcxMM1V00rtB3cWeTHpBuKDdMwyRl_8xNjDpNOOnZSk,5763
+repo_helper_devenv/cli.py,sha256=dDcF3IIEZCV7Cf58ihveV8y4I_2OvCrJsjP0awXsQ1A,3015
+repo_helper_devenv/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+repo_helper_devenv-0.5.0.dist-info/LICENSE,sha256=BigaIaJbg4wCjk6MjLC_5kuevxdEotWApzfvN8Y9LMM,1064
+repo_helper_devenv-0.5.0.dist-info/METADATA,sha256=LcBCbrib-TKHoZxn0Z4Cci7V38CX0YSiXF5YnrYNjrM,6247
+repo_helper_devenv-0.5.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+repo_helper_devenv-0.5.0.dist-info/entry_points.txt,sha256=TB6-CbygMN1Xuf2btdGZgAMuPZ82SwaufFTou07_RvU,74
+repo_helper_devenv-0.5.0.dist-info/top_level.txt,sha256=rBG6RZj57GiRwY_UmU4bTZn6PFGcZaUY9pZM6-3Z3h8,19
+repo_helper_devenv-0.5.0.dist-info/RECORD,,
