@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: labelpt
+Version: 0.1.0
+Summary: Annotation tool of image segmentation.
+Home-page: https://github.com/pei223/labelpt
+Author: pei223
+Author-email: peidparc@gmail.com
+License: MIT
+Description: ## labelpt
+        
+        Image segmentation annotation tool.
+        
+        <img src="https://raw.githubusercontent.com/pei223/labelpt/master/labelpt.png">
+        <br>
+        
+        ## Functions
+        
+        - Paint mode
+        - Polygon mode
+        - Line/Rect/Oval mode
+        
+        ## Install
+        
+        ```
+        pip install labelpt
+        ```
+Keywords: image-segmentation annotation annotation-tool
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
