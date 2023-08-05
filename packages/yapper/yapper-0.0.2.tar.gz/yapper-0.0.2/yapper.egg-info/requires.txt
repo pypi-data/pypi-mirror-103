@@ -1,0 +1,3 @@
+docspec
+docspec-python
+pyyaml
