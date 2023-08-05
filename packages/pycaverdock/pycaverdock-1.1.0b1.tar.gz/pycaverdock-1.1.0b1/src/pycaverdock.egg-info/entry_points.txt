@@ -1,0 +1,5 @@
+[console_scripts]
+cd-energyprofile = pycaverdock.bin.energyprofile:main
+cd-extendtunnel = pycaverdock.bin.extendtunnel:main
+cd-prepareconf = pycaverdock.bin.prepareconf:main
+

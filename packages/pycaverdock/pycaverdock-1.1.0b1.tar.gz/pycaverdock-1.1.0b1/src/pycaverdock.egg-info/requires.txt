@@ -1,0 +1,13 @@
+click>=7
+numpy>=1.18
+discretizer>=1.1.0
+pandas>=1
+seaborn==0.11.1
+matplotlib>=3
+cfggen@ https://github.com/kobzol/cfggen/tarball/main
+pyyaml==5.4.1
+tqdm==4.58.0
+pylru==1.2.0
+
+[:python_version < "3.7"]
+dataclasses>=0.8
