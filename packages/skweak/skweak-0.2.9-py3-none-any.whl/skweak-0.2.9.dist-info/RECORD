@@ -1,0 +1,13 @@
+skweak/__init__.py,sha256=kkc6xG9zwPUx2SxtjqX1DVLm3LjjbTDKnlqw2CkOIX8,80
+skweak/aggregation.py,sha256=zjnc4ML7OBf_xFOwQ25nuFmI3Y3w3K8y5Si2nIokDMU,32661
+skweak/base.py,sha256=yYQlzC69obndh2bRoILQob8g-cB8AUAFOiNsakmEB5s,6692
+skweak/doclevel.py,sha256=TX1L8ZxqAxOljG5VxsnzQMi-tEZivmJLN8poqPUskYs,7602
+skweak/gazetteers.py,sha256=j2wp1haxf2CBBip-VFUlrnLQbcRAmLXjGwAzh00Nx2Y,12021
+skweak/heuristics.py,sha256=YevE3uL_mTVvfXcmC6pLhpjFD2Bh8Pm_jAGK1mHL-nw,7462
+skweak/spacy.py,sha256=H7jj2_YMm3sAhkqyhph7YdDQbLMuIJbi67vlLEuS7so,5077
+skweak/utils.py,sha256=xCTQlq2viHxn6z8WCNGxTdl-Nd_nku_oVrrIi7GHkMc,26710
+skweak-0.2.9.dist-info/LICENSE.txt,sha256=lWmzGs9Q4cs_OPRyIPLDpC9TPgfnL-LRjChx6JCYqMc,1089
+skweak-0.2.9.dist-info/METADATA,sha256=NAmUMQRPo0HUp_fqvhjio2S3GJHpRYbLTObE_1gVCys,7896
+skweak-0.2.9.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+skweak-0.2.9.dist-info/top_level.txt,sha256=P9v-P_pz0rzqjaEXi8RClORM3SB7wnFXPz0m1BmhUe4,7
+skweak-0.2.9.dist-info/RECORD,,
