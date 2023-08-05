@@ -1,0 +1,4 @@
+PORT:	water1		#Move valve to port 1
+PUMP:	1000		#Pump 1000 uL
+PORT:	water2		#Move valve to port 2
+PUMP:	1000		#Pump 1000 uL
