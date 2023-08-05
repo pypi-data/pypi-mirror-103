@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: NexGCN
+Version: 0.3
+Summary: A Spectral Sigmoid Graph Convolution Network Library for binary classification on Networkx Graphs compatible with Keras and Tensorflow
+Home-page: https://github.com/abhilash1910/NexGCN
+Author: ABHILASH MAJUMDER
+Author-email: debabhi1396@gmail.com
+License: MIT
+Download-URL: https://github.com/abhilash1910/NexGCN/archive/v_03.tar.gz
+Description: UNKNOWN
+Keywords: graph_convolution_network,binary classification,GCN,graph neural network,Spectral GCN,Networkx GCN,centrality GCN,keras GCN,sigmoid Graph convolution network
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
