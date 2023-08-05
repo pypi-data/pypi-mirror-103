@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: pema
+Version: 0.1.0
+Summary: Peak matching for XENON simulations
+Home-page: https://github.com/XENONnT/peakmatching
+Author: Joran Angevaare
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: strax
+Requires-Dist: utilix (>=0.4.1)
+Requires-Dist: straxen (>=0.15.7)
+Requires-Dist: wfsim (>=0.2.5)
+Requires-Dist: multihist
+Requires-Dist: numba
+Requires-Dist: numpy
+Requires-Dist: nestpy
+
+# PEMA: Peak matching for clustering and classification
+[![Build](https://github.com/XENONnT/pema/actions/workflows/test_package.yml/badge.svg)](https://github.com/XENONnT/pema/actions/workflows/test_package.yml)
+[![CodeFactor](https://www.codefactor.io/repository/github/xenonnt/pema/badge)](https://www.codefactor.io/repository/github/xenonnt/pema)
+[![Coverage Status](https://coveralls.io/repos/github/XENONnT/pema/badge.svg)](https://coveralls.io/github/XENONnT/pema)
+[![Documentation Status](https://readthedocs.org/projects/pema/badge/?version=latest)](https://pema.readthedocs.io/en/latest/?badge=latest)
+[![PyPI version shields.io](https://img.shields.io/pypi/v/pema.svg)](https://pypi.python.org/pypi/pema/)
+## PeakMatching
+Peak clustering and classification validation using the WFsim
+
+
+# Install
+```bash
+pip install pema
+```
+
+## Test installation
+```bash
+python -c "import pema ; print(pema.__version__) ; print('great succes')
+```
+
+
+0.1.0 / 2021-04-10
+--------------------
+- Restructured code into plugins
+- Arbitrary acceptance to allow for penalty factors
+- Install CI:
+  - CodeFactor
+  - Coveralls
+  - Automated documentation
+  - Testing
+
+
+0.0.1 / 2020-11-25
+--------------------
+- Further prepare the package and prepare for deployment
+
+0.0.0 / 2020-11-23
+--------------------
+- Initial commits
+
+
