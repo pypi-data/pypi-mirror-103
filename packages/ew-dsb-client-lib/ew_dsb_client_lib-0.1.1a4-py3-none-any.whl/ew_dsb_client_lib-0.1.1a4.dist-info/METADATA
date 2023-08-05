@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: ew-dsb-client-lib
+Version: 0.1.1a4
+Summary: Python client library for the EW-SMS module
+Home-page: https://github.com/energywebfoundation/sms-client-lib-py.git
+Author: Pablo Buitrago
+Author-email: messaging@energyweb.org
+License: LICENSE
+Project-URL: Bug Tracker, https://github.com/energywebfoundation/sms-client-lib-py/issues
+Keywords: ethereum decentralised energy-web pubsub messaging
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: gql[all] (>=v3.0.0a5)
+Requires-Dist: dataclasses-json (==0.5.2)
+Requires-Dist: pendulum (==2.1.2)
+Requires-Dist: pycryptodome (==3.10.1)
+Requires-Dist: eth-keys (==0.3.3)
+Requires-Dist: py-dotenv (==0.1)
+Provides-Extra: all
+Requires-Dist: gql[all] (>=v3.0.0a5) ; extra == 'all'
+Requires-Dist: dataclasses-json (==0.5.2) ; extra == 'all'
+Requires-Dist: pendulum (==2.1.2) ; extra == 'all'
+Requires-Dist: pycryptodome (==3.10.1) ; extra == 'all'
+Requires-Dist: eth-keys (==0.3.3) ; extra == 'all'
+Requires-Dist: py-dotenv (==0.1) ; extra == 'all'
+Requires-Dist: pytest (==6.2.2) ; extra == 'all'
+Requires-Dist: pytest-cov (==2.11.1) ; extra == 'all'
+Requires-Dist: twine (==3.4.1) ; extra == 'all'
+Requires-Dist: build (==0.3.1) ; extra == 'all'
+Provides-Extra: test
+Requires-Dist: gql[all] (>=v3.0.0a5) ; extra == 'test'
+Requires-Dist: dataclasses-json (==0.5.2) ; extra == 'test'
+Requires-Dist: pendulum (==2.1.2) ; extra == 'test'
+Requires-Dist: pycryptodome (==3.10.1) ; extra == 'test'
+Requires-Dist: eth-keys (==0.3.3) ; extra == 'test'
+Requires-Dist: py-dotenv (==0.1) ; extra == 'test'
+Requires-Dist: pytest (==6.2.2) ; extra == 'test'
+Requires-Dist: pytest-cov (==2.11.1) ; extra == 'test'
+
+<div align="center">
+  <a href="https://www.energyweb.org/"><img src="https://www.energyweb.org/wp-content/uploads/2019/04/logo-brand.png" alt="EnergyWeb" width="150"></a>
+  <h1 style="padding:25px;">
+    DSB Client Library
+  </h1>
+</div>
+
+A Python Client Library for the Energy Web Decentralised Service Bus. Please take a moment to [ReadTheDocs](https://energy-web-foundation-sms-client-lib-py.readthedocs-hosted.com/en/latest/).
+
+
