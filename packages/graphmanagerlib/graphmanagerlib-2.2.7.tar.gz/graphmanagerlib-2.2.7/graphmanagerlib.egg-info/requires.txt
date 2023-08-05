@@ -1,0 +1,11 @@
+tensorflow
+pandas
+networkx
+torch==1.8.0
+torch-geometric
+bpemb
+sklearn
+matplotlib
+opencv-python
+sentence_transformers
+stellargraph
