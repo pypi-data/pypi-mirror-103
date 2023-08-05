@@ -1,0 +1,5 @@
+duckduckpy==0.2
+lyricsgenius==3.0.0
+parsedatetime==2.6
+requests~=2.25.1
+setuptools~=52.0.0
