@@ -1,0 +1,2 @@
+include siibra/features/gene_names.json
+include VERSION
