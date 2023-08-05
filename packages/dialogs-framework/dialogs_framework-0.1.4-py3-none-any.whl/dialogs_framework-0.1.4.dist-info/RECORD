@@ -1,0 +1,11 @@
+dialogs_framework/__init__.py,sha256=tzNs8CO1Kmylg1UHM25501QWPxb8itxaDgjcoHzvqo0,361
+dialogs_framework/dialog_state.py,sha256=fce-QwgPPHrLQNodyEDePrmdbXFuNdFBPb5-qg98Umw,2409
+dialogs_framework/dialogs.py,sha256=NNWwYLXXErx6w-O8yHW66yY_Fi9E9IcfbAuwfxdeAtI,5788
+dialogs_framework/message_queue.py,sha256=RogooUxVE6oIq6Kg9PeK5OJD75YegQhzRCuAURa28H0,773
+dialogs_framework/persistence/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dialogs_framework/persistence/in_memory.py,sha256=z_KBooZRFBQP7Vg-S6Z8EyBQBm9eujftQjqk0z68PT0,568
+dialogs_framework/persistence/persistence.py,sha256=3FtJkm4p1ufgHSfzaUjoUAjx0gIfpshVg_evm-o2cjo,506
+dialogs_framework/types.py,sha256=Pis-ZZ_IFVdqe1kr3q00m_zLgh64rVUDs-WIIz6dDbs,2151
+dialogs_framework-0.1.4.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+dialogs_framework-0.1.4.dist-info/METADATA,sha256=spdjSkkP_t5qpEt66AjlSkEKX7Q6NbBN3MxCx5ERhFA,417
+dialogs_framework-0.1.4.dist-info/RECORD,,
