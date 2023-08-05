@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: example-malicious
+Version: 0.0.2
+Summary: An example malicious package
+Home-page: UNKNOWN
+Author: Bad actor
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+This is a fake malicious package which tries to dump credentials.
+
+
