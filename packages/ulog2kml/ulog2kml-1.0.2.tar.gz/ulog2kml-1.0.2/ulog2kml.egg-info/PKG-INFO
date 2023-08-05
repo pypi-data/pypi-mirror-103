@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: ulog2kml
+Version: 1.0.2
+Summary: A command line program for converting ULog files into time-aware KML files.
+Home-page: https://github.com/caseyslaught/ulog2kml
+Author: Casey Slaught
+License: MIT
+Description: # ulog2kml
+        
+        A command line program for converting ULOG files into time-aware KML files.
+        
+        ## About
+        
+        I just wanted a way to convert a ULog file to a time-aware KML file. I hope this helps you too!
+        
+Keywords: ulog kml drone
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
