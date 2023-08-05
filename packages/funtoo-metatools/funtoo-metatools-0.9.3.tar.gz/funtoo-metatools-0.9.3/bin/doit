@@ -1,0 +1,67 @@
+#!/usr/bin/env python3
+
+import sys
+import traceback
+import argparse
+import os
+import logging
+from subpop.hub import Hub
+
+
+class DoItHub(Hub):
+	@property
+	def pkgtools(self):
+		return globals()["pkgtools"]
+
+
+hub = DoItHub()
+
+import dyne.org.funtoo.metatools.pkgtools as pkgtools
+import dyne.org.funtoo.metatools.merge as merge
+
+logging.basicConfig(level=logging.INFO)
+
+CLI_CONFIG = {
+	"start_path": {"default": os.getcwd(), "os": "AUTOGEN_START_PATH", "help": "Where to start processing"},
+	"out_path": {"default": None, "os": "AUTOGEN_OUTPUT_PATH", "help": "Destination repository path"},
+	"name": {"default": None, "os": "AUTOGEN_REPONAME", "help": "Repository name (to override)"},
+	"release": {"default": None, "help": "Specify a release (used for production distfile integrity/fastpull.)"},
+	"kit": {"default": None, "help": "Specify a kit (used for production distfile integrity/fastpull.)"},
+	"branch": {"default": None, "help": "Specify a branch (used for production distfile integrity/fastpull.)"},
+	"fastpull": {"default": None, "action": "store_true", "help": "Enable fastpull reads and writes."},
+}
+
+
+def parse_args():
+	ap = argparse.ArgumentParser()
+	for arg, kwargs in CLI_CONFIG.items():
+		if "os" in kwargs:
+			del kwargs["os"]
+		ap.add_argument("--" + arg, **kwargs)
+	return ap.parse_args()
+
+
+if __name__ == "__main__":
+	hub.OPT = parse_args()
+	kwargs = {}
+	for arg in ["out_path", "start_path"]:
+		kwargs[arg] = getattr(hub.OPT, arg)
+
+	merge.apply_config(fastpull=hub.OPT.fastpull)
+	errors = hub.LOOP.run_until_complete(pkgtools.autogen.start(**kwargs))
+
+	if len(errors):
+		sys.stderr.write("\n\n")
+		for e, exc_info in errors:
+			msg = getattr(e, "msg", None)
+			if msg is not None:
+				logging.error(f"Message: {msg}")
+			traceback.print_exception(*exc_info)
+		sys.stderr.write("\n\nErrors encountered.\n")
+		sys.exit(1)
+# TODO: add after-action report (listing any failures.)
+# TODO: add mass-autogen YAML support.
+# TODO: add 'facts' database concept to allow more resiliency on failures (fall back to cached facts from last
+#       successful run)
+
+# vim: ts=4 sw=4 noet
