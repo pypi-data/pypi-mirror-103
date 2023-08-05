@@ -1,0 +1,15 @@
+pynif/__init__.py,sha256=a2dqHukV4MTV8TMgiiKR39lvnXUBeUAwGldaiuOQNwc,223
+pynif/collection.py,sha256=CfnpTfy2J_m86YX975lBBmgT6gIIBUMtC6KPwpejUk4,4193
+pynif/context.py,sha256=KspTp7vUXchiqWnRtPgZwaFWBKoSy2BKIUyTAgWJI54,5890
+pynif/phrase.py,sha256=EWQNWDsqtA4vBUqQaS9YXSi1sVBPMvLXS7PhRu1Gyfs,6275
+pynif/prefixes.py,sha256=2kBK8jtWmI3rxwo6H5Vjptit5TvoKkmE-hkv5CQVdKY,1013
+pynif/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pynif/tests/test_collection.py,sha256=AqpARYVctxTi-2BzsnaROtKzc395wwDzqXrCk717I7c,3206
+pynif/tests/test_context.py,sha256=ke37QqylG7leX02JwWi19t1IhsJLAGGCLIcRNumXVBo,9115
+pynif/tests/test_phrase.py,sha256=JyRYf0OwGDAv9xCugQCvFmZKITrqrrikcA3XRcRaCeg,5929
+pynif/tests/util.py,sha256=ebyoBnLDrZCfgOYRZnCv84eiuwW4KHWkkaEaZAymTMk,666
+pynif-0.2.0.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+pynif-0.2.0.dist-info/METADATA,sha256=ZtN5SSOjKzbAdXI4ztgVihhpVj9HIX3t7IHOCofwQMY,6286
+pynif-0.2.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+pynif-0.2.0.dist-info/top_level.txt,sha256=sutucpOGLDe-cr57L96Y10dqms3A3DNa5ZRO1L4e4Cw,6
+pynif-0.2.0.dist-info/RECORD,,
