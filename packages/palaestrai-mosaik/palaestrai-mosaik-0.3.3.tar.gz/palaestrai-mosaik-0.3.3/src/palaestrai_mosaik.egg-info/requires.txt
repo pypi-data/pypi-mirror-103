@@ -1,0 +1,11 @@
+mosaik
+mosaik_api
+palaestrai
+
+[dev]
+tox
+black
+coverage
+sphinx
+pysimmods
+midas-mosaik
