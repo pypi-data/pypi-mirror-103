@@ -1,0 +1,170 @@
+Muffin-Admin
+#############
+
+.. image:: https://raw.github.com/klen/muffin-admin/develop/.github/muffin-admin.png
+   :height: 200px
+
+.. _description:
+
+**Muffin-Admin** -- an extension to Muffin_ that implements admin-interfaces
+
+.. _badges:
+
+.. image:: https://github.com/klen/muffin-admin/workflows/tests/badge.svg
+    :target: https://github.com/klen/muffin-admin/actions
+    :alt: Tests Status
+
+.. image:: https://img.shields.io/pypi/v/muffin-admin
+    :target: https://pypi.org/project/muffin-admin/
+    :alt: PYPI Version
+
+.. image:: https://img.shields.io/pypi/pyversions/muffin-admin
+    :target: https://pypi.org/project/muffin-admin/
+    :alt: Python Versions
+
+----------
+
+.. _features:
+
+Features
+--------
+
+- Support for `Peewee ORM`_, Mongo_, `SQLAlchemy Core`_ through `Muffin-Rest`_;
+- Automatic filtering and sorting for items;
+
+.. _contents:
+
+.. contents::
+
+.. _requirements:
+
+Requirements
+=============
+
+- python >= 3.7
+
+.. _installation:
+
+Installation
+=============
+
+**Muffin-Admin** should be installed using pip: ::
+
+    pip install muffin-admin
+
+With `SQLAlchemy Core`_ support: ::
+
+    pip install muffin-admin[sqlalchemy]
+
+With `Peewee ORM`_ support: ::
+
+    pip install muffin-admin[peewee]
+
+.. _usage:
+
+Usage
+=====
+
+Initialize the admin:
+
+.. code-block:: python
+
+   from muffin_admin import Plugin
+
+   admin = Plugin(**options)
+
+Initialize admin handlers (example for  `Peewee ORM`_):
+
+.. code-block:: python
+
+   from muffin_admin import PWAdminHandler
+
+    @admin.route
+    class UserResource(PWAdminHandler):
+
+        """Create Admin Resource for the User model."""
+
+        class Meta:
+
+            """Tune the resource."""
+
+            # Peewee Model for the admin resource
+            model = User
+
+            # Filters
+            filters = 'email', 'created', 'is_active', 'role'
+
+            # Tune serialization/deserialization schemas
+            schema_meta = {
+                'load_only': ('password',),
+                'dump_only': ('created',),
+            }
+
+            # Columns to show
+            columns = 'id', 'email', 'is_active', 'role', 'created'
+
+            # Custom Material-UI icon
+            icon = 'People'
+
+Connect admin to an Muffin_ application:
+
+.. code-block:: python
+
+   admin.setup(app, **options)
+
+For futher reference check `https://github.com/klen/muffin-admin/tree/develop/examples <examples>` in the repository.
+
+Configuration options
+----------------------
+
+=========================== ======================================= =========================== 
+Name                        Default value                           Description
+--------------------------- --------------------------------------- ---------------------------
+**prefix**                  ``"/admin"``                            Admin's HTTP URL prefix
+**title**                   ``"Muffin Admin"``                      Admin's title
+**custom_js_url**           ``""``                                  A link to custom JS file
+**custom_css_url**          ``""``                                  A link to custom CSS file
+**login_url**               ``None``                                An HTTP URL for your custom authorization page
+**logout_url**              ``None``                                An HTTP URL for your custom logout page
+**auth_storage**            ``"localstorage"``                      Where to keep authorization information (localstorage|cookies)
+**auth_storage_name**       ``muffin_admin_auth``                   Localstorage/Cookie name for authentication info
+=========================== ======================================= =========================== 
+
+.. _bugtracker:
+
+Bug tracker
+===========
+
+If you have any suggestions, bug reports or
+annoyances please report them to the issue tracker
+at https://github.com/klen/muffin-admin/issues
+
+.. _contributing:
+
+Contributing
+============
+
+Development of Muffin-Admin happens at: https://github.com/klen/muffin-admin
+
+
+Contributors
+=============
+
+* klen_ (Kirill Klenov)
+
+.. _license:
+
+License
+========
+
+Licensed under a `MIT license`_.
+
+.. _links:
+
+.. _klen: https://github.com/klen
+.. _Muffin: https://github.com/klen/muffin
+.. _MIT license: http://opensource.org/licenses/MIT
+.. _Mongo: https://www.mongodb.com/
+.. _Peewee ORM: http://docs.peewee-orm.com/en/latest/
+.. _SqlAlchemy Core: https://docs.sqlalchemy.org/en/14/core/
+.. _Muffin-Rest: https://github.com/klen/muffin-rest
