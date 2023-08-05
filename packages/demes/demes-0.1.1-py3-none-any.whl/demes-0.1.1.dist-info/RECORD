@@ -1,0 +1,15 @@
+demes/__init__.py,sha256=CYPr6Iz3cvpmtDjxwyX-JuxnDNyzx3R4dbFrKmcuvUA,394
+demes/_version.py,sha256=Ok7XR8wZrOp38SaOYinpYmIxf_sT0PLyMemjrG3VZsI,142
+demes/demes.py,sha256=khyKGjn2GoCfR-JX80YdA5ANWgloQBUwMA0C30xbgIw,93232
+demes/load_dump.py,sha256=L79FKK5xzcvflF1Y_tP_dsd-h4o3ZLHNBklHN6_6XdQ,5816
+demes/ms.py,sha256=8sIGUromEf-NR90JGxpXGhbgYDez44_483pWSHs0pUY,29597
+demes/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+demes/convert/README,sha256=PzA-cqR6LoK197ddSFMcxYRWXkwBqqqqIEuReLXrzHY,386
+demes/convert/__init__.py,sha256=lfrk9QNm_fdLfKcjlwIuKNnKf4mF9pVjovfHmTCawSw,121
+demes/convert/msprime_.py,sha256=3ntIm-y9vyXNfh6moLXvN1QSJwWY00DeJScCWvZQKuc,15324
+demes/convert/stdpopsim_.py,sha256=5fz6MqDMDxNe1abypnf7-OqaaGpI8Fvz8Bf8TdaV5QE,2418
+demes-0.1.1.dist-info/LICENSE,sha256=gYYokh-j_mU2zcV0IlwMx3CnEH-whS3bH57CvF0Parw,732
+demes-0.1.1.dist-info/METADATA,sha256=BjEYaOyaLbfemr_7PNIEwUZikRyJL4Fa8XnrOLF3w38,1833
+demes-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+demes-0.1.1.dist-info/top_level.txt,sha256=REzzmqqZlHV_ju-NGlHzZS9bvZEXvLLnvdHLSXriLSM,6
+demes-0.1.1.dist-info/RECORD,,
