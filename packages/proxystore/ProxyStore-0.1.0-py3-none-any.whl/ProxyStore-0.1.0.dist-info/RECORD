@@ -1,0 +1,14 @@
+proxystore/__init__.py,sha256=gd_K5yolaHAvIe8sNPwgFK3F6_LaN4jzjPoeXsLKE6k,271
+proxystore/factory.py,sha256=xIbKDsWPbiqoH_6Sv4P28b9nRc9QSfVjSMw0hNYvbdo,4986
+proxystore/proxy.py,sha256=fo-xmsaQVwVCv--krY8YjdMC4ucqTVQVJYYPxk-j8k0,4169
+proxystore/utils.py,sha256=5JqXUUmVyD5Ln68yEIlE44b4LslV_myr8FsTaFARLm0,2889
+proxystore/backend/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+proxystore/backend/cache.py,sha256=iAOupAz3TAHHHrCmgfhRUhXmatjtq0ULPGObWaaOIgM,1346
+proxystore/backend/serialize.py,sha256=qdybQ301noxGo-39sBlTh5J30tXC4ukR-FcPJb052CM,1848
+proxystore/backend/store.py,sha256=g-58Qt9hfSx_3YRQ90DIIylEeo9wmbJn8v4QUC4cRP0,8695
+proxystore/backend/utils.py,sha256=Bp8SI6N8AT0A5aBnRLVrkrSolvjHFsR33pNnGHCIeY4,2164
+ProxyStore-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ProxyStore-0.1.0.dist-info/METADATA,sha256=ilKY5VbHJJaoyzeaGmushRQ5vHUgiepzjUudLvnN1VY,1346
+ProxyStore-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ProxyStore-0.1.0.dist-info/top_level.txt,sha256=4_k9yS1h2EdjsXhsAvca1hZ0MeBL4Ox7Iv1GaGQw8co,11
+ProxyStore-0.1.0.dist-info/RECORD,,
