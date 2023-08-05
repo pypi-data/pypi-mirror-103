@@ -1,0 +1,11 @@
+xsd_validator/__init__.py,sha256=9wH8CGmNtp1cDA7CJ-gm7GW9KOoyb95wsjzpZiJ6QRE,1847
+xsd_validator/__main__.py,sha256=9ZpuJUIvZOJ1hjenEATzUBmtuG_bdp_jUSrKs3PzRBo,514
+xsd_validator/resources/com.innodata.XsdValidator.jar,sha256=H8GNoU_fVVDgk1-JmJqoKLs3Ce6QJ7ldJPH1-JYrAcM,2331302
+xsd_validator/resources/org.eclipse.wst.xml.xpath2.processor_1.2.0.jar,sha256=_Af-ULngoL8ldy26YG99LCKz8ihf0qFAi7szNWxSHVI,559933
+xsd_validator/test/__init__.py,sha256=z5v1rx_DBfMI37OXL09fQsHToSH-VNQ5-IOr4tE3Crg,93
+xsd_validator/test/test_xsd_validator.py,sha256=HmtG2ZeKOnQtstTpx7kDcczJ1Vn6NWTrfS3FasFAlds,739
+xsd_validator-0.0.3.dist-info/LICENSE,sha256=JzFPT42f44YvyAGx0r0CmDrC7EA7_nG-lrkSeeMAiGw,1070
+xsd_validator-0.0.3.dist-info/METADATA,sha256=V_qjuoyxhkkkyfT4gD0yKOPjs6HPPRgyK6yBrhk2ElI,2277
+xsd_validator-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+xsd_validator-0.0.3.dist-info/top_level.txt,sha256=k7S90s7JgERVqim6FPUtsrwJH-pzRqz9i5RwibjlWN0,14
+xsd_validator-0.0.3.dist-info/RECORD,,
