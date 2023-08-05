@@ -1,0 +1,6 @@
+README.md
+deez_nuts.egg-info/PKG-INFO
+deez_nuts.egg-info/SOURCES.txt
+deez_nuts.egg-info/dependency_links.txt
+deez_nuts.egg-info/top_level.txt
+deez_nuts.egg-info/zip-safe
