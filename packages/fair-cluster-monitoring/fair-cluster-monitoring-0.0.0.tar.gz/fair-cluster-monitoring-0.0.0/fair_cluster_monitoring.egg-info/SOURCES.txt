@@ -1,0 +1,6 @@
+setup.cfg
+setup.py
+fair_cluster_monitoring.egg-info/PKG-INFO
+fair_cluster_monitoring.egg-info/SOURCES.txt
+fair_cluster_monitoring.egg-info/dependency_links.txt
+fair_cluster_monitoring.egg-info/top_level.txt
