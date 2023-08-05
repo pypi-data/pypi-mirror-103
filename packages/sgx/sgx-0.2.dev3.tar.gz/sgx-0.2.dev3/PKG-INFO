@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: sgx
+Version: 0.2.dev3
+Summary: A population-less EA loosely inspired by a cool interpretation of the Darwinian theory
+Home-page: https://github.com/squillero/sgx
+Author: Giovanni Squillero
+Author-email: squillero@polito.it
+License: EUPL-1.2
+Project-URL: Bug Tracker, https://github.com/squillero/sgx/issues
+Project-URL: Source Code, https://github.com/squillero/sgx
+Description: The *Selfish Gene Algorithm* is a population-less evolutionary optimizer loosely inspired by the dashing interpretation of the Darwinian theory popularized in the scientific blockbuster [*The Selfish Gene*](https://en.wikipedia.org/wiki/The_Selfish_Gene). It enables a user to efficiently find the list parameters, either discrete symbols or real numbers, that maximizes a given target function
+        
+        Since 1998, the *Selfish Gene* was [exploited](https://goo.gl/Baw9I8) by different researchers, and a few brand new approaches derived from it. For celebrating (almost) a quarter century mark, it has been  rewritten from scratch in Python 3, with improved usability and tons of new features. 
+        
+Keywords: optimization evolutionary-algorithm computational-intelligence
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: Apache Software License
+Description-Content-Type: text/markdown
