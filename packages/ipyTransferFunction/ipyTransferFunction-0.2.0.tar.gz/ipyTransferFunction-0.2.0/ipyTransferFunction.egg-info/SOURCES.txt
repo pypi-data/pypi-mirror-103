@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+ipyTransferFunction/__init__.py
+ipyTransferFunction/transfer_function.py
+ipyTransferFunction.egg-info/PKG-INFO
+ipyTransferFunction.egg-info/SOURCES.txt
+ipyTransferFunction.egg-info/dependency_links.txt
+ipyTransferFunction.egg-info/requires.txt
+ipyTransferFunction.egg-info/top_level.txt
