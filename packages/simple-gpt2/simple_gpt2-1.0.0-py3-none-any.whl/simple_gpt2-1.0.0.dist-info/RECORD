@@ -1,0 +1,11 @@
+deepai-text-generation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deepai-text-generation/text_generator.py,sha256=RbAOKe6KCuaRHc4Qdr6LpS5-phInRgVOkwyE664C0qY,114
+deepai_text_generation/__init__.py,sha256=HFCyXLY78tODVcxSAzSqxa4_ZN4zZ2GPyM83lIC8WBc,42
+deepai_text_generation/text_generator.py,sha256=RbAOKe6KCuaRHc4Qdr6LpS5-phInRgVOkwyE664C0qY,114
+simple-gpt2/__init__.py,sha256=HFCyXLY78tODVcxSAzSqxa4_ZN4zZ2GPyM83lIC8WBc,42
+simple-gpt2/text_generator.py,sha256=GDtGqn256a4E4OgmwwWa3l-yzVg_QWl2NouC9qtYhxw,598
+simple_gpt2-1.0.0.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+simple_gpt2-1.0.0.dist-info/METADATA,sha256=Gfgecbvo49GLIXNrhMlT_8_H31WTReOTOjD5ile8F38,1838
+simple_gpt2-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+simple_gpt2-1.0.0.dist-info/top_level.txt,sha256=Ehd1TyGFgwl6urP_Q9mnka5BFfE_cjUvpneyePVw_5M,12
+simple_gpt2-1.0.0.dist-info/RECORD,,
