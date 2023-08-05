@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: easynmpython
+Version: 1.0.13
+Summary: Easy NetworkManager DBUS
+Home-page: https://github.com/Razikus/easynmpython
+Author: Adam Raźniewski
+Author-email: adam@razniewski.eu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+sudo apt-get install python3-dbus
+
+
+
+
