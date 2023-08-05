@@ -1,0 +1,13 @@
+robothon/__init__.py,sha256=guID0d_hYbMKMxBrTodMQh7DcjGDgud134ZZV9Cx7zE,428
+robothon/config.py,sha256=uXv5TCr5XFJEfmrxXTQgZ2-Np8QGoGGPj7eYuHGnDOc,61
+robothon/executionbot.py,sha256=BchIxd70DQLNn-HZsrAUtK3Ci7yNmR5m_Va_uEsNyHI,17874
+robothon/simplebot.py,sha256=ChH4YNGLz1t6mK4HuU_aUfSu3vF1HK0epyKY2prqwHE,3202
+sample/__init__.py,sha256=eJUhUcyOxh8swfmDZgrUugpBVnbIWSkbZxcmwT5GmDw,111
+sample/package_data.dat,sha256=EweZDmulyhRes16ZGCqb7EZTG8VN32VqYCx4D6AkDe4,9
+sample/simple.py,sha256=jQxgMu2wujV5-EV7SIHDYnIfEhmJAzxyn2XKqYliCB0,43
+robothon2021-1.1.5.dist-info/LICENSE.txt,sha256=ceC9ZJOV9H6CtQDcYmHOS46NA3dHJ_WD4J9blH513pc,1081
+robothon2021-1.1.5.dist-info/METADATA,sha256=i2uNy1ru0SgK-02kEpxVQtStwafMP2CT13QSNYyPnLM,2558
+robothon2021-1.1.5.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+robothon2021-1.1.5.dist-info/entry_points.txt,sha256=YxPa4zfZ7E-xBqJk6AOCUCEZWuS00Kv120F31F9uwA0,44
+robothon2021-1.1.5.dist-info/top_level.txt,sha256=J-NfW9XCzzkHIlAR_gHKbAKG6MjPCh-NaFCFHXNxlMA,9
+robothon2021-1.1.5.dist-info/RECORD,,
