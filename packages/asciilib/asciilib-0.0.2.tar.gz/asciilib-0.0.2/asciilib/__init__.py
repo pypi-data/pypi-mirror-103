@@ -1,0 +1,1 @@
+from asciilib.mainascii import *

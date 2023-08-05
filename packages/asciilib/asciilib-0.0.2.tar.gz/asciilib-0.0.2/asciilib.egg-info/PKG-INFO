@@ -1,0 +1,37 @@
+Metadata-Version: 1.1
+Name: asciilib
+Version: 0.0.2
+Summary: ASCII ART by Uncle Engineer
+Home-page: https://github.com/UncleEngineer/AsciiLib
+Author: Uncle Engineer
+Author-email: loong.wissawakorn@gmail.com
+License: MIT
+Download-URL: https://github.com/UncleEngineer/AsciiLib/archive/v0.0.1.zip
+Description: ASCIILIB
+        ========
+        
+        แพ็คเกจนี้ใช้สำหรับโชว์รูปศิลปะ ascii
+        
+        วิธีติดตั้ง
+        ~~~~~~~~~~~
+        
+        เปิด CMD / Terminal
+        
+        .. code:: python
+        
+            pip install asciilib
+        
+        
+Keywords: ASCII,Uncle Engineer
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9

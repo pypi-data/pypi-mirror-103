@@ -1,0 +1,11 @@
+LICENSE
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+asciilib/__init__.py
+asciilib/mainascii.py
+asciilib.egg-info/PKG-INFO
+asciilib.egg-info/SOURCES.txt
+asciilib.egg-info/dependency_links.txt
+asciilib.egg-info/top_level.txt
