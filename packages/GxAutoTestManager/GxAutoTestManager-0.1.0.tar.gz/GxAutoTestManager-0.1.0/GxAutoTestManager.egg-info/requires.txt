@@ -1,0 +1,5 @@
+pyserial
+goto-statement
+python-redmine
+pygerrit2
+psutil
