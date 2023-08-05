@@ -1,0 +1,6 @@
+setup.cfg
+setup.py
+hydra_submitit.egg-info/PKG-INFO
+hydra_submitit.egg-info/SOURCES.txt
+hydra_submitit.egg-info/dependency_links.txt
+hydra_submitit.egg-info/top_level.txt
