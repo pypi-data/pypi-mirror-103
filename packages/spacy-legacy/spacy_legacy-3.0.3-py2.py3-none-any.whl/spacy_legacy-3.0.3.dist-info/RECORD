@@ -1,0 +1,16 @@
+spacy_legacy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spacy_legacy/loggers.py,sha256=S90lyQJiLXmuNHEFHTOIC3VjP7DUDr3uHSLMx9xd4qs,1645
+spacy_legacy/architectures/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spacy_legacy/architectures/textcat.py,sha256=x-a24uoN5Qf9jnZaGZZ0dko-vhndHjTT_cPVgKlPVJs,3722
+spacy_legacy/architectures/tok2vec.py,sha256=8GUrSSzh7tqxbZPLwWHUv0J2sbA_ys3GmEA4A6XKbJk,13003
+spacy_legacy/layers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spacy_legacy/layers/staticvectors_v1.py,sha256=1Zu8h1BuS3slmwz9dd9YLsj3bALY0B1D-8Ea1ukRJ_Q,3144
+spacy_legacy/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spacy_legacy/tests/test_legacy.py,sha256=s-eKgFOyrCph-FXXJHSGMHxD0v5eMhynWfIJ7uC9_Jw,542
+spacy_legacy-3.0.3.dist-info/LICENSE,sha256=lUN_KcVXfUPlCgxqW250tVmE5BZh0eQ-Msuvo8pVcJk,1073
+spacy_legacy-3.0.3.dist-info/METADATA,sha256=Rs8BcLm3H-Ps1b7mVC5ildjPumHZ9BI6GcV8gbwd1LA,2815
+spacy_legacy-3.0.3.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+spacy_legacy-3.0.3.dist-info/entry_points.txt,sha256=MWwlxKDwHrfshoNWeVWMMpthtfJOPy5EoyS8yeRreDE,794
+spacy_legacy-3.0.3.dist-info/top_level.txt,sha256=4BHhaP0TMPsEB4HTObfGDtqwMReSj-iy1FCW555_i_4,13
+spacy_legacy-3.0.3.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+spacy_legacy-3.0.3.dist-info/RECORD,,
