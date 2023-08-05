@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: gridly-cli
+Version: 0.0.5
+Summary: Gridly CLI 1st version
+Home-page: https://gridly.com
+Author: Win Le
+Author-email: tlv@localizedirect.com
+License: MIT
+Download-URL: https://github.com/gridly-spreadsheet-CMS/gridly-cli/archive/refs/tags/0.0.5.tar.gz
+Description: # gridly-cli
+        
+        This package provides a unified command line interface to Gridly
+        
+        # Requirement
+        
+        The gridly-cli package works on Python version: 
+        
+        - 3.6.x and greater
+        - 3.7.x and greater
+        - 3.8.x and greater
+        
+        # Installation
+        
+        Installation of the Gridly CLI and its dependencies use a range of packaging features provided by pip and setuptools. To ensure smooth installation, it's recommended to use:
+        
+        - pip: 9.0.2 or greater
+        - setuptools: 36.2.0 or greater
+        
+        The safest way to install the Gridly CLI is to use pip in a virtualenv:
+        
+        ```
+        $ python -m pip install gridly-cli
+        ```
+        
+        # Configuration
+        
+        Before using the Gridly CLI, you need to configure your API key. You can add the API key to Environment variables in this way:
+        
+        - With MacOS and Linux:
+        
+        ```
+        $ EXPORT GRIDLY_API_KEY=<your-api-key>
+        ```
+        
+        - With Windows:
+        
+        ```
+        $ SET GRIDLY_API_KEY=<your-api-key>
+        ```
+        
+        # Basic Commands
+        
+        An Gridly CLI command has the following structure:
+        
+        ```
+        gridly [OPTIONS] COMMAND [ARGS]...    
+        ```   
+        
+        Options:
+        
+        ```
+        --help  Show this message and exit.    
+        ```    
+        
+        Commands:
+        
+        ```
+        grid         Retrieve the grid information.
+        ls-database  List all databases.
+        ls-grid      List all grids.
+        ls-project   List all projects.
+        ls-view      List all views.
+        records      List all records of a view    
+        view         Retrieve the view information.
+        ```
+        
+        For example, to list project, the command would be:
+        
+        ```
+        $ gridly ls-project
+        ```
+Keywords: GRIDLY,CLI,CMS,GRIDLY CLI
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
