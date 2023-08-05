@@ -1,0 +1,13 @@
+mygeopackage/__init__.py,sha256=H_rzU2EQnvm9yfD2iPD04yIGXnaMg1q5bBDZinLY1-k,161
+mygeopackage/mygeopackage.py,sha256=2l0Pg2iyh0cRF4vZGHn7EhRw5Of7WDEPF3ewQNiq72M,6087
+mygeopackage/pproc.py,sha256=fanUyVnhLeiOVr3HjsMXyDLcSCalvdJUom1hbZAHQMQ,672
+mygeopackage/regression.py,sha256=oIsZW5DitRjon8mnenlW5Gx86FUbVryYbpFElerxLuY,4166
+mygeopackage/toolbar.py,sha256=OGUKpbPXP0DCnV047vDleScwpwiYiLD_Hev1mAZ4iMM,4912
+mygeopackage/unsupervised.py,sha256=mOjU15D5LNdkeD07ehngCZa7IejQfV9ca6OS4iMAwhU,2844
+mygeopackage/utility.py,sha256=ag2h8db8GCgKAm8qedDmzLVP7Kg_9LSVP80zfVKnTeQ,312
+mygeopackage-0.1.4.dist-info/LICENSE,sha256=ej1dDIh967nnZVHD4MJCjktxzdMhAiKJMBUmGZ9cW5k,1073
+mygeopackage-0.1.4.dist-info/METADATA,sha256=bfKNZkx14FH0uYChCfrde2sIcOVTXEY2D7nto-O7V1I,2222
+mygeopackage-0.1.4.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+mygeopackage-0.1.4.dist-info/dependency_links.txt,sha256=rJtsNeNaYoVAO-2_3qhSpw9PsbNASIy2wBUijFPGvpQ,67
+mygeopackage-0.1.4.dist-info/top_level.txt,sha256=lWO7_mjOivsN3OALPknaDnP-vWlUYGSZMjp1IFqSGJo,13
+mygeopackage-0.1.4.dist-info/RECORD,,
