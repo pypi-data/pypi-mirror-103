@@ -1,0 +1,3 @@
+python setup.py sdist bdist_wheel
+
+~/anaconda3/bin/twine upload --skip-existing dist/*
