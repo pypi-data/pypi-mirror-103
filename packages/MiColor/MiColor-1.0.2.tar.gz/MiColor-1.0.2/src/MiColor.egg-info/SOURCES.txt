@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/Color/Style.py
+src/Color/__init__.py
+src/MiColor.egg-info/PKG-INFO
+src/MiColor.egg-info/SOURCES.txt
+src/MiColor.egg-info/dependency_links.txt
+src/MiColor.egg-info/top_level.txt
