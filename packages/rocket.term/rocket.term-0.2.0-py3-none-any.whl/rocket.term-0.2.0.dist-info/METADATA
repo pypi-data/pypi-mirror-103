@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: rocket.term
+Version: 0.2.0
+Summary: rocket.term is a text based chat client for the Rocket.chat messaging solution
+Home-page: https://github.com/gerstner-hub/rocket.term
+Author: Matthias Gerstner
+Author-email: matthias.gerstner@nefkom.net
+License: GPL2
+Keywords: Rocket.chat messaging chat terminal
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Terminals
+Requires-Dist: urwid
+Requires-Dist: requests
+Requires-Dist: websocket-client
+
+no long description available
+
+
