@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+applied_stats/__init__.py
+applied_stats/continuous_distributions.py
+applied_stats/mle.py
+applied_stats/applied_stats.egg-info/PKG-INFO
+applied_stats/applied_stats.egg-info/SOURCES.txt
+applied_stats/applied_stats.egg-info/dependency_links.txt
+applied_stats/applied_stats.egg-info/requires.txt
+applied_stats/applied_stats.egg-info/top_level.txt
+output_images/N(0,1)_plot.png
+output_images/X-sqr(4).png
+tests/test.py
