@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/lazero/__init__.py
+src/lazero.egg-info/PKG-INFO
+src/lazero.egg-info/SOURCES.txt
+src/lazero.egg-info/dependency_links.txt
+src/lazero.egg-info/top_level.txt
