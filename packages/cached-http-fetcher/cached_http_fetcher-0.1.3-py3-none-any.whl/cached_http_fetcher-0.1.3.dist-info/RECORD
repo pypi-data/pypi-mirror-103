@@ -1,0 +1,16 @@
+cached_http_fetcher/__init__.py,sha256=aOZx3a57dUwnKrKO5-nICURCVMp6dzmZrCTUFsk9ThA,297
+cached_http_fetcher/content.py,sha256=-rUh45Pwgu2PAN1qmW5NmnvjEKLodEkl7G-aG9X27_M,4001
+cached_http_fetcher/entrypoint.py,sha256=tb92c2l39Ly12hd-i77yjTPYJhx-S4Elkf1HSCT9N2E,6956
+cached_http_fetcher/meta.py,sha256=A_q3TMmWGlF0FXhpA14b-cEdLQ2h0w52cCuFFD3EtTM,1276
+cached_http_fetcher/model.py,sha256=vlIOTSOaswiTPHKdTHcRAx2FxkAYnZKy5tuo0o4H2u8,451
+cached_http_fetcher/rate_limit_fetcher.py,sha256=BkR48NQv6Ftpmgnnz-F3OyVvCWcNyNg5a2Wsvwih5sI,1669
+cached_http_fetcher/request.py,sha256=rTgBbbC_9UgkUAkRxB2uBLn8zYS1rG2EGFKad9hWI58,2086
+cached_http_fetcher/url_list.py,sha256=0iOzpLDO8czRViACZoVxTd6lEHqH1TMw5DNmvkkldlc,486
+cached_http_fetcher/storage/__init__.py,sha256=1Y-zemsJIGsI5nY0JN4J1L2Y6F25s-pS043ifdInpz4,223
+cached_http_fetcher/storage/base.py,sha256=Wc6PorkgvJXACenT2-FZdABIvl4TV4ywphJEHJCKxDc,844
+cached_http_fetcher/storage/memory.py,sha256=e61Db7AEyX6WCRdrVHeakr2lLYTDhEMzcZgQXCjI6lI,1694
+cached_http_fetcher-0.1.3.dist-info/LICENSE,sha256=UyU-X_g5PmaJ9_taZ9iZ9z2PywveY8TanxyQQdzYyX8,1072
+cached_http_fetcher-0.1.3.dist-info/METADATA,sha256=1cy3SFcwASc4fizguk0V5EehDgENHiqy_eH4Cf5ONaM,4201
+cached_http_fetcher-0.1.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cached_http_fetcher-0.1.3.dist-info/top_level.txt,sha256=AM1GT9DCKXWlSHuGq3JGYLln_aCRq4GRPwe6NQkpL74,20
+cached_http_fetcher-0.1.3.dist-info/RECORD,,
