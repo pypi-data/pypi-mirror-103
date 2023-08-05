@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.py
+encryptoenv/CLI.py
+encryptoenv/EnvFile.py
+encryptoenv/__init__.py
+encryptoenv/__main__.py
+encryptoenv.egg-info/PKG-INFO
+encryptoenv.egg-info/SOURCES.txt
+encryptoenv.egg-info/dependency_links.txt
+encryptoenv.egg-info/entry_points.txt
+encryptoenv.egg-info/requires.txt
+encryptoenv.egg-info/top_level.txt
