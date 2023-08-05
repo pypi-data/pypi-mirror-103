@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/bbc_pkg/__init__.py
+src/bbc_pkg_BBC.egg-info/PKG-INFO
+src/bbc_pkg_BBC.egg-info/SOURCES.txt
+src/bbc_pkg_BBC.egg-info/dependency_links.txt
+src/bbc_pkg_BBC.egg-info/top_level.txt

@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: bbc-pkg-BBC
+Version: 0.0.1
+Summary: Discord bot meant for The Boys
+Home-page: https://github.com/MarnixElling/theBoysBotCorp
+Author: Marnix Elling & Harwin van Wesel
+Author-email: marnixelling24@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/MarnixElling/theBoysBotCorp/issues
+Description: # theBoysBotCorp.
+        Discord bot voor The Boys.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
