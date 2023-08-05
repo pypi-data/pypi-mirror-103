@@ -1,0 +1,13 @@
+napari_yapic_prediction/__init__.py,sha256=LxaIhBNLHKWWld71a1vrvZoXk-tt4xgUXhByBGs0_hQ,192
+napari_yapic_prediction/_dock_widget.py,sha256=WbAvdK_6bgeK5vlK3BZUHezQ5fZBqwVHvzbsNPAZgf0,2181
+napari_yapic_prediction/_version.py,sha256=2RlcrsV2bWyE8_M7R7aI-0xPHps5gCAVQSL_KoXQ7lk,170
+napari_yapic_prediction/yapic_dependencies.py,sha256=6vT0Pb4Xm6yHfxzHPY76oRTkWjILdzN58oWyy_HdrFQ,6271
+napari_yapic_prediction/yapic_prediction.py,sha256=eIpfpuiBqn2h85LLuCwyKtEE7Ty94uPepyloxqMykfI,2814
+napari_yapic_prediction/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_yapic_prediction/_tests/test_dock_widget.py,sha256=6xARCreqCUXdlnrGTez7F_bTlSbWKxfo-577lHHK348,712
+napari_yapic_prediction-0.1.dev78.dist-info/LICENSE,sha256=yjcqfZJWCx-p9tgytEDovNYtmt-ohwyYKH3qtm2YMQ4,35148
+napari_yapic_prediction-0.1.dev78.dist-info/METADATA,sha256=BYSyfMNoppMbNay6fSE8gcwVGUmnkYQ_bzB2msQQ0kY,4172
+napari_yapic_prediction-0.1.dev78.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+napari_yapic_prediction-0.1.dev78.dist-info/entry_points.txt,sha256=n4vvLWMc7x3IctX7lE0VRwOciy37ue8VTZk2ucgOzyw,67
+napari_yapic_prediction-0.1.dev78.dist-info/top_level.txt,sha256=Hyg4PmpIVl2ARcIgFU_CUPUji-pluGLIP22KH5DbZxs,24
+napari_yapic_prediction-0.1.dev78.dist-info/RECORD,,
