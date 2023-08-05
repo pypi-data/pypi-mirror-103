@@ -1,0 +1,3 @@
+[console_scripts]
+deepspectrumlite = deepspectrumlite.__main__:cli
+
