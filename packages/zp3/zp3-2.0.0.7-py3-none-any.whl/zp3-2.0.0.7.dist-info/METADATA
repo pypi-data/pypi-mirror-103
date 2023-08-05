@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: zp3
+Version: 2.0.0.7
+Summary: Example Package for Zühlke Python Course
+Author: Iwan Silvan Bolzern
+Author-email: iwan.bolzern@bluewin.ch
+Requires-Python: >=3.6,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
