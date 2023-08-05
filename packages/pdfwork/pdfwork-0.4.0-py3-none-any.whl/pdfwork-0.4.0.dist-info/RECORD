@@ -1,0 +1,11 @@
+pdfwork/__init__.py,sha256=_FvKbLJNIRoiKXyPZCyxQIAmmEtVXoATScPmtBV5jmQ,107
+pdfwork/actions.py,sha256=Cx75L9K2VKC8o9KDm8M6DSExHszfQxJlB6j_VmoDmvA,8204
+pdfwork/cli.py,sha256=C_7ikzlFogDe-oyTehwww58U7nY6l8P5XqP5c2GLWj4,3361
+pdfwork/exceptions.py,sha256=lJBDF6UXrnjxHg2r8JeAcgJuem9A5GWs6bR9eGlb5HI,170
+pdfwork/outline.py,sha256=dAYTnsGnOH8kBP4by2SL1tEI_NhXThv3p-_xrFzA2GA,7023
+pdfwork/range.py,sha256=UbFdKH4UlsM8ZZHZFXkFpFhg9t0NyATm5c4uoejvKwk,2422
+pdfwork/utils.py,sha256=e3t795m-bNsaiRROMonfZ8Yfn_2dpDL1r6QPdku8ODQ,4737
+pdfwork-0.4.0.dist-info/entry_points.txt,sha256=E5FisqC-w3tzsx8q5cSnVa28hEuqrtCKA0-LqJkK4VY,48
+pdfwork-0.4.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+pdfwork-0.4.0.dist-info/METADATA,sha256=ume2KNzqqycTZpmW187q8OBWiXrSnAibBAKRC4bYgWA,4825
+pdfwork-0.4.0.dist-info/RECORD,,
