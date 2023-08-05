@@ -1,0 +1,204 @@
+Metadata-Version: 2.1
+Name: imio.smartweb.core
+Version: 1.0a2
+Summary: Core product for iMio websites
+Home-page: https://github.com/imio/imio.smartweb.core
+Author: Christophe Boulanger
+Author-email: christophe.boulanger@imio.be
+License: GPL version 2
+Project-URL: Source, https://github.com/imio/imio.smartweb.core
+Project-URL: Tracker, https://github.com/imio/imio.smartweb.core/issues
+Project-URL: PyPI, https://pypi.python.org/pypi/imio.smartweb.core
+Description: .. This README is meant for consumption by humans and pypi. Pypi can render rst files so please do not use Sphinx features.
+           If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
+           This text does not appear on pypi or github. It is a comment.
+        
+        
+        .. image:: https://github.com/IMIO/imio.smartweb.core/workflows/Tests/badge.svg
+            :target: https://github.com/IMIO/imio.smartweb.core/actions?query=workflow%3ATests
+            :alt: CI Status
+        
+        .. image:: https://coveralls.io/repos/github/IMIO/imio.smartweb.core/badge.svg?branch=main
+            :target: https://coveralls.io/github/IMIO/imio.smartweb.core?branch=main
+            :alt: Coveralls
+        
+        .. image:: https://img.shields.io/pypi/v/imio.smartweb.core.svg
+            :target: https://pypi.python.org/pypi/imio.smartweb.core/
+            :alt: Latest Version
+        
+        .. image:: https://img.shields.io/pypi/status/imio.smartweb.core.svg
+            :target: https://pypi.python.org/pypi/imio.smartweb.core
+            :alt: Egg Status
+        
+        .. image:: https://img.shields.io/pypi/pyversions/imio.smartweb.core.svg?style=plastic   :alt: Supported - Python Versions
+        
+        .. image:: https://img.shields.io/pypi/l/imio.smartweb.core.svg
+            :target: https://pypi.python.org/pypi/imio.smartweb.core/
+            :alt: License
+        
+        
+        ==================
+        imio.smartweb.core
+        ==================
+        
+        Core product for iMio websites
+        
+        Features
+        --------
+        
+        This products contains:
+        - Content types: Folder, Page, Procedure, Sections ...
+        - Behaviors to configure display in menus / navigations and handle sub-sites
+        - Complete viewlets organization (header, footer) to get rid of portlets
+        
+        A folder can be transformed into a sub-site, which has its navigation viewlet, a logo viewlet, ...
+        
+        A page (or procedure) can be defined as default page of a folder, changing the way it appears in menus / breadcrumbs / sitemap.
+        
+        Pages & Procedures can contain different "sections" (Text, Galery, Video, ...).
+        Those sections can be styled (bootstrap or custom css classes) and rearranged.
+        
+        A banner can be defined to be displayed on any folder (& its children) and can be hidden locally on any content.
+        
+        
+        Examples
+        --------
+        
+        Hopefully soon in production :-)
+        
+        
+        Documentation
+        -------------
+        
+        TODO
+        
+        
+        Translations
+        ------------
+        
+        This product has been translated into
+        
+        - French
+        
+        The translation domain is imio.smartweb domain and the translations are stored in imio.smartweb.locales package.
+        
+        
+        Known issues
+        ------------
+        
+        - Dexterity Plone site & multilingual roots are not yet handled.
+        
+        
+        Installation
+        ------------
+        
+        Install imio.smartweb.core by adding it to your buildout::
+        
+            [buildout]
+        
+            ...
+        
+            eggs =
+                imio.smartweb.core
+        
+        
+        and then running ``bin/buildout``
+        
+        
+        Contribute
+        ----------
+        
+        - Issue Tracker: https://github.com/imio/imio.smartweb.core/issues
+        - Source Code: https://github.com/imio/imio.smartweb.core
+        
+        
+        License
+        -------
+        
+        The project is licensed under the GPLv2.
+        
+        
+        Contributors
+        ============
+        
+        - Christophe Boulanger, christophe.boulanger@imio.be
+        
+        
+        Changelog
+        =========
+        
+        
+        1.0a2 (2021-04-22)
+        ------------------
+        - improved html semantics
+          [thomlamb]
+        
+        - WEBMIGP5-11: Add real values in page taxonomy
+          [laulaz]
+        
+        - Add category viewlet
+          [laulaz]
+        
+        - Add banner viewlet with local hide/show logic
+          [boulch, laulaz]
+        
+        - Change sections titles logic & add button to show / hide titles
+          [laulaz]
+        
+        - Add classes on add/edit forms legends when expanded / collapsed
+          [laulaz]
+        
+        - Add missing bootstrap class option (2/3)
+          [laulaz]
+        
+        - Restrict background image field to administrators
+          [laulaz]
+        
+        - Change folders display views order & default
+          [laulaz]
+        
+        - Allow (only) connected users to see default pages in breadcrumbs
+          [laulaz]
+        
+        - Migrate & improve buildout for Plone 6
+          [boulch]
+        
+        - Fix tests for Plone 6
+          [boulch]
+        
+        - Add basic bootstrap styles for Plone 6
+          [thomlamb]
+        
+        - Migrate default_page_warning template to Plone 6
+          [laulaz]
+        
+        - Add missing translation domain
+          [laulaz]
+        
+        - Add basic style for sortable hover
+          This style has disappeared in Plone 6 (>< Plone 5)
+          [laulaz]
+        
+        - Fix add/edit forms no-tabbing feature for Plone 6
+          [laulaz]
+        
+        
+        1.0a1 (2021-04-19)
+        ------------------
+        
+        - Initial release.
+          [boulch]
+        
+Keywords: Python Plone CMS
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: Addon
+Classifier: Framework :: Plone :: 6.0
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Requires-Python: >=3.8
+Provides-Extra: test
