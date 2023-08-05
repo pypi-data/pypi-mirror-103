@@ -1,0 +1,8 @@
+seaborn
+matplotlib
+numpy==1.19.2
+scipy
+pandas
+scikit_learn
+pytest
+tensorflow
