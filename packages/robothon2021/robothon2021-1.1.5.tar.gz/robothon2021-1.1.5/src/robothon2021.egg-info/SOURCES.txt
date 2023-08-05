@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/robothon/__init__.py
+src/robothon/config.py
+src/robothon/executionbot.py
+src/robothon/simplebot.py
+src/robothon2021.egg-info/PKG-INFO
+src/robothon2021.egg-info/SOURCES.txt
+src/robothon2021.egg-info/dependency_links.txt
+src/robothon2021.egg-info/entry_points.txt
+src/robothon2021.egg-info/top_level.txt
