@@ -1,0 +1,9 @@
+nbformat[fast]<6,>=4
+nbclient<0.6,>=0.5
+nbconvert<7,>=6
+traitlets<6,>=5
+ipython
+typing_extensions
+
+[:python_version < "3.9"]
+astunparse~=1.6
