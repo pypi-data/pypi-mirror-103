@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: RT-Congestion-Control
+Version: 1.2
+Summary: Implement exogenous peer to peer algorithm for Real time Congestion Control in distribution networks
+Home-page: https://gitlab.com/satie.sete/rt-congestion-control
+Author: Guénolé CHEROT
+Author-email: guenole.cherot@ens-rennes.fr
+License: MIT
+Download-URL: https://gitlab.com/Guenole.cherot/admm/-/archive/1.1/admm-1.1.tar.gz
+Keywords: Distributed Optimisation,Peer-to-peer,Distribution System Operator,Cost Allocation,Real-Time,Flexibility,Congestion Management
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: pandapower
+Requires-Dist: flake8
+Requires-Dist: matplotlib
+Requires-Dist: osqp
+Requires-Dist: tqdm
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: joblib
+Requires-Dist: numba
+Requires-Dist: plotly
+
+[![coverage report](https://gitlab.com/Guenole.cherot/admm/badges/master/coverage.svg)](https://gitlab.com/Guenole.cherot/admm/commits/master)
+
+# A Real-Time Congestion Control Strategy in Distribution Network
+
+## Abstract
+This paper proposes an algorithm for real-time congestion management in a distribution network. It sets up a peer-to-peer market allowing the distribution system operator to inject network charges. This enables him to obtain flexibility from distributed agents with heterogeneous preferences.
+These network charges vary in real time and are related to the network's congestion. Prosumers minimize their cost function, and find a consensus through ADMM decomposition. 
+This formulation allows the management of the large number of agents present in the distribution networks only using one price broadcast by the DSO to prosumers.
+We demonstrate with the CIGRE low voltage test case that this strategy is efficient to manage congestion and presents limited sub-optimality compared to the OPF.
+
+## Warning
+Data presented in the paper ([Pecan Street dataport](https://www.pecanstreet.org/dataport/)) is not sharable.
+Examples and figures are therefore based on a different data set. This does not change our conclusions.
+
+## Paper
+Paper submited to ISGT 2021. Not yet available online.
+
+## Instal
+
+Instal using :
+`pip install RT-Congestion-Control`
+
+## Contact
+- Corresponding author : GuÃ©nolÃ© CHEROT
+- e-mail : guenole.cherot@ens-rennes.fr
+
+## Futur improvements
+- [ ] New test case
+- [ ] New grid cost trategies
+- [ ] New types of grid cost
+  - [ ] Voltage limits
+  - [ ] Unbalanced network
+  - [ ] Encourage producers and consumers in a different way
+- [ ] Fair redistribution of profit
+
+### v0.1
+    * first version
+
