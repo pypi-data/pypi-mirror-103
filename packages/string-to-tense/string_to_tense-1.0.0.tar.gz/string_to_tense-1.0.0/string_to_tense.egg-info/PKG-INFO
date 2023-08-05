@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: string-to-tense
+Version: 1.0.0
+Summary: Forword Looking Sentence Identification
+Home-page: UNKNOWN
+Author: Vinit Ganorkar
+Author-email: UNKNOWN
+License: MIT
+Description: This is a simple future tense identification library.
+        This takes input as string or pandas dataframe.
+        This returns output as pandas dataframe.
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

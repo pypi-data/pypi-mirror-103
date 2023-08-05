@@ -1,0 +1,12 @@
+global-included *.txt *.py *.pkl *.slp
+include README.txt
+
+include string_to_tense/model_checkpoint/model.pkl
+include string_to_tense/model_checkpoint/enc_input.pkl
+
+include string_to_tense/pattern/text/en/*.txt
+include string_to_tense/pattern/text/en/*.slp
+include string_to_tense/pattern/text/en/*.xml
+
+include string_to_tense/pattern/text/en/wordnet/*
+include string_to_tense/pattern/text/en/wordlist/*
