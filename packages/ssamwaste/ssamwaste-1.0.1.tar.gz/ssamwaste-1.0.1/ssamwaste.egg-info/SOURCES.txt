@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+ssam/__init__.py
+ssam/classes.py
+ssam/ssam.py
+ssamwaste.egg-info/PKG-INFO
+ssamwaste.egg-info/SOURCES.txt
+ssamwaste.egg-info/dependency_links.txt
+ssamwaste.egg-info/requires.txt
+ssamwaste.egg-info/top_level.txt
