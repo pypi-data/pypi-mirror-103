@@ -1,0 +1,6 @@
+numpy>=1.16
+fdm
+algebra>=1
+plum-dispatch>=1
+backends>=1
+backends-matrix>=1
