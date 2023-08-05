@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+abstract_python_email_validation.egg-info/PKG-INFO
+abstract_python_email_validation.egg-info/SOURCES.txt
+abstract_python_email_validation.egg-info/dependency_links.txt
+abstract_python_email_validation.egg-info/requires.txt
+abstract_python_email_validation.egg-info/top_level.txt
+python_email_validation/__init__.py
+python_email_validation/python_email_validation.py
