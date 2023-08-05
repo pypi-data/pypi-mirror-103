@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: dienen
+Version: 0.0.2
+Summary: Train deep neural networks using configuration files
+Home-page: https://github.com/mrpep/dienen
+Author: Leonardo Pepino
+Author-email: leonardodpepino@gmail.com
+License: UNKNOWN
+Description: ### Dienen
+        Build complex deep learning models using configuration files.
+        
+        ##### Installation
+        First of all you need to have tensorflow with gpu working in your system. You should be able to run nvidia-smi and get information about your GPUs.
+        
+        Then, install using pip
+        
+        ```
+        pip install dienen
+        ```
+        
+        Now, that dienen is installed, it is time to train some models. Check out the [tutorial](docs/tutorial.md) and learn how to do it.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
