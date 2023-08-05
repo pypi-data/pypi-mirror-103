@@ -1,0 +1,13 @@
+journalpdfscraper/BMJSoupScraper.py,sha256=Pwz1E-D7Cp-suriYb02NwigiygwPDd71l3XTld-_jYM,2324
+journalpdfscraper/Base.py,sha256=U56a25Z2iulKZSt3pbO7nvpswaaidLCBtLhV_zHXMRw,6288
+journalpdfscraper/BaseSoup.py,sha256=CTUoGPT0Lf49-R8a8YOyFdPXsxCqZFsPKjJ9glMJWYE,1050
+journalpdfscraper/ElsevierScraper.py,sha256=6j6i2DvWWq5xj0h3pw66j-P6xo7atYg33IGaOUxhk7o,2548
+journalpdfscraper/JournalScraper.py,sha256=QX1tkY1j9ueDa_9xZt9_OeLIsSzrN41qRGmE-p5v_z4,3542
+journalpdfscraper/OxfordScraper.py,sha256=-zJ3Dx029vhWpevi7hAjDtSGaaQMCLu9Nt7c_zBS8r4,2489
+journalpdfscraper/ScienceDirectScraper.py,sha256=HcJJIf2D4IZxxYuHkHxFR7lyAp8UI8l2TXqA9Mu249M,2704
+journalpdfscraper/__init__.py,sha256=VM9d6I6rXed8cUz7U7FraNVHTrUx8rS8zzMJQZq2eWI,114
+journalpdfscraper-0.2.1.dist-info/LICENSE.md,sha256=nJb3ojwic-BXVhAGHjqU4hw8438CaVsI3QBB2OOgeBc,1092
+journalpdfscraper-0.2.1.dist-info/METADATA,sha256=dT0XtL2z8DZ2sm4Hjluvq_CkHekM5CZrJWO3VoYPuq8,1583
+journalpdfscraper-0.2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+journalpdfscraper-0.2.1.dist-info/top_level.txt,sha256=tPgTaBz0PYrRiTX_Ft33TltAJto1jldSdqgd4GtXhYA,18
+journalpdfscraper-0.2.1.dist-info/RECORD,,
