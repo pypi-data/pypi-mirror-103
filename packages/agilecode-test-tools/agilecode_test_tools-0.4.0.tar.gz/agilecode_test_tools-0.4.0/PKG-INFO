@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: agilecode-test-tools
+Version: 0.4.0
+Summary: Package contains reusable code for api and unit tests
+Author: Vladyslav Rylov
+Author-email: vladislav.rylov@agilecode.io
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: allure-pytest (==2.8.19)
+Requires-Dist: black (==20.8b1)
+Requires-Dist: mypy (==0.812)
+Requires-Dist: pillow (==8.1.0)
+Requires-Dist: playwright (==1.9.2)
+Requires-Dist: pytest (==6.1.0)
+Requires-Dist: pytest-xdist (==2.1.0)
+Requires-Dist: requests (==2.24.0)
