@@ -1,0 +1,10 @@
+setup.py
+src/roformer/__init__.py
+src/roformer/configuration_roformer.py
+src/roformer/modeling_roformer.py
+src/roformer/tokenization_roformer.py
+src/roformer.egg-info/PKG-INFO
+src/roformer.egg-info/SOURCES.txt
+src/roformer.egg-info/dependency_links.txt
+src/roformer.egg-info/requires.txt
+src/roformer.egg-info/top_level.txt
