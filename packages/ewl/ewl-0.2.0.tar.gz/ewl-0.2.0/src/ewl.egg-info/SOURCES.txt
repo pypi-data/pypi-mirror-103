@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/ewl/__init__.py
+src/ewl.egg-info/PKG-INFO
+src/ewl.egg-info/SOURCES.txt
+src/ewl.egg-info/dependency_links.txt
+src/ewl.egg-info/top_level.txt
