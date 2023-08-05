@@ -1,0 +1,5 @@
+[console_scripts]
+cmdclient = AutoTestManager.server.modolues.cmdclient:main
+gxclientstart = AutoTestManager.client.main:main
+gxserverstart = AutoTestManager.server.main:main
+
