@@ -1,0 +1,1 @@
+{"cuda": "10.2", "packaging": "pip", "cutensor": {"version": "1.2.2", "filename": "cutensor.dll"}, "cudnn": {"version": "8.1.1", "filename": "cudnn64_8.dll"}}
