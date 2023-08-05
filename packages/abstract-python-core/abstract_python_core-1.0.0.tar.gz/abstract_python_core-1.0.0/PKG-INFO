@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: abstract_python_core
+Version: 1.0.0
+Summary: AbstractAPI Python Core Library - Used by the other Abstract API libraries.
+Home-page: https://github.com/abstractapi/python-core
+Author: Benjamin Bouchet
+Author-email: libraries@abstractapi.com
+License: UNKNOWN
+Description: # AbstractAPI python-core library
+        
+        Pure Python library for using [Abstract API](https://www.abstractapi.com/). This is core library that has some shared logic and functions used by other libraries.
+        
+        # See other
+        
+        To use and maintain this library, please see the following:
+        
+        - [Python Email Validation](https://github.com/abstractapi/python-email-validation)
+        - [Python IP Geolocation](https://github.com/abstractapi/python-ip-geolocation)
+        - [Python Phone Validation](https://github.com/abstractapi/python-phone-validation)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
