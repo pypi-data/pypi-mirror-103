@@ -1,0 +1,7 @@
+setup.py
+quicksample/src/Mlbrs.egg-info/PKG-INFO
+quicksample/src/Mlbrs.egg-info/SOURCES.txt
+quicksample/src/Mlbrs.egg-info/dependency_links.txt
+quicksample/src/Mlbrs.egg-info/top_level.txt
+quicksample/src/quicksample.py
+quicksample/src/Mlbrs.egg-info/SOURCES.txt
