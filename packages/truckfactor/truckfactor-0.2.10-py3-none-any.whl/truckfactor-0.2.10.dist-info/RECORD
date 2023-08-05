@@ -1,0 +1,10 @@
+truckfactor/__init__.py,sha256=WHizC8UzElmTH3641zjnMTLUHmP2rliWLTalgHU6vMA,75
+truckfactor/compute.py,sha256=NAjdgDX0Bd2iFY0CczxcePlk1V54zIGTdbtzt0BO_V0,7829
+truckfactor/evo_log_to_csv.py,sha256=LgivLadxDs7pJTH4b0jgEE-lHGXEkKPYT8KDcOj3JDc,2491
+truckfactor/new_compute.py,sha256=jkV5-ShA2UsrMTaymOab_GGazbxVGHdcOZi5IAMMqFY,13012
+truckfactor/repair_git_move.py,sha256=m0Zq3cT68uJqV0Z5dIXxh6u9ppl0hGouWxhlOpZ_I20,4161
+truckfactor-0.2.10.dist-info/entry_points.txt,sha256=1m9za7w6Qu7G24iJECHt1CH6cMTiJtqhf06lajH8eJA,55
+truckfactor-0.2.10.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+truckfactor-0.2.10.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+truckfactor-0.2.10.dist-info/METADATA,sha256=KFzxi11zgZGNo4Hf5NOae3iT1B8U5f8b7SqHl4eUZMQ,5759
+truckfactor-0.2.10.dist-info/RECORD,,
