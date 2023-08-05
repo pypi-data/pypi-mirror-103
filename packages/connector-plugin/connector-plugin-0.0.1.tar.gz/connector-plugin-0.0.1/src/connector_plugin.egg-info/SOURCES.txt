@@ -1,0 +1,6 @@
+setup.py
+src/connector_plugin.egg-info/PKG-INFO
+src/connector_plugin.egg-info/SOURCES.txt
+src/connector_plugin.egg-info/dependency_links.txt
+src/connector_plugin.egg-info/top_level.txt
+src/dummy/__init__.py
