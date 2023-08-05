@@ -1,0 +1,4 @@
+aiohttp>=3.0.0
+python-socketio==4.0.2
+requests>=2.22.0
+websockets>=7.0
