@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: omegalul
+Version: 0.0.3
+Summary: A Python library for building omegle clients
+Home-page: https://github.com/pcranaway/omegalul
+Author: pcranaway
+Author-email: pcranaway@tuta.io
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
+
