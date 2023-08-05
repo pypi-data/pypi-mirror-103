@@ -1,0 +1,10 @@
+LICENCE.txt
+README.md
+setup.py
+Melchizedek/__init__.py
+Melchizedek/test_module.py
+Melchizedek.egg-info/PKG-INFO
+Melchizedek.egg-info/SOURCES.txt
+Melchizedek.egg-info/dependency_links.txt
+Melchizedek.egg-info/requires.txt
+Melchizedek.egg-info/top_level.txt
