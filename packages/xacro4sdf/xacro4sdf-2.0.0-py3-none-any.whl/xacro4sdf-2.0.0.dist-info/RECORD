@@ -1,0 +1,10 @@
+xacro4sdf/__init__.py,sha256=HJIcVJFvnYi4O3sI60-iXCekatVKWRL96reE5HNeWBk,47
+xacro4sdf/common.xmacro,sha256=G2dbbahEKsO6DC7emeAf3eKrrVAM8P2jWKqK9YnYfDY,2787
+xacro4sdf/xacro4sdf.py,sha256=tj7ZfVw3RtZ_5hN7Q1QaGOJqY_qfrm9iSXb2OVP4z_o,9333
+xacro4sdf/xml_format.py,sha256=ryQi2s5v_2wLVuAhIjKYpEw85C5k7HSseXH9erL0Hmg,1683
+xacro4sdf-2.0.0.dist-info/LICENSE,sha256=7t_Yc3LgOdWy6bhsOUV429TQIyqZx8g9bRq9YC5aAPA,1061
+xacro4sdf-2.0.0.dist-info/METADATA,sha256=MFaC_3O5ABxRHEAS1TW2r0ZdFplvzUjF9sQ4MUi2I1c,7042
+xacro4sdf-2.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+xacro4sdf-2.0.0.dist-info/entry_points.txt,sha256=tFZW5WstHNtpRG-tzzqV0S-FNYL9O51bN3g5blMv5eU,56
+xacro4sdf-2.0.0.dist-info/top_level.txt,sha256=v96qBXgL7nVjicMRWtgqov7Xd43hv11bchG9taBTv0k,10
+xacro4sdf-2.0.0.dist-info/RECORD,,
