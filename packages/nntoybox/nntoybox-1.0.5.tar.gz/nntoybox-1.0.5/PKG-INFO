@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: nntoybox
+Version: 1.0.5
+Summary: DeepLearning Model Builder
+Home-page: https://github.com/kjchung495/toybox2
+Author: KJ Chung
+Author-email: kjchung495@yonsei.ac.kr
+License: Apache Software License 2.0
+Description: #toybox2
+        
+        
+Keywords: ANN,Artifictial Neural Network,DeepLearning
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
