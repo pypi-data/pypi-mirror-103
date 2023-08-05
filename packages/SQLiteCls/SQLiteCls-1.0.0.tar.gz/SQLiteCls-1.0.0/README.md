@@ -1,0 +1,67 @@
+SQLite Class wrapper with auto-initialisation of empty DB and PRAGMAs
+===============================================================================
+
+SQLiteDb class wrapping the operations from the `sqlite3` module,
+providing better support for the `with` operator and automatic
+initialisation of an empty DB upon first creation of the DB
+and setting of the per-connection pragmas.
+
+Additional wrappers are available as a utility, including
+extraction of a list of tables, extraction of the list of columns
+of a `SELECT` query, commit, rollback, start of a transaction,
+check if the DB is in memory and if it's empty. Executions of SQL script
+files is also made easy.
+
+
+Example usage
+----------------------------------------
+
+```python
+import sqlitecls
+
+with sqlitecls.SqliteDb('mydata.db', 'mydbschema.sql', 'mypragmas.sql') as db:
+    # Now the DB connection is established. If the DB did not exist before,
+    # its schema is initialised by running the 'mydbschema.sql' script,
+    # preparing it for whatever your application has to do.
+    #
+    # The 'mypragmas.sql' script is also run EVERY time a connection is
+    # opened or re-opened, to ensure each connection to the same file has
+    # the correct per-connection PRAGMA settings.
+    # For example, imagine we have `PRAGMA synchronous = 3;` in the script
+    assert db.pragma('synchronous') == 3
+    
+    # You can easily check which tables are available
+    tables = db.tables_names()
+    # and what columns they have
+    columns = db.columns_names('some_table')
+    # Otherwise use as any other DB API from now on
+    cursor = db.execute('SELECT * FROM mytable')
+    # Simplified extraction of the column names from the SELECT query
+    columns = sqlitecls.cursor_column_names(cursor)
+    # Use as any other DB API from now on
+    for row in cursor:
+        pass  # Do something with each row
+    db.connection, db.cursor  # Accessible for custom operations
+    # More utility functions!
+    db.start_transaction()
+    db.commit()
+    db.rollback()
+    db.vacuum()
+    db.size_bytes()
+    db.is_in_memory()
+    # Have existing SQL script files? Just run them as they are!
+    db.execute_sql_file('myotherfile.sql')  # Load WHOLE file in memory
+# Connection automatically closed now
+```
+
+
+Installation
+----------------------------------------
+
+```
+pip install SQLteCls
+```
+
+or just include the `sqlitecls.py` file in your project (copy-paste).
+It's self-contained and has no dependencies other than the standard
+Python library.

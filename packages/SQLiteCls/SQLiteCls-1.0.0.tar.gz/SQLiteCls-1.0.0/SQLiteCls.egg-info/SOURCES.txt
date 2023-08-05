@@ -1,0 +1,14 @@
+.gitignore
+CHANGELOG.md
+LICENSE.md
+MANIFEST.in
+README.md
+setup.py
+sqlitecls.py
+test.py
+testing_init.sql
+testing_pragmas.sql
+SQLiteCls.egg-info/PKG-INFO
+SQLiteCls.egg-info/SOURCES.txt
+SQLiteCls.egg-info/dependency_links.txt
+SQLiteCls.egg-info/top_level.txt
