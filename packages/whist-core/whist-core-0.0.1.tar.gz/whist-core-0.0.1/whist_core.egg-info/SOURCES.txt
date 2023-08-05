@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tests/__init__.py
+tests/whist/__init__.py
+tests/whist/test_card.py
+whist/__init__.py
+whist/card.py
+whist/deck.py
+whist_core.egg-info/PKG-INFO
+whist_core.egg-info/SOURCES.txt
+whist_core.egg-info/dependency_links.txt
+whist_core.egg-info/top_level.txt

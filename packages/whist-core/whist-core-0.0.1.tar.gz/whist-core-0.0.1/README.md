@@ -1,0 +1,2 @@
+# Whist-Core
+Rules implementation
