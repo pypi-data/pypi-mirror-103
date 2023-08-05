@@ -1,0 +1,16 @@
+inflex/__init__.py,sha256=9i3WFq-Iw2Z8f6uy1tvauL_L5OjjiloTEDfwVk8Mrr8,286
+inflex/adjective.py,sha256=kOTn_wXoajEo935BM-yNziT9p9tlUvMUu8h5Sgh6rm4,14820
+inflex/adjective_core.py,sha256=gNS79hrQY2XQhmbPdKwECaHXawr5SPbG6u5Hs6Ha-bw,2485
+inflex/indefinite_core.py,sha256=U5QS_qlQJAczxLIDeSOAcngVU-nJdb9yjWy7vWuXXbI,3379
+inflex/noun.py,sha256=9r9V74kkKvm9fDKkyEvUBAvJVJjSp0RHvFk32FJC2Vg,26678
+inflex/noun_core.py,sha256=PBkh51_Bsn086sxyDPjgl7wezCnxqViN5JmvqU7kusA,289722
+inflex/syllable.py,sha256=TlMTW6Y3U0j_Mq4ORaZOAcRc7lmR0v9A_eSeEVyrXys,5138
+inflex/term.py,sha256=0ljH8EqTszHBv-ZsLsKS2nrPCHhcuxrtv2LNfJmNmuI,11720
+inflex/verb.py,sha256=_HMnehkR8fJTxg9oINBfRapXghxh7_GiXD_jjOxIqfI,18124
+inflex/verb_core.py,sha256=Ddemqpo0p0NWy2-m_FDO6m8M9KgKL9iS0QPJGwUTNEg,118124
+inflex/data/cmudict_stress.json,sha256=bhsjRu_39fubMw_meHdzgGqEYBbZriyTNy_gU3oiSns,3032024
+inflex-1.0.6.dist-info/LICENSE,sha256=oO50YGSwbQnKsHaBFuwmX9DUUmHUCHya0saYoHx6rA4,35803
+inflex-1.0.6.dist-info/METADATA,sha256=EpKqaUDV6hC_T3JjesZ_g0ybUx7SkqflFQuq22Lf28Y,1728
+inflex-1.0.6.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+inflex-1.0.6.dist-info/top_level.txt,sha256=Y4cGbUL7Y_b9tNrYeKE7Vf03_FWZ7TuDlUz_8-mV27s,7
+inflex-1.0.6.dist-info/RECORD,,
