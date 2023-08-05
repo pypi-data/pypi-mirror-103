@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: hawksoft.tools
+Version: 0.1.3
+Summary: Provides many useful command lines in python
+Home-page: https://github.com/xingyongkang
+Author: xingyongkang
+Author-email: xingyongkang@cqu.edu.cn
+License: MIT
+Description: http://gitee.comg/xingyongkang
+Keywords: md zhihu tree
+Platform: any

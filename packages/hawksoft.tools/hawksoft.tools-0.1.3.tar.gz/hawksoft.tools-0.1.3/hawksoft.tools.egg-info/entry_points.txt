@@ -1,0 +1,3 @@
+[console_scripts]
+md2zhihu=hawksoft.md2zhihu:maintree = hawksoft.tree:main
+
