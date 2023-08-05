@@ -1,0 +1,9 @@
+Metadata-Version: 1.2
+Name: fipibar
+Version: 0.0.3
+Summary: Fip radio plugin for Polybar
+Home-page: https://github.com/conor-f/fipibar
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
