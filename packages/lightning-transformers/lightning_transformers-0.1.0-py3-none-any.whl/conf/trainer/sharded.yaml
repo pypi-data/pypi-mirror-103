@@ -1,0 +1,5 @@
+defaults:
+  - ddp # inherit from ddp trainer conf
+  - plugins: sharded
+accelerator: ddp
+precision: 16

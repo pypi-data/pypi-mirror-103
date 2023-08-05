@@ -1,0 +1,5 @@
+defaults:
+  - ddp # inherit from ddp trainer conf
+  - plugins: zero_offload
+accelerator: ddp
+precision: 16
