@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: grace_qui_face_mask_detection_model
+Version: 1.0.0
+Summary: Covid-19 control face mask detection model
+Home-page: https://github.com/GraceWangui/covid-19-control-face-mask-detection-model
+Author: Grace Wangui
+Author-email: qui.grace99@gmail.com
+License: MIT
+Description: # Covid-19-control-face-mask-detection-model
+        
+        This is a model that does face mask detection on users in public area to stop the spread of Covid-19
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

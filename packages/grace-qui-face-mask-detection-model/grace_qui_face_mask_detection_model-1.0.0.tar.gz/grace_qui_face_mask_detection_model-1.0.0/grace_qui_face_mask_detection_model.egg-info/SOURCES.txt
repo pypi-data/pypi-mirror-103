@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+grace_qui_face_mask_detection_model.egg-info/PKG-INFO
+grace_qui_face_mask_detection_model.egg-info/SOURCES.txt
+grace_qui_face_mask_detection_model.egg-info/dependency_links.txt
+grace_qui_face_mask_detection_model.egg-info/requires.txt
+grace_qui_face_mask_detection_model.egg-info/top_level.txt
+src/main/detect_mask_video.py
+src/main/face_detector/deploy.prototxt
+src/main/face_detector/res10_300x300_ssd_iter_140000.caffemodel
+src/main/models/mask_detector.model

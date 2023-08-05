@@ -1,0 +1,3 @@
+include src/main/detect_mask_video.py
+graft src/main/face_detector
+graft src/main/models
