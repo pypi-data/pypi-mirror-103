@@ -1,0 +1,8 @@
+zenroom.cpython-36m-x86_64-linux-gnu.so,sha256=KdgQ0046BWUKdN37vX7NM2XQUWqGLLD99C2zUrgdA7w,2355248
+zenroom/zenroom.py,sha256=JoyOB1YxSZycBbOSGTbd8kW3lrfnv4NTUs_EqWbYrf0,1379
+zenroom/_config.py,sha256=4L4zdZgQyBAkTcgUVqygrPgf3t5aJl1-uVJ4IVv5qIs,269
+zenroom/__init__.py,sha256=awCwIOg8vkGT4PR-L995ouj7YAc3EdUl-ahxY80L840,155
+zenroom-2.0.0.dev1619009023.dist-info/RECORD,,
+zenroom-2.0.0.dev1619009023.dist-info/top_level.txt,sha256=583htwdwzEJNDLQu3rdFX2SJ7JO_pO5NukzK6RAdrXc,8
+zenroom-2.0.0.dev1619009023.dist-info/METADATA,sha256=5Xy-sgRp4MlEn07qUp82h892c2cFtsPTHAmWIeLtn_E,8020
+zenroom-2.0.0.dev1619009023.dist-info/WHEEL,sha256=qby9cgnI2827ChqQJmx7trZCgChWhqq21UEtmFKHZo8,112
