@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: ReiL
+Version: 0.0.88
+Summary: A Reinforcement Learning Module for Python
+Home-page: https://research-git.uiowa.edu/sanzabizadeh/Reinforcement-Learning
+Author: Sadjad Anzabi Zadeh
+Author-email: sadjad-anzabizadeh@uiowa.edu
+License: MIT License
+Description: ReiL - A Reinforcement Learning Package
+        =======================================
+        
+        .. image:: https://img.shields.io/pypi/v/Reil   :alt: PyPI
+        
+        .. image:: https://img.shields.io/pypi/l/ReiL   :alt: PyPI - License
+        
+        
+        
+        My codes for a Reinforcement Learning framework!
+        
+        Installation
+        ------------
+        
+        .. code-block:: bash
+        
+           pip install ReiL
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
