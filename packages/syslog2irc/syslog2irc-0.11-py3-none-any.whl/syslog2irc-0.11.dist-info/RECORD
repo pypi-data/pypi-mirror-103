@@ -1,0 +1,16 @@
+syslog2irc/__init__.py,sha256=_4kVDagFmq2--Ug8mtlD-TPpeGquGTY5ZpIXFSpSkR0,17
+syslog2irc/cli.py,sha256=c5kUtcAzR6t1GMLMF8jLTzwmulhVkxfHAklDKe-wOPs,803
+syslog2irc/config.py,sha256=BF1D__vypQUxkOsyx82CPTRBop9N9A3DMdn8TI03A0A,2999
+syslog2irc/irc.py,sha256=0HgcnDnfaQyhAeuIv4ML2YejLyb6wBXkHOSjUMhMiO8,4843
+syslog2irc/main.py,sha256=mIpGUDvomr3_RmREvGdtDoV2X73BoKSFFT0yxiAkKuM,1847
+syslog2irc/processor.py,sha256=HU5zQ7muVu6wR4sEF1Idln62u7jtAF2etzXpAgupVkk,3244
+syslog2irc/router.py,sha256=yu1XiGI4FnJ0c-T7guFNB5F1H2ekuuR2FpFoXotSLLE,2041
+syslog2irc/signals.py,sha256=8-ku0es5iVWUfOMnz6HQoiMFrgUN0S1HtxrtlAYiMaE,371
+syslog2irc/syslog.py,sha256=L-UnrrDbPNI6zekB7wKqpfcHP3aj0jDd5LaYuOAwUro,2790
+syslog2irc/util.py,sha256=ulBnr749DNenXOA1vr2-tRyQlqJxj29hXpWsmsP28aU,648
+syslog2irc-0.11.dist-info/LICENSE,sha256=aEPA2kx6QgVQlnb2_x74_Xf0kl4oS2q5_-isrthajJ0,1069
+syslog2irc-0.11.dist-info/METADATA,sha256=iTY87wGtkXRAy3ZHVw1j_gEH1Sy5R1-9kXJeKLUkZIc,7623
+syslog2irc-0.11.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+syslog2irc-0.11.dist-info/entry_points.txt,sha256=QmUJbYU8kSaA6rPc5nrn7SzB_jC12oG8J5Q9xWewr58,53
+syslog2irc-0.11.dist-info/top_level.txt,sha256=zhDKqbgfrg0qbvSeMUnulwMLGmySzPMAtsl2r7eg2Fo,11
+syslog2irc-0.11.dist-info/RECORD,,
