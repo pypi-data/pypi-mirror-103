@@ -1,0 +1,16 @@
+ar_corrector/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ar_corrector/corrector.py,sha256=90AWRozTDIZrBMYI2jYuG9qUQzLn_N1Fv10rvONX32Q,2754
+ar_corrector/dataset_creator.py,sha256=MZy5zArx1So3vBFCkhM7ym_ZV-xC6xP7TjZtPHo_DlU,2832
+ar_corrector/io_handler.py,sha256=yzChYodTZZaC4gMbH4V6BWtFcoVFzzAKsTniFG01WUQ,1280
+ar_corrector/preprocess.py,sha256=15QLUht-nyP8qNhlJYTXtcSNrrckZde3Q9trAbeNnzo,1060
+ar_corrector/proj_config.py,sha256=-f1PyzM-gO2oLA6jsh0urriOsy5ie_j31dM0fcOOBT0,856
+ar_corrector/string_manipulator.py,sha256=Qb-Lm1KxiWn1lOdbSk1qM0Z6aj8a0F1q3FaQAd3uTcQ,1407
+ar_corrector/resources/close_vocabs.pickle,sha256=1c0l649GN0BYhrS5TxxYdGE-bLm3HCArBdYGR3QBF4k,4077034
+ar_corrector/resources/ngram.pickle,sha256=MKQLH2Itw54Bp2MZBsEf_zgU3DoordUcSrOJYxMXlb8,4560760
+ar_corrector/resources/ngram_plus1.pickle,sha256=qyPo_mZCaikYrdUdmlc5s1ASMecFsEixB6nW4HjSwP8,148655553
+ar_corrector/resources/vocab_freqs.pickle,sha256=9vh9A-ZNCDY-mInTnPVhc8nRLYgeWNBZe3DpbumynSk,10519221
+ar_corrector-1.1.3.dist-info/LICENSE.txt,sha256=-jbht7qrq6WGMHBkK_8GQ1EGtBaLA8OSqki11jhc9Sw,1056
+ar_corrector-1.1.3.dist-info/METADATA,sha256=wYEVFrCwA8B7zXuAy3sBd__vO9UITHcsl6966A_zT3Q,2527
+ar_corrector-1.1.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ar_corrector-1.1.3.dist-info/top_level.txt,sha256=FKS0G07pV7DF8lt1fCsseNB250L0QKc6nzBSnzqS6f8,13
+ar_corrector-1.1.3.dist-info/RECORD,,
