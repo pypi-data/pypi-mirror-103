@@ -1,0 +1,14 @@
+imio.smartweb.locales-1.0a2-py2.7-nspkg.pth,sha256=wnCUSUElqssZ5FI3x-9HqwD229HQ-bAuPoDUNJHmMtU,1684
+imio/smartweb/locales/__init__.py,sha256=qrLcahpshMtN5djdRMXiOtfaYPBjlzVymI0r1y_ohFc,151
+imio/smartweb/locales/configure.zcml,sha256=_-s3Xy-Du1-qJvTJ-GVHNW8CNjRwtqQjWYEuXYm1CJg,204
+imio/smartweb/locales/locales/imio.smartweb.pot,sha256=FJr7er-sIFWpwb95I1u1oiKv-gda1V4XcgL1rqxg05g,16786
+imio/smartweb/locales/locales/plone-manual.pot,sha256=KeXI-vQqtdPvVO7VlAD6RFWKAOK48j3KezlpzPwLE7g,1236
+imio/smartweb/locales/locales/fr/LC_MESSAGES/imio.smartweb.po,sha256=MLDV7zxc7qkZxZswxHTbdwxE6dcI1KK-RsKXLQJJZtA,20039
+imio/smartweb/locales/locales/fr/LC_MESSAGES/plone.po,sha256=NW8JiwtSKRtwTGTEHKNq6rksGNCs5JvpZZY7gZRh33g,1494
+imio.smartweb.locales-1.0a2.dist-info/DESCRIPTION.rst,sha256=7d1OgmSX1FX1QKkYBDXiknVXcgRwz7EunADfjGbIQ48,1953
+imio.smartweb.locales-1.0a2.dist-info/METADATA,sha256=v-y6rrOto4Tso2lCL9TKAVW1zKcJRJHm5w3VlfzXCWA,2928
+imio.smartweb.locales-1.0a2.dist-info/RECORD,,
+imio.smartweb.locales-1.0a2.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+imio.smartweb.locales-1.0a2.dist-info/metadata.json,sha256=TMSlgnZ5CvjHPeVHlCWFLtySwMAh69c9R3ih2XAaZr0,1011
+imio.smartweb.locales-1.0a2.dist-info/namespace_packages.txt,sha256=Pg8AH8t9viMMW1hJbNZvTy_n2jXG2igIYUpon5RA4Js,19
+imio.smartweb.locales-1.0a2.dist-info/top_level.txt,sha256=ZktC0EGzThvMTAin9_q_41rzvvfMT2FYbP8pbhSLMSA,5
