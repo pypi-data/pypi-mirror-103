@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: dscal
+Version: 0.1.1
+Summary: An easy way to compute calculus and visual interpretation through graphs.
+Home-page: UNKNOWN
+Author: Dhruv Sehwal
+Author-email: zarexdhruv@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: matplotlib
+Requires-Dist: numexpr
+Requires-Dist: sympy
+
+The package use matplotlib, numexpr, sympy based code for the intended calculation.
+
+use the module any kind of calculations in field of calculus or plot the expression to visually infer the suitable context.
+
+Change log
+==============
+
+First release
+
+0.0.1 (13/04/2021)
+
+-------------------
+
+0.0.2 (13/04/2021)
+
+-------------------
+
+Second release
+
+0.0.3 (13/04/2021)
+
+-fixed import issues
+
+------------------
+
+Third release
+
+0.1.1 (22/04/2021)
+
+-nature()
+ function amended to account for a given interval.
+
+-derivative()
+ function name changed from differentiation().
+
+-integral()
+ function name changed from integration().
+
+ function amended to account for a given interval.
+
+-__add__()
+ function amended to accomodate multiple instances.
+ Previously only 2. 
+
