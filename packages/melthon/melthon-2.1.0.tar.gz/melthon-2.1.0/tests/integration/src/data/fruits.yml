@@ -1,0 +1,14 @@
+red:
+    - strawberry
+yellow:
+    - banana
+    - lemon
+green:
+    - slug: apple
+      name: Apple
+
+    - slug: pear
+      name: Pear
+
+    - slug: melon
+      name: Melon

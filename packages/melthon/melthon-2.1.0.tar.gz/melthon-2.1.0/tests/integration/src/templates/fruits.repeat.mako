@@ -1,0 +1,1 @@
+<p>This fruit is named ${page['name']}</p>
