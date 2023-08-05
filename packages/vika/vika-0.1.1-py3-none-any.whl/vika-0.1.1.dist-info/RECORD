@@ -1,0 +1,15 @@
+vika/__init__.py,sha256=OjyduXi6iZgCoej9ojD9u47Ce4VLHmK2H-XRnMPRRH0,43
+vika/const.py,sha256=Nv_GLrFvVisuvhcO1tcHq3nrXqsCLihB8CeeqgPkgLw,345
+vika/datasheet.py,sha256=c3N821rjpnu38NWOZvlpasIL3ErmtMzjHjgo0IxV1TU,6965
+vika/exceptions.py,sha256=AYVvbLZN3j3Lic-KgH-v2jQjfrE7P6dA8nDuQUyTN74,453
+vika/fields.py,sha256=CEm22MlOvP6GdNgvl6MvVBRFfHm2vXs1fqmFpsciIEE,200
+vika/record.py,sha256=ktYeE1B3cyqbtWSrjpT7lduD41DqEtfl1QimuoKtIeY,2520
+vika/record_manager.py,sha256=5s4or4H6Lj_wXN3Nm1UkEBF6BCgovnQMYKYiIsvmEmQ,8674
+vika/utils.py,sha256=KjnUwY0NyxoCC82JgOUT03cDLhc16ohN-c-rnJi-5bI,117
+vika/vika.py,sha256=IfwGbubjssx9oRbCqza4ceai46wIZX7Qd_MujHnuPLs,2528
+vika/vika_type.py,sha256=-wFH0CsYSGxWLGBFckyE4mPlLYo1FvY9Eeqv6xNt_dg,1458
+vika-0.1.1.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+vika-0.1.1.dist-info/METADATA,sha256=XjflL9IhPakf6Wa8a0h8Sj84CxZZc-qEQs2rlzZ4v5E,11806
+vika-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+vika-0.1.1.dist-info/top_level.txt,sha256=F4FWwR2V2tRfHdl3M2UsWa-vj2v4d3VmzucyX-ecRPA,5
+vika-0.1.1.dist-info/RECORD,,
