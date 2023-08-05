@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/datajudge-client/__init__.py
+src/datajudge_client.egg-info/PKG-INFO
+src/datajudge_client.egg-info/SOURCES.txt
+src/datajudge_client.egg-info/dependency_links.txt
+src/datajudge_client.egg-info/requires.txt
+src/datajudge_client.egg-info/top_level.txt
