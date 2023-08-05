@@ -1,0 +1,1 @@
+from OmidAlgo.AlgorithmTrading_Module import Create_isin_object
