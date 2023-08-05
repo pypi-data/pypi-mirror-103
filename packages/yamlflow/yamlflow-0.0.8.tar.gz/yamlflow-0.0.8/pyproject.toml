@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "yamlflow"
+version = "0.0.8"
+description = "Yet Another ML flow"
+authors = ["Sevak Harutyunyan <sevak.g.harutyunyan@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/sevakharutyunyan/aida"
+classifiers = [
+    'Operating System :: OS Independent',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9'
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "7.*"
+pyyaml= "^5.4.1"
+docker = "^5.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+
+[tool.poetry.scripts]
+yamlflow = 'yamlflow.cli:main'
+
+[tool.poetry.extras]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
