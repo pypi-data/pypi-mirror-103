@@ -1,0 +1,7 @@
+setup.py
+randgif/__init__.py
+randgif.egg-info/PKG-INFO
+randgif.egg-info/SOURCES.txt
+randgif.egg-info/dependency_links.txt
+randgif.egg-info/requires.txt
+randgif.egg-info/top_level.txt
