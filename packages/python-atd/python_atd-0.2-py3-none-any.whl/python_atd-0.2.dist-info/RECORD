@@ -1,0 +1,10 @@
+atd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atd/atd.py,sha256=UR2YXmbdMupezW2KhWmY4bTguOTPN8aafqk0IezuOI8,8344
+atd/atq.py,sha256=gaW5E0ZmRAs57Myqy0ZrQrUR1aK-Yvm3s0j_IUfAGDE,7624
+atd/config.py,sha256=YAOBCSaV1csvV4hXxdR-d9P-tFrNuPK_cVe8ncABKsg,1277
+atd/tests.py,sha256=U5Zv-KzA2aPzeKNxfYrNYRP3HdpTXpMiFB9mRP95kco,4376
+python_atd-0.2.dist-info/LICENSE,sha256=jzOFAReShCNGS2M7SyiBPRTsJJn03CvwXnOWQUU_kPI,1123
+python_atd-0.2.dist-info/METADATA,sha256=VaN_uz-A9tHprObwrgY7yZbb3jkl6C3gSXLHxxCtylU,5061
+python_atd-0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+python_atd-0.2.dist-info/top_level.txt,sha256=kUPKmd1Cje0VGwhN6qZZDDJ4Kc8Lh612xL8kdUOlEGA,4
+python_atd-0.2.dist-info/RECORD,,
