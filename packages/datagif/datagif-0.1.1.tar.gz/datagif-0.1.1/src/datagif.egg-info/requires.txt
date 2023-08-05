@@ -1,0 +1,16 @@
+imageio
+pandas
+seaborn
+matplotlib
+
+[dev]
+IPython
+jupyter
+
+[docs]
+
+[interactive]
+IPython
+jupyter
+
+[test]
