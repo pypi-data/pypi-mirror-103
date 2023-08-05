@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: arspb
+Version: 0.1
+Summary: ARS for PyBullet (Augmented Random Search, with linear and neural network policy
+Home-page: https://github.com/erwincoumans/ARS
+Author: Various
+Author-email: noreply@google.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
