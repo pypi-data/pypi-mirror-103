@@ -1,0 +1,16 @@
+prometheus_client
+requests
+
+[dev]
+cython==0.29.17
+nubium-faust[rocksdb]
+idna<3
+python-schema-registry-client
+pytest
+twine
+
+[faust]
+cython==0.29.17
+nubium-faust[rocksdb]
+idna<3
+python-schema-registry-client
