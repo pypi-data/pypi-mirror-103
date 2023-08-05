@@ -1,0 +1,43 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+
+from botl.bus import Bus
+from botl.evt import Command
+from botl.hdl import Client, cmd
+from botl.irc import Cfg
+from botl.nms import Names
+from botl.obj import cfg
+from botl.trc import exception
+from botl.trm import exec
+from botl.zzz import os, sys
+from botd.tbl import tbl
+
+__version__ = 37
+
+Cfg.channel = "#botd"
+Cfg.nick = "botd"
+
+def ver(event):
+    event.reply("BOTD %s" % __version__)
+
+def main():
+    if "INVOCATION_ID" not in os.environ:
+        print("run this program under systemd.")
+        return
+    Names.tbl(tbl)
+    cfg.name = "botd"
+    c = Client()
+    c.boot("/var/lib/botd/")
+    c.add("ver", ver)
+    cfg.mods = "irc,rss,udp"
+    if cfg.txt:
+        Console.prompt = False
+        e = c.event(cfg.otxt)
+        cmd(c, e)
+        e.wait()
+        return
+    c.start()
+    c.init(cfg.mods)
+    c.wait()
+
+exec(main)
