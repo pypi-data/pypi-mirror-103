@@ -1,0 +1,33 @@
+Metadata-Version: 1.1
+Name: unauthorized-page
+Version: 0.0.2
+Summary: A simple decorator to handle views for authorized sessions
+Home-page: UNKNOWN
+Author: Ankit Kumar
+Author-email: ankitkumar0411@gmail.com
+License: MIT
+Description: @unauthenticated_user(func, 'path')
+        
+        A simple decorator to handle views for authorized sessions.
+        
+        Sample (Django):
+        
+        from django.shortcuts import redirect
+        
+        @unauthenticated_user(redirect, 'home')
+        def some_view(request):
+        
+        
+        Change Log
+        ==========
+        
+        0.0.2 (22/04/2021)
+        ------------------
+        - FIrst release
+Keywords: decorator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

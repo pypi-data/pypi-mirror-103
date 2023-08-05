@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+unauthorized_page/__init__.py
+unauthorized_page.egg-info/PKG-INFO
+unauthorized_page.egg-info/SOURCES.txt
+unauthorized_page.egg-info/dependency_links.txt
+unauthorized_page.egg-info/top_level.txt
