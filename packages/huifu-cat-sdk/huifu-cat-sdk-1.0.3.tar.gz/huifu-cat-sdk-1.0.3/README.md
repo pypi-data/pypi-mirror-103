@@ -1,0 +1,291 @@
+# Cat Client for Python
+
+`pycat` 同时支持 python2 (>=2.7) 和 python3 (>=3.5)。
+
+但这也意味着 `centos6` 默认情况下是不被支持的（因为内置的 python 版本是 2.6.6）。
+
+尽管如此，你仍可以通过升级内置 python 版本或使用 virtualenv 的方式使用 `pycat`。
+
+
+## 安装
+
+### 通过 pip 安装
+
+```bash
+pip install huifu-cat-sdk
+```
+
+### 通过 setuptools 安装
+
+```bash
+python setup.py install
+```
+
+
+## 准备工作
+
+### 启动 cat 客户端前的准备工作
+
+1. 创建 `/data/appdatas/cat` 目录 (这个路径是固定的，所以你可能需要使用 Docker)
+
+    确保你具有这个目录的读写权限。
+
+2. 创建 `/data/applogs/cat` 目录 (可选)
+
+    这个目录是用于存放运行时日志的，这将会对调试提供很大帮助，同样需要读写权限。
+
+3. 创建 `/data/appdatas/cat/client.xml`，内容如下
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="config.xsd">
+    <servers>
+        <server ip="<cat server ip address>" port="2280" http-port="8080" />
+    </servers>
+</config>
+```
+
+> 不要忘记把 **\<cat server IP address\>** 替换成你自己的服务器地址哦！
+
+
+## 初始化
+
+通过下面的代码来初始化 `pycat` ：
+
+```python
+cat.init("appkey")
+```
+
+> appkey 只能包含英文字母 (a-z, A-Z)、数字 (0-9)、下划线 (\_) 和中划线 (-)
+
+
+### 协程模式
+
+由于我们在 `ccat` 中使用 `ThreadLocal` 存储 Transaction 的栈，并用于构建消息树，同时 `pycat` 高度依赖 `ccat`。
+
+因此在协程模式下，如 `gevent`, `greenlet`，由于同一个线程里的线程会交替执行，我们暂不提供消息树功能。
+
+在这些情况下，你需要通过下述代码来关闭消息树功能。
+
+```python
+cat.init("appkey", logview=False)
+```
+
+这样我们就会禁用 ccat 的上下文管理器，从而禁用消息树功能。
+
+**注意：FastAPI 中 async def 定义的路由处理函数和被 Depends 包裹的函数只在主线程中执行，而 def 定义的函数则分别在不同的线程里执行。**
+
+
+### 调试日志
+
+有时你会想要打开调试日志。
+
+注意调试日志会被输出到控制台中。
+
+```python
+cat.init("appkey", debug=True)
+```
+
+
+## Quickstart
+
+```python
+import cat
+import time
+
+cat.init("appkey")
+
+with cat.Transaction("foo", "bar") as t:
+    try:
+        t.add_data("a=1")  # 一般不使用
+    	cat.set_trace_id("trace_id_xxx")  # 设置当前请求TraceId整个，链路唯一id
+        cat.set_attributes({"xxx": "xxx"})  # 上送自定义参数，类型为字典，scope为单个请求
+        cat.set_baggages({"xxx": "xxx"})  # 上送自定义参数，类型为字典，scope为整条链路
+        cat.log_event("hook", "before")  # 基础函数打印信息
+        cat.log_biz_result("code", "msg", "status")  # 打印业务返回信息
+        cat.log_tag_for_api(request.url.path, {"xxx": "xxx"})  # 给当前接口加标签
+        cat.log_tag_for_next_call(request.url.path, {"xxx": "xxx"})  # 给下一个调用的接口加标签
+        # do something
+    except Exception as e:
+        cat.log_exception(e)  # 打印错误日志
+    finally:
+        cat.metric("api-count").log_for_count(quantity)  # 埋点计次
+        cat.metric("api-count").log_for_count_map(quantity, customParams)  # 埋点计次，支持上送自定义参数，类型为字典
+        cat.metric("api-duration").log_for_sum(quantity, customParams)  # sum
+        cat.metric("metric").log_for_avg(quantity, customParams)  # avg
+        cat.log_event("hook", "after")
+
+time.sleep(1)
+```
+
+
+## API List
+
+### Transaction
+
+```python
+t = cat.Transaction("Trans", "t3")
+t.complete()
+```
+
+为了避免忘记关闭 Transaction，我们强烈建议使用 try-finally 代码块包裹 transaction，并在 finally 代码块中执行 complete。
+
+```python
+try:
+	t = cat.Transaction("Trans", "t3")
+finally:
+	t.complete()
+```
+
+我们同时提供了`装饰器`和`上下文管理器`的用法，可以自动关闭 Transaction。
+
+这也是我们推荐的使用方法。
+
+
+#### via decorator
+
+```python
+@cat.transaction("Trans", "T2")
+def test():
+    '''
+    Use with decorator
+    '''
+    cat.log_event("Event", "E2")
+```
+
+如果被装饰的函数出现什么问题，Transaction 的状态会被置为 `FAILED`，并且无论有没有 Exception 被抛出，Transaction 都会被自动关闭。
+
+唯一的问题就是如果使用装饰器模式的话，你拿不到 Transaction 对象。
+
+
+#### via context manager
+
+```python
+with cat.Transaction("Transaction", "T1") as t:
+    cat.log_event("Event", "E1")
+    try:
+        do_something()
+    except Exception:
+        t.set_status(cat.CAT_ERROR)
+    t.add_data("hello world!")
+```
+
+如果在 `with` 管理的上下文中出现了什么问题，Transaction 的状态会被置为 `FAILED`，并且无论有没有 Exception 被抛出，Transaction 都会被自动关闭。
+
+虽然这有些复杂，但你可以拿到 transaction 对象。
+
+
+### Transaction apis
+
+我们提供了一系列 API 来对 Transaction 进行修改。
+
+* add\_data
+* set\_status
+* set\_duration
+* set\_duration\_start
+* set\_timestamp
+* complete
+
+这些 API 可以被很方便的使用，如下代码所示：
+
+```python
+try:
+    trans = cat.Transaction("Trans", "T3")
+    trans.add_data("content")
+    trans.add_data("key", "val")
+    trans.set_status("error")
+    trans.set_duration(500)
+    trans.set_duration_start(time.time() * 1000 - 30 * 1000)
+    trans.set_timestamp(time.time() * 1000 - 30 * 1000)
+finally:
+    # NOTE don't forget to complete the Transaction!
+    trans.complete()
+```
+
+在使用 Transaction 提供的 API 时，你可能需要注意以下几点：
+
+1. 你可以调用 `add_data` 多次，他们会被 `&` 连接起来。
+2. 同时指定 `duration` 和 `durationStart` 是没有意义的，尽管我们在样例中这样做了。
+3. 不要忘记完成 transaction！否则你会得到一个毁坏的消息树以及内存泄漏！
+
+
+### Event
+
+#### cat.log_event
+
+```python
+# Log a event with success status and empty data.
+cat.log_event("Event", "E1")
+
+# The 3rd parameter (status) is optional, default is "0".
+# It can be any of string value.
+# The event will be treated as a "problem" unless the given status == cat.CAT_CUSSESS ("0")
+# which will be recorded in our problem report.
+cat.log_event("Event", "E2", cat.CAT_ERROR)
+cat.log_event("Event", "E3", "failed")
+
+# The 4th parameter (data) is optional, default is "".
+# It can be any of string value.
+cat.log_event("Event", "E4", "failed", "some debug info")
+```
+
+
+#### cat.log_exception
+
+记录一个 Exception
+
+Exception 是一种特殊的 Event，默认情况下，`type = Exception`，`name = exc.__class__.__name__`
+
+由于 Exception 通常出现在 except 代码块中，错误堆栈信息也会被自动收集和上报。
+
+```python
+try:
+    raise Exception("I'm a exception")
+except Exception as e:
+    cat.log_exception(e)
+
+# We will collect error traces automatically in most cases
+# But you can also customize the trace info.
+try:
+    1 / 0
+except Exception as e:
+    cat.log_exception(e, traceback.format_exc())
+
+# Even out of an except block.
+e = Exception("something goes wrong")
+cat.log_exception(e, "customized trace info")
+```
+
+
+#### cat.log_error
+
+记录一个 Error
+
+Error 是一个轻量级的 Exception，默认情况下，`type = Exception`，`name` 通过第一个参数指定。
+
+```python
+# Same as cat.log_event("Exception", "e1")
+cat.log_error("e1")
+
+# Error traces will be collected when you use it in an except block.
+try:
+    1 / 0
+except Exception:
+    cat.log_error("e2")
+
+# customize your own error traces through the 2nd parameter which is optional.
+cat.log_error("e3", "this is my error stack info")
+```
+
+
+### Metric
+
+```python
+# Counter
+cat.metric("metric1").count() # default is 1
+cat.metric("metric1").count(5)
+
+# Duration
+cat.metric("metric2").duration(100)
+cat.metric
+```
