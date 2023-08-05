@@ -1,0 +1,10 @@
+setup.py
+Gaussian_Binomial_dist_SL/Binomialdistribution.py
+Gaussian_Binomial_dist_SL/Gaussiandistribution.py
+Gaussian_Binomial_dist_SL/Generaldistribution.py
+Gaussian_Binomial_dist_SL/__init__.py
+Gaussian_Binomial_dist_SL.egg-info/PKG-INFO
+Gaussian_Binomial_dist_SL.egg-info/SOURCES.txt
+Gaussian_Binomial_dist_SL.egg-info/dependency_links.txt
+Gaussian_Binomial_dist_SL.egg-info/not-zip-safe
+Gaussian_Binomial_dist_SL.egg-info/top_level.txt
