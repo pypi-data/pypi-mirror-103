@@ -1,0 +1,9 @@
+README.md
+setup.py
+pg_sql/__init__.py
+pg_sql/version.py
+pg_sql.egg-info/PKG-INFO
+pg_sql.egg-info/SOURCES.txt
+pg_sql.egg-info/dependency_links.txt
+pg_sql.egg-info/requires.txt
+pg_sql.egg-info/top_level.txt
