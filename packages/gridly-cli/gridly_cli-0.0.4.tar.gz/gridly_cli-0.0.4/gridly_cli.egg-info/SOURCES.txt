@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+gridly_cli/gridly.py
+gridly_cli/gridly_copy.py
+gridly_cli.egg-info/PKG-INFO
+gridly_cli.egg-info/SOURCES.txt
+gridly_cli.egg-info/dependency_links.txt
+gridly_cli.egg-info/entry_points.txt
+gridly_cli.egg-info/requires.txt
+gridly_cli.egg-info/top_level.txt

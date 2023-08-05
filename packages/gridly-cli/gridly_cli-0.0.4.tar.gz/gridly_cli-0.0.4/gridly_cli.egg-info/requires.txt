@@ -1,0 +1,8 @@
+click
+requests
+questionary
+tabulate
+jsonpickle
+PyYAML
+filetype
+polib

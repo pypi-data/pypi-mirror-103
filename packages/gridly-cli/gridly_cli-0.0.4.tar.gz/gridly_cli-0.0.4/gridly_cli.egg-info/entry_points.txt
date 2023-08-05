@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        gridly=gridly_cli.gridly:gridly
+    
