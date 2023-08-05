@@ -1,0 +1,3 @@
+[console_scripts]
+htping = htping.cli:main
+
