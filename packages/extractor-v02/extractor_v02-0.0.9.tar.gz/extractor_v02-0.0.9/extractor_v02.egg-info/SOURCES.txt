@@ -1,0 +1,8 @@
+setup.py
+extractor_v02.egg-info/PKG-INFO
+extractor_v02.egg-info/SOURCES.txt
+extractor_v02.egg-info/dependency_links.txt
+extractor_v02.egg-info/requires.txt
+extractor_v02.egg-info/top_level.txt
+tool/__init__.py
+tool/ext.py
