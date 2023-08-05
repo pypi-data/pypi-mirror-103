@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+radu/__init__.py
+radu.egg-info/PKG-INFO
+radu.egg-info/SOURCES.txt
+radu.egg-info/dependency_links.txt
+radu.egg-info/top_level.txt
