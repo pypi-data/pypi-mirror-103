@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: rarecrowds
+Version: 0.0.3
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX
+Requires-Dist: pandas (==1.0.5)
+Requires-Dist: azure-storage-blob (==12.8.0)
+Requires-Dist: protobuf (==3.15.7)
+Requires-Dist: tqdm (==4.47.0)
+Requires-Dist: networkx (==2.5.1)
+Requires-Dist: pronto (==2.4.1)
+Requires-Dist: plotly (==4.14.3)
+Requires-Dist: pydot (==1.4.2)
+
+UNKNOWN
+
+
