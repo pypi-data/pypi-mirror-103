@@ -1,0 +1,11 @@
+labelocr/__init__.py,sha256=S_ixKgd3uONL7ilN4nPD6ilWz31V_-w9Rrb0mbP5jjk,303
+labelocr/label_ocr.ui,sha256=Qakx--Xejixp6wtfYZwRTzZo7JsDgnvs5tHOj_TMVVE,14445
+labelocr/labelocrapp.py,sha256=g_RETqY_gnVyXp7n7tJ-bireXBgPDmv_WLM1OkP_hFA,12976
+labelocr/verify_ocr_app.py,sha256=MUeFpKBbQTpFCAa5CdVedjwypfQO7UlFmKnxnWPX54w,2512
+labelocr/icons/icon.png,sha256=ue8QkSKAbD3grsGqsAipdmynYyCJchSXoo3YJcCvh0w,473
+labelocr-1.0.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+labelocr-1.0.8.dist-info/METADATA,sha256=uwK0Haw-pN-qcLAWG-5eEuwJtOMuNFC2HteALXM7NYc,584
+labelocr-1.0.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+labelocr-1.0.8.dist-info/entry_points.txt,sha256=btdq05vgzSVcIVW7l-klAlvkXiMGbNv-mXSDfHNoEqs,56
+labelocr-1.0.8.dist-info/top_level.txt,sha256=R4Hn3vEQEbphwifnE66D57EGFq2YUkANPrI7f5YpFe4,9
+labelocr-1.0.8.dist-info/RECORD,,
