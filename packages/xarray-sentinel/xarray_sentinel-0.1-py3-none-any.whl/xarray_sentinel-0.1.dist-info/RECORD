@@ -1,0 +1,11 @@
+xarray_sentinel/__init__.py,sha256=WEU7W470zxntgheJ-NNYWHAbdNWNPSBBzhisoHzUFCQ,915
+xarray_sentinel/conventions.py,sha256=cEfjmj2lnPE4o_HyziqHyqnHnjb0yU9XIT_FQ3ftn80,3792
+xarray_sentinel/esa_safe.py,sha256=iaelDH9Nir4lNmrfy1G-BQNMT8DRPyIo9YRQpoPHZAo,10858
+xarray_sentinel/sentinel1.py,sha256=LinNMna0bpiZXDzglNH1b7yM7yCf-RoAR-1vZZXbba0,11957
+xarray_sentinel/version.py,sha256=9GOzx5ZWFMRVaU0ymArOnFsKeCsduNb59xPoVjzuTJo,67
+xarray_sentinel-0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+xarray_sentinel-0.1.dist-info/METADATA,sha256=ulvV0EvBNMjFKhs2zfre908nI-5aBSqXs4ibCqx755A,8303
+xarray_sentinel-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+xarray_sentinel-0.1.dist-info/entry_points.txt,sha256=xSykcgQEeGTDZLeJyX-6ujen5mScfoL1cT04KdL4m90,75
+xarray_sentinel-0.1.dist-info/top_level.txt,sha256=09MUQ9Vp4FHfMsnIzM2ub6PVsi7g4UaXAOCgoAJ7vlc,16
+xarray_sentinel-0.1.dist-info/RECORD,,
