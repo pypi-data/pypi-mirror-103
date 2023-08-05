@@ -1,0 +1,10 @@
+numpy
+redis
+confluent_kafka==1.5.0
+lz4
+blosc
+ffmpeg-python
+natsort
+attrdict
+PyTurboJPEG
+opencv-python
