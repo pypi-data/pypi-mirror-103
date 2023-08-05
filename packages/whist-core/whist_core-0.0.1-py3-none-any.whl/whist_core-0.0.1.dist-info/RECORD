@@ -1,0 +1,11 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/whist/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/whist/test_card.py,sha256=ouyOtmm4Zb-t3GR2y6JqRlG7AIUklLKnBMJi67mNgLQ,456
+whist/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whist/card.py,sha256=GUqfk0CTvF1f8thtLDexDYoZNNm1sccOr7kj-4mdTPA,4686
+whist/deck.py,sha256=NwIpCGNYrTu3qmt_krr3BhA5z4K_f4RQigIc6CQ91tE,2148
+whist_core-0.0.1.dist-info/LICENSE,sha256=MVzJW2zucob4D8el7f0fNjgibUYHj_SqQj_OGJcD5tE,1067
+whist_core-0.0.1.dist-info/METADATA,sha256=YFaFgiDF9jpm7glcDle21ZhEEH6kr0SOtK8bLHGVBCQ,540
+whist_core-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+whist_core-0.0.1.dist-info/top_level.txt,sha256=RCOE0TUfQAOgNrLTV8ahXEpAUDw3MfgdfhM9W4mWOvk,12
+whist_core-0.0.1.dist-info/RECORD,,
