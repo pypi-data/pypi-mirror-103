@@ -1,0 +1,9 @@
+setup.py
+colors/__init__.py
+colors/core.py
+colors/main.py
+random_color_otus.egg-info/PKG-INFO
+random_color_otus.egg-info/SOURCES.txt
+random_color_otus.egg-info/dependency_links.txt
+random_color_otus.egg-info/entry_points.txt
+random_color_otus.egg-info/top_level.txt
