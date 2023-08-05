@@ -1,0 +1,9 @@
+multiscalemnist/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+multiscalemnist/cli.py,sha256=rvJIjQ26nyY2KKRboS5uEz4LUU2b1jzLmAmhXoT2aXg,830
+multiscalemnist/config.py,sha256=REVuge-CvaK9ubbuGaH0BgbQJft643tJrfgI5OI_n3E,967
+multiscalemnist/generate.py,sha256=PfVmAYO7dB9kTzLfFdg0r4mRbe9zUHhd3pEmQ-MTzMo,14160
+multiscalemnist/mnist.py,sha256=j2agjiRcf7Qks-CvE-GFBZ7pjT_zZDk-kL-miyqSckE,2973
+multiscalemnist-0.8.0.dist-info/entry_points.txt,sha256=h4pwM4nLyuylNsprxBtCG8syTIdChlG3z0_ppYKN9iY,60
+multiscalemnist-0.8.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+multiscalemnist-0.8.0.dist-info/METADATA,sha256=fGGVs4Roip3zjZ1sxu5PhAPfkIyI96QR62R5QJu3mBA,591
+multiscalemnist-0.8.0.dist-info/RECORD,,
