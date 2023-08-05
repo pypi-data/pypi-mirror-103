@@ -1,0 +1,34 @@
+[project]
+name = "tinkertown-technician"
+version = "0.2.1"
+description = "Tinkertown Technician -- Battlecry: Fix your Heartstone Deck Tracker"
+readme = "README.md"
+dependencies = [ "requests", "typer", "watchdog", "psutil~=5.8", "toml~=0.10",]
+requires-python = ">=3.7"
+dynamic = [ "classifiers",]
+dev-dependencies = [ "flake8", "isort", "mypy", "pre-commit", "pytest", "pytest-cov", "setproctitle~=1.2",]
+[[project.authors]]
+name = "Chris Wesseling"
+email = "chris.wesseling@xs4all.nl"
+
+[build-system]
+requires = [ "pdm-pep517",]
+build-backend = "pdm.pep517.api"
+
+[project.license]
+text = "GPL-3.0-or-later"
+
+[project.urls]
+homepage = "https://github.com/CharString/tinkertown-technician"
+
+[project.scripts]
+ttt = "tinkertown.__main__:app"
+
+[tool.pdm]
+[[tool.pdm.source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[tool.pdm.scripts.dev]
+shell = "pdm install --dev && pdm run pre-commit install -t pre-commit && pdm run pre-commit install -t pre-push"
