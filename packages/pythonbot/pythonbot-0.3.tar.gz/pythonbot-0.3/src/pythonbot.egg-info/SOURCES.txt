@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/pythonbot/Client.py
+src/pythonbot/Message.py
+src/pythonbot/__init__.py
+src/pythonbot.egg-info/PKG-INFO
+src/pythonbot.egg-info/SOURCES.txt
+src/pythonbot.egg-info/dependency_links.txt
+src/pythonbot.egg-info/top_level.txt
