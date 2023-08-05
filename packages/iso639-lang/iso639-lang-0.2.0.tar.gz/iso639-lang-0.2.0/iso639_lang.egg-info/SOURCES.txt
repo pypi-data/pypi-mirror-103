@@ -1,0 +1,14 @@
+README.md
+setup.py
+iso639/ISO-639-2_utf-8.txt
+iso639/__init__.py
+iso639/exceptions.py
+iso639/iso-639-3-macrolanguages.tab
+iso639/iso-639-3.tab
+iso639/iso639-5.tsv
+iso639/iso639.py
+iso639/mapping.py
+iso639_lang.egg-info/PKG-INFO
+iso639_lang.egg-info/SOURCES.txt
+iso639_lang.egg-info/dependency_links.txt
+iso639_lang.egg-info/top_level.txt
