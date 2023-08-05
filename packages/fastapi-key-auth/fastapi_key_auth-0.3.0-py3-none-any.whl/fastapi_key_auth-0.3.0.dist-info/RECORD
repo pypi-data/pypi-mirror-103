@@ -1,0 +1,5 @@
+fastapi_key_auth/__init__.py,sha256=ZILC22JghQHBv3nhWwUQ6GTgID9zF48Eq5RIh75EedM,45
+fastapi_key_auth/authorizer.py,sha256=VM4eR2Xs-BCvvq1JU01jaxMpGQK5mq8IEZpNLQkjn1s,1854
+fastapi_key_auth-0.3.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+fastapi_key_auth-0.3.0.dist-info/METADATA,sha256=LOeWdKeiyps79O5aXh75lTCWclQJ0LgQoa_b7sraG0A,1071
+fastapi_key_auth-0.3.0.dist-info/RECORD,,
