@@ -1,0 +1,7 @@
+numpy
+scikit-learn
+ipyleaflet
+folium
+pyshp
+whitebox
+ipyfilechooser
