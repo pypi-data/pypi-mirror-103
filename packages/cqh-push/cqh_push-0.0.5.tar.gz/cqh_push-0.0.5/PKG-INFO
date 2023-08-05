@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: cqh_push
+Version: 0.0.5
+Summary: get current branch and git push origin ${bransh} 
+Home-page: https://github.com/chen19901225/cqh_tail
+Author: chenqinghe
+Author-email: 1832866299@qq.com
+License: UNKNOWN
+Description: cqh_push
+        =============================================
+        
+        
+        get current git branch, and call `git push origin ${branch}`
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Requires-Python: >=3.6
