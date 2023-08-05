@@ -1,0 +1,7 @@
+source_aggregation/__init__.py,sha256=XhwvJFYWFgC5_ge1Q0m6z5ux0qjIg3dFFilOiZZPCJY,77
+source_aggregation/client.py,sha256=zyLgBbEInkehY0hfbUZJTZYpp0pdBJSd1QvF0GGQJxY,5657
+source_aggregation/utils.py,sha256=PVPD1-OOw9kkg7FhaDMW8coS0t7ngQsqNpsaWLe19y4,601
+source_aggregation-0.2.0.dist-info/METADATA,sha256=fWH2jqBt397-bxJ6-O9nBCpJtH7AV7ftkhzMxiLY13Y,986
+source_aggregation-0.2.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+source_aggregation-0.2.0.dist-info/top_level.txt,sha256=9Dl1AtOwPmq6qMHc9d0pNTvcl1f8oB54RCskUzG_nkw,19
+source_aggregation-0.2.0.dist-info/RECORD,,
