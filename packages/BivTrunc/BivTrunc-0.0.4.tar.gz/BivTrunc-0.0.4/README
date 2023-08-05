@@ -1,0 +1,5 @@
+python setup.py sdist bdist_wheel
+
+~/anaconda3/bin/twine upload --skip-existing dist/*
+
+pip install 'BivTrunc==0.0.2'
