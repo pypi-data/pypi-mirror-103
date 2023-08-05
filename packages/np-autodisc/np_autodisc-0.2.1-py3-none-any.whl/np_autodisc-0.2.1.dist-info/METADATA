@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: np-autodisc
+Version: 0.2.1
+Summary: A revamp of np_autodiscovery to bring it up to date for Netbox 2.10.6
+Home-page: https://github.com/Majik0327/np_autodisc
+Author: Majik
+Author-email: MMajik@BlackWillow.com
+License: Apache 2.0
+Platform: UNKNOWN
+Requires-Dist: napalm
+Requires-Dist: django-rq
+
+Built from an old one by John Anderson, lampwins@gmail.com, hosted at https://github.com/lampwins/np_autodiscovery
+
+
