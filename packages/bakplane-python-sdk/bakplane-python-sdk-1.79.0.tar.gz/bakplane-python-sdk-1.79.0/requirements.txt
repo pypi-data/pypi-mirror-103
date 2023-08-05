@@ -1,0 +1,15 @@
+grpcio
+grpcio-tools
+protobuf
+SQLAlchemy
+sqlalchemy-redshift
+psycopg2-binary
+pyfarmhash
+boto3
+dominus-python-sdk
+click
+pandas
+cachetools
+python-stdnum
+sortedcontainers
+certifi
