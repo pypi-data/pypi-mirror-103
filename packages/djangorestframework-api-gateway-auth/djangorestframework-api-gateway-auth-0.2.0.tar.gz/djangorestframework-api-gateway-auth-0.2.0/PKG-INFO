@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: djangorestframework-api-gateway-auth
+Version: 0.2.0
+Summary: Provides DRF auth classes that are ultimately backed by API Gateway
+Home-page: https://github.com/Kicksaw-Consulting/djangorestframework-api-gateway-auth
+Keywords: django,djangorestframework,drf,aws,apigateway
+Author: Alex Drozd
+Author-email: alex@kicksaw.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: boto3 (>=1.17.51,<2.0.0)
+Requires-Dist: djangorestframework (>=3.12.4,<4.0.0)
+Project-URL: Repository, https://github.com/Kicksaw-Consulting/djangorestframework-api-gateway-auth
+Description-Content-Type: text/markdown
+
+# Installation
+
+```
+pip install djangorestframework-api-gateway-auth
+```
+
+Or with poetry
+
+```
+poetry add djangorestframework-api-gateway-auth
+```
+
+# Usage
+
+## BasicApiGatewayApiKeyAuth
+
+```python
+from djangorestframework_api_gateway_auth import BasicApiGatewayApiKeyAuth
+
+@authentication_classes([BasicApiGatewayApiKeyAuth])
+def endpoint(request: HttpRequest):
+    # ...
+```
+
+This authenticator reads basic auth and ensures the username and password
+match an API Gateway key
+
+```
+curl -u username:password -v localhost:8000/api/your/endpoint
+```
+
+Where `username` is the name of your API key and `password` is the API key
+
