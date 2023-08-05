@@ -1,0 +1,3 @@
+[console_scripts]
+sportbot=sportbot.main:main
+
