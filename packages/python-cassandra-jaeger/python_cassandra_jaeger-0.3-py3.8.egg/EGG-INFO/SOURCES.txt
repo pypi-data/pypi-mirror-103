@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+python_cassandra_jaeger/__init__.py
+python_cassandra_jaeger.egg-info/PKG-INFO
+python_cassandra_jaeger.egg-info/SOURCES.txt
+python_cassandra_jaeger.egg-info/dependency_links.txt
+python_cassandra_jaeger.egg-info/requires.txt
+python_cassandra_jaeger.egg-info/top_level.txt
