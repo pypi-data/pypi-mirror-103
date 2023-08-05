@@ -1,0 +1,12 @@
+npx/__about__.py,sha256=jgA6YP1oQgGD0Zp70Cvx-mAYruyKDduiE6d4efsbHVw,213
+npx/__init__.py,sha256=kE3kRQEK98fvsYumZ7BAnAQ6pHj8wcIE5V2pJO63ghU,434
+npx/_krylov.py,sha256=OOqdzRMhFVNQznDc5FWKPflBYqKL9ZTL9VW1lQITCFw,3564
+npx/_main.py,sha256=1SUDU_UzYE93BUHorBhwQU-xLFUxARWI_ApiGMSF2EQ,3210
+npx/_minimize.py,sha256=v_uKlfZBUyC5cj37EfSl2upEWfYK9DhQtSOSsVGf9GQ,605
+npx/_nonlinear.py,sha256=3LmecJ9WG4AXsyji54k2mpl8T7hqbcNfIEqLZgiLOZA,2133
+npx-0.0.9.dist-info/LICENSE,sha256=qK0Tvvh4K_hzFHSIfQNeJWmPBFqTUWHXYR9odaFiakA,1081
+npx-0.0.9.dist-info/METADATA,sha256=A60S1e3AfoGVyNkmoXOoGomL4vMol3Iymvb8_onuJM0,4632
+npx-0.0.9.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+npx-0.0.9.dist-info/entry_points.txt,sha256=RWg1EbtP-yZJXOocfpPmi8Ew8qa1w0SjM2jks9Xgm0I,43
+npx-0.0.9.dist-info/top_level.txt,sha256=kRA5VR0UB5zE1F7hWACUv7CctxTByEJGfBiuNSOoBKc,4
+npx-0.0.9.dist-info/RECORD,,
