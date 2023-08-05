@@ -1,0 +1,9 @@
+README.md
+setup.py
+shs_identification/__init__.py
+shs_identification/shs_identification.py
+shs_identification.egg-info/PKG-INFO
+shs_identification.egg-info/SOURCES.txt
+shs_identification.egg-info/dependency_links.txt
+shs_identification.egg-info/requires.txt
+shs_identification.egg-info/top_level.txt
