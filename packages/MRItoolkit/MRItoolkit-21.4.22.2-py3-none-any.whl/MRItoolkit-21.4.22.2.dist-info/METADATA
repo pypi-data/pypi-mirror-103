@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: MRItoolkit
+Version: 21.4.22.2
+Summary: This package provides useful tools for MRI reconstruction in python
+Home-page: https://gitlab.com/nahardani.ali/python_recons_medphys/
+Author: Ali Nahardani
+Author-email: nahardani.ali@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: nbconvert
+Requires-Dist: notebook
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: more-itertools
+Requires-Dist: mpld3
+Requires-Dist: pynufft
+Requires-Dist: scikit-image
+Requires-Dist: sigpy
+Requires-Dist: napari[all]
+
+# MRItoolkit
+
+</p> A framework to read Bruker PV6.01 MRI rawdata and reconstrcut in python </p>
+
+## Quick install
+
+The installation might take a while to install package dependencies. You can install MRItoolkit via pip: 
+
+> pip install MRItoolkit
+
+## Required packges (manual installation)
+
+> pip install MRItoolkit nbconvert notebook numpy pandas matplotlib scipy more-itertools mpld3 pynufft scikit-image sigpy napari[all]
+
+## Developement Team
+
+* M.Sc. Ali Nahardani, (nahardani.ali@gmail.com) (1)
+* PD. Dr. Verena Hoerr (1,2)
+
+1) Medical Physics Group, Institute of Diagnostic and Interventional Radiology, University Hospital Jena, Jena, Germany
+2) Clinic for Radiology, University Hospital Muenster, Muenster, Germany
+
+
