@@ -1,0 +1,15 @@
+netkiller_logging-0.0.5.data/data/etc/auditlog.ini,sha256=pwQ9RUyu4j7b7NMxrkKGTbPtCKpdN3_zLuSThmbqyV8,372
+netkiller_logging-0.0.5.data/data/etc/cisco.conf,sha256=bsOCxyy-iMWJ1NpNg8_WRcdHGBWWvT22SXuAM2QAgUw,62
+netkiller_logging-0.0.5.data/data/etc/logging.ini,sha256=zWbmu-2eGc2UeRLFmHP5K73MGYyky62bFt_dOrT4Zjs,264
+netkiller_logging-0.0.5.data/data/libexec/route.exp,sha256=7yxV7WF-3S-JkawLQMo-1jnmBZY7FYfDasxbKslsyeA,918
+netkiller_logging-0.0.5.data/data/libexec/switch.exp,sha256=Rrq8-LY_GYgj7_kWFueJQHeffBPf61iIKOdAoubTDQg,584
+netkiller_logging-0.0.5.data/data/share/dmesg.reg,sha256=QSQHOd_p68FqGhDslGKGnPi-rU8sToWYYSvGxoCuiL0,19
+netkiller_logging-0.0.5.data/scripts/auditlog,sha256=fe-5YKBfUAaHMueGFV_hDIKe-HD4Bfdnw7BKEv-uNWU,7172
+netkiller_logging-0.0.5.data/scripts/cisco,sha256=KANNq6zUMDPKOUfGRcJM7WfeFeMhnRKjHC2Flj_RRcg,2531
+netkiller_logging-0.0.5.data/scripts/collection,sha256=OYCmnUBeGAJAzfi36doUALVRpl8WoXWloy5Kcmawu-Y,3870
+netkiller_logging-0.0.5.data/scripts/rlog,sha256=xHwU1G8La84B1FP5v4pI2jgJY1a90m4VBH1aAcP8Dt8,6366
+netkiller_logging-0.0.5.dist-info/LICENSE,sha256=Nv_Z3AhdUpp-YOEnbXOuWgMLAgMT5sVAhZOmrirzlnM,6555
+netkiller_logging-0.0.5.dist-info/METADATA,sha256=nIlXCpNp0_E79GB35ZfVGctXHbarBQ5YYPgsNVHOyXs,3482
+netkiller_logging-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+netkiller_logging-0.0.5.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+netkiller_logging-0.0.5.dist-info/RECORD,,
