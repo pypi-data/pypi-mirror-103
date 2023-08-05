@@ -1,0 +1,7 @@
+setup.py
+HandTracking/__init__.py
+HandTracking.egg-info/PKG-INFO
+HandTracking.egg-info/SOURCES.txt
+HandTracking.egg-info/dependency_links.txt
+HandTracking.egg-info/requires.txt
+HandTracking.egg-info/top_level.txt
