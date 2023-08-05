@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+README.rst
+setup.cfg
+setup.py
+scraping_link/__init__.py
+scraping_link/scrapinglink.py
+scraping_link.egg-info/PKG-INFO
+scraping_link.egg-info/SOURCES.txt
+scraping_link.egg-info/dependency_links.txt
+scraping_link.egg-info/requires.txt
+scraping_link.egg-info/top_level.txt
