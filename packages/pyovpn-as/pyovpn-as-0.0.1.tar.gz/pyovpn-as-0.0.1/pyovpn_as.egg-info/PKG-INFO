@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pyovpn-as
+Version: 0.0.1
+Summary: A Python library built on XML-RPC that demystifies remote interaction with OpenVPN Access Server
+Home-page: https://github.com/ryanharrison554/pyovpn-as
+Author: Ryan Harrison
+Author-email: ryanharrison.opensource@protonmail.com
+License: GPL
+Download-URL: https://github.com/ryanharrison554/pyovpn-as/archive/v_0_0_1.tar.gz
+Description: README.md
+Keywords: OpenVPN,AccessServer,Access Server,XML-RPC
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
