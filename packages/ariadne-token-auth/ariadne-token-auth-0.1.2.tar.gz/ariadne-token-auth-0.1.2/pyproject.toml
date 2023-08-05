@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "ariadne-token-auth"
+version = "0.1.2"
+description = "A django app to implement token based authentication in Ariadne GraphQL"
+authors = ["IgnisDa <ignisda2002@gmail.com>",]
+readme = "README.md"
+license = "Apache-2.0"
+homepage = "https://github.com/IgnisDa/ariadne-token-auth"
+repository = "https://github.com/IgnisDa/ariadne-token-auth"
+classifiers = [
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = "^3.6.1"
+Django = "^3.0"
+ariadne = ">=0.12.0"
+
+[tool.poetry.dev-dependencies]
+pytest-cov = "^2.10.1"
+pytest-flake8 = "^1.0.6"
+pytest = "^6.1.2"
+flake8 = "^3.8.4"
+commitizen = "^2.10.0"
+pytest-django = "^4.1.0"
+httpie = "^2.3.0"
+black = {version = "^20.8b1", allow-prereleases = true}
+mypy = "^0.800"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 89
