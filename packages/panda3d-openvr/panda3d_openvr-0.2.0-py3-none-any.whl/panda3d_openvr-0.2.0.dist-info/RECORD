@@ -1,0 +1,11 @@
+p3dopenvr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+p3dopenvr/definitions.py,sha256=aZByUvnXSadmS4DhtCoWS3RmyT1_ND9zc7ABBV5ibxM,701
+p3dopenvr/hand.py,sha256=PD9oeQ98nQgFbtMS7B522wACK81GOQQZRjpZDgMpnMk,2746
+p3dopenvr/p3dopenvr.py,sha256=raNTUT-wiU8WqJ3elcLUHfZC0hhTClvopyjat93a2eg,37760
+p3dopenvr/skeleton.py,sha256=XAARAW1zb52wbNYG1qnP7J-u3iWhcsUdeKHdoyP5VtI,5853
+p3dopenvr/version.py,sha256=FVHPBGkfhbQDi_z3v0PiKJrXXqXOx0vGW_1VaqNJi7U,22
+panda3d_openvr-0.2.0.dist-info/LICENSE.txt,sha256=70kiwjfcMQH8W8nvwgvqXKRNCpg8WVH132JUVq2eTbQ,1517
+panda3d_openvr-0.2.0.dist-info/METADATA,sha256=_JzQ6ziefda2YqcQOuLPHxaf5-sz_JYdQ0bqLlGSctU,4111
+panda3d_openvr-0.2.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+panda3d_openvr-0.2.0.dist-info/top_level.txt,sha256=70NTxaztAtXjs0MqGYw0KPBuBn461Tj6tvrA9OEofpk,10
+panda3d_openvr-0.2.0.dist-info/RECORD,,
