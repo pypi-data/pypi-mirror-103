@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+requirements.txt
+requirements_dev.txt
+setup.cfg
+setup.py
+mediamaker/__init__.py
+mediamaker/movie_maker.py
+mediamaker/version.py
+mediamaker.egg-info/PKG-INFO
+mediamaker.egg-info/SOURCES.txt
+mediamaker.egg-info/dependency_links.txt
+mediamaker.egg-info/requires.txt
+mediamaker.egg-info/top_level.txt
