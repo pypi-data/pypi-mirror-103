@@ -1,0 +1,14 @@
+apyk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apyk/functions.py,sha256=qR7YFSs9UW0hjey5XOtTeEdRcO-pzr0Ea1x6S6S7L5A,2107
+apyk/icon.ico,sha256=oPVhe21FWYE_jaPoJ9uJXi47RERC_7fX8plQCu6eZb4,121886
+apyk/test.global.py,sha256=LE_rkHVQ6Sfn1ad5v0lRFiH5XTLZWVOFeNoMC7RynRU,45
+apyk/test.thread.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apyk/ui_backupscreen.py,sha256=QeR5Evk6cER6bSFUbdvfbz-6nHmnkiklfUqgOeeCZM0,5806
+apyk/ui_main.py,sha256=yCTvQLJLg6VeazvOT5FL02nbCnPdismQuWbgd98OJNA,7913
+apyk/win_main.py,sha256=SV3xGCgkMLdD0D29IH8w2GWJv4kJbAvLppRMfR8OMYw,11349
+APyK-0.0.2.dist-info/LICENSE,sha256=ZKEPDBJhLc6tTDP1UnqnLnt_qwLZbQoR7o1lRSDN6gQ,1091
+APyK-0.0.2.dist-info/METADATA,sha256=QCQJfdkHljxV3NGHbtIj6e3zo24XTQvwm-7pcb8eUzI,5841
+APyK-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+APyK-0.0.2.dist-info/entry_points.txt,sha256=RiBJEkfKsDkWfqUUoBIttegOJXGeM3geB4YrS5LoTpo,45
+APyK-0.0.2.dist-info/top_level.txt,sha256=ys3DBorPnBoz6OkTQVm4iicca3Bcezj4Ylsn456b6Ik,5
+APyK-0.0.2.dist-info/RECORD,,

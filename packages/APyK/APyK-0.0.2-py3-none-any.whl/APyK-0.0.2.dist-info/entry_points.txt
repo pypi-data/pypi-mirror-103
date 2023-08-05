@@ -1,0 +1,3 @@
+[console_scripts]
+apyk = apyk.win_main:main
+
