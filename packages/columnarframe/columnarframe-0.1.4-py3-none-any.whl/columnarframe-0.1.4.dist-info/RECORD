@@ -1,0 +1,9 @@
+columnarframe/__init__.py,sha256=wfSlqDoPCDtBDBKQ-cEg3OQOLT-GcOEf8PYiBahUBTo,103
+columnarframe/column.py,sha256=eckC0Yc_bz7cVS595HR4vPYo97c082MPTTuJGUWam98,894
+columnarframe/frame.py,sha256=kvqLcGuIoOQb1M7-WDhbfLO6WAKMP9VaYYufyL3DcMg,2021
+columnarframe/read_csv.py,sha256=Y9m89LLR9DRJ_2kAo5p4TELNtJjXKff7K8GxatiSrD4,1354
+columnarframe/read_excel.py,sha256=-LZE2291n46MffAWzT_HQlNucTi-5j5LgCpUOtF0Pfk,87
+columnarframe-0.1.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+columnarframe-0.1.4.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+columnarframe-0.1.4.dist-info/METADATA,sha256=2sS1nDJJxaZozYjhmcvu4xlJlxfnkfR9vB8yL-ApQB8,412
+columnarframe-0.1.4.dist-info/RECORD,,
