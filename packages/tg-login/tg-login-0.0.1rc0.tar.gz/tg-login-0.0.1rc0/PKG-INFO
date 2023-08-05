@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: tg-login
+Version: 0.0.1rc0
+Summary: A command line tool to login into Telegram with user or bot accounts.
+License: MIT
+Author: aahnik
+Author-email: daw@aahnik.dev
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Telethon (>=1.21.1,<2.0.0)
+Requires-Dist: python-dotenv (>=0.17.0,<0.18.0)
+Requires-Dist: typer (>=0.3.2,<0.4.0)
+Description-Content-Type: text/markdown
+
+# tg-login
+
+A command line tool to login into Telegram with user or bot accounts.
+
+## Why
+
+Why the need of a seperate tool like `tg-login` ?
+
+## Installation
+
+```shell
+pip install tg-login
+```
+
+## Usage
+
+```shell
+Usage: tg-login [OPTIONS]
+
+  A command line tool to login into Telegram with user or bot accounts.
+
+Options:
+  -v, --version  Show version and exit.
+  --help         Show this message and exit.
+```
+
+The `API_ID` ,`API_HASH`, `BOT_TOKEN`, `PHONE_NO`, can be passed as CLI options, or can be set as environment variables.
+
+Provide either `BOT_TOKEN` or `PHONE_NO`. If both are found, `tg-login` will use the bot account.
+
+`tg-login` by default generates the session string and saves it in your Telegram's Saved Messages.
+
+If the `--session=file` option is provided, it will generated a session file.
+
+## Projects using `tg-login`
+
+- [tgcf](https://github.com/aahnik/tgcf)
+
+Open a PR to add your project here!
+
+## Credits
+
+Made with Telethon.
+
