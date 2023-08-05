@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: hestia-earth-models
+Version: 0.1.1
+Summary: Hestia's set of modules for filling gaps in the activity data using external datasets (e.g. populating soil properties with a geospatial dataset using provided coordinates) and internal lookups (e.g. populating machinery use from fuel use). Includes rules for when gaps should be filled versus not (e.g. never gap fill yield, gap fill crop residue if yield provided etc.).
+Home-page: https://gitlab.com/hestia-earth/hestia-engine-models
+Author: Hestia Team
+Author-email: guillaumeroyer.mail@gmail.com
+License: GPL
+Description: # Hestia Engine Models
+        
+        Hestia's set of models for running calculations or retrieving data using external datasets and internal lookups.
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
