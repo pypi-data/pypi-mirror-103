@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: censys-maltego
+Version: 2.0.0b1
+Summary: This package provides an interface into Censys from Maltego.
+Home-page: UNKNOWN
+Author: Censys Team
+Author-email: support@censys.io
+License: Apache License, Version 2.0
+Project-URL: Censys Homepage, https://censys.io/
+Project-URL: Changelog, https://github.com/censys/censys-maltego/releases
+Project-URL: Tracker, https://github.com/censys/censys-maltego/issues
+Project-URL: Source, https://github.com/censys/censys-maltego
+Description: 
+        # Censys Maltego Integration
+        
+        <!-- [![PyPI](https://img.shields.io/pypi/v/censys_maltego?color=orange)](https://pypi.org/project/censys_maltego/) -->
+        [![Python Version](https://img.shields.io/badge/python-3.6%2B-blue)](https://www.python.org/downloads/)
+        [![License](https://img.shields.io/github/license/censys/censys-maltego)](LICENSE)
+        [![Code Style](https://img.shields.io/badge/code%20style-black-000000)](https://github.com/psf/black)
+        [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+        
+        Welcome to Censys transforms for Maltego! Now you can use Censys data to easily perform investigations, quickly search or discover assets, and evaluate your company's digital asset risk by identifying server misconfigurations and rogue services.
+        
+        ## Install
+        
+        Installation requires a few pre-requisites:
+        
+        - You will need a [Censys account](https://censys.io/register) and [API Key](https://censys.io/account/api)
+        - A working instance of [Maltego](https://www.maltego.com/downloads/). Any supported version will work, but the CE edition is limited in how many results can be returned to the graph.
+        - A working python3 installation. [Python 3.6+](https://www.python.org/downloads/) is currently supported.
+        
+        ```bash
+        $ pip install censys_maltego
+        $ canari create-profile censys_maltego
+        ...
+        Successfully created censys_maltego.mtz. You may now import this file into Maltego.
+        
+        INSTRUCTIONS:
+        -------------
+        1. Open Maltego.
+        2. Click on the home button (Maltego icon, top-left corner).
+        3. Click on 'Import'.
+        4. Click on 'Import Configuration'.
+        5. Follow prompts.
+        6. Enjoy!
+        ```
+        
+        Edit `~/.canari/censys_maltego.conf` to include your Censys API ID and Secret. Alternatively you can configure your Censys credentials with the `censys config` command.
+        
+        ## Resources
+        
+        - [Censys Homepage](https://censys.io/)
+        - [Source](https://github.com/censys/censys-maltego)
+        - [Issue Tracker](https://github.com/censys/censys-maltego/issues)
+        
+        ## Contributing
+        
+        All contributions (no matter how small) are always welcome.
+        
+        ## License
+        
+        This software is licensed under [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)
+        
+        - Copyright (C) 2021 Censys, Inc.
+        
+Keywords: censys,search,maltego
+Platform: UNKNOWN
+Classifier: Topic :: Internet
+Classifier: Topic :: Security
+Classifier: Topic :: Internet :: WWW/HTTP :: Indexing/Search
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Framework :: Flake8
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Provides-Extra: dev
