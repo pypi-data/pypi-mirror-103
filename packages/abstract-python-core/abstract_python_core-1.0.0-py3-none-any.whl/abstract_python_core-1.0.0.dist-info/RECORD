@@ -1,0 +1,9 @@
+python_core/__init__.py,sha256=t6ftvb8FX5xVi0sfRVW3dGfarNpx4agSjNIP-RSDhI4,37
+python_core/python_core.py,sha256=hTaI_tQiNLeA4_9UQ4Qs0w4gmKBU1lKQFLzdziZmMww,1939
+python_core/exceptions/__init__.py,sha256=VmV_R42whw71U0__d74NXgQMQynI0-ThZ0jQcMPK3hU,59
+python_core/exceptions/exceptions.py,sha256=5U1CnCKZP9MhvzUyj8EoVfka6N0KUZIy7IvBSx6E4l8,2473
+abstract_python_core-1.0.0.dist-info/LICENSE,sha256=B5oPlZrxTCydWh5D9XsJdOHW-PD01GGCfO6BhE5lnbo,1065
+abstract_python_core-1.0.0.dist-info/METADATA,sha256=RSYJOAaFdBDIwflTf4z0bSqQMnxTm6rXyfujvn7FOmE,1042
+abstract_python_core-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+abstract_python_core-1.0.0.dist-info/top_level.txt,sha256=_wOQrXXDiXRGMDv8Hs2Dr3n3lt1yze8RpsU2oATc9rA,12
+abstract_python_core-1.0.0.dist-info/RECORD,,
