@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/simple-gpt2/__init__.py
+src/simple-gpt2/text_generator.py
+src/simple_gpt2.egg-info/PKG-INFO
+src/simple_gpt2.egg-info/SOURCES.txt
+src/simple_gpt2.egg-info/dependency_links.txt
+src/simple_gpt2.egg-info/top_level.txt
