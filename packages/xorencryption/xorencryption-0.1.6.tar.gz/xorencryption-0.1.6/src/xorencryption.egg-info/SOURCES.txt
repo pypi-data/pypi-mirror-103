@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/xorencryption/__init__.py
+src/xorencryption/xor.py
+src/xorencryption.egg-info/PKG-INFO
+src/xorencryption.egg-info/SOURCES.txt
+src/xorencryption.egg-info/dependency_links.txt
+src/xorencryption.egg-info/top_level.txt
