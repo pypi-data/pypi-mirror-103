@@ -1,0 +1,18 @@
+include README
+include CHANGES
+include LICENSE
+include MANIFEST.in
+include pyproject.toml
+
+recursive-include docs *
+recursive-include src/requirements *.pip
+recursive-include src/drf_api_checker *
+
+prune docs
+prune tests
+prune .github
+
+exclude Makefile
+exclude tox.ini
+exclude Pipfile
+exclude Pipfile.lock
