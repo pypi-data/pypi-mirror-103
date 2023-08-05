@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: mdformat-myst
+Version: 0.1.2
+Summary: Mdformat plugin for MyST compatibility
+Home-page: https://github.com/hukkinj1/mdformat-myst
+License: MIT
+Keywords: mdformat,markdown,formatter,gfm
+Author: Taneli Hukkinen
+Author-email: hukkinj1@users.noreply.github.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Documentation
+Classifier: Topic :: Text Processing :: Markup
+Requires-Dist: markdown-it-py
+Requires-Dist: mdformat (>=0.7.0,<0.8.0)
+Requires-Dist: mdformat-frontmatter (>=0.3.1)
+Requires-Dist: mdformat-tables (>=0.4.0)
+Requires-Dist: mdit-py-plugins (>=0.2.0,<0.3.0)
+Requires-Dist: ruamel.yaml (>=0.16.0)
+Project-URL: Repository, https://github.com/hukkinj1/mdformat-myst
+Description-Content-Type: text/markdown
+
+[![Build Status](https://github.com/hukkinj1/mdformat-myst/workflows/Tests/badge.svg?branch=master)](https://github.com/hukkinj1/mdformat-myst/actions?query=workflow%3ATests+branch%3Amaster+event%3Apush)
+[![PyPI version](https://img.shields.io/pypi/v/mdformat-myst)](https://pypi.org/project/mdformat-myst)
+
+# mdformat-myst
+
+> Mdformat plugin for MyST compatibility
+
+## Description
+
+[Mdformat](https://github.com/executablebooks/mdformat) is a formatter for
+[CommonMark](https://spec.commonmark.org/current/)
+compliant Markdown.
+
+Mdformat-myst is an mdformat plugin that changes the target specification to
+[MyST](https://myst-parser.readthedocs.io/en/latest/using/syntax.html),
+making the tool able to format the following syntax extensions:
+
+- [tables](https://github.github.com/gfm/#tables-extension-)
+- [directives](https://myst-parser.readthedocs.io/en/latest/using/syntax.html#syntax-directives)
+- [roles](https://myst-parser.readthedocs.io/en/latest/using/syntax.html#syntax-roles)
+- [inline and block "dollar math"](https://myst-parser.readthedocs.io/en/latest/using/syntax.html#math-shortcuts)
+- [comments](https://myst-parser.readthedocs.io/en/latest/using/syntax.html#syntax-comments)
+- [block breaks](https://myst-parser.readthedocs.io/en/latest/using/syntax.html#syntax-blockbreaks)
+- [targets](https://myst-parser.readthedocs.io/en/latest/using/syntax.html#syntax-targets)
+- [front matter](https://myst-parser.readthedocs.io/en/latest/using/syntax.html#extended-block-tokens)
+- [footnotes](https://pandoc.org/MANUAL.html#footnotes)
+
+## Install
+
+```sh
+pip install mdformat-myst
+```
+
+## Usage
+
+```sh
+mdformat <filename>
+```
+
