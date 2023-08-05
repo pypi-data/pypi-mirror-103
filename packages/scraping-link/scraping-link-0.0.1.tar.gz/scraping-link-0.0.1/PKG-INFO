@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: scraping-link
+Version: 0.0.1
+Summary: A Python module for web scraping
+Home-page: https://github.com/nicolasmarin/scraping-link-python
+Author: nicolasmarin
+Author-email: UNKNOWN
+License: GPLv3
+Download-URL: https://github.com/nicolasmarin/scraping-link-python/archive/refs/heads/main.zip
+Description: A Python module for web scraping, you will be able to scrape any website and solves typical blocking complications.
+Keywords: web scraping,scraping,proxy rotating,html
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
