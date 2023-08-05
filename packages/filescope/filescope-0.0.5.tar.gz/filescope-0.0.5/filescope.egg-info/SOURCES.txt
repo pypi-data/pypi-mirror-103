@@ -1,0 +1,8 @@
+README.md
+setup.py
+filescope.egg-info/PKG-INFO
+filescope.egg-info/SOURCES.txt
+filescope.egg-info/dependency_links.txt
+filescope.egg-info/not-zip-safe
+filescope.egg-info/requires.txt
+filescope.egg-info/top_level.txt
