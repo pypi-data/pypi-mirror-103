@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+data/aquastat.csv.gzip
+src/aquastat/__init__.py
+src/aquastat/functions.py
+src/aquastatcongda.egg-info/PKG-INFO
+src/aquastatcongda.egg-info/SOURCES.txt
+src/aquastatcongda.egg-info/dependency_links.txt
+src/aquastatcongda.egg-info/requires.txt
+src/aquastatcongda.egg-info/top_level.txt

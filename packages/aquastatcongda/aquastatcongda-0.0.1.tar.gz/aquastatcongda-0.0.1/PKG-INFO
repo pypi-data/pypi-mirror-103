@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: aquastatcongda
+Version: 0.0.1
+Summary: A Python package to deal with aquastat data
+Home-page: https://github.com/xcd1234/2021-msia423-Xu-Congda-assignment1
+Author: Congda Xu
+Author-email: congdaxu2021@u.northwestern.edu
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
