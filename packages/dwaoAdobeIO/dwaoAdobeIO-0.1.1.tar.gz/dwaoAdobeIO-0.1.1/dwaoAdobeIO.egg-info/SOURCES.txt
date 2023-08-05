@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+dwaoAdobeIO/AdobeAuth.py
+dwaoAdobeIO/__init.py
+dwaoAdobeIO.egg-info/PKG-INFO
+dwaoAdobeIO.egg-info/SOURCES.txt
+dwaoAdobeIO.egg-info/dependency_links.txt
+dwaoAdobeIO.egg-info/requires.txt
+dwaoAdobeIO.egg-info/top_level.txt
