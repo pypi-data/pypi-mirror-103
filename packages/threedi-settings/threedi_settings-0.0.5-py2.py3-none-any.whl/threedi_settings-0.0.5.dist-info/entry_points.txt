@@ -1,0 +1,5 @@
+[console_scripts]
+describe-simulation-settings = threedi_settings.commands.helpers:helper_app
+export-settings = threedi_settings.commands.export_legacy_settings:settings_app
+global-settings = threedi_settings.commands.global_settings:global_settings_app
+
