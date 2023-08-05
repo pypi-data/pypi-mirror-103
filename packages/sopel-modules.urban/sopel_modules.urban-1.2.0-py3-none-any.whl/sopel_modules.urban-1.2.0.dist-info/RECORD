@@ -1,0 +1,9 @@
+sopel_modules.urban-1.2.0-py3.9-nspkg.pth,sha256=GpO4OWqrcKGJyabPvvsBuBcrUk4pFr3K5HYvSnuQBi8,574
+sopel_modules/urban/__init__.py,sha256=qISne_2AdE5f0mPJ1gZMXJygrrXeRLUwRMPJFeJqAa8,275
+sopel_modules/urban/urban.py,sha256=T3lORSf0ckYga1eUcay9blgG_trX0FjnkbrpqL28zRE,1961
+sopel_modules.urban-1.2.0.dist-info/LICENSE,sha256=cba8xvCgl5v_9PeMbodJZLvW110vCHmlqxyXuey1J1Q,1068
+sopel_modules.urban-1.2.0.dist-info/METADATA,sha256=IBhFUcRWN1vTNNejHW6E9_8BHNMdhv3z_KUBBhc3Sdg,863
+sopel_modules.urban-1.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sopel_modules.urban-1.2.0.dist-info/namespace_packages.txt,sha256=1GJk87jnz3vpuDVQimAVoSTAzCNN7PNkycVbH0Q1pkg,14
+sopel_modules.urban-1.2.0.dist-info/top_level.txt,sha256=1GJk87jnz3vpuDVQimAVoSTAzCNN7PNkycVbH0Q1pkg,14
+sopel_modules.urban-1.2.0.dist-info/RECORD,,
