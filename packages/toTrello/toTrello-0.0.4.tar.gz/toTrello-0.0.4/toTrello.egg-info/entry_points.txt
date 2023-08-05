@@ -1,0 +1,3 @@
+[console_scripts]
+toTrello = trello_tool.__main__:main
+
