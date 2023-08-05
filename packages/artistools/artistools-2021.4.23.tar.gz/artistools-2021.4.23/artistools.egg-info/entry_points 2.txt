@@ -1,0 +1,22 @@
+[console_scripts]
+artistools = artistools:main
+at = artistools:main
+getartismodeldeposition = artistools.deposition:main_analytical
+getartisspencerfano = artistools.spencerfano:main
+listartistimesteps = artistools:showtimesteptimes
+makeartismodel1dslicefrom3d = artistools.makemodel.1dslicefrom3d:main
+makeartismodelbotyanski2017 = artistools.makemodel.botyanski2017:main
+makeartismodelfromshen2018 = artistools.makemodel.shen2018:main
+makeartismodelfullymixed = artistools.makemodel.fullymixed:main
+makeartismodelscalevelocity = artistools.makemodel.scalevelocity:main
+plotartisdeposition = artistools.deposition:main
+plotartisestimators = artistools.estimators:main
+plotartisinitialcomposition = artistools.initial_composition:main
+plotartislightcurve = artistools.lightcurve:main
+plotartismacroatom = artistools.macroatom:main
+plotartisnltepops = artistools.nltepops:main
+plotartisnonthermal = artistools.nonthermal:main
+plotartisradfield = artistools.radfield:main
+plotartisspectrum = artistools.spectra:main
+plotartistransitions = artistools.transitions:main
+
