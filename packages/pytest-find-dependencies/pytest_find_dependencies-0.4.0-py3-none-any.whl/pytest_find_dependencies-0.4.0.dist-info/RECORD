@@ -1,0 +1,9 @@
+find_dependencies/__init__.py,sha256=42STGor_9nKYXumfeV5tiyD_M8VdcddX7CEexmibPBk,22
+find_dependencies/dependency_finder.py,sha256=3rAiz78br_z4DEjeaXstzjjGcMVzz5CQIrPjJEzwfCI,5366
+find_dependencies/plugin.py,sha256=DKYuMKInqRBCS9Bo7290Bw-t61ntedGdHb3NUx_y-KU,1660
+pytest_find_dependencies-0.4.0.dist-info/LICENSE,sha256=RJnSgbYshzxMANbK_gqpfppmxaBw--xES2CpfvYPJ0Y,1081
+pytest_find_dependencies-0.4.0.dist-info/METADATA,sha256=zHFUNDQ_WQmrXSIOu20RdIRlnPKwqMttUvozmCLClOU,6578
+pytest_find_dependencies-0.4.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pytest_find_dependencies-0.4.0.dist-info/entry_points.txt,sha256=dpqJ1WaFUa03TYeNePxiQkKu53AL4uub_7QRGMOAZyo,57
+pytest_find_dependencies-0.4.0.dist-info/top_level.txt,sha256=F5rJfUFTbFlFLvcvSjs6Dow8C2nXTvx13qpiV0VQKHc,43
+pytest_find_dependencies-0.4.0.dist-info/RECORD,,
