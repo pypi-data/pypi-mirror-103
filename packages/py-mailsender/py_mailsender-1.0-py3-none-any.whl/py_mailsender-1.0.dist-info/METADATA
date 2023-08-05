@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: py-mailsender
+Version: 1.0
+Summary: A simple library to send emails, based on smtplib
+Home-page: https://github.com/DanteAnnetta/py-mailsender
+Author: Dante Annetta
+Author-email: dannetta@lasalleflorida.edu.ar
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# py-mailsender
+A simple library to send emails, based on smtplib
+
+All you need is to import the module and create an object of the py-mailsender class, as follows:
+
+from py-mailsender import *
+
+sendmail = py-mailsender("your_email_adress", "your_password" , "the_recipient_of_the_email" , "the_subject" , "the_content")
+
+
