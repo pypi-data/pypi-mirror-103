@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+okdata/__init__.py
+okdata/resource_auth/__init__.py
+okdata/resource_auth/authorizer.py
+okdata_resource_auth.egg-info/PKG-INFO
+okdata_resource_auth.egg-info/SOURCES.txt
+okdata_resource_auth.egg-info/dependency_links.txt
+okdata_resource_auth.egg-info/namespace_packages.txt
+okdata_resource_auth.egg-info/requires.txt
+okdata_resource_auth.egg-info/top_level.txt
