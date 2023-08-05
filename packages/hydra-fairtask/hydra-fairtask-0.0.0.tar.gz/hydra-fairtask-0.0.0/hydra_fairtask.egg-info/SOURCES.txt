@@ -1,0 +1,6 @@
+setup.cfg
+setup.py
+hydra_fairtask.egg-info/PKG-INFO
+hydra_fairtask.egg-info/SOURCES.txt
+hydra_fairtask.egg-info/dependency_links.txt
+hydra_fairtask.egg-info/top_level.txt
