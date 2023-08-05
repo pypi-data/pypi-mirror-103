@@ -1,0 +1,11 @@
+openedx_events/__init__.py,sha256=FvjcCnclgiMkbHWg9lKel2_INrpojpfItmrU1uKx9jU,63
+openedx_events/signals/__init__.py,sha256=4rvG0Sc8P-9rLIK_kkYXBMz5SithLVQlfXZOcqQ-M_Y,47
+openedx_events/signals/auth/__init__.py,sha256=gF1GRGagYM99krgyOghG6JKVTfifAIL_PbEV59QmE8Q,41
+openedx_events/signals/auth/v1/__init__.py,sha256=bVjOvINAqWTweXS9VJlDiVFNd4Hp4oGLtqnslzIQ4jA,314
+openedx_events/signals/enrollment/__init__.py,sha256=COrnotFR7nAm2NDynVyCCq3SYWeKpHMnh-ftY-T7PyM,47
+openedx_events/signals/enrollment/v1/__init__.py,sha256=8U6MWsggyz4SQmeLkbTgHAQmHkZFaDDeu1P0EGa3DkA,347
+openedx_events-0.1.0.dist-info/LICENSE.txt,sha256=QTW2QN7q3XszgUAXm9Dzgtu5LXYKbR1SGnqMa7ufEuY,35139
+openedx_events-0.1.0.dist-info/METADATA,sha256=3JhGUgu7w8Y_8OVUgJPEljfQu2LNx1sc-pvIY4IgROU,5681
+openedx_events-0.1.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+openedx_events-0.1.0.dist-info/top_level.txt,sha256=SHuNnotoA0ynWcgYR_YjivLyjg-AXnw0brxHlM9TfMw,15
+openedx_events-0.1.0.dist-info/RECORD,,
