@@ -1,0 +1,8 @@
+README.md
+setup.py
+chug/__init__.py
+chug/chug.py
+chug.egg-info/PKG-INFO
+chug.egg-info/SOURCES.txt
+chug.egg-info/dependency_links.txt
+chug.egg-info/top_level.txt
