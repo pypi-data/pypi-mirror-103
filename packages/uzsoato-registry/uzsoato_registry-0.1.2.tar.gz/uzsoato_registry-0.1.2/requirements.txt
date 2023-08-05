@@ -1,0 +1,9 @@
+# Additional requirements go here
+djangorestframework
+django-celery-beat
+openpyxl
+requests
+celery
+pytils
+redis
+wget

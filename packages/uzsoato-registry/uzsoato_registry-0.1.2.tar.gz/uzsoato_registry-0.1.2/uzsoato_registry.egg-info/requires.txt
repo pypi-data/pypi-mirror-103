@@ -1,0 +1,8 @@
+djangorestframework
+django-celery-beat
+openpyxl
+requests
+celery
+pytils
+redis
+wget
