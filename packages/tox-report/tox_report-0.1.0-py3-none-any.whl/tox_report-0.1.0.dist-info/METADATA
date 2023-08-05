@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: tox-report
+Version: 0.1.0
+Summary: Produce extra reports of tox runs HTML
+Home-page: https://github.com/tox-dev/tox-report
+Author: Sorin Sbarnea
+Author-email: sorin.sbarnea@gmail.com
+Maintainer: Sorin Sbarnea
+Maintainer-email: sorin.sbarnea@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/tox-dev/tox-report/issues
+Project-URL: Release Management, https://github.com/tox-dev/tox-report/releases
+Project-URL: CI, https://github.com/tox-dev/tox-report/actions
+Project-URL: Source Code, https://github.com/tox-dev/tox-report
+Keywords: html,tox,tox-plugin
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: tox
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: tox (>=3.9)
+Requires-Dist: rich (>=6.0)
+
+# tox-report
+
+Records tox own console output and produce an HTML report of tox execution,
+default name `report.html`.
+
+The generated report will be colored as captured ANSI output is converted to
+HTML.
+
+This plugin also adds an option `--html filename` that allows user to
+customize the filename used for reporting.
+
+
