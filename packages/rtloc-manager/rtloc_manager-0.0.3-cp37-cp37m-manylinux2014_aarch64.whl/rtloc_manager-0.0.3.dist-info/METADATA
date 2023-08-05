@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: rtloc-manager
+Version: 0.0.3
+Summary: rtloc manager library
+Home-page: UNKNOWN
+Author: Jasper Wouters @ RTLOC
+Author-email: jasper@rtloc.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: PyYAML
+Requires-Dist: bunch
+Requires-Dist: numpy
+
+UNKNOWN
+
+
