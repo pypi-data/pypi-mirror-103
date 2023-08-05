@@ -1,0 +1,3 @@
+[console_scripts]
+agent-v-agent = gym_xiangqi.examples.agent_v_agent_demo:main
+
