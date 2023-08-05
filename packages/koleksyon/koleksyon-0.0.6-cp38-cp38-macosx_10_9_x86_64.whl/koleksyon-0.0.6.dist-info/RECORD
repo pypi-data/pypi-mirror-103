@@ -1,0 +1,14 @@
+koleksyon/__init__.py,sha256=eJUhUcyOxh8swfmDZgrUugpBVnbIWSkbZxcmwT5GmDw,111
+koleksyon/dta.py,sha256=T2TpR4Bm9zm7A-X65iBAbPHFp_XlMWMaHJfwkuQpxlk,5087
+koleksyon/encode.py,sha256=m5lm7CNoj-4rRkVBq6ZkzceMa3zaTilwq5KIXlZsx40,12612
+koleksyon/gbm.py,sha256=Ft-qDxH3wu2E-NvJ_oakklLxRh3hCzFyF8ItQY7z6uE,1213
+koleksyon/lib.py,sha256=MXpEaXKJcMxZsMcWWQvBOncZtzwuBXEVbsQxg13NIqc,15527
+koleksyon/mcmc.cpython-38-darwin.so,sha256=MrXho2eBwet3aHmlLLlU9OcfRL3pJbovLlkmoV83-S0,144776
+koleksyon/sim.py,sha256=bwUZDyURWMGV2tJ64iF0DkEFDPkTQxGnZMYtolMax5o,56
+koleksyon-0.0.6.data/data/my_data/cars.csv,sha256=JuOdPpAiRtAak645D1ESmiiAea760ssyknUaJi_9Ytg,1475504
+koleksyon-0.0.6.dist-info/LICENSE.txt,sha256=ceC9ZJOV9H6CtQDcYmHOS46NA3dHJ_WD4J9blH513pc,1081
+koleksyon-0.0.6.dist-info/METADATA,sha256=ULVZvI8duygPWBZ0n2RVZQ8KOf3B0Kr1C9X9zVrYv9Q,1826
+koleksyon-0.0.6.dist-info/WHEEL,sha256=ffyMch4mpikNEgQnSO9KuZDwpDUZYYRvETsDK3Qu-_A,109
+koleksyon-0.0.6.dist-info/entry_points.txt,sha256=lexK7RzT1xMyCvalZCkEXUV_pXjWKxyNU2NGRfSYmuo,40
+koleksyon-0.0.6.dist-info/top_level.txt,sha256=oLMjk-6JU51TxtZZgvvkgOvtbyobWaVuPfwoMLKOvlw,10
+koleksyon-0.0.6.dist-info/RECORD,,
