@@ -1,0 +1,3 @@
+[console_scripts]
+codeprep = codeprep.__main__:main
+
