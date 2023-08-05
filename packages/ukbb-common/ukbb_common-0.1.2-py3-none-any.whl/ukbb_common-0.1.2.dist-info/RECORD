@@ -1,0 +1,17 @@
+ukbb_common/__init__.py,sha256=cgT-3r78DbIaGapTRJaIMamHvy_AdRbc4ReVS1w8HcQ,69
+ukbb_common/resources/__init__.py,sha256=mDVru7Jkei2lHnoc1JzMC9UZ0-Ed8_tCiEnIYbsgD8o,88
+ukbb_common/resources/generic.py,sha256=-Tjb52yoFfedNo1CEisxDG7LmHm3EKwqRH01NkHpSD8,2827
+ukbb_common/resources/results.py,sha256=zkRts74jqtsMoqhpWfEuIJTp-PVVF_CA5NCBotl6-Y0,2003
+ukbb_common/utils/__init__.py,sha256=JFZZoENkcmiHQEoUsJpK69zC-OlfqXNqzwIhhgD4e18,280
+ukbb_common/utils/annotations.py,sha256=cZTB7CHepxZ1fLBQ6-7pPhAR1sJu3ar01APSyuqEgJM,5553
+ukbb_common/utils/generic.py,sha256=E_Z1sEO99_qZKKqrVmhioL2ejawoPhx0V01G1CFIfY4,8634
+ukbb_common/utils/genotype_loading.py,sha256=TQSL4Mspy-4LzOBXIoV8TCxsopCwfIfzJQ3eIuhfyRM,2428
+ukbb_common/utils/phenotype_loading.py,sha256=M-hkkul7vewunJjPhAijDrbdz_LOrS3AC9Zw5nuhnSs,43554
+ukbb_common/utils/phenotype_munging.py,sha256=l0G0zBmwQb_mXB8trSh85logairm39HAG7fSvJKJ-qE,7422
+ukbb_common/utils/results_loading.py,sha256=yJabL5VyKQyjcDbnyiL4mujj2ovnyuV_gCGLpUBdQMw,24658
+ukbb_common/utils/saige_pipeline.py,sha256=w1HNvgpsXJ58Wp5JpOlCDXEvaewsH8ZBfOTEpfBWxGU,18641
+ukbb_common-0.1.2.dist-info/LICENSE,sha256=ukEi8E0PKq1dQGTXHUflg3rppLymwAhr7il9x-0nPgg,1062
+ukbb_common-0.1.2.dist-info/METADATA,sha256=F9nEeWKGZ8ZKnc8dwwzq8Aai0zkXKZtWJnbNrCw6LXc,691
+ukbb_common-0.1.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ukbb_common-0.1.2.dist-info/top_level.txt,sha256=zeN61x2fWE0p2qKic3Zi2r-VH0iJ-KPmy69knLonSP8,12
+ukbb_common-0.1.2.dist-info/RECORD,,
