@@ -1,0 +1,8 @@
+
+[api]
+threedi-api-client>3.0.24
+
+[cmd]
+typer>=0.3.2
+rich>=10.1.0
+PyYAML>=5.1

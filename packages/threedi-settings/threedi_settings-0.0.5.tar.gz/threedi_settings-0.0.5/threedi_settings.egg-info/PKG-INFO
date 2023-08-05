@@ -1,0 +1,200 @@
+Metadata-Version: 2.1
+Name: threedi-settings
+Version: 0.0.5
+Summary: Export legacy 3Di model settings to the 3Di API V3
+Home-page: https://github.com/nens/threedi-settings
+Author: Lars Claussen
+Author-email: claussen.lars@nelen-schuurmans.nl
+License: MIT license
+Description: ## threedi-settings
+        
+        
+        Convert legacy model settings (V2) files to API V3 resources.
+        
+        
+        ### Installation
+        
+        To get all functionalities this package as to offer, install with all extras
+        
+            $ pip install threedi-settings[cmd, api]
+        
+        ### Usage
+        
+        Before you hit it off make sure you have the following environment variables set correctly
+        
+        ```shell script
+        API_HOST=https://api.3di.live/v3.0  # no trailing slash
+        API_USERNAME=<your name goes here>
+        API_PASSWORD=<your password goes here>
+        ```
+        
+        
+        
+        Ths will give you access to the command line interface that let's you convert 3Di model settings to
+        3Di API resources. There are two flavors. Either use a model `*.ini` file as input or the `*.sqlite` file.
+        
+        Both commands requires a `SIMULATION_ID` argument as settings can only be defined
+        on a per simulation basis in the API. That gives you much more flexibility to experiment
+        with different configurations.
+        
+        
+        
+        #### Export from SQLITE database file
+        
+        To use the settings that are stored in a 3Di model sqlite database file use the following command. Please note, that
+        all aggregation settings stored in the database also will be exported to the API V3. You can suppress this behaviour
+        through the `--no-aggregations` flag.
+        
+        
+        ```shell script
+        export-settings export-from-sqlite --help
+        Usage: export-settings export-from-sqlite [OPTIONS] SIMULATION_ID SQLITE_FILE
+                                                  [SETTINGS_ROW]
+        
+          "Create API V3 settings resources from legacy model sqlite file"
+        
+        Arguments:
+          SIMULATION_ID   [required]
+          SQLITE_FILE     SQLITE model file.  [required]
+          [SETTINGS_ROW]  Specify the row id of the v2_global_settings entry you want
+                          to export.  [default: 1]
+        
+        
+        Options:
+          --aggregations / --no-aggregations
+                                          If the '--no-aggregations' option is not
+                                          explicitly set, the aggregation settings
+                                          found in the sqlite file will be exported,
+                                          too.  [default: True]
+        
+          --help                          Show this message and exit.
+        ```
+        
+        If you are unsure about the `SETTINGS_ROW` argument you can quickly list the existing rows in the database by running
+        
+        
+        ```shell script
+        global-settings ls --help
+        Usage: global-settings ls [OPTIONS] SQLITE_FILE
+        
+          Shows id and name of existing global settings entries
+        
+        Arguments:
+          SQLITE_FILE  SQLITE model file.  [required]
+        
+        Options:
+          --help  Show this message and exit.
+        ```
+        
+        #### Export from ini (and aggregation) file
+        
+        If you have access to the model ini file, and optionally to the corresponding aggregation file, you can use
+        
+        
+        ```shell script
+        export-settings export-from-ini --help
+        Usage: export-settings export-from-ini [OPTIONS] SIMULATION_ID INI_FILE
+                                               [AGGREGATION_FILE]
+        
+          "Create API V3 settings resources from legacy model ini file"
+        
+        Arguments:
+          SIMULATION_ID       [required]
+          INI_FILE            Legacy model settings ini file.  [required]
+          [AGGREGATION_FILE]  Legacy model aggregation settings file.
+        
+        Options:
+          --help  Show this message and exit.
+        ```
+        
+        #### Overview of the API V3 simulation settings fields
+        
+        Most of the setting fields have been renamed in the API V3. To get an overview
+        of all available fields, their descriptions, suitable defaults etc use the
+        `describe-simulation-settings` command.
+        
+        ```shell script
+        describe-simulation-settings --help
+        Usage: describe-simulation-settings [OPTIONS]
+        
+          Shows all API V3 simulation settings fields, help texts on how to use
+          them, suitable defaults, types etc.
+        
+        Options:
+          --help                          Show this message and exit.
+        
+        ```
+        
+        
+        ### Internal Usage
+        
+        This package is also used to retrieve simulation settings resources from the API to further
+        convert them to an internal format that the 3Di calculation core is able to read and process.
+        
+        The package therefore can be installed without the extras mentioned above or a
+        single extra like `api` which will give you the `threedi-api-client` requirement
+        and therefore access to the http module.
+        
+        
+        * Free software: MIT license
+        * Documentation: https://threedi-settings.readthedocs.io.
+        
+        
+        
+        #### Credits
+        
+        This package was created with [Cookiecutter](https://github.com/audreyr/cookiecutter) and the [audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage) project template.
+        
+        
+        
+        ## History
+        
+        0.0.5 (2021-04-22)
+        ------------------
+        
+        - Update readme with required env variables.
+        
+        - Fix for export edge cases.
+        
+        
+        0.0.4 (2021-04-16)
+        ------------------
+        
+        - Added export from sqlite file command.
+        
+        - Added command that lists the global settings entries of a given sqlite file.
+        
+        - Added command that shows a description of the simulation settings API V3 fields.
+        
+        
+        0.0.3 (2021-04-07)
+        ------------------
+        
+        - Unit tests.
+        
+        
+        0.0.2 (2021-03-26)
+        
+        - Setup proper package incl readme.
+        
+        - Docstrings and code organisation.
+        
+        
+        ### 0.0.1 (2021-03-18)
+        
+        * First release on PyPI.
+        
+Keywords: threedi_settings
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: cmd
+Provides-Extra: api
