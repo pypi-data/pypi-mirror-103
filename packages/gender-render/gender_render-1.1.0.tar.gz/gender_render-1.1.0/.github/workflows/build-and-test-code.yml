@@ -1,0 +1,103 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+
+    runs-on: ubuntu-18.04
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: Build and Tests 🔧
+        run: |
+          # install texlive:
+          sudo apt-get install tex4ht
+          sudo apt-get install texlive-latex-base
+          sudo apt-get install texlive-extra-utils
+          sudo apt-get install texlive-latex-extra
+          sudo apt install texlive-luatex
+          sudo add-apt-repository ppa:jonathonf/texlive-2019
+          sudo apt-get update
+          sudo apt-get install texlive
+          sudo apt-get install pandoc
+          sudo apt-get install latexmk
+
+          # install make4ht:
+          cd ../
+          git clone --depth 1 --branch v0.3f https://github.com/michal-h21/make4ht.git
+          cd make4ht
+          make justinstall
+          cd ../gender-render
+
+          # create html files:
+          python3 ./build_and_push.py make-html
+
+          # install Python dependencies:
+          sudo pip3 install --upgrade pip
+          sudo pip3 install --upgrade setuptools
+          sudo pip3 install --upgrade wheel
+          sudo pip3 install --upgrade setuptools_scm
+          sudo pip3 install --upgrade vulture
+          sudo pip3 install --upgrade coverage
+          sudo pip3 install --upgrade typing_extensions
+          sudo pip3 install --upgrade deepdiff[murmur]
+          sudo pip3 install --upgrade pdoc3
+          sudo pip3 install --upgrade twine
+
+          # install optional dependencies of gender-render:
+          sudo pip3 install nltk
+          python3 -m nltk.downloader wordnet
+          python3 -m nltk.downloader words
+
+          # run tests:
+          pip3 install .  # <- make sure all dependencies are properly installed
+          python3 -m vulture src/* test/vulture_whitelist.py
+          coverage run --branch --source=./src -m unittest discover -s test/
+          #                                                                   echo "in src:"
+          #                                                                   ls src
+          #                                                                   echo "end"
+          coverage report --fail-under=100 --skip-covered -m
+          ./build_and_push.py check-test-coverage
+
+          # upload coverage to codecov.io:
+          coverage xml
+          bash <(curl -s https://codecov.io/bash) -f ./coverage.xml
+
+          # build documentation:
+          python3 -m coverage html
+          cp -r src gender_render  # <- hacky solution
+          pdoc3 --html -f -c "sort_identifiers=False"\
+              -c "git_link_template='https://github.com/phseiff/gender-render/tree/gh-pages/{path}#L{start_line}-L{end_line}'"\
+              --output-dir docs/code-doc\
+              --template-dir docs/template-dir\
+              gender_render
+          cp docs/code-doc/gender_render/* .
+
+          # upload code to pypi:
+          [ -e gender_render.egg-info ] && rm -r gender_render.egg-info
+          [ -e dist ]                   && rm -r dist
+          pip3 freeze --all
+          echo "---"
+          sudo pip3 freeze --all
+          python3 setup.py sdist
+          #                                                                     echo "in src:"
+          #                                                                     ls src
+          #                                                                     echo "in dist/src:"
+          #                                                                     ls dist/src
+          #                                                                     echo "end"
+          twine upload -r pypi -u phseiff -p ${{ secrets.PYPI_PASSWORD }} dist/* || true
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: .
