@@ -1,0 +1,6 @@
+setup.cfg
+setup.py
+fairtask_slurm.egg-info/PKG-INFO
+fairtask_slurm.egg-info/SOURCES.txt
+fairtask_slurm.egg-info/dependency_links.txt
+fairtask_slurm.egg-info/top_level.txt
