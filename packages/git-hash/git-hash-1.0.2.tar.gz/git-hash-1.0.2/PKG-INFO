@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: git-hash
+Version: 1.0.2
+Summary: Create commit hash by mask
+Home-page: https://github.com/gistrec/git-hash
+Author: Aleksandr Kovalko
+Author-email: gistrec@mail.ru
+License: Apache License 2.0
+Description: 
+        Git-Hash can be used to create commit hash by mask.
+        
+        Website: https://github.com/gistrec/git-hash
+        
+        Author:  Aleksandr Kovalko <gistrec@mail.ru>
+        
+Keywords: git hash commit
+Platform: Any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Version Control
+Classifier: Topic :: Utilities

@@ -1,0 +1,11 @@
+README.md
+setup.py
+git_hash.egg-info/PKG-INFO
+git_hash.egg-info/SOURCES.txt
+git_hash.egg-info/dependency_links.txt
+git_hash.egg-info/entry_points.txt
+git_hash.egg-info/requires.txt
+git_hash.egg-info/top_level.txt
+git_hash.egg-info/zip-safe
+githash/__init__.py
+githash/githash.py
