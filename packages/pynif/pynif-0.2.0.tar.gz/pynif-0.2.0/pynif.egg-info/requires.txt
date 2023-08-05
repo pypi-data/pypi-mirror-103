@@ -1,0 +1,8 @@
+rdflib
+
+[dev]
+check-manifest
+
+[test]
+pytest-cov
+pytest
