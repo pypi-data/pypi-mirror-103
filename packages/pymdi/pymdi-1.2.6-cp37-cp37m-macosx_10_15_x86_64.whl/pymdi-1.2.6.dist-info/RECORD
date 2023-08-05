@@ -1,0 +1,16 @@
+mdi/__init__.py,sha256=gn_KFRuAB0NI9TtWzaPSUBPK2luVq885f_-0dBDmUpk,1311
+mdi/libmdi.1.dylib,sha256=NhjlvlEVOyYjoIwh9ixrG8u59jRRKJDzB4-JCQroMME,107396
+mdi/libmdi.dylib,sha256=NhjlvlEVOyYjoIwh9ixrG8u59jRRKJDzB4-JCQroMME,107396
+mdi/mdi.h,sha256=5zp81090KiN-Ehf8hPzaY7dJgamH253Ul-3cULmDn10,7294
+mdi/mdi.mod,sha256=s4seJOU0DIiLRFLUwlP0VyeUflRTyuJCwTAwFRcdDuo,7120
+mdi/mdi.py,sha256=45BAUdft-qsgerECZSXBaJJpnvM0dkwJ3DFCORc5Dc4,37845
+mdi/mdi_name,sha256=gz3iyHFEZ4bnS0QM-OClyFl1wOcqDzTqJPHJ1ylfOaM,14
+mdi/share/cmake/mdi/mdiConfig.cmake,sha256=syu5jnxSpBePtOKJYkm-qBTeycnQ1lQLzF7yc5KM_7Q,2659
+mdi/share/cmake/mdi/mdiConfigVersion.cmake,sha256=zCnxB3pvaH94GJkdun0noi48oyZJlaJKsAkyGZgjWyE,1977
+mdi/share/cmake/mdi/mdiTargets-noconfig.cmake,sha256=9XD45yvbfC-wRGCNoJlERpkQ0m2MCn0rfbPogYAv6Tw,887
+mdi/share/cmake/mdi/mdiTargets.cmake,sha256=748J8X1i0uA3E4jdV6pSxZx82_e9tvTu7EoumIVkvnY,3437
+pymdi-1.2.6.dist-info/LICENSE,sha256=VdrKNyZJiU7QRg6cQCnBAHcMlp5aTmjrGm3mrCyNIjc,1540
+pymdi-1.2.6.dist-info/METADATA,sha256=yi1aJX2xD9WCX8Z-pJHqPnMOMC6j2AudjuTbRnapBwM,490
+pymdi-1.2.6.dist-info/WHEEL,sha256=zjhvVxjD6g7O3ejxlonIResSLzKh91a-Z9sfR3zAQ80,111
+pymdi-1.2.6.dist-info/top_level.txt,sha256=5HGC6bV_F7nGt0z7mAfTw6YXqNFmNWlhI7I7F8MLDUg,4
+pymdi-1.2.6.dist-info/RECORD,,
