@@ -1,0 +1,12 @@
+nbconvert
+notebook
+numpy
+pandas
+matplotlib
+scipy
+more-itertools
+mpld3
+pynufft
+scikit-image
+sigpy
+napari[all]

@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+MRItoolkit/BrukerPy.py
+MRItoolkit/Recons.py
+MRItoolkit/__init__.py
+MRItoolkit/utilities.py
+MRItoolkit.egg-info/PKG-INFO
+MRItoolkit.egg-info/SOURCES.txt
+MRItoolkit.egg-info/dependency_links.txt
+MRItoolkit.egg-info/requires.txt
+MRItoolkit.egg-info/top_level.txt
