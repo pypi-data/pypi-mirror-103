@@ -1,0 +1,9 @@
+wordmaze/__init__.py,sha256=2yxfyPujS_B301bm6vAJOf1l_uuePruG5_Vtsn7Hnt4,47
+wordmaze/wordmaze.py,sha256=SmfIMCzzpJaIyTaZwI755iobhYk2MerFGRkYOfGcCN0,3641
+wordmaze/utils/__init__.py,sha256=aT7iAF_h27UV_jF0xsMK_G04F54PSUWh0fMZRt7zIxE,34
+wordmaze/utils/dataclasses.py,sha256=XdtdaqbG0BR5OU1WAtr9ShU53kmZW87MhekDlR6-ZRg,932
+wordmaze-0.2.2.dist-info/LICENSE,sha256=VdXEI9pDsNWblpXIh_YTItmiEoojfw8sCchHDYgvn8Y,1062
+wordmaze-0.2.2.dist-info/METADATA,sha256=qlvhGtGZvlU_p411YagxsGB511JL0O3_OvyBzjI_LKU,1503
+wordmaze-0.2.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+wordmaze-0.2.2.dist-info/top_level.txt,sha256=q_H3MyUb-xQFkKBVmKT1la5Lv8s5h7oI9dshCZIfrvs,9
+wordmaze-0.2.2.dist-info/RECORD,,
