@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: idi
+Version: 0.0.210422
+Summary: idi simulation and reconstruction
+Home-page: UNKNOWN
+Maintainer: zimmf
+License: UNKNOWN
+Description: UNKNOWN
+Platform: Linux
+Platform: Mac OS-X
+Requires-Python: >=3.6
