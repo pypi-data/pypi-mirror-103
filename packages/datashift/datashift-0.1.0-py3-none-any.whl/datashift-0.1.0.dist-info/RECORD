@@ -1,0 +1,8 @@
+datashift/__init__.py,sha256=f9cdZihUoevxJrFPWTOQF6cE4ISsoGk4skF08qFmfWM,302
+datashift/datapipeline.py,sha256=L709yZNGlSsdErQ5wdKcL2BEdtkFW5dojonua5S_eU4,34071
+datashift/dataset.py,sha256=OOTpBaQUm84yrbkXxu1lK0ug6ThLmwQ01eNnVIcElJ4,25311
+datashift/task.py,sha256=69QqTr3NZvTDCy4vVE9ROWtj1FJtrqgQELzEOZeQvq4,13086
+datashift-0.1.0.dist-info/METADATA,sha256=higwqIeCjCDbEhuZPoXrYKvmO-1PiXIRsGPeye8snzE,1048
+datashift-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+datashift-0.1.0.dist-info/top_level.txt,sha256=tWuHjb8jzxE1O7hGKcyCQAvUuoOzSsyoj3jRy3i2-N4,10
+datashift-0.1.0.dist-info/RECORD,,
