@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+setup.py
+guigebacktest/__init__.py
+guigebacktest/backtest.py
+guigebacktest/broker.py
+guigebacktest/config.py
+guigebacktest/ggbacktest.py
+guigebacktest/hooks.py
+guigebacktest/utils.py
+guigebacktest.egg-info/PKG-INFO
+guigebacktest.egg-info/SOURCES.txt
+guigebacktest.egg-info/dependency_links.txt
+guigebacktest.egg-info/requires.txt
+guigebacktest.egg-info/top_level.txt
