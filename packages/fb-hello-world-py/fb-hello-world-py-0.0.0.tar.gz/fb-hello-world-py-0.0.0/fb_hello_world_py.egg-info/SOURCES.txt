@@ -1,0 +1,6 @@
+setup.cfg
+setup.py
+fb_hello_world_py.egg-info/PKG-INFO
+fb_hello_world_py.egg-info/SOURCES.txt
+fb_hello_world_py.egg-info/dependency_links.txt
+fb_hello_world_py.egg-info/top_level.txt
