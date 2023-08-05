@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: fdfd
+Version: 0.0.0
+Summary: a 2D electromagnetic FDFD simulator written in Python
+Home-page: http://github.com/flaport/fdfd
+Author: Floris laporte
+Author-email: floris.laporte@gmail.com
+License: UNKNOWN
+Description: # Python 2D FDFD Simulator
+        
+        An FDFD simulator.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Description-Content-Type: text/markdown
