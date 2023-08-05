@@ -1,0 +1,4 @@
+ml-base
+fastapi
+uvicorn
+pyyaml
