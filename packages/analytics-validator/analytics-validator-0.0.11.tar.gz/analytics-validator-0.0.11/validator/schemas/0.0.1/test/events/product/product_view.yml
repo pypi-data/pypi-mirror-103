@@ -1,0 +1,15 @@
+name: "PDP View"
+scopes:
+  - name: "screen"
+    attributes:
+      - name: "name"
+        type: "string"
+        value: "PDP"
+
+      - name: "type"
+        type: "string"
+        value: "PDP"
+
+      - name: "test"
+        type: "enum/ProductType"
+        value: "Queue"
