@@ -1,0 +1,7 @@
+numpy
+Pillow
+scipy
+astropy
+ipfml
+pandas
+OpenEXR
