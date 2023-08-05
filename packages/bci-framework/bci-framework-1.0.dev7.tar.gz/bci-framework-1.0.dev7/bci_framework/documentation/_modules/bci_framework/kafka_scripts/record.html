@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bci_framework.kafka_scripts.record &#8212; BCI-Framework  documentation</title>
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favico.ico"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for bci_framework.kafka_scripts.record</h1><div class="highlight"><pre>
+<span></span>&quot;&quot;&quot;
+======
+Record
+======
+
+Kafka consumer to save EEG streamings into HDF5 format using the `Data storage
+handler &lt;https://openbci-stream.readthedocs.io/en/latest/notebooks/07-data_storage_handler.html&gt;`_
+defined in `OpenBCI-Stream &lt;https://openbci-stream.readthedocs.io/en/latest/index.html&gt;`_.
+&quot;&quot;&quot;
+
+import signal
+import atexit
+import os
+import sys
+from typing import TypeVar
+
+if home := os.getenv(&#39;BCISTREAM_HOME&#39;):
+    sys.stderr = open(os.path.join(home, &#39;records&#39;, &#39;log.stderr&#39;), &#39;w&#39;)
+    sys.stdout = open(os.path.join(home, &#39;records&#39;, &#39;log.stdout&#39;), &#39;w&#39;)
+
+from datetime import datetime
+from openbci_stream.utils import HDF5Writer
+
+from bci_framework.extensions import properties as prop
+from bci_framework.extensions.data_analysis.utils import loop_consumer
+
+KafkaStream = TypeVar(&#39;kafka-stream&#39;)
+
+
+########################################################################
+<div class="viewcode-block" id="RecordTransformer"><a class="viewcode-back" href="../../bci_framework.kafka_scripts.record.html#bci_framework.kafka_scripts.record.RecordTransformer">[docs]</a>class RecordTransformer:
+    &quot;&quot;&quot;This consumer is basically an extension.&quot;&quot;&quot;
+
+    # ----------------------------------------------------------------------
+    def __init__(self):
+        &quot;&quot;&quot;&quot;&quot;&quot;
+
+        now = datetime.now()
+
+        filename = now.strftime(&#39;%x-%X&#39;).replace(&#39;/&#39;, &#39;_&#39;).replace(&#39;:&#39;, &#39;_&#39;)
+        records_dir = os.path.join(os.environ.get(
+            &#39;BCISTREAM_HOME&#39;, &#39;~/.bciframework&#39;), &#39;records&#39;)
+        os.makedirs(records_dir, exist_ok=True)
+        self.writer = HDF5Writer(os.path.join(
+            records_dir, f&#39;record-{filename}.h5&#39;))
+
+        header = {&#39;sample_rate&#39;: prop.SAMPLE_RATE,
+                  &#39;streaming_sample_rate&#39;: prop.STREAMING_PACKAGE_SIZE,
+                  &#39;datetime&#39;: now.timestamp(),
+                  &#39;montage&#39;: prop.MONTAGE_NAME,
+                  &#39;channels&#39;: prop.CHANNELS,
+                  }
+        self.writer.add_header(header, prop.HOST)
+
+        # trying to finish well
+        signal.signal(signal.SIGINT, self.stop)
+        signal.signal(signal.SIGTERM, self.stop)
+        atexit.register(self.stop)
+
+        self.save_data()
+
+    # ----------------------------------------------------------------------
+    @loop_consumer(&#39;eeg&#39;, &#39;marker&#39;, &#39;annotation&#39;)
+    def save_data(self, kafka_stream: KafkaStream, topic: str, **kwargs) -&gt; None:
+        &quot;&quot;&quot;Write data on every strem package.
+
+        Parameters
+        ----------
+        kafka_stream
+            Kafka stream with deserialized data.
+        topic
+            The topic of the stream.
+        &quot;&quot;&quot;
+
+        if not self.writer.f.isopen:
+            return
+
+        if topic == &#39;eeg&#39;:
+            dt = kafka_stream.value[&#39;context&#39;][&#39;binary_created&#39;]
+            eeg, aux = kafka_stream.value[&#39;data&#39;]
+            self.writer.add_eeg(eeg, dt)
+            self.writer.add_aux(aux)
+            # print(dt)
+
+        elif topic == &#39;marker&#39;:
+            dt = kafka_stream.value[&#39;datetime&#39;]
+            marker = kafka_stream.value[&#39;marker&#39;]
+            self.writer.add_marker(marker, dt)
+
+        elif topic == &#39;annotation&#39;:
+            onset = kafka_stream.value[&#39;onset&#39;]
+            duration = kafka_stream.value[&#39;duration&#39;]
+            description = kafka_stream.value[&#39;description&#39;]
+            self.writer.add_annotation(onset, duration, description)
+
+    # ----------------------------------------------------------------------
+    def stop(self, *args, **kwargs) -&gt; None:
+        &quot;&quot;&quot;&quot;&quot;&quot;
+        self.writer.close()</div>
+
+
+if __name__ == &#39;__main__&#39;:
+    RecordTransformer()
+
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../../index.html">
+              <img class="logo" src="../../../_static/logo.svg" alt="Logo"/>
+            </a></p><h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../notebooks/00-installation.html">Installation and running</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../notebooks/01-configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../notebooks/02-interface.html">Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../notebooks/70-data_analysis.html">Data analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../notebooks/75-data_visualizations.html">Data visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../notebooks/76-default_visualizations.html">Examples of data visualizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../notebooks/80-stimuli_delivery.html">Stimuli delivery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../notebooks/81-default_stimuli_delivery_paradigms.html">Examples of stimuli delivery paradigms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../notebooks/90-event_marker_synchronization.html">Event marker synchronization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../notebooks/91-eeg_records_exploring.html">EEG records exploring</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../notebooks/99-ilustrative_example.html">Illustrative example</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../index.html">Documentation overview</a><ul>
+  <li><a href="../../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Yeison Cardona.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.5.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
