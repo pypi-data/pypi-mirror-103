@@ -1,0 +1,6 @@
+setup.py
+src/omegalul/__init__.py
+src/omegalul.egg-info/PKG-INFO
+src/omegalul.egg-info/SOURCES.txt
+src/omegalul.egg-info/dependency_links.txt
+src/omegalul.egg-info/top_level.txt
