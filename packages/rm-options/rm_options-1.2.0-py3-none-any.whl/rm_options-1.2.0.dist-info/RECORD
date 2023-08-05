@@ -1,0 +1,13 @@
+rmoptions/__init__.py,sha256=rfY0s3ag9-aQWcY7oAFnYxSDGO7RErrvD3RndluhOTU,78
+rmoptions/rm_option.py,sha256=0dlBrP2VMk14IkjMMpMSfnDDDTdWGst7jRJCIgiUT68,3217
+rmoptions/rm_option_handler.py,sha256=5yX7dTVVryP6lMxjnMc3HhV6uZq17sPI8CFz2M45r1o,7992
+rmoptions/mapper/__init__.py,sha256=F3fPx1_DzkWeM74UlPdqNR5-ojL58-wM6i-5IZqhAKo,107
+rmoptions/mapper/base_mapper.py,sha256=-dnx9G-ZB4swi5f1GfjBGZTSPoVRMUfrR9Brdpb4tvE,706
+rmoptions/mapper/float_mapper.py,sha256=UHmCBOIId3GwZ7byc44BqnrD69AfC7LgcqdlwZjTXTs,439
+rmoptions/mapper/int_mapper.py,sha256=CzXSZo6Mj9Nta6b74tqF2hhAM8afqA2cn9_XWBx-s74,417
+rm_options-1.2.0.dist-info/LICENSE,sha256=45MSpfP8xLn0AaFovSfh4GOq_SbBrezBQ82YBTHh2GA,1069
+rm_options-1.2.0.dist-info/METADATA,sha256=nxNgqchHubiCdPQshc2liN5hMs3O2FFgvrf1HKbmxsw,7516
+rm_options-1.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+rm_options-1.2.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+rm_options-1.2.0.dist-info/top_level.txt,sha256=UANt0lSOmRLmbI0bAMrSX_i--FOaRaP7M84Z8Xap2U8,10
+rm_options-1.2.0.dist-info/RECORD,,
