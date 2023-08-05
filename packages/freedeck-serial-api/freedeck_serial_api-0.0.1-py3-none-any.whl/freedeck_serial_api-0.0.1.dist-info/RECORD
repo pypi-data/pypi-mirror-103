@@ -1,0 +1,9 @@
+fdserial/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+fdserial/__main__.py,sha256=2nZcnzgp3u2fT-DAuJFKalyIz9K1WVr7MyBSUrqdCVM,488
+fdserial/api.py,sha256=KYMZPSsHP7R9m8bPk7D8C0PeWL5tW3FeTaeHouCiC9w,2201
+fdserial/utils.py,sha256=o6K5X4nWsbLoisrNWckRyUUU5IKXlUjvCYpy-z_Wy38,2014
+freedeck_serial_api-0.0.1.dist-info/METADATA,sha256=dBScaorbI5IEoNkJUuJJlbraiXqIA7ua1SGDDTfi2dw,1095
+freedeck_serial_api-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+freedeck_serial_api-0.0.1.dist-info/entry_points.txt,sha256=shLBzqfy-3qDZ7xSUC-pcOCa3dYGVtbiDb4mtQJZsPw,57
+freedeck_serial_api-0.0.1.dist-info/top_level.txt,sha256=2_3s7Tm6blVOHpC463iLNV8C03JvYu0KXnOip3lYCvs,9
+freedeck_serial_api-0.0.1.dist-info/RECORD,,
