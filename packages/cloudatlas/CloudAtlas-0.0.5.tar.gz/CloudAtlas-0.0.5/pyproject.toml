@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "CloudAtlas"
+version = "0.0.5"
+description = "Python Package for Cloud Atlas Projects"
+authors = ["Cloud Atlas <cloud.atlas.br@gmail.com>"]
+maintainers = ["Adelmo Filho <adelmo.aguiar.filho@gmail.com>", "Rodrigo Ekstein <rjekstein@gmail.com>"]
+license = "MIT"
+packages = [{ include = "CloudAtlas" }]
+readme = "README.md"
+repository = "https://github.com/Cloud-Atlas-BR/CloudAtlas"
+classifiers=[
+    "Programming Language :: Python :: 3.8",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 1 - Planning",
+    "Natural Language :: Portuguese (Brazilian)",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence"
+    ]
+keywords=[
+    "CloudAtlas",
+    "Python",
+    "projects",
+    "machine-learning",
+    "feature-engineering",
+    "modelling",
+    "data-science"
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.25.1"
+xmltodict = "^0.12.0"
+pytz = "^2021.1"
+
+[tool.poetry.dev-dependencies]
+jupyter = "^1.0.0"
+boto3 = "^1.17.53"
+pylint = "^2.7.4"
+pytest-cov = "^2.11.1"
+flake8 = "^3.9.1"
+pytest = "^6.2.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

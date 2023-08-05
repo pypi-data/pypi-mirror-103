@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: cloudatlas
+Version: 0.0.5
+Summary: Python Package for Cloud Atlas Projects
+Home-page: https://github.com/Cloud-Atlas-BR/CloudAtlas
+License: MIT
+Keywords: CloudAtlas,Python,projects,machine-learning,feature-engineering,modelling,data-science
+Author: Cloud Atlas
+Author-email: cloud.atlas.br@gmail.com
+Maintainer: Adelmo Filho
+Maintainer-email: adelmo.aguiar.filho@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Dist: pytz (>=2021.1,<2022.0)
+Requires-Dist: requests (>=2.25.1,<3.0.0)
+Requires-Dist: xmltodict (>=0.12.0,<0.13.0)
+Project-URL: Repository, https://github.com/Cloud-Atlas-BR/CloudAtlas
+Description-Content-Type: text/markdown
+
+# CloudAtlas
