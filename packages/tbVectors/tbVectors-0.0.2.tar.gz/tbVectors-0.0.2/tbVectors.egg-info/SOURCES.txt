@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+tbVectors/__init__.py
+tbVectors.egg-info/PKG-INFO
+tbVectors.egg-info/SOURCES.txt
+tbVectors.egg-info/dependency_links.txt
+tbVectors.egg-info/top_level.txt
