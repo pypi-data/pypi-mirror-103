@@ -1,0 +1,16 @@
+LICENSE.md
+README.md
+setup.py
+journalpdfscraper/BMJSoupScraper.py
+journalpdfscraper/Base.py
+journalpdfscraper/BaseSoup.py
+journalpdfscraper/ElsevierScraper.py
+journalpdfscraper/JournalScraper.py
+journalpdfscraper/OxfordScraper.py
+journalpdfscraper/ScienceDirectScraper.py
+journalpdfscraper/__init__.py
+journalpdfscraper.egg-info/PKG-INFO
+journalpdfscraper.egg-info/SOURCES.txt
+journalpdfscraper.egg-info/dependency_links.txt
+journalpdfscraper.egg-info/requires.txt
+journalpdfscraper.egg-info/top_level.txt
