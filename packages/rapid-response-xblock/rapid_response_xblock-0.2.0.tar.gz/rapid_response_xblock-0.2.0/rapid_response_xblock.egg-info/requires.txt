@@ -1,0 +1,4 @@
+django<3.0,>=2.2
+XBlock
+xblock-utils
+edx-opaque-keys
