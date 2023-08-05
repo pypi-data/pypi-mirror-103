@@ -1,0 +1,10 @@
+fichub_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fichub_cli/cli.py,sha256=relloKfLpg7hltINp9S8QFOHafZf2JRwBrUuloj7h7Q,2522
+fichub_cli/fichub.py,sha256=bb_gpwF23dj069vlMD1jQx-PuogCUJMWGW-6s5bexhs,1523
+fichub_cli/util.py,sha256=b2P68XUIyY8L1MuJvKLzw3lcz0umF5wfujhn4EVR6qY,5155
+fichub_cli-0.2.5.dist-info/LICENSE.txt,sha256=l9pvmGoVaPhXahkiWAIeObe8W-xniMcfdLzUf4xuRMk,1063
+fichub_cli-0.2.5.dist-info/METADATA,sha256=op1Av6eD6zB6KxEtg-5TEsvWisw6r2Ukm-irGeXZYHE,2489
+fichub_cli-0.2.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fichub_cli-0.2.5.dist-info/entry_points.txt,sha256=o-OAVyZum8Bv8ZKUEXWXE60QTGYjj8mcZtlm9uyk5h8,73
+fichub_cli-0.2.5.dist-info/top_level.txt,sha256=SVnHBJtC1cIASVXsxKE0ohMgtButqeMKI6WEya0p4kg,11
+fichub_cli-0.2.5.dist-info/RECORD,,
