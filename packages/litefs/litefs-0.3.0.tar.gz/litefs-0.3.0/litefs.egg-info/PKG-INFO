@@ -1,0 +1,35 @@
+Metadata-Version: 1.1
+Name: litefs
+Version: 0.3.0
+Summary: Build a web server framework using Python.
+Home-page: https://github.com/leafcoder/litefs
+Author: Leafcoder
+Author-email: leafcoder@gmail.com
+License: MIT
+Description: \
+        Build a web server framework using Python. Litefs was developed to imple\
+        ment a server framework that can quickly, securely, and flexibly build Web \
+        projects. Litefs is a high-performance HTTP server. Litefs has the characte\
+        ristics of high stability, rich functions, and low system consumption.
+        
+        Author: leafcoder
+        Email: leafcoder@gmail.com
+        
+        Copyright (c) 2020, Leafcoder.
+        License: MIT (see LICENSE for details)
+        
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: CGI Tools/Libraries
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

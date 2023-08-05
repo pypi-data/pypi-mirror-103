@@ -1,0 +1,3 @@
+[console_scripts]
+litefs = litefs:test_server
+
