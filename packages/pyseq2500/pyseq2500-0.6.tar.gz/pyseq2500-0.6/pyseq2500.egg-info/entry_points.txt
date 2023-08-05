@@ -1,0 +1,3 @@
+[console_scripts]
+pyseq = pyseq.main:main
+

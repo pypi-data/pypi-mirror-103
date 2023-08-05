@@ -1,0 +1,10 @@
+pyserial>=3
+numpy
+scipy
+imageio
+tabulate
+dask
+xarray
+zarr
+qtpy
+napari
