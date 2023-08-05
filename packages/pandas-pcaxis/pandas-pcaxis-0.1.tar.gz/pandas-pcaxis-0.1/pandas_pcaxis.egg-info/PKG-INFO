@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: pandas-pcaxis
+Version: 0.1
+Summary: Pandas support for reading PC-Axis files
+Home-page: https://github.com/juyrjola/pandas-pcaxis
+Author: Juha Yrjölä
+Author-email: juha.yrjola@iki.fi
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
