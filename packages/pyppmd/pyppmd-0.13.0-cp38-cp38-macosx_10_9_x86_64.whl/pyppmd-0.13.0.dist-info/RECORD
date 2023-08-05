@@ -1,0 +1,10 @@
+pyppmd/__init__.py,sha256=8ZRpF9K6cwipn7L9XmIF4rpF-C2UOMk9v5Ln7p6JqK8,927
+pyppmd/__init__.pyi,sha256=c4j03l-fa5LsPCKFNe9PTI-66NVYpB89WQsggpwpsZQ,2221
+pyppmd/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyppmd/c/_ppmd.cpython-38-darwin.so,sha256=I8ERtg6d3L8EbTV5bJG7Wnv27mWu8K5Bf0VHKg1EVIE,81856
+pyppmd/c/c_ppmd.py,sha256=qqEJ5_mt-AuENpJgHHh-32QDLij1Djvdk1l3BfeuGsE,1370
+pyppmd-0.13.0.dist-info/LICENSE.rst,sha256=BL1RH9UY1tGki1f1-ncCk0RHceOAvAbLe1pKcsgDVic,3959
+pyppmd-0.13.0.dist-info/METADATA,sha256=PfOrWgRAY-NSkcxauCNyLz9j6gHv6YwhLicp-fHjmio,4236
+pyppmd-0.13.0.dist-info/WHEEL,sha256=RA4ju32EWHpO-G1BhxTQ3AwXQWjnnrzYGkM9skoN7_I,109
+pyppmd-0.13.0.dist-info/top_level.txt,sha256=oI9A6TS272sAHjryEKAiyFJkIMwC7DxWsfF7zlFviFw,7
+pyppmd-0.13.0.dist-info/RECORD,,
