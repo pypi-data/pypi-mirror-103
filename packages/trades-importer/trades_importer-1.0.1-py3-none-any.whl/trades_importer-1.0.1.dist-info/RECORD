@@ -1,0 +1,7 @@
+trades_importer/__init__.py,sha256=7gdKdSShAjodEHZxGjTUVBbVx9ReA8NnfCU92mE-yLM,53
+trades_importer/simplywallst.py,sha256=_0UKE-D94DvXHILgwhkYWBD9qPJsJ1qFRN9dzxY7-C8,6995
+trades_importer/wallmine.py,sha256=ZWzUSeBSLz85wrCX_j4v5bNzMq-fS8fXc0uN7Zu_o_4,5755
+trades_importer-1.0.1.dist-info/METADATA,sha256=cev_y0wABKp_RTGdQ0isCGVjKatDjeDTjLvBGeyykgM,372
+trades_importer-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+trades_importer-1.0.1.dist-info/top_level.txt,sha256=8O8K07e7d1vY4zot8ux_DPigDXnvVQ_cVtuqoB8bKaU,16
+trades_importer-1.0.1.dist-info/RECORD,,
