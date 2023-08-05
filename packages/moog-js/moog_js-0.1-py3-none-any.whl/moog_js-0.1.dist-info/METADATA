@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: moog-js
+Version: 0.1
+Summary: Modular object oriented games utils is a python-based game engine.
+Home-page: https://github.com/jazlab/moog.github.io
+Author: Nicholas Watters
+License: MIT license
+Keywords: ai,reinforcement-learning,python,machine learning,objects,psychology,neurophysiology,psychophysics,physics,environment
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
+Requires-Dist: spriteworld
+Requires-Dist: imageio
+Requires-Dist: mss
+
+# Modular Object-Oriented Games
+
+Moog-javascript
+
