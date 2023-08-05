@@ -1,0 +1,7 @@
+README.md
+setup.py
+nik_nik.egg-info/PKG-INFO
+nik_nik.egg-info/SOURCES.txt
+nik_nik.egg-info/dependency_links.txt
+nik_nik.egg-info/requires.txt
+nik_nik.egg-info/top_level.txt
