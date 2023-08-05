@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: script-runner-api
+Version: v0.15
+Summary: Provides an API server + celery worker module for running arbitrary scripts.
+Home-page: https://github.com/lab-grid/script-runner
+Author: Robert Chu
+Author-email: robert.chu@labgrid.com
+License: MIT
+Download-URL: https://github.com/lab-grid/script-runner/archive/0.1.0.tar.gz
+Description: UNKNOWN
+Keywords: script,api,labflow,labgrid,lab-grid
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
