@@ -1,0 +1,3 @@
+pytest
+requests
+concurrent-log-handler
