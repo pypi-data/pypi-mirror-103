@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: forg
+Version: 1.3.1
+Summary: 🗂 File Organizer - forg
+Home-page: https://github.com/rqfreitas/forg
+Author: rqfreitas
+Author-email: mail@rqf.fr
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/rqfreitas/forg/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# 🗂 forg
+Simple Folder organization in python. Based on Kalle Hallden snippet
+
+## How It Works
+ It creates a folder called forg on the downloads page, and based in a list of file extension, it creates subfolders in forg and move files there categorizing them by type.
+
+

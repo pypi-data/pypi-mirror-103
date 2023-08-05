@@ -1,0 +1,10 @@
+forg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+forg/forg.py,sha256=hto2-5_UtccjtGB_sdbxSLz9xjsp-6MkivwMQRb3rhU,1834
+forg/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+forg/data/filesext.csv,sha256=Rx6uHtdTd_obdamrQpSnyVjVuT_f5b1mNipHVBqzgDk,4342
+forg-1.3.1.dist-info/LICENSE,sha256=tVpD9GFRhdaCYeONxLOkZ3KE_ntvwru6SzjNJX7X9Ts,1066
+forg-1.3.1.dist-info/METADATA,sha256=OR1cuixg7A2wdU8nY1ku5nIoJA8tPjZzeRzda2ZO-II,758
+forg-1.3.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+forg-1.3.1.dist-info/entry_points.txt,sha256=k1YrbZur_sVvWwaRB3UBfTtCTCT7Gnfn6mcP46aJHBk,41
+forg-1.3.1.dist-info/top_level.txt,sha256=-OogS7FGeu0r-Zi7Zrttqla0GTbcFM4fi1L3B_JvdJw,5
+forg-1.3.1.dist-info/RECORD,,
