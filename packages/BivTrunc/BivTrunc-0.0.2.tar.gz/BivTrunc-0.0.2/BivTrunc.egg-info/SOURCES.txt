@@ -1,0 +1,7 @@
+setup.py
+BivTrunc/BivTruncSimple.py
+BivTrunc/__init__.py
+BivTrunc.egg-info/PKG-INFO
+BivTrunc.egg-info/SOURCES.txt
+BivTrunc.egg-info/dependency_links.txt
+BivTrunc.egg-info/top_level.txt
