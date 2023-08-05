@@ -1,0 +1,12 @@
+qdarkstyle
+numpy>=1.18.5
+pandas>=1.0.5
+sip
+datetime
+scikit-learn>=0.23.1
+scipy>=1.5.0
+lightgbm
+xgboost
+matplotlib>=3.1.1
+seaborn
+joblib
