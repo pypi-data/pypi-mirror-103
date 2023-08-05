@@ -1,0 +1,7 @@
+joblib==0.14.1
+matplotlib==3.2.1seaborn==0.11.1
+numpy==1.18.5
+pandas==1.1.5
+python-dotenv==0.17.0
+scikit-learn==0.23.2
+shap==0.37.0
