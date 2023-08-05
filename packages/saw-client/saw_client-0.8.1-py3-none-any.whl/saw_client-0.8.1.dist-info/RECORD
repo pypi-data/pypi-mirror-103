@@ -1,0 +1,13 @@
+mypy.ini,sha256=AxuMdOk25Gx_25BXuk8y6fGISAVBHogTqfsj9IU1Hh8,352
+saw_client/__init__.py,sha256=nLQGJ5TszQatt7_4A8RntPwRS1bGKNeZ0uKDGFaxpA0,18966
+saw_client/commands.py,sha256=i3SqZRsIWaY0ye5WENCw0IrIv5QtdkWmzs_9b718m_M,4086
+saw_client/connection.py,sha256=1r3H5UZ20gWiV15MiIVyueigBhtGO4x474PR4YJ9NjU,7700
+saw_client/dashboard.py,sha256=NHxFX4jAylXRzqDrPih6btOyac_W27D5lsatXlnHF-Q,10102
+saw_client/exceptions.py,sha256=VyElVzMsRP2tgOOWX_Luu1g8Vrl4Uf_6E3dXjyzSEvM,3076
+saw_client/llvm.py,sha256=lC7pFikIUsirc8LrLU81UOKtfCoOf6lSzMDLkQGAlRc,26732
+saw_client/proofscript.py,sha256=o1NfaAgKQ8ZXzGQFDepNnd9THh6TmCAjLVFWARJDxRo,3303
+saw_client/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+saw_client/utils.py,sha256=s2xzn94qua5Wlh2YHTOpL8FOA8DUxL9DlX1eUD-A8cU,855
+saw_client-0.8.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+saw_client-0.8.1.dist-info/METADATA,sha256=PNFGWtOJ9-Qn3cJn1Lp13pJ-xmHn0ZV_rS2CZoOnRgQ,7971
+saw_client-0.8.1.dist-info/RECORD,,
