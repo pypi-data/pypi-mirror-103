@@ -1,0 +1,8 @@
+[console_scripts]
+rteqcorrscan-bench = rt_eqcorrscan.console_scripts.bench:main
+rteqcorrscan-build-db = rt_eqcorrscan.console_scripts.build_db:main
+rteqcorrscan-config = rt_eqcorrscan.console_scripts.config:main
+rteqcorrscan-reactor = rt_eqcorrscan.console_scripts.reactor:main
+rteqcorrscan-real-time-match = rt_eqcorrscan.console_scripts.real_time_match:main
+rteqcorrscan-simulation = rt_eqcorrscan.console_scripts.simulation:main
+

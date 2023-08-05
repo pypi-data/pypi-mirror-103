@@ -1,0 +1,14 @@
+# Annoyingly, although the long-description is found by setup.py it is not included
+# in pypi's archive of the package, we need to include it here...
+
+include README.md
+include LICENCE.txt
+include requirements.txt
+recursive-include rt_eqcorrscan
+recursive-include rt_eqcorrscan *
+# recursive-include docs * # Docs not included in distribution
+# recursive-include tests *  # Tests not included in distribution.
+
+# exclude rules
+global-exclude *.pyc *.ms *.tgz __pycache__
+prune docs/build

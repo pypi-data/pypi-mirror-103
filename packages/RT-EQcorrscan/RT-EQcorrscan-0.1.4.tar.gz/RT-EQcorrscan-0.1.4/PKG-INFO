@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: RT-EQcorrscan
+Version: 0.1.4
+Summary: RT-EQcorrscan - Real-time matched-filter detection
+Home-page: https://github.com/calum-chamberlain/EQcorrscan
+Author: Calum Chamberlain
+Author-email: calum.chamberlain@vuw.ac.nz
+License: LGPL
+Description: 
+        Real-time EQcorrscan: Real-time wrappers for EQcorrscan's earthquake detection
+        methods.
+        
+Keywords: real-time earthquake correlation detection match-filter
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
