@@ -1,0 +1,133 @@
+Metadata-Version: 2.1
+Name: censys
+Version: 2.0.0b2
+Summary: An easy-to-use and lightweight API wrapper for Censys APIs (censys.io).
+Home-page: UNKNOWN
+Author: Censys Team
+Author-email: support@censys.io
+License: Apache License, Version 2.0
+Project-URL: Censys Homepage, https://censys.io/
+Project-URL: Documentation, https://censys-python.rtfd.io
+Project-URL: Changelog, https://github.com/censys/censys-python/releases
+Project-URL: Tracker, https://github.com/censys/censys-python/issues
+Project-URL: Source, https://github.com/censys/censys-python
+Keywords: censys
+Platform: UNKNOWN
+Classifier: Typing :: Typed
+Classifier: Topic :: Internet
+Classifier: Topic :: Security
+Classifier: Topic :: Documentation :: Sphinx
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Internet :: WWW/HTTP :: Indexing/Search
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Framework :: Pytest
+Classifier: Framework :: Flake8
+Classifier: Environment :: Console
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.25.1)
+Requires-Dist: backoff (==1.10.0)
+Provides-Extra: dev
+Requires-Dist: flake8 (==3.9.1) ; extra == 'dev'
+Requires-Dist: flake8-docstrings (==1.6.0) ; extra == 'dev'
+Requires-Dist: flake8-pytest-style (==1.4.1) ; extra == 'dev'
+Requires-Dist: flake8-simplify (==0.14.0) ; extra == 'dev'
+Requires-Dist: flake8-comprehensions (==3.4.0) ; extra == 'dev'
+Requires-Dist: pep8-naming (==0.11.1) ; extra == 'dev'
+Requires-Dist: flake8-black (==0.2.1) ; extra == 'dev'
+Requires-Dist: black (==20.8b1) ; extra == 'dev'
+Requires-Dist: pytest (==6.2.3) ; extra == 'dev'
+Requires-Dist: pytest-cov (==2.11.1) ; extra == 'dev'
+Requires-Dist: responses (==0.13.2) ; extra == 'dev'
+Requires-Dist: mypy (==0.812) ; extra == 'dev'
+Requires-Dist: backoff-stubs (==1.10.0.post3) ; extra == 'dev'
+Requires-Dist: twine (==3.4.1) ; extra == 'dev'
+Requires-Dist: parameterized (==0.8.1) ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+
+
+# Censys Python Library
+
+[![PyPI](https://img.shields.io/pypi/v/censys?color=orange)](https://pypi.org/project/censys/)
+[![Python Version](https://img.shields.io/badge/python-3.6%2B-blue)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/github/license/censys/censys-python)](LICENSE)
+[![Documentation Status](https://readthedocs.org/projects/censys-python/badge/?version=stable)](https://censys-python.readthedocs.io/en/stable/?badge=stable)
+[![Code Style](https://img.shields.io/badge/code%20style-black-000000)](https://github.com/psf/black)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+
+An easy-to-use and lightweight API wrapper for Censys APIs ([censys.io](https://censys.io/)). Python 3.6+ is currently supported.
+
+## Getting Started
+
+The library can be installed using `pip`.
+
+```bash
+$ pip install censys
+```
+
+To configure your search credentials run `censys config` or set both `CENSYS_API_ID` and `CENSYS_API_SECRET` environment variables.
+
+```bash
+$ censys config
+
+Censys API ID: XXX
+Censys API Secret: XXX
+
+Successfully authenticated for your@email.com
+```
+
+To configure your ASM credentials run `censys config-asm` or set the `CENSYS_ASM_API_KEY` environment variables.
+
+```bash
+$ censys config-asm
+
+Censys ASM API Key: XXX
+
+Successfully authenticated
+```
+
+## Resources
+
+- [Censys Homepage](https://censys.io/)
+- [Source](https://github.com/censys/censys-python)
+- [Issue Tracker](https://github.com/censys/censys-python/issues)
+- [Changelog](https://github.com/censys/censys-python/releases)
+- [Documentation](https://censys-python.rtfd.io)
+
+## Contributing
+
+All contributions (no matter how small) are always welcome.
+
+## Development
+
+```bash
+$ git clone git@github.com:censys/censys-python.git
+$ pip install -e ".[dev]"
+```
+
+## Testing
+
+```bash
+$ pytest
+```
+
+## License
+
+This software is licensed under [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)
+
+- Copyright (C) 2021 Censys, Inc.
+
+
