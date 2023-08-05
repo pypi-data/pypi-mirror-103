@@ -1,0 +1,10 @@
+pytorch-lightning>=1.2.4
+torch>=1.6
+numpy
+torchmetrics>=0.2.0
+fairscale
+transformers
+datasets
+hydra-core>=1.1.0.dev4
+rouge-score
+sentencepiece
