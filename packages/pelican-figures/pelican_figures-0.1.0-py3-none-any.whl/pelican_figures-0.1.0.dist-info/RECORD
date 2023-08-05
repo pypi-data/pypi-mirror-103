@@ -1,0 +1,8 @@
+pelican/plugins/figures/__init__.py,sha256=EaEZHnkBqKQsMGmdZHN5CH4gsjp1YwNTgA1M2J17Kko,31
+pelican/plugins/figures/extension.py,sha256=_cbslYMnqVStVQlqhxdWUDEBBAnv-GPFzDBTbA0GPLU,349
+pelican/plugins/figures/figures.py,sha256=wTv8vyuF4Yq9OBFbNTKS2Ir0Ho42EvTAAH_NBxyw92A,294
+pelican/plugins/figures/markdown_extension.py,sha256=JkeZDt6SCfnjyGp-ESnirazPPIF7E-GoQYy57R3E2yU,867
+pelican/plugins/figures/test_figures.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pelican_figures-0.1.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+pelican_figures-0.1.0.dist-info/METADATA,sha256=wVyg8DVhvlbekzUo7MPqDOuG8zm3vMuCyZ04d4mZNPY,2670
+pelican_figures-0.1.0.dist-info/RECORD,,
