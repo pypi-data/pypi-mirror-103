@@ -1,0 +1,11 @@
+bucket_dir/__init__.py,sha256=tuYNteT1JPqwGrq8eGNzfWCt-Em4XlH4yrt1CzS6BIw,2684
+bucket_dir/folder.py,sha256=IxViCkw_yVoOQB3YS30USX8XrLY1AM8dM1qmSWBZgr4,714
+bucket_dir/generator.py,sha256=owswJIMqn2ovvwERitcnGDuiwV3aiwPP1Spv-dWdRpE,5581
+bucket_dir/index.py,sha256=GlPoErjUrNj6YgKmCOUGX1kvM3TCBtqHsZAk7wnTTrI,1732
+bucket_dir/s3_gateway.py,sha256=iGiLYNtpsqOXyFCCEZ2l9VZm9iwwxxYkITbZBojTHTA,1539
+bucket_dir/templates/index.html.j2,sha256=7QaSLL8UDO5YyhnK79xgqaVLehvtXqg2uCQKYZTsYPY,931
+bucket_dir-3.0.3.dist-info/entry_points.txt,sha256=5cONSHYan3C0kd9WLNQXYOPbMdoKeJB4RLp11Y3kAXk,49
+bucket_dir-3.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+bucket_dir-3.0.3.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+bucket_dir-3.0.3.dist-info/METADATA,sha256=No2Jt4JUXvfdMtkhbt_9Hlb56xyB6Tp2ZqWUAChSva4,6723
+bucket_dir-3.0.3.dist-info/RECORD,,
