@@ -1,0 +1,10 @@
+trulioo_sdk/__init__.py,sha256=VL_PQH-D0kjYPdF7MEz9EleZbCYusHUOQXqzq3IL_Ro,623
+trulioo_sdk/api_client.py,sha256=RptfZAAE1tEaglU80p5uyv6SBvtPxzDY6DC8Yz28yQQ,36718
+trulioo_sdk/configuration.py,sha256=sn2lq0U5P0LxjU1FgkRbaAUXK8D-3qSz992Vmtr_rdY,16919
+trulioo_sdk/exceptions.py,sha256=zzHl4eTZdUQUBbup5S8_VX1C0bxFWpnbV-96Yo3_u6Y,4969
+trulioo_sdk/model_utils.py,sha256=GFTFOfyatAI0dCLgW-yVes_dWVnvU-TBgZpZ5Oeg2Gk,74199
+trulioo_sdk/rest.py,sha256=mzjZ4xz97ZUbuYG8X_2sXRLbraI0sfENXHgq2p-3o5M,12399
+trulioo_sdk-1.0.2.dist-info/METADATA,sha256=7MoXiPNDYObN4FnNlN7GGGWfyMWI5iq218MkE4OTirg,8367
+trulioo_sdk-1.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+trulioo_sdk-1.0.2.dist-info/top_level.txt,sha256=MmAiAUIzIciWRZZ9aMdMFkScPC-eXBjPrJe2bx3ux9k,12
+trulioo_sdk-1.0.2.dist-info/RECORD,,
