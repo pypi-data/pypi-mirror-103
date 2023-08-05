@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: python-cassandra-jaeger
+Version: 0.3
+Summary: Library to correctly pass current OpenTracing span to Cassandra
+Home-page: https://github.com/piotrmaslanka/python-cassandra-jaeger/
+Author: Piotr Maślanka
+Author-email: piotr.maslanka@henrietta.com.pl
+License: UNKNOWN
+Project-URL: Code, https://github.com/piotrmaslanka/python-cassandra-jaeger
+Project-URL: Issue tracker, https://github.com/piotrmaslanka/python-cassandra-jaeger/issues
+Description: # python-cassandra-jaeger
+        [![PyPI](https://img.shields.io/pypi/pyversions/python-cassandra-jaeger.svg)](https://pypi.python.org/pypi/python-cassandra-jaeger)
+        [![PyPI version](https://badge.fury.io/py/python-cassandra-jaeger.svg)](https://badge.fury.io/py/python-cassandra-jaeger)
+        [![PyPI](https://img.shields.io/pypi/implementation/python-cassandra-jaeger.svg)](https://pypi.python.org/pypi/python-cassandra-jaeger)
+        
+        ## When do I use it?
+        
+        When I'm using the following technologies:
+        
+        * [cassandra-driver](https://pypi.org/project/cassandra-driver/)
+        * [cassandra-jaeger-tracing](https://github.com/smok-serwis/cassandra-jaeger-tracing)
+        
+        And you want to attach your traces to Cassandra's requests.
+        
+        **Note: so far only Jaeger tracing is supported. I mean,** 
+        **theoretically every opentracing-compatible framework** 
+        **is supported, but only Jaeger's tracing enables to select**
+        **which query to trace or not.**
+        
+        **In case that you're not using Jaeger, every single query will be**
+        **sent with a tracing request, which may negatively impact your**
+        **performance, Cassandra-wise.**
+        
+        If you have an issue with that, please file an 
+        [issue](https://github.com/piotrmaslanka/python-cassandra-jaeger/issues)
+        with a description of what it is that you're using for tracing.
+        
+        A relevant warning will be shown as well.
+        
+        ## Usage
+        
+        Just do the following:
+        
+        ```python
+        from python_cassandra_jaeger import SessionTracer
+        from cassandra.cluster import Cluster
+        
+        from .tracing import tracer
+        
+        c = Cluster(['127.0.0.1'])
+        s = c.connect('keyspace')
+        st = SessionTracer(s, tracer)
+        
+        st.execute('SELECT * FROM table')
+        ```
+        
+        And you keep on utilizing `st` instead of `s`.
+        This will automatically execute tracing when your span is being traced.
+        
+        Just remember to match your tracing key with
+        Cassandra's `JAEGER_TRACE_KEY`.
+        
+        ## What does it do?
+        
+        It hijacks `session.execute`, grabs the current span,
+        determines if sampling is active for this span (currently
+        works only with Jaeger) and if it is so, starts a new 
+        child span, attaches it's ID to custom_payload and enables
+        tracing for the request.
+        
+        # History
+        
+        ## v0.3
+        
+        * a warning will be shown with unsupported tracing mechanism
+        
+        ## v0.2
+         
+        * improved reporting when arguments is a dict
+        
+        
+Keywords: cassandra,cassandra-driver,jaeger,opentracing,tracing
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: !=2.7.*,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*
+Description-Content-Type: text/markdown; charset=UTF-8
