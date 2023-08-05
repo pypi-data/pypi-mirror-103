@@ -1,0 +1,12 @@
+watchpoints/__init__.py,sha256=F1VBnLS73uM50LOdLs-3aAmTRn38txQ5jJSzHZRID6E,295
+watchpoints/ast_monkey.py,sha256=h8uQU3PTF7otwQGN-L98cgaciNT8twE6zkrEc4QeSFU,2626
+watchpoints/util.py,sha256=9SHdTqS6UhyshBBI6dGCH6hgAi1jNjZf6Xdv_edxH9U,2185
+watchpoints/watch.py,sha256=OPR_XtiXF_o6xpKaud7c8yOhFjg3ZA4mkTM_PkUWju4,5329
+watchpoints/watch_element.py,sha256=koS51U-Ya5QtwW7bCzp0CDCifmZvTPGrtjLRzyUJhNM,4992
+watchpoints/watch_print.py,sha256=IIWlpBtfQYx24LCQYmCZNOu-US8vNo0Od17k-sBYP_E,3234
+watchpoints-0.2.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+watchpoints-0.2.4.dist-info/METADATA,sha256=LaqY1Aac5wIkvthl0EU_iTac8UB8NQkrQKvow_TP_AQ,10033
+watchpoints-0.2.4.dist-info/NOTICE.txt,sha256=Nia11_L5XLJ2jt3cS-XBQ69y4QHAKwJlUjiQNb05uOs,549
+watchpoints-0.2.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+watchpoints-0.2.4.dist-info/top_level.txt,sha256=RxvHMa03gLbY1yFmQxJQZ3mLdYxGLjNOiDfKtHXKpwg,12
+watchpoints-0.2.4.dist-info/RECORD,,
