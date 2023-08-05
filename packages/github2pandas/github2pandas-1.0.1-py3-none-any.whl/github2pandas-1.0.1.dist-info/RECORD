@@ -1,0 +1,12 @@
+github2pandas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+github2pandas/git_releases.py,sha256=LvC87kKzzai_e9MH62csyPSR1oP0tASQreOVZHEaTus,4895
+github2pandas/issues.py,sha256=o_Y-oNwhHYj0sJzwfGKDgElL8TjE9iFzT7_YVonNcTg,7275
+github2pandas/pull_requests.py,sha256=HPetJanVztD6D3iR17S5DGX_Jbf5Y2FS_2bBDJxzz1I,10652
+github2pandas/utility.py,sha256=CPnKNxus9HON_wW3ZWc8I_yitdTHFBP1c9ASU0MCgE0,19395
+github2pandas/version.py,sha256=VF1XkPq2UBiveFIEFpIyjT95L6smOpbAuzS7aCPf1f0,9908
+github2pandas/workflows.py,sha256=5-TXc0ZHFrZOjZC3aFrk_7_uJRlAUwImR_2rxi9CWfs,8328
+github2pandas-1.0.1.dist-info/LICENSE,sha256=68HY62d14pG4g5SHaTeV2CJ0FC2iA9DsqCqXLrOWPMQ,1365
+github2pandas-1.0.1.dist-info/METADATA,sha256=YeevVRoYojMZ73bKqzRgQ2IJHt0PG6QqpajhjaV19cI,12890
+github2pandas-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+github2pandas-1.0.1.dist-info/top_level.txt,sha256=1NImjLmIgVONGDi3ZAZlliZVroww8xl8stHrHQUtdbM,14
+github2pandas-1.0.1.dist-info/RECORD,,
