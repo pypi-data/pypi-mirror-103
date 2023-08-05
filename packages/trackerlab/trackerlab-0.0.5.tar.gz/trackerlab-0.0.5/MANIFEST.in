@@ -1,0 +1,3 @@
+include trackerlab/app/*.ui
+#include trackerlab/app/ffmpeg/ffmpeg.exe
+include trackerlab/app/colormaps/*.csv
