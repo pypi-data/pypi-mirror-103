@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pyjamalib
+Version: 0.0.1
+Summary: A library for analyze joint angles from IMU data
+Home-page: https://github.com/tuliofalmeida/pyjama
+Author: Túlio F. Almeida
+Author-email: tuliofalmeida@hotmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: math (>=1.1.1)
+Requires-Dist: numpy (>=1.19.5)
+Requires-Dist: matplotlib.pyplot (>=3.2.2)
+Requires-Dist: pandas (>=1.1.5)
+Requires-Dist: sys
+Requires-Dist: cys
+Requires-Dist: csv (>=1.0os)
+Requires-Dist: time
+Requires-Dist: collections
+Requires-Dist: scipy (>=1.4.1)
+
+# pyjama
+
+
