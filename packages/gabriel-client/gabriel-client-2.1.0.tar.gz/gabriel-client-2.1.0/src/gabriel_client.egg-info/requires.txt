@@ -1,0 +1,2 @@
+gabriel-protocol==2.0.1
+websockets<5,==8.1opencv-python>=3
