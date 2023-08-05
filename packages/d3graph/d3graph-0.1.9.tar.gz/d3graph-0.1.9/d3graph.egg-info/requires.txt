@@ -1,0 +1,8 @@
+pandas
+numpy
+seaborn
+networkx>2
+ismember
+jinja2
+packaging
+sklearn
