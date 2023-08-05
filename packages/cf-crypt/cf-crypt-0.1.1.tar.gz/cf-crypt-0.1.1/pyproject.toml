@@ -1,0 +1,98 @@
+[tool.poetry]
+name = "cf-crypt"
+version = "0.1.1"
+description = "Encryption at rest made easy"
+authors = ["Keir Rice <keir@clayfox.co.nz>"]
+license = "MIT"
+readme = "README.rst"
+homepage = "https://cf-crypt.readthedocs.io/en/latest/quickstart.html"
+repository = "https://gitlab.clayfox.co.nz/cf/cf-crypt"
+documentation = "https://cf-crypt.readthedocs.io/en/latest/"
+classifiers = [
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+packages = [
+    { include = "cfcrypt", from = "src" },
+]
+include = [
+    "LICENSE",
+    "README.txt",
+    "tests/",
+    "docs/",
+]
+exclude = [
+    "docs/build/",
+    "docs/requirements.readthedocs.txt",
+    ".readthedocs.yaml",
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+cryptography = "~=3.4.7"
+cf-json = "^0.1.0"
+pathlib3x = { version = "^1.3.9", python = "<3.8" }
+
+[tool.poetry.dev-dependencies]
+Sphinx = "^3.5.4"
+sphinx-autodoc-typehints = "^1.11.1"
+sphinx-copybutton = "^0.3.1"
+sphinx-rtd-theme = "^0.5.2"
+sphinx-tabs = "^2.1.0"
+tox = "^3.23.0"
+check-manifest = "^0.46"
+flake8 = "^3.9.0"
+flake8-html = "^0.4.1"
+readme-renderer = "^29.0"
+pytest-xdist = "^2.2.1"
+pytest-cov = "^2.11.1"
+safety = "^1.10.3"
+
+coverage = {extras = ["toml"], version = "^5.5"}
+# toml only here because of a bug in poetry 1.1.5 not reading extras
+# https://github.com/python-poetry/poetry/issues/1145
+toml = "^0.10.2"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://gitlab.clayfox.co.nz/cf/cf-crypt/-/issues"
+
+
+[tool.coverage.run]
+branch = true
+parallel = true
+source = [
+    "src"
+]
+
+[tool.coverage.paths]
+source = [
+    "src/",
+    ".tox/*/Lib/site-packages/"
+]
+
+[tool.coverage.report]
+show_missing = true
+precision = 1
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == __main__:",
+]
+
+
+[tool.check-manifest]
+ignore = [
+    "setup.py",
+    "tox.ini",
+    ".idea/**",
+    ".gitlab-ci.yml",
+    ".readthedocs.yaml",
+    "docs/requirements.readthedocs.txt",
+]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
