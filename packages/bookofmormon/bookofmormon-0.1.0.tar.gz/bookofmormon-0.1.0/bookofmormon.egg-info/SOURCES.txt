@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+bookofmormon/__init__.py
+bookofmormon/book-of-mormon.json
+bookofmormon/load.py
+bookofmormon.egg-info/PKG-INFO
+bookofmormon.egg-info/SOURCES.txt
+bookofmormon.egg-info/dependency_links.txt
+bookofmormon.egg-info/top_level.txt

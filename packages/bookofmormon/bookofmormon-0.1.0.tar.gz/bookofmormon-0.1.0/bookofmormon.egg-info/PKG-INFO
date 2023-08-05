@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: bookofmormon
+Version: 0.1.0
+Summary: Python access to the text of the Book of Mormon
+Home-page: https://github.com/jer-magland/bookofmormon
+Author: Jeremy Magland
+Author-email: jeremy.magland@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/jer-magland/bookofmormon/issues
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
