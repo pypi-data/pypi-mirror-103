@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: django-simpleui-captcha
+Version: 0.1.2
+Summary: simpleui_captcha is a django admin captcha packages
+Home-page: https://github.com/dust8/django-simpleui-captcha
+Author: dust8
+License: MIT License
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Django (>=3.0)
+Requires-Dist: django-simple-captcha (>=0.5.14)
+
+# django-simpleui-captcha
+
+django-simpleui-captcha 是一个 django 后台管理登录验证码插件
+
+## 界面
+![image](screenshoot/screenshoot1.png)
+
+## 安装
+```
+pip install django-simpleui-captcha
+```
+
+### 依赖
+- Django
+- django-simple-captcha
+
+## 快速开始
+### 1. 添加 "simpleui_captcha" 到 INSTALLED_APPS 设置, 注意要放在最前面
+```py
+INSTALLED_APPS = [
+    "simpleui_captcha",
+    "simpleui",
+    ... 
+]
+```
+
+### 2. 添加 `simpleui_captcha` 的 `url` 到你的项目 `urls.py` ::
+```py
+path('simpleui_captcha/', include('simpleui_captcha.urls')),
+```
+
+### 3. 运行 `python manage.py migrate` 迁移验证码模型
+
+
