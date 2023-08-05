@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "qrsh"
+description = "Simple python script for scanning qr codes"
+version = "0.2"
+authors = ["f8ith"]
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+pillow = "*"
+opencv-python = "^4.5.1"
+typer = "^0.3.2"
+pyzbar = "^0.1.8"
+imutils = "^0.5.4"
+
+[tool.poetry.scripts]
+qrsh = 'qrsh.cli:app'
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
