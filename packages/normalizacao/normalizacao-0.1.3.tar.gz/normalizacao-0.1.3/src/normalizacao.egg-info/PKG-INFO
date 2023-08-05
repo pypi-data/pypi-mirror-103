@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: normalizacao
+Version: 0.1.3
+Summary: Um pacote para normalizar dataframes
+Home-page: https://github.com/ScrimForever/normalizacao
+Author: Thiago Salgado
+Author-email: thiago.salgado.monteiro@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ScrimForever/normalizacao/issues
+Description: # normalizacao
+        Normalizações para métodos multicritérios.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
