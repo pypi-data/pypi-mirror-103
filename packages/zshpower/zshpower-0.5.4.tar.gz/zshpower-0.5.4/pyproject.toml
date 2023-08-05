@@ -1,0 +1,72 @@
+[tool.poetry]
+name = "zshpower"
+version = "0.5.4"
+description = "ZSHPower is a theme for ZSH with a manager."
+readme = "README.rst"
+authors = ["William C. Canin <william.costa.canin@gmail.com>"]
+license = "MIT"
+keywords=["zsh-theme", "snakypy", "zsh", "theme", "power"]
+homepage = "https://github.com/snakypy/zshpower"
+repository = "https://github.com/snakypy/zshpower"
+include = ["LICENSE", "CHANGELOG.rst"]
+
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Unix",
+    "Programming Language :: Python :: 3"
+]
+
+packages = [
+    { include = "zshpower" }
+]
+
+[tool.poetry.scripts]
+zshpower = "zshpower.cli:main"
+zshpower-shell = "zshpower.shell:main"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/snakypy/zshpower/issues"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+snakypy = "^0.3.6"
+docopt = "^0.6.2"
+tomlkit = "^0.7.0"
+
+[tool.poetry.dev-dependencies]
+twine = "^3.4.1"
+wheel = "^0.36.2"
+flake8 = "^3.9.1"
+black = "^20.8b1"
+tox = "^3.23.0"
+pytest = "^6.2.3"
+pre-commit = "^2.12.1"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'
+exclude = '''
+
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \venv
+    | build
+    | venv
+    | dist
+    | docs
+    | tmp
+  )/
+)
+'''
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
