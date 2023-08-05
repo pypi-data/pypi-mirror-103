@@ -1,0 +1,17 @@
+hifis_surveyval/__init__.py,sha256=3roqHDTrIrc4Ail291jjCKckQIwjehxFnHStU6Ri41k,1128
+hifis_surveyval/answer.py,sha256=ji3MQAHccxAtP2IM9xDkAc1aim5fWnL37C6D3tBo5nc,4324
+hifis_surveyval/cli.py,sha256=84DvREorzfpYX4TUG6qBLQkUr9_y9qPh08E9V_rUIoY,7465
+hifis_surveyval/data.py,sha256=3cYHo3OruNsDyJY1y5UDYvuLSya4bhMORjv6UKJu_p8,4119
+hifis_surveyval/dispatch.py,sha256=UEYsDarex-Nrv3Hg1D7H1fgBeYc8iwf_ADxP-QmBvE8,5311
+hifis_surveyval/globals.py,sha256=UFYXX-bgnUJ95zcEJ6-Z5eH-7UslSN13SoJxQP3Fg-o,1494
+hifis_surveyval/metadata.py,sha256=nQsToVem2vmGhyRRrBLlb_4nKjdF5yOj17jMNCCWX5Q,11220
+hifis_surveyval/plot.py,sha256=IScpzgt7w5fKvjL11-fsShlAWDnjJmWrtVKyZZrPPj4,22788
+hifis_surveyval/question.py,sha256=SuTtT1dQcJ-a8ShW52R1xQ8ej-cL8N7EnK_TckTLvoM,22619
+hifis_surveyval/settings.py,sha256=8VH7g_-HgQwjmR4eia_jDzvwed298DZTnOgdTSWeQRc,5463
+hifis_surveyval/util.py,sha256=b7BDSYcyHAVedWdzPe0NnvDdTAQvLVo8A5ZiqS0M_m8,10886
+hifis_surveyval/version.py,sha256=VASEZvAh_PAcUI_wDJ_4wBpgs8VndPh6pitcpx_Y7Sg,1144
+hifis_surveyval-0.2.0rc2.dist-info/entry_points.txt,sha256=O4SEUyFhFxlYhpVdJ68MQorFjV5Wb8ZMpW5nOfFp8rw,59
+hifis_surveyval-0.2.0rc2.dist-info/LICENSES/GPL-3.0-or-later.txt,sha256=tqi_Y64slbCqJW7ndGgNe9GPIfRX2nVGb3YQs7FqzE4,34670
+hifis_surveyval-0.2.0rc2.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+hifis_surveyval-0.2.0rc2.dist-info/METADATA,sha256=EeY5fE9gfNDFQ4bkHldEbjnUZjkAYhavHGwuBb_OQIs,12470
+hifis_surveyval-0.2.0rc2.dist-info/RECORD,,
