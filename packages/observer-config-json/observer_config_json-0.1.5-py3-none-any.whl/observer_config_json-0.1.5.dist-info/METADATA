@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: observer-config-json
+Version: 0.1.5
+Summary: ...
+Home-page: https://github.com/RivalStorms/OBSERVER_CONFIG_JSON
+Author: Tyshko Stanislav
+Author-email: admin@toqp.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: facade-edit-file-json
+
+# observer config json
+
+## Usage
+
+Install using pip:
+```shell
+$ pip install observer-config-json
+```
+
+
+
