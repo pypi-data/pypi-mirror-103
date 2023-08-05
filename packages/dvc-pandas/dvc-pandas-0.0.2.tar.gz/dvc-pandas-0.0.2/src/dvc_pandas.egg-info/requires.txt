@@ -1,0 +1,7 @@
+GitPython
+appdirs
+dvc[s3]
+fastparquet
+pandas
+python-snappy
+ruamel.yaml
