@@ -1,0 +1,13 @@
+bbopt>=1.1.21
+tqdm
+
+[dev]
+pdoc3
+Markdown
+
+[examples]
+numpy
+scipy
+mpmath
+scikit-learn
+matplotlib
