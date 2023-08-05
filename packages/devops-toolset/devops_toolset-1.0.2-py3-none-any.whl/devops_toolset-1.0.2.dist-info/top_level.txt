@@ -1,0 +1,8 @@
+core
+devops_platforms
+filesystem
+i18n
+locales
+project_types
+tools
+toolset
