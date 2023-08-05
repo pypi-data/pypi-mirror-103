@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+static/style.css
+tdstyles/__init__.py
+tdstyles.egg-info/PKG-INFO
+tdstyles.egg-info/SOURCES.txt
+tdstyles.egg-info/dependency_links.txt
+tdstyles.egg-info/requires.txt
+tdstyles.egg-info/top_level.txt

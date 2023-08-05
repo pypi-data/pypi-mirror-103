@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: tdstyles
+Version: 0.0.1
+Summary: A python package which helps in customizing a jupyter notebook with very less effort.
+Home-page: https://sprakshith.pythonanywhere.com/
+Author: SP RAKSHITH
+Author-email: rakshith0908@gmail.com
+License: MIT
+Description: This Python package is created in order cutomize Jupyter Notebooks.
+        
+        Change Log
+        ==========
+        
+        0.0.1 (20-04-2021)
+        ------------------
+        - First Release
+Keywords: matplotlib pyplot seaborn plt sns
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
