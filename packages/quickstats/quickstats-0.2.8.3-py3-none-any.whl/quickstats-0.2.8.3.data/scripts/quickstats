@@ -1,0 +1,14 @@
+#!python
+
+import click
+from quickstats.components.cli import run_pulls, plot_pulls, likelihood_scan
+
+@click.group()
+def cli():
+    pass
+
+if __name__ == "__main__":
+    cli.add_command(run_pulls)
+    cli.add_command(plot_pulls)
+    cli.add_command(likelihood_scan)   
+    cli()
