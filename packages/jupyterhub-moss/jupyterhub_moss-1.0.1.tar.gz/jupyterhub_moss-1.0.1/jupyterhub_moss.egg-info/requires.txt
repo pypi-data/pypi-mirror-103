@@ -1,0 +1,10 @@
+batchspawner
+jinja2
+jupyterhub
+oauthenticator
+traitlets
+
+[dev]
+build
+flake8
+black
