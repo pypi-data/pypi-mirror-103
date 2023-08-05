@@ -1,0 +1,53 @@
+
+
+**Website and documentation**: [https://github.com/raquelsilva/pytie](https://github.com/raquelsilva/pytie)
+
+---------
+
+# PyTie
+---------
+*Well tie in Python*
+
+![pytie badge](https://img.shields.io/badge/PyTie-v4.0.1-ff69b4.svg)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2528562.svg)](https://doi.org/10.5281/zenodo.2528562)
+
+
+This library provides an opportunity for geoscientists to know all the steps required for 
+seismic well tying and creation of a time depth-table. At the end, you can export an already 
+formatted time-depth table and a synthetic seismogram to being imported in any interpretation software.
+
+### How to import functions:
+
+    import pytie.functions as pytie
+    import pytie 
+
+### Required packages:
+- numpy
+- pandas
+- matplotlib
+- lasio
+- scipy
+
+
+**Documentation:**   
+In the GitHub page you will find at the Wiki section a description of the functions.
+To access it directly, please, follow the link below:
+
+[Wiki](https://github.com/raquelsilva/pytie/wiki/) 
+
+**Research:**    
+Make your research **reproducible** by using open data and sharing your results with the community.
+You can find open data in the following addresses:
+
+[USGS (https://geology.cr.usgs.gov/energy/of00-200/WELLS/WELLIDX.HTM)](https://geology.cr.usgs.gov/energy/of00-200/WELLS/WELLIDX.HTM)  
+
+[TerraNubis (https://terranubis.com/datalist/free)](https://terranubis.com/datalist/free)  
+
+[Equinor (https://www.equinor.com/en/how-and-why/digitalisation-in-our-dna.html)](https://www.equinor.com/en/how-and-why/digitalisation-in-our-dna.html)  
+
+
+**Teaching:**    
+With PyTie you can teach the basics of seismic processing/seismic-well tie with real data. 
+
+
+
