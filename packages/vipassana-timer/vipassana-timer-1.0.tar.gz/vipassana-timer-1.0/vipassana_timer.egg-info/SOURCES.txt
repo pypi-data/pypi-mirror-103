@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+meditate/__init__.py
+vipassana_timer.egg-info/PKG-INFO
+vipassana_timer.egg-info/SOURCES.txt
+vipassana_timer.egg-info/dependency_links.txt
+vipassana_timer.egg-info/entry_points.txt
+vipassana_timer.egg-info/requires.txt
+vipassana_timer.egg-info/top_level.txt
