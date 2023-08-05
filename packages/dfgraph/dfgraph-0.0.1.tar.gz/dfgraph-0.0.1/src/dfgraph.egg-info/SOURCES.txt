@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/dfgraph/__init__.py
+src/dfgraph/database.py
+src/dfgraph.egg-info/PKG-INFO
+src/dfgraph.egg-info/SOURCES.txt
+src/dfgraph.egg-info/dependency_links.txt
+src/dfgraph.egg-info/top_level.txt
