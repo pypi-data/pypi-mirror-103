@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+eaiBat/eaibat.egg-info/PKG-INFO
+eaiBat/eaibat.egg-info/SOURCES.txt
+eaiBat/eaibat.egg-info/dependency_links.txt
+eaiBat/eaibat.egg-info/requires.txt
+eaiBat/eaibat.egg-info/top_level.txt
+eaiBat/evidenceGenerators/DocxEvidence.py
+eaiBat/evidenceGenerators/MdEvidence.py
+eaiBat/evidenceGenerators/__init__.py
