@@ -1,0 +1,3 @@
+[console_scripts]
+pyflac = pyflac.__main__:main
+
