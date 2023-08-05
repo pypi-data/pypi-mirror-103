@@ -1,0 +1,9 @@
+pandas_pcaxis/__init__.py,sha256=EeUcaDYTqDAcVrFNN1pa8jvha0Tz88lhO5Fb1LNUleE,76
+pandas_pcaxis/px_reader.py,sha256=4o5bxrFdMyXIjFFinqDfcPrpIE8o_ivDJVRD3yI-Kig,11593
+pandas_pcaxis/pxweb_api.py,sha256=FIwr_RRoFJo8_-k3dS7AgDZYDHkpdyiOrUC-hirJJ58,1563
+pandas_pcaxis/statfi_px_api.py,sha256=7MbOOL77c33rKIs8Jo5P-mv7ne99qH6B5dd9U4r2l4E,4732
+pandas_pcaxis-0.1.dist-info/LICENSE,sha256=ZHOsa2yPgb_CZDInHi3ZXRNpxCGuFUfY_ZdS2Rf-2Nw,1299
+pandas_pcaxis-0.1.dist-info/METADATA,sha256=pjMw3V96o0WaTkJsnYQD57tgsik5O_4LwVEuLbBVmdI,715
+pandas_pcaxis-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pandas_pcaxis-0.1.dist-info/top_level.txt,sha256=VtAzTRGhCKm3NYp54uc6Hl1bZWSg9ZQPaeXKhKwpg3s,14
+pandas_pcaxis-0.1.dist-info/RECORD,,
