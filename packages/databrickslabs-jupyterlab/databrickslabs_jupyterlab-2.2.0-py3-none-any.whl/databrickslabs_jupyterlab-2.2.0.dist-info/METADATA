@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: databrickslabs-jupyterlab
+Version: 2.2.0
+Summary: Remote JupyterLab kernel for Databricks
+Home-page: https://github.com/databrickslabs/Jupyterlab-Integration
+Author: Bernhard Walter
+Author-email: bernhard.walter@databricks.com
+License: Databricks License
+Keywords: databricks jupyter jupyterlab spark
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Utilities
+Classifier: License :: Other/Proprietary License
+Description-Content-Type: text/markdown
+Provides-Extra: cli
+Requires-Dist: notebook (<6.4.0,>=6.3.0) ; extra == 'cli'
+Requires-Dist: version-parser (<1.1.0,>=1.0.0) ; extra == 'cli'
+Requires-Dist: questionary ; extra == 'cli'
+Requires-Dist: databricks-cli ; extra == 'cli'
+Requires-Dist: jupyterlab (<3.1.0,>=3.0.0) ; extra == 'cli'
+Requires-Dist: ipywidgets (<7.7.0,>=7.6.3) ; extra == 'cli'
+Requires-Dist: ipykernel (<5.6.0,>=5.5.3) ; extra == 'cli'
+Requires-Dist: tornado (<6.2.0,>=6.1.0) ; extra == 'cli'
+Requires-Dist: widgetsnbextension (==3.5.1) ; extra == 'cli'
+Requires-Dist: ssh-ipykernel (==1.2.2) ; extra == 'cli'
+Requires-Dist: inquirer (==2.6.3) ; extra == 'cli'
+Requires-Dist: pyperclip (>=1.8.2<1.9.0) ; extra == 'cli'
+Requires-Dist: databrickslabs-jupyterlab-status (==2.2.0) ; extra == 'cli'
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: jupyter-console ; extra == 'dev'
+Requires-Dist: pyyaml ; extra == 'dev'
+Requires-Dist: bumpversion ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: yapf ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+
+# Local JupyterLab connecting to Databricks via SSH (V2)
+
+This package allows to connect to a remote Databricks cluster from a locally running JupyterLab.
+
+For more details see:
+
+- [Prerequisites, installation and usage](https://github.com/databrickslabs/jupyterlab-integration/blob/master/README.md)
+- [Switching kernels and restart after cluster auto-termination](https://github.com/databrickslabs/jupyterlab-integration/blob/master/docs/v2/kernel_lifecycle.md)
+- [Creating a mirror of a remote Databricks cluster](https://github.com/databrickslabs/jupyterlab-integration/blob/master/docs/v2/mirrored-environment.md)
+- [Detailed databrickslabs_jupyterlab command overview](https://github.com/databrickslabs/jupyterlab-integration/blob/master/docs/v2/details.md)
+- [How it works](https://github.com/databrickslabs/jupyterlab-integration/blob/master/docs/v2/how-it-works.md)
+- [Troubleshooting](https://github.com/databrickslabs/jupyterlab-integration/blob/master/docs/v2/troubleshooting.md)
+
+
+
