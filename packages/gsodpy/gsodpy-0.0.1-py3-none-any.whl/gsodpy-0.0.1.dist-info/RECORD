@@ -1,0 +1,9 @@
+gsodpy/__init__.py,sha256=UwMH6pEbaNjN2jkqnA0nsWDr1gnFW9s26Z3gmR5-H0I,16
+gsodpy/gsodpy.py,sha256=wma6YArf9y1PPFx47xV2W0030hbjypNN0U_gh-frFBw,4652
+gsodpy/gsoDownloader/__init__.py,sha256=x6U6eyCM78KfMECqO0ImgZyKKWM2Pf42iUP9G51M2cY,23
+gsodpy/gsoDownloader/gsoDownloader.py,sha256=R73vgwRLqoanPOY2vzU50eDxHoJMDcbPioR34GsAAY4,801
+gsodpy-0.0.1.dist-info/LICENSE,sha256=fo-s69CC1WWVpOdoq6ilu_p92_E84kkxHWKbx2xJMsY,1068
+gsodpy-0.0.1.dist-info/METADATA,sha256=nHQduTF4OgQ_ndIfCOKnrGKjRrTtiGP0hPn-bkCU3ts,1375
+gsodpy-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gsodpy-0.0.1.dist-info/top_level.txt,sha256=MJmWJsikkB0WENHvVpCGJkxVlDwv6MVZ2WblU3a5Tic,7
+gsodpy-0.0.1.dist-info/RECORD,,
