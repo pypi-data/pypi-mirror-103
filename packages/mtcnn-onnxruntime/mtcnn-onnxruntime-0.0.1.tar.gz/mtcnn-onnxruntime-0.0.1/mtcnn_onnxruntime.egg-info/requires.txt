@@ -1,0 +1,7 @@
+opencv-python
+
+[cpu]
+onnxruntime
+
+[gpu]
+onnxruntime-gpu
