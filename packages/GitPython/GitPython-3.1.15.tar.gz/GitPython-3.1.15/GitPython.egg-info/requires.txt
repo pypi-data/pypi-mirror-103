@@ -1,0 +1,2 @@
+gitdb<5,>=4.0.1
+typing-extensions>=3.7.4.0
