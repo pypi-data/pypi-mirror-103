@@ -1,0 +1,8 @@
+setup.py
+extractor23.egg-info/PKG-INFO
+extractor23.egg-info/SOURCES.txt
+extractor23.egg-info/dependency_links.txt
+extractor23.egg-info/requires.txt
+extractor23.egg-info/top_level.txt
+tool/__init__.py
+tool/ext.py
