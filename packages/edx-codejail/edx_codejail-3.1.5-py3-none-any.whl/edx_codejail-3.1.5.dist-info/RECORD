@@ -1,0 +1,14 @@
+codejail/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+codejail/django_integration.py,sha256=O_h0CV7kj1IFHu4ujBj2_aCKlt8q7okOlKSCOfGM-nQ,812
+codejail/django_integration_utils.py,sha256=FW3ZS4kuDH_g8JNI7PQLlNTit26OaN8SggnXOHtZdI0,1000
+codejail/jail_code.py,sha256=-vtH5xs0NJ3cE9iXKNRr-fu9HlsAawjlP5nEAZk1Bkg,13062
+codejail/proxy.py,sha256=UNAUM5MSZNvaZNWru-UF7lr_Iv_7QlWqe7YfN8chcmA,7585
+codejail/safe_exec.py,sha256=D7-lZS3dmDZnz0no3d7b5nyo_dP2X7SsRxYhcufRJxA,10396
+codejail/subproc.py,sha256=3K3VwhbpSIOL7CeYbOaQCp89Rx5GFw6HUjDU_-EJmf0,2873
+codejail/util.py,sha256=u04n7FDSL3FYqBcHLAxg-yKjHQF5v263OdVJ4ZFc6rE,730
+edx_codejail-3.1.5.dist-info/LICENSE.txt,sha256=DVQuDIgE45qn836wDaWnYhSdxoLXgpRRKH4RuTjpRZQ,10174
+edx_codejail-3.1.5.dist-info/METADATA,sha256=ZO9K0z-bbx7fL5RiOQhS14NfEQ1qFn021_b8-DwCcyQ,8931
+edx_codejail-3.1.5.dist-info/NOTICE.txt,sha256=pzu8vuXtF9d-Tu2K184PLNLHNTG2ZJ8-Xf5VHyCXR-M,560
+edx_codejail-3.1.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+edx_codejail-3.1.5.dist-info/top_level.txt,sha256=rMRDP53OQNcO1kXYVyYzAroz1_JLYMn094uf8_JOAGE,9
+edx_codejail-3.1.5.dist-info/RECORD,,
