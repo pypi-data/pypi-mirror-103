@@ -1,0 +1,14 @@
+PyQt5/Qt/qml/soloman/SVideo.qml,sha256=s3EASSaG-vBTl-TLN8QVjXwm0Z58WTZb7tMBYEgCTxM,575
+PyQt5/Qt/qml/soloman/qmldir,sha256=zLhL9QvJEWnD6fZx1IYhWpbdxuuvt57Nvod8OBTRVC0,37
+soloman/__init__.py,sha256=eg82t5-_WA6PVkeOQg5nd3Y8m0McQFv9FzFRShR8Vv0,841
+soloman/fps_clocks.py,sha256=nlKANz__6rtk8kpTu2PrNPvPCYYoxWBMUTDmh0wZROw,477
+soloman/misc.py,sha256=_Wj3hFgTvNkXWWuPmRSfzI6Z-g_V5IRZLv3K12tN5gg,359
+soloman/pyqt_inter_audio.py,sha256=biiLW6OSKEpb7NRyqOpI6BkC33iYL0WloHhzM9wca8c,2852
+soloman/pyqt_inter_video.py,sha256=FEt6QDWQhgg8gHdhzbQTqV_-sbnoSsWL4uXXcTHXin0,12232
+soloman/audio/__init__.py,sha256=iWpY8IJ-4ltWkcu04uUtaxhNX9jJi5SPjZQqOOghJFE,7428
+soloman/video/__init__.py,sha256=wNTCOzxxIpkd8PS-6Itq_cwJTN2_ztaxfTNQ8iwRPm8,1364
+soloman-2.9.dist-info/LICENSE,sha256=11d_kUoOaDhDBIgGFdCDRayWD0Qq01KewCclEnEWSsQ,1074
+soloman-2.9.dist-info/METADATA,sha256=-ujHRlgyY6QWfYbRNOU4p_azTAy9GF2elzdNkELEufQ,3476
+soloman-2.9.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+soloman-2.9.dist-info/top_level.txt,sha256=voy7mkSZdnLyEjq5kRvDpKrMsAtO4LJQUBXvJz7P5BY,14
+soloman-2.9.dist-info/RECORD,,
