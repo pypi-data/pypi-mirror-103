@@ -1,0 +1,8 @@
+vm_booking_api/__init__.py,sha256=eBEfSv-atAfj5WUQIBcZvTP5oXB3oChRFkS4tunTwc4,6579
+vm_booking_api/config.py,sha256=t3bgvDaH0Er67MUflWEVMST6jw4t7EiVJam1i0_OeU0,392
+vm_booking_api/constants.py,sha256=iePh3v5Q6HjMSeGoVqhbuj1KB8UmxfCpGPRW64onsuY,25
+vm_booking_api/models.py,sha256=A8hrcfYoDRl-yoo0zbWmi3KGDqvwF0Jp__byju657H0,1809
+vm_booking_app-0.1.53.dist-info/METADATA,sha256=SLqefVdjTnDRHh3Za1izGsXdghhNmcnWOenyTTbqXOg,5448
+vm_booking_app-0.1.53.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+vm_booking_app-0.1.53.dist-info/top_level.txt,sha256=d-r7e1e7XVW4A48NsOCnZQU0-XPREYWn6Z0BcgZtPWI,15
+vm_booking_app-0.1.53.dist-info/RECORD,,
