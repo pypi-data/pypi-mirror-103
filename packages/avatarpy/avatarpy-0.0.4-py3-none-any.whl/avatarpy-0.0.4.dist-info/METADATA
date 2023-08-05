@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: avatarpy
+Version: 0.0.4
+Summary: avatar analysis module
+Home-page: https://github.com/jeakwon/avatarpy
+Author: jeakwon
+Author-email: onlytojay@gmail.com
+License: UNKNOWN
+Keywords: avatarpy
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: sklearn
+Requires-Dist: jupyter
+Requires-Dist: plotly
+Requires-Dist: cufflinks
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+
+UNKNOWN
+
+
