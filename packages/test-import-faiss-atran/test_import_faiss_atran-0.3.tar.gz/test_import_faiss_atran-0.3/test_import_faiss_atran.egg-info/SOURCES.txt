@@ -1,0 +1,9 @@
+README.md
+setup.py
+test_import_faiss_atran/__init__.py
+test_import_faiss_atran/read_data.py
+test_import_faiss_atran.egg-info/PKG-INFO
+test_import_faiss_atran.egg-info/SOURCES.txt
+test_import_faiss_atran.egg-info/dependency_links.txt
+test_import_faiss_atran.egg-info/not-zip-safe
+test_import_faiss_atran.egg-info/top_level.txt
