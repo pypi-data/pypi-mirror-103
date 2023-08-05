@@ -1,0 +1,12 @@
+LICENSE.txt
+pyproject.toml
+setup.cfg
+awsenv/__init__.py
+awsenv/__main__.py
+awsenv/awsenv.py
+awsenv_cli.egg-info/PKG-INFO
+awsenv_cli.egg-info/SOURCES.txt
+awsenv_cli.egg-info/dependency_links.txt
+awsenv_cli.egg-info/entry_points.txt
+awsenv_cli.egg-info/requires.txt
+awsenv_cli.egg-info/top_level.txt
