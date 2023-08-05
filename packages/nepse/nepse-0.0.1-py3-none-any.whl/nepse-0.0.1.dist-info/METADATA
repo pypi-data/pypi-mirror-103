@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: nepse
+Version: 0.0.1
+Summary: Python Wrapper for Newweb Nepse
+Home-page: UNKNOWN
+Author: FRAPPÉ (FRAPPÉ#4101)
+License: UNKNOWN
+Keywords: python,nepse,stock,nepal stock,nepal stock prices,nepse pythonb
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+Nepse.py allows you to get realtime market prices and stats off nepse.
+
+
