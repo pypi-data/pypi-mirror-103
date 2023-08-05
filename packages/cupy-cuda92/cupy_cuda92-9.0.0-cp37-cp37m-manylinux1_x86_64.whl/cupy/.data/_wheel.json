@@ -1,0 +1,1 @@
+{"cuda": "9.2", "packaging": "pip", "nccl": {"version": "2.4.8", "filename": "libnccl.so.2.4.8"}, "cudnn": {"version": "7.6.5", "filename": "libcudnn.so.7.6.5"}}
