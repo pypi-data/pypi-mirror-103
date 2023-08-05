@@ -1,0 +1,259 @@
+{
+  "definitions": {
+    "DataSet": {
+      "id": "#dataset",
+      "title": "OARepoRDM DataSet Record v2.0.0",
+      "type": "object",
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "$ref": "invenio-v1.0.0.json#/definitions/InvenioRecord"
+        },
+        {
+          "properties": {
+            "metadata": {
+              "type": "object",
+              "description": "DataSet record metadata.",
+              "additionalProperties": false,
+              "properties": {
+                "access": {
+                  "type": "object",
+                  "description": "Record access control and ownership.",
+                  "additionalProperties": false,
+                  "properties": {
+                    "owned_by": {
+                      "description": "List of owners of the record.",
+                      "type": "array",
+                      "uniqueItems": true,
+                      "items": {"$ref": "rdm-definitions-v1.0.0.json#/agent"}
+                    },
+
+                    "record": {
+                      "description": "Record visibility (public or restricted)",
+                      "type": "string",
+                      "enum": ["public", "restricted"]
+                    },
+
+                    "files": {
+                      "description": "Files visibility (public or restricted)",
+                      "type": "string",
+                      "enum": ["public", "restricted"]
+                    },
+
+                    "embargo": {
+                      "description": "Description of the embargo on the record.",
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "active": {
+                          "description": "Whether or not the embargo is (still) active.",
+                          "type": ["boolean", "null"]
+                        },
+                        "until": {
+                          "description": "Embargo date of record (ISO8601 formatted date time in UTC). At this time both metadata and files will be made public.",
+                          "type": ["string", "null"],
+                          "format": "date"
+                        },
+                        "reason": {
+                          "description": "The reason why the record is under embargo.",
+                          "type": ["string", "null"]
+                        }
+                      }
+                    }
+                  }
+                },
+                "notes": {
+                  "type": "array",
+                  "items":{
+                      "type": "string"
+                  }
+                },
+                "pids": {
+              "type": "object",
+              "description": "External persistent identifiers for a record including e.g. OAI-PMH identifier, minted DOIs and more. PIDs are registered in the PIDStore.",
+              "items": {
+                "type": "object",
+                "additionalProperties": {"$ref": "rdm-definitions-v1.0.0.json#/external-pid"}
+              },
+              "uniqueItems": true
+            },
+                "resource_type": {"$ref": "rdm-definitions-v1.0.0.json#/resource_type"},
+                "creators": {
+                  "description": "Creators of the resource.",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": ["person_or_org"],
+                    "properties": {
+                        "person_or_org": {"$ref": "rdm-definitions-v1.0.0.json#/person_or_org"},
+                        "role": { "$ref": "../taxonomy-v2.0.0.json#/definitions/Term" },
+                        "affiliations": {"$ref": "rdm-definitions-v1.0.0.json#/affiliations"}
+                    }
+                  }
+                },
+                "title": {
+                  "description": "Primary (multilingual) title of the record.",
+                  "$ref": "/schemas/multilingual-v2.0.0.json#/definitions/multilingual"
+                },
+                "additional_titles": {
+                  "description": "Additional record (multilingual) titles.",
+                  "items": {
+                    "$ref": "/schemas/multilingual-v2.0.0.json#/definitions/multilingual"
+                  }
+                },
+                "publisher": {
+                  "type": "string"
+                },
+                "publication_date": {
+                  "description": "Record publication date (EDTF level 0 format).",
+                  "type": "string"
+                },
+                "subjects": {
+                  "type": "array",
+                  "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                          "subject": {"type": "string"},
+                          "identifier": {"$ref": "rdm-definitions-v1.0.0.json#/identifier"},
+                          "scheme": {"$ref": "rdm-definitions-v1.0.0.json#/scheme"}
+                      },
+                      "required": ["subject"]
+                  }
+                },
+                "contributors": {
+                  "description": "Contributors in order of importance.",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "person_or_org": {"$ref": "rdm-definitions-v1.0.0.json#/person_or_org"},
+                      "role": {"$ref": "rdm-definitions-v1.0.0.json#/contributorType"},
+                      "affiliations": {"$ref": "rdm-definitions-v1.0.0.json#/affiliations"}
+                    },
+                    "required": ["person_or_org", "role"]
+                  }
+                },
+                "dates": {
+                  "description": "Date or date intervals.",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "date": {
+                        "description": "Date or date interval in EDTF level 0 format",
+                        "type": "string"
+                      },
+                      "type": {"$ref": "rdm-definitions-v1.0.0.json#/dateType"},
+                      "description": {
+                        "description": "Description of the date or date interval e.g. 'Accepted' or 'Available' (CV).",
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "languages": {
+                  "description": "The primary language of the resource. ISO 639-2 B language code.",
+                  "type": "array",
+                  "items": {"$ref": "rdm-definitions-v1.0.0.json#/language"},
+                  "minItems": 1
+                },
+                "identifiers": {
+                  "description": "Alternate identifiers for the record.",
+                  "type": "array",
+                  "items": {"$ref": "rdm-definitions-v1.0.0.json#/identifiers_with_scheme"},
+                  "uniqueItems": true
+                },
+                "related_identifiers": {
+                  "type": "array",
+                  "uniqueItems": true,
+                  "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "identifier": {"$ref": "rdm-definitions-v1.0.0.json#/identifier"},
+                        "scheme": {"$ref": "rdm-definitions-v1.0.0.json#/scheme"},
+                        "relation_type": {"$ref": "rdm-definitions-v1.0.0.json#/relationType"},
+                        "resource_type": {"$ref": "rdm-definitions-v1.0.0.json#/resource_type"}
+                      }
+                  }
+                },
+                "version": {
+                  "description": "Record version tag.",
+                  "type": "string"
+                },
+                "rights": {
+                  "description": "Any license or copyright information for this resource.",
+                  "$ref": "taxonomy-v2.0.0.json#/definitions/Term"
+                },
+                "abstract": {
+                  "description": "Abstract description for record (may contain HTML).",
+                  "$ref": "multilingual-v2.0.0.json#/definitions/multilingual"
+                },
+                "additional_descriptions": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "multilingual-v2.0.0.json#/definitions/multilingual"
+                  }
+                },
+                "references": {
+                  "type": "array",
+                  "minItems": 0,
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "reference": {
+                        "type": "string",
+                        "description": "A reference string."
+                      },
+                      "identifier": {"$ref": "rdm-definitions-v1.0.0.json#/identifier"},
+                      "scheme": {"$ref": "rdm-definitions-v1.0.0.json#/scheme"}
+                    }
+                  }
+                }
+              }
+            },
+            "ext": {
+              "type": "object",
+              "description": "Configured additional metadata"
+            },
+            "tombstone": {
+              "type": "object",
+              "description": "Tombstone for the record.",
+              "additionalProperties": false,
+              "properties": {
+                "reason": {
+                  "type": "string",
+                  "description": "Reason for removal."
+                },
+                "category": {
+                  "type": "string",
+                  "description": "Category for the removal."
+                },
+                "removed_by": {"$ref": "rdm-definitions-v1.0.0.json#/agent"},
+                "timestamp": {
+                  "type": "string",
+                  "description": "ISO8601 formatted timestamp in UTC.",
+                  "format": "date-time"
+                }
+              }
+            },
+            "provenance": {
+              "type": "object",
+              "description": "Record provenance.",
+              "additionalProperties": false,
+              "properties": {
+                "created_by": {"$ref": "rdm-definitions-v1.0.0.json#/agent"},
+                "on_behalf_of": {"$ref": "rdm-definitions-v1.0.0.json#/agent"}
+              }
+            },
+          }
+        }
+      ]
+    }
+  }
+}

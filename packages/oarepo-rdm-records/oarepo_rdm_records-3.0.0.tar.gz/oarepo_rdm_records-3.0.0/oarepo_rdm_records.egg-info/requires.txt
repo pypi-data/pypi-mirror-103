@@ -1,0 +1,13 @@
+pycountry
+oarepo-mapping-includes
+oarepo-invenio-model
+oarepo-validate
+idutils
+edtf
+oarepo-multilingual
+marshmallow-utils>=0.4.0
+oarepo-taxonomies
+
+[tests]
+pydocstyle
+oarepo[tests]~=3.3.0
