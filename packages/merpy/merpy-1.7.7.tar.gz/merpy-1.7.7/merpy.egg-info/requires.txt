@@ -1,0 +1,4 @@
+ssmpy
+
+[dev]
+setuptools-changelog
