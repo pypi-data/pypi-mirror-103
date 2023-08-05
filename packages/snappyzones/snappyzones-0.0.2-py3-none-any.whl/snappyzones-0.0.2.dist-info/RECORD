@@ -1,0 +1,16 @@
+snappyzones/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+snappyzones/__main__.py,sha256=PRqN6S6MreGGnNHwh0E6YLzxX8IZXA9SVJW75fLjpLk,610
+snappyzones/builder.py,sha256=SptGoL1i4UpNCYib2_YWPd_FI1kEVFWtbfAb7YrvMiA,2944
+snappyzones/cmd_reader.py,sha256=PZmB0flNKbNuSFC_Y4VvZzFyIAq-j4advuYq5bY5HXY,830
+snappyzones/help_menu.py,sha256=pjaGNQRa-XbIkdLc2O_dlkA_fNlKly5uB8Hw-eeNYt0,525
+snappyzones/process.py,sha256=1_ptAP_3fjaug6Z1NDVkF-qFiV0DcTvRPhy0sIVbGL8,1540
+snappyzones/service.py,sha256=aXgO8PdSOJz4rVrFFpxt48kFEDKbujyeB01xO1KSEIE,2202
+snappyzones/snap.py,sha256=6N0n0oPfctVW9Qs7VcP5v_KJ7Qjqf51ZycVlAOzB6fc,2130
+snappyzones/zones.json,sha256=7WA9mkr_Noj612T5e87wgaSDSpe0pcZZ8A-KzYA5Yjc,372
+snappyzones/zoning.py,sha256=twHhwwe8sV2dGixugTChV448LrG4GAEEvUCts22G-_8,1543
+snappyzones-0.0.2.dist-info/LICENSE.txt,sha256=N0P3pKtRMvfb64jmgJdlerg3TnS0a2QC776AzPsbZIg,35128
+snappyzones-0.0.2.dist-info/METADATA,sha256=rQhXd7yUFpXrF-UfXWEdfdACufJj-BQZHwGfUWoBO4Y,2565
+snappyzones-0.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+snappyzones-0.0.2.dist-info/entry_points.txt,sha256=Fjh7FFlAb0vpqcxX8dyQ6eVNYPuCRiP2DreDxqW9QFc,54
+snappyzones-0.0.2.dist-info/top_level.txt,sha256=BlhzT2KASssg8ncLc84QY5qPrzthb59PjcDQ2-mkXNc,12
+snappyzones-0.0.2.dist-info/RECORD,,
