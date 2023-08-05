@@ -1,0 +1,11 @@
+README.md
+setup.py
+abstract_python_core.egg-info/PKG-INFO
+abstract_python_core.egg-info/SOURCES.txt
+abstract_python_core.egg-info/dependency_links.txt
+abstract_python_core.egg-info/requires.txt
+abstract_python_core.egg-info/top_level.txt
+python_core/__init__.py
+python_core/python_core.py
+python_core/exceptions/__init__.py
+python_core/exceptions/exceptions.py
