@@ -1,0 +1,33 @@
+"""CLI for uploading models."""
+
+import argparse
+
+from aidkitcli.data_access.api import RESTApi
+from aidkitcli.data_access.upload import upload_model, list_models
+
+
+def main():
+    """Get arguments and execute performance measurement."""
+    argument_parser = argparse.ArgumentParser(
+        prog="Model",
+        usage="python " + __file__,
+        description='Upload and list models.'
+    )
+
+    argument_parser.add_argument(
+        '--file',
+        help="We expect a keras .h5 model that contains specific architectures.",
+        default=None,
+        type=str
+    )
+
+    args = argument_parser.parse_args()
+
+    if args.file is None:
+        return list_models()
+    else:
+        return upload_model(model_path=args.file)
+
+
+if __name__ == "__main__":
+    print(main())
