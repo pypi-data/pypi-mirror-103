@@ -1,0 +1,14 @@
+cvpack/__init__.py,sha256=-edssMPe6Wtam1GNwD2TgLKyCpZZgQVIWx9tuLEadQc,105
+cvpack/cvtypes.py,sha256=wemRGp0ID4JWw8IJsELVvUiA7Dnmwg-iU8N4zONJpps,17099
+cvpack/extras/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cvpack/extras/clustering.py,sha256=hCO39DksDOH3MmmTPUcxAZuArih2jCJfE9xeRQ7a6cs,2314
+cvpack/extras/imgproc.py,sha256=mLZ9EaLL0hT8oWy-MERg-VNRLSkhnNOr75AOA-qB7bc,2793
+cvpack/extras/iterators.py,sha256=zs6oim9sYnG8WkQwVP9SPr8sAwDlnOO6Q98PVNKGIBw,2525
+cvpack/extras/matlab.py,sha256=1JHFRWQJ0TihcAMr3yNHQL7au3Q3oNxKulDIjEbFlCA,1692
+cvpack/imgio.py,sha256=YJaTT_Qkx6x38AE9u4q18VeKcDoRsk9ZECb9CusZ1xY,6204
+cvpack/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cvpack/videoio.py,sha256=g7MdzsRu2SjaJ5X3J1LpywZ_yswzj6JjphI-g3PhqcE,5039
+cvpack_alkasm-1.1.0.dist-info/LICENSE,sha256=GRaCR6l8dBPSCA_d-_0J1iar7wiCtYsdpinP9pJS6CE,1075
+cvpack_alkasm-1.1.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+cvpack_alkasm-1.1.0.dist-info/METADATA,sha256=m_MtbtCL4rwHatxAJKd0Tw9gxhe1CrT_y5U982OMk9M,3217
+cvpack_alkasm-1.1.0.dist-info/RECORD,,
