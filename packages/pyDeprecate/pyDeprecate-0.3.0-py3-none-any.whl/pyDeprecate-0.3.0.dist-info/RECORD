@@ -1,0 +1,8 @@
+deprecate/__init__.py,sha256=yOuAMyTUB-RLyPjf4YgPKXzKixWS1OYBdIdwLPvKXns,546
+deprecate/deprecation.py,sha256=FtZNg7SjB-ZTP2cs6NChzR6joIvfB8VWUWNdvDDicTk,12622
+deprecate/utils.py,sha256=PHz2QM_7HwVjEfx5F8bQlAyF606XDD_bITp2RjCCfs0,1874
+pyDeprecate-0.3.0.dist-info/LICENSE,sha256=_KKGzNHVO3H_77weLgV8Yp-y1qo3pDDbfxYwdA1SRms,1487
+pyDeprecate-0.3.0.dist-info/METADATA,sha256=CPZz9iXXGWT0tGmyt2FFbcOZu-7skAp32m8ZUNE__NA,10057
+pyDeprecate-0.3.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyDeprecate-0.3.0.dist-info/top_level.txt,sha256=JoS3qR1D0-NtCnKrbT4roM65b8LE7ETaLj3AOdlTU1E,10
+pyDeprecate-0.3.0.dist-info/RECORD,,
