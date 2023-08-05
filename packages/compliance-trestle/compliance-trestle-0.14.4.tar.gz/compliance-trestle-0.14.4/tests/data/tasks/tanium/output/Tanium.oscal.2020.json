@@ -1,0 +1,1754 @@
+{
+  "results": [
+    {
+      "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+      "title": "Tanium",
+      "description": "Tanium",
+      "start": "2020-02-24T19:31:13.000+00:00",
+      "end": "2020-02-24T19:31:13.000+00:00",
+      "local-definitions": {
+        "components": {
+          "56666738-0f9a-4e38-9aac-c0fad00a5821": {
+            "type": "Windows 10",
+            "title": "Windows 10",
+            "description": "Windows 10",
+            "status": {
+              "state": "operational"
+            }
+          }
+        },
+        "inventory-items": [
+          {
+            "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+            "description": "inventory",
+            "props": [
+              {
+                "name": "Computer Name",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "cmp-wn-2106.demo.tanium.local",
+                "class": "scc_inventory_item_id"
+              },
+              {
+                "name": "IP Address",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "fe80::3cd5:564b:940e:49ab, 10.8.69.11"
+              },
+              {
+                "name": "Count",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "1"
+              },
+              {
+                "name": "Age",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "600"
+              }
+            ],
+            "implemented-components": [
+              {
+                "component-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+              }
+            ]
+          },
+          {
+            "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+            "description": "inventory",
+            "props": [
+              {
+                "name": "Computer Name",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "cmp-wn-2115.demo.tanium.local",
+                "class": "scc_inventory_item_id"
+              },
+              {
+                "name": "IP Address",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "fe80::21f6:c36a:3f45:ac95, 10.8.68.218"
+              },
+              {
+                "name": "Count",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "1"
+              },
+              {
+                "name": "Age",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "600"
+              }
+            ],
+            "implemented-components": [
+              {
+                "component-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+              }
+            ]
+          },
+          {
+            "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+            "description": "inventory",
+            "props": [
+              {
+                "name": "Computer Name",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "cmp-wn-2105.demo.tanium.local",
+                "class": "scc_inventory_item_id"
+              },
+              {
+                "name": "IP Address",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "fe80::186d:aba0:846b:f858, 10.8.69.7"
+              },
+              {
+                "name": "Count",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "1"
+              },
+              {
+                "name": "Age",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "600"
+              }
+            ],
+            "implemented-components": [
+              {
+                "component-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+              }
+            ]
+          },
+          {
+            "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+            "description": "inventory",
+            "props": [
+              {
+                "name": "Computer Name",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "cmp-wn-2108.demo.tanium.local",
+                "class": "scc_inventory_item_id"
+              },
+              {
+                "name": "IP Address",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "fe80::fcb4:14fa:b62d:ad, 10.8.68.160"
+              },
+              {
+                "name": "Count",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "1"
+              },
+              {
+                "name": "Age",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "600"
+              }
+            ],
+            "implemented-components": [
+              {
+                "component-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+              }
+            ]
+          },
+          {
+            "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+            "description": "inventory",
+            "props": [
+              {
+                "name": "Computer Name",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "cmp-wn-2109.demo.tanium.local",
+                "class": "scc_inventory_item_id"
+              },
+              {
+                "name": "IP Address",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "fe80::20cf:636b:5fe7:b0ff, 10.8.77.220"
+              },
+              {
+                "name": "Count",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "1"
+              },
+              {
+                "name": "Age",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "600"
+              }
+            ],
+            "implemented-components": [
+              {
+                "component-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+              }
+            ]
+          },
+          {
+            "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+            "description": "inventory",
+            "props": [
+              {
+                "name": "Computer Name",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "cmp-wn-2107.demo.tanium.local",
+                "class": "scc_inventory_item_id"
+              },
+              {
+                "name": "IP Address",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "fe80::2585:c75f:8e0:666c, 10.8.68.184"
+              },
+              {
+                "name": "Count",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "1"
+              },
+              {
+                "name": "Age",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "600"
+              }
+            ],
+            "implemented-components": [
+              {
+                "component-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+              }
+            ]
+          },
+          {
+            "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+            "description": "inventory",
+            "props": [
+              {
+                "name": "Computer Name",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "cmp-wn-2116.demo.tanium.local",
+                "class": "scc_inventory_item_id"
+              },
+              {
+                "name": "IP Address",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "fe80::ed25:77c3:b611:eedc, 10.8.68.219"
+              },
+              {
+                "name": "Count",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "1"
+              },
+              {
+                "name": "Age",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "600"
+              }
+            ],
+            "implemented-components": [
+              {
+                "component-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+              }
+            ]
+          }
+        ]
+      },
+      "reviewed-controls": {
+        "control-selections": [
+          {}
+        ]
+      },
+      "observations": [
+        {
+          "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+          "description": "xccdf_org.cisecurity.benchmarks_rule_1.1.1_L1_Ensure_Enforce_password_history_is_set_to_24_or_more_passwords",
+          "props": [
+            {
+              "name": "Benchmark",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "CIS Microsoft Windows 10 Enterprise Release 1803 Benchmark",
+              "class": "scc_predefined_profile"
+            },
+            {
+              "name": "Benchmark Version",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "1.5.0.1",
+              "class": "scc_goal_version"
+            },
+            {
+              "name": "ID",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "xccdf_org.cisecurity.benchmarks_rule_1.1.1_L1_Ensure_Enforce_password_history_is_set_to_24_or_more_passwords",
+              "class": "scc_goal_name_id"
+            },
+            {
+              "name": "Result",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "pass",
+              "class": "scc_result"
+            },
+            {
+              "name": "Timestamp",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "2020-02-24T19:31:13+00:00",
+              "class": "scc_timestamp"
+            }
+          ],
+          "methods": [
+            "TEST-AUTOMATED"
+          ],
+          "subjects": [
+            {
+              "uuid-ref": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+              "type": "inventory-item"
+            }
+          ],
+          "collected": "2020-02-24T19:31:13.000+00:00"
+        },
+        {
+          "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+          "description": "win_security_ps",
+          "props": [
+            {
+              "name": "Benchmark",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "",
+              "class": "scc_predefined_profile"
+            },
+            {
+              "name": "Benchmark Version",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "",
+              "class": "scc_goal_version"
+            },
+            {
+              "name": "ID",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "win_security_ps",
+              "class": "scc_goal_name_id"
+            },
+            {
+              "name": "Result",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "pass",
+              "class": "scc_result"
+            },
+            {
+              "name": "Timestamp",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "2020-02-24T19:31:13+00:00",
+              "class": "scc_timestamp"
+            }
+          ],
+          "methods": [
+            "TEST-AUTOMATED"
+          ],
+          "subjects": [
+            {
+              "uuid-ref": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+              "type": "inventory-item"
+            }
+          ],
+          "collected": "2020-02-24T19:31:13.000+00:00"
+        },
+        {
+          "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+          "description": "xccdf_org.cisecurity.benchmarks_rule_1.1.2_L1_Ensure_Maximum_password_age_is_set_to_60_or_fewer_days_but_not_0",
+          "props": [
+            {
+              "name": "Benchmark",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "CIS Microsoft Windows 10 Enterprise Release 1803 Benchmark",
+              "class": "scc_predefined_profile"
+            },
+            {
+              "name": "Benchmark Version",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "1.5.0.1",
+              "class": "scc_goal_version"
+            },
+            {
+              "name": "ID",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "xccdf_org.cisecurity.benchmarks_rule_1.1.2_L1_Ensure_Maximum_password_age_is_set_to_60_or_fewer_days_but_not_0",
+              "class": "scc_goal_name_id"
+            },
+            {
+              "name": "Result",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "pass",
+              "class": "scc_result"
+            },
+            {
+              "name": "Timestamp",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "2020-02-24T19:31:13+00:00",
+              "class": "scc_timestamp"
+            }
+          ],
+          "methods": [
+            "TEST-AUTOMATED"
+          ],
+          "subjects": [
+            {
+              "uuid-ref": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+              "type": "inventory-item"
+            }
+          ],
+          "collected": "2020-02-24T19:31:13.000+00:00"
+        },
+        {
+          "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+          "description": "av_service",
+          "props": [
+            {
+              "name": "Benchmark",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "",
+              "class": "scc_predefined_profile"
+            },
+            {
+              "name": "Benchmark Version",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "",
+              "class": "scc_goal_version"
+            },
+            {
+              "name": "ID",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "av_service",
+              "class": "scc_goal_name_id"
+            },
+            {
+              "name": "Result",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "fail",
+              "class": "scc_result"
+            },
+            {
+              "name": "Timestamp",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "2020-02-24T19:31:13+00:00",
+              "class": "scc_timestamp"
+            }
+          ],
+          "methods": [
+            "TEST-AUTOMATED"
+          ],
+          "subjects": [
+            {
+              "uuid-ref": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+              "type": "inventory-item"
+            }
+          ],
+          "collected": "2020-02-24T19:31:13.000+00:00"
+        },
+        {
+          "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+          "description": "xccdf_org.cisecurity.benchmarks_rule_1.1.1_L1_Ensure_Enforce_password_history_is_set_to_24_or_more_passwords",
+          "props": [
+            {
+              "name": "Benchmark",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "CIS Microsoft Windows 10 Enterprise Release 1803 Benchmark",
+              "class": "scc_predefined_profile"
+            },
+            {
+              "name": "Benchmark Version",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "1.5.0.1",
+              "class": "scc_goal_version"
+            },
+            {
+              "name": "ID",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "xccdf_org.cisecurity.benchmarks_rule_1.1.1_L1_Ensure_Enforce_password_history_is_set_to_24_or_more_passwords",
+              "class": "scc_goal_name_id"
+            },
+            {
+              "name": "Result",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "pass",
+              "class": "scc_result"
+            },
+            {
+              "name": "Timestamp",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "2020-02-24T19:31:13+00:00",
+              "class": "scc_timestamp"
+            }
+          ],
+          "methods": [
+            "TEST-AUTOMATED"
+          ],
+          "subjects": [
+            {
+              "uuid-ref": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+              "type": "inventory-item"
+            }
+          ],
+          "collected": "2020-02-24T19:31:13.000+00:00"
+        },
+        {
+          "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+          "description": "xccdf_org.cisecurity.benchmarks_rule_1.1.2_L1_Ensure_Maximum_password_age_is_set_to_60_or_fewer_days_but_not_0",
+          "props": [
+            {
+              "name": "Benchmark",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "CIS Microsoft Windows 10 Enterprise Release 1803 Benchmark",
+              "class": "scc_predefined_profile"
+            },
+            {
+              "name": "Benchmark Version",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "1.5.0.1",
+              "class": "scc_goal_version"
+            },
+            {
+              "name": "ID",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "xccdf_org.cisecurity.benchmarks_rule_1.1.2_L1_Ensure_Maximum_password_age_is_set_to_60_or_fewer_days_but_not_0",
+              "class": "scc_goal_name_id"
+            },
+            {
+              "name": "Result",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "pass",
+              "class": "scc_result"
+            },
+            {
+              "name": "Timestamp",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "2020-02-24T19:31:13+00:00",
+              "class": "scc_timestamp"
+            }
+          ],
+          "methods": [
+            "TEST-AUTOMATED"
+          ],
+          "subjects": [
+            {
+              "uuid-ref": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+              "type": "inventory-item"
+            }
+          ],
+          "collected": "2020-02-24T19:31:13.000+00:00"
+        },
+        {
+          "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+          "description": "xccdf_org.cisecurity.benchmarks_rule_1.1.3_L1_Ensure_Minimum_password_age_is_set_to_1_or_more_days",
+          "props": [
+            {
+              "name": "Benchmark",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "CIS Microsoft Windows 10 Enterprise Release 1803 Benchmark",
+              "class": "scc_predefined_profile"
+            },
+            {
+              "name": "Benchmark Version",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "1.5.0.1",
+              "class": "scc_goal_version"
+            },
+            {
+              "name": "ID",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "xccdf_org.cisecurity.benchmarks_rule_1.1.3_L1_Ensure_Minimum_password_age_is_set_to_1_or_more_days",
+              "class": "scc_goal_name_id"
+            },
+            {
+              "name": "Result",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "fail",
+              "class": "scc_result"
+            },
+            {
+              "name": "Timestamp",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "2020-02-24T19:31:13+00:00",
+              "class": "scc_timestamp"
+            }
+          ],
+          "methods": [
+            "TEST-AUTOMATED"
+          ],
+          "subjects": [
+            {
+              "uuid-ref": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+              "type": "inventory-item"
+            }
+          ],
+          "collected": "2020-02-24T19:31:13.000+00:00"
+        },
+        {
+          "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+          "description": "xccdf_org.cisecurity.benchmarks_rule_19.7.44.2.1_L2_Ensure_Prevent_Codec_Download_is_set_to_Enabled",
+          "props": [
+            {
+              "name": "Benchmark",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "CIS Microsoft Windows 10 Enterprise Release 1803 Benchmark",
+              "class": "scc_predefined_profile"
+            },
+            {
+              "name": "Benchmark Version",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "1.5.0.1",
+              "class": "scc_goal_version"
+            },
+            {
+              "name": "ID",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "xccdf_org.cisecurity.benchmarks_rule_19.7.44.2.1_L2_Ensure_Prevent_Codec_Download_is_set_to_Enabled",
+              "class": "scc_goal_name_id"
+            },
+            {
+              "name": "Result",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "fail",
+              "class": "scc_result"
+            },
+            {
+              "name": "Timestamp",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "2020-02-24T19:31:13+00:00",
+              "class": "scc_timestamp"
+            }
+          ],
+          "methods": [
+            "TEST-AUTOMATED"
+          ],
+          "subjects": [
+            {
+              "uuid-ref": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+              "type": "inventory-item"
+            }
+          ],
+          "collected": "2020-02-24T19:31:13.000+00:00"
+        },
+        {
+          "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+          "description": "xccdf_org.cisecurity.benchmarks_rule_1.1.1_L1_Ensure_Enforce_password_history_is_set_to_24_or_more_passwords",
+          "props": [
+            {
+              "name": "Benchmark",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "CIS Microsoft Windows 10 Enterprise Release 1803 Benchmark",
+              "class": "scc_predefined_profile"
+            },
+            {
+              "name": "Benchmark Version",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "1.5.0.1",
+              "class": "scc_goal_version"
+            },
+            {
+              "name": "ID",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "xccdf_org.cisecurity.benchmarks_rule_1.1.1_L1_Ensure_Enforce_password_history_is_set_to_24_or_more_passwords",
+              "class": "scc_goal_name_id"
+            },
+            {
+              "name": "Result",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "pass",
+              "class": "scc_result"
+            },
+            {
+              "name": "Timestamp",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "2020-02-24T19:31:13+00:00",
+              "class": "scc_timestamp"
+            }
+          ],
+          "methods": [
+            "TEST-AUTOMATED"
+          ],
+          "subjects": [
+            {
+              "uuid-ref": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+              "type": "inventory-item"
+            }
+          ],
+          "collected": "2020-02-24T19:31:13.000+00:00"
+        },
+        {
+          "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+          "description": "xccdf_org.cisecurity.benchmarks_rule_1.1.2_L1_Ensure_Maximum_password_age_is_set_to_60_or_fewer_days_but_not_0",
+          "props": [
+            {
+              "name": "Benchmark",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "CIS Microsoft Windows 10 Enterprise Release 1803 Benchmark",
+              "class": "scc_predefined_profile"
+            },
+            {
+              "name": "Benchmark Version",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "1.5.0.1",
+              "class": "scc_goal_version"
+            },
+            {
+              "name": "ID",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "xccdf_org.cisecurity.benchmarks_rule_1.1.2_L1_Ensure_Maximum_password_age_is_set_to_60_or_fewer_days_but_not_0",
+              "class": "scc_goal_name_id"
+            },
+            {
+              "name": "Result",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "skip",
+              "class": "scc_result"
+            },
+            {
+              "name": "Timestamp",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "2020-02-24T19:31:13+00:00",
+              "class": "scc_timestamp"
+            }
+          ],
+          "methods": [
+            "TEST-AUTOMATED"
+          ],
+          "subjects": [
+            {
+              "uuid-ref": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+              "type": "inventory-item"
+            }
+          ],
+          "collected": "2020-02-24T19:31:13.000+00:00"
+        },
+        {
+          "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+          "description": "xccdf_org.cisecurity.benchmarks_rule_1.1.3_L1_Ensure_Minimum_password_age_is_set_to_1_or_more_days",
+          "props": [
+            {
+              "name": "Benchmark",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "CIS Microsoft Windows 10 Enterprise Release 1803 Benchmark",
+              "class": "scc_predefined_profile"
+            },
+            {
+              "name": "Benchmark Version",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "1.5.0.1",
+              "class": "scc_goal_version"
+            },
+            {
+              "name": "ID",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "xccdf_org.cisecurity.benchmarks_rule_1.1.3_L1_Ensure_Minimum_password_age_is_set_to_1_or_more_days",
+              "class": "scc_goal_name_id"
+            },
+            {
+              "name": "Result",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "fail",
+              "class": "scc_result"
+            },
+            {
+              "name": "Timestamp",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "2020-02-24T19:31:13+00:00",
+              "class": "scc_timestamp"
+            }
+          ],
+          "methods": [
+            "TEST-AUTOMATED"
+          ],
+          "subjects": [
+            {
+              "uuid-ref": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+              "type": "inventory-item"
+            }
+          ],
+          "collected": "2020-02-24T19:31:13.000+00:00"
+        },
+        {
+          "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+          "description": "win_security_ps",
+          "props": [
+            {
+              "name": "Benchmark",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "",
+              "class": "scc_predefined_profile"
+            },
+            {
+              "name": "Benchmark Version",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "",
+              "class": "scc_goal_version"
+            },
+            {
+              "name": "ID",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "win_security_ps",
+              "class": "scc_goal_name_id"
+            },
+            {
+              "name": "Result",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "pass",
+              "class": "scc_result"
+            },
+            {
+              "name": "Timestamp",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "2020-02-24T19:31:13+00:00",
+              "class": "scc_timestamp"
+            }
+          ],
+          "methods": [
+            "TEST-AUTOMATED"
+          ],
+          "subjects": [
+            {
+              "uuid-ref": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+              "type": "inventory-item"
+            }
+          ],
+          "collected": "2020-02-24T19:31:13.000+00:00"
+        },
+        {
+          "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+          "description": "xccdf_org.cisecurity.benchmarks_rule_1.1.1_L1_Ensure_Enforce_password_history_is_set_to_24_or_more_passwords",
+          "props": [
+            {
+              "name": "Benchmark",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "CIS Microsoft Windows 10 Enterprise Release 1803 Benchmark",
+              "class": "scc_predefined_profile"
+            },
+            {
+              "name": "Benchmark Version",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "1.5.0.1",
+              "class": "scc_goal_version"
+            },
+            {
+              "name": "ID",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "xccdf_org.cisecurity.benchmarks_rule_1.1.1_L1_Ensure_Enforce_password_history_is_set_to_24_or_more_passwords",
+              "class": "scc_goal_name_id"
+            },
+            {
+              "name": "Result",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "pass",
+              "class": "scc_result"
+            },
+            {
+              "name": "Timestamp",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "2020-02-24T19:31:13+00:00",
+              "class": "scc_timestamp"
+            }
+          ],
+          "methods": [
+            "TEST-AUTOMATED"
+          ],
+          "subjects": [
+            {
+              "uuid-ref": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+              "type": "inventory-item"
+            }
+          ],
+          "collected": "2020-02-24T19:31:13.000+00:00"
+        },
+        {
+          "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+          "description": "xccdf_org.cisecurity.benchmarks_rule_1.1.2_L1_Ensure_Maximum_password_age_is_set_to_60_or_fewer_days_but_not_0",
+          "props": [
+            {
+              "name": "Benchmark",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "CIS Microsoft Windows 10 Enterprise Release 1803 Benchmark",
+              "class": "scc_predefined_profile"
+            },
+            {
+              "name": "Benchmark Version",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "1.5.0.1",
+              "class": "scc_goal_version"
+            },
+            {
+              "name": "ID",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "xccdf_org.cisecurity.benchmarks_rule_1.1.2_L1_Ensure_Maximum_password_age_is_set_to_60_or_fewer_days_but_not_0",
+              "class": "scc_goal_name_id"
+            },
+            {
+              "name": "Result",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "pass",
+              "class": "scc_result"
+            },
+            {
+              "name": "Timestamp",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "2020-02-24T19:31:13+00:00",
+              "class": "scc_timestamp"
+            }
+          ],
+          "methods": [
+            "TEST-AUTOMATED"
+          ],
+          "subjects": [
+            {
+              "uuid-ref": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+              "type": "inventory-item"
+            }
+          ],
+          "collected": "2020-02-24T19:31:13.000+00:00"
+        },
+        {
+          "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+          "description": "xccdf_org.cisecurity.benchmarks_rule_1.1.3_L1_Ensure_Minimum_password_age_is_set_to_1_or_more_days",
+          "props": [
+            {
+              "name": "Benchmark",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "CIS Microsoft Windows 10 Enterprise Release 1803 Benchmark",
+              "class": "scc_predefined_profile"
+            },
+            {
+              "name": "Benchmark Version",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "1.5.0.1",
+              "class": "scc_goal_version"
+            },
+            {
+              "name": "ID",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "xccdf_org.cisecurity.benchmarks_rule_1.1.3_L1_Ensure_Minimum_password_age_is_set_to_1_or_more_days",
+              "class": "scc_goal_name_id"
+            },
+            {
+              "name": "Result",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "fail",
+              "class": "scc_result"
+            },
+            {
+              "name": "Timestamp",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "2020-02-24T19:31:13+00:00",
+              "class": "scc_timestamp"
+            }
+          ],
+          "methods": [
+            "TEST-AUTOMATED"
+          ],
+          "subjects": [
+            {
+              "uuid-ref": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+              "type": "inventory-item"
+            }
+          ],
+          "collected": "2020-02-24T19:31:13.000+00:00"
+        },
+        {
+          "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+          "description": "av_service",
+          "props": [
+            {
+              "name": "Benchmark",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "",
+              "class": "scc_predefined_profile"
+            },
+            {
+              "name": "Benchmark Version",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "",
+              "class": "scc_goal_version"
+            },
+            {
+              "name": "ID",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "av_service",
+              "class": "scc_goal_name_id"
+            },
+            {
+              "name": "Result",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "fail",
+              "class": "scc_result"
+            },
+            {
+              "name": "Timestamp",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "2020-02-24T19:31:13+00:00",
+              "class": "scc_timestamp"
+            }
+          ],
+          "methods": [
+            "TEST-AUTOMATED"
+          ],
+          "subjects": [
+            {
+              "uuid-ref": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+              "type": "inventory-item"
+            }
+          ],
+          "collected": "2020-02-24T19:31:13.000+00:00"
+        },
+        {
+          "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+          "description": "xccdf_org.cisecurity.benchmarks_rule_1.1.1_L1_Ensure_Enforce_password_history_is_set_to_24_or_more_passwords",
+          "props": [
+            {
+              "name": "Benchmark",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "CIS Microsoft Windows 10 Enterprise Release 1803 Benchmark",
+              "class": "scc_predefined_profile"
+            },
+            {
+              "name": "Benchmark Version",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "1.5.0.1",
+              "class": "scc_goal_version"
+            },
+            {
+              "name": "ID",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "xccdf_org.cisecurity.benchmarks_rule_1.1.1_L1_Ensure_Enforce_password_history_is_set_to_24_or_more_passwords",
+              "class": "scc_goal_name_id"
+            },
+            {
+              "name": "Result",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "pass",
+              "class": "scc_result"
+            },
+            {
+              "name": "Timestamp",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "2020-02-24T19:31:13+00:00",
+              "class": "scc_timestamp"
+            }
+          ],
+          "methods": [
+            "TEST-AUTOMATED"
+          ],
+          "subjects": [
+            {
+              "uuid-ref": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+              "type": "inventory-item"
+            }
+          ],
+          "collected": "2020-02-24T19:31:13.000+00:00"
+        },
+        {
+          "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+          "description": "xccdf_org.cisecurity.benchmarks_rule_1.1.2_L1_Ensure_Maximum_password_age_is_set_to_60_or_fewer_days_but_not_0",
+          "props": [
+            {
+              "name": "Benchmark",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "CIS Microsoft Windows 10 Enterprise Release 1803 Benchmark",
+              "class": "scc_predefined_profile"
+            },
+            {
+              "name": "Benchmark Version",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "1.5.0.1",
+              "class": "scc_goal_version"
+            },
+            {
+              "name": "ID",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "xccdf_org.cisecurity.benchmarks_rule_1.1.2_L1_Ensure_Maximum_password_age_is_set_to_60_or_fewer_days_but_not_0",
+              "class": "scc_goal_name_id"
+            },
+            {
+              "name": "Result",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "pass",
+              "class": "scc_result"
+            },
+            {
+              "name": "Timestamp",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "2020-02-24T19:31:13+00:00",
+              "class": "scc_timestamp"
+            }
+          ],
+          "methods": [
+            "TEST-AUTOMATED"
+          ],
+          "subjects": [
+            {
+              "uuid-ref": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+              "type": "inventory-item"
+            }
+          ],
+          "collected": "2020-02-24T19:31:13.000+00:00"
+        },
+        {
+          "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+          "description": "xccdf_org.cisecurity.benchmarks_rule_1.1.3_L1_Ensure_Minimum_password_age_is_set_to_1_or_more_days",
+          "props": [
+            {
+              "name": "Benchmark",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "CIS Microsoft Windows 10 Enterprise Release 1803 Benchmark",
+              "class": "scc_predefined_profile"
+            },
+            {
+              "name": "Benchmark Version",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "1.5.0.1",
+              "class": "scc_goal_version"
+            },
+            {
+              "name": "ID",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "xccdf_org.cisecurity.benchmarks_rule_1.1.3_L1_Ensure_Minimum_password_age_is_set_to_1_or_more_days",
+              "class": "scc_goal_name_id"
+            },
+            {
+              "name": "Result",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "fail",
+              "class": "scc_result"
+            },
+            {
+              "name": "Timestamp",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "2020-02-24T19:31:13+00:00",
+              "class": "scc_timestamp"
+            }
+          ],
+          "methods": [
+            "TEST-AUTOMATED"
+          ],
+          "subjects": [
+            {
+              "uuid-ref": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+              "type": "inventory-item"
+            }
+          ],
+          "collected": "2020-02-24T19:31:13.000+00:00"
+        },
+        {
+          "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+          "description": "win_security_ps",
+          "props": [
+            {
+              "name": "Benchmark",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "",
+              "class": "scc_predefined_profile"
+            },
+            {
+              "name": "Benchmark Version",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "",
+              "class": "scc_goal_version"
+            },
+            {
+              "name": "ID",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "win_security_ps",
+              "class": "scc_goal_name_id"
+            },
+            {
+              "name": "Result",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "pass",
+              "class": "scc_result"
+            },
+            {
+              "name": "Timestamp",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "2020-02-24T19:31:13+00:00",
+              "class": "scc_timestamp"
+            }
+          ],
+          "methods": [
+            "TEST-AUTOMATED"
+          ],
+          "subjects": [
+            {
+              "uuid-ref": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+              "type": "inventory-item"
+            }
+          ],
+          "collected": "2020-02-24T19:31:13.000+00:00"
+        },
+        {
+          "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+          "description": "xccdf_org.cisecurity.benchmarks_rule_1.1.1_L1_Ensure_Enforce_password_history_is_set_to_24_or_more_passwords",
+          "props": [
+            {
+              "name": "Benchmark",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "CIS Microsoft Windows 10 Enterprise Release 1803 Benchmark",
+              "class": "scc_predefined_profile"
+            },
+            {
+              "name": "Benchmark Version",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "1.5.0.1",
+              "class": "scc_goal_version"
+            },
+            {
+              "name": "ID",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "xccdf_org.cisecurity.benchmarks_rule_1.1.1_L1_Ensure_Enforce_password_history_is_set_to_24_or_more_passwords",
+              "class": "scc_goal_name_id"
+            },
+            {
+              "name": "Result",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "pass",
+              "class": "scc_result"
+            },
+            {
+              "name": "Timestamp",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "2020-02-24T19:31:13+00:00",
+              "class": "scc_timestamp"
+            }
+          ],
+          "methods": [
+            "TEST-AUTOMATED"
+          ],
+          "subjects": [
+            {
+              "uuid-ref": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+              "type": "inventory-item"
+            }
+          ],
+          "collected": "2020-02-24T19:31:13.000+00:00"
+        },
+        {
+          "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+          "description": "xccdf_org.cisecurity.benchmarks_rule_1.1.2_L1_Ensure_Maximum_password_age_is_set_to_60_or_fewer_days_but_not_0",
+          "props": [
+            {
+              "name": "Benchmark",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "CIS Microsoft Windows 10 Enterprise Release 1803 Benchmark",
+              "class": "scc_predefined_profile"
+            },
+            {
+              "name": "Benchmark Version",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "1.5.0.1",
+              "class": "scc_goal_version"
+            },
+            {
+              "name": "ID",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "xccdf_org.cisecurity.benchmarks_rule_1.1.2_L1_Ensure_Maximum_password_age_is_set_to_60_or_fewer_days_but_not_0",
+              "class": "scc_goal_name_id"
+            },
+            {
+              "name": "Result",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "pass",
+              "class": "scc_result"
+            },
+            {
+              "name": "Timestamp",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "2020-02-24T19:31:13+00:00",
+              "class": "scc_timestamp"
+            }
+          ],
+          "methods": [
+            "TEST-AUTOMATED"
+          ],
+          "subjects": [
+            {
+              "uuid-ref": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+              "type": "inventory-item"
+            }
+          ],
+          "collected": "2020-02-24T19:31:13.000+00:00"
+        },
+        {
+          "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+          "description": "xccdf_org.cisecurity.benchmarks_rule_1.1.3_L1_Ensure_Minimum_password_age_is_set_to_1_or_more_days",
+          "props": [
+            {
+              "name": "Benchmark",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "CIS Microsoft Windows 10 Enterprise Release 1803 Benchmark",
+              "class": "scc_predefined_profile"
+            },
+            {
+              "name": "Benchmark Version",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "1.5.0.1",
+              "class": "scc_goal_version"
+            },
+            {
+              "name": "ID",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "xccdf_org.cisecurity.benchmarks_rule_1.1.3_L1_Ensure_Minimum_password_age_is_set_to_1_or_more_days",
+              "class": "scc_goal_name_id"
+            },
+            {
+              "name": "Result",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "fail",
+              "class": "scc_result"
+            },
+            {
+              "name": "Timestamp",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "2020-02-24T19:31:13+00:00",
+              "class": "scc_timestamp"
+            }
+          ],
+          "methods": [
+            "TEST-AUTOMATED"
+          ],
+          "subjects": [
+            {
+              "uuid-ref": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+              "type": "inventory-item"
+            }
+          ],
+          "collected": "2020-02-24T19:31:13.000+00:00"
+        },
+        {
+          "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+          "description": "win_security_ps",
+          "props": [
+            {
+              "name": "Benchmark",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "",
+              "class": "scc_predefined_profile"
+            },
+            {
+              "name": "Benchmark Version",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "",
+              "class": "scc_goal_version"
+            },
+            {
+              "name": "ID",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "win_security_ps",
+              "class": "scc_goal_name_id"
+            },
+            {
+              "name": "Result",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "pass",
+              "class": "scc_result"
+            },
+            {
+              "name": "Timestamp",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "2020-02-24T19:31:13+00:00",
+              "class": "scc_timestamp"
+            }
+          ],
+          "methods": [
+            "TEST-AUTOMATED"
+          ],
+          "subjects": [
+            {
+              "uuid-ref": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+              "type": "inventory-item"
+            }
+          ],
+          "collected": "2020-02-24T19:31:13.000+00:00"
+        },
+        {
+          "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+          "description": "xccdf_org.cisecurity.benchmarks_rule_1.1.1_L1_Ensure_Enforce_password_history_is_set_to_24_or_more_passwords",
+          "props": [
+            {
+              "name": "Benchmark",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "CIS Microsoft Windows 10 Enterprise Release 1803 Benchmark",
+              "class": "scc_predefined_profile"
+            },
+            {
+              "name": "Benchmark Version",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "1.5.0.1",
+              "class": "scc_goal_version"
+            },
+            {
+              "name": "ID",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "xccdf_org.cisecurity.benchmarks_rule_1.1.1_L1_Ensure_Enforce_password_history_is_set_to_24_or_more_passwords",
+              "class": "scc_goal_name_id"
+            },
+            {
+              "name": "Result",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "pass",
+              "class": "scc_result"
+            },
+            {
+              "name": "Timestamp",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "2020-02-24T19:31:13+00:00",
+              "class": "scc_timestamp"
+            }
+          ],
+          "methods": [
+            "TEST-AUTOMATED"
+          ],
+          "subjects": [
+            {
+              "uuid-ref": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+              "type": "inventory-item"
+            }
+          ],
+          "collected": "2020-02-24T19:31:13.000+00:00"
+        },
+        {
+          "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+          "description": "xccdf_org.cisecurity.benchmarks_rule_1.1.2_L1_Ensure_Maximum_password_age_is_set_to_60_or_fewer_days_but_not_0",
+          "props": [
+            {
+              "name": "Benchmark",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "CIS Microsoft Windows 10 Enterprise Release 1803 Benchmark",
+              "class": "scc_predefined_profile"
+            },
+            {
+              "name": "Benchmark Version",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "1.5.0.1",
+              "class": "scc_goal_version"
+            },
+            {
+              "name": "ID",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "xccdf_org.cisecurity.benchmarks_rule_1.1.2_L1_Ensure_Maximum_password_age_is_set_to_60_or_fewer_days_but_not_0",
+              "class": "scc_goal_name_id"
+            },
+            {
+              "name": "Result",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "pass",
+              "class": "scc_result"
+            },
+            {
+              "name": "Timestamp",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "2020-02-24T19:31:13+00:00",
+              "class": "scc_timestamp"
+            }
+          ],
+          "methods": [
+            "TEST-AUTOMATED"
+          ],
+          "subjects": [
+            {
+              "uuid-ref": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+              "type": "inventory-item"
+            }
+          ],
+          "collected": "2020-02-24T19:31:13.000+00:00"
+        },
+        {
+          "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+          "description": "xccdf_org.cisecurity.benchmarks_rule_1.1.3_L1_Ensure_Minimum_password_age_is_set_to_1_or_more_days",
+          "props": [
+            {
+              "name": "Benchmark",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "CIS Microsoft Windows 10 Enterprise Release 1803 Benchmark",
+              "class": "scc_predefined_profile"
+            },
+            {
+              "name": "Benchmark Version",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "1.5.0.1",
+              "class": "scc_goal_version"
+            },
+            {
+              "name": "ID",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "xccdf_org.cisecurity.benchmarks_rule_1.1.3_L1_Ensure_Minimum_password_age_is_set_to_1_or_more_days",
+              "class": "scc_goal_name_id"
+            },
+            {
+              "name": "Result",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "fail",
+              "class": "scc_result"
+            },
+            {
+              "name": "Timestamp",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "2020-02-24T19:31:13+00:00",
+              "class": "scc_timestamp"
+            }
+          ],
+          "methods": [
+            "TEST-AUTOMATED"
+          ],
+          "subjects": [
+            {
+              "uuid-ref": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+              "type": "inventory-item"
+            }
+          ],
+          "collected": "2020-02-24T19:31:13.000+00:00"
+        },
+        {
+          "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+          "description": "win_security_ps",
+          "props": [
+            {
+              "name": "Benchmark",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "",
+              "class": "scc_predefined_profile"
+            },
+            {
+              "name": "Benchmark Version",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "",
+              "class": "scc_goal_version"
+            },
+            {
+              "name": "ID",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "win_security_ps",
+              "class": "scc_goal_name_id"
+            },
+            {
+              "name": "Result",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "pass",
+              "class": "scc_result"
+            },
+            {
+              "name": "Timestamp",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+              "value": "2020-02-24T19:31:13+00:00",
+              "class": "scc_timestamp"
+            }
+          ],
+          "methods": [
+            "TEST-AUTOMATED"
+          ],
+          "subjects": [
+            {
+              "uuid-ref": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+              "type": "inventory-item"
+            }
+          ],
+          "collected": "2020-02-24T19:31:13.000+00:00"
+        }
+      ],
+      "findings": [
+        {
+          "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+          "title": "800-53: IA-5",
+          "description": "800-53: IA-5",
+          "target": {
+            "type": "statement-id",
+            "id-ref": "800-53: IA-5",
+            "props": [
+              {
+                "name": "Profile",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "Windows 10 - NIST 800-53",
+                "class": "scc_predefined_profile"
+              },
+              {
+                "name": "Custom ID",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "800-53: IA-5"
+              },
+              {
+                "name": "Version",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "version: 1",
+                "class": "scc_mapping_version"
+              }
+            ],
+            "status": "not-satisfied"
+          },
+          "related-observations": [
+            {
+              "observation-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+            },
+            {
+              "observation-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+            },
+            {
+              "observation-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+            },
+            {
+              "observation-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+            },
+            {
+              "observation-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+            },
+            {
+              "observation-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+            },
+            {
+              "observation-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+            },
+            {
+              "observation-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+            },
+            {
+              "observation-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+            },
+            {
+              "observation-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+            },
+            {
+              "observation-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+            },
+            {
+              "observation-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+            },
+            {
+              "observation-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+            },
+            {
+              "observation-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+            },
+            {
+              "observation-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+            },
+            {
+              "observation-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+            },
+            {
+              "observation-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+            },
+            {
+              "observation-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+            },
+            {
+              "observation-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+            },
+            {
+              "observation-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+            }
+          ]
+        },
+        {
+          "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+          "title": "win_security_ps",
+          "description": "win_security_ps",
+          "target": {
+            "type": "statement-id",
+            "id-ref": "win_security_ps",
+            "props": [
+              {
+                "name": "Profile",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "",
+                "class": "scc_predefined_profile"
+              },
+              {
+                "name": "Custom ID",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "win_security_ps"
+              },
+              {
+                "name": "Version",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "",
+                "class": "scc_mapping_version"
+              }
+            ],
+            "status": "satisfied"
+          },
+          "related-observations": [
+            {
+              "observation-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+            },
+            {
+              "observation-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+            },
+            {
+              "observation-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+            },
+            {
+              "observation-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+            },
+            {
+              "observation-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+            }
+          ]
+        },
+        {
+          "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+          "title": "av_service",
+          "description": "av_service",
+          "target": {
+            "type": "statement-id",
+            "id-ref": "av_service",
+            "props": [
+              {
+                "name": "Profile",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "",
+                "class": "scc_predefined_profile"
+              },
+              {
+                "name": "Custom ID",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "av_service"
+              },
+              {
+                "name": "Version",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "",
+                "class": "scc_mapping_version"
+              }
+            ],
+            "status": "not-satisfied"
+          },
+          "related-observations": [
+            {
+              "observation-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+            },
+            {
+              "observation-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+            }
+          ]
+        },
+        {
+          "uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821",
+          "title": "800-53: SC-18",
+          "description": "800-53: SC-18",
+          "target": {
+            "type": "statement-id",
+            "id-ref": "800-53: SC-18",
+            "props": [
+              {
+                "name": "Profile",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "Windows 10 - NIST 800-53",
+                "class": "scc_predefined_profile"
+              },
+              {
+                "name": "Custom ID",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "800-53: SC-18"
+              },
+              {
+                "name": "Version",
+                "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/ar/tanium",
+                "value": "version: 1",
+                "class": "scc_mapping_version"
+              }
+            ],
+            "status": "not-satisfied"
+          },
+          "related-observations": [
+            {
+              "observation-uuid": "56666738-0f9a-4e38-9aac-c0fad00a5821"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
