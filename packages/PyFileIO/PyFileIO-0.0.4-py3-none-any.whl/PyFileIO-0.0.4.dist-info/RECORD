@@ -1,0 +1,17 @@
+PyFileIO/FileIO.py,sha256=9PYPKL82OelathhjemINq5Bci9IuN4NKvOSo0odWimg,2922
+PyFileIO/FileSearch.py,sha256=86ihtlNJvcWQT_KYvk04W0Xgt6BzuJxb2v0_1CDskUU,712
+PyFileIO/LoadDict.py,sha256=JUTNFyag8FHXwEqVv9DOh4nrvPd6mz_ku5o12ZBJXwU,299
+PyFileIO/LoadObject.py,sha256=-G5w6jOWafGDNKKHt7xeDt6U0RuAICp_lcFJP8-AdUU,399
+PyFileIO/ReadASCIIData.py,sha256=YG42hdYXRQhJ_YRGyA-Da5klM7aN9uC6JWnX7kUDzmA,4413
+PyFileIO/ReadASCIIFile.py,sha256=dIFqrYOqsPiv1RXF-E1LoJsjJnTVL_sUf2dTUNZPYUc,283
+PyFileIO/RenamedUnpickler.py,sha256=pCh7gO73lZA810cno-4Hr9Bkgt5bMwqssOp2CzkfsLI,1994
+PyFileIO/SaveDict.py,sha256=Dmt8WbsI8s4sZIyla40I1t0QXnd9j7E-a00cl2lVogY,350
+PyFileIO/SaveObject.py,sha256=cLAE6KuYlK5ysl7Neu1v-Lj2pES_t0s8cnzTy_EJ0uc,283
+PyFileIO/WriteASCIIData.py,sha256=Stpj7fOGJcSIToXMGchLmYIV5R64lst6aWS3YK5cDwU,569
+PyFileIO/WriteASCIIFile.py,sha256=pGt8AaOxGEyOEk8xNtz6bnYBb_Ivz9Zp0s04s2Ou4v4,244
+PyFileIO/__init__.py,sha256=aIscX3S84LR_rhvJ_U9L5-RSeM2bAUD-IJzya3-9hzs,641
+PyFileIO-0.0.4.dist-info/LICENSE,sha256=OuCa0PgonaOkYcK4tj_AX5mcGyFqVzd8_7A_oP9WhoU,1070
+PyFileIO-0.0.4.dist-info/METADATA,sha256=hx8ZKeYfdYrfhRy-SFPWfky2WPjgeBd1BQpPY_4ZLfc,2709
+PyFileIO-0.0.4.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+PyFileIO-0.0.4.dist-info/top_level.txt,sha256=QKAFZI-PdlJO3-cVrFJCzJb6QIl1LQY09hfzx4HEdKw,9
+PyFileIO-0.0.4.dist-info/RECORD,,
