@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: test_package.1
+Version: 0.0.1
+Summary: A Testpackage by Lars_HD44
+Home-page: UNKNOWN
+Author: Thurner Industries
+Author-email: industries.thurner@gmail.com
+License: MIT
+Description: This is a Test-Repo
+        
+        Change Log
+        ==========
+        
+        0.0.1 (21.04.2021)
+        -------------------
+        - First Release
+Keywords: test-package
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
