@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: fibsem-metadata
+Version: 0.1.3
+Summary: Metadata and metadata generators for FIB-SEM data
+License: MIT
+Author: Davis Vann Bennett
+Author-email: davis.v.bennett@gmail.com
+Requires-Python: >3.7,<4
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: pydantic (>=1.8.1,<2.0.0)
