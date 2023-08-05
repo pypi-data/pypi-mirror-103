@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: ewl
+Version: 0.2.0
+Summary: A simple Python library to simulate and execute EWL quantum circuits on IBM Q.
+Home-page: https://github.com/tomekzaw/ewl
+Author: Piotr Kotara, Tomasz Zawadzki
+Author-email: piotrekkotara@gmail.com, tomekzawadzki98@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/tomekzaw/ewl/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# EWL
+
+A simple Python library to simulate and execute EWL quantum circuits on IBM Q.
+
+![](docs/ewl.png)
+
+## Installation
+
+```bash
+pip install ewl
+```
+
+## Usage
+
+```python
+from ewl import *
+
+psi = (ket('00') + i * ket('11')) / sqrt(2)  # initial state
+
+alice = U(theta=pi/2, alpha=pi/2, beta=0)  # quantum strategy
+bob = U(theta=0, alpha=0, beta=0)  # classical strategy (C)
+
+ewl = ExtendedEWL(psi, [alice, bob])
+
+ewl.draw()
+
+ewl.draw_transpiled(backend_name='ibmq_athens', optimization_level=3)
+
+ewl.simulate()
+
+ewl.run(backend_name='ibmq_athens', optimization_level=3)
+```
+
+
