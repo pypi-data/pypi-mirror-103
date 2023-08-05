@@ -1,0 +1,3 @@
+[console_scripts]
+npynx = npynx.__main__:main
+

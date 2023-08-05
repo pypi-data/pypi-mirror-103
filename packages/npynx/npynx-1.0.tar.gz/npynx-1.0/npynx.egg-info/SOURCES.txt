@@ -1,0 +1,11 @@
+README.md
+setup.py
+npynx/Server.py
+npynx/__init__.py
+npynx/__main__.py
+npynx.egg-info/PKG-INFO
+npynx.egg-info/SOURCES.txt
+npynx.egg-info/dependency_links.txt
+npynx.egg-info/entry_points.txt
+npynx.egg-info/requires.txt
+npynx.egg-info/top_level.txt
