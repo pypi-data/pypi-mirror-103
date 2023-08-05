@@ -1,0 +1,3 @@
+[console_scripts]
+crypto_watcher=crypto_watcher.main:main
+
