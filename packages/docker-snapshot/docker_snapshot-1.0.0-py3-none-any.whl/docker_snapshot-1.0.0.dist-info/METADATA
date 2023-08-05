@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: docker-snapshot
+Version: 1.0.0
+Summary: 
+Author: occamz
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=5.4.1,<6.0.0)
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: click-aliases (>=1.0.1,<2.0.0)
+Requires-Dist: colorama (>=0.4.4,<0.5.0)
+Requires-Dist: docker (>=5.0.0,<6.0.0)
+Requires-Dist: hruid (>=0.0.3,<0.0.4)
+Requires-Dist: rich (>=10.1.0,<11.0.0)
