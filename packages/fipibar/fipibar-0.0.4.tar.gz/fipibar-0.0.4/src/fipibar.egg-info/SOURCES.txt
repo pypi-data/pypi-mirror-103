@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/fipibar/__init__.py
+src/fipibar/client.py
+src/fipibar/config_helper.py
+src/fipibar.egg-info/PKG-INFO
+src/fipibar.egg-info/SOURCES.txt
+src/fipibar.egg-info/dependency_links.txt
+src/fipibar.egg-info/entry_points.txt
+src/fipibar.egg-info/requires.txt
+src/fipibar.egg-info/top_level.txt

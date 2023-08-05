@@ -1,0 +1,3 @@
+[console_scripts]
+fipibar = fipibar.client:main
+
