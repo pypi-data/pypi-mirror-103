@@ -1,0 +1,6 @@
+mongodb_bundle/__init__.py,sha256=AC3p0k_uyrxpe8hb040Ac6OB-itwRMg2NBW9K4xR90Q,52
+mongodb_bundle/bundle.py,sha256=b2CGzmKQc3dkv21pzrljx_vLPPApxTrm1yEi-UD6Fug,1031
+mongodb_bundle-2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+mongodb_bundle-2.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+mongodb_bundle-2.0.dist-info/METADATA,sha256=a2VMdzBKfaPKRTWXxinbAH6lTfwSt0HQ59GYmrabRJk,513
+mongodb_bundle-2.0.dist-info/RECORD,,
