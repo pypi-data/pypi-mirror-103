@@ -1,0 +1,9 @@
+README.md
+setup.py
+zxynewpkgcheckupstream/__init__.py
+zxynewpkgcheckupstream/print_hi.py
+zxynewpkgcheckupstream.egg-info/PKG-INFO
+zxynewpkgcheckupstream.egg-info/SOURCES.txt
+zxynewpkgcheckupstream.egg-info/dependency_links.txt
+zxynewpkgcheckupstream.egg-info/requires.txt
+zxynewpkgcheckupstream.egg-info/top_level.txt
