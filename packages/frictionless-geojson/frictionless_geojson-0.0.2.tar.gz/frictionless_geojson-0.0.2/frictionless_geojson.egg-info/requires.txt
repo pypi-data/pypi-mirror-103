@@ -1,0 +1,9 @@
+frictionless
+shapely
+
+[dev]
+frictionless[csv,json]
+black
+pytest
+pytest_cov
+pylama

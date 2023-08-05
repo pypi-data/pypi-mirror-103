@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: frictionless-geojson
+Version: 0.0.2
+Summary: GeoJSON Parser and Dialect for Frictionless
+Home-page: https://github.com/cividi/frictionless-geojson
+Author: Thorben Westerhuys
+Author-email: thorben@cividi.ch
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/cividi/frictionless-geojson/issues
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev

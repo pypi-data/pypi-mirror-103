@@ -1,0 +1,14 @@
+pyproject.toml
+setup.cfg
+setup.py
+./frictionless_geojson/__init__.py
+./tests/__init__.py
+./tests/conftest.py
+./tests/test_file.py
+./tests/test_geojson.py
+./tests/test_resource.py
+frictionless_geojson.egg-info/PKG-INFO
+frictionless_geojson.egg-info/SOURCES.txt
+frictionless_geojson.egg-info/dependency_links.txt
+frictionless_geojson.egg-info/requires.txt
+frictionless_geojson.egg-info/top_level.txt
