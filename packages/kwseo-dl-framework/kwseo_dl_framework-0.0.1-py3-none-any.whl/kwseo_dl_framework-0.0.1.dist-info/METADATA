@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: kwseo-dl-framework
+Version: 0.0.1
+Summary: Deep Neural Networks built from the book `Deep Learning from Scratch3`
+Home-page: https://github.com/sgm1021/my_framework
+Author: KWSeo
+Author-email: manimahn12@gmail.com
+License: MIT
+Keywords: Deep Learning
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+
+UNKNOWN
+
+
