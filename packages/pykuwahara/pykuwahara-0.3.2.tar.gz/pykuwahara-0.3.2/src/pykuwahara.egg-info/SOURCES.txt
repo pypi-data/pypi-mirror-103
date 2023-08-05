@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/pykuwahara/__init__.py
+src/pykuwahara/kuwahara.py
+src/pykuwahara.egg-info/PKG-INFO
+src/pykuwahara.egg-info/SOURCES.txt
+src/pykuwahara.egg-info/dependency_links.txt
+src/pykuwahara.egg-info/requires.txt
+src/pykuwahara.egg-info/top_level.txt
