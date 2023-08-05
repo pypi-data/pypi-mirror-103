@@ -1,0 +1,3 @@
+[pytest11]
+failed_screenshot = pytest_failed_screenshot
+

@@ -1,0 +1,5 @@
+allure-pytest
+allure-python-commons
+helium
+pytest
+selenium

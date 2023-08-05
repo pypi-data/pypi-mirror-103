@@ -1,0 +1,10 @@
+README.rst
+pytest_failed_screenshot.py
+setup.py
+pytest_failed_screenshot.egg-info/PKG-INFO
+pytest_failed_screenshot.egg-info/SOURCES.txt
+pytest_failed_screenshot.egg-info/dependency_links.txt
+pytest_failed_screenshot.egg-info/entry_points.txt
+pytest_failed_screenshot.egg-info/requires.txt
+pytest_failed_screenshot.egg-info/top_level.txt
+test/test_plugin.py
