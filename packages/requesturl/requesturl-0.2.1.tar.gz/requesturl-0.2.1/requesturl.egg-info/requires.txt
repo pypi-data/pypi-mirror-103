@@ -1,0 +1,3 @@
+Click>=7.0
+free-proxy==1.0.2
+Proxy-List-Scrapper==0.2.2
