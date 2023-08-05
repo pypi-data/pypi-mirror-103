@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: wordmaze
+Version: 0.2.2
+Summary: Words and textboxes made amazing
+Home-page: https://github.com/elint-tech/wordmaze/
+Author: elint-tech
+Author-email: contato@elint.com.br
+License: MIT
+Download-URL: https://github.com/elint-tech/wordmaze/dist/wordmaze-0.2.2.tar.gz
+Description: WordMaze
+        [![PyPI version fury.io](https://img.shields.io/pypi/v/wordmaze?color=blue)](https://github.com/elint-tech/wordmaze)
+        [![PyPI pyversions](https://img.shields.io/pypi/pyversions/wordmaze)](https://github.com/elint-tech/wordmaze)
+        ===
+        
+        *Words and textboxes made amazing.*
+        
+        # About
+        
+        - TODO: write About section
+        
+        # Usage
+        
+        - TODO: write Usage section
+        
+        # Installing
+        
+        Install from [PyPI](https://pypi.org/project/wordmaze/):
+        ```
+        pip install wordmaze
+        ```
+        
+        # Projects using WordMaze
+        
+        * [elint-tech/pdfmap](https://github.com/elint-tech/pdfmap): easily extract textboxes from PDF files.
+        
+Keywords: wordmaze,ocr,pdf,word,words,text,textbox,textboxes,text-mining,text-mining-analysis
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
