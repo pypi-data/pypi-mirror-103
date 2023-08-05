@@ -1,0 +1,5 @@
+[console_scripts]
+add_standalone_manifest = storage_tools.cli:add_standalone_manifest
+download_dataset = storage_tools.cli:download_dataset
+upload_dataset = storage_tools.cli:upload_dataset
+
