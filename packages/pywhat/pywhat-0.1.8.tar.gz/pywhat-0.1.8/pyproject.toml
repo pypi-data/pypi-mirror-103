@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "pywhat"
+version = "0.1.8"
+description = "What is that thing?"
+authors = ["Bee <github@skerritt.blog>"]
+license = "GPLv3"
+include = ["Data/"]
+exclude = ["tests/"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+click = "^7.1.2"
+PyYAML = "^5.4.1"
+name-that-hash = "^1.7.2"
+langdetect = "^1.0.8"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+pywhat = "pywhat.what:main"
+what = "pywhat.what:main"
