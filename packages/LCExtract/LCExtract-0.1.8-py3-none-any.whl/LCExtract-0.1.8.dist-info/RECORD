@@ -1,0 +1,16 @@
+LCExtract/LCExtract.py,sha256=4D_cjVSm2g0b83wdWJLZKcpSYl_LYUvieXfwlvCNUzA,1543
+LCExtract/PanSTARRS.py,sha256=jSf4BWukBdM980XzJ2sL4lkFDjtXlCUHWos7MN5i8ts,8962
+LCExtract/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+LCExtract/config.py,sha256=0SDWmVwBUKGUKsOYg4yfG5tO7tPld0NEqKFZHZwK9i4,1352
+LCExtract/coord.py,sha256=6hJf2zG24sXosP2JvFo3i2af-40XNa7br6DQuBydi4g,803
+LCExtract/dataretrieve.py,sha256=HGCJc7FPraQvpWYfUzPzKGW_HkTpnITJpPepL3ujIUA,20017
+LCExtract/entry.py,sha256=RPCPC-QIhhsuZANHS6PQoYtwo01RgzTTmUQUOgviCg8,4510
+LCExtract/utilities.py,sha256=spweOdDiS9Di_6idGC4E6RjyI2ITWoPU1UtyrVessHc,826
+SDSSRefs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SDSSRefs/config.py,sha256=De_pg59TWGTQx4XArnPZ-wYr_aCvxNl1y4N9zncQDRQ,456
+SDSSRefs/controller.py,sha256=RZU5V8wPvtD3B8jH2sH_cNUEoVFo-yslKJagqeTWZMU,687
+LCExtract-0.1.8.dist-info/LICENSE,sha256=yp6DXvIzN3V6Xgx6t7q-oDFMU-k7vZxjuRfm7PXkXhw,1071
+LCExtract-0.1.8.dist-info/METADATA,sha256=_JepHN65cGBWMoVp7gDUbfznnswY8ADPR_aBE-tHcWo,2467
+LCExtract-0.1.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+LCExtract-0.1.8.dist-info/top_level.txt,sha256=9N09K6BuCYI81t3geIXfLe3iU0Mo3PJ4U1fZYyMYv_U,19
+LCExtract-0.1.8.dist-info/RECORD,,
