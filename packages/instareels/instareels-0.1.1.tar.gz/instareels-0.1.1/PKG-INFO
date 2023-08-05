@@ -1,0 +1,16 @@
+Metadata-Version: 1.0
+Name: instareels
+Version: 0.1.1
+Summary: This can download instagram reels
+Home-page: UNKNOWN
+Author: @tanay_mishra
+Author-email: tanaymishra2204@gmail.com
+License: UNKNOWN
+Description: This module can download Instagram reels video 
+        to download import download function from module and call with parameters 
+        like that download('link','videos/video.mp4')..
+        If it dosent work then just Visit : "https://github.com/tanaymishra/reels" to get the code..
+        Because this Module dose not works sometime.. 
+        and visit "https://github.com/tanaymishra/Reels-instruction For instruction"
+        
+Platform: UNKNOWN
