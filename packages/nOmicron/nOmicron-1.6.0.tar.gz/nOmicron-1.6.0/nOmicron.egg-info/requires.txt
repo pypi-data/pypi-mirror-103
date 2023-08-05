@@ -1,0 +1,11 @@
+numpy
+scipy
+tqdm
+matplotlib
+natsort
+pefile
+psutil
+selenium
+chromedriver_autoinstaller
+bs4
+lxml
