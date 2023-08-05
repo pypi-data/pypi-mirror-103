@@ -1,0 +1,3 @@
+[console_scripts]
+contribcompl=contribution_complexity.compute:run
+
