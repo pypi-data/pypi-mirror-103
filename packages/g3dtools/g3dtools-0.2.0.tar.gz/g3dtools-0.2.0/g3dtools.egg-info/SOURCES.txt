@@ -1,0 +1,11 @@
+README.md
+g3dtools
+setup.py
+g3dtools.egg-info/PKG-INFO
+g3dtools.egg-info/SOURCES.txt
+g3dtools.egg-info/dependency_links.txt
+g3dtools.egg-info/requires.txt
+g3dtools.egg-info/top_level.txt
+utils/Utils.py
+utils/UtilsV1.py
+utils/__init__.py
