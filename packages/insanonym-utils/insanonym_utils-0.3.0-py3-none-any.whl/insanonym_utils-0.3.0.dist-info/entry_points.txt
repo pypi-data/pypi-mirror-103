@@ -1,0 +1,3 @@
+[console_scripts]
+anon=insanonym_utils.main:main
+
