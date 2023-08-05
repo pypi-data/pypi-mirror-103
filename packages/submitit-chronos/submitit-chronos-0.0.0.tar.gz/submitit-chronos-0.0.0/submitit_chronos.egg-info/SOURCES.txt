@@ -1,0 +1,6 @@
+setup.cfg
+setup.py
+submitit_chronos.egg-info/PKG-INFO
+submitit_chronos.egg-info/SOURCES.txt
+submitit_chronos.egg-info/dependency_links.txt
+submitit_chronos.egg-info/top_level.txt
