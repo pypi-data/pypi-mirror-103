@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/pie/__init__.py
+src/pie/python_insert_env.py
+src/pie/version.py
+src/python_pie.egg-info/PKG-INFO
+src/python_pie.egg-info/SOURCES.txt
+src/python_pie.egg-info/dependency_links.txt
+src/python_pie.egg-info/top_level.txt
