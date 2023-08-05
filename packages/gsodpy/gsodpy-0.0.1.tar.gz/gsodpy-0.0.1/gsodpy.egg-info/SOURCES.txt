@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+gsodpy/__init__.py
+gsodpy/gsodpy.py
+gsodpy.egg-info/PKG-INFO
+gsodpy.egg-info/SOURCES.txt
+gsodpy.egg-info/dependency_links.txt
+gsodpy.egg-info/top_level.txt
+gsodpy/gsoDownloader/__init__.py
+gsodpy/gsoDownloader/gsoDownloader.py
