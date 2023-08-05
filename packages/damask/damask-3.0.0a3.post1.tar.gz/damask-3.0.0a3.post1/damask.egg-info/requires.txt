@@ -1,0 +1,6 @@
+pandas>=0.24
+scipy>=1.2
+h5py>=2.9
+vtk>=8.1
+matplotlib>=3.0
+pyaml>=3.12
