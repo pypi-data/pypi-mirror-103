@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: smoot
+Version: 0.0.1
+Summary: Surrogate based multi-objective optimization tool
+Home-page: https://github.com/OneraHub/smoot
+Author: Nathalie Bartoli, Rémi Lafage
+License: BSD-3
+Description: # smoot
+        
+        Surrogate-based Multi-Objective Optimization Tool.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

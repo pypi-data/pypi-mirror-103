@@ -1,0 +1,7 @@
+README.md
+setup.py
+smoot/smoot.egg-info/PKG-INFO
+smoot/smoot.egg-info/SOURCES.txt
+smoot/smoot.egg-info/dependency_links.txt
+smoot/smoot.egg-info/requires.txt
+smoot/smoot.egg-info/top_level.txt
