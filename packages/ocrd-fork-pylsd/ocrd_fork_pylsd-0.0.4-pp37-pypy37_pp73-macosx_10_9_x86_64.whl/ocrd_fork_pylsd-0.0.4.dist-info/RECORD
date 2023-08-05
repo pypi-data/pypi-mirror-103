@@ -1,0 +1,10 @@
+pylsd/__init__.py,sha256=MQB6FRwXIvSq-HoqOD38xdjf2zFe5v53NQ8AugUk2uM,209
+pylsd/lib.pypy37-pp73-darwin.so,sha256=ytc9L29sHo8sk0bloDJqpqJW0b6VNMMT6yj1zbBEDRA,52320
+pylsd/lsd.py,sha256=ZQ09FlC82bWoBm2YIOTQoMv5uQKuorJ01BWip3DnRhk,2296
+pylsd/bindings/__init__.py,sha256=GGxOqtQt1Y5zLi3BODkguz95fUMeHKewIRmyubWPcqA,217
+pylsd/bindings/lsd_ctypes.py,sha256=Jsx7LKuKfQgSepdhGVPiTUo23vYY7L8cL8nFJCr7Akw,883
+ocrd_fork_pylsd-0.0.4.dist-info/LICENSE,sha256=mSRWPENkvoOHok98uW4lRpbzSfDHCE2s6q0eZttcjOk,1275
+ocrd_fork_pylsd-0.0.4.dist-info/METADATA,sha256=yuAX3r-OnCFFJiE0RGkf5LuGEckbLq4vaZBrJ_e8kns,2987
+ocrd_fork_pylsd-0.0.4.dist-info/WHEEL,sha256=NTQ7kKY92DcqGOxSK8cZYnQgBB0Bqp98loH_K_0B3Gw,116
+ocrd_fork_pylsd-0.0.4.dist-info/top_level.txt,sha256=6NCAa3awiy7hHSu3l8GyPnkiEGVntfkvlTRUUKQ0YPw,6
+ocrd_fork_pylsd-0.0.4.dist-info/RECORD,,
