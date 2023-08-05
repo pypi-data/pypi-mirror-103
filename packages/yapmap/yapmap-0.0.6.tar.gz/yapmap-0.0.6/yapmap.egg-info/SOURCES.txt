@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+yapmap/__init__.py
+yapmap/yapmap.py
+yapmap.egg-info/PKG-INFO
+yapmap.egg-info/SOURCES.txt
+yapmap.egg-info/dependency_links.txt
+yapmap.egg-info/requires.txt
+yapmap.egg-info/top_level.txt

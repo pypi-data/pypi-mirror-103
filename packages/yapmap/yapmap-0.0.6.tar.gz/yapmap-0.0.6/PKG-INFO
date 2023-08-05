@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: yapmap
+Version: 0.0.6
+Summary: Yet another parallel processing mapping library
+Home-page: https://github.com/quadrismegistus/yapmap
+Author: Ryan Heuser
+Author-email: rj416@cam.ac.uk
+License: MIT
+Description: # yapmap
+        Yet another parallel processing mapper. Nothing special, just meant to be as simple as possible and work well with pandas.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
