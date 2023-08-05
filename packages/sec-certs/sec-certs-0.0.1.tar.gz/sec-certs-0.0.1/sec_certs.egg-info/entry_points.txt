@@ -1,0 +1,5 @@
+
+        [console_scripts]
+        process-certs=process_certificates:main
+        fips-certs=fips_certificates:main
+    
