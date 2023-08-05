@@ -1,0 +1,35 @@
+## DWAO Adobe IO Library
+
+Library for basic Adobe IO Integrations.
+
+
+## Examples
+
+```
+from dwaoAdobeIO import AdobeAuth
+ORG_ID = "#Org@AdobeOrg#"
+ACCNT_ID = "#ACCOUNT ID#"
+API_KEY = "#API KEY#"
+IMS_HOST = "https://ims-na1.adobelogin.com#"
+PRIVATE_KEY_PATH = "private.key"
+API_PATH = "https://ims-na1.adobelogin.com/s/ent_audiencemanagerplatform_sdk "
+CLIENT_SECRET = "#ClientSecret#"
+AAMdcs =  AdobeAuth.AAM(ORG_ID=ORG_ID,ACCNT_ID=ACCNT_ID,API_KEY=API_KEY,IMS_HOST=IMS_HOST,PRIVATE_KEY_PATH=PRIVATE_KEY_PATH,CLIENT_SECRET=CLIENT_SECRET)
+jwt_token =AAMdcs.generate_jwt(API_PATH=API_PATH)
+access_token = AAMdcs.generate_access_token()
+
+#print(access_token)
+
+#print()
+
+print(AAMdcs.get_segment_folders().text)
+```
+
+```
+Methods Avaialbe
+get_datasource(param)
+get_traits(param)
+get_segments(param)
+get_segment_folders(param)
+get_trait_folders(param)
+```
