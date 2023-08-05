@@ -1,0 +1,9 @@
+README.md
+setup.py
+yapper/__init__.py
+yapper/parser.py
+yapper.egg-info/PKG-INFO
+yapper.egg-info/SOURCES.txt
+yapper.egg-info/dependency_links.txt
+yapper.egg-info/requires.txt
+yapper.egg-info/top_level.txt

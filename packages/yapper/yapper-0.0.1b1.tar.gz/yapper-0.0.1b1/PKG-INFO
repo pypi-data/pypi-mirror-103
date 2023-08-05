@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: yapper
+Version: 0.0.1b1
+Summary: Simple python parser from docstrings to markdown
+Home-page: https://github.com/benchmark-urbanism/docdown
+Author: Gareth Simons
+Author-email: info@benchmarkurbanism.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/benchmark-urbanism/docdown/issues
+Project-URL: Documentation, https://github.com/benchmark-urbanism/docdown
+Project-URL: Source Code, https://github.com/benchmark-urbanism/docdown
+Description: UNKNOWN
+Platform: UNKNOWN
