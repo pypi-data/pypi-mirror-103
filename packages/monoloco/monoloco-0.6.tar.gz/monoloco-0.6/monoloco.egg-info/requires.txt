@@ -1,0 +1,16 @@
+openpifpaf>=v0.12.1
+matplotlib
+
+[eval]
+tabulate
+sklearn
+pandas
+
+[prep]
+nuscenes-devkit==1.0.2
+
+[test]
+pylint
+pytest
+gdown
+scipy
