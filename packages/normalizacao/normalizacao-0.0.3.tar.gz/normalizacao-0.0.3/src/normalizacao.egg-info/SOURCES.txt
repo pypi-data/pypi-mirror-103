@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/normalizacao.egg-info/PKG-INFO
+src/normalizacao.egg-info/SOURCES.txt
+src/normalizacao.egg-info/dependency_links.txt
+src/normalizacao.egg-info/top_level.txt
