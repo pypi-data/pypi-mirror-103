@@ -1,0 +1,8 @@
+simple_dwd_weatherforecast/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_dwd_weatherforecast/dwdforecast.py,sha256=dV6W3RfAyxFm-FxzLuCbX9LFLwgJBPna8r-xZF5dWdU,18126
+simple_dwd_weatherforecast/stations.py,sha256=bOFArIWaEYoYnDRATjLFZV26qBAw7jcACcGTKg_qwQA,386545
+simple_dwd_weatherforecast-1.0.14.dist-info/LICENCE,sha256=27UG7gteqvSWuZlsbIq2_OAbh7VyifGGl-1zpuUoBcw,1072
+simple_dwd_weatherforecast-1.0.14.dist-info/METADATA,sha256=MU8RAqS9zwPSgPKx5fL8lHUNhf8raR7Ogmkn7JI51T8,6962
+simple_dwd_weatherforecast-1.0.14.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+simple_dwd_weatherforecast-1.0.14.dist-info/top_level.txt,sha256=RZ1CgIv-q0wWt07wtEye7k4BNv8iAo6uUcHOVWEGdP4,27
+simple_dwd_weatherforecast-1.0.14.dist-info/RECORD,,
