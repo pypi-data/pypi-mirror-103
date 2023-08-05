@@ -1,0 +1,43 @@
+Metadata-Version: 1.1
+Name: ffmaxflow
+Version: 0.0.5
+Summary: Implementation of the  Fork Fulkerson method to find the max posible flow of a network
+Home-page: https://optimizacion-2-2021-1-gh-classroom.github.io/practica-1-segunda-parte-diramtz/maxflow.html
+Author: Equipo 2
+Author-email: a@b.c
+License: MIT
+Description: This package implements the Fork Fulkerson algorithm to find the maximum posible flow in a network.
+        
+        The Ford-Fulkerson method answers the question of given a network with vertices and edges between those vertices that have certain weights, how much "flow" can the network process at a time?
+        
+        
+        Change Log
+        ==========
+        
+        0.0.1 (17/03/21)
+        ----------------
+        - First release
+        
+        0.0.2 (18/03/21)
+        ----------------
+        - Name change
+        
+        0.0.3 (18/03/21)
+        ----------------
+        - Better docstrings
+        
+        0.0.4 (27/03/21)
+        ----------------
+        - Trying out the long description
+        
+        0.0.5 (21/04/21)
+        ----------------
+        - Reimplementations and reinforcement
+        
+Keywords: max flow
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
