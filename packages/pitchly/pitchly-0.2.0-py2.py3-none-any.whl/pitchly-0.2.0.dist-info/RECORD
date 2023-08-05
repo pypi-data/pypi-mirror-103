@@ -1,0 +1,17 @@
+pitchly/__init__.py,sha256=FVHPBGkfhbQDi_z3v0PiKJrXXqXOx0vGW_1VaqNJi7U,22
+pitchly/__main__.py,sha256=y0AZgxY2VWdYAHZnttN6sbDRXSMeJLVg1hSu6NIietc,383
+pitchly/cli.py,sha256=TS3-ytD-jk0n-p5KMCwyJO1aqkhtXMhGIRN2FhvxMok,810
+pitchly/metrica.py,sha256=FfeaXn546O1RmyC7thootZuWKbpmxQA4f4v7NGPIUkY,38786
+pitchly/metrica_old.py,sha256=R0TFQu1vd4PJ7-7ZgBqYC2xRiOFSVpJeUoINAU59fy0,26310
+pitchly/params.py,sha256=n02FhaEFOQ7YRZ_PldVM26lagLxNuX1P2HbbISm8Zh8,2143
+pitchly/pitch.py,sha256=cpFTVZYGhvKEZTi23Vim9obfHeeIsfj_98ZSdhp92LM,15686
+pitchly/pitch_control.py,sha256=kpLtp4Q4hbnw6XRDd7RSHPVlozGTJu3nygdt5z7aNp8,23788
+pitchly/pitch_control_old.py,sha256=3-hMxM-AqawD6tZbjyunC9g1LY_c64qqHhvqKevv3Q8,24800
+pitchly/utils.py,sha256=GCI1lirIIuaOuV7tfqUj1xRq5P_461yKSbKDg2TXc_E,7670
+pitchly-0.2.0.dist-info/AUTHORS.rst,sha256=OwADbRGA0eIf6yHmW2x1bNEJafv2WyMTW-dwjOTMU7s,178
+pitchly-0.2.0.dist-info/LICENSE,sha256=DwdjfsyQ22073QYJAtHfbWJYHnvfhHtz2dVKfxpxdFI,1101
+pitchly-0.2.0.dist-info/METADATA,sha256=VJE3Ice477q9lnwsb_GFi88JH8vk8rb7_Pwnj0QKubs,3685
+pitchly-0.2.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+pitchly-0.2.0.dist-info/entry_points.txt,sha256=qkUvrYrUj92TuSUVBdhuYtmm0kiSncS8wIuvmHK0pC0,46
+pitchly-0.2.0.dist-info/top_level.txt,sha256=uTFCDbYJsyL0v1ky1gCyD9vEVrCTMLAoDGSmeRgSYk8,8
+pitchly-0.2.0.dist-info/RECORD,,
