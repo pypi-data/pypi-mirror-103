@@ -1,0 +1,1818 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.9.2" />
+<title>fntom.CompressedFile API documentation</title>
+<meta name="description" content="Definition of class `CompressedFile` which implements reading of f. n. tomonoids
+from a &#34;compressed&#34; text file." />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>fntom.CompressedFile</code></h1>
+</header>
+<section id="section-intro">
+<p>Definition of class <code><a title="fntom.CompressedFile.CompressedFile" href="#fntom.CompressedFile.CompressedFile">CompressedFile</a></code> which implements reading of f. n. tomonoids
+from a "compressed" text file.</p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python"># -*- coding: UTF-8 -*-
+
+# This file is a part of fntom which is a Python3 package that implements a
+# finite, negative, totally ordered monoid together with methods to compute its
+# one-element Rees co-extensions.
+#
+# Copyright (C) 2021 Milan Petrík &lt;milan.petrik@protonmail.com&gt;
+#
+# Web page of the program: &lt;https://gitlab.com/petrikm/fntom&gt;
+#
+# fntom is free software: you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by the Free
+# Software Foundation, either version 3 of the License, or (at your option) any
+# later version.
+#
+# fntom is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+# FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+# details.
+#
+# You should have received a copy of the GNU General Public License along with
+# fntom. If not, see &lt;https://www.gnu.org/licenses/&gt;.
+
+&#34;&#34;&#34;
+    Definition of class `CompressedFile` which implements reading of f. n. tomonoids
+    from a &#34;compressed&#34; text file.
+&#34;&#34;&#34;
+
+# TODO if the file is too large then do not load the whole content to memory
+# but rather read the tomonoids directly from the file changing its current
+# offset by `fh.seek(offset, from_what)` where `from_what` is one of:
+# * os.SEEK_SET - beginning of the file
+# * os.SEEK_CUR - current position
+# * os.SEEK_END - end of file
+
+__all__ = [&#34;CompressedFile&#34;]
+
+import fntom
+
+class CompressedFile:
+    &#34;&#34;&#34;
+    Implements reading of f. n. tomonoids from a &#34;compressed&#34; text file.
+
+    Syntax:
+        Lines that start by `&#34;#&#34;` are ignored.
+        Each line defines one tomonoid and has the syntax:
+
+            &lt;tomonoid_id&gt;&lt;delimiter&gt;&lt;parent_id&gt;:&lt;tomonoid_definition&gt;
+
+          * `&lt;tomonoid_id&gt;` ... identifier of the tomonoid as a number in the
+              Base62 encoding
+          * `&lt;delimiter&gt;` ... delimits the tomonoid identifier and the
+              identifier of its parent;
+              can be `&#34;,&#34;` or `&#34;;&#34;`;
+              `&#34;,&#34;` refers to the fact that the tomonoid is &#34;closed&#34; (that is,
+              all its co-extensions are present in the file)
+              `&#34;;&#34;` refers to the fact that the tomonoid is &#34;not closed&#34;
+          * `&lt;parent_id&gt;` ...  identifier of the parent of the tomonoid
+              represented by the currnt line of the file; it is a number in the
+              Base62 encoding, as well
+          * `:` ... colon delimits the identifier part and the definition part;
+              omitted if the definition part is empty (the &#34;zero&#34; co-extension)
+          * `&lt;tomonoid_definition&gt;` ... the tomonoid can be defined either by a
+              Cayley table or by differences when compared to its parent tomonoid:
+
+              - if the first character is &#34;T&#34; then the Cayley table of the
+                tomonoid follows as a sequence of `n` rows delimited by `&#34;;&#34;`
+                where each row is a sequence of `n` tomonoid elements;
+                `n` is the size of the tomonoid;
+                the tomonoid elements are positive integers from `0` (the unit
+                element of the tomonoid) to `n-1` (the unit element of the
+                tomonoid) written in Base62 encoding;
+              - otherwise, the definition consists of an **even** sequence of
+                Base62 one-digit numbers that represents a number of pairs of
+                the tomonoid;
+                these pairs are those that are evaluated by the tomonoid
+                operation to the atom (the second lowest element) of the
+                tomonoid;
+                the other pairs that are supposed to be evaluated to the atom,
+                too, are given by the tomonoid monotonicity;
+                the rest of the pairs are evaluated to the zero of the tomonoid
+
+    Example:
+        What follows is a &#34;compressed&#34; text file that contains all the
+        tomonoids starting from the trivial monoid up to all the tomonoids of
+        the size 4:
+
+            1,-:T0
+            2,1
+            4,2
+            3,2:11
+            6;4
+            7;4:11
+            5;4:22
+            9;3
+            A;3:12
+            B;3:21
+            C;3:1221
+            8;3:22
+
+    Attributes:
+        path (str): path to the file
+        lines (list of str): the content of the file;
+            each list item contains one (unmodified) line of the file
+    &#34;&#34;&#34;
+
+    def __init__(self, lines = None, path = None):
+        &#34;&#34;&#34;
+        Raises:
+            FileNotFoundError: if the file specified by `path` cannot be found
+        &#34;&#34;&#34;
+        self.path = None
+        if lines != None:
+            self.lines = lines
+        elif path != None:
+            self.load(path)
+        else:
+            self.lines = []
+
+    def load(self, path):
+        &#34;&#34;&#34;
+        Loads a file given by the path.
+
+        The content of the file is loaded, as it is, to the attribute `lines`,
+        however, the lines introduced by `&#34;#&#34;` are subsequently removed from
+        the list.
+
+        Args:
+            path (str): path to the file
+
+        Raises:
+            FileNotFoundError: if the file specified by `path` cannot be found
+        &#34;&#34;&#34;
+        self.path = path
+        # read the whole file
+        with open(path, &#34;r&#34;) as inFile:
+            self.lines = inFile.readlines()
+        # and, subsequently, remove commented lines (that start by &#34;#&#34;)
+        index = 0
+        while index &lt; len(self.lines):
+            if self.lines[index][0] == &#34;#&#34;:
+                del(self.lines[index])
+            else:
+                index += 1
+
+    def save(self, path, displayProgress = False, includeReport = True):
+        &#34;&#34;&#34;
+        Saves the current content given by the attribute `lines` to a
+        &#34;compressed&#34; file given by the path.
+
+        Args:
+            path (str): path to the file
+            displayProgress (bool): if `True` then a progres bar will be
+                displayed on the terminal during the saving of the file
+            includeReport (bool): if `True` then the table returned by
+                `CompressedFile.exportReportToText` will be written to the head
+                of the created file
+        &#34;&#34;&#34;
+        with open(path, &#34;w&#34;) as outFile:
+            if includeReport:
+                outFile.write(self.exportReportToText(self.getReport()))
+            numLines = len(self.lines)
+            for i in range(numLines):
+                if displayProgress:
+                    progress = (i + 1) / numLines
+                    fntom.drawProgress(progress, msg = &#34;Writing file:&#34;)
+                outFile.write(self.lines[i])
+            if displayProgress:
+                print()
+
+    def saveAsUncompressed(
+            self,
+            path,
+            indices = None,
+            identifiers = None,
+            separator = &#34;&#34;,
+            endLine = &#34;\n&#34;,
+            tableSymbols = &#34;base62&#34;,
+            identifierSymbols = &#34;base62&#34;,
+            addOriginal = False,
+            displayProgress = False):
+        &#34;&#34;&#34;
+        Saves the current content given by the attribute `lines` to an
+        &#34;uncompressed&#34; file given by the path.
+
+        Args:
+            path (str): path to the file
+
+            indices (list of int, optional): specifies by the indices which
+                items of the list `lines` shall be saved to the file
+
+            identifiers (list of int, optional): specifies by the identifiers which
+                tomonoids in the list `lines` shall be saved to the file
+
+            separator (str, optional): string that separates the values in the
+                table
+
+            endLine (str, optional): string that separates the rows of the
+                table
+
+            tableSymbols (str, optional): one of the following three values:
+
+                * &#34;base62&#34; (default) ... the element of the tomonoid will be
+                    written as symbols from the number system 62, that is, the
+                    characters from
+                    `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz`
+                    where `0` represents the neutral element (unit)
+                * &#34;int&#34; ... the element of the tomonoid will be written as
+                    non-negative integers starting from `0` which will represent
+                    the neutral element (unit)
+                * &#34;0xyz1&#34; ...  the element of the tomonoid will be diplayed as
+                    the characters from the set:
+                    `&#34;0&#34;`, ..., `&#34;x&#34;`, `&#34;y&#34;`, `&#34;z&#34;`, `&#34;1&#34;`
+                    In this case, the table will be left-right flipped
+                    (according to the vertical axis).
+                    This style of depicting the Cayley table corresponds with
+                    the style used in the referenced papers
+                    [PeVe14,PeVe16,PeVe17,PeVe19], while the previous two
+                    styles reflect the inner representation of the tomonoid.
+
+            identifierSymbols (str, optional): in which set of symbols shall
+                the f. n. tomonoid identifiers be written;
+
+                * &#34;base62&#34; (default) ... the identifiers will be written as
+                    numbers in the number system with 62 digits
+                * &#34;int&#34; ... the identifiers will be written as decimal numbers
+
+            addOriginal (bool, optional): if `True` then the identifier of the
+                tomonoid, from which this tomonoid has been initialized as its
+                copy, will be added to the head of each definition of a
+                tomonoid
+
+            displayProgress(bool): if `True` then a progres bar will be
+                displayed on the terminal during the saving of the file
+        &#34;&#34;&#34;
+        # TODO optimization needed
+        with open(path, &#34;w&#34;) as outFile:
+            if indices != None:
+                numLines = len(indices)
+                for i in range(numLines):
+                    if displayProgress:
+                        progress = (i + 1) / numLines
+                        fntom.drawProgress(progress, msg = &#34;Writing file:&#34;)
+                    index = indices[i]
+                    tom = self.getFNTOMonoid(tomIndex = index)
+                    tomText = tom.exportToText(
+                            separator = separator,
+                            endLine = endLine,
+                            tableSymbols = tableSymbols,
+                            identifierSymbols = identifierSymbols,
+                            addOriginal = addOriginal)
+                    outFile.write(tomText + &#34;\n&#34;)
+                if displayProgress:
+                    print()
+            elif identifiers != None:
+                numLines = len(identifiers)
+                for i in range(numLines):
+                    if displayProgress:
+                        progress = (i + 1) / numLines
+                        fntom.drawProgress(progress, msg = &#34;Writing file:&#34;)
+                    identifier = identifiers[i]
+                    tom = self.getFNTOMonoid(tomIdentifier = identifier)
+                    tomText = tom.exportToText(
+                            separator = separator,
+                            endLine = endLine,
+                            tableSymbols = tableSymbols,
+                            identifierSymbols = identifierSymbols,
+                            addOriginal = addOriginal)
+                    outFile.write(tomText + &#34;\n&#34;)
+                if displayProgress:
+                    print()
+            else:
+                numLines = len(self.lines)
+                for index in range(numLines):
+                    if displayProgress:
+                        progress = (index + 1) / numLines
+                        fntom.drawProgress(progress, msg = &#34;Writing file:&#34;)
+                    tom = self.getFNTOMonoid(tomIndex = index)
+                    tomText = tom.exportToText(
+                            separator = separator,
+                            endLine = endLine,
+                            tableSymbols = tableSymbols,
+                            identifierSymbols = identifierSymbols,
+                            addOriginal = addOriginal)
+                    outFile.write(tomText + &#34;\n&#34;)
+                if displayProgress:
+                    print()
+
+    def getFNTOMonoid(self, tomIdentifier = None, tomIndex = None):
+        &#34;&#34;&#34;
+        Constructs and returns the tomonoid specified by its identifier or by
+        its index.
+
+        The line in `lines` that corresponds to the tomonoid is first found.
+        Then, recursively, the parent of the tomonoid (and its parent, and so
+        on) is constructed while the current tomonoid is constructed as a
+        one-element co-extension of its parent setting its corresponding pairs
+        to be evaluated to its atom.
+
+        Args:
+            tomIdentifier (int): if specified then the tomonoid is seeked in
+                `lines` according to its identifier
+            tomIndex (int): if specified then the tomonoid is seeked in `lines`
+                according to its list index
+        &#34;&#34;&#34;
+        #
+        # determine tomonoid index:
+        # -------------------------
+        if tomIdentifier != None:
+            # determine index according to identifier
+            # TODO algorithm is naive, something more sophisticated is needed
+            for lineIndex in range(len(self.lines)):
+                line = self.lines[lineIndex]
+                charIndex = 0
+                if line[charIndex] == &#34;-&#34;:
+                    continue
+                else:
+                    tomIdBase62 = &#34;&#34;
+                    while line[charIndex].isalnum():
+                        tomIdBase62 += line[charIndex]
+                        charIndex += 1
+                    tomId = fntom.convertBase62ToDecimal(tomIdBase62)
+                    if tomId == tomIdentifier:
+                        tomIndex = lineIndex
+                        break
+        if tomIndex == None or tomIndex &gt;= len(self.lines):
+            return None
+        #
+        # start reading tomonoid:
+        # -----------------------
+        lineNum = tomIndex + 1
+        tomLine = self.lines[tomIndex]
+        charIndex = 0
+        # read tomonoid identifier
+        if tomLine[charIndex] == &#34;-&#34;:
+            tomIdBase62 = None
+            tomId = None
+            charIndex += 1
+        else:
+            tomIdBase62 = &#34;&#34;
+            while tomLine[charIndex].isalnum():
+                tomIdBase62 += tomLine[charIndex]
+                charIndex += 1
+            tomId = fntom.convertBase62ToDecimal(tomIdBase62)
+        # read whether the tomonoid is closed
+        if tomLine[charIndex] == &#34;;&#34;:
+            closed = False
+        elif tomLine[charIndex] == &#34;,&#34;:
+            closed = True
+        else:
+            raise fntom.Error.FileSyntax(
+                    lineNum,
+                    &#34;EXPECTED &#39;;&#39; OR &#39;,&#39; BUT FOUND &#39;&#34; + str(tomLine[charIndex] + &#34;&#39;&#34;))
+        charIndex += 1
+        # read identifier of the parent of this tomonoid
+        if tomLine[charIndex] == &#34;-&#34;:
+            parentIdBase62 = None
+            parentId = None
+            charIndex += 1
+        else:
+            parentIdBase62 = &#34;&#34;
+            while tomLine[charIndex].isalnum():
+                parentIdBase62 += tomLine[charIndex]
+                charIndex += 1
+            parentId = fntom.convertBase62ToDecimal(parentIdBase62)
+        # colon &#34;:&#34; or newline &#34;\n&#34; is expected
+        if tomLine[charIndex] == &#34;:&#34;:
+            charIndex += 1
+            if tomLine[charIndex] == &#34;T&#34;:
+                definedByTable = True
+            else:
+                definedByTable = False
+        elif tomLine[charIndex] == &#34;\n&#34;:
+            definedByTable = False
+        else:
+            raise fntom.Error.FileSyntax(
+                    lineNum,
+                    &#34;EXPECTED &#39;:&#39; OR NEW LINE BUT FOUND &#39;&#34; + str(tomLine[charIndex] + &#34;&#39;&#34;))
+        if definedByTable:
+            # if the first character after &#34;:&#34; is &#34;T&#34; then this tomonoid is
+            # defined by a Cayley table
+            base62Table = []
+            for row in tomLine[charIndex + 1:-1].split(&#34;;&#34;):
+                base62Table.append(list(row))
+            tom = fntom.FNTOMonoid(tomId, base62Table = base62Table)
+            return fntom.FNTOMonoid(tomId, base62Table = base62Table)
+        else:
+            # ... otherwise it is defined by those pairs of tomonoid values
+            # that are evaluated to the atom
+            atomPairs = []
+            while tomLine[charIndex] != &#34;\n&#34;:
+                if not tomLine[charIndex].isalnum():
+                    raise fntom.Error.FileSyntax(
+                            lineNum,
+                            &#34;LEFT VALUE OF A PAIR IS NOT ALPHANUMERIC: &#39;&#34; + tomLine[charIndex] + &#34;&#39;&#34;)
+                leftValueBase62 = tomLine[charIndex]
+                charIndex += 1
+                if tomLine[charIndex] != &#34;\n&#34;:
+                    rightValueBase62 = tomLine[charIndex]
+                else:
+                    raise fntom.Error.FileSyntax(
+                            lineNum,
+                            &#34;UNEXPECTED EOF WHEN READING PAIRS&#34;)
+                if not tomLine[charIndex].isalnum():
+                    raise fntom.Error.FileSyntax(
+                            lineNum,
+                            &#34;RIGHT VALUE OF A PAIR IS NOT ALPHANUMERIC: &#39;&#34; + tomLine[charIndex] + &#34;&#39;&#34;)
+                charIndex += 1
+                leftValue = fntom.convertBase62ToDecimal(leftValueBase62)
+                rightValue = fntom.convertBase62ToDecimal(rightValueBase62)
+                atomPairs.append((leftValue, rightValue))
+            parent = self.getFNTOMonoid(tomIdentifier = parentId)
+            tom = fntom.FNTOMonoid(tomId, parent = parent)
+            for pair in atomPairs:
+                tom.setPairToAtom(pair)
+            tom.setRestToZero()
+            tom.setIdempotents()
+            return tom
+
+    def getFirstFNTOMonoid(self):
+        &#34;&#34;&#34;
+        Constructs and returns the first f. n. tomonoid in the list.
+
+        The f. n. tomonoid is constructed from the first item of `lines`
+        utilizing `CompressedFile.getFirstFNTOMonoid`.
+        Furthermore, the value of the attribute `currentTomIndex` is set to
+        zero (for future calling of `CompressedFile.getNextFNTOMonoid`).
+
+        Returns:
+            FNTOMonoid: the first f. n. tomonoid in the list `lines`
+        &#34;&#34;&#34;
+        self.currentTomIndex = 0
+        return self.getFNTOMonoid(tomIndex = self.currentTomIndex)
+
+    def getNextFNTOMonoid(self):
+        &#34;&#34;&#34;
+        Constructs and returns the next f. n. tomonoid in the list.
+
+        The f. n. tomonoid is constructed, utilizing
+        `CompressedFile.getFirstFNTOMonoid`, from the item of the list `lines`
+        given by the index `currentTomIndex + 1`.
+        Furthermore, the value of the attribute `currentTomIndex` is increased
+        by one.
+
+        Returns:
+            FNTOMonoid: the next f. n. tomonoid in the list `lines`
+        &#34;&#34;&#34;
+        self.currentTomIndex += 1
+        return self.getFNTOMonoid(tomIndex = self.currentTomIndex)
+
+    def getReport(self):
+        &#34;&#34;&#34;
+        Returns the information on sizes and numbers of stored f. n. tomonoids.
+
+        Returns:
+            list of dict: the index of a list item corresponds with the size of
+                f. n. tomonoids;
+                dict keys:
+
+                * `&#34;number&#34;` ... number of the f. n. tomonoids of the size
+                    given by the index
+                * `&#34;number of closed&#34;` ... number of those f. n. tomonoids that
+                    are closed
+        &#34;&#34;&#34;
+        report = [ {&#34;number&#34;: 0, &#34;number of closed&#34;: 0} ]
+        tom = self.getFirstFNTOMonoid()
+        while tom != None:
+            if tom.size &gt;= len(report):
+                report.extend((tom.size - len(report) + 1) * [ {&#34;number&#34;: 0, &#34;number of closed&#34;: 0} ])
+            report[tom.size][&#34;number&#34;] += 1
+            if tom.closed:
+                report[tom.size][&#34;number of closed&#34;] += 1
+            tom = self.getNextFNTOMonoid()
+        return report
+
+    def exportReportToText(self, report):
+        &#34;&#34;&#34;
+        Converts the list returned by `CompressedFile.getReport` to a MarkDown
+        table.
+
+        Each line of the resulting text starts by `&#34;#&#34;`, hence the text is
+        suitable to be included to the compressed file.
+
+        Args:
+            report (list of dict): see `CompressedFile.getReport` for the
+                details
+
+        Returns:
+            str: content of `report` formated to a MarkDown table
+        &#34;&#34;&#34;
+        tableHead = [ &#34;size&#34;, &#34;number&#34;, &#34;closed&#34; ]
+        cellWidth = []
+        for item in tableHead:
+            cellWidth.append(len(item))
+        if len(str(len(report) - 1)) &gt; cellWidth[0]:
+            cellWidth[0] = len(str(len(report) - 1))
+        for item in report:
+            wn = len(str(item[&#34;number&#34;]))
+            if wn &gt; cellWidth[1]:
+                cellWidth[1] = wn
+            wc = len(str(item[&#34;number of closed&#34;]))
+            if wc &gt; cellWidth[2]:
+                cellWidth[2] = wc
+        text = &#34;&#34;
+        text += &#34;#&#34;
+        for i in range(len(tableHead)):
+            text += &#34; | &#34;
+            text += f&#34;{tableHead[i]:&lt;{cellWidth[i]}}&#34;
+        text += &#34; |\n&#34;
+        text += &#34;# &#34;
+        for i in range(len(tableHead)):
+            text += &#34;| &#34;
+            for i in range(cellWidth[i]):
+                text += &#34;-&#34;
+            text += &#34;:&#34;
+        text += &#34;|\n&#34;
+        for size in range(len(report)):
+            if report[size][&#34;number&#34;] &gt; 0:
+                text += &#34;# | &#34;
+                text += f&#34;{size:&gt;{cellWidth[0]}}&#34;
+                text += &#34; | &#34;
+                text += f&#34;{report[size][&#39;number&#39;]:&gt;{cellWidth[1]}}&#34;
+                text += &#34; | &#34;
+                text += f&#34;{report[size][&#39;number of closed&#39;]:&gt;{cellWidth[2]}}&#34;
+                text += &#34; |\n&#34;
+        return text</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="fntom.CompressedFile.CompressedFile"><code class="flex name class">
+<span>class <span class="ident">CompressedFile</span></span>
+<span>(</span><span>lines=None, path=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Implements reading of f. n. tomonoids from a "compressed" text file.</p>
+<h2 id="syntax">Syntax</h2>
+<p>Lines that start by <code>"#"</code> are ignored.
+Each line defines one tomonoid and has the syntax:</p>
+<pre><code>&lt;tomonoid_id&gt;&lt;delimiter&gt;&lt;parent_id&gt;:&lt;tomonoid_definition&gt;
+</code></pre>
+<ul>
+<li><code>&lt;tomonoid_id&gt;</code> &hellip; identifier of the tomonoid as a number in the
+Base62 encoding</li>
+<li><code>&lt;delimiter&gt;</code> &hellip; delimits the tomonoid identifier and the
+identifier of its parent;
+can be <code>","</code> or <code>";"</code>;
+<code>","</code> refers to the fact that the tomonoid is "closed" (that is,
+all its co-extensions are present in the file)
+<code>";"</code> refers to the fact that the tomonoid is "not closed"</li>
+<li><code>&lt;parent_id&gt;</code> &hellip;
+identifier of the parent of the tomonoid
+represented by the currnt line of the file; it is a number in the
+Base62 encoding, as well</li>
+<li><code>:</code> &hellip; colon delimits the identifier part and the definition part;
+omitted if the definition part is empty (the "zero" co-extension)</li>
+<li>
+<p><code>&lt;tomonoid_definition&gt;</code> &hellip; the tomonoid can be defined either by a
+Cayley table or by differences when compared to its parent tomonoid:</p>
+<ul>
+<li>if the first character is "T" then the Cayley table of the
+tomonoid follows as a sequence of <code>n</code> rows delimited by <code>";"</code>
+where each row is a sequence of <code>n</code> tomonoid elements;
+<code>n</code> is the size of the tomonoid;
+the tomonoid elements are positive integers from <code>0</code> (the unit
+element of the tomonoid) to <code>n-1</code> (the unit element of the
+tomonoid) written in Base62 encoding;</li>
+<li>otherwise, the definition consists of an <strong>even</strong> sequence of
+Base62 one-digit numbers that represents a number of pairs of
+the tomonoid;
+these pairs are those that are evaluated by the tomonoid
+operation to the atom (the second lowest element) of the
+tomonoid;
+the other pairs that are supposed to be evaluated to the atom,
+too, are given by the tomonoid monotonicity;
+the rest of the pairs are evaluated to the zero of the tomonoid</li>
+</ul>
+</li>
+</ul>
+<h2 id="example">Example</h2>
+<p>What follows is a "compressed" text file that contains all the
+tomonoids starting from the trivial monoid up to all the tomonoids of
+the size 4:</p>
+<pre><code>1,-:T0
+2,1
+4,2
+3,2:11
+6;4
+7;4:11
+5;4:22
+9;3
+A;3:12
+B;3:21
+C;3:1221
+8;3:22
+</code></pre>
+<h2 id="attributes">Attributes</h2>
+<dl>
+<dt><strong><code>path</code></strong> :&ensp;<code>str</code></dt>
+<dd>path to the file</dd>
+<dt><strong><code>lines</code></strong> :&ensp;<code>list</code> of <code>str</code></dt>
+<dd>the content of the file;
+each list item contains one (unmodified) line of the file</dd>
+</dl>
+<h2 id="raises">Raises</h2>
+<dl>
+<dt><code>FileNotFoundError</code></dt>
+<dd>if the file specified by <code>path</code> cannot be found</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class CompressedFile:
+    &#34;&#34;&#34;
+    Implements reading of f. n. tomonoids from a &#34;compressed&#34; text file.
+
+    Syntax:
+        Lines that start by `&#34;#&#34;` are ignored.
+        Each line defines one tomonoid and has the syntax:
+
+            &lt;tomonoid_id&gt;&lt;delimiter&gt;&lt;parent_id&gt;:&lt;tomonoid_definition&gt;
+
+          * `&lt;tomonoid_id&gt;` ... identifier of the tomonoid as a number in the
+              Base62 encoding
+          * `&lt;delimiter&gt;` ... delimits the tomonoid identifier and the
+              identifier of its parent;
+              can be `&#34;,&#34;` or `&#34;;&#34;`;
+              `&#34;,&#34;` refers to the fact that the tomonoid is &#34;closed&#34; (that is,
+              all its co-extensions are present in the file)
+              `&#34;;&#34;` refers to the fact that the tomonoid is &#34;not closed&#34;
+          * `&lt;parent_id&gt;` ...  identifier of the parent of the tomonoid
+              represented by the currnt line of the file; it is a number in the
+              Base62 encoding, as well
+          * `:` ... colon delimits the identifier part and the definition part;
+              omitted if the definition part is empty (the &#34;zero&#34; co-extension)
+          * `&lt;tomonoid_definition&gt;` ... the tomonoid can be defined either by a
+              Cayley table or by differences when compared to its parent tomonoid:
+
+              - if the first character is &#34;T&#34; then the Cayley table of the
+                tomonoid follows as a sequence of `n` rows delimited by `&#34;;&#34;`
+                where each row is a sequence of `n` tomonoid elements;
+                `n` is the size of the tomonoid;
+                the tomonoid elements are positive integers from `0` (the unit
+                element of the tomonoid) to `n-1` (the unit element of the
+                tomonoid) written in Base62 encoding;
+              - otherwise, the definition consists of an **even** sequence of
+                Base62 one-digit numbers that represents a number of pairs of
+                the tomonoid;
+                these pairs are those that are evaluated by the tomonoid
+                operation to the atom (the second lowest element) of the
+                tomonoid;
+                the other pairs that are supposed to be evaluated to the atom,
+                too, are given by the tomonoid monotonicity;
+                the rest of the pairs are evaluated to the zero of the tomonoid
+
+    Example:
+        What follows is a &#34;compressed&#34; text file that contains all the
+        tomonoids starting from the trivial monoid up to all the tomonoids of
+        the size 4:
+
+            1,-:T0
+            2,1
+            4,2
+            3,2:11
+            6;4
+            7;4:11
+            5;4:22
+            9;3
+            A;3:12
+            B;3:21
+            C;3:1221
+            8;3:22
+
+    Attributes:
+        path (str): path to the file
+        lines (list of str): the content of the file;
+            each list item contains one (unmodified) line of the file
+    &#34;&#34;&#34;
+
+    def __init__(self, lines = None, path = None):
+        &#34;&#34;&#34;
+        Raises:
+            FileNotFoundError: if the file specified by `path` cannot be found
+        &#34;&#34;&#34;
+        self.path = None
+        if lines != None:
+            self.lines = lines
+        elif path != None:
+            self.load(path)
+        else:
+            self.lines = []
+
+    def load(self, path):
+        &#34;&#34;&#34;
+        Loads a file given by the path.
+
+        The content of the file is loaded, as it is, to the attribute `lines`,
+        however, the lines introduced by `&#34;#&#34;` are subsequently removed from
+        the list.
+
+        Args:
+            path (str): path to the file
+
+        Raises:
+            FileNotFoundError: if the file specified by `path` cannot be found
+        &#34;&#34;&#34;
+        self.path = path
+        # read the whole file
+        with open(path, &#34;r&#34;) as inFile:
+            self.lines = inFile.readlines()
+        # and, subsequently, remove commented lines (that start by &#34;#&#34;)
+        index = 0
+        while index &lt; len(self.lines):
+            if self.lines[index][0] == &#34;#&#34;:
+                del(self.lines[index])
+            else:
+                index += 1
+
+    def save(self, path, displayProgress = False, includeReport = True):
+        &#34;&#34;&#34;
+        Saves the current content given by the attribute `lines` to a
+        &#34;compressed&#34; file given by the path.
+
+        Args:
+            path (str): path to the file
+            displayProgress (bool): if `True` then a progres bar will be
+                displayed on the terminal during the saving of the file
+            includeReport (bool): if `True` then the table returned by
+                `CompressedFile.exportReportToText` will be written to the head
+                of the created file
+        &#34;&#34;&#34;
+        with open(path, &#34;w&#34;) as outFile:
+            if includeReport:
+                outFile.write(self.exportReportToText(self.getReport()))
+            numLines = len(self.lines)
+            for i in range(numLines):
+                if displayProgress:
+                    progress = (i + 1) / numLines
+                    fntom.drawProgress(progress, msg = &#34;Writing file:&#34;)
+                outFile.write(self.lines[i])
+            if displayProgress:
+                print()
+
+    def saveAsUncompressed(
+            self,
+            path,
+            indices = None,
+            identifiers = None,
+            separator = &#34;&#34;,
+            endLine = &#34;\n&#34;,
+            tableSymbols = &#34;base62&#34;,
+            identifierSymbols = &#34;base62&#34;,
+            addOriginal = False,
+            displayProgress = False):
+        &#34;&#34;&#34;
+        Saves the current content given by the attribute `lines` to an
+        &#34;uncompressed&#34; file given by the path.
+
+        Args:
+            path (str): path to the file
+
+            indices (list of int, optional): specifies by the indices which
+                items of the list `lines` shall be saved to the file
+
+            identifiers (list of int, optional): specifies by the identifiers which
+                tomonoids in the list `lines` shall be saved to the file
+
+            separator (str, optional): string that separates the values in the
+                table
+
+            endLine (str, optional): string that separates the rows of the
+                table
+
+            tableSymbols (str, optional): one of the following three values:
+
+                * &#34;base62&#34; (default) ... the element of the tomonoid will be
+                    written as symbols from the number system 62, that is, the
+                    characters from
+                    `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz`
+                    where `0` represents the neutral element (unit)
+                * &#34;int&#34; ... the element of the tomonoid will be written as
+                    non-negative integers starting from `0` which will represent
+                    the neutral element (unit)
+                * &#34;0xyz1&#34; ...  the element of the tomonoid will be diplayed as
+                    the characters from the set:
+                    `&#34;0&#34;`, ..., `&#34;x&#34;`, `&#34;y&#34;`, `&#34;z&#34;`, `&#34;1&#34;`
+                    In this case, the table will be left-right flipped
+                    (according to the vertical axis).
+                    This style of depicting the Cayley table corresponds with
+                    the style used in the referenced papers
+                    [PeVe14,PeVe16,PeVe17,PeVe19], while the previous two
+                    styles reflect the inner representation of the tomonoid.
+
+            identifierSymbols (str, optional): in which set of symbols shall
+                the f. n. tomonoid identifiers be written;
+
+                * &#34;base62&#34; (default) ... the identifiers will be written as
+                    numbers in the number system with 62 digits
+                * &#34;int&#34; ... the identifiers will be written as decimal numbers
+
+            addOriginal (bool, optional): if `True` then the identifier of the
+                tomonoid, from which this tomonoid has been initialized as its
+                copy, will be added to the head of each definition of a
+                tomonoid
+
+            displayProgress(bool): if `True` then a progres bar will be
+                displayed on the terminal during the saving of the file
+        &#34;&#34;&#34;
+        # TODO optimization needed
+        with open(path, &#34;w&#34;) as outFile:
+            if indices != None:
+                numLines = len(indices)
+                for i in range(numLines):
+                    if displayProgress:
+                        progress = (i + 1) / numLines
+                        fntom.drawProgress(progress, msg = &#34;Writing file:&#34;)
+                    index = indices[i]
+                    tom = self.getFNTOMonoid(tomIndex = index)
+                    tomText = tom.exportToText(
+                            separator = separator,
+                            endLine = endLine,
+                            tableSymbols = tableSymbols,
+                            identifierSymbols = identifierSymbols,
+                            addOriginal = addOriginal)
+                    outFile.write(tomText + &#34;\n&#34;)
+                if displayProgress:
+                    print()
+            elif identifiers != None:
+                numLines = len(identifiers)
+                for i in range(numLines):
+                    if displayProgress:
+                        progress = (i + 1) / numLines
+                        fntom.drawProgress(progress, msg = &#34;Writing file:&#34;)
+                    identifier = identifiers[i]
+                    tom = self.getFNTOMonoid(tomIdentifier = identifier)
+                    tomText = tom.exportToText(
+                            separator = separator,
+                            endLine = endLine,
+                            tableSymbols = tableSymbols,
+                            identifierSymbols = identifierSymbols,
+                            addOriginal = addOriginal)
+                    outFile.write(tomText + &#34;\n&#34;)
+                if displayProgress:
+                    print()
+            else:
+                numLines = len(self.lines)
+                for index in range(numLines):
+                    if displayProgress:
+                        progress = (index + 1) / numLines
+                        fntom.drawProgress(progress, msg = &#34;Writing file:&#34;)
+                    tom = self.getFNTOMonoid(tomIndex = index)
+                    tomText = tom.exportToText(
+                            separator = separator,
+                            endLine = endLine,
+                            tableSymbols = tableSymbols,
+                            identifierSymbols = identifierSymbols,
+                            addOriginal = addOriginal)
+                    outFile.write(tomText + &#34;\n&#34;)
+                if displayProgress:
+                    print()
+
+    def getFNTOMonoid(self, tomIdentifier = None, tomIndex = None):
+        &#34;&#34;&#34;
+        Constructs and returns the tomonoid specified by its identifier or by
+        its index.
+
+        The line in `lines` that corresponds to the tomonoid is first found.
+        Then, recursively, the parent of the tomonoid (and its parent, and so
+        on) is constructed while the current tomonoid is constructed as a
+        one-element co-extension of its parent setting its corresponding pairs
+        to be evaluated to its atom.
+
+        Args:
+            tomIdentifier (int): if specified then the tomonoid is seeked in
+                `lines` according to its identifier
+            tomIndex (int): if specified then the tomonoid is seeked in `lines`
+                according to its list index
+        &#34;&#34;&#34;
+        #
+        # determine tomonoid index:
+        # -------------------------
+        if tomIdentifier != None:
+            # determine index according to identifier
+            # TODO algorithm is naive, something more sophisticated is needed
+            for lineIndex in range(len(self.lines)):
+                line = self.lines[lineIndex]
+                charIndex = 0
+                if line[charIndex] == &#34;-&#34;:
+                    continue
+                else:
+                    tomIdBase62 = &#34;&#34;
+                    while line[charIndex].isalnum():
+                        tomIdBase62 += line[charIndex]
+                        charIndex += 1
+                    tomId = fntom.convertBase62ToDecimal(tomIdBase62)
+                    if tomId == tomIdentifier:
+                        tomIndex = lineIndex
+                        break
+        if tomIndex == None or tomIndex &gt;= len(self.lines):
+            return None
+        #
+        # start reading tomonoid:
+        # -----------------------
+        lineNum = tomIndex + 1
+        tomLine = self.lines[tomIndex]
+        charIndex = 0
+        # read tomonoid identifier
+        if tomLine[charIndex] == &#34;-&#34;:
+            tomIdBase62 = None
+            tomId = None
+            charIndex += 1
+        else:
+            tomIdBase62 = &#34;&#34;
+            while tomLine[charIndex].isalnum():
+                tomIdBase62 += tomLine[charIndex]
+                charIndex += 1
+            tomId = fntom.convertBase62ToDecimal(tomIdBase62)
+        # read whether the tomonoid is closed
+        if tomLine[charIndex] == &#34;;&#34;:
+            closed = False
+        elif tomLine[charIndex] == &#34;,&#34;:
+            closed = True
+        else:
+            raise fntom.Error.FileSyntax(
+                    lineNum,
+                    &#34;EXPECTED &#39;;&#39; OR &#39;,&#39; BUT FOUND &#39;&#34; + str(tomLine[charIndex] + &#34;&#39;&#34;))
+        charIndex += 1
+        # read identifier of the parent of this tomonoid
+        if tomLine[charIndex] == &#34;-&#34;:
+            parentIdBase62 = None
+            parentId = None
+            charIndex += 1
+        else:
+            parentIdBase62 = &#34;&#34;
+            while tomLine[charIndex].isalnum():
+                parentIdBase62 += tomLine[charIndex]
+                charIndex += 1
+            parentId = fntom.convertBase62ToDecimal(parentIdBase62)
+        # colon &#34;:&#34; or newline &#34;\n&#34; is expected
+        if tomLine[charIndex] == &#34;:&#34;:
+            charIndex += 1
+            if tomLine[charIndex] == &#34;T&#34;:
+                definedByTable = True
+            else:
+                definedByTable = False
+        elif tomLine[charIndex] == &#34;\n&#34;:
+            definedByTable = False
+        else:
+            raise fntom.Error.FileSyntax(
+                    lineNum,
+                    &#34;EXPECTED &#39;:&#39; OR NEW LINE BUT FOUND &#39;&#34; + str(tomLine[charIndex] + &#34;&#39;&#34;))
+        if definedByTable:
+            # if the first character after &#34;:&#34; is &#34;T&#34; then this tomonoid is
+            # defined by a Cayley table
+            base62Table = []
+            for row in tomLine[charIndex + 1:-1].split(&#34;;&#34;):
+                base62Table.append(list(row))
+            tom = fntom.FNTOMonoid(tomId, base62Table = base62Table)
+            return fntom.FNTOMonoid(tomId, base62Table = base62Table)
+        else:
+            # ... otherwise it is defined by those pairs of tomonoid values
+            # that are evaluated to the atom
+            atomPairs = []
+            while tomLine[charIndex] != &#34;\n&#34;:
+                if not tomLine[charIndex].isalnum():
+                    raise fntom.Error.FileSyntax(
+                            lineNum,
+                            &#34;LEFT VALUE OF A PAIR IS NOT ALPHANUMERIC: &#39;&#34; + tomLine[charIndex] + &#34;&#39;&#34;)
+                leftValueBase62 = tomLine[charIndex]
+                charIndex += 1
+                if tomLine[charIndex] != &#34;\n&#34;:
+                    rightValueBase62 = tomLine[charIndex]
+                else:
+                    raise fntom.Error.FileSyntax(
+                            lineNum,
+                            &#34;UNEXPECTED EOF WHEN READING PAIRS&#34;)
+                if not tomLine[charIndex].isalnum():
+                    raise fntom.Error.FileSyntax(
+                            lineNum,
+                            &#34;RIGHT VALUE OF A PAIR IS NOT ALPHANUMERIC: &#39;&#34; + tomLine[charIndex] + &#34;&#39;&#34;)
+                charIndex += 1
+                leftValue = fntom.convertBase62ToDecimal(leftValueBase62)
+                rightValue = fntom.convertBase62ToDecimal(rightValueBase62)
+                atomPairs.append((leftValue, rightValue))
+            parent = self.getFNTOMonoid(tomIdentifier = parentId)
+            tom = fntom.FNTOMonoid(tomId, parent = parent)
+            for pair in atomPairs:
+                tom.setPairToAtom(pair)
+            tom.setRestToZero()
+            tom.setIdempotents()
+            return tom
+
+    def getFirstFNTOMonoid(self):
+        &#34;&#34;&#34;
+        Constructs and returns the first f. n. tomonoid in the list.
+
+        The f. n. tomonoid is constructed from the first item of `lines`
+        utilizing `CompressedFile.getFirstFNTOMonoid`.
+        Furthermore, the value of the attribute `currentTomIndex` is set to
+        zero (for future calling of `CompressedFile.getNextFNTOMonoid`).
+
+        Returns:
+            FNTOMonoid: the first f. n. tomonoid in the list `lines`
+        &#34;&#34;&#34;
+        self.currentTomIndex = 0
+        return self.getFNTOMonoid(tomIndex = self.currentTomIndex)
+
+    def getNextFNTOMonoid(self):
+        &#34;&#34;&#34;
+        Constructs and returns the next f. n. tomonoid in the list.
+
+        The f. n. tomonoid is constructed, utilizing
+        `CompressedFile.getFirstFNTOMonoid`, from the item of the list `lines`
+        given by the index `currentTomIndex + 1`.
+        Furthermore, the value of the attribute `currentTomIndex` is increased
+        by one.
+
+        Returns:
+            FNTOMonoid: the next f. n. tomonoid in the list `lines`
+        &#34;&#34;&#34;
+        self.currentTomIndex += 1
+        return self.getFNTOMonoid(tomIndex = self.currentTomIndex)
+
+    def getReport(self):
+        &#34;&#34;&#34;
+        Returns the information on sizes and numbers of stored f. n. tomonoids.
+
+        Returns:
+            list of dict: the index of a list item corresponds with the size of
+                f. n. tomonoids;
+                dict keys:
+
+                * `&#34;number&#34;` ... number of the f. n. tomonoids of the size
+                    given by the index
+                * `&#34;number of closed&#34;` ... number of those f. n. tomonoids that
+                    are closed
+        &#34;&#34;&#34;
+        report = [ {&#34;number&#34;: 0, &#34;number of closed&#34;: 0} ]
+        tom = self.getFirstFNTOMonoid()
+        while tom != None:
+            if tom.size &gt;= len(report):
+                report.extend((tom.size - len(report) + 1) * [ {&#34;number&#34;: 0, &#34;number of closed&#34;: 0} ])
+            report[tom.size][&#34;number&#34;] += 1
+            if tom.closed:
+                report[tom.size][&#34;number of closed&#34;] += 1
+            tom = self.getNextFNTOMonoid()
+        return report
+
+    def exportReportToText(self, report):
+        &#34;&#34;&#34;
+        Converts the list returned by `CompressedFile.getReport` to a MarkDown
+        table.
+
+        Each line of the resulting text starts by `&#34;#&#34;`, hence the text is
+        suitable to be included to the compressed file.
+
+        Args:
+            report (list of dict): see `CompressedFile.getReport` for the
+                details
+
+        Returns:
+            str: content of `report` formated to a MarkDown table
+        &#34;&#34;&#34;
+        tableHead = [ &#34;size&#34;, &#34;number&#34;, &#34;closed&#34; ]
+        cellWidth = []
+        for item in tableHead:
+            cellWidth.append(len(item))
+        if len(str(len(report) - 1)) &gt; cellWidth[0]:
+            cellWidth[0] = len(str(len(report) - 1))
+        for item in report:
+            wn = len(str(item[&#34;number&#34;]))
+            if wn &gt; cellWidth[1]:
+                cellWidth[1] = wn
+            wc = len(str(item[&#34;number of closed&#34;]))
+            if wc &gt; cellWidth[2]:
+                cellWidth[2] = wc
+        text = &#34;&#34;
+        text += &#34;#&#34;
+        for i in range(len(tableHead)):
+            text += &#34; | &#34;
+            text += f&#34;{tableHead[i]:&lt;{cellWidth[i]}}&#34;
+        text += &#34; |\n&#34;
+        text += &#34;# &#34;
+        for i in range(len(tableHead)):
+            text += &#34;| &#34;
+            for i in range(cellWidth[i]):
+                text += &#34;-&#34;
+            text += &#34;:&#34;
+        text += &#34;|\n&#34;
+        for size in range(len(report)):
+            if report[size][&#34;number&#34;] &gt; 0:
+                text += &#34;# | &#34;
+                text += f&#34;{size:&gt;{cellWidth[0]}}&#34;
+                text += &#34; | &#34;
+                text += f&#34;{report[size][&#39;number&#39;]:&gt;{cellWidth[1]}}&#34;
+                text += &#34; | &#34;
+                text += f&#34;{report[size][&#39;number of closed&#39;]:&gt;{cellWidth[2]}}&#34;
+                text += &#34; |\n&#34;
+        return text</code></pre>
+</details>
+<h3>Methods</h3>
+<dl>
+<dt id="fntom.CompressedFile.CompressedFile.exportReportToText"><code class="name flex">
+<span>def <span class="ident">exportReportToText</span></span>(<span>self, report)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Converts the list returned by <code><a title="fntom.CompressedFile.CompressedFile.getReport" href="#fntom.CompressedFile.CompressedFile.getReport">CompressedFile.getReport()</a></code> to a MarkDown
+table.</p>
+<p>Each line of the resulting text starts by <code>"#"</code>, hence the text is
+suitable to be included to the compressed file.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>report</code></strong> :&ensp;<code>list</code> of <code>dict</code></dt>
+<dd>see <code><a title="fntom.CompressedFile.CompressedFile.getReport" href="#fntom.CompressedFile.CompressedFile.getReport">CompressedFile.getReport()</a></code> for the
+details</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>str</code></dt>
+<dd>content of <code>report</code> formated to a MarkDown table</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def exportReportToText(self, report):
+    &#34;&#34;&#34;
+    Converts the list returned by `CompressedFile.getReport` to a MarkDown
+    table.
+
+    Each line of the resulting text starts by `&#34;#&#34;`, hence the text is
+    suitable to be included to the compressed file.
+
+    Args:
+        report (list of dict): see `CompressedFile.getReport` for the
+            details
+
+    Returns:
+        str: content of `report` formated to a MarkDown table
+    &#34;&#34;&#34;
+    tableHead = [ &#34;size&#34;, &#34;number&#34;, &#34;closed&#34; ]
+    cellWidth = []
+    for item in tableHead:
+        cellWidth.append(len(item))
+    if len(str(len(report) - 1)) &gt; cellWidth[0]:
+        cellWidth[0] = len(str(len(report) - 1))
+    for item in report:
+        wn = len(str(item[&#34;number&#34;]))
+        if wn &gt; cellWidth[1]:
+            cellWidth[1] = wn
+        wc = len(str(item[&#34;number of closed&#34;]))
+        if wc &gt; cellWidth[2]:
+            cellWidth[2] = wc
+    text = &#34;&#34;
+    text += &#34;#&#34;
+    for i in range(len(tableHead)):
+        text += &#34; | &#34;
+        text += f&#34;{tableHead[i]:&lt;{cellWidth[i]}}&#34;
+    text += &#34; |\n&#34;
+    text += &#34;# &#34;
+    for i in range(len(tableHead)):
+        text += &#34;| &#34;
+        for i in range(cellWidth[i]):
+            text += &#34;-&#34;
+        text += &#34;:&#34;
+    text += &#34;|\n&#34;
+    for size in range(len(report)):
+        if report[size][&#34;number&#34;] &gt; 0:
+            text += &#34;# | &#34;
+            text += f&#34;{size:&gt;{cellWidth[0]}}&#34;
+            text += &#34; | &#34;
+            text += f&#34;{report[size][&#39;number&#39;]:&gt;{cellWidth[1]}}&#34;
+            text += &#34; | &#34;
+            text += f&#34;{report[size][&#39;number of closed&#39;]:&gt;{cellWidth[2]}}&#34;
+            text += &#34; |\n&#34;
+    return text</code></pre>
+</details>
+</dd>
+<dt id="fntom.CompressedFile.CompressedFile.getFNTOMonoid"><code class="name flex">
+<span>def <span class="ident">getFNTOMonoid</span></span>(<span>self, tomIdentifier=None, tomIndex=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Constructs and returns the tomonoid specified by its identifier or by
+its index.</p>
+<p>The line in <code>lines</code> that corresponds to the tomonoid is first found.
+Then, recursively, the parent of the tomonoid (and its parent, and so
+on) is constructed while the current tomonoid is constructed as a
+one-element co-extension of its parent setting its corresponding pairs
+to be evaluated to its atom.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>tomIdentifier</code></strong> :&ensp;<code>int</code></dt>
+<dd>if specified then the tomonoid is seeked in
+<code>lines</code> according to its identifier</dd>
+<dt><strong><code>tomIndex</code></strong> :&ensp;<code>int</code></dt>
+<dd>if specified then the tomonoid is seeked in <code>lines</code>
+according to its list index</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getFNTOMonoid(self, tomIdentifier = None, tomIndex = None):
+    &#34;&#34;&#34;
+    Constructs and returns the tomonoid specified by its identifier or by
+    its index.
+
+    The line in `lines` that corresponds to the tomonoid is first found.
+    Then, recursively, the parent of the tomonoid (and its parent, and so
+    on) is constructed while the current tomonoid is constructed as a
+    one-element co-extension of its parent setting its corresponding pairs
+    to be evaluated to its atom.
+
+    Args:
+        tomIdentifier (int): if specified then the tomonoid is seeked in
+            `lines` according to its identifier
+        tomIndex (int): if specified then the tomonoid is seeked in `lines`
+            according to its list index
+    &#34;&#34;&#34;
+    #
+    # determine tomonoid index:
+    # -------------------------
+    if tomIdentifier != None:
+        # determine index according to identifier
+        # TODO algorithm is naive, something more sophisticated is needed
+        for lineIndex in range(len(self.lines)):
+            line = self.lines[lineIndex]
+            charIndex = 0
+            if line[charIndex] == &#34;-&#34;:
+                continue
+            else:
+                tomIdBase62 = &#34;&#34;
+                while line[charIndex].isalnum():
+                    tomIdBase62 += line[charIndex]
+                    charIndex += 1
+                tomId = fntom.convertBase62ToDecimal(tomIdBase62)
+                if tomId == tomIdentifier:
+                    tomIndex = lineIndex
+                    break
+    if tomIndex == None or tomIndex &gt;= len(self.lines):
+        return None
+    #
+    # start reading tomonoid:
+    # -----------------------
+    lineNum = tomIndex + 1
+    tomLine = self.lines[tomIndex]
+    charIndex = 0
+    # read tomonoid identifier
+    if tomLine[charIndex] == &#34;-&#34;:
+        tomIdBase62 = None
+        tomId = None
+        charIndex += 1
+    else:
+        tomIdBase62 = &#34;&#34;
+        while tomLine[charIndex].isalnum():
+            tomIdBase62 += tomLine[charIndex]
+            charIndex += 1
+        tomId = fntom.convertBase62ToDecimal(tomIdBase62)
+    # read whether the tomonoid is closed
+    if tomLine[charIndex] == &#34;;&#34;:
+        closed = False
+    elif tomLine[charIndex] == &#34;,&#34;:
+        closed = True
+    else:
+        raise fntom.Error.FileSyntax(
+                lineNum,
+                &#34;EXPECTED &#39;;&#39; OR &#39;,&#39; BUT FOUND &#39;&#34; + str(tomLine[charIndex] + &#34;&#39;&#34;))
+    charIndex += 1
+    # read identifier of the parent of this tomonoid
+    if tomLine[charIndex] == &#34;-&#34;:
+        parentIdBase62 = None
+        parentId = None
+        charIndex += 1
+    else:
+        parentIdBase62 = &#34;&#34;
+        while tomLine[charIndex].isalnum():
+            parentIdBase62 += tomLine[charIndex]
+            charIndex += 1
+        parentId = fntom.convertBase62ToDecimal(parentIdBase62)
+    # colon &#34;:&#34; or newline &#34;\n&#34; is expected
+    if tomLine[charIndex] == &#34;:&#34;:
+        charIndex += 1
+        if tomLine[charIndex] == &#34;T&#34;:
+            definedByTable = True
+        else:
+            definedByTable = False
+    elif tomLine[charIndex] == &#34;\n&#34;:
+        definedByTable = False
+    else:
+        raise fntom.Error.FileSyntax(
+                lineNum,
+                &#34;EXPECTED &#39;:&#39; OR NEW LINE BUT FOUND &#39;&#34; + str(tomLine[charIndex] + &#34;&#39;&#34;))
+    if definedByTable:
+        # if the first character after &#34;:&#34; is &#34;T&#34; then this tomonoid is
+        # defined by a Cayley table
+        base62Table = []
+        for row in tomLine[charIndex + 1:-1].split(&#34;;&#34;):
+            base62Table.append(list(row))
+        tom = fntom.FNTOMonoid(tomId, base62Table = base62Table)
+        return fntom.FNTOMonoid(tomId, base62Table = base62Table)
+    else:
+        # ... otherwise it is defined by those pairs of tomonoid values
+        # that are evaluated to the atom
+        atomPairs = []
+        while tomLine[charIndex] != &#34;\n&#34;:
+            if not tomLine[charIndex].isalnum():
+                raise fntom.Error.FileSyntax(
+                        lineNum,
+                        &#34;LEFT VALUE OF A PAIR IS NOT ALPHANUMERIC: &#39;&#34; + tomLine[charIndex] + &#34;&#39;&#34;)
+            leftValueBase62 = tomLine[charIndex]
+            charIndex += 1
+            if tomLine[charIndex] != &#34;\n&#34;:
+                rightValueBase62 = tomLine[charIndex]
+            else:
+                raise fntom.Error.FileSyntax(
+                        lineNum,
+                        &#34;UNEXPECTED EOF WHEN READING PAIRS&#34;)
+            if not tomLine[charIndex].isalnum():
+                raise fntom.Error.FileSyntax(
+                        lineNum,
+                        &#34;RIGHT VALUE OF A PAIR IS NOT ALPHANUMERIC: &#39;&#34; + tomLine[charIndex] + &#34;&#39;&#34;)
+            charIndex += 1
+            leftValue = fntom.convertBase62ToDecimal(leftValueBase62)
+            rightValue = fntom.convertBase62ToDecimal(rightValueBase62)
+            atomPairs.append((leftValue, rightValue))
+        parent = self.getFNTOMonoid(tomIdentifier = parentId)
+        tom = fntom.FNTOMonoid(tomId, parent = parent)
+        for pair in atomPairs:
+            tom.setPairToAtom(pair)
+        tom.setRestToZero()
+        tom.setIdempotents()
+        return tom</code></pre>
+</details>
+</dd>
+<dt id="fntom.CompressedFile.CompressedFile.getFirstFNTOMonoid"><code class="name flex">
+<span>def <span class="ident">getFirstFNTOMonoid</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Constructs and returns the first f. n. tomonoid in the list.</p>
+<p>The f. n. tomonoid is constructed from the first item of <code>lines</code>
+utilizing <code><a title="fntom.CompressedFile.CompressedFile.getFirstFNTOMonoid" href="#fntom.CompressedFile.CompressedFile.getFirstFNTOMonoid">CompressedFile.getFirstFNTOMonoid()</a></code>.
+Furthermore, the value of the attribute <code>currentTomIndex</code> is set to
+zero (for future calling of <code><a title="fntom.CompressedFile.CompressedFile.getNextFNTOMonoid" href="#fntom.CompressedFile.CompressedFile.getNextFNTOMonoid">CompressedFile.getNextFNTOMonoid()</a></code>).</p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>FNTOMonoid</code></dt>
+<dd>the first f. n. tomonoid in the list <code>lines</code></dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getFirstFNTOMonoid(self):
+    &#34;&#34;&#34;
+    Constructs and returns the first f. n. tomonoid in the list.
+
+    The f. n. tomonoid is constructed from the first item of `lines`
+    utilizing `CompressedFile.getFirstFNTOMonoid`.
+    Furthermore, the value of the attribute `currentTomIndex` is set to
+    zero (for future calling of `CompressedFile.getNextFNTOMonoid`).
+
+    Returns:
+        FNTOMonoid: the first f. n. tomonoid in the list `lines`
+    &#34;&#34;&#34;
+    self.currentTomIndex = 0
+    return self.getFNTOMonoid(tomIndex = self.currentTomIndex)</code></pre>
+</details>
+</dd>
+<dt id="fntom.CompressedFile.CompressedFile.getNextFNTOMonoid"><code class="name flex">
+<span>def <span class="ident">getNextFNTOMonoid</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Constructs and returns the next f. n. tomonoid in the list.</p>
+<p>The f. n. tomonoid is constructed, utilizing
+<code><a title="fntom.CompressedFile.CompressedFile.getFirstFNTOMonoid" href="#fntom.CompressedFile.CompressedFile.getFirstFNTOMonoid">CompressedFile.getFirstFNTOMonoid()</a></code>, from the item of the list <code>lines</code>
+given by the index <code>currentTomIndex + 1</code>.
+Furthermore, the value of the attribute <code>currentTomIndex</code> is increased
+by one.</p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>FNTOMonoid</code></dt>
+<dd>the next f. n. tomonoid in the list <code>lines</code></dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getNextFNTOMonoid(self):
+    &#34;&#34;&#34;
+    Constructs and returns the next f. n. tomonoid in the list.
+
+    The f. n. tomonoid is constructed, utilizing
+    `CompressedFile.getFirstFNTOMonoid`, from the item of the list `lines`
+    given by the index `currentTomIndex + 1`.
+    Furthermore, the value of the attribute `currentTomIndex` is increased
+    by one.
+
+    Returns:
+        FNTOMonoid: the next f. n. tomonoid in the list `lines`
+    &#34;&#34;&#34;
+    self.currentTomIndex += 1
+    return self.getFNTOMonoid(tomIndex = self.currentTomIndex)</code></pre>
+</details>
+</dd>
+<dt id="fntom.CompressedFile.CompressedFile.getReport"><code class="name flex">
+<span>def <span class="ident">getReport</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns the information on sizes and numbers of stored f. n. tomonoids.</p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>list</code> of <code>dict</code></dt>
+<dd>
+<p>the index of a list item corresponds with the size of
+f. n. tomonoids;
+dict keys:</p>
+<ul>
+<li><code>"number"</code> &hellip; number of the f. n. tomonoids of the size
+given by the index</li>
+<li><code>"number of closed"</code> &hellip; number of those f. n. tomonoids that
+are closed</li>
+</ul>
+</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getReport(self):
+    &#34;&#34;&#34;
+    Returns the information on sizes and numbers of stored f. n. tomonoids.
+
+    Returns:
+        list of dict: the index of a list item corresponds with the size of
+            f. n. tomonoids;
+            dict keys:
+
+            * `&#34;number&#34;` ... number of the f. n. tomonoids of the size
+                given by the index
+            * `&#34;number of closed&#34;` ... number of those f. n. tomonoids that
+                are closed
+    &#34;&#34;&#34;
+    report = [ {&#34;number&#34;: 0, &#34;number of closed&#34;: 0} ]
+    tom = self.getFirstFNTOMonoid()
+    while tom != None:
+        if tom.size &gt;= len(report):
+            report.extend((tom.size - len(report) + 1) * [ {&#34;number&#34;: 0, &#34;number of closed&#34;: 0} ])
+        report[tom.size][&#34;number&#34;] += 1
+        if tom.closed:
+            report[tom.size][&#34;number of closed&#34;] += 1
+        tom = self.getNextFNTOMonoid()
+    return report</code></pre>
+</details>
+</dd>
+<dt id="fntom.CompressedFile.CompressedFile.load"><code class="name flex">
+<span>def <span class="ident">load</span></span>(<span>self, path)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Loads a file given by the path.</p>
+<p>The content of the file is loaded, as it is, to the attribute <code>lines</code>,
+however, the lines introduced by <code>"#"</code> are subsequently removed from
+the list.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>path</code></strong> :&ensp;<code>str</code></dt>
+<dd>path to the file</dd>
+</dl>
+<h2 id="raises">Raises</h2>
+<dl>
+<dt><code>FileNotFoundError</code></dt>
+<dd>if the file specified by <code>path</code> cannot be found</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def load(self, path):
+    &#34;&#34;&#34;
+    Loads a file given by the path.
+
+    The content of the file is loaded, as it is, to the attribute `lines`,
+    however, the lines introduced by `&#34;#&#34;` are subsequently removed from
+    the list.
+
+    Args:
+        path (str): path to the file
+
+    Raises:
+        FileNotFoundError: if the file specified by `path` cannot be found
+    &#34;&#34;&#34;
+    self.path = path
+    # read the whole file
+    with open(path, &#34;r&#34;) as inFile:
+        self.lines = inFile.readlines()
+    # and, subsequently, remove commented lines (that start by &#34;#&#34;)
+    index = 0
+    while index &lt; len(self.lines):
+        if self.lines[index][0] == &#34;#&#34;:
+            del(self.lines[index])
+        else:
+            index += 1</code></pre>
+</details>
+</dd>
+<dt id="fntom.CompressedFile.CompressedFile.save"><code class="name flex">
+<span>def <span class="ident">save</span></span>(<span>self, path, displayProgress=False, includeReport=True)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Saves the current content given by the attribute <code>lines</code> to a
+"compressed" file given by the path.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>path</code></strong> :&ensp;<code>str</code></dt>
+<dd>path to the file</dd>
+<dt><strong><code>displayProgress</code></strong> :&ensp;<code>bool</code></dt>
+<dd>if <code>True</code> then a progres bar will be
+displayed on the terminal during the saving of the file</dd>
+<dt><strong><code>includeReport</code></strong> :&ensp;<code>bool</code></dt>
+<dd>if <code>True</code> then the table returned by
+<code><a title="fntom.CompressedFile.CompressedFile.exportReportToText" href="#fntom.CompressedFile.CompressedFile.exportReportToText">CompressedFile.exportReportToText()</a></code> will be written to the head
+of the created file</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def save(self, path, displayProgress = False, includeReport = True):
+    &#34;&#34;&#34;
+    Saves the current content given by the attribute `lines` to a
+    &#34;compressed&#34; file given by the path.
+
+    Args:
+        path (str): path to the file
+        displayProgress (bool): if `True` then a progres bar will be
+            displayed on the terminal during the saving of the file
+        includeReport (bool): if `True` then the table returned by
+            `CompressedFile.exportReportToText` will be written to the head
+            of the created file
+    &#34;&#34;&#34;
+    with open(path, &#34;w&#34;) as outFile:
+        if includeReport:
+            outFile.write(self.exportReportToText(self.getReport()))
+        numLines = len(self.lines)
+        for i in range(numLines):
+            if displayProgress:
+                progress = (i + 1) / numLines
+                fntom.drawProgress(progress, msg = &#34;Writing file:&#34;)
+            outFile.write(self.lines[i])
+        if displayProgress:
+            print()</code></pre>
+</details>
+</dd>
+<dt id="fntom.CompressedFile.CompressedFile.saveAsUncompressed"><code class="name flex">
+<span>def <span class="ident">saveAsUncompressed</span></span>(<span>self, path, indices=None, identifiers=None, separator='', endLine='\n', tableSymbols='base62', identifierSymbols='base62', addOriginal=False, displayProgress=False)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Saves the current content given by the attribute <code>lines</code> to an
+"uncompressed" file given by the path.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>path</code></strong> :&ensp;<code>str</code></dt>
+<dd>path to the file</dd>
+<dt><strong><code>indices</code></strong> :&ensp;<code>list</code> of <code>int</code>, optional</dt>
+<dd>specifies by the indices which
+items of the list <code>lines</code> shall be saved to the file</dd>
+<dt><strong><code>identifiers</code></strong> :&ensp;<code>list</code> of <code>int</code>, optional</dt>
+<dd>specifies by the identifiers which
+tomonoids in the list <code>lines</code> shall be saved to the file</dd>
+<dt><strong><code>separator</code></strong> :&ensp;<code>str</code>, optional</dt>
+<dd>string that separates the values in the
+table</dd>
+<dt><strong><code>endLine</code></strong> :&ensp;<code>str</code>, optional</dt>
+<dd>string that separates the rows of the
+table</dd>
+<dt><strong><code>tableSymbols</code></strong> :&ensp;<code>str</code>, optional</dt>
+<dd>
+<p>one of the following three values:</p>
+<ul>
+<li>"base62" (default) &hellip; the element of the tomonoid will be
+written as symbols from the number system 62, that is, the
+characters from
+<code>0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</code>
+where <code>0</code> represents the neutral element (unit)</li>
+<li>"int" &hellip; the element of the tomonoid will be written as
+non-negative integers starting from <code>0</code> which will represent
+the neutral element (unit)</li>
+<li>"0xyz1" &hellip;
+the element of the tomonoid will be diplayed as
+the characters from the set:
+<code>"0"</code>, &hellip;, <code>"x"</code>, <code>"y"</code>, <code>"z"</code>, <code>"1"</code>
+In this case, the table will be left-right flipped
+(according to the vertical axis).
+This style of depicting the Cayley table corresponds with
+the style used in the referenced papers
+[PeVe14,PeVe16,PeVe17,PeVe19], while the previous two
+styles reflect the inner representation of the tomonoid.</li>
+</ul>
+</dd>
+<dt><strong><code>identifierSymbols</code></strong> :&ensp;<code>str</code>, optional</dt>
+<dd>
+<p>in which set of symbols shall
+the f. n. tomonoid identifiers be written;</p>
+<ul>
+<li>"base62" (default) &hellip; the identifiers will be written as
+numbers in the number system with 62 digits</li>
+<li>"int" &hellip; the identifiers will be written as decimal numbers</li>
+</ul>
+</dd>
+<dt><strong><code>addOriginal</code></strong> :&ensp;<code>bool</code>, optional</dt>
+<dd>if <code>True</code> then the identifier of the
+tomonoid, from which this tomonoid has been initialized as its
+copy, will be added to the head of each definition of a
+tomonoid</dd>
+</dl>
+<p>displayProgress(bool): if <code>True</code> then a progres bar will be
+displayed on the terminal during the saving of the file</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def saveAsUncompressed(
+        self,
+        path,
+        indices = None,
+        identifiers = None,
+        separator = &#34;&#34;,
+        endLine = &#34;\n&#34;,
+        tableSymbols = &#34;base62&#34;,
+        identifierSymbols = &#34;base62&#34;,
+        addOriginal = False,
+        displayProgress = False):
+    &#34;&#34;&#34;
+    Saves the current content given by the attribute `lines` to an
+    &#34;uncompressed&#34; file given by the path.
+
+    Args:
+        path (str): path to the file
+
+        indices (list of int, optional): specifies by the indices which
+            items of the list `lines` shall be saved to the file
+
+        identifiers (list of int, optional): specifies by the identifiers which
+            tomonoids in the list `lines` shall be saved to the file
+
+        separator (str, optional): string that separates the values in the
+            table
+
+        endLine (str, optional): string that separates the rows of the
+            table
+
+        tableSymbols (str, optional): one of the following three values:
+
+            * &#34;base62&#34; (default) ... the element of the tomonoid will be
+                written as symbols from the number system 62, that is, the
+                characters from
+                `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz`
+                where `0` represents the neutral element (unit)
+            * &#34;int&#34; ... the element of the tomonoid will be written as
+                non-negative integers starting from `0` which will represent
+                the neutral element (unit)
+            * &#34;0xyz1&#34; ...  the element of the tomonoid will be diplayed as
+                the characters from the set:
+                `&#34;0&#34;`, ..., `&#34;x&#34;`, `&#34;y&#34;`, `&#34;z&#34;`, `&#34;1&#34;`
+                In this case, the table will be left-right flipped
+                (according to the vertical axis).
+                This style of depicting the Cayley table corresponds with
+                the style used in the referenced papers
+                [PeVe14,PeVe16,PeVe17,PeVe19], while the previous two
+                styles reflect the inner representation of the tomonoid.
+
+        identifierSymbols (str, optional): in which set of symbols shall
+            the f. n. tomonoid identifiers be written;
+
+            * &#34;base62&#34; (default) ... the identifiers will be written as
+                numbers in the number system with 62 digits
+            * &#34;int&#34; ... the identifiers will be written as decimal numbers
+
+        addOriginal (bool, optional): if `True` then the identifier of the
+            tomonoid, from which this tomonoid has been initialized as its
+            copy, will be added to the head of each definition of a
+            tomonoid
+
+        displayProgress(bool): if `True` then a progres bar will be
+            displayed on the terminal during the saving of the file
+    &#34;&#34;&#34;
+    # TODO optimization needed
+    with open(path, &#34;w&#34;) as outFile:
+        if indices != None:
+            numLines = len(indices)
+            for i in range(numLines):
+                if displayProgress:
+                    progress = (i + 1) / numLines
+                    fntom.drawProgress(progress, msg = &#34;Writing file:&#34;)
+                index = indices[i]
+                tom = self.getFNTOMonoid(tomIndex = index)
+                tomText = tom.exportToText(
+                        separator = separator,
+                        endLine = endLine,
+                        tableSymbols = tableSymbols,
+                        identifierSymbols = identifierSymbols,
+                        addOriginal = addOriginal)
+                outFile.write(tomText + &#34;\n&#34;)
+            if displayProgress:
+                print()
+        elif identifiers != None:
+            numLines = len(identifiers)
+            for i in range(numLines):
+                if displayProgress:
+                    progress = (i + 1) / numLines
+                    fntom.drawProgress(progress, msg = &#34;Writing file:&#34;)
+                identifier = identifiers[i]
+                tom = self.getFNTOMonoid(tomIdentifier = identifier)
+                tomText = tom.exportToText(
+                        separator = separator,
+                        endLine = endLine,
+                        tableSymbols = tableSymbols,
+                        identifierSymbols = identifierSymbols,
+                        addOriginal = addOriginal)
+                outFile.write(tomText + &#34;\n&#34;)
+            if displayProgress:
+                print()
+        else:
+            numLines = len(self.lines)
+            for index in range(numLines):
+                if displayProgress:
+                    progress = (index + 1) / numLines
+                    fntom.drawProgress(progress, msg = &#34;Writing file:&#34;)
+                tom = self.getFNTOMonoid(tomIndex = index)
+                tomText = tom.exportToText(
+                        separator = separator,
+                        endLine = endLine,
+                        tableSymbols = tableSymbols,
+                        identifierSymbols = identifierSymbols,
+                        addOriginal = addOriginal)
+                outFile.write(tomText + &#34;\n&#34;)
+            if displayProgress:
+                print()</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="fntom" href="index.html">fntom</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="fntom.CompressedFile.CompressedFile" href="#fntom.CompressedFile.CompressedFile">CompressedFile</a></code></h4>
+<ul class="two-column">
+<li><code><a title="fntom.CompressedFile.CompressedFile.exportReportToText" href="#fntom.CompressedFile.CompressedFile.exportReportToText">exportReportToText</a></code></li>
+<li><code><a title="fntom.CompressedFile.CompressedFile.getFNTOMonoid" href="#fntom.CompressedFile.CompressedFile.getFNTOMonoid">getFNTOMonoid</a></code></li>
+<li><code><a title="fntom.CompressedFile.CompressedFile.getFirstFNTOMonoid" href="#fntom.CompressedFile.CompressedFile.getFirstFNTOMonoid">getFirstFNTOMonoid</a></code></li>
+<li><code><a title="fntom.CompressedFile.CompressedFile.getNextFNTOMonoid" href="#fntom.CompressedFile.CompressedFile.getNextFNTOMonoid">getNextFNTOMonoid</a></code></li>
+<li><code><a title="fntom.CompressedFile.CompressedFile.getReport" href="#fntom.CompressedFile.CompressedFile.getReport">getReport</a></code></li>
+<li><code><a title="fntom.CompressedFile.CompressedFile.load" href="#fntom.CompressedFile.CompressedFile.load">load</a></code></li>
+<li><code><a title="fntom.CompressedFile.CompressedFile.save" href="#fntom.CompressedFile.CompressedFile.save">save</a></code></li>
+<li><code><a title="fntom.CompressedFile.CompressedFile.saveAsUncompressed" href="#fntom.CompressedFile.CompressedFile.saveAsUncompressed">saveAsUncompressed</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.9.2</a>.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,3180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.9.2" />
+<title>fntom.FNTOMonoid API documentation</title>
+<meta name="description" content="Definition of class `FNTOMonoid` which represents a finite, negative,
+totally ordered monoid." />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>fntom.FNTOMonoid</code></h1>
+</header>
+<section id="section-intro">
+<p>Definition of class <code><a title="fntom.FNTOMonoid.FNTOMonoid" href="#fntom.FNTOMonoid.FNTOMonoid">FNTOMonoid</a></code> which represents a finite, negative,
+totally ordered monoid.</p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python"># -*- coding: UTF-8 -*-
+
+# This file is a part of fntom which is a Python3 package that implements a
+# finite, negative, totally ordered monoid together with methods to compute its
+# one-element Rees co-extensions.
+#
+# Copyright (C) 2021 Milan Petrík &lt;milan.petrik@protonmail.com&gt;
+#
+# Web page of the program: &lt;https://gitlab.com/petrikm/fntom&gt;
+#
+# fntom is free software: you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by the Free
+# Software Foundation, either version 3 of the License, or (at your option) any
+# later version.
+#
+# fntom is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+# FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+# details.
+#
+# You should have received a copy of the GNU General Public License along with
+# fntom. If not, see &lt;https://www.gnu.org/licenses/&gt;.
+
+&#34;&#34;&#34;
+    Definition of class `FNTOMonoid` which represents a finite, negative,
+    totally ordered monoid.
+&#34;&#34;&#34;
+
+__all__ = [&#34;FNTOMonoid&#34;]
+
+import copy
+import fntom
+
+class FNTOMonoid(fntom.LevelEquivalence):
+    &#34;&#34;&#34;
+    Represents a finite, negative, totally ordered monoid which has an abiity
+    to generate its one-element Rees co-extensions.
+
+    Attributes:
+        identifier (int): unique positive integer identifying this f. n.
+            monoid; can be equal to `None`
+        extensions (list of FNTOMonoid): list of co-extensions of this
+            f. n. tomonoid
+        idempotents (list of int): non-zero idempotents of the monoid
+        parent (FNTOMonoid): parent f. n. monoid from which this monoid has
+            been created as its co-extension (`parent` is the Rees quotient of
+            this monoid)
+        original (FNTOMonoid): sibling f. n. monoid from which this one has
+            been created as a (possibly altered) copy
+        closed (bool): indicates whether the co-extension of this f. n.
+            tomonoid have been found, already
+    &#34;&#34;&#34;
+
+    def __init__(self,
+                 identifier = None,
+                 size = None,
+                 parent = None,
+                 original = None,
+                 xyzTable = None,
+                 intTable = None,
+                 base62Table = None):
+        &#34;&#34;&#34;
+        At maximum, one of the arguments `size`, `original`, `table` can be
+        specified.
+        If none of them is specified, this monoid is initialized as the trivial
+        monoid.
+
+        Args:
+            size (int): must be greater or equal to 1; if specified, this
+                monoid will be initialized as the _drastic_ f. n. tomonoid of
+                the given size; that is:
+
+                  * x*y=x if y=1,
+                  * x*y=y if x=1,
+                  * x*y=0 otherwise
+
+            parent (FNTOMonoid): if specified, this monoid will be creates as a
+                zero-doubling extension of `parent`
+                (see `LevelEquivalence.performZeroDoublingExtension()`)
+
+            original (FNTOMonoid): if specified, this monoid will be creates as
+                a (deep) copy of `original`
+
+            base62Table (list of lists of chr): if specified, the level set
+                equivalence will be created according to the given Cayley table;
+                the values in the table are supposed to be from the set:
+                `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz`
+                where `0` represents the neutral element (unit)
+
+            intTable (list of lists of int): if specified, the level set
+                equivalence will be created according to the given Cayley table;
+                the values in the table are supposed to be non-negative
+                integers starting from `0` (which represents the unit element)
+
+            xyzTable (list of lists of chr): if specified, the level set
+                equivalence will be created according to the given Cayley table;
+                the values in the table are supposed to be from the set:
+                `&#34;0&#34;`, ..., `&#34;x&#34;`, `&#34;y&#34;`, `&#34;z&#34;`, `&#34;1&#34;`
+                and the table is supposed to have its second index reversed,
+                i.e., the table is left-right flipped (accoding to vertical
+                axis)
+                This style of depicting the Cayley table corresponds with
+                the style used in the referenced papers
+                [PeVe14,PeVe16,PeVe17,PeVe19], while the previous two
+                styles reflect the inner representation of the tomonoid.
+        &#34;&#34;&#34;
+        self.setIdentifier(identifier)
+        if parent != None:
+            super().__init__(original = parent)
+            self.performZeroDoublingExtension()
+            self.parent = parent
+            self.original = None
+            self.idempotents = copy.deepcopy(parent.idempotents)
+        elif original != None:
+            super().__init__(original = original)
+            self.parent = original.parent
+            self.original = original
+            self.idempotents = copy.deepcopy(original.idempotents)
+        else:
+            super().__init__(
+                    size = size,
+                    xyzTable = xyzTable,
+                    intTable = intTable,
+                    base62Table = base62Table)
+            self.parent = None
+            self.original = None
+            self.setIdempotents()
+        self.extensions = []
+        self.closed = False
+
+    def setIdempotents(self):
+        &#34;&#34;&#34;
+        Sets the attribute `idempotents` to contain all the idempotents of the
+        f. n. tomonoid apart from `zero`.
+        &#34;&#34;&#34;
+        self.idempotents = self.findIdempotents() + [ self.unit ]
+
+    def setIdentifier(self, identifier):
+        &#34;&#34;&#34;
+        Sets the value of the attribute `identifier`.
+        &#34;&#34;&#34;
+        self.identifier = identifier
+
+    def getCopy(self, identifier = None):
+        &#34;&#34;&#34;
+        Creates and returns a copy of this f. n. tomonoid.
+
+        Args:
+            identifier (int): identifier of the newly created `FNTOMonoid`
+
+        Returns:
+            FNTOMonoid: a deep copy of this instance
+        &#34;&#34;&#34;
+        return FNTOMonoid(identifier = identifier, original = self)
+
+    def getZeroDoublingExtension(self, identifier = None):
+        &#34;&#34;&#34;
+        Creates and returns a zero-doubling extensions of this f. n. tomonoid.
+
+        Args:
+            identifier (int, optional): identifier of the newly created
+                `FNTOMonoid`
+
+        Returns:
+            FNTOMonoid: a zero-doubling extensions of this f. n. tomonoid
+
+        See:
+            `LevelEquivalence.performZeroDoublingExtension()`
+        &#34;&#34;&#34;
+        return FNTOMonoid(identifier, parent = self)
+
+    def computeCoExtensionsBrute(self, counter, onlyCommutative = False, onlyArchimedean = False):
+        &#34;&#34;&#34;
+        Finds all the one-element co-extensions of this tomonoid by the brute
+        force method.
+
+        The found co-extensions are subsequently stored to the attribute
+            `extensions`.
+        Subsequently, reference to `extensions` is returned
+
+        Args:
+            counter (fntom.Counter): serves to assign unique identifiers
+                to the generated f. n. tomonoids
+            onlyCommutative (bool): if `True` then only commutative
+                co-extensions will be constructed
+                (it is, however, not checked whether this monoid is
+                commutative)
+            onlyArchimedean (bool): if `True` then only Archimedean
+                co-extensions will be constructed
+                (it is, however, not checked whether this monoid is
+                Archimedean)
+
+        Returns:
+            list of FNTOMonoid: the value of the attribute `extensions` which
+                is a list of the co-extensions of this f. n. tomonoid
+        &#34;&#34;&#34;
+        ext = self.getZeroDoublingExtension(counter.getNew())
+        self.extensions = ext.goThroughAllEvaluationsBrute(
+                                    counter,
+                                    onlyCommutative = onlyCommutative,
+                                    onlyArchimedean = onlyArchimedean)
+        return self.extensions
+
+    def goThroughAllEvaluationsBrute(self, counter, onlyCommutative = False, onlyArchimedean = False):
+        &#34;&#34;&#34;
+        Recursively generates all the potential one-element coextensions of this tomonoid
+        and tests whether they meet the axioms of a finite, negative tomonoid.
+
+        This method is called by the method `FNTOMonoid.computeCoExtensionsBrute`.
+
+        Args:
+            counter (fntom.Counter): serves to assign unique identifiers
+                to the generated f. n. tomonoids
+            onlyCommutative (bool): if `True` then only commutative
+                co-extensions will be returned
+                (it is, however, not checked whether this monoid is
+                commutative)
+            onlyArchimedean(bool): if `True` then only Archimedean
+                co-extensions will be returned
+                (it is, however, not checked whether this monoid is
+                Archimedean)
+
+        Returns:
+            list of FNTOMonoid: the co-extensions of this f. n. tomonoid
+        &#34;&#34;&#34;
+        if len(self.eqClasses) &gt; self.size:
+            tomZero = self
+            tomAtom = self.getCopy(counter.getNew())
+            tomZeroValid = True
+            tomAtomValid = True
+            try:
+                tomZero.mergeEqClassWithZero(self.size)
+            except fntom.Error.NotTOMPartition:
+                tomZeroValid = False
+            try:
+                tomAtom.mergeEqClassWithAtom(self.size)
+            except fntom.Error.NotTOMPartition:
+                tomAtomValid = False
+            if tomZeroValid:
+                extensionsZero = tomZero.goThroughAllEvaluationsBrute(
+                                            counter,
+                                            onlyCommutative = onlyCommutative,
+                                            onlyArchimedean = onlyArchimedean)
+            else:
+                extensionsZero = []
+            if tomAtomValid:
+                extensionsAtom = tomAtom.goThroughAllEvaluationsBrute(
+                                            counter,
+                                            onlyCommutative = onlyCommutative,
+                                            onlyArchimedean = onlyArchimedean)
+            else:
+                extensionsAtom = []
+            extensionsZero.extend(extensionsAtom)
+            return extensionsZero
+        else:
+            if onlyCommutative and self.performCommutativityTest() != None:
+                return []
+            if onlyArchimedean and self.performArchimedeanicityTest() != None:
+                return []
+            if self.performMonotonicityTest() != None:
+                return []
+            if self.performAssociativityTest() != None:
+                return []
+            return [self]
+
+    def computeCoExtensions(
+            self,
+            counter,
+            commutative = False,
+            archimedean = False):
+        &#34;&#34;&#34;
+        Computes all the one-element coextensions of this tomonoid by the introduced
+        level set based method.
+
+        The computed co-extensions are stored to the attribute `coextensions`.
+
+        Args:
+            counter (fntom.Counter): serves to assign unique identifiers
+                to the generated f. n. tomonoids
+
+        commutative (bool, optional): if `True`, only commutative co-extensions
+            are found;
+            it is supposed that the starting f. n. tomonoid is commutative
+
+        archimedean (bool, optional): if `True`, only Archimedean co-extensions
+            are found;
+            it is supposed that the starting f. n. tomonoid is Archimedean
+
+        Returns:
+            list of FNTOMonoid: reference to the attribute `extensions`;
+                list of one-element co-extensions of this f. n. tomonoid
+        &#34;&#34;&#34;
+        if self.size == 1:
+            # trivial monoid has one co-extension only
+            zeroDblExt = self.getZeroDoublingExtension(counter.getNew())
+            self.extensions = [ zeroDblExt ]
+        else:
+            zeroDblExt = self.getZeroDoublingExtension()
+            if commutative:
+                for i in range(zeroDblExt.coatom, zeroDblExt.zero):
+                    for j in range(zeroDblExt.coatom, i):
+                        zeroDblExt.relatePairs((i, j), (j, i))
+            zeroDblExt.performE2(commutative = commutative)
+            if archimedean:
+                zeroDblExt.performE3Archimedean(commutative = commutative)
+                zeroDblExt.performE4Archimedean()
+                self.extensions = zeroDblExt.goThroughAllEvaluations(counter)
+            else:
+                self.extensions = []
+                numIdempotents = len(zeroDblExt.idempotents)
+                # needed to call `isUsablePairOfIdempotents`
+                boundaryOfLeft = numIdempotents * [None]
+                boundaryOfRight = numIdempotents * [None]
+                for i in range(numIdempotents):
+                    definingIdempotentLeft = zeroDblExt.idempotents[i]
+                    definingIdempotentRight = zeroDblExt.idempotents[i]
+                    boundaryOfLeft[i] = zeroDblExt.getLeftDefiningIdempotentBoundary(definingIdempotentLeft)
+                    boundaryOfRight[i] = zeroDblExt.getRightDefiningIdempotentBoundary(definingIdempotentRight)
+                # (try to) generate co-extensions for every defining pair of idempotents
+                for indexLeft in range(numIdempotents):
+                    for indexRight in range(numIdempotents):
+                        definingIdempotentLeft = zeroDblExt.idempotents[indexLeft]
+                        definingIdempotentRight = zeroDblExt.idempotents[indexRight]
+                        if zeroDblExt.isUsablePairOfIdempotents(
+                                definingIdempotentLeft,
+                                definingIdempotentRight,
+                                boundaryOfRight[indexRight],
+                                boundaryOfLeft[indexLeft]):
+                            tom = zeroDblExt.getCopy()
+                            tom.definingIdempotentLeft = definingIdempotentLeft
+                            tom.definingIdempotentRight = definingIdempotentRight
+                            tom.performE3bGeneral()
+                            try:
+                                tom.performE4General()
+                                tom.performE3aGeneral(commutative = commutative)
+                                extensions = tom.goThroughAllEvaluations(counter)
+                            except fntom.Error.NotTOMPartition:
+                                pass
+                            else:
+                                self.extensions.extend(extensions)
+                zeroDblExt.setPairToAtom((zeroDblExt.atom, zeroDblExt.atom))
+                zeroDblExt.idempotents.append(zeroDblExt.atom)
+                zeroDblExt.setIdentifier(counter.getNew())
+                self.extensions.append(zeroDblExt)
+        return self.extensions
+
+    def goThroughAllEvaluations(self, counter):
+        &#34;&#34;&#34;
+        Generates and returns all the valid one-element Rees co-extensions
+        of this f. n. tomonoid.
+
+        This method is called by `FNTOMonoid.computeCoExtensions`.
+
+        Args:
+            counter (fntom.Counter): serves to assign unique identifiers
+                to the generated f. n. tomonoids
+
+        Returns:
+            list of FNTOMonoid: list of one-element co-extensions of this f. n.
+                tomonoid, however, the greatest one-element co-extension (where
+                `(atom, atom)` is evaluated to `atom`) is not included to the list
+        &#34;&#34;&#34;
+        if len(self.eqClasses) &gt; self.size:
+            tomZero = self
+            tomAtom = self.getCopy()
+            try:
+                tomZero.mergeEqClassWithZero(self.size)
+                extensionsZero = tomZero.goThroughAllEvaluations(counter)
+            except fntom.Error.NotTOMPartition:
+                extensionsZero = []
+            try:
+                tomAtom.mergeEqClassWithAtom(self.size)
+                extensionsAtom = tomAtom.goThroughAllEvaluations(counter)
+            except fntom.Error.NotTOMPartition:
+                extensionsAtom = []
+            extensionsZero.extend(extensionsAtom)
+            return extensionsZero
+        else:
+            self.setIdentifier(counter.getNew())
+            return [ self ]
+
+    def performE2(self, commutative = False):
+        &#34;&#34;&#34;
+        Performs Property (E2).
+
+        For the detailed description, see Definition 4.2 in
+        the paper
+        [[PeVe17]](../../papers/Petrik_Vetterlein__Coextensions__preprint.pdf).
+
+        Relates pairs `(a,e)` and `(d,c)` such that there is `b` such that the
+        pairs `(a,b)` and `(b,c)` belong to the support of the f. n. tomonoid
+        and, furthermore, `(a,b)` is related to `d` and `(b,c)` is related to
+        `e`.
+
+        Args:
+            commutative (bool): if `True` then the optimization for
+                commutative f. n.  tomonoids is turned on
+            archimedean (bool): if `False` then the optimization for
+                non-Archimedean f. n.  tomonoids is turned on
+        &#34;&#34;&#34;
+        for k in range(self.coatom, self.atom):
+            for pair in self.eqClasses[k]:
+                # discard the pairs that have unit coordinate
+                if self.isNotOnBorder(pair):
+                    (a, b) = pair
+                    # a simple optimization for commutative f. n. tomonoids
+                    if not commutative or a &lt;= b:
+                        d = self.getValue((a,b))
+                        # find c such that (b,c) is evaluated strictly higher than
+                        # the atom and relate (a,e)~(d,c)
+                        for c in range(self.coatom, self.atom):
+                            e = self.getValue((b,c))
+                            if self.isZeroOrAtomOrNotElement(e):
+                                break
+                            self.relatePairs((d,c), (a,e))
+
+    def performE3Archimedean(self, commutative = False):
+        &#34;&#34;&#34;
+        Performs Property (E3).
+
+        For the detailed description, see Definition 4.2 in
+        the paper
+        [[PeVe17]](../../papers/Petrik_Vetterlein__Coextensions__preprint.pdf).
+
+        Relates particular pairs with zero.
+
+        Args:
+            commutative (bool): if `True` then the optimization for
+                commutative f. n.  tomonoids is turned on
+        &#34;&#34;&#34;
+        i = self.coatom
+        j = self.atom
+        while i &lt; self.atom:
+            # An optimization for Archimedean f. n. tomonoids:
+            # The program considers only those pairs (i,j) such that:
+            #     i * j = zero or atom,
+            #     Succ(i) * j &gt; atom, and
+            #     i * Succ(j) &gt; atom,
+            # where Succ(.) is the f. n. tomonoid element that is by one closer
+            # to the unit
+            while i &lt; self.atom and not self.isZeroOrAtomOrNotElement(self.getValue((i, j))):
+                i += 1
+            while j &gt;= self.unit and self.isZeroOrAtomOrNotElement(self.getValue((i, j))):
+                j -= 1
+            j += 1
+            # a simple optimization for commutative Archimedean f. n. tomonoids
+            if commutative and i &gt; j:
+                break
+            # (E3) first part
+            a = i
+            b = j
+            c = self.coatom
+            e = self.getValue((b, c))
+            if self.isHigherThanAtom(e):
+                self.setPairToZero((a, e))
+            # (E3) second part
+            a = self.coatom
+            b = i
+            c = j
+            d = self.getValue((a, b))
+            if self.isHigherThanAtom(d):
+                self.setPairToZero((d, c))
+            if j &lt;= self.coatom:
+                break
+            j -= 1
+
+    def performE3aGeneral(self, commutative = False):
+        &#34;&#34;&#34;
+        Performs Property (E3&#39;)(a).
+
+        For the detailed description, see Definition 5.2 in
+        the paper
+        [[PeVe17]](../../papers/Petrik_Vetterlein__Coextensions__preprint.pdf).
+
+        According to the chosen defining pair of idempotents, relates the
+        corresponding pairs with zero.
+
+        Args:
+            commutative (bool): if `True` then the optimization for
+                commutative f. n.  tomonoids is turned on
+        &#34;&#34;&#34;
+        i = self.coatom
+        j = self.atom
+        while i &lt; self.atom:
+            # An optimization:
+            # The program considers only those pairs (i,j) such that:
+            #     i * j = zero or atom,
+            #     Succ(i) * j &gt; atom, and
+            #     i * Succ(j) &gt; atom,
+            # where Succ(.) is the f. n. tomonoid element that is by one closer
+            # to the unit
+            while i &lt; self.atom and not self.isZeroOrAtomOrNotElement(self.getValue((i, j))):
+                i += 1
+            while j &gt;= self.unit and self.isZeroOrAtomOrNotElement(self.getValue((i, j))):
+                j -= 1
+            j += 1
+            # a simple optimization for commutative f. n. tomonoids
+            if commutative and i &gt; j:
+                break
+            # (E3&#39;)(a) first part
+            if i &gt; self.definingIdempotentLeft:
+                a = i
+                b = j
+                c = self.definingIdempotentRight + 1
+                e = self.getValue((b, c))
+                if self.isHigherThanAtom(e):
+                    self.setPairToZero((a, e))
+            # (E3&#39;)(a) second part
+            if j &gt; self.definingIdempotentRight:
+                a = self.definingIdempotentLeft + 1
+                b = i
+                c = j
+                d = self.getValue((a, b))
+                if self.isHigherThanAtom(d):
+                    self.setPairToZero((d, c))
+            if j &lt;= self.coatom:
+                break
+            j -= 1
+
+    def performE3bGeneral(self):
+        &#34;&#34;&#34;
+        Performs Property (E3&#39;)(b).
+
+        For the detailed description, see Definition 5.2 in
+        the paper
+        [[PeVe17]](../../papers/Petrik_Vetterlein__Coextensions__preprint.pdf).
+
+        Relates pairs `(a,e)` and `(d,c)` such that there is `b` such that the
+        pairs `(a,b)` and `(b,c)` belong to the support of the f. n. tomonoid
+        and, furthermore, `(a,b)` is related to `d` and `(b,c)` is related to
+        `e`.
+
+        According to the chosen defining pair of idempotents, relates pairs
+        `(a,b)` and `(a,e)` (and pairs `(b,a)` and `(e,a)`) in the complement
+        of the support of the f. n. tomonoid.
+        &#34;&#34;&#34;
+        if self.definingIdempotentRight &gt; self.unit:
+            c = self.definingIdempotentRight
+            finish = False
+            for b in range(self.coatom, self.atom):
+                e = self.getValue((b, c))
+                if b &lt; e:
+                    if not self.isElement(e):
+                        e = self.atom
+                        finish = True
+                    for a in range(self.atom - 1, self.unit, -1):
+                        if self.isHigherThanAtom(self.getValue((a, b))):
+                            break
+                        self.relateColumn(a, b, e)
+                    if finish:
+                        break
+        if self.definingIdempotentLeft &gt; self.unit:
+            a = self.definingIdempotentLeft
+            finish = False
+            for b in range(self.coatom, self.atom, 1):
+                d = self.getValue((a,b))
+                if b &lt; d:
+                    if not self.isElement(d):
+                        d = self.atom
+                        finish = True
+                    for c in range(self.atom-1, self.unit, -1):
+                        if self.isHigherThanAtom(self.getValue((b,c))):
+                            break
+                        self.relateRow(b, d, c)
+                    if finish:
+                        break
+
+    def performE4Archimedean(self):
+        &#34;&#34;&#34;
+        Performs Property (E4).
+
+        For the detailed description, see Definition 4.2 in
+        the paper
+        [[PeVe17]](../../papers/Petrik_Vetterlein__Coextensions__preprint.pdf).
+
+        Relates the pairs `(atom, coatom)` and `(coatom, atom)` to `zero`.
+        &#34;&#34;&#34;
+        self.setPairToZero((self.coatom, self.atom))
+        self.setPairToZero((self.atom, self.coatom))
+
+    def performE4General(self):
+        &#34;&#34;&#34;
+        Performs Property (E4&#39;).
+
+        For the detailed description, see Definition 5.2 in
+        the paper
+        [[PeVe17]](../../papers/Petrik_Vetterlein__Coextensions__preprint.pdf).
+
+        According to the chosen defining pair of idempotents, relates the
+        corresponding pairs with zero or atom.
+        &#34;&#34;&#34;
+        self.setPairToZero((self.definingIdempotentLeft + 1, self.atom))
+        self.setPairToZero((self.atom, self.definingIdempotentRight + 1))
+        if self.definingIdempotentLeft != self.unit:
+            self.setPairToAtom((self.definingIdempotentLeft, self.atom))
+        if self.definingIdempotentRight != self.unit:
+            self.setPairToAtom((self.atom, self.definingIdempotentRight))
+
+    def getRightDefiningIdempotentBoundary(self, definingIdempotentRight):
+        &#34;&#34;&#34;
+        Auxiliary method.
+
+        Its result is utilized in `FNTOMonoid.computeCoExtensions` to perform
+        the test whether a chosen pair of defining idempotents will yield any
+        co-extensions by calling `FNTOMonoid.isUsablePairOfIdempotents`.
+
+        Args:
+            definingIdempotentRight (int): one of the idempotents of the f. n.
+                tomonoid
+
+        Returns:
+            int: the highest value `boundaryOfRight` such that the pair
+                `(boundaryOfRight, definingIdempotentRight)` belongs to the atom
+                level equivalence class or to no level equivalence class.
+        &#34;&#34;&#34;
+        boundaryOfRight = self.atom
+        for i in range(self.coatom, self.zero, 1):
+            value = self.getValue((i, definingIdempotentRight))
+            if self.isAtomOrNotElement(value):
+                boundaryOfRight = i
+                break
+        return boundaryOfRight
+
+    def getLeftDefiningIdempotentBoundary(self, definingIdempotentLeft):
+        &#34;&#34;&#34;
+        Auxiliary method.
+
+        Its result is utilized in `FNTOMonoid.computeCoExtensions` to perform
+        the test whether a chosen pair of defining idempotents will yield any
+        co-extensions by calling `FNTOMonoid.isUsablePairOfIdempotents`.
+
+        Args:
+            definingIdempotentLeft (int): one of the idempotents of the f. n.
+                tomonoid
+
+        Returns:
+            int: the highest value `boundaryOfLeft` such that the pair
+                `(boundaryOfLeft, definingIdempotentLeft)` belongs to the atom
+                level equivalence class or to no level equivalence class.
+        &#34;&#34;&#34;
+        boundaryOfLeft = self.atom
+        for i in range(self.coatom, self.zero, 1):
+            value = self.getValue((definingIdempotentLeft, i))
+            if self.isAtomOrNotElement(value):
+                boundaryOfLeft = i
+                break
+        return boundaryOfLeft
+
+    def isUsablePairOfIdempotents(
+            self,
+            definingIdempotentLeft,
+            definingIdempotentRight,
+            boundaryOfRight,
+            boundaryOfLeft):
+        &#34;&#34;&#34;
+        Tests whether the chosen pair of defining idempotents fulfills the
+        necessary requirements.
+
+        Auxiliary method utilized by `FNTOMonoid.computeCoExtensions`.
+
+        It is, actually, not necessary to use this test, however, it speeds the
+        algorithm up (there is a lower number of tracebacks).
+
+        This optiomization is programmed according to Proposition 4.11 in the
+        paper
+        [[PeVe19]](../../papers/Petrik_Vetterlein__Pomonoids__preprint.pdf).
+
+        Args:
+            definingIdempotentLeft (int): the left value in the pair of
+                defining idempotents
+            definingIdempotentRight (int): the right value in the pair of
+                defining idempotents
+            boundaryOfRight (int): value returned by
+                `FNTOMonoid.getRightDefiningIdempotentBoundary`
+            boundaryOfLeft (int): value returned by
+                `FNTOMonoid.getLeftDefiningIdempotentBoundary`
+
+        Returns:
+            bool: `False` if the given pair of defining idempotents cannot
+                yield any co-extensions;
+                `True` if it may yield some co-extensions (not granted, though)
+        &#34;&#34;&#34;
+        value = self.getValue((definingIdempotentLeft+1, boundaryOfRight))
+        if self.isAtomOrHigher(value):
+            return False
+        value = self.getValue((boundaryOfLeft, definingIdempotentRight+1))
+        if self.isAtomOrHigher(value):
+            return False
+        return True
+
+    def exportToText(
+            self,
+            separator = &#34;&#34;,
+            endLine = &#34;\n&#34;,
+            tableSymbols = &#34;base62&#34;,
+            identifierSymbols = &#34;base62&#34;,
+            addOriginal = False):
+        &#34;&#34;&#34;
+        Exports the Cayley table of this f. n. tomonoid to a string.
+
+        Suitable for saving to a text file.
+
+        Args:
+            separator (str, optional): string that separates the values in the
+                table
+
+            endLine (str, optional): string that separates the rows of the
+                table
+
+            tableSymbols (str, optional): one of the following three values:
+
+                * &#34;base62&#34; (default) ... the element of the tomonoid will be
+                    diplayed as symbls from the number system 62, that is, the
+                    characters from
+                    `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz`
+                    where `0` represents the neutral element (unit)
+                * &#34;int&#34; ... the element of the tomonoid will be diplayed as
+                    non-negative integers starting from `0` which will represent
+                    the neutral element (unit)
+                * &#34;0xyz1&#34; ...  the element of the tomonoid will be diplayed as
+                    the characters from the set:
+                    `&#34;0&#34;`, ..., `&#34;x&#34;`, `&#34;y&#34;`, `&#34;z&#34;`, `&#34;1&#34;`
+                    In this case, the table will be left-right flipped
+                    (according to the vertical axis).
+                    This style of depicting the Cayley table corresponds with
+                    the style used in the referenced papers
+                    [PeVe14,PeVe16,PeVe17,PeVe19], while the previous two
+                    styles reflect the inner representation of the tomonoid.
+
+            identifierSymbols (str, optional): in which set of symbols shall
+                the f. n. tomonoid identifiers be written;
+
+                * &#34;base62&#34; (default) ... the identifiers will be written as
+                    numbers in the number system with 62 digits
+                * &#34;int&#34; ... the identifiers will be written as decimal numbers
+
+            addOriginal (bool, optional): if `True` then the identifier of the
+                tomonoid, from which this tomonoid has been initialized as its
+                copy, will be added to the head of the returned table
+
+        Returns:
+            str: Cayley table of the monoid with a head containing the tomonoid
+                identifier, the size of the tomonoid, and the identifier of the
+                parent of the tomonoid
+        &#34;&#34;&#34;
+        text = &#34;&#34;
+        text += &#34;@&#34;
+        if self.identifier == None:
+            text += &#34;?&#34;
+        else:
+            if identifierSymbols == &#34;base62&#34; or identifierSymbols == &#34;Base62&#34;:
+                text += fntom.convertDecimalToBase62(self.identifier)
+            elif identifierSymbols == &#34;int&#34;:
+                text += str(self.identifier)
+            else:
+                text += &#34;!&#34;
+        text += &#34;,&#34;
+        text += str(self.size)
+        text += &#34;,&#34;
+        if self.parent == None:
+            text += &#34;-&#34;
+        else:
+            if identifierSymbols == &#34;base62&#34; or identifierSymbols == &#34;Base62&#34;:
+                text += fntom.convertDecimalToBase62(self.parent.identifier)
+            elif identifierSymbols == &#34;int&#34;:
+                text += str(self.parent.identifier)
+            else:
+                text += &#34;?&#34;
+        if addOriginal:
+            text += &#34;,&#34;
+            if self.original == None:
+                text += &#34;-&#34;
+            else:
+                if identifierSymbols == &#34;base62&#34; or identifierSymbols == &#34;Base62&#34;:
+                    text += fntom.convertDecimalToBase62(self.original.identifier)
+                elif identifierSymbols == &#34;int&#34;:
+                    text += str(self.original.identifier)
+                else:
+                    text += &#34;?&#34;
+        text += &#34;\n&#34;
+        text += self.exportTableToText(
+            separator = separator,
+            endLine = endLine,
+            tableSymbols = tableSymbols)
+        return text
+
+    def exportToCompressedText(self, parentId = None):
+        &#34;&#34;&#34;
+        Exports the line that defines this f. n tomonoid in a &#34;compressed&#34; file.
+
+        See:
+            fntom.CompressedFile
+
+        Args:
+            parentId (int, optional): identifier of the parent of this f. n.
+                tomonoid; if not specified, the identifier will be obtained from
+                the attribute `parent`;
+                this argument is handy if the parent is not created but its
+                identifier is known (for example, when compressing a file with
+                generated f. n. tomonoids)
+
+        Returns:
+            str: the line that defines this f. n tomonoid in a &#34;compressed&#34;
+                file
+        &#34;&#34;&#34;
+        text = &#34;&#34;
+        text += fntom.convertDecimalToBase62(self.identifier)
+        if self.closed == None or self.closed:
+            text += &#34;,&#34;
+        else:
+            text += &#34;;&#34;
+        if parentId != None:
+            text += fntom.convertDecimalToBase62(parentId)
+        elif self.parent != None:
+            text += fntom.convertDecimalToBase62(self.parent.identifier)
+        else:
+            text += &#34;-&#34;
+        if self.parent == None and parentId == None:
+            text += &#34;:&#34;
+            text += &#34;T&#34;
+            text += self.exportTableToText(separator = &#34;&#34;, endLine = &#34;;&#34;, tableSymbols = &#34;base62&#34;)
+        else:
+            #text += &#34;:&#34;
+            i = self.coatom
+            j = self.atom
+            first = True
+            while i &lt; self.zero and j &gt; self.unit:
+                value = self.getValue((i, j))
+                if value == self.zero:
+                    j -= 1
+                elif self.isHigherThanAtom(value):
+                    i += 1
+                elif value == self.atom:
+                    iValue = self.getValue((i + 1, j))
+                    jValue = self.getValue((i, j + 1))
+                    if iValue == self.zero and jValue == self.zero:
+                        if first:
+                            first = False
+                            text += &#34;:&#34;
+                        text += fntom.convertDecimalToBase62(i)
+                        text += fntom.convertDecimalToBase62(j)
+                    if iValue == self.atom:
+                        i += 1
+                    else:
+                        j -= 1
+        return text
+
+    def show(self, separator = &#34;, &#34;, endLine = &#34;\n&#34;, tableSymbols = &#34;base62&#34;):
+        &#34;&#34;&#34;
+        Prints the values of the attributes of this instance to the terminal
+            output.
+
+        This method serves mostly to debugging purposes.
+        &#34;&#34;&#34;
+        print(&#34;Identifier:&#34;, end = &#34; &#34;)
+        print(fntom.convertDecimalToBase62(self.identifier), end = &#34; &#34;)
+        print(&#34;(&#34; + str(self.identifier) + &#34;)&#34;, end = &#34;, &#34;)
+        print(&#34;parent:&#34;, end = &#34; &#34;)
+        if self.parent == None:
+            print(&#34;-&#34;)
+        else:
+            print(fntom.convertDecimalToBase62(self.parent.identifier), end = &#34; &#34;)
+            print(&#34;(&#34; + str(self.parent.identifier) + &#34;)&#34;)
+        print(&#34;co-extensions:&#34;, end = &#34; &#34;)
+        if self.extensions == None or len(self.extensions) == 0:
+            print(&#34;empty&#34;)
+        else:
+            first = True
+            for coext in self.extensions:
+                print(fntom.convertDecimalToBase62(coext.identifier), end = &#34;&#34;)
+                print(&#34;(&#34; + str(coext.identifier) + &#34;)&#34;, end = &#34; &#34;)
+            print()
+        print(&#34;idempotents:&#34;, self.idempotents)
+        print(self.exportTableToText(separator = separator, endLine = endLine, tableSymbols = tableSymbols))</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="fntom.FNTOMonoid.FNTOMonoid"><code class="flex name class">
+<span>class <span class="ident">FNTOMonoid</span></span>
+<span>(</span><span>identifier=None, size=None, parent=None, original=None, xyzTable=None, intTable=None, base62Table=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Represents a finite, negative, totally ordered monoid which has an abiity
+to generate its one-element Rees co-extensions.</p>
+<h2 id="attributes">Attributes</h2>
+<dl>
+<dt><strong><code>identifier</code></strong> :&ensp;<code>int</code></dt>
+<dd>unique positive integer identifying this f. n.
+monoid; can be equal to <code>None</code></dd>
+<dt><strong><code>extensions</code></strong> :&ensp;<code>list</code> of <code><a title="fntom.FNTOMonoid.FNTOMonoid" href="#fntom.FNTOMonoid.FNTOMonoid">FNTOMonoid</a></code></dt>
+<dd>list of co-extensions of this
+f. n. tomonoid</dd>
+<dt><strong><code>idempotents</code></strong> :&ensp;<code>list</code> of <code>int</code></dt>
+<dd>non-zero idempotents of the monoid</dd>
+<dt><strong><code>parent</code></strong> :&ensp;<code><a title="fntom.FNTOMonoid.FNTOMonoid" href="#fntom.FNTOMonoid.FNTOMonoid">FNTOMonoid</a></code></dt>
+<dd>parent f. n. monoid from which this monoid has
+been created as its co-extension (<code>parent</code> is the Rees quotient of
+this monoid)</dd>
+<dt><strong><code>original</code></strong> :&ensp;<code><a title="fntom.FNTOMonoid.FNTOMonoid" href="#fntom.FNTOMonoid.FNTOMonoid">FNTOMonoid</a></code></dt>
+<dd>sibling f. n. monoid from which this one has
+been created as a (possibly altered) copy</dd>
+<dt><strong><code>closed</code></strong> :&ensp;<code>bool</code></dt>
+<dd>indicates whether the co-extension of this f. n.
+tomonoid have been found, already</dd>
+</dl>
+<p>At maximum, one of the arguments <code>size</code>, <code>original</code>, <code>table</code> can be
+specified.
+If none of them is specified, this monoid is initialized as the trivial
+monoid.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>size</code></strong> :&ensp;<code>int</code></dt>
+<dd>
+<p>must be greater or equal to 1; if specified, this
+monoid will be initialized as the <em>drastic</em> f. n. tomonoid of
+the given size; that is:</p>
+<ul>
+<li>x*y=x if y=1,</li>
+<li>x*y=y if x=1,</li>
+<li>x*y=0 otherwise</li>
+</ul>
+</dd>
+<dt><strong><code>parent</code></strong> :&ensp;<code><a title="fntom.FNTOMonoid.FNTOMonoid" href="#fntom.FNTOMonoid.FNTOMonoid">FNTOMonoid</a></code></dt>
+<dd>if specified, this monoid will be creates as a
+zero-doubling extension of <code>parent</code>
+(see <code>LevelEquivalence.performZeroDoublingExtension()</code>)</dd>
+<dt><strong><code>original</code></strong> :&ensp;<code><a title="fntom.FNTOMonoid.FNTOMonoid" href="#fntom.FNTOMonoid.FNTOMonoid">FNTOMonoid</a></code></dt>
+<dd>if specified, this monoid will be creates as
+a (deep) copy of <code>original</code></dd>
+<dt><strong><code>base62Table</code></strong> :&ensp;<code>list</code> of <code>lists</code> of <code>chr</code></dt>
+<dd>if specified, the level set
+equivalence will be created according to the given Cayley table;
+the values in the table are supposed to be from the set:
+<code>0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</code>
+where <code>0</code> represents the neutral element (unit)</dd>
+<dt><strong><code>intTable</code></strong> :&ensp;<code>list</code> of <code>lists</code> of <code>int</code></dt>
+<dd>if specified, the level set
+equivalence will be created according to the given Cayley table;
+the values in the table are supposed to be non-negative
+integers starting from <code>0</code> (which represents the unit element)</dd>
+<dt><strong><code>xyzTable</code></strong> :&ensp;<code>list</code> of <code>lists</code> of <code>chr</code></dt>
+<dd>if specified, the level set
+equivalence will be created according to the given Cayley table;
+the values in the table are supposed to be from the set:
+<code>"0"</code>, &hellip;, <code>"x"</code>, <code>"y"</code>, <code>"z"</code>, <code>"1"</code>
+and the table is supposed to have its second index reversed,
+i.e., the table is left-right flipped (accoding to vertical
+axis)
+This style of depicting the Cayley table corresponds with
+the style used in the referenced papers
+[PeVe14,PeVe16,PeVe17,PeVe19], while the previous two
+styles reflect the inner representation of the tomonoid.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class FNTOMonoid(fntom.LevelEquivalence):
+    &#34;&#34;&#34;
+    Represents a finite, negative, totally ordered monoid which has an abiity
+    to generate its one-element Rees co-extensions.
+
+    Attributes:
+        identifier (int): unique positive integer identifying this f. n.
+            monoid; can be equal to `None`
+        extensions (list of FNTOMonoid): list of co-extensions of this
+            f. n. tomonoid
+        idempotents (list of int): non-zero idempotents of the monoid
+        parent (FNTOMonoid): parent f. n. monoid from which this monoid has
+            been created as its co-extension (`parent` is the Rees quotient of
+            this monoid)
+        original (FNTOMonoid): sibling f. n. monoid from which this one has
+            been created as a (possibly altered) copy
+        closed (bool): indicates whether the co-extension of this f. n.
+            tomonoid have been found, already
+    &#34;&#34;&#34;
+
+    def __init__(self,
+                 identifier = None,
+                 size = None,
+                 parent = None,
+                 original = None,
+                 xyzTable = None,
+                 intTable = None,
+                 base62Table = None):
+        &#34;&#34;&#34;
+        At maximum, one of the arguments `size`, `original`, `table` can be
+        specified.
+        If none of them is specified, this monoid is initialized as the trivial
+        monoid.
+
+        Args:
+            size (int): must be greater or equal to 1; if specified, this
+                monoid will be initialized as the _drastic_ f. n. tomonoid of
+                the given size; that is:
+
+                  * x*y=x if y=1,
+                  * x*y=y if x=1,
+                  * x*y=0 otherwise
+
+            parent (FNTOMonoid): if specified, this monoid will be creates as a
+                zero-doubling extension of `parent`
+                (see `LevelEquivalence.performZeroDoublingExtension()`)
+
+            original (FNTOMonoid): if specified, this monoid will be creates as
+                a (deep) copy of `original`
+
+            base62Table (list of lists of chr): if specified, the level set
+                equivalence will be created according to the given Cayley table;
+                the values in the table are supposed to be from the set:
+                `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz`
+                where `0` represents the neutral element (unit)
+
+            intTable (list of lists of int): if specified, the level set
+                equivalence will be created according to the given Cayley table;
+                the values in the table are supposed to be non-negative
+                integers starting from `0` (which represents the unit element)
+
+            xyzTable (list of lists of chr): if specified, the level set
+                equivalence will be created according to the given Cayley table;
+                the values in the table are supposed to be from the set:
+                `&#34;0&#34;`, ..., `&#34;x&#34;`, `&#34;y&#34;`, `&#34;z&#34;`, `&#34;1&#34;`
+                and the table is supposed to have its second index reversed,
+                i.e., the table is left-right flipped (accoding to vertical
+                axis)
+                This style of depicting the Cayley table corresponds with
+                the style used in the referenced papers
+                [PeVe14,PeVe16,PeVe17,PeVe19], while the previous two
+                styles reflect the inner representation of the tomonoid.
+        &#34;&#34;&#34;
+        self.setIdentifier(identifier)
+        if parent != None:
+            super().__init__(original = parent)
+            self.performZeroDoublingExtension()
+            self.parent = parent
+            self.original = None
+            self.idempotents = copy.deepcopy(parent.idempotents)
+        elif original != None:
+            super().__init__(original = original)
+            self.parent = original.parent
+            self.original = original
+            self.idempotents = copy.deepcopy(original.idempotents)
+        else:
+            super().__init__(
+                    size = size,
+                    xyzTable = xyzTable,
+                    intTable = intTable,
+                    base62Table = base62Table)
+            self.parent = None
+            self.original = None
+            self.setIdempotents()
+        self.extensions = []
+        self.closed = False
+
+    def setIdempotents(self):
+        &#34;&#34;&#34;
+        Sets the attribute `idempotents` to contain all the idempotents of the
+        f. n. tomonoid apart from `zero`.
+        &#34;&#34;&#34;
+        self.idempotents = self.findIdempotents() + [ self.unit ]
+
+    def setIdentifier(self, identifier):
+        &#34;&#34;&#34;
+        Sets the value of the attribute `identifier`.
+        &#34;&#34;&#34;
+        self.identifier = identifier
+
+    def getCopy(self, identifier = None):
+        &#34;&#34;&#34;
+        Creates and returns a copy of this f. n. tomonoid.
+
+        Args:
+            identifier (int): identifier of the newly created `FNTOMonoid`
+
+        Returns:
+            FNTOMonoid: a deep copy of this instance
+        &#34;&#34;&#34;
+        return FNTOMonoid(identifier = identifier, original = self)
+
+    def getZeroDoublingExtension(self, identifier = None):
+        &#34;&#34;&#34;
+        Creates and returns a zero-doubling extensions of this f. n. tomonoid.
+
+        Args:
+            identifier (int, optional): identifier of the newly created
+                `FNTOMonoid`
+
+        Returns:
+            FNTOMonoid: a zero-doubling extensions of this f. n. tomonoid
+
+        See:
+            `LevelEquivalence.performZeroDoublingExtension()`
+        &#34;&#34;&#34;
+        return FNTOMonoid(identifier, parent = self)
+
+    def computeCoExtensionsBrute(self, counter, onlyCommutative = False, onlyArchimedean = False):
+        &#34;&#34;&#34;
+        Finds all the one-element co-extensions of this tomonoid by the brute
+        force method.
+
+        The found co-extensions are subsequently stored to the attribute
+            `extensions`.
+        Subsequently, reference to `extensions` is returned
+
+        Args:
+            counter (fntom.Counter): serves to assign unique identifiers
+                to the generated f. n. tomonoids
+            onlyCommutative (bool): if `True` then only commutative
+                co-extensions will be constructed
+                (it is, however, not checked whether this monoid is
+                commutative)
+            onlyArchimedean (bool): if `True` then only Archimedean
+                co-extensions will be constructed
+                (it is, however, not checked whether this monoid is
+                Archimedean)
+
+        Returns:
+            list of FNTOMonoid: the value of the attribute `extensions` which
+                is a list of the co-extensions of this f. n. tomonoid
+        &#34;&#34;&#34;
+        ext = self.getZeroDoublingExtension(counter.getNew())
+        self.extensions = ext.goThroughAllEvaluationsBrute(
+                                    counter,
+                                    onlyCommutative = onlyCommutative,
+                                    onlyArchimedean = onlyArchimedean)
+        return self.extensions
+
+    def goThroughAllEvaluationsBrute(self, counter, onlyCommutative = False, onlyArchimedean = False):
+        &#34;&#34;&#34;
+        Recursively generates all the potential one-element coextensions of this tomonoid
+        and tests whether they meet the axioms of a finite, negative tomonoid.
+
+        This method is called by the method `FNTOMonoid.computeCoExtensionsBrute`.
+
+        Args:
+            counter (fntom.Counter): serves to assign unique identifiers
+                to the generated f. n. tomonoids
+            onlyCommutative (bool): if `True` then only commutative
+                co-extensions will be returned
+                (it is, however, not checked whether this monoid is
+                commutative)
+            onlyArchimedean(bool): if `True` then only Archimedean
+                co-extensions will be returned
+                (it is, however, not checked whether this monoid is
+                Archimedean)
+
+        Returns:
+            list of FNTOMonoid: the co-extensions of this f. n. tomonoid
+        &#34;&#34;&#34;
+        if len(self.eqClasses) &gt; self.size:
+            tomZero = self
+            tomAtom = self.getCopy(counter.getNew())
+            tomZeroValid = True
+            tomAtomValid = True
+            try:
+                tomZero.mergeEqClassWithZero(self.size)
+            except fntom.Error.NotTOMPartition:
+                tomZeroValid = False
+            try:
+                tomAtom.mergeEqClassWithAtom(self.size)
+            except fntom.Error.NotTOMPartition:
+                tomAtomValid = False
+            if tomZeroValid:
+                extensionsZero = tomZero.goThroughAllEvaluationsBrute(
+                                            counter,
+                                            onlyCommutative = onlyCommutative,
+                                            onlyArchimedean = onlyArchimedean)
+            else:
+                extensionsZero = []
+            if tomAtomValid:
+                extensionsAtom = tomAtom.goThroughAllEvaluationsBrute(
+                                            counter,
+                                            onlyCommutative = onlyCommutative,
+                                            onlyArchimedean = onlyArchimedean)
+            else:
+                extensionsAtom = []
+            extensionsZero.extend(extensionsAtom)
+            return extensionsZero
+        else:
+            if onlyCommutative and self.performCommutativityTest() != None:
+                return []
+            if onlyArchimedean and self.performArchimedeanicityTest() != None:
+                return []
+            if self.performMonotonicityTest() != None:
+                return []
+            if self.performAssociativityTest() != None:
+                return []
+            return [self]
+
+    def computeCoExtensions(
+            self,
+            counter,
+            commutative = False,
+            archimedean = False):
+        &#34;&#34;&#34;
+        Computes all the one-element coextensions of this tomonoid by the introduced
+        level set based method.
+
+        The computed co-extensions are stored to the attribute `coextensions`.
+
+        Args:
+            counter (fntom.Counter): serves to assign unique identifiers
+                to the generated f. n. tomonoids
+
+        commutative (bool, optional): if `True`, only commutative co-extensions
+            are found;
+            it is supposed that the starting f. n. tomonoid is commutative
+
+        archimedean (bool, optional): if `True`, only Archimedean co-extensions
+            are found;
+            it is supposed that the starting f. n. tomonoid is Archimedean
+
+        Returns:
+            list of FNTOMonoid: reference to the attribute `extensions`;
+                list of one-element co-extensions of this f. n. tomonoid
+        &#34;&#34;&#34;
+        if self.size == 1:
+            # trivial monoid has one co-extension only
+            zeroDblExt = self.getZeroDoublingExtension(counter.getNew())
+            self.extensions = [ zeroDblExt ]
+        else:
+            zeroDblExt = self.getZeroDoublingExtension()
+            if commutative:
+                for i in range(zeroDblExt.coatom, zeroDblExt.zero):
+                    for j in range(zeroDblExt.coatom, i):
+                        zeroDblExt.relatePairs((i, j), (j, i))
+            zeroDblExt.performE2(commutative = commutative)
+            if archimedean:
+                zeroDblExt.performE3Archimedean(commutative = commutative)
+                zeroDblExt.performE4Archimedean()
+                self.extensions = zeroDblExt.goThroughAllEvaluations(counter)
+            else:
+                self.extensions = []
+                numIdempotents = len(zeroDblExt.idempotents)
+                # needed to call `isUsablePairOfIdempotents`
+                boundaryOfLeft = numIdempotents * [None]
+                boundaryOfRight = numIdempotents * [None]
+                for i in range(numIdempotents):
+                    definingIdempotentLeft = zeroDblExt.idempotents[i]
+                    definingIdempotentRight = zeroDblExt.idempotents[i]
+                    boundaryOfLeft[i] = zeroDblExt.getLeftDefiningIdempotentBoundary(definingIdempotentLeft)
+                    boundaryOfRight[i] = zeroDblExt.getRightDefiningIdempotentBoundary(definingIdempotentRight)
+                # (try to) generate co-extensions for every defining pair of idempotents
+                for indexLeft in range(numIdempotents):
+                    for indexRight in range(numIdempotents):
+                        definingIdempotentLeft = zeroDblExt.idempotents[indexLeft]
+                        definingIdempotentRight = zeroDblExt.idempotents[indexRight]
+                        if zeroDblExt.isUsablePairOfIdempotents(
+                                definingIdempotentLeft,
+                                definingIdempotentRight,
+                                boundaryOfRight[indexRight],
+                                boundaryOfLeft[indexLeft]):
+                            tom = zeroDblExt.getCopy()
+                            tom.definingIdempotentLeft = definingIdempotentLeft
+                            tom.definingIdempotentRight = definingIdempotentRight
+                            tom.performE3bGeneral()
+                            try:
+                                tom.performE4General()
+                                tom.performE3aGeneral(commutative = commutative)
+                                extensions = tom.goThroughAllEvaluations(counter)
+                            except fntom.Error.NotTOMPartition:
+                                pass
+                            else:
+                                self.extensions.extend(extensions)
+                zeroDblExt.setPairToAtom((zeroDblExt.atom, zeroDblExt.atom))
+                zeroDblExt.idempotents.append(zeroDblExt.atom)
+                zeroDblExt.setIdentifier(counter.getNew())
+                self.extensions.append(zeroDblExt)
+        return self.extensions
+
+    def goThroughAllEvaluations(self, counter):
+        &#34;&#34;&#34;
+        Generates and returns all the valid one-element Rees co-extensions
+        of this f. n. tomonoid.
+
+        This method is called by `FNTOMonoid.computeCoExtensions`.
+
+        Args:
+            counter (fntom.Counter): serves to assign unique identifiers
+                to the generated f. n. tomonoids
+
+        Returns:
+            list of FNTOMonoid: list of one-element co-extensions of this f. n.
+                tomonoid, however, the greatest one-element co-extension (where
+                `(atom, atom)` is evaluated to `atom`) is not included to the list
+        &#34;&#34;&#34;
+        if len(self.eqClasses) &gt; self.size:
+            tomZero = self
+            tomAtom = self.getCopy()
+            try:
+                tomZero.mergeEqClassWithZero(self.size)
+                extensionsZero = tomZero.goThroughAllEvaluations(counter)
+            except fntom.Error.NotTOMPartition:
+                extensionsZero = []
+            try:
+                tomAtom.mergeEqClassWithAtom(self.size)
+                extensionsAtom = tomAtom.goThroughAllEvaluations(counter)
+            except fntom.Error.NotTOMPartition:
+                extensionsAtom = []
+            extensionsZero.extend(extensionsAtom)
+            return extensionsZero
+        else:
+            self.setIdentifier(counter.getNew())
+            return [ self ]
+
+    def performE2(self, commutative = False):
+        &#34;&#34;&#34;
+        Performs Property (E2).
+
+        For the detailed description, see Definition 4.2 in
+        the paper
+        [[PeVe17]](../../papers/Petrik_Vetterlein__Coextensions__preprint.pdf).
+
+        Relates pairs `(a,e)` and `(d,c)` such that there is `b` such that the
+        pairs `(a,b)` and `(b,c)` belong to the support of the f. n. tomonoid
+        and, furthermore, `(a,b)` is related to `d` and `(b,c)` is related to
+        `e`.
+
+        Args:
+            commutative (bool): if `True` then the optimization for
+                commutative f. n.  tomonoids is turned on
+            archimedean (bool): if `False` then the optimization for
+                non-Archimedean f. n.  tomonoids is turned on
+        &#34;&#34;&#34;
+        for k in range(self.coatom, self.atom):
+            for pair in self.eqClasses[k]:
+                # discard the pairs that have unit coordinate
+                if self.isNotOnBorder(pair):
+                    (a, b) = pair
+                    # a simple optimization for commutative f. n. tomonoids
+                    if not commutative or a &lt;= b:
+                        d = self.getValue((a,b))
+                        # find c such that (b,c) is evaluated strictly higher than
+                        # the atom and relate (a,e)~(d,c)
+                        for c in range(self.coatom, self.atom):
+                            e = self.getValue((b,c))
+                            if self.isZeroOrAtomOrNotElement(e):
+                                break
+                            self.relatePairs((d,c), (a,e))
+
+    def performE3Archimedean(self, commutative = False):
+        &#34;&#34;&#34;
+        Performs Property (E3).
+
+        For the detailed description, see Definition 4.2 in
+        the paper
+        [[PeVe17]](../../papers/Petrik_Vetterlein__Coextensions__preprint.pdf).
+
+        Relates particular pairs with zero.
+
+        Args:
+            commutative (bool): if `True` then the optimization for
+                commutative f. n.  tomonoids is turned on
+        &#34;&#34;&#34;
+        i = self.coatom
+        j = self.atom
+        while i &lt; self.atom:
+            # An optimization for Archimedean f. n. tomonoids:
+            # The program considers only those pairs (i,j) such that:
+            #     i * j = zero or atom,
+            #     Succ(i) * j &gt; atom, and
+            #     i * Succ(j) &gt; atom,
+            # where Succ(.) is the f. n. tomonoid element that is by one closer
+            # to the unit
+            while i &lt; self.atom and not self.isZeroOrAtomOrNotElement(self.getValue((i, j))):
+                i += 1
+            while j &gt;= self.unit and self.isZeroOrAtomOrNotElement(self.getValue((i, j))):
+                j -= 1
+            j += 1
+            # a simple optimization for commutative Archimedean f. n. tomonoids
+            if commutative and i &gt; j:
+                break
+            # (E3) first part
+            a = i
+            b = j
+            c = self.coatom
+            e = self.getValue((b, c))
+            if self.isHigherThanAtom(e):
+                self.setPairToZero((a, e))
+            # (E3) second part
+            a = self.coatom
+            b = i
+            c = j
+            d = self.getValue((a, b))
+            if self.isHigherThanAtom(d):
+                self.setPairToZero((d, c))
+            if j &lt;= self.coatom:
+                break
+            j -= 1
+
+    def performE3aGeneral(self, commutative = False):
+        &#34;&#34;&#34;
+        Performs Property (E3&#39;)(a).
+
+        For the detailed description, see Definition 5.2 in
+        the paper
+        [[PeVe17]](../../papers/Petrik_Vetterlein__Coextensions__preprint.pdf).
+
+        According to the chosen defining pair of idempotents, relates the
+        corresponding pairs with zero.
+
+        Args:
+            commutative (bool): if `True` then the optimization for
+                commutative f. n.  tomonoids is turned on
+        &#34;&#34;&#34;
+        i = self.coatom
+        j = self.atom
+        while i &lt; self.atom:
+            # An optimization:
+            # The program considers only those pairs (i,j) such that:
+            #     i * j = zero or atom,
+            #     Succ(i) * j &gt; atom, and
+            #     i * Succ(j) &gt; atom,
+            # where Succ(.) is the f. n. tomonoid element that is by one closer
+            # to the unit
+            while i &lt; self.atom and not self.isZeroOrAtomOrNotElement(self.getValue((i, j))):
+                i += 1
+            while j &gt;= self.unit and self.isZeroOrAtomOrNotElement(self.getValue((i, j))):
+                j -= 1
+            j += 1
+            # a simple optimization for commutative f. n. tomonoids
+            if commutative and i &gt; j:
+                break
+            # (E3&#39;)(a) first part
+            if i &gt; self.definingIdempotentLeft:
+                a = i
+                b = j
+                c = self.definingIdempotentRight + 1
+                e = self.getValue((b, c))
+                if self.isHigherThanAtom(e):
+                    self.setPairToZero((a, e))
+            # (E3&#39;)(a) second part
+            if j &gt; self.definingIdempotentRight:
+                a = self.definingIdempotentLeft + 1
+                b = i
+                c = j
+                d = self.getValue((a, b))
+                if self.isHigherThanAtom(d):
+                    self.setPairToZero((d, c))
+            if j &lt;= self.coatom:
+                break
+            j -= 1
+
+    def performE3bGeneral(self):
+        &#34;&#34;&#34;
+        Performs Property (E3&#39;)(b).
+
+        For the detailed description, see Definition 5.2 in
+        the paper
+        [[PeVe17]](../../papers/Petrik_Vetterlein__Coextensions__preprint.pdf).
+
+        Relates pairs `(a,e)` and `(d,c)` such that there is `b` such that the
+        pairs `(a,b)` and `(b,c)` belong to the support of the f. n. tomonoid
+        and, furthermore, `(a,b)` is related to `d` and `(b,c)` is related to
+        `e`.
+
+        According to the chosen defining pair of idempotents, relates pairs
+        `(a,b)` and `(a,e)` (and pairs `(b,a)` and `(e,a)`) in the complement
+        of the support of the f. n. tomonoid.
+        &#34;&#34;&#34;
+        if self.definingIdempotentRight &gt; self.unit:
+            c = self.definingIdempotentRight
+            finish = False
+            for b in range(self.coatom, self.atom):
+                e = self.getValue((b, c))
+                if b &lt; e:
+                    if not self.isElement(e):
+                        e = self.atom
+                        finish = True
+                    for a in range(self.atom - 1, self.unit, -1):
+                        if self.isHigherThanAtom(self.getValue((a, b))):
+                            break
+                        self.relateColumn(a, b, e)
+                    if finish:
+                        break
+        if self.definingIdempotentLeft &gt; self.unit:
+            a = self.definingIdempotentLeft
+            finish = False
+            for b in range(self.coatom, self.atom, 1):
+                d = self.getValue((a,b))
+                if b &lt; d:
+                    if not self.isElement(d):
+                        d = self.atom
+                        finish = True
+                    for c in range(self.atom-1, self.unit, -1):
+                        if self.isHigherThanAtom(self.getValue((b,c))):
+                            break
+                        self.relateRow(b, d, c)
+                    if finish:
+                        break
+
+    def performE4Archimedean(self):
+        &#34;&#34;&#34;
+        Performs Property (E4).
+
+        For the detailed description, see Definition 4.2 in
+        the paper
+        [[PeVe17]](../../papers/Petrik_Vetterlein__Coextensions__preprint.pdf).
+
+        Relates the pairs `(atom, coatom)` and `(coatom, atom)` to `zero`.
+        &#34;&#34;&#34;
+        self.setPairToZero((self.coatom, self.atom))
+        self.setPairToZero((self.atom, self.coatom))
+
+    def performE4General(self):
+        &#34;&#34;&#34;
+        Performs Property (E4&#39;).
+
+        For the detailed description, see Definition 5.2 in
+        the paper
+        [[PeVe17]](../../papers/Petrik_Vetterlein__Coextensions__preprint.pdf).
+
+        According to the chosen defining pair of idempotents, relates the
+        corresponding pairs with zero or atom.
+        &#34;&#34;&#34;
+        self.setPairToZero((self.definingIdempotentLeft + 1, self.atom))
+        self.setPairToZero((self.atom, self.definingIdempotentRight + 1))
+        if self.definingIdempotentLeft != self.unit:
+            self.setPairToAtom((self.definingIdempotentLeft, self.atom))
+        if self.definingIdempotentRight != self.unit:
+            self.setPairToAtom((self.atom, self.definingIdempotentRight))
+
+    def getRightDefiningIdempotentBoundary(self, definingIdempotentRight):
+        &#34;&#34;&#34;
+        Auxiliary method.
+
+        Its result is utilized in `FNTOMonoid.computeCoExtensions` to perform
+        the test whether a chosen pair of defining idempotents will yield any
+        co-extensions by calling `FNTOMonoid.isUsablePairOfIdempotents`.
+
+        Args:
+            definingIdempotentRight (int): one of the idempotents of the f. n.
+                tomonoid
+
+        Returns:
+            int: the highest value `boundaryOfRight` such that the pair
+                `(boundaryOfRight, definingIdempotentRight)` belongs to the atom
+                level equivalence class or to no level equivalence class.
+        &#34;&#34;&#34;
+        boundaryOfRight = self.atom
+        for i in range(self.coatom, self.zero, 1):
+            value = self.getValue((i, definingIdempotentRight))
+            if self.isAtomOrNotElement(value):
+                boundaryOfRight = i
+                break
+        return boundaryOfRight
+
+    def getLeftDefiningIdempotentBoundary(self, definingIdempotentLeft):
+        &#34;&#34;&#34;
+        Auxiliary method.
+
+        Its result is utilized in `FNTOMonoid.computeCoExtensions` to perform
+        the test whether a chosen pair of defining idempotents will yield any
+        co-extensions by calling `FNTOMonoid.isUsablePairOfIdempotents`.
+
+        Args:
+            definingIdempotentLeft (int): one of the idempotents of the f. n.
+                tomonoid
+
+        Returns:
+            int: the highest value `boundaryOfLeft` such that the pair
+                `(boundaryOfLeft, definingIdempotentLeft)` belongs to the atom
+                level equivalence class or to no level equivalence class.
+        &#34;&#34;&#34;
+        boundaryOfLeft = self.atom
+        for i in range(self.coatom, self.zero, 1):
+            value = self.getValue((definingIdempotentLeft, i))
+            if self.isAtomOrNotElement(value):
+                boundaryOfLeft = i
+                break
+        return boundaryOfLeft
+
+    def isUsablePairOfIdempotents(
+            self,
+            definingIdempotentLeft,
+            definingIdempotentRight,
+            boundaryOfRight,
+            boundaryOfLeft):
+        &#34;&#34;&#34;
+        Tests whether the chosen pair of defining idempotents fulfills the
+        necessary requirements.
+
+        Auxiliary method utilized by `FNTOMonoid.computeCoExtensions`.
+
+        It is, actually, not necessary to use this test, however, it speeds the
+        algorithm up (there is a lower number of tracebacks).
+
+        This optiomization is programmed according to Proposition 4.11 in the
+        paper
+        [[PeVe19]](../../papers/Petrik_Vetterlein__Pomonoids__preprint.pdf).
+
+        Args:
+            definingIdempotentLeft (int): the left value in the pair of
+                defining idempotents
+            definingIdempotentRight (int): the right value in the pair of
+                defining idempotents
+            boundaryOfRight (int): value returned by
+                `FNTOMonoid.getRightDefiningIdempotentBoundary`
+            boundaryOfLeft (int): value returned by
+                `FNTOMonoid.getLeftDefiningIdempotentBoundary`
+
+        Returns:
+            bool: `False` if the given pair of defining idempotents cannot
+                yield any co-extensions;
+                `True` if it may yield some co-extensions (not granted, though)
+        &#34;&#34;&#34;
+        value = self.getValue((definingIdempotentLeft+1, boundaryOfRight))
+        if self.isAtomOrHigher(value):
+            return False
+        value = self.getValue((boundaryOfLeft, definingIdempotentRight+1))
+        if self.isAtomOrHigher(value):
+            return False
+        return True
+
+    def exportToText(
+            self,
+            separator = &#34;&#34;,
+            endLine = &#34;\n&#34;,
+            tableSymbols = &#34;base62&#34;,
+            identifierSymbols = &#34;base62&#34;,
+            addOriginal = False):
+        &#34;&#34;&#34;
+        Exports the Cayley table of this f. n. tomonoid to a string.
+
+        Suitable for saving to a text file.
+
+        Args:
+            separator (str, optional): string that separates the values in the
+                table
+
+            endLine (str, optional): string that separates the rows of the
+                table
+
+            tableSymbols (str, optional): one of the following three values:
+
+                * &#34;base62&#34; (default) ... the element of the tomonoid will be
+                    diplayed as symbls from the number system 62, that is, the
+                    characters from
+                    `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz`
+                    where `0` represents the neutral element (unit)
+                * &#34;int&#34; ... the element of the tomonoid will be diplayed as
+                    non-negative integers starting from `0` which will represent
+                    the neutral element (unit)
+                * &#34;0xyz1&#34; ...  the element of the tomonoid will be diplayed as
+                    the characters from the set:
+                    `&#34;0&#34;`, ..., `&#34;x&#34;`, `&#34;y&#34;`, `&#34;z&#34;`, `&#34;1&#34;`
+                    In this case, the table will be left-right flipped
+                    (according to the vertical axis).
+                    This style of depicting the Cayley table corresponds with
+                    the style used in the referenced papers
+                    [PeVe14,PeVe16,PeVe17,PeVe19], while the previous two
+                    styles reflect the inner representation of the tomonoid.
+
+            identifierSymbols (str, optional): in which set of symbols shall
+                the f. n. tomonoid identifiers be written;
+
+                * &#34;base62&#34; (default) ... the identifiers will be written as
+                    numbers in the number system with 62 digits
+                * &#34;int&#34; ... the identifiers will be written as decimal numbers
+
+            addOriginal (bool, optional): if `True` then the identifier of the
+                tomonoid, from which this tomonoid has been initialized as its
+                copy, will be added to the head of the returned table
+
+        Returns:
+            str: Cayley table of the monoid with a head containing the tomonoid
+                identifier, the size of the tomonoid, and the identifier of the
+                parent of the tomonoid
+        &#34;&#34;&#34;
+        text = &#34;&#34;
+        text += &#34;@&#34;
+        if self.identifier == None:
+            text += &#34;?&#34;
+        else:
+            if identifierSymbols == &#34;base62&#34; or identifierSymbols == &#34;Base62&#34;:
+                text += fntom.convertDecimalToBase62(self.identifier)
+            elif identifierSymbols == &#34;int&#34;:
+                text += str(self.identifier)
+            else:
+                text += &#34;!&#34;
+        text += &#34;,&#34;
+        text += str(self.size)
+        text += &#34;,&#34;
+        if self.parent == None:
+            text += &#34;-&#34;
+        else:
+            if identifierSymbols == &#34;base62&#34; or identifierSymbols == &#34;Base62&#34;:
+                text += fntom.convertDecimalToBase62(self.parent.identifier)
+            elif identifierSymbols == &#34;int&#34;:
+                text += str(self.parent.identifier)
+            else:
+                text += &#34;?&#34;
+        if addOriginal:
+            text += &#34;,&#34;
+            if self.original == None:
+                text += &#34;-&#34;
+            else:
+                if identifierSymbols == &#34;base62&#34; or identifierSymbols == &#34;Base62&#34;:
+                    text += fntom.convertDecimalToBase62(self.original.identifier)
+                elif identifierSymbols == &#34;int&#34;:
+                    text += str(self.original.identifier)
+                else:
+                    text += &#34;?&#34;
+        text += &#34;\n&#34;
+        text += self.exportTableToText(
+            separator = separator,
+            endLine = endLine,
+            tableSymbols = tableSymbols)
+        return text
+
+    def exportToCompressedText(self, parentId = None):
+        &#34;&#34;&#34;
+        Exports the line that defines this f. n tomonoid in a &#34;compressed&#34; file.
+
+        See:
+            fntom.CompressedFile
+
+        Args:
+            parentId (int, optional): identifier of the parent of this f. n.
+                tomonoid; if not specified, the identifier will be obtained from
+                the attribute `parent`;
+                this argument is handy if the parent is not created but its
+                identifier is known (for example, when compressing a file with
+                generated f. n. tomonoids)
+
+        Returns:
+            str: the line that defines this f. n tomonoid in a &#34;compressed&#34;
+                file
+        &#34;&#34;&#34;
+        text = &#34;&#34;
+        text += fntom.convertDecimalToBase62(self.identifier)
+        if self.closed == None or self.closed:
+            text += &#34;,&#34;
+        else:
+            text += &#34;;&#34;
+        if parentId != None:
+            text += fntom.convertDecimalToBase62(parentId)
+        elif self.parent != None:
+            text += fntom.convertDecimalToBase62(self.parent.identifier)
+        else:
+            text += &#34;-&#34;
+        if self.parent == None and parentId == None:
+            text += &#34;:&#34;
+            text += &#34;T&#34;
+            text += self.exportTableToText(separator = &#34;&#34;, endLine = &#34;;&#34;, tableSymbols = &#34;base62&#34;)
+        else:
+            #text += &#34;:&#34;
+            i = self.coatom
+            j = self.atom
+            first = True
+            while i &lt; self.zero and j &gt; self.unit:
+                value = self.getValue((i, j))
+                if value == self.zero:
+                    j -= 1
+                elif self.isHigherThanAtom(value):
+                    i += 1
+                elif value == self.atom:
+                    iValue = self.getValue((i + 1, j))
+                    jValue = self.getValue((i, j + 1))
+                    if iValue == self.zero and jValue == self.zero:
+                        if first:
+                            first = False
+                            text += &#34;:&#34;
+                        text += fntom.convertDecimalToBase62(i)
+                        text += fntom.convertDecimalToBase62(j)
+                    if iValue == self.atom:
+                        i += 1
+                    else:
+                        j -= 1
+        return text
+
+    def show(self, separator = &#34;, &#34;, endLine = &#34;\n&#34;, tableSymbols = &#34;base62&#34;):
+        &#34;&#34;&#34;
+        Prints the values of the attributes of this instance to the terminal
+            output.
+
+        This method serves mostly to debugging purposes.
+        &#34;&#34;&#34;
+        print(&#34;Identifier:&#34;, end = &#34; &#34;)
+        print(fntom.convertDecimalToBase62(self.identifier), end = &#34; &#34;)
+        print(&#34;(&#34; + str(self.identifier) + &#34;)&#34;, end = &#34;, &#34;)
+        print(&#34;parent:&#34;, end = &#34; &#34;)
+        if self.parent == None:
+            print(&#34;-&#34;)
+        else:
+            print(fntom.convertDecimalToBase62(self.parent.identifier), end = &#34; &#34;)
+            print(&#34;(&#34; + str(self.parent.identifier) + &#34;)&#34;)
+        print(&#34;co-extensions:&#34;, end = &#34; &#34;)
+        if self.extensions == None or len(self.extensions) == 0:
+            print(&#34;empty&#34;)
+        else:
+            first = True
+            for coext in self.extensions:
+                print(fntom.convertDecimalToBase62(coext.identifier), end = &#34;&#34;)
+                print(&#34;(&#34; + str(coext.identifier) + &#34;)&#34;, end = &#34; &#34;)
+            print()
+        print(&#34;idempotents:&#34;, self.idempotents)
+        print(self.exportTableToText(separator = separator, endLine = endLine, tableSymbols = tableSymbols))</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="fntom.LevelEquivalence.LevelEquivalence" href="LevelEquivalence.html#fntom.LevelEquivalence.LevelEquivalence">LevelEquivalence</a></li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="fntom.FNTOMonoid.FNTOMonoid.computeCoExtensions"><code class="name flex">
+<span>def <span class="ident">computeCoExtensions</span></span>(<span>self, counter, commutative=False, archimedean=False)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Computes all the one-element coextensions of this tomonoid by the introduced
+level set based method.</p>
+<p>The computed co-extensions are stored to the attribute <code>coextensions</code>.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>counter</code></strong> :&ensp;<code><a title="fntom.Counter" href="Counter.html">fntom.Counter</a></code></dt>
+<dd>serves to assign unique identifiers
+to the generated f. n. tomonoids</dd>
+</dl>
+<p>commutative (bool, optional): if <code>True</code>, only commutative co-extensions
+are found;
+it is supposed that the starting f. n. tomonoid is commutative</p>
+<p>archimedean (bool, optional): if <code>True</code>, only Archimedean co-extensions
+are found;
+it is supposed that the starting f. n. tomonoid is Archimedean</p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>list</code> of <code><a title="fntom.FNTOMonoid.FNTOMonoid" href="#fntom.FNTOMonoid.FNTOMonoid">FNTOMonoid</a></code></dt>
+<dd>reference to the attribute <code>extensions</code>;
+list of one-element co-extensions of this f. n. tomonoid</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def computeCoExtensions(
+        self,
+        counter,
+        commutative = False,
+        archimedean = False):
+    &#34;&#34;&#34;
+    Computes all the one-element coextensions of this tomonoid by the introduced
+    level set based method.
+
+    The computed co-extensions are stored to the attribute `coextensions`.
+
+    Args:
+        counter (fntom.Counter): serves to assign unique identifiers
+            to the generated f. n. tomonoids
+
+    commutative (bool, optional): if `True`, only commutative co-extensions
+        are found;
+        it is supposed that the starting f. n. tomonoid is commutative
+
+    archimedean (bool, optional): if `True`, only Archimedean co-extensions
+        are found;
+        it is supposed that the starting f. n. tomonoid is Archimedean
+
+    Returns:
+        list of FNTOMonoid: reference to the attribute `extensions`;
+            list of one-element co-extensions of this f. n. tomonoid
+    &#34;&#34;&#34;
+    if self.size == 1:
+        # trivial monoid has one co-extension only
+        zeroDblExt = self.getZeroDoublingExtension(counter.getNew())
+        self.extensions = [ zeroDblExt ]
+    else:
+        zeroDblExt = self.getZeroDoublingExtension()
+        if commutative:
+            for i in range(zeroDblExt.coatom, zeroDblExt.zero):
+                for j in range(zeroDblExt.coatom, i):
+                    zeroDblExt.relatePairs((i, j), (j, i))
+        zeroDblExt.performE2(commutative = commutative)
+        if archimedean:
+            zeroDblExt.performE3Archimedean(commutative = commutative)
+            zeroDblExt.performE4Archimedean()
+            self.extensions = zeroDblExt.goThroughAllEvaluations(counter)
+        else:
+            self.extensions = []
+            numIdempotents = len(zeroDblExt.idempotents)
+            # needed to call `isUsablePairOfIdempotents`
+            boundaryOfLeft = numIdempotents * [None]
+            boundaryOfRight = numIdempotents * [None]
+            for i in range(numIdempotents):
+                definingIdempotentLeft = zeroDblExt.idempotents[i]
+                definingIdempotentRight = zeroDblExt.idempotents[i]
+                boundaryOfLeft[i] = zeroDblExt.getLeftDefiningIdempotentBoundary(definingIdempotentLeft)
+                boundaryOfRight[i] = zeroDblExt.getRightDefiningIdempotentBoundary(definingIdempotentRight)
+            # (try to) generate co-extensions for every defining pair of idempotents
+            for indexLeft in range(numIdempotents):
+                for indexRight in range(numIdempotents):
+                    definingIdempotentLeft = zeroDblExt.idempotents[indexLeft]
+                    definingIdempotentRight = zeroDblExt.idempotents[indexRight]
+                    if zeroDblExt.isUsablePairOfIdempotents(
+                            definingIdempotentLeft,
+                            definingIdempotentRight,
+                            boundaryOfRight[indexRight],
+                            boundaryOfLeft[indexLeft]):
+                        tom = zeroDblExt.getCopy()
+                        tom.definingIdempotentLeft = definingIdempotentLeft
+                        tom.definingIdempotentRight = definingIdempotentRight
+                        tom.performE3bGeneral()
+                        try:
+                            tom.performE4General()
+                            tom.performE3aGeneral(commutative = commutative)
+                            extensions = tom.goThroughAllEvaluations(counter)
+                        except fntom.Error.NotTOMPartition:
+                            pass
+                        else:
+                            self.extensions.extend(extensions)
+            zeroDblExt.setPairToAtom((zeroDblExt.atom, zeroDblExt.atom))
+            zeroDblExt.idempotents.append(zeroDblExt.atom)
+            zeroDblExt.setIdentifier(counter.getNew())
+            self.extensions.append(zeroDblExt)
+    return self.extensions</code></pre>
+</details>
+</dd>
+<dt id="fntom.FNTOMonoid.FNTOMonoid.computeCoExtensionsBrute"><code class="name flex">
+<span>def <span class="ident">computeCoExtensionsBrute</span></span>(<span>self, counter, onlyCommutative=False, onlyArchimedean=False)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Finds all the one-element co-extensions of this tomonoid by the brute
+force method.</p>
+<p>The found co-extensions are subsequently stored to the attribute
+<code>extensions</code>.
+Subsequently, reference to <code>extensions</code> is returned</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>counter</code></strong> :&ensp;<code><a title="fntom.Counter" href="Counter.html">fntom.Counter</a></code></dt>
+<dd>serves to assign unique identifiers
+to the generated f. n. tomonoids</dd>
+<dt><strong><code>onlyCommutative</code></strong> :&ensp;<code>bool</code></dt>
+<dd>if <code>True</code> then only commutative
+co-extensions will be constructed
+(it is, however, not checked whether this monoid is
+commutative)</dd>
+<dt><strong><code>onlyArchimedean</code></strong> :&ensp;<code>bool</code></dt>
+<dd>if <code>True</code> then only Archimedean
+co-extensions will be constructed
+(it is, however, not checked whether this monoid is
+Archimedean)</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>list</code> of <code><a title="fntom.FNTOMonoid.FNTOMonoid" href="#fntom.FNTOMonoid.FNTOMonoid">FNTOMonoid</a></code></dt>
+<dd>the value of the attribute <code>extensions</code> which
+is a list of the co-extensions of this f. n. tomonoid</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def computeCoExtensionsBrute(self, counter, onlyCommutative = False, onlyArchimedean = False):
+    &#34;&#34;&#34;
+    Finds all the one-element co-extensions of this tomonoid by the brute
+    force method.
+
+    The found co-extensions are subsequently stored to the attribute
+        `extensions`.
+    Subsequently, reference to `extensions` is returned
+
+    Args:
+        counter (fntom.Counter): serves to assign unique identifiers
+            to the generated f. n. tomonoids
+        onlyCommutative (bool): if `True` then only commutative
+            co-extensions will be constructed
+            (it is, however, not checked whether this monoid is
+            commutative)
+        onlyArchimedean (bool): if `True` then only Archimedean
+            co-extensions will be constructed
+            (it is, however, not checked whether this monoid is
+            Archimedean)
+
+    Returns:
+        list of FNTOMonoid: the value of the attribute `extensions` which
+            is a list of the co-extensions of this f. n. tomonoid
+    &#34;&#34;&#34;
+    ext = self.getZeroDoublingExtension(counter.getNew())
+    self.extensions = ext.goThroughAllEvaluationsBrute(
+                                counter,
+                                onlyCommutative = onlyCommutative,
+                                onlyArchimedean = onlyArchimedean)
+    return self.extensions</code></pre>
+</details>
+</dd>
+<dt id="fntom.FNTOMonoid.FNTOMonoid.exportToCompressedText"><code class="name flex">
+<span>def <span class="ident">exportToCompressedText</span></span>(<span>self, parentId=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Exports the line that defines this f. n tomonoid in a "compressed" file.</p>
+<h2 id="see">See</h2>
+<p>fntom.CompressedFile</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>parentId</code></strong> :&ensp;<code>int</code>, optional</dt>
+<dd>identifier of the parent of this f. n.
+tomonoid; if not specified, the identifier will be obtained from
+the attribute <code>parent</code>;
+this argument is handy if the parent is not created but its
+identifier is known (for example, when compressing a file with
+generated f. n. tomonoids)</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>str</code></dt>
+<dd>the line that defines this f. n tomonoid in a "compressed"
+file</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def exportToCompressedText(self, parentId = None):
+    &#34;&#34;&#34;
+    Exports the line that defines this f. n tomonoid in a &#34;compressed&#34; file.
+
+    See:
+        fntom.CompressedFile
+
+    Args:
+        parentId (int, optional): identifier of the parent of this f. n.
+            tomonoid; if not specified, the identifier will be obtained from
+            the attribute `parent`;
+            this argument is handy if the parent is not created but its
+            identifier is known (for example, when compressing a file with
+            generated f. n. tomonoids)
+
+    Returns:
+        str: the line that defines this f. n tomonoid in a &#34;compressed&#34;
+            file
+    &#34;&#34;&#34;
+    text = &#34;&#34;
+    text += fntom.convertDecimalToBase62(self.identifier)
+    if self.closed == None or self.closed:
+        text += &#34;,&#34;
+    else:
+        text += &#34;;&#34;
+    if parentId != None:
+        text += fntom.convertDecimalToBase62(parentId)
+    elif self.parent != None:
+        text += fntom.convertDecimalToBase62(self.parent.identifier)
+    else:
+        text += &#34;-&#34;
+    if self.parent == None and parentId == None:
+        text += &#34;:&#34;
+        text += &#34;T&#34;
+        text += self.exportTableToText(separator = &#34;&#34;, endLine = &#34;;&#34;, tableSymbols = &#34;base62&#34;)
+    else:
+        #text += &#34;:&#34;
+        i = self.coatom
+        j = self.atom
+        first = True
+        while i &lt; self.zero and j &gt; self.unit:
+            value = self.getValue((i, j))
+            if value == self.zero:
+                j -= 1
+            elif self.isHigherThanAtom(value):
+                i += 1
+            elif value == self.atom:
+                iValue = self.getValue((i + 1, j))
+                jValue = self.getValue((i, j + 1))
+                if iValue == self.zero and jValue == self.zero:
+                    if first:
+                        first = False
+                        text += &#34;:&#34;
+                    text += fntom.convertDecimalToBase62(i)
+                    text += fntom.convertDecimalToBase62(j)
+                if iValue == self.atom:
+                    i += 1
+                else:
+                    j -= 1
+    return text</code></pre>
+</details>
+</dd>
+<dt id="fntom.FNTOMonoid.FNTOMonoid.exportToText"><code class="name flex">
+<span>def <span class="ident">exportToText</span></span>(<span>self, separator='', endLine='\n', tableSymbols='base62', identifierSymbols='base62', addOriginal=False)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Exports the Cayley table of this f. n. tomonoid to a string.</p>
+<p>Suitable for saving to a text file.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>separator</code></strong> :&ensp;<code>str</code>, optional</dt>
+<dd>string that separates the values in the
+table</dd>
+<dt><strong><code>endLine</code></strong> :&ensp;<code>str</code>, optional</dt>
+<dd>string that separates the rows of the
+table</dd>
+<dt><strong><code>tableSymbols</code></strong> :&ensp;<code>str</code>, optional</dt>
+<dd>
+<p>one of the following three values:</p>
+<ul>
+<li>"base62" (default) &hellip; the element of the tomonoid will be
+diplayed as symbls from the number system 62, that is, the
+characters from
+<code>0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</code>
+where <code>0</code> represents the neutral element (unit)</li>
+<li>"int" &hellip; the element of the tomonoid will be diplayed as
+non-negative integers starting from <code>0</code> which will represent
+the neutral element (unit)</li>
+<li>"0xyz1" &hellip;
+the element of the tomonoid will be diplayed as
+the characters from the set:
+<code>"0"</code>, &hellip;, <code>"x"</code>, <code>"y"</code>, <code>"z"</code>, <code>"1"</code>
+In this case, the table will be left-right flipped
+(according to the vertical axis).
+This style of depicting the Cayley table corresponds with
+the style used in the referenced papers
+[PeVe14,PeVe16,PeVe17,PeVe19], while the previous two
+styles reflect the inner representation of the tomonoid.</li>
+</ul>
+</dd>
+<dt><strong><code>identifierSymbols</code></strong> :&ensp;<code>str</code>, optional</dt>
+<dd>
+<p>in which set of symbols shall
+the f. n. tomonoid identifiers be written;</p>
+<ul>
+<li>"base62" (default) &hellip; the identifiers will be written as
+numbers in the number system with 62 digits</li>
+<li>"int" &hellip; the identifiers will be written as decimal numbers</li>
+</ul>
+</dd>
+<dt><strong><code>addOriginal</code></strong> :&ensp;<code>bool</code>, optional</dt>
+<dd>if <code>True</code> then the identifier of the
+tomonoid, from which this tomonoid has been initialized as its
+copy, will be added to the head of the returned table</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>str</code></dt>
+<dd>Cayley table of the monoid with a head containing the tomonoid
+identifier, the size of the tomonoid, and the identifier of the
+parent of the tomonoid</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def exportToText(
+        self,
+        separator = &#34;&#34;,
+        endLine = &#34;\n&#34;,
+        tableSymbols = &#34;base62&#34;,
+        identifierSymbols = &#34;base62&#34;,
+        addOriginal = False):
+    &#34;&#34;&#34;
+    Exports the Cayley table of this f. n. tomonoid to a string.
+
+    Suitable for saving to a text file.
+
+    Args:
+        separator (str, optional): string that separates the values in the
+            table
+
+        endLine (str, optional): string that separates the rows of the
+            table
+
+        tableSymbols (str, optional): one of the following three values:
+
+            * &#34;base62&#34; (default) ... the element of the tomonoid will be
+                diplayed as symbls from the number system 62, that is, the
+                characters from
+                `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz`
+                where `0` represents the neutral element (unit)
+            * &#34;int&#34; ... the element of the tomonoid will be diplayed as
+                non-negative integers starting from `0` which will represent
+                the neutral element (unit)
+            * &#34;0xyz1&#34; ...  the element of the tomonoid will be diplayed as
+                the characters from the set:
+                `&#34;0&#34;`, ..., `&#34;x&#34;`, `&#34;y&#34;`, `&#34;z&#34;`, `&#34;1&#34;`
+                In this case, the table will be left-right flipped
+                (according to the vertical axis).
+                This style of depicting the Cayley table corresponds with
+                the style used in the referenced papers
+                [PeVe14,PeVe16,PeVe17,PeVe19], while the previous two
+                styles reflect the inner representation of the tomonoid.
+
+        identifierSymbols (str, optional): in which set of symbols shall
+            the f. n. tomonoid identifiers be written;
+
+            * &#34;base62&#34; (default) ... the identifiers will be written as
+                numbers in the number system with 62 digits
+            * &#34;int&#34; ... the identifiers will be written as decimal numbers
+
+        addOriginal (bool, optional): if `True` then the identifier of the
+            tomonoid, from which this tomonoid has been initialized as its
+            copy, will be added to the head of the returned table
+
+    Returns:
+        str: Cayley table of the monoid with a head containing the tomonoid
+            identifier, the size of the tomonoid, and the identifier of the
+            parent of the tomonoid
+    &#34;&#34;&#34;
+    text = &#34;&#34;
+    text += &#34;@&#34;
+    if self.identifier == None:
+        text += &#34;?&#34;
+    else:
+        if identifierSymbols == &#34;base62&#34; or identifierSymbols == &#34;Base62&#34;:
+            text += fntom.convertDecimalToBase62(self.identifier)
+        elif identifierSymbols == &#34;int&#34;:
+            text += str(self.identifier)
+        else:
+            text += &#34;!&#34;
+    text += &#34;,&#34;
+    text += str(self.size)
+    text += &#34;,&#34;
+    if self.parent == None:
+        text += &#34;-&#34;
+    else:
+        if identifierSymbols == &#34;base62&#34; or identifierSymbols == &#34;Base62&#34;:
+            text += fntom.convertDecimalToBase62(self.parent.identifier)
+        elif identifierSymbols == &#34;int&#34;:
+            text += str(self.parent.identifier)
+        else:
+            text += &#34;?&#34;
+    if addOriginal:
+        text += &#34;,&#34;
+        if self.original == None:
+            text += &#34;-&#34;
+        else:
+            if identifierSymbols == &#34;base62&#34; or identifierSymbols == &#34;Base62&#34;:
+                text += fntom.convertDecimalToBase62(self.original.identifier)
+            elif identifierSymbols == &#34;int&#34;:
+                text += str(self.original.identifier)
+            else:
+                text += &#34;?&#34;
+    text += &#34;\n&#34;
+    text += self.exportTableToText(
+        separator = separator,
+        endLine = endLine,
+        tableSymbols = tableSymbols)
+    return text</code></pre>
+</details>
+</dd>
+<dt id="fntom.FNTOMonoid.FNTOMonoid.getCopy"><code class="name flex">
+<span>def <span class="ident">getCopy</span></span>(<span>self, identifier=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Creates and returns a copy of this f. n. tomonoid.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>identifier</code></strong> :&ensp;<code>int</code></dt>
+<dd>identifier of the newly created <code><a title="fntom.FNTOMonoid.FNTOMonoid" href="#fntom.FNTOMonoid.FNTOMonoid">FNTOMonoid</a></code></dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code><a title="fntom.FNTOMonoid.FNTOMonoid" href="#fntom.FNTOMonoid.FNTOMonoid">FNTOMonoid</a></code></dt>
+<dd>a deep copy of this instance</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getCopy(self, identifier = None):
+    &#34;&#34;&#34;
+    Creates and returns a copy of this f. n. tomonoid.
+
+    Args:
+        identifier (int): identifier of the newly created `FNTOMonoid`
+
+    Returns:
+        FNTOMonoid: a deep copy of this instance
+    &#34;&#34;&#34;
+    return FNTOMonoid(identifier = identifier, original = self)</code></pre>
+</details>
+</dd>
+<dt id="fntom.FNTOMonoid.FNTOMonoid.getLeftDefiningIdempotentBoundary"><code class="name flex">
+<span>def <span class="ident">getLeftDefiningIdempotentBoundary</span></span>(<span>self, definingIdempotentLeft)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Auxiliary method.</p>
+<p>Its result is utilized in <code><a title="fntom.FNTOMonoid.FNTOMonoid.computeCoExtensions" href="#fntom.FNTOMonoid.FNTOMonoid.computeCoExtensions">FNTOMonoid.computeCoExtensions()</a></code> to perform
+the test whether a chosen pair of defining idempotents will yield any
+co-extensions by calling <code><a title="fntom.FNTOMonoid.FNTOMonoid.isUsablePairOfIdempotents" href="#fntom.FNTOMonoid.FNTOMonoid.isUsablePairOfIdempotents">FNTOMonoid.isUsablePairOfIdempotents()</a></code>.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>definingIdempotentLeft</code></strong> :&ensp;<code>int</code></dt>
+<dd>one of the idempotents of the f. n.
+tomonoid</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>int</code></dt>
+<dd>the highest value <code>boundaryOfLeft</code> such that the pair
+<code>(boundaryOfLeft, definingIdempotentLeft)</code> belongs to the atom
+level equivalence class or to no level equivalence class.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getLeftDefiningIdempotentBoundary(self, definingIdempotentLeft):
+    &#34;&#34;&#34;
+    Auxiliary method.
+
+    Its result is utilized in `FNTOMonoid.computeCoExtensions` to perform
+    the test whether a chosen pair of defining idempotents will yield any
+    co-extensions by calling `FNTOMonoid.isUsablePairOfIdempotents`.
+
+    Args:
+        definingIdempotentLeft (int): one of the idempotents of the f. n.
+            tomonoid
+
+    Returns:
+        int: the highest value `boundaryOfLeft` such that the pair
+            `(boundaryOfLeft, definingIdempotentLeft)` belongs to the atom
+            level equivalence class or to no level equivalence class.
+    &#34;&#34;&#34;
+    boundaryOfLeft = self.atom
+    for i in range(self.coatom, self.zero, 1):
+        value = self.getValue((definingIdempotentLeft, i))
+        if self.isAtomOrNotElement(value):
+            boundaryOfLeft = i
+            break
+    return boundaryOfLeft</code></pre>
+</details>
+</dd>
+<dt id="fntom.FNTOMonoid.FNTOMonoid.getRightDefiningIdempotentBoundary"><code class="name flex">
+<span>def <span class="ident">getRightDefiningIdempotentBoundary</span></span>(<span>self, definingIdempotentRight)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Auxiliary method.</p>
+<p>Its result is utilized in <code><a title="fntom.FNTOMonoid.FNTOMonoid.computeCoExtensions" href="#fntom.FNTOMonoid.FNTOMonoid.computeCoExtensions">FNTOMonoid.computeCoExtensions()</a></code> to perform
+the test whether a chosen pair of defining idempotents will yield any
+co-extensions by calling <code><a title="fntom.FNTOMonoid.FNTOMonoid.isUsablePairOfIdempotents" href="#fntom.FNTOMonoid.FNTOMonoid.isUsablePairOfIdempotents">FNTOMonoid.isUsablePairOfIdempotents()</a></code>.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>definingIdempotentRight</code></strong> :&ensp;<code>int</code></dt>
+<dd>one of the idempotents of the f. n.
+tomonoid</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>int</code></dt>
+<dd>the highest value <code>boundaryOfRight</code> such that the pair
+<code>(boundaryOfRight, definingIdempotentRight)</code> belongs to the atom
+level equivalence class or to no level equivalence class.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getRightDefiningIdempotentBoundary(self, definingIdempotentRight):
+    &#34;&#34;&#34;
+    Auxiliary method.
+
+    Its result is utilized in `FNTOMonoid.computeCoExtensions` to perform
+    the test whether a chosen pair of defining idempotents will yield any
+    co-extensions by calling `FNTOMonoid.isUsablePairOfIdempotents`.
+
+    Args:
+        definingIdempotentRight (int): one of the idempotents of the f. n.
+            tomonoid
+
+    Returns:
+        int: the highest value `boundaryOfRight` such that the pair
+            `(boundaryOfRight, definingIdempotentRight)` belongs to the atom
+            level equivalence class or to no level equivalence class.
+    &#34;&#34;&#34;
+    boundaryOfRight = self.atom
+    for i in range(self.coatom, self.zero, 1):
+        value = self.getValue((i, definingIdempotentRight))
+        if self.isAtomOrNotElement(value):
+            boundaryOfRight = i
+            break
+    return boundaryOfRight</code></pre>
+</details>
+</dd>
+<dt id="fntom.FNTOMonoid.FNTOMonoid.getZeroDoublingExtension"><code class="name flex">
+<span>def <span class="ident">getZeroDoublingExtension</span></span>(<span>self, identifier=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Creates and returns a zero-doubling extensions of this f. n. tomonoid.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>identifier</code></strong> :&ensp;<code>int</code>, optional</dt>
+<dd>identifier of the newly created
+<code><a title="fntom.FNTOMonoid.FNTOMonoid" href="#fntom.FNTOMonoid.FNTOMonoid">FNTOMonoid</a></code></dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code><a title="fntom.FNTOMonoid.FNTOMonoid" href="#fntom.FNTOMonoid.FNTOMonoid">FNTOMonoid</a></code></dt>
+<dd>a zero-doubling extensions of this f. n. tomonoid</dd>
+</dl>
+<h2 id="see">See</h2>
+<p><code>LevelEquivalence.performZeroDoublingExtension()</code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getZeroDoublingExtension(self, identifier = None):
+    &#34;&#34;&#34;
+    Creates and returns a zero-doubling extensions of this f. n. tomonoid.
+
+    Args:
+        identifier (int, optional): identifier of the newly created
+            `FNTOMonoid`
+
+    Returns:
+        FNTOMonoid: a zero-doubling extensions of this f. n. tomonoid
+
+    See:
+        `LevelEquivalence.performZeroDoublingExtension()`
+    &#34;&#34;&#34;
+    return FNTOMonoid(identifier, parent = self)</code></pre>
+</details>
+</dd>
+<dt id="fntom.FNTOMonoid.FNTOMonoid.goThroughAllEvaluations"><code class="name flex">
+<span>def <span class="ident">goThroughAllEvaluations</span></span>(<span>self, counter)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Generates and returns all the valid one-element Rees co-extensions
+of this f. n. tomonoid.</p>
+<p>This method is called by <code><a title="fntom.FNTOMonoid.FNTOMonoid.computeCoExtensions" href="#fntom.FNTOMonoid.FNTOMonoid.computeCoExtensions">FNTOMonoid.computeCoExtensions()</a></code>.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>counter</code></strong> :&ensp;<code><a title="fntom.Counter" href="Counter.html">fntom.Counter</a></code></dt>
+<dd>serves to assign unique identifiers
+to the generated f. n. tomonoids</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>list</code> of <code><a title="fntom.FNTOMonoid.FNTOMonoid" href="#fntom.FNTOMonoid.FNTOMonoid">FNTOMonoid</a></code></dt>
+<dd>list of one-element co-extensions of this f. n.
+tomonoid, however, the greatest one-element co-extension (where
+<code>(atom, atom)</code> is evaluated to <code>atom</code>) is not included to the list</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def goThroughAllEvaluations(self, counter):
+    &#34;&#34;&#34;
+    Generates and returns all the valid one-element Rees co-extensions
+    of this f. n. tomonoid.
+
+    This method is called by `FNTOMonoid.computeCoExtensions`.
+
+    Args:
+        counter (fntom.Counter): serves to assign unique identifiers
+            to the generated f. n. tomonoids
+
+    Returns:
+        list of FNTOMonoid: list of one-element co-extensions of this f. n.
+            tomonoid, however, the greatest one-element co-extension (where
+            `(atom, atom)` is evaluated to `atom`) is not included to the list
+    &#34;&#34;&#34;
+    if len(self.eqClasses) &gt; self.size:
+        tomZero = self
+        tomAtom = self.getCopy()
+        try:
+            tomZero.mergeEqClassWithZero(self.size)
+            extensionsZero = tomZero.goThroughAllEvaluations(counter)
+        except fntom.Error.NotTOMPartition:
+            extensionsZero = []
+        try:
+            tomAtom.mergeEqClassWithAtom(self.size)
+            extensionsAtom = tomAtom.goThroughAllEvaluations(counter)
+        except fntom.Error.NotTOMPartition:
+            extensionsAtom = []
+        extensionsZero.extend(extensionsAtom)
+        return extensionsZero
+    else:
+        self.setIdentifier(counter.getNew())
+        return [ self ]</code></pre>
+</details>
+</dd>
+<dt id="fntom.FNTOMonoid.FNTOMonoid.goThroughAllEvaluationsBrute"><code class="name flex">
+<span>def <span class="ident">goThroughAllEvaluationsBrute</span></span>(<span>self, counter, onlyCommutative=False, onlyArchimedean=False)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Recursively generates all the potential one-element coextensions of this tomonoid
+and tests whether they meet the axioms of a finite, negative tomonoid.</p>
+<p>This method is called by the method <code><a title="fntom.FNTOMonoid.FNTOMonoid.computeCoExtensionsBrute" href="#fntom.FNTOMonoid.FNTOMonoid.computeCoExtensionsBrute">FNTOMonoid.computeCoExtensionsBrute()</a></code>.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>counter</code></strong> :&ensp;<code><a title="fntom.Counter" href="Counter.html">fntom.Counter</a></code></dt>
+<dd>serves to assign unique identifiers
+to the generated f. n. tomonoids</dd>
+<dt><strong><code>onlyCommutative</code></strong> :&ensp;<code>bool</code></dt>
+<dd>if <code>True</code> then only commutative
+co-extensions will be returned
+(it is, however, not checked whether this monoid is
+commutative)</dd>
+</dl>
+<p>onlyArchimedean(bool): if <code>True</code> then only Archimedean
+co-extensions will be returned
+(it is, however, not checked whether this monoid is
+Archimedean)</p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>list</code> of <code><a title="fntom.FNTOMonoid.FNTOMonoid" href="#fntom.FNTOMonoid.FNTOMonoid">FNTOMonoid</a></code></dt>
+<dd>the co-extensions of this f. n. tomonoid</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def goThroughAllEvaluationsBrute(self, counter, onlyCommutative = False, onlyArchimedean = False):
+    &#34;&#34;&#34;
+    Recursively generates all the potential one-element coextensions of this tomonoid
+    and tests whether they meet the axioms of a finite, negative tomonoid.
+
+    This method is called by the method `FNTOMonoid.computeCoExtensionsBrute`.
+
+    Args:
+        counter (fntom.Counter): serves to assign unique identifiers
+            to the generated f. n. tomonoids
+        onlyCommutative (bool): if `True` then only commutative
+            co-extensions will be returned
+            (it is, however, not checked whether this monoid is
+            commutative)
+        onlyArchimedean(bool): if `True` then only Archimedean
+            co-extensions will be returned
+            (it is, however, not checked whether this monoid is
+            Archimedean)
+
+    Returns:
+        list of FNTOMonoid: the co-extensions of this f. n. tomonoid
+    &#34;&#34;&#34;
+    if len(self.eqClasses) &gt; self.size:
+        tomZero = self
+        tomAtom = self.getCopy(counter.getNew())
+        tomZeroValid = True
+        tomAtomValid = True
+        try:
+            tomZero.mergeEqClassWithZero(self.size)
+        except fntom.Error.NotTOMPartition:
+            tomZeroValid = False
+        try:
+            tomAtom.mergeEqClassWithAtom(self.size)
+        except fntom.Error.NotTOMPartition:
+            tomAtomValid = False
+        if tomZeroValid:
+            extensionsZero = tomZero.goThroughAllEvaluationsBrute(
+                                        counter,
+                                        onlyCommutative = onlyCommutative,
+                                        onlyArchimedean = onlyArchimedean)
+        else:
+            extensionsZero = []
+        if tomAtomValid:
+            extensionsAtom = tomAtom.goThroughAllEvaluationsBrute(
+                                        counter,
+                                        onlyCommutative = onlyCommutative,
+                                        onlyArchimedean = onlyArchimedean)
+        else:
+            extensionsAtom = []
+        extensionsZero.extend(extensionsAtom)
+        return extensionsZero
+    else:
+        if onlyCommutative and self.performCommutativityTest() != None:
+            return []
+        if onlyArchimedean and self.performArchimedeanicityTest() != None:
+            return []
+        if self.performMonotonicityTest() != None:
+            return []
+        if self.performAssociativityTest() != None:
+            return []
+        return [self]</code></pre>
+</details>
+</dd>
+<dt id="fntom.FNTOMonoid.FNTOMonoid.isUsablePairOfIdempotents"><code class="name flex">
+<span>def <span class="ident">isUsablePairOfIdempotents</span></span>(<span>self, definingIdempotentLeft, definingIdempotentRight, boundaryOfRight, boundaryOfLeft)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Tests whether the chosen pair of defining idempotents fulfills the
+necessary requirements.</p>
+<p>Auxiliary method utilized by <code><a title="fntom.FNTOMonoid.FNTOMonoid.computeCoExtensions" href="#fntom.FNTOMonoid.FNTOMonoid.computeCoExtensions">FNTOMonoid.computeCoExtensions()</a></code>.</p>
+<p>It is, actually, not necessary to use this test, however, it speeds the
+algorithm up (there is a lower number of tracebacks).</p>
+<p>This optiomization is programmed according to Proposition 4.11 in the
+paper
+<a href="../../papers/Petrik_Vetterlein__Pomonoids__preprint.pdf">[PeVe19]</a>.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>definingIdempotentLeft</code></strong> :&ensp;<code>int</code></dt>
+<dd>the left value in the pair of
+defining idempotents</dd>
+<dt><strong><code>definingIdempotentRight</code></strong> :&ensp;<code>int</code></dt>
+<dd>the right value in the pair of
+defining idempotents</dd>
+<dt><strong><code>boundaryOfRight</code></strong> :&ensp;<code>int</code></dt>
+<dd>value returned by
+<code><a title="fntom.FNTOMonoid.FNTOMonoid.getRightDefiningIdempotentBoundary" href="#fntom.FNTOMonoid.FNTOMonoid.getRightDefiningIdempotentBoundary">FNTOMonoid.getRightDefiningIdempotentBoundary()</a></code></dd>
+<dt><strong><code>boundaryOfLeft</code></strong> :&ensp;<code>int</code></dt>
+<dd>value returned by
+<code><a title="fntom.FNTOMonoid.FNTOMonoid.getLeftDefiningIdempotentBoundary" href="#fntom.FNTOMonoid.FNTOMonoid.getLeftDefiningIdempotentBoundary">FNTOMonoid.getLeftDefiningIdempotentBoundary()</a></code></dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>bool</code></dt>
+<dd><code>False</code> if the given pair of defining idempotents cannot
+yield any co-extensions;
+<code>True</code> if it may yield some co-extensions (not granted, though)</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def isUsablePairOfIdempotents(
+        self,
+        definingIdempotentLeft,
+        definingIdempotentRight,
+        boundaryOfRight,
+        boundaryOfLeft):
+    &#34;&#34;&#34;
+    Tests whether the chosen pair of defining idempotents fulfills the
+    necessary requirements.
+
+    Auxiliary method utilized by `FNTOMonoid.computeCoExtensions`.
+
+    It is, actually, not necessary to use this test, however, it speeds the
+    algorithm up (there is a lower number of tracebacks).
+
+    This optiomization is programmed according to Proposition 4.11 in the
+    paper
+    [[PeVe19]](../../papers/Petrik_Vetterlein__Pomonoids__preprint.pdf).
+
+    Args:
+        definingIdempotentLeft (int): the left value in the pair of
+            defining idempotents
+        definingIdempotentRight (int): the right value in the pair of
+            defining idempotents
+        boundaryOfRight (int): value returned by
+            `FNTOMonoid.getRightDefiningIdempotentBoundary`
+        boundaryOfLeft (int): value returned by
+            `FNTOMonoid.getLeftDefiningIdempotentBoundary`
+
+    Returns:
+        bool: `False` if the given pair of defining idempotents cannot
+            yield any co-extensions;
+            `True` if it may yield some co-extensions (not granted, though)
+    &#34;&#34;&#34;
+    value = self.getValue((definingIdempotentLeft+1, boundaryOfRight))
+    if self.isAtomOrHigher(value):
+        return False
+    value = self.getValue((boundaryOfLeft, definingIdempotentRight+1))
+    if self.isAtomOrHigher(value):
+        return False
+    return True</code></pre>
+</details>
+</dd>
+<dt id="fntom.FNTOMonoid.FNTOMonoid.performE2"><code class="name flex">
+<span>def <span class="ident">performE2</span></span>(<span>self, commutative=False)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Performs Property (E2).</p>
+<p>For the detailed description, see Definition 4.2 in
+the paper
+<a href="../../papers/Petrik_Vetterlein__Coextensions__preprint.pdf">[PeVe17]</a>.</p>
+<p>Relates pairs <code>(a,e)</code> and <code>(d,c)</code> such that there is <code>b</code> such that the
+pairs <code>(a,b)</code> and <code>(b,c)</code> belong to the support of the f. n. tomonoid
+and, furthermore, <code>(a,b)</code> is related to <code>d</code> and <code>(b,c)</code> is related to
+<code>e</code>.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>commutative</code></strong> :&ensp;<code>bool</code></dt>
+<dd>if <code>True</code> then the optimization for
+commutative f. n.
+tomonoids is turned on</dd>
+<dt><strong><code>archimedean</code></strong> :&ensp;<code>bool</code></dt>
+<dd>if <code>False</code> then the optimization for
+non-Archimedean f. n.
+tomonoids is turned on</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def performE2(self, commutative = False):
+    &#34;&#34;&#34;
+    Performs Property (E2).
+
+    For the detailed description, see Definition 4.2 in
+    the paper
+    [[PeVe17]](../../papers/Petrik_Vetterlein__Coextensions__preprint.pdf).
+
+    Relates pairs `(a,e)` and `(d,c)` such that there is `b` such that the
+    pairs `(a,b)` and `(b,c)` belong to the support of the f. n. tomonoid
+    and, furthermore, `(a,b)` is related to `d` and `(b,c)` is related to
+    `e`.
+
+    Args:
+        commutative (bool): if `True` then the optimization for
+            commutative f. n.  tomonoids is turned on
+        archimedean (bool): if `False` then the optimization for
+            non-Archimedean f. n.  tomonoids is turned on
+    &#34;&#34;&#34;
+    for k in range(self.coatom, self.atom):
+        for pair in self.eqClasses[k]:
+            # discard the pairs that have unit coordinate
+            if self.isNotOnBorder(pair):
+                (a, b) = pair
+                # a simple optimization for commutative f. n. tomonoids
+                if not commutative or a &lt;= b:
+                    d = self.getValue((a,b))
+                    # find c such that (b,c) is evaluated strictly higher than
+                    # the atom and relate (a,e)~(d,c)
+                    for c in range(self.coatom, self.atom):
+                        e = self.getValue((b,c))
+                        if self.isZeroOrAtomOrNotElement(e):
+                            break
+                        self.relatePairs((d,c), (a,e))</code></pre>
+</details>
+</dd>
+<dt id="fntom.FNTOMonoid.FNTOMonoid.performE3Archimedean"><code class="name flex">
+<span>def <span class="ident">performE3Archimedean</span></span>(<span>self, commutative=False)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Performs Property (E3).</p>
+<p>For the detailed description, see Definition 4.2 in
+the paper
+<a href="../../papers/Petrik_Vetterlein__Coextensions__preprint.pdf">[PeVe17]</a>.</p>
+<p>Relates particular pairs with zero.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>commutative</code></strong> :&ensp;<code>bool</code></dt>
+<dd>if <code>True</code> then the optimization for
+commutative f. n.
+tomonoids is turned on</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def performE3Archimedean(self, commutative = False):
+    &#34;&#34;&#34;
+    Performs Property (E3).
+
+    For the detailed description, see Definition 4.2 in
+    the paper
+    [[PeVe17]](../../papers/Petrik_Vetterlein__Coextensions__preprint.pdf).
+
+    Relates particular pairs with zero.
+
+    Args:
+        commutative (bool): if `True` then the optimization for
+            commutative f. n.  tomonoids is turned on
+    &#34;&#34;&#34;
+    i = self.coatom
+    j = self.atom
+    while i &lt; self.atom:
+        # An optimization for Archimedean f. n. tomonoids:
+        # The program considers only those pairs (i,j) such that:
+        #     i * j = zero or atom,
+        #     Succ(i) * j &gt; atom, and
+        #     i * Succ(j) &gt; atom,
+        # where Succ(.) is the f. n. tomonoid element that is by one closer
+        # to the unit
+        while i &lt; self.atom and not self.isZeroOrAtomOrNotElement(self.getValue((i, j))):
+            i += 1
+        while j &gt;= self.unit and self.isZeroOrAtomOrNotElement(self.getValue((i, j))):
+            j -= 1
+        j += 1
+        # a simple optimization for commutative Archimedean f. n. tomonoids
+        if commutative and i &gt; j:
+            break
+        # (E3) first part
+        a = i
+        b = j
+        c = self.coatom
+        e = self.getValue((b, c))
+        if self.isHigherThanAtom(e):
+            self.setPairToZero((a, e))
+        # (E3) second part
+        a = self.coatom
+        b = i
+        c = j
+        d = self.getValue((a, b))
+        if self.isHigherThanAtom(d):
+            self.setPairToZero((d, c))
+        if j &lt;= self.coatom:
+            break
+        j -= 1</code></pre>
+</details>
+</dd>
+<dt id="fntom.FNTOMonoid.FNTOMonoid.performE3aGeneral"><code class="name flex">
+<span>def <span class="ident">performE3aGeneral</span></span>(<span>self, commutative=False)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Performs Property (E3')(a).</p>
+<p>For the detailed description, see Definition 5.2 in
+the paper
+<a href="../../papers/Petrik_Vetterlein__Coextensions__preprint.pdf">[PeVe17]</a>.</p>
+<p>According to the chosen defining pair of idempotents, relates the
+corresponding pairs with zero.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>commutative</code></strong> :&ensp;<code>bool</code></dt>
+<dd>if <code>True</code> then the optimization for
+commutative f. n.
+tomonoids is turned on</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def performE3aGeneral(self, commutative = False):
+    &#34;&#34;&#34;
+    Performs Property (E3&#39;)(a).
+
+    For the detailed description, see Definition 5.2 in
+    the paper
+    [[PeVe17]](../../papers/Petrik_Vetterlein__Coextensions__preprint.pdf).
+
+    According to the chosen defining pair of idempotents, relates the
+    corresponding pairs with zero.
+
+    Args:
+        commutative (bool): if `True` then the optimization for
+            commutative f. n.  tomonoids is turned on
+    &#34;&#34;&#34;
+    i = self.coatom
+    j = self.atom
+    while i &lt; self.atom:
+        # An optimization:
+        # The program considers only those pairs (i,j) such that:
+        #     i * j = zero or atom,
+        #     Succ(i) * j &gt; atom, and
+        #     i * Succ(j) &gt; atom,
+        # where Succ(.) is the f. n. tomonoid element that is by one closer
+        # to the unit
+        while i &lt; self.atom and not self.isZeroOrAtomOrNotElement(self.getValue((i, j))):
+            i += 1
+        while j &gt;= self.unit and self.isZeroOrAtomOrNotElement(self.getValue((i, j))):
+            j -= 1
+        j += 1
+        # a simple optimization for commutative f. n. tomonoids
+        if commutative and i &gt; j:
+            break
+        # (E3&#39;)(a) first part
+        if i &gt; self.definingIdempotentLeft:
+            a = i
+            b = j
+            c = self.definingIdempotentRight + 1
+            e = self.getValue((b, c))
+            if self.isHigherThanAtom(e):
+                self.setPairToZero((a, e))
+        # (E3&#39;)(a) second part
+        if j &gt; self.definingIdempotentRight:
+            a = self.definingIdempotentLeft + 1
+            b = i
+            c = j
+            d = self.getValue((a, b))
+            if self.isHigherThanAtom(d):
+                self.setPairToZero((d, c))
+        if j &lt;= self.coatom:
+            break
+        j -= 1</code></pre>
+</details>
+</dd>
+<dt id="fntom.FNTOMonoid.FNTOMonoid.performE3bGeneral"><code class="name flex">
+<span>def <span class="ident">performE3bGeneral</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Performs Property (E3')(b).</p>
+<p>For the detailed description, see Definition 5.2 in
+the paper
+<a href="../../papers/Petrik_Vetterlein__Coextensions__preprint.pdf">[PeVe17]</a>.</p>
+<p>Relates pairs <code>(a,e)</code> and <code>(d,c)</code> such that there is <code>b</code> such that the
+pairs <code>(a,b)</code> and <code>(b,c)</code> belong to the support of the f. n. tomonoid
+and, furthermore, <code>(a,b)</code> is related to <code>d</code> and <code>(b,c)</code> is related to
+<code>e</code>.</p>
+<p>According to the chosen defining pair of idempotents, relates pairs
+<code>(a,b)</code> and <code>(a,e)</code> (and pairs <code>(b,a)</code> and <code>(e,a)</code>) in the complement
+of the support of the f. n. tomonoid.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def performE3bGeneral(self):
+    &#34;&#34;&#34;
+    Performs Property (E3&#39;)(b).
+
+    For the detailed description, see Definition 5.2 in
+    the paper
+    [[PeVe17]](../../papers/Petrik_Vetterlein__Coextensions__preprint.pdf).
+
+    Relates pairs `(a,e)` and `(d,c)` such that there is `b` such that the
+    pairs `(a,b)` and `(b,c)` belong to the support of the f. n. tomonoid
+    and, furthermore, `(a,b)` is related to `d` and `(b,c)` is related to
+    `e`.
+
+    According to the chosen defining pair of idempotents, relates pairs
+    `(a,b)` and `(a,e)` (and pairs `(b,a)` and `(e,a)`) in the complement
+    of the support of the f. n. tomonoid.
+    &#34;&#34;&#34;
+    if self.definingIdempotentRight &gt; self.unit:
+        c = self.definingIdempotentRight
+        finish = False
+        for b in range(self.coatom, self.atom):
+            e = self.getValue((b, c))
+            if b &lt; e:
+                if not self.isElement(e):
+                    e = self.atom
+                    finish = True
+                for a in range(self.atom - 1, self.unit, -1):
+                    if self.isHigherThanAtom(self.getValue((a, b))):
+                        break
+                    self.relateColumn(a, b, e)
+                if finish:
+                    break
+    if self.definingIdempotentLeft &gt; self.unit:
+        a = self.definingIdempotentLeft
+        finish = False
+        for b in range(self.coatom, self.atom, 1):
+            d = self.getValue((a,b))
+            if b &lt; d:
+                if not self.isElement(d):
+                    d = self.atom
+                    finish = True
+                for c in range(self.atom-1, self.unit, -1):
+                    if self.isHigherThanAtom(self.getValue((b,c))):
+                        break
+                    self.relateRow(b, d, c)
+                if finish:
+                    break</code></pre>
+</details>
+</dd>
+<dt id="fntom.FNTOMonoid.FNTOMonoid.performE4Archimedean"><code class="name flex">
+<span>def <span class="ident">performE4Archimedean</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Performs Property (E4).</p>
+<p>For the detailed description, see Definition 4.2 in
+the paper
+<a href="../../papers/Petrik_Vetterlein__Coextensions__preprint.pdf">[PeVe17]</a>.</p>
+<p>Relates the pairs <code>(atom, coatom)</code> and <code>(coatom, atom)</code> to <code>zero</code>.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def performE4Archimedean(self):
+    &#34;&#34;&#34;
+    Performs Property (E4).
+
+    For the detailed description, see Definition 4.2 in
+    the paper
+    [[PeVe17]](../../papers/Petrik_Vetterlein__Coextensions__preprint.pdf).
+
+    Relates the pairs `(atom, coatom)` and `(coatom, atom)` to `zero`.
+    &#34;&#34;&#34;
+    self.setPairToZero((self.coatom, self.atom))
+    self.setPairToZero((self.atom, self.coatom))</code></pre>
+</details>
+</dd>
+<dt id="fntom.FNTOMonoid.FNTOMonoid.performE4General"><code class="name flex">
+<span>def <span class="ident">performE4General</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Performs Property (E4').</p>
+<p>For the detailed description, see Definition 5.2 in
+the paper
+<a href="../../papers/Petrik_Vetterlein__Coextensions__preprint.pdf">[PeVe17]</a>.</p>
+<p>According to the chosen defining pair of idempotents, relates the
+corresponding pairs with zero or atom.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def performE4General(self):
+    &#34;&#34;&#34;
+    Performs Property (E4&#39;).
+
+    For the detailed description, see Definition 5.2 in
+    the paper
+    [[PeVe17]](../../papers/Petrik_Vetterlein__Coextensions__preprint.pdf).
+
+    According to the chosen defining pair of idempotents, relates the
+    corresponding pairs with zero or atom.
+    &#34;&#34;&#34;
+    self.setPairToZero((self.definingIdempotentLeft + 1, self.atom))
+    self.setPairToZero((self.atom, self.definingIdempotentRight + 1))
+    if self.definingIdempotentLeft != self.unit:
+        self.setPairToAtom((self.definingIdempotentLeft, self.atom))
+    if self.definingIdempotentRight != self.unit:
+        self.setPairToAtom((self.atom, self.definingIdempotentRight))</code></pre>
+</details>
+</dd>
+<dt id="fntom.FNTOMonoid.FNTOMonoid.setIdempotents"><code class="name flex">
+<span>def <span class="ident">setIdempotents</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Sets the attribute <code>idempotents</code> to contain all the idempotents of the
+f. n. tomonoid apart from <code>zero</code>.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def setIdempotents(self):
+    &#34;&#34;&#34;
+    Sets the attribute `idempotents` to contain all the idempotents of the
+    f. n. tomonoid apart from `zero`.
+    &#34;&#34;&#34;
+    self.idempotents = self.findIdempotents() + [ self.unit ]</code></pre>
+</details>
+</dd>
+<dt id="fntom.FNTOMonoid.FNTOMonoid.setIdentifier"><code class="name flex">
+<span>def <span class="ident">setIdentifier</span></span>(<span>self, identifier)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Sets the value of the attribute <code>identifier</code>.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def setIdentifier(self, identifier):
+    &#34;&#34;&#34;
+    Sets the value of the attribute `identifier`.
+    &#34;&#34;&#34;
+    self.identifier = identifier</code></pre>
+</details>
+</dd>
+<dt id="fntom.FNTOMonoid.FNTOMonoid.show"><code class="name flex">
+<span>def <span class="ident">show</span></span>(<span>self, separator=', ', endLine='\n', tableSymbols='base62')</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Prints the values of the attributes of this instance to the terminal
+output.</p>
+<p>This method serves mostly to debugging purposes.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def show(self, separator = &#34;, &#34;, endLine = &#34;\n&#34;, tableSymbols = &#34;base62&#34;):
+    &#34;&#34;&#34;
+    Prints the values of the attributes of this instance to the terminal
+        output.
+
+    This method serves mostly to debugging purposes.
+    &#34;&#34;&#34;
+    print(&#34;Identifier:&#34;, end = &#34; &#34;)
+    print(fntom.convertDecimalToBase62(self.identifier), end = &#34; &#34;)
+    print(&#34;(&#34; + str(self.identifier) + &#34;)&#34;, end = &#34;, &#34;)
+    print(&#34;parent:&#34;, end = &#34; &#34;)
+    if self.parent == None:
+        print(&#34;-&#34;)
+    else:
+        print(fntom.convertDecimalToBase62(self.parent.identifier), end = &#34; &#34;)
+        print(&#34;(&#34; + str(self.parent.identifier) + &#34;)&#34;)
+    print(&#34;co-extensions:&#34;, end = &#34; &#34;)
+    if self.extensions == None or len(self.extensions) == 0:
+        print(&#34;empty&#34;)
+    else:
+        first = True
+        for coext in self.extensions:
+            print(fntom.convertDecimalToBase62(coext.identifier), end = &#34;&#34;)
+            print(&#34;(&#34; + str(coext.identifier) + &#34;)&#34;, end = &#34; &#34;)
+        print()
+    print(&#34;idempotents:&#34;, self.idempotents)
+    print(self.exportTableToText(separator = separator, endLine = endLine, tableSymbols = tableSymbols))</code></pre>
+</details>
+</dd>
+</dl>
+<h3>Inherited members</h3>
+<ul class="hlist">
+<li><code><b><a title="fntom.LevelEquivalence.LevelEquivalence" href="LevelEquivalence.html#fntom.LevelEquivalence.LevelEquivalence">LevelEquivalence</a></b></code>:
+<ul class="hlist">
+<li><code><a title="fntom.LevelEquivalence.LevelEquivalence.exportClassesToText" href="LevelEquivalence.html#fntom.LevelEquivalence.LevelEquivalence.exportClassesToText">exportClassesToText</a></code></li>
+<li><code><a title="fntom.LevelEquivalence.LevelEquivalence.exportTableToText" href="LevelEquivalence.html#fntom.LevelEquivalence.LevelEquivalence.exportTableToText">exportTableToText</a></code></li>
+<li><code><a title="fntom.LevelEquivalence.LevelEquivalence.findEqClass" href="LevelEquivalence.html#fntom.LevelEquivalence.LevelEquivalence.findEqClass">findEqClass</a></code></li>
+<li><code><a title="fntom.LevelEquivalence.LevelEquivalence.findIdempotents" href="LevelEquivalence.html#fntom.LevelEquivalence.LevelEquivalence.findIdempotents">findIdempotents</a></code></li>
+<li><code><a title="fntom.LevelEquivalence.LevelEquivalence.getTable" href="LevelEquivalence.html#fntom.LevelEquivalence.LevelEquivalence.getTable">getTable</a></code></li>
+<li><code><a title="fntom.LevelEquivalence.LevelEquivalence.getValue" href="LevelEquivalence.html#fntom.LevelEquivalence.LevelEquivalence.getValue">getValue</a></code></li>
+<li><code><a title="fntom.LevelEquivalence.LevelEquivalence.isAtomOrHigher" href="LevelEquivalence.html#fntom.LevelEquivalence.LevelEquivalence.isAtomOrHigher">isAtomOrHigher</a></code></li>
+<li><code><a title="fntom.LevelEquivalence.LevelEquivalence.isAtomOrNotElement" href="LevelEquivalence.html#fntom.LevelEquivalence.LevelEquivalence.isAtomOrNotElement">isAtomOrNotElement</a></code></li>
+<li><code><a title="fntom.LevelEquivalence.LevelEquivalence.isElement" href="LevelEquivalence.html#fntom.LevelEquivalence.LevelEquivalence.isElement">isElement</a></code></li>
+<li><code><a title="fntom.LevelEquivalence.LevelEquivalence.isHigherThanAtom" href="LevelEquivalence.html#fntom.LevelEquivalence.LevelEquivalence.isHigherThanAtom">isHigherThanAtom</a></code></li>
+<li><code><a title="fntom.LevelEquivalence.LevelEquivalence.isNotOnBorder" href="LevelEquivalence.html#fntom.LevelEquivalence.LevelEquivalence.isNotOnBorder">isNotOnBorder</a></code></li>
+<li><code><a title="fntom.LevelEquivalence.LevelEquivalence.isZeroOrAtomOrNotElement" href="LevelEquivalence.html#fntom.LevelEquivalence.LevelEquivalence.isZeroOrAtomOrNotElement">isZeroOrAtomOrNotElement</a></code></li>
+<li><code><a title="fntom.LevelEquivalence.LevelEquivalence.mergeEqClassWithAtom" href="LevelEquivalence.html#fntom.LevelEquivalence.LevelEquivalence.mergeEqClassWithAtom">mergeEqClassWithAtom</a></code></li>
+<li><code><a title="fntom.LevelEquivalence.LevelEquivalence.mergeEqClassWithZero" href="LevelEquivalence.html#fntom.LevelEquivalence.LevelEquivalence.mergeEqClassWithZero">mergeEqClassWithZero</a></code></li>
+<li><code><a title="fntom.LevelEquivalence.LevelEquivalence.performArchimedeanicityTest" href="LevelEquivalence.html#fntom.LevelEquivalence.LevelEquivalence.performArchimedeanicityTest">performArchimedeanicityTest</a></code></li>
+<li><code><a title="fntom.LevelEquivalence.LevelEquivalence.performAssociativityTest" href="LevelEquivalence.html#fntom.LevelEquivalence.LevelEquivalence.performAssociativityTest">performAssociativityTest</a></code></li>
+<li><code><a title="fntom.LevelEquivalence.LevelEquivalence.performCommutativityTest" href="LevelEquivalence.html#fntom.LevelEquivalence.LevelEquivalence.performCommutativityTest">performCommutativityTest</a></code></li>
+<li><code><a title="fntom.LevelEquivalence.LevelEquivalence.performMonotonicityTest" href="LevelEquivalence.html#fntom.LevelEquivalence.LevelEquivalence.performMonotonicityTest">performMonotonicityTest</a></code></li>
+<li><code><a title="fntom.LevelEquivalence.LevelEquivalence.performZeroDoublingExtension" href="LevelEquivalence.html#fntom.LevelEquivalence.LevelEquivalence.performZeroDoublingExtension">performZeroDoublingExtension</a></code></li>
+<li><code><a title="fntom.LevelEquivalence.LevelEquivalence.relateClasses" href="LevelEquivalence.html#fntom.LevelEquivalence.LevelEquivalence.relateClasses">relateClasses</a></code></li>
+<li><code><a title="fntom.LevelEquivalence.LevelEquivalence.relateColumn" href="LevelEquivalence.html#fntom.LevelEquivalence.LevelEquivalence.relateColumn">relateColumn</a></code></li>
+<li><code><a title="fntom.LevelEquivalence.LevelEquivalence.relatePairs" href="LevelEquivalence.html#fntom.LevelEquivalence.LevelEquivalence.relatePairs">relatePairs</a></code></li>
+<li><code><a title="fntom.LevelEquivalence.LevelEquivalence.relateRow" href="LevelEquivalence.html#fntom.LevelEquivalence.LevelEquivalence.relateRow">relateRow</a></code></li>
+<li><code><a title="fntom.LevelEquivalence.LevelEquivalence.setDesignatedValues" href="LevelEquivalence.html#fntom.LevelEquivalence.LevelEquivalence.setDesignatedValues">setDesignatedValues</a></code></li>
+<li><code><a title="fntom.LevelEquivalence.LevelEquivalence.setPairToAtom" href="LevelEquivalence.html#fntom.LevelEquivalence.LevelEquivalence.setPairToAtom">setPairToAtom</a></code></li>
+<li><code><a title="fntom.LevelEquivalence.LevelEquivalence.setPairToZero" href="LevelEquivalence.html#fntom.LevelEquivalence.LevelEquivalence.setPairToZero">setPairToZero</a></code></li>
+<li><code><a title="fntom.LevelEquivalence.LevelEquivalence.setRestToZero" href="LevelEquivalence.html#fntom.LevelEquivalence.LevelEquivalence.setRestToZero">setRestToZero</a></code></li>
+<li><code><a title="fntom.LevelEquivalence.LevelEquivalence.setValue" href="LevelEquivalence.html#fntom.LevelEquivalence.LevelEquivalence.setValue">setValue</a></code></li>
+</ul>
+</li>
+</ul>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="fntom" href="index.html">fntom</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="fntom.FNTOMonoid.FNTOMonoid" href="#fntom.FNTOMonoid.FNTOMonoid">FNTOMonoid</a></code></h4>
+<ul class="">
+<li><code><a title="fntom.FNTOMonoid.FNTOMonoid.computeCoExtensions" href="#fntom.FNTOMonoid.FNTOMonoid.computeCoExtensions">computeCoExtensions</a></code></li>
+<li><code><a title="fntom.FNTOMonoid.FNTOMonoid.computeCoExtensionsBrute" href="#fntom.FNTOMonoid.FNTOMonoid.computeCoExtensionsBrute">computeCoExtensionsBrute</a></code></li>
+<li><code><a title="fntom.FNTOMonoid.FNTOMonoid.exportToCompressedText" href="#fntom.FNTOMonoid.FNTOMonoid.exportToCompressedText">exportToCompressedText</a></code></li>
+<li><code><a title="fntom.FNTOMonoid.FNTOMonoid.exportToText" href="#fntom.FNTOMonoid.FNTOMonoid.exportToText">exportToText</a></code></li>
+<li><code><a title="fntom.FNTOMonoid.FNTOMonoid.getCopy" href="#fntom.FNTOMonoid.FNTOMonoid.getCopy">getCopy</a></code></li>
+<li><code><a title="fntom.FNTOMonoid.FNTOMonoid.getLeftDefiningIdempotentBoundary" href="#fntom.FNTOMonoid.FNTOMonoid.getLeftDefiningIdempotentBoundary">getLeftDefiningIdempotentBoundary</a></code></li>
+<li><code><a title="fntom.FNTOMonoid.FNTOMonoid.getRightDefiningIdempotentBoundary" href="#fntom.FNTOMonoid.FNTOMonoid.getRightDefiningIdempotentBoundary">getRightDefiningIdempotentBoundary</a></code></li>
+<li><code><a title="fntom.FNTOMonoid.FNTOMonoid.getZeroDoublingExtension" href="#fntom.FNTOMonoid.FNTOMonoid.getZeroDoublingExtension">getZeroDoublingExtension</a></code></li>
+<li><code><a title="fntom.FNTOMonoid.FNTOMonoid.goThroughAllEvaluations" href="#fntom.FNTOMonoid.FNTOMonoid.goThroughAllEvaluations">goThroughAllEvaluations</a></code></li>
+<li><code><a title="fntom.FNTOMonoid.FNTOMonoid.goThroughAllEvaluationsBrute" href="#fntom.FNTOMonoid.FNTOMonoid.goThroughAllEvaluationsBrute">goThroughAllEvaluationsBrute</a></code></li>
+<li><code><a title="fntom.FNTOMonoid.FNTOMonoid.isUsablePairOfIdempotents" href="#fntom.FNTOMonoid.FNTOMonoid.isUsablePairOfIdempotents">isUsablePairOfIdempotents</a></code></li>
+<li><code><a title="fntom.FNTOMonoid.FNTOMonoid.performE2" href="#fntom.FNTOMonoid.FNTOMonoid.performE2">performE2</a></code></li>
+<li><code><a title="fntom.FNTOMonoid.FNTOMonoid.performE3Archimedean" href="#fntom.FNTOMonoid.FNTOMonoid.performE3Archimedean">performE3Archimedean</a></code></li>
+<li><code><a title="fntom.FNTOMonoid.FNTOMonoid.performE3aGeneral" href="#fntom.FNTOMonoid.FNTOMonoid.performE3aGeneral">performE3aGeneral</a></code></li>
+<li><code><a title="fntom.FNTOMonoid.FNTOMonoid.performE3bGeneral" href="#fntom.FNTOMonoid.FNTOMonoid.performE3bGeneral">performE3bGeneral</a></code></li>
+<li><code><a title="fntom.FNTOMonoid.FNTOMonoid.performE4Archimedean" href="#fntom.FNTOMonoid.FNTOMonoid.performE4Archimedean">performE4Archimedean</a></code></li>
+<li><code><a title="fntom.FNTOMonoid.FNTOMonoid.performE4General" href="#fntom.FNTOMonoid.FNTOMonoid.performE4General">performE4General</a></code></li>
+<li><code><a title="fntom.FNTOMonoid.FNTOMonoid.setIdempotents" href="#fntom.FNTOMonoid.FNTOMonoid.setIdempotents">setIdempotents</a></code></li>
+<li><code><a title="fntom.FNTOMonoid.FNTOMonoid.setIdentifier" href="#fntom.FNTOMonoid.FNTOMonoid.setIdentifier">setIdentifier</a></code></li>
+<li><code><a title="fntom.FNTOMonoid.FNTOMonoid.show" href="#fntom.FNTOMonoid.FNTOMonoid.show">show</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.9.2</a>.</p>
+</footer>
+</body>
+</html>

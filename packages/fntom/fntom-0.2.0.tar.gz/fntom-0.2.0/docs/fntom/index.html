@@ -1,0 +1,1562 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.9.2" />
+<title>fntom API documentation</title>
+<meta name="description" content="This package contains an implementation of the algorithm that serves to find
+all the one-element Rees co-extensions of a given finite, negative …" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Package <code>fntom</code></h1>
+</header>
+<section id="section-intro">
+<p>This package contains an implementation of the algorithm that serves to find
+all the one-element Rees co-extensions of a given finite, negative totally
+ordered monoid (abbreviated by f. n. tomonoid).</p>
+<p>Note that a commutative f. n. tomonoid represents a conjunction in the
+semantics of a many-valued (fuzzy) logic that has finitely many totally ordered
+logical values.</p>
+<h2 id="representation-of-a-finite-set-of-logical-values">Representation Of A Finite Set Of Logical Values</h2>
+<p>An example of a totally ordered finite set of (five) logical values is:</p>
+<pre><code>0, 1/4, 2/4, 3/4, 1
+</code></pre>
+<p>where <code>1</code> is the "unit element" of the f. n. tomonoid and the "Truth" of the
+corresponding fuzzy logical semantics while <code>0</code> is the "zero element" and the
+logical "Falsity".</p>
+<p>In the papers (see <strong>References</strong> below), that are the foundation of this
+program, such a set would be described as</p>
+<pre><code>0, x, y, z, 1
+</code></pre>
+<p>since letters, compared to fractions, are easier to read.</p>
+<p>However, in order to work with these values in this program, it has turned out
+to be the best solution to represent them by non-negative integers such that
+<code>0</code> represents the unit and the greatest element represents the "zero".
+Hence the previous set of logical values is represented, in the program, by:</p>
+<pre><code>4, 3, 2, 1, 0
+</code></pre>
+<h2 id="many-valued-conjunctions">Many-valued conjunctions</h2>
+<p>A conjunction on a totally ordered set of finite set of logical values is every
+binary operation * such that:</p>
+<ul>
+<li><code>*</code> is associative, i.e, <code>(x*y)*y = x*(y*z)</code> for every <code>x</code>, <code>y</code>, and <code>z</code>
+from the set,</li>
+<li><code>*</code> is commutative , i.e, <code>x*y = y*x</code> for every <code>x</code> and <code>y</code> from the set,</li>
+<li><code>*</code> is monotone, i.e, <code>x &lt;= y</code> implies <code>x*z &lt;= y*z</code> for every <code>x</code>, <code>y</code>, and
+<code>z</code> from the set,</li>
+<li><code>1</code> is the neutral (unit) element of *, i.e, <code>x*1 = 1*x = x</code> for every <code>x</code>
+from the set.</li>
+</ul>
+<p>Hence the operation of the conjunction is not unique like in the case of the
+classical logic with two truth values.
+For example, in the case of four logical values there are four distinct
+conjunctions given by the following Cayley tables:</p>
+<table>
+<thead>
+<tr>
+<th>0</th>
+<th>y</th>
+<th>z</th>
+<th>1</th>
+<th></th>
+<th>0</th>
+<th>y</th>
+<th>z</th>
+<th>1</th>
+<th></th>
+<th>0</th>
+<th>y</th>
+<th>z</th>
+<th>1</th>
+<th></th>
+<th>0</th>
+<th>y</th>
+<th>z</th>
+<th>1</th>
+<th></th>
+<th>0</th>
+<th>y</th>
+<th>z</th>
+<th>1</th>
+<th></th>
+<th>0</th>
+<th>y</th>
+<th>z</th>
+<th>1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>z</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>y</td>
+<td>z</td>
+<td></td>
+<td>0</td>
+<td>y</td>
+<td>y</td>
+<td>z</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>z</td>
+<td>z</td>
+<td></td>
+<td>0</td>
+<td>y</td>
+<td>z</td>
+<td>z</td>
+<td></td>
+<td>0</td>
+<td>y</td>
+<td>z</td>
+<td>z</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>y</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>y</td>
+<td></td>
+<td>0</td>
+<td>y</td>
+<td>y</td>
+<td>y</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>y</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>y</td>
+<td>y</td>
+<td></td>
+<td>0</td>
+<td>y</td>
+<td>y</td>
+<td>y</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>Note that these Cayley tables are modified: they are left-right flipped.
+This way of depicting conjunctions is utilized in the referenced papers since
+it corresponds with the way of depicting <em>triangular norms</em> which represents
+many-valued conjunctions defined on the real unit interval <code>[0,1]</code>.</p>
+<p>However, the inner prepresentation of the logical values is done by the
+non-negative integers.
+If the program exports conjunctions in this representation, two changes are
+being made:</p>
+<ul>
+<li>the logical values are written as numbers in the Base62 number system (the
+numbers system with 62 digits:
+<code>0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</code>),</li>
+<li>the Cayley tables <strong>are not</strong> left-right flipped compared to the previous
+case.</li>
+</ul>
+<p>Hence the six four-valued conjunctions would be exprted as:</p>
+<table>
+<thead>
+<tr>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th></th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th></th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th></th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th></th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th></th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td></td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td></td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+<td></td>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+<td>3</td>
+<td></td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td></td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td></td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td></td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+<td></td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td></td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td></td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td></td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td></td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td></td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td></td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td></td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p>This way of exporting the conjunctions matches with their inner
+representation by the program.</p>
+<h2 id="finite-negative-totally-ordered-monoids-f-n-tomonoids">Finite, negative, totally ordered monoids (f. n. tomonoids)</h2>
+<p>A <em>finite, negative, totally ordered monoid</em> (abbreviated as <em>f. n. tomonoid</em>)
+of a size <code>n</code> (where <code>n</code> is a natural number) is a set <code>S</code> of <code>n</code> elements,
+denoted and ordered as:</p>
+<pre><code>0 &lt; ... &lt; x &lt; y &lt; z &lt; 1
+</code></pre>
+<p>Hence, <code>0</code> is the bottom element and <code>1</code> is the top element.
+Furthermore, this set is endowed with a binary operation <code>*</code> that satisfies,
+for every <code>a</code>, <code>b</code>, and <code>c</code> from the set <code>S</code>:</p>
+<ul>
+<li><code>(a*b)*b = a*(b*c)</code> (associativity),</li>
+<li>if <code>a &lt;= b</code> then <code>a*c &lt;= b*c</code> (monotonicity, or also, compatibility with
+the total order),</li>
+<li><code>a*1 = 1*a = a</code> (the top element <code>1</code> is also the neutral (unit) element of
+<code>*</code>).</li>
+</ul>
+<p>An element <code>a</code> of a f. n. tomonoid is called <em>idempotent</em> if <code>a*a=a</code>.
+The elements <code>0</code> and <code>1</code> are always idempotent and the are called the <em>trivial
+idempotents</em>.</p>
+<p>A f. n. tomonoid is called:</p>
+<ul>
+<li><em>commutative</em> if <code>a*b=b*a</code> for every <code>a</code> and <code>b</code> from the set <code>S</code>,</li>
+<li><em>Archimedean</em> if <code>0</code> and <code>1</code> are the only idempotents.</li>
+</ul>
+<p>Clearly, a f. n. tomonoid represents a totally ordered set of truth values
+together with a conjunction which is represented by the monoidal binary
+operation.</p>
+<h2 id="one-element-rees-quotients">One-element Rees quotients</h2>
+<p>Given a f. n. tomonoid <code>S</code>, its one-element Rees quotient can be constructed by
+"merging" its lowest element <code>0</code> and its second lowest element &alpha; (which
+is called the <em>atom</em>) into a new bottom element.
+For example, the one-element Rees quotient of the f. n. tomonoid:</p>
+<table>
+<thead>
+<tr>
+<th>0</th>
+<th>u</th>
+<th>v</th>
+<th>w</th>
+<th>x</th>
+<th>y</th>
+<th>z</th>
+<th>1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>v</td>
+<td>w</td>
+<td>x</td>
+<td>y</td>
+<td>z</td>
+<td>z</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>v</td>
+<td>w</td>
+<td>w</td>
+<td>y</td>
+<td>y</td>
+<td>y</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>v</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>v</td>
+<td>w</td>
+<td>w</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>v</td>
+<td>v</td>
+<td>v</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>u</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>is the f. n. tomonoid:</p>
+<table>
+<thead>
+<tr>
+<th>0</th>
+<th>v</th>
+<th>w</th>
+<th>x</th>
+<th>y</th>
+<th>z</th>
+<th>1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>v</td>
+<td>w</td>
+<td>x</td>
+<td>y</td>
+<td>z</td>
+<td>z</td>
+</tr>
+<tr>
+<td>0</td>
+<td>v</td>
+<td>w</td>
+<td>w</td>
+<td>y</td>
+<td>y</td>
+<td>y</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>v</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>v</td>
+<td>w</td>
+<td>w</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>v</td>
+<td>v</td>
+<td>v</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>Further, the one-element Rees quotient of the latter f. n. tomonoid is the f.
+n. tomonoid:</p>
+<table>
+<thead>
+<tr>
+<th>0</th>
+<th>w</th>
+<th>x</th>
+<th>y</th>
+<th>z</th>
+<th>1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>w</td>
+<td>x</td>
+<td>y</td>
+<td>z</td>
+<td>z</td>
+</tr>
+<tr>
+<td>0</td>
+<td>w</td>
+<td>w</td>
+<td>y</td>
+<td>y</td>
+<td>y</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>w</td>
+<td>w</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>and so on.
+This way we eventually end up with the trivial monoid which is a set that
+consists of the unit element, only.</p>
+<p>Instead of one-element Rees quotient we say just <em>one-element quotient</em>.</p>
+<h2 id="one-element-rees-co-extensions">One-element Rees co-extensions</h2>
+<p>If a f. n. tomonoid <code>T</code> is the one-element Rees quotient of a f. n. tomonoid
+<code>S</code> then <code>S</code> is a <em>one-element Rees co-extension</em> of <code>T</code>.
+Hence, in the previous section, the first f. n. tomonoid is a one-element Rees
+co-extension of the second one and the second f. n. tomonoid is a one-element
+Rees co-extension of the third one.</p>
+<p>Instead of one-element Rees co-extension we say just <em>one-element
+co-extension</em>, or just <em>co-extension</em>.</p>
+<p>Note that, while one-element quotients are unique, one-element co-extensions
+are not.
+For example, the f. n. tomonoid:</p>
+<table>
+<thead>
+<tr>
+<th>0</th>
+<th>x</th>
+<th>y</th>
+<th>z</th>
+<th>1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>x</td>
+<td>z</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>y</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>x</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>has 8 co-extensions:</p>
+<table>
+<thead>
+<tr>
+<th>0</th>
+<th>w</th>
+<th>x</th>
+<th>y</th>
+<th>z</th>
+<th>1</th>
+<th></th>
+<th>0</th>
+<th>w</th>
+<th>x</th>
+<th>y</th>
+<th>z</th>
+<th>1</th>
+<th></th>
+<th>0</th>
+<th>w</th>
+<th>x</th>
+<th>y</th>
+<th>z</th>
+<th>1</th>
+<th></th>
+<th>0</th>
+<th>w</th>
+<th>x</th>
+<th>y</th>
+<th>z</th>
+<th>1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>x</td>
+<td>z</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>x</td>
+<td>z</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>w</td>
+<td>x</td>
+<td>z</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>w</td>
+<td>x</td>
+<td>z</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>y</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>w</td>
+<td>y</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>y</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>w</td>
+<td>y</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>x</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>x</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>x</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>x</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>w</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>w</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>w</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>w</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>0</th>
+<th>w</th>
+<th>x</th>
+<th>y</th>
+<th>z</th>
+<th>1</th>
+<th></th>
+<th>0</th>
+<th>w</th>
+<th>x</th>
+<th>y</th>
+<th>z</th>
+<th>1</th>
+<th></th>
+<th>0</th>
+<th>w</th>
+<th>x</th>
+<th>y</th>
+<th>z</th>
+<th>1</th>
+<th></th>
+<th>0</th>
+<th>w</th>
+<th>x</th>
+<th>y</th>
+<th>z</th>
+<th>1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>w</td>
+<td>x</td>
+<td>z</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>w</td>
+<td>w</td>
+<td>x</td>
+<td>z</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>w</td>
+<td>w</td>
+<td>x</td>
+<td>z</td>
+<td></td>
+<td>0</td>
+<td>w</td>
+<td>w</td>
+<td>w</td>
+<td>x</td>
+<td>z</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>w</td>
+<td>w</td>
+<td>y</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>w</td>
+<td>y</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>w</td>
+<td>w</td>
+<td>y</td>
+<td></td>
+<td>0</td>
+<td>w</td>
+<td>w</td>
+<td>w</td>
+<td>w</td>
+<td>y</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>x</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>w</td>
+<td>x</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>w</td>
+<td>x</td>
+<td></td>
+<td>0</td>
+<td>w</td>
+<td>w</td>
+<td>w</td>
+<td>w</td>
+<td>x</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>w</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>w</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>w</td>
+<td></td>
+<td>0</td>
+<td>w</td>
+<td>w</td>
+<td>w</td>
+<td>w</td>
+<td>w</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>Notice that the second and the third one are non-commutative while the rest is
+commutative.</p>
+<h2 id="description-of-the-program">Description Of The Program</h2>
+<p>The aim of this package is to find all the one-element Rees co-extensions
+of a given f. n. tomonoid.
+For this purpose, the algorithm introduced in the referenced papers is
+utilized.
+It is performed by the method <code><a title="fntom.FNTOMonoid.FNTOMonoid.computeCoExtensions" href="FNTOMonoid.html#fntom.FNTOMonoid.FNTOMonoid.computeCoExtensions">FNTOMonoid.computeCoExtensions()</a></code>.</p>
+<p>Once the co-extensions of a given f. n. tomonoid can be all found, one can,
+starting from the trivial, single-element, f. n. tomonoid, find all the f. n.
+tomonoids up to a given size.
+The package implements this task, as well, by the method
+<code><a title="fntom.Utils.generateFNTomonoids" href="Utils.html#fntom.Utils.generateFNTomonoids">generateFNTomonoids()</a></code>.</p>
+<p>The number of f. n. tomonoids grows rapidly with their size (see the table in
+the next section).
+For this reason, a clever way of saving the generated f. n. tomonoids is
+needed.
+This package therefore contain a module <code><a title="fntom.CompressedFile" href="CompressedFile.html">fntom.CompressedFile</a></code> which
+implements a text file format where each saved f. n. tomonoid is decribed by
+its differences when compared to its parent (i.e., to the f. n. tomonoid from
+which it has been created as a co-extension).</p>
+<h2 id="table-with-numbers-of-finite-negative-tomonoids">Table with numbers of finite, negative tomonoids</h2>
+<p>Running this program on a personal computer, the following numbers of f. n.
+tomonoids have been achieved.</p>
+<table>
+<thead>
+<tr>
+<th align="right">size</th>
+<th align="right">all,</th>
+<th align="right">Archimedean,</th>
+<th align="right">commutative,</th>
+<th align="right">Archimedean and commutative</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="right">2</td>
+<td align="right">1</td>
+<td align="right">2</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">8</td>
+<td align="right">2</td>
+<td align="right">6</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">44</td>
+<td align="right">8</td>
+<td align="right">22</td>
+<td align="right">6</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">308</td>
+<td align="right">44</td>
+<td align="right">94</td>
+<td align="right">22</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">2641</td>
+<td align="right">333</td>
+<td align="right">451</td>
+<td align="right">95</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">27120</td>
+<td align="right">3543</td>
+<td align="right">2386</td>
+<td align="right">471</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">332507</td>
+<td align="right">54954</td>
+<td align="right">13775</td>
+<td align="right">2670</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">5035455</td>
+<td align="right">1297705</td>
+<td align="right">86417</td>
+<td align="right">17387</td>
+</tr>
+</tbody>
+</table>
+<h2 id="references">References</h2>
+<p>For the theoretical description of the problem and for the description of the
+algorithm se the paper:</p>
+<ul>
+<li>[PeVe17] M. Petrík and Th. Vetterlein.
+<em>Rees coextensions of finite, negative tomonoids.</em>
+Journal of Logic and Computation 27 (2017) 337-356.
+DOI: <a href="https://doi.org/10.1093/logcom/exv047">10.1093/logcom/exv047</a>,
+<a href="../../papers/Petrik_Vetterlein__Coextensions__preprint.pdf">PDF</a>.</li>
+</ul>
+<p>For a more detailed description of the algorithm see the papers:</p>
+<ul>
+<li>
+<p>[PeVe16] M. Petrík and Th. Vetterlein.
+<em>Algorithm to generate finite negative totally ordered monoids.</em>
+In: IPMU 2016: 16th International Conference on Information Processing
+and Management of Uncertainty in Knowledge-Based Systems.
+Eindhoven, Netherlands, June 20-24, 2016.
+<a href="../../papers/Petrik_Vetterlein__IPMU_2016__preprint.pdf">PDF</a>.</p>
+</li>
+<li>
+<p>[PeVe14] M. Petrík and Th. Vetterlein.
+<em>Algorithm to generate the Archimedean, finite, negative tomonoids.</em>
+In: Joint 7th International Conference on Soft Computing
+and Intelligent Systems and 15th International Symposium on Advanced Intelligent Systems.
+Kitakyushu, Japan, Dec. 3-6, 2014.
+DOI: <a href="https://doi.org/10.1109/SCIS-ISIS.2014.7044822">10.1109/SCIS-ISIS.2014.7044822</a>.
+<a href="../../papers/Petrik_Vetterlein__SCIS_ISIS_2014__preprint.pdf">PDF</a>.</p>
+</li>
+</ul>
+<p>For more details on one-element co-extensions of finite, negative, tomonoids see the paper:</p>
+<ul>
+<li>[PeVe19] M. Petrík and Th. Vetterlein.
+<em>Rees coextensions of finite tomonoids and free pomonoids.</em>
+Semigroup Forum 99 (2019) 345-367.
+DOI: <a href="https://doi.org/10.1007/s00233-018-9972-z">10.1007/s00233-018-9972-z</a>,
+<a href="../../papers/Petrik_Vetterlein__Pomonoids__preprint.pdf">PDF</a>.</li>
+</ul>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python"># -*- coding: UTF-8 -*-
+
+# This file is a part of fntom which is a Python3 package that implements a
+# finite, negative, totally ordered monoid together with methods to compute its
+# one-element Rees co-extensions.
+#
+# Copyright (C) 2021 Milan Petrík &lt;milan.petrik@protonmail.com&gt;
+#
+# Web page of the program: &lt;https://gitlab.com/petrikm/fntom&gt;
+#
+# fntom is free software: you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by the Free
+# Software Foundation, either version 3 of the License, or (at your option) any
+# later version.
+#
+# fntom is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+# FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+# details.
+#
+# You should have received a copy of the GNU General Public License along with
+# fntom. If not, see &lt;https://www.gnu.org/licenses/&gt;.
+
+&#34;&#34;&#34;
+This package contains an implementation of the algorithm that serves to find
+all the one-element Rees co-extensions of a given finite, negative totally
+ordered monoid (abbreviated by f. n. tomonoid).
+
+Note that a commutative f. n. tomonoid represents a conjunction in the
+semantics of a many-valued (fuzzy) logic that has finitely many totally ordered
+logical values.
+
+
+Representation of a finite set of logical values
+------------------------------------------------
+
+An example of a totally ordered finite set of (five) logical values is:
+
+    0, 1/4, 2/4, 3/4, 1
+
+where `1` is the &#34;unit element&#34; of the f. n. tomonoid and the &#34;Truth&#34; of the
+corresponding fuzzy logical semantics while `0` is the &#34;zero element&#34; and the
+logical &#34;Falsity&#34;.
+
+In the papers (see **References** below), that are the foundation of this
+program, such a set would be described as
+
+    0, x, y, z, 1
+
+since letters, compared to fractions, are easier to read.
+
+However, in order to work with these values in this program, it has turned out
+to be the best solution to represent them by non-negative integers such that
+`0` represents the unit and the greatest element represents the &#34;zero&#34;.
+Hence the previous set of logical values is represented, in the program, by:
+
+    4, 3, 2, 1, 0
+
+
+Many-valued conjunctions
+------------------------
+
+A conjunction on a totally ordered set of finite set of logical values is every
+binary operation * such that:
+
+  - `*` is associative, i.e, `(x*y)*y = x*(y*z)` for every `x`, `y`, and `z`
+    from the set,
+  - `*` is commutative , i.e, `x*y = y*x` for every `x` and `y` from the set,
+  - `*` is monotone, i.e, `x &lt;= y` implies `x*z &lt;= y*z` for every `x`, `y`, and
+    `z` from the set,
+  - `1` is the neutral (unit) element of *, i.e, `x*1 = 1*x = x` for every `x`
+    from the set.
+
+Hence the operation of the conjunction is not unique like in the case of the
+classical logic with two truth values.
+For example, in the case of four logical values there are four distinct
+conjunctions given by the following Cayley tables:
+
+| 0 | y | z | 1 |  | 0 | y | z | 1 |  | 0 | y | z | 1 |  | 0 | y | z | 1 |  | 0 | y | z | 1 |  | 0 | y | z | 1 |
+| - | - | - | - |  | - | - | - | - |  | - | - | - | - |  | - | - | - | - |  | - | - | - | - |  | - | - | - | - |
+| 0 | 0 | 0 | z |  | 0 | 0 | y | z |  | 0 | y | y | z |  | 0 | 0 | z | z |  | 0 | y | z | z |  | 0 | y | z | z |
+| 0 | 0 | 0 | y |  | 0 | 0 | 0 | y |  | 0 | y | y | y |  | 0 | 0 | 0 | y |  | 0 | 0 | y | y |  | 0 | y | y | y |
+| 0 | 0 | 0 | 1 |  | 0 | 0 | 0 | 1 |  | 0 | 0 | 0 | 1 |  | 0 | 0 | 0 | 1 |  | 0 | 0 | 0 | 1 |  | 0 | 0 | 0 | 1 |
+
+Note that these Cayley tables are modified: they are left-right flipped.
+This way of depicting conjunctions is utilized in the referenced papers since
+it corresponds with the way of depicting *triangular norms* which represents
+many-valued conjunctions defined on the real unit interval `[0,1]`.
+
+However, the inner prepresentation of the logical values is done by the
+non-negative integers.
+If the program exports conjunctions in this representation, two changes are
+being made:
+
+  - the logical values are written as numbers in the Base62 number system (the
+    numbers system with 62 digits:
+    `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz`),
+  - the Cayley tables **are not** left-right flipped compared to the previous
+    case.
+
+Hence the six four-valued conjunctions would be exprted as:
+
+| 0 | 1 | 2 | 3 |  | 0 | 1 | 2 | 3 |  | 0 | 1 | 2 | 3 |  | 0 | 1 | 2 | 3 |  | 0 | 1 | 2 | 3 |  | 0 | 1 | 2 | 3 |
+| - | - | - | - |  | - | - | - | - |  | - | - | - | - |  | - | - | - | - |  | - | - | - | - |  | - | - | - | - |
+| 1 | 3 | 3 | 3 |  | 1 | 2 | 3 | 3 |  | 1 | 2 | 2 | 3 |  | 1 | 1 | 3 | 3 |  | 1 | 1 | 2 | 3 |  | 1 | 1 | 2 | 3 |
+| 2 | 3 | 3 | 3 |  | 2 | 3 | 3 | 3 |  | 2 | 2 | 2 | 3 |  | 2 | 3 | 3 | 3 |  | 2 | 2 | 3 | 3 |  | 2 | 2 | 2 | 3 |
+| 3 | 3 | 3 | 3 |  | 3 | 3 | 3 | 3 |  | 3 | 3 | 3 | 3 |  | 3 | 3 | 3 | 3 |  | 3 | 3 | 3 | 3 |  | 3 | 3 | 3 | 3 |
+
+This way of exporting the conjunctions matches with their inner
+representation by the program.
+
+
+Finite, negative, totally ordered monoids (f. n. tomonoids)
+-----------------------------------------------------------
+
+A _finite, negative, totally ordered monoid_ (abbreviated as _f. n. tomonoid_)
+of a size `n` (where `n` is a natural number) is a set `S` of `n` elements,
+denoted and ordered as:
+
+    0 &lt; ... &lt; x &lt; y &lt; z &lt; 1
+
+Hence, `0` is the bottom element and `1` is the top element.
+Furthermore, this set is endowed with a binary operation `*` that satisfies,
+for every `a`, `b`, and `c` from the set `S`:
+
+  - `(a*b)*b = a*(b*c)` (associativity),
+  - if `a &lt;= b` then `a*c &lt;= b*c` (monotonicity, or also, compatibility with
+    the total order),
+  - `a*1 = 1*a = a` (the top element `1` is also the neutral (unit) element of
+    `*`).
+
+An element `a` of a f. n. tomonoid is called _idempotent_ if `a*a=a`.
+The elements `0` and `1` are always idempotent and the are called the _trivial
+idempotents_.
+
+A f. n. tomonoid is called:
+
+  - _commutative_ if `a*b=b*a` for every `a` and `b` from the set `S`,
+  - _Archimedean_ if `0` and `1` are the only idempotents.
+
+Clearly, a f. n. tomonoid represents a totally ordered set of truth values
+together with a conjunction which is represented by the monoidal binary
+operation.
+
+
+One-element Rees quotients
+--------------------------
+
+Given a f. n. tomonoid `S`, its one-element Rees quotient can be constructed by
+&#34;merging&#34; its lowest element `0` and its second lowest element &amp;alpha; (which
+is called the _atom_) into a new bottom element.
+For example, the one-element Rees quotient of the f. n. tomonoid:
+
+| 0 | u | v | w | x | y | z | 1 |
+| - | - | - | - | - | - | - | - |
+| 0 | 0 | v | w | x | y | z | z |
+| 0 | 0 | v | w | w | y | y | y |
+| 0 | 0 | 0 | 0 | 0 | v | x | x |
+| 0 | 0 | 0 | 0 | 0 | v | w | w |
+| 0 | 0 | 0 | 0 | 0 | v | v | v |
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | u |
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+is the f. n. tomonoid:
+
+| 0 | v | w | x | y | z | 1 |
+| - | - | - | - | - | - | - |
+| 0 | v | w | x | y | z | z |
+| 0 | v | w | w | y | y | y |
+| 0 | 0 | 0 | 0 | v | x | x |
+| 0 | 0 | 0 | 0 | v | w | w |
+| 0 | 0 | 0 | 0 | v | v | v |
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+Further, the one-element Rees quotient of the latter f. n. tomonoid is the f.
+n. tomonoid:
+
+| 0 | w | x | y | z | 1 |
+| - | - | - | - | - | - |
+| 0 | w | x | y | z | z |
+| 0 | w | w | y | y | y |
+| 0 | 0 | 0 | 0 | x | x |
+| 0 | 0 | 0 | 0 | w | w |
+| 0 | 0 | 0 | 0 | 0 | 0 |
+
+and so on.
+This way we eventually end up with the trivial monoid which is a set that
+consists of the unit element, only.
+
+Instead of one-element Rees quotient we say just _one-element quotient_.
+
+
+One-element Rees co-extensions
+------------------------------
+
+If a f. n. tomonoid `T` is the one-element Rees quotient of a f. n. tomonoid
+`S` then `S` is a _one-element Rees co-extension_ of `T`.
+Hence, in the previous section, the first f. n. tomonoid is a one-element Rees
+co-extension of the second one and the second f. n. tomonoid is a one-element
+Rees co-extension of the third one.
+
+Instead of one-element Rees co-extension we say just _one-element
+co-extension_, or just _co-extension_.
+
+Note that, while one-element quotients are unique, one-element co-extensions
+are not.
+For example, the f. n. tomonoid:
+
+| 0 | x | y | z | 1 |
+| - | - | - | - | - |
+| 0 | 0 | 0 | x | z |
+| 0 | 0 | 0 | 0 | y |
+| 0 | 0 | 0 | 0 | x |
+| 0 | 0 | 0 | 0 | 0 |
+
+has 8 co-extensions:
+
+| 0 | w | x | y | z | 1 |   | 0 | w | x | y | z | 1 |   | 0 | w | x | y | z | 1 |   | 0 | w | x | y | z | 1 |
+| - | - | - | - | - | - |   | - | - | - | - | - | - |   | - | - | - | - | - | - |   | - | - | - | - | - | - |
+| 0 | 0 | 0 | 0 | x | z |   | 0 | 0 | 0 | 0 | x | z |   | 0 | 0 | 0 | w | x | z |   | 0 | 0 | 0 | w | x | z |
+| 0 | 0 | 0 | 0 | 0 | y |   | 0 | 0 | 0 | 0 | w | y |   | 0 | 0 | 0 | 0 | 0 | y |   | 0 | 0 | 0 | 0 | w | y |
+| 0 | 0 | 0 | 0 | 0 | x |   | 0 | 0 | 0 | 0 | 0 | x |   | 0 | 0 | 0 | 0 | 0 | x |   | 0 | 0 | 0 | 0 | 0 | x |
+| 0 | 0 | 0 | 0 | 0 | w |   | 0 | 0 | 0 | 0 | 0 | w |   | 0 | 0 | 0 | 0 | 0 | w |   | 0 | 0 | 0 | 0 | 0 | w |
+| 0 | 0 | 0 | 0 | 0 | 0 |   | 0 | 0 | 0 | 0 | 0 | 0 |   | 0 | 0 | 0 | 0 | 0 | 0 |   | 0 | 0 | 0 | 0 | 0 | 0 |
+
+| 0 | w | x | y | z | 1 |   | 0 | w | x | y | z | 1 |   | 0 | w | x | y | z | 1 |   | 0 | w | x | y | z | 1 |
+| - | - | - | - | - | - |   | - | - | - | - | - | - |   | - | - | - | - | - | - |   | - | - | - | - | - | - |
+| 0 | 0 | 0 | w | x | z |   | 0 | 0 | w | w | x | z |   | 0 | 0 | w | w | x | z |   | 0 | w | w | w | x | z |
+| 0 | 0 | 0 | w | w | y |   | 0 | 0 | 0 | 0 | w | y |   | 0 | 0 | 0 | w | w | y |   | 0 | w | w | w | w | y |
+| 0 | 0 | 0 | 0 | 0 | x |   | 0 | 0 | 0 | 0 | w | x |   | 0 | 0 | 0 | 0 | w | x |   | 0 | w | w | w | w | x |
+| 0 | 0 | 0 | 0 | 0 | w |   | 0 | 0 | 0 | 0 | 0 | w |   | 0 | 0 | 0 | 0 | 0 | w |   | 0 | w | w | w | w | w |
+| 0 | 0 | 0 | 0 | 0 | 0 |   | 0 | 0 | 0 | 0 | 0 | 0 |   | 0 | 0 | 0 | 0 | 0 | 0 |   | 0 | 0 | 0 | 0 | 0 | 0 |
+
+Notice that the second and the third one are non-commutative while the rest is
+commutative.
+
+
+Description of the program
+--------------------------
+
+The aim of this package is to find all the one-element Rees co-extensions
+of a given f. n. tomonoid.
+For this purpose, the algorithm introduced in the referenced papers is
+utilized.
+It is performed by the method `fntom.FNTOMonoid.FNTOMonoid.computeCoExtensions`.
+
+Once the co-extensions of a given f. n. tomonoid can be all found, one can,
+starting from the trivial, single-element, f. n. tomonoid, find all the f. n.
+tomonoids up to a given size.
+The package implements this task, as well, by the method
+`fntom.Utils.generateFNTomonoids`.
+
+The number of f. n. tomonoids grows rapidly with their size (see the table in
+the next section).
+For this reason, a clever way of saving the generated f. n. tomonoids is
+needed.
+This package therefore contain a module `fntom.CompressedFile` which
+implements a text file format where each saved f. n. tomonoid is decribed by
+its differences when compared to its parent (i.e., to the f. n. tomonoid from
+which it has been created as a co-extension).
+
+
+Table with numbers of finite, negative tomonoids
+------------------------------------------------
+
+Running this program on a personal computer, the following numbers of f. n.
+tomonoids have been achieved.
+
+| size |    all, | Archimedean, | commutative, | Archimedean and commutative |
+| ----:| -------:| ------------:| ------------:| ---------------------------:|
+|    1 |       1 |            1 |            1 |                           1 |    
+|    2 |       1 |            1 |            1 |                           1 |    
+|    3 |       2 |            1 |            2 |                           1 |    
+|    4 |       8 |            2 |            6 |                           2 |    
+|    5 |      44 |            8 |           22 |                           6 |    
+|    6 |     308 |           44 |           94 |                          22 |   
+|    7 |    2641 |          333 |          451 |                          95 |   
+|    8 |   27120 |         3543 |         2386 |                         471 |  
+|    9 |  332507 |        54954 |        13775 |                        2670 | 
+|   10 | 5035455 |      1297705 |        86417 |                       17387 |
+
+
+References
+----------
+
+For the theoretical description of the problem and for the description of the
+algorithm se the paper:
+
+* [PeVe17] M. Petrík and Th. Vetterlein. 
+    *Rees coextensions of finite, negative tomonoids.*
+    Journal of Logic and Computation 27 (2017) 337-356. 
+    DOI: [10.1093/logcom/exv047](https://doi.org/10.1093/logcom/exv047),
+    [PDF](../../papers/Petrik_Vetterlein__Coextensions__preprint.pdf).
+
+For a more detailed description of the algorithm see the papers:
+
+* [PeVe16] M. Petrík and Th. Vetterlein. 
+    *Algorithm to generate finite negative totally ordered monoids.*
+    In: IPMU 2016: 16th International Conference on Information Processing 
+        and Management of Uncertainty in Knowledge-Based Systems.
+    Eindhoven, Netherlands, June 20-24, 2016.
+    [PDF](../../papers/Petrik_Vetterlein__IPMU_2016__preprint.pdf).
+
+* [PeVe14] M. Petrík and Th. Vetterlein. 
+    *Algorithm to generate the Archimedean, finite, negative tomonoids.*
+    In: Joint 7th International Conference on Soft Computing 
+        and Intelligent Systems and 15th International Symposium on Advanced Intelligent Systems.
+    Kitakyushu, Japan, Dec. 3-6, 2014.
+    DOI: [10.1109/SCIS-ISIS.2014.7044822](https://doi.org/10.1109/SCIS-ISIS.2014.7044822).
+    [PDF](../../papers/Petrik_Vetterlein__SCIS_ISIS_2014__preprint.pdf).
+    
+For more details on one-element co-extensions of finite, negative, tomonoids see the paper:
+
+* [PeVe19] M. Petrík and Th. Vetterlein. 
+    *Rees coextensions of finite tomonoids and free pomonoids.*
+    Semigroup Forum 99 (2019) 345-367. 
+    DOI: [10.1007/s00233-018-9972-z](https://doi.org/10.1007/s00233-018-9972-z),
+    [PDF](../../papers/Petrik_Vetterlein__Pomonoids__preprint.pdf).
+&#34;&#34;&#34;
+
+import fntom.Error
+from fntom.Constants import *
+from fntom.Counter import *
+from fntom.Utils import *
+from fntom.LevelEquivalence import *
+from fntom.FNTOMonoid import *
+from fntom.CompressedFile import *</code></pre>
+</details>
+</section>
+<section>
+<h2 class="section-title" id="header-submodules">Sub-modules</h2>
+<dl>
+<dt><code class="name"><a title="fntom.CompressedFile" href="CompressedFile.html">fntom.CompressedFile</a></code></dt>
+<dd>
+<div class="desc"><p>Definition of class <code><a title="fntom.CompressedFile" href="CompressedFile.html">fntom.CompressedFile</a></code> which implements reading of f. n. tomonoids
+from a "compressed" text file.</p></div>
+</dd>
+<dt><code class="name"><a title="fntom.Constants" href="Constants.html">fntom.Constants</a></code></dt>
+<dd>
+<div class="desc"><p>Definitions of global constants.
+At the moment, only the constants containing the version of the package are
+present.</p></div>
+</dd>
+<dt><code class="name"><a title="fntom.Counter" href="Counter.html">fntom.Counter</a></code></dt>
+<dd>
+<div class="desc"><p>Definition of class <code><a title="fntom.Counter" href="Counter.html">fntom.Counter</a></code> which serves to give the increasing sequence
+of natural numbers starting from <code>1</code>.</p></div>
+</dd>
+<dt><code class="name"><a title="fntom.Error" href="Error.html">fntom.Error</a></code></dt>
+<dd>
+<div class="desc"><p>Contains all the package-defined exceptions.</p></div>
+</dd>
+<dt><code class="name"><a title="fntom.FNTOMonoid" href="FNTOMonoid.html">fntom.FNTOMonoid</a></code></dt>
+<dd>
+<div class="desc"><p>Definition of class <code><a title="fntom.FNTOMonoid" href="FNTOMonoid.html">fntom.FNTOMonoid</a></code> which represents a finite, negative,
+totally ordered monoid.</p></div>
+</dd>
+<dt><code class="name"><a title="fntom.LevelEquivalence" href="LevelEquivalence.html">fntom.LevelEquivalence</a></code></dt>
+<dd>
+<div class="desc"><p>Definition of class <code><a title="fntom.LevelEquivalence" href="LevelEquivalence.html">fntom.LevelEquivalence</a></code> which implements a finite negative
+tomonoid partition.</p></div>
+</dd>
+<dt><code class="name"><a title="fntom.Utils" href="Utils.html">fntom.Utils</a></code></dt>
+<dd>
+<div class="desc"><p>Various utility functions.</p></div>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul>
+<li><a href="#representation-of-a-finite-set-of-logical-values">Representation of a finite set of logical values</a></li>
+<li><a href="#many-valued-conjunctions">Many-valued conjunctions</a></li>
+<li><a href="#finite-negative-totally-ordered-monoids-f-n-tomonoids">Finite, negative, totally ordered monoids (f. n. tomonoids)</a></li>
+<li><a href="#one-element-rees-quotients">One-element Rees quotients</a></li>
+<li><a href="#one-element-rees-co-extensions">One-element Rees co-extensions</a></li>
+<li><a href="#description-of-the-program">Description of the program</a></li>
+<li><a href="#table-with-numbers-of-finite-negative-tomonoids">Table with numbers of finite, negative tomonoids</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-submodules">Sub-modules</a></h3>
+<ul>
+<li><code><a title="fntom.CompressedFile" href="CompressedFile.html">fntom.CompressedFile</a></code></li>
+<li><code><a title="fntom.Constants" href="Constants.html">fntom.Constants</a></code></li>
+<li><code><a title="fntom.Counter" href="Counter.html">fntom.Counter</a></code></li>
+<li><code><a title="fntom.Error" href="Error.html">fntom.Error</a></code></li>
+<li><code><a title="fntom.FNTOMonoid" href="FNTOMonoid.html">fntom.FNTOMonoid</a></code></li>
+<li><code><a title="fntom.LevelEquivalence" href="LevelEquivalence.html">fntom.LevelEquivalence</a></code></li>
+<li><code><a title="fntom.Utils" href="Utils.html">fntom.Utils</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.9.2</a>.</p>
+</footer>
+</body>
+</html>

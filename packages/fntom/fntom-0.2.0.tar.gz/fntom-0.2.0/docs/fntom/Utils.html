@@ -1,0 +1,1293 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.9.2" />
+<title>fntom.Utils API documentation</title>
+<meta name="description" content="Various utility functions." />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>fntom.Utils</code></h1>
+</header>
+<section id="section-intro">
+<p>Various utility functions.</p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python"># -*- coding: UTF-8 -*-
+
+# This file is a part of fntom which is a Python3 package that implements a
+# finite, negative, totally ordered monoid together with methods to compute its
+# one-element Rees co-extensions.
+#
+# Copyright (C) 2021 Milan Petrík &lt;milan.petrik@protonmail.com&gt;
+#
+# Web page of the program: &lt;https://gitlab.com/petrikm/fntom&gt;
+#
+# fntom is free software: you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by the Free
+# Software Foundation, either version 3 of the License, or (at your option) any
+# later version.
+#
+# fntom is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+# FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+# details.
+#
+# You should have received a copy of the GNU General Public License along with
+# fntom. If not, see &lt;https://www.gnu.org/licenses/&gt;.
+
+&#34;&#34;&#34;
+    Various utility functions.
+&#34;&#34;&#34;
+
+__all__ = [
+        &#34;convertBase62ToDecimal&#34;,
+        &#34;convertDecimalToBase62&#34;,
+        &#34;convert0xyz1ToDecimal&#34;,
+        &#34;convertDecimalTo0xyz1&#34;,
+        &#34;generateFNTomonoids&#34;,
+        &#34;drawProgress&#34;,
+        &#34;saveToCompressed&#34;,
+        &#34;saveToUncompressed&#34;]
+
+import timeit
+import datetime
+import fntom
+
+# Encoding between Base62 and the other number systems.
+BASE62_ALPH = &#34;0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz&#34;
+BASE62_DICT = dict((character, index) for (index, character) in enumerate(BASE62_ALPH))
+BASE62_LEN = len(BASE62_ALPH)
+
+def convertBase62ToDecimal(base62):
+    &#34;&#34;&#34;
+    Converts the number given in the Base62 system to its counterpart in the
+    decimal system.
+
+    Base62 is the number system with 62 symbols:
+
+        0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+
+    Hence, for example,
+
+      * `0` is equivalent to `&#34;0&#34;`
+      * `10` is equivalent to `&#34;A&#34;`
+      * `20` is equivalent to `&#34;K&#34;`
+      * `36` is equivalent to `&#34;a&#34;`
+      * `61` is equivalent to `&#34;z&#34;`
+      * `62` is equivalent to `&#34;10&#34;`
+      * `620` is equivalent to `&#34;A0&#34;`
+        
+    Args:
+        base62 (str): number in the Base62 system
+
+    Returns:
+        int: number in the decimal system
+    &#34;&#34;&#34;
+    decimal = 0
+    for character in base62:
+        decimal = decimal * BASE62_LEN + BASE62_DICT[character]
+    return decimal
+
+def convertDecimalToBase62(decimal):
+    &#34;&#34;&#34;
+    Converts the number given in the decimal system to its counterpart in the
+    Base62 system.
+
+    Base62 is the number system with 62 symbols:
+
+        0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+
+    Hence, for example,
+
+      * `0` is equivalent to `&#34;0&#34;`
+      * `10` is equivalent to `&#34;A&#34;`
+      * `20` is equivalent to `&#34;K&#34;`
+      * `36` is equivalent to `&#34;a&#34;`
+      * `61` is equivalent to `&#34;z&#34;`
+      * `62` is equivalent to `&#34;10&#34;`
+      * `620` is equivalent to `&#34;A0&#34;`
+        
+    Args:
+        decimal (int): number in the decimal system
+
+    Returns:
+        str: number in the Base62 system
+    &#34;&#34;&#34;
+    base62 = &#34;&#34;
+    while decimal != 0:
+        (decimal, remainder) = divmod(decimal, BASE62_LEN)
+        base62 = BASE62_ALPH[remainder] + base62
+    if base62 == &#34;&#34;:
+        return BASE62_ALPH[0]
+    else:
+        return base62
+
+def convert0xyz1ToDecimal(element, size):
+    &#34;&#34;&#34;
+    Converts the name of the given f. n. tomonoid element in the &#34;0xyz1&#34; system
+    to its decimal representation.
+
+    The system &#34;0xyz1&#34; is how the elements of a f. n. tomonoid are denoted in
+    the referenced papers [PeVe14,PeVe16,PeVe17,PeVe19].
+
+    The bottom element is denoted as `&#34;0&#34;`, the top element is denoted by
+    `&#34;1&#34;`, and the rest of the elements is denoted by lower-case letters such
+    that the second greates element is denoted by `&#34;z&#34;`, the third greates
+    element is denoted by `&#34;y&#34;`, and so on.
+
+    Hence the elements of a f. n. tomonoid of size `5` would be:
+
+            `&#34;0&#34;`, `&#34;x&#34;`, `&#34;y&#34;`, `&#34;z&#34;`, `&#34;1&#34;`
+
+    In this case:
+
+      * `&#34;0&#34;` corresponds to decimal number `4`
+      * `&#34;x&#34;` corresponds to decimal number `3`
+      * `&#34;y&#34;` corresponds to decimal number `2`
+      * `&#34;z&#34;` corresponds to decimal number `1`
+      * `&#34;1&#34;` corresponds to decimal number `0`
+
+    Args:
+        element (str): the name of the f. n. tomonoid element in the &#34;0xyz1&#34;
+            system (one character)
+
+        size (int): number of the elements of the f. n. tomonoid
+
+    Returns:
+        int: number in the decimal system
+    &#34;&#34;&#34;
+    if element == &#34;1&#34;:
+        return 0
+    elif element == &#34;0&#34;:
+        return size - 1
+    else:
+        return ord(&#34;z&#34;) - ord(element) + 1
+
+def convertDecimalTo0xyz1(decimal, size):
+    &#34;&#34;&#34;
+    Converts the number given in the decimal system to its counterpart in the
+    &#34;0xyz1&#34; system.
+
+    The system &#34;0xyz1&#34; is how the elements of a f. n. tomonoid are denoted in
+    the referenced papers [PeVe14,PeVe16,PeVe17,PeVe19].
+
+    The bottom element is denoted as `&#34;0&#34;`, the top element is denoted by
+    `&#34;1&#34;`, and the rest of the elements is denoted by lower-case letters such
+    that the second greates element is denoted by `&#34;z&#34;`, the third greates
+    element is denoted by `&#34;y&#34;`, and so on.
+
+    Hence the elements of a f. n. tomonoid of size `5` would be:
+
+            `&#34;0&#34;`, `&#34;x&#34;`, `&#34;y&#34;`, `&#34;z&#34;`, `&#34;1&#34;`
+        
+    In this case:
+
+      * `&#34;0&#34;` corresponds to decimal number `4`
+      * `&#34;x&#34;` corresponds to decimal number `3`
+      * `&#34;y&#34;` corresponds to decimal number `2`
+      * `&#34;z&#34;` corresponds to decimal number `1`
+      * `&#34;1&#34;` corresponds to decimal number `0`
+
+    Args:
+        decimal (int): number in the decimal system
+
+        size (int): number of the elements of the f. n. tomonoid
+
+    Returns:
+        str: the name of the f. n. tomonoid element in the &#34;0xyz1&#34; system (one
+            character)
+    &#34;&#34;&#34;
+    if decimal == 0:
+        return &#34;1&#34;
+    elif decimal == size - 1:
+        return &#34;0&#34;
+    elif 0 &lt; decimal &lt; size - 1:
+        return chr(ord(&#34;z&#34;) - decimal + 1)
+    else:
+        return str(decimal)
+
+def generateFNTomonoids(
+        method = &#34;levelset&#34;,
+        startingFNTOMonoid = None,
+        upToSize = None,
+        depth = None,
+        archimedean = False,
+        commutative = False,
+        displayProgress = False,
+        counter = None):
+    &#34;&#34;&#34;
+    Generates recursively all the one-element Rees co-extensions of a given
+    f. n. tomonoid up to the given depth.
+
+    Args:
+        method (str, optional): can be `&#34;levelset&#34;` or `&#34;brute&#34;`;
+            if not specified, `&#34;levelset&#34;` is used
+
+              * `&#34;levelset&#34;` denotes the new method described in the referenced
+                papers [PeVe14,PeVe16,PeVe17,PeVe19]
+              * `&#34;brute&#34;` denotes &#34;a bit intelligent&#34; brute force method based
+                on generating all the potential one-element co-extensions of a
+                given tomonoid and testing whether they meet the axioms of a f.n.
+                tomonoid (i.e. associativity)
+
+        startingFNTOMonoid (fntom.FNTOMonoid, optional): the f. n.
+            tomonoid for which the co-extensions are supposed to be found;
+            if not specified, the trivial (one-element) monoid is used
+
+        upToSize (int, optional): up to which size the co-extensions are
+            recursively supposed to be found;
+            if not specified, the depth of value `1` is used which means that
+            only co-extensions of the size greater by one are found
+
+        depth (int, optional): up to which size, compared to the size of this
+            f. n. tomonoid, the co-extensions are recursively supposed to be found;
+            for example: if the size is `5` and `depth` is `3` then the
+            co-extensions are supposed to be generated up to size `8`;
+            if not specified, the depth of value `1` is used which means that
+            only co-extensions of the size greater by one are found
+
+        archimedean (bool, optional): if `True`, only Archimedean co-extensions
+            are found;
+            it is supposed that the starting f. n. tomonoid is Archimedean
+
+        commutative (bool, optional): if `True`, only commutative co-extensions
+            are found;
+            it is supposed that the starting f. n. tomonoid is commutative
+
+        displayProgress (bool): if `True` then a progres bar will be
+            displayed on the terminal during the computation of the
+            co-extensions
+
+        counter (fntom.Counter, optional): counter that will be used to
+            give unique identifiers to the generated f. n. tomonoids;
+            if not specified, the function will create its own instance of
+            `fntom.Counter`
+
+    Returns:
+        list of fntom.FNTOMonoid: the generated f. n. tomonoids
+    &#34;&#34;&#34;
+    if counter == None:
+        counter = fntom.Counter()
+    if startingFNTOMonoid == None:
+        # create the trivial monoid
+        startingFNTOMonoid = fntom.FNTOMonoid(counter.getNew(), size = 1)
+    monoids = [ startingFNTOMonoid ]
+    if upToSize == None:
+        if depth == None:
+            upToSize = startingFNTOMonoid.size + 1
+        else:
+            upToSize = startingFNTOMonoid.size + depth
+    sizeWidth = len(str(upToSize))
+    currentSize = startingFNTOMonoid.size
+    monoidsProcessed = 0
+    monoidsTotal = 1
+    numCoExtWidth = len(str(monoidsTotal))
+    report = startingFNTOMonoid.size * [ {&#34;number&#34;: None, &#34;time&#34;: None} ]
+    report.append( {&#34;number&#34;: 1, &#34;time&#34;: 0.0} )
+    index = 0
+    timeStart = timeit.default_timer()
+    numCoExt = 0
+    while index &lt; len(monoids):
+        while monoids[index].closed:
+            index += 1
+            monoidsProcessed += 1
+        if monoids[index].size &gt; currentSize:
+            if displayProgress:
+                currentMsg = &#34;Size &#34; + f&#34;{currentSize + 1:&gt;{sizeWidth}}&#34; + &#34;:&#34;
+                drawProgress(monoidsProcessed / monoidsTotal, msg = currentMsg)
+                timeEnd = timeit.default_timer()
+                timePassed = timeEnd - timeStart
+                print(&#34;&#34;, datetime.timedelta(seconds=timePassed), end = &#34; &#34;)
+                for k in range(2 * numCoExtWidth + 1):
+                    print(end = &#34; &#34;)
+                for k in range(2 * numCoExtWidth + 1):
+                    print(end = &#34;\b&#34;)
+                print(numCoExt)
+            currentSize += 1
+            monoidsProcessed = 0
+            monoidsTotal = numCoExt
+            numCoExtWidth = len(str(monoidsTotal))
+            timeEnd = timeit.default_timer()
+            timePassed = timeEnd - timeStart
+            report.append( {&#34;number&#34;: numCoExt, &#34;time&#34;: timePassed} )
+            numCoExt = 0
+            timeStart = timeEnd
+        if index &lt; len(monoids) and monoids[index].size &lt; upToSize:
+            if displayProgress:
+                currentMsg = &#34;Size &#34; + f&#34;{currentSize + 1:&gt;{sizeWidth}}&#34; + &#34;:&#34;
+                drawProgress(monoidsProcessed / monoidsTotal, msg = currentMsg)
+                if monoidsProcessed &gt; 0:
+                    timeEnd = timeit.default_timer()
+                    timePassed = timeEnd - timeStart
+                    timeEstTotal = monoidsTotal * timePassed / monoidsProcessed
+                    timeEstRemaining = timeEstTotal - timePassed
+                    print(&#34;&#34;, datetime.timedelta(seconds=timeEstRemaining), end = &#34; &#34;)
+                    print(f&#34;{monoidsProcessed:&gt;{numCoExtWidth}}&#34; + &#34;/&#34; + str(monoidsTotal), end = &#34; &#34;)
+            coextensions = monoids[index].computeCoExtensions(
+                    counter,
+                    archimedean = archimedean,
+                    commutative = commutative)
+            monoids.extend(coextensions)
+            monoids[index].closed = True
+            numCoExt += len(coextensions)
+        index += 1
+        monoidsProcessed += 1
+    return (monoids, report)
+
+def drawProgress(progress, barSize = 20, msg = None, showBar = True, showPercentage = True):
+    &#34;&#34;&#34;
+    Draws a progress bar to the terminal output.
+
+    The output is not ended by new line, hence it will be overwritten with a new
+    call of this method.
+
+    Additional message can be also attached to the end of the drawn progress bar.
+
+    Args:
+        progress (float): a number in the range from `0.0` to `1.0`
+        barSize (int): how many `&#34;#&#34;` characters the progress bar shall have
+        msg (str): the message displayed before the percentage and the progress bar
+        showBar (bool): if `True` the progress bar will be displayed
+        showPercentage (bool): if `True` the percentage will be displayed
+    &#34;&#34;&#34;
+    # delete all the characters on the active terminal line
+    for i in range(80):
+        print(&#34;\b&#34;, end=&#34;&#34;)
+    # write initial message
+    if msg != None:
+        print(msg, end = &#34; &#34;)
+    # write percentage
+    percentage = round(100 * progress)
+    print(f&#34;{percentage:&gt;{3}}&#34; + &#34;% &#34;, end = &#34;&#34;)
+    # draw progress bar
+    numSquares = round(barSize * progress)
+    print(&#34;[&#34;, end = &#34;&#34;)
+    for i in range(numSquares):
+        print(&#34;#&#34;, end = &#34;&#34;)
+    for i in range(barSize - numSquares):
+        print(&#34; &#34;, end = &#34;&#34;)
+    print(&#34;]&#34;, end = &#34;&#34;, flush = True)
+
+def exportReportToText(report):
+    &#34;&#34;&#34;
+    Auxiliary method to convert the content of `report`, returned by
+    `generateFNTomonoids` to text that can be written to the output file.
+
+    Note that all the lines of the returned text start by `&#34;#&#34;`;
+    hence they are supposed to be ignored when the file is read.
+    &#34;&#34;&#34;
+    text = &#34;&#34;
+    sizeWidth = len(str(len(report) - 1))
+    numberWidth = len(str(report[-1][&#34;number&#34;]))
+    for i in range(len(report)):
+        if report[i][&#34;number&#34;] != None:
+            text += &#34;# &#34;
+            text += &#34;size: &#34; + f&#34;{i:&gt;{sizeWidth}}&#34; + &#34; &#34;
+            text += &#34;number: &#34; + f&#34;{report[i][&#39;number&#39;]:&gt;{numberWidth}}&#34; + &#34; &#34;
+            text += &#34;time:&#34; + str(datetime.timedelta(seconds=report[i][&#34;time&#34;]))
+            text += &#34;\n&#34;
+    return text
+
+def saveToCompressed(path, fntomonoids, displayProgress = False, report = None):
+    &#34;&#34;&#34;
+    Saves a list of f. n. tomonoids to a &#34;compressed&#34; file given by the path.
+
+    Args:
+        path (str): path to the file
+
+        fntomonoids (list of coextensions.FNTOMonoid): list of f. n. tomonoids
+            (as, e. g., generaed by `generateFNTomonoids`)
+
+        displayProgress (bool): if `True` then a progres bar will be
+            displayed on the terminal during the saving of the file
+    &#34;&#34;&#34;
+    with open(path, &#34;w&#34;) as outFile:
+        if report != None:
+            outFile.write(exportReportToText(report))
+        numTomonoids = len(fntomonoids)
+        for i in range(numTomonoids):
+            if displayProgress:
+                progress = (i + 1) / numTomonoids
+                drawProgress(progress, msg = &#34;Writing output file:&#34;)
+            outFile.write(fntomonoids[i].exportToCompressedText() + &#34;\n&#34;)
+        if displayProgress:
+            print()
+
+def saveToUncompressed(
+        path,
+        fntomonoids,
+        displayProgress = False,
+        separator = &#34;&#34;,
+        endLine = &#34;\n&#34;,
+        tableSymbols = &#34;base62&#34;,
+        identifierSymbols = &#34;base62&#34;,
+        addOriginal = False,
+        report = None):
+    &#34;&#34;&#34;
+    Saves a list of f. n. tomonoids to an &#34;uncompressed&#34; file given by the
+    path.
+
+    Args:
+        path (str): path to the file
+
+        fntomonoids (list of coextensions.FNTOMonoid): list of f. n. tomonoids
+            (as, e. g., generaed by `generateFNTomonoids`)
+
+        displayProgress (bool): if `True` then a progres bar will be
+            displayed on the terminal during the saving of the file
+
+        separator (str, optional): string that separates the values in the
+            table
+
+        endLine (str, optional): string that separates the rows of the
+            table
+
+        tableSymbols (str, optional): one of the following three values:
+
+            * &#34;base62&#34; (default) ... the element of the tomonoid will be
+                diplayed as symbls from the number system 62, that is, the
+                characters from
+                `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz`
+                where `0` represents the neutral element (unit)
+            * &#34;int&#34; ... the element of the tomonoid will be diplayed as
+                non-negative integers starting from `0` which will represent
+                the neutral element (unit)
+            * &#34;0xyz1&#34; ...  the element of the tomonoid will be diplayed as
+                the characters from the set:
+                `&#34;0&#34;`, ..., `&#34;x&#34;`, `&#34;y&#34;`, `&#34;z&#34;`, `&#34;1&#34;`
+                In this case, the table will be left-right flipped
+                (according to the vertical axis).
+                This style of depicting the Cayley table corresponds with
+                the style used in the referenced papers
+                [PeVe14,PeVe16,PeVe17,PeVe19], while the previous two
+                styles reflect the inner representation of the tomonoid.
+
+        identifierSymbols (str, optional): in which set of symbols shall
+            the f. n. tomonoid identifiers be written;
+
+            * &#34;base62&#34; (default) ... the identifiers will be written as
+                numbers in the number system with 62 digits
+            * &#34;int&#34; ... the identifiers will be written as decimal numbers
+
+        addOriginal (bool, optional): if `True` then the identifier of the
+            tomonoid, from which this tomonoid has been initialized as its
+            copy, will be added to the head of the returned table
+    &#34;&#34;&#34;
+    with open(path, &#34;w&#34;) as outFile:
+        if report != None:
+            outFile.write(exportReportToText(report))
+        numTomonoids = len(fntomonoids)
+        for i in range(numTomonoids):
+            if displayProgress:
+                progress = (i + 1) / numTomonoids
+                drawProgress(progress, msg = &#34;Writing output file:&#34;)
+            outFile.write(fntomonoids[i].exportToText(
+                                        separator = separator,
+                                        endLine = endLine,
+                                        tableSymbols = tableSymbols,
+                                        identifierSymbols = identifierSymbols,
+                                        addOriginal = addOriginal))
+            outFile.write(&#34;\n&#34;)
+        if displayProgress:
+            print()</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="fntom.Utils.convert0xyz1ToDecimal"><code class="name flex">
+<span>def <span class="ident">convert0xyz1ToDecimal</span></span>(<span>element, size)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Converts the name of the given f. n. tomonoid element in the "0xyz1" system
+to its decimal representation.</p>
+<p>The system "0xyz1" is how the elements of a f. n. tomonoid are denoted in
+the referenced papers [PeVe14,PeVe16,PeVe17,PeVe19].</p>
+<p>The bottom element is denoted as <code>"0"</code>, the top element is denoted by
+<code>"1"</code>, and the rest of the elements is denoted by lower-case letters such
+that the second greates element is denoted by <code>"z"</code>, the third greates
+element is denoted by <code>"y"</code>, and so on.</p>
+<p>Hence the elements of a f. n. tomonoid of size <code>5</code> would be:</p>
+<pre><code>    `"0"`, `"x"`, `"y"`, `"z"`, `"1"`
+</code></pre>
+<p>In this case:</p>
+<ul>
+<li><code>"0"</code> corresponds to decimal number <code>4</code></li>
+<li><code>"x"</code> corresponds to decimal number <code>3</code></li>
+<li><code>"y"</code> corresponds to decimal number <code>2</code></li>
+<li><code>"z"</code> corresponds to decimal number <code>1</code></li>
+<li><code>"1"</code> corresponds to decimal number <code>0</code></li>
+</ul>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>element</code></strong> :&ensp;<code>str</code></dt>
+<dd>the name of the f. n. tomonoid element in the "0xyz1"
+system (one character)</dd>
+<dt><strong><code>size</code></strong> :&ensp;<code>int</code></dt>
+<dd>number of the elements of the f. n. tomonoid</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>int</code></dt>
+<dd>number in the decimal system</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def convert0xyz1ToDecimal(element, size):
+    &#34;&#34;&#34;
+    Converts the name of the given f. n. tomonoid element in the &#34;0xyz1&#34; system
+    to its decimal representation.
+
+    The system &#34;0xyz1&#34; is how the elements of a f. n. tomonoid are denoted in
+    the referenced papers [PeVe14,PeVe16,PeVe17,PeVe19].
+
+    The bottom element is denoted as `&#34;0&#34;`, the top element is denoted by
+    `&#34;1&#34;`, and the rest of the elements is denoted by lower-case letters such
+    that the second greates element is denoted by `&#34;z&#34;`, the third greates
+    element is denoted by `&#34;y&#34;`, and so on.
+
+    Hence the elements of a f. n. tomonoid of size `5` would be:
+
+            `&#34;0&#34;`, `&#34;x&#34;`, `&#34;y&#34;`, `&#34;z&#34;`, `&#34;1&#34;`
+
+    In this case:
+
+      * `&#34;0&#34;` corresponds to decimal number `4`
+      * `&#34;x&#34;` corresponds to decimal number `3`
+      * `&#34;y&#34;` corresponds to decimal number `2`
+      * `&#34;z&#34;` corresponds to decimal number `1`
+      * `&#34;1&#34;` corresponds to decimal number `0`
+
+    Args:
+        element (str): the name of the f. n. tomonoid element in the &#34;0xyz1&#34;
+            system (one character)
+
+        size (int): number of the elements of the f. n. tomonoid
+
+    Returns:
+        int: number in the decimal system
+    &#34;&#34;&#34;
+    if element == &#34;1&#34;:
+        return 0
+    elif element == &#34;0&#34;:
+        return size - 1
+    else:
+        return ord(&#34;z&#34;) - ord(element) + 1</code></pre>
+</details>
+</dd>
+<dt id="fntom.Utils.convertBase62ToDecimal"><code class="name flex">
+<span>def <span class="ident">convertBase62ToDecimal</span></span>(<span>base62)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Converts the number given in the Base62 system to its counterpart in the
+decimal system.</p>
+<p>Base62 is the number system with 62 symbols:</p>
+<pre><code>0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+</code></pre>
+<p>Hence, for example,</p>
+<ul>
+<li><code>0</code> is equivalent to <code>"0"</code></li>
+<li><code>10</code> is equivalent to <code>"A"</code></li>
+<li><code>20</code> is equivalent to <code>"K"</code></li>
+<li><code>36</code> is equivalent to <code>"a"</code></li>
+<li><code>61</code> is equivalent to <code>"z"</code></li>
+<li><code>62</code> is equivalent to <code>"10"</code></li>
+<li><code>620</code> is equivalent to <code>"A0"</code></li>
+</ul>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>base62</code></strong> :&ensp;<code>str</code></dt>
+<dd>number in the Base62 system</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>int</code></dt>
+<dd>number in the decimal system</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def convertBase62ToDecimal(base62):
+    &#34;&#34;&#34;
+    Converts the number given in the Base62 system to its counterpart in the
+    decimal system.
+
+    Base62 is the number system with 62 symbols:
+
+        0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+
+    Hence, for example,
+
+      * `0` is equivalent to `&#34;0&#34;`
+      * `10` is equivalent to `&#34;A&#34;`
+      * `20` is equivalent to `&#34;K&#34;`
+      * `36` is equivalent to `&#34;a&#34;`
+      * `61` is equivalent to `&#34;z&#34;`
+      * `62` is equivalent to `&#34;10&#34;`
+      * `620` is equivalent to `&#34;A0&#34;`
+        
+    Args:
+        base62 (str): number in the Base62 system
+
+    Returns:
+        int: number in the decimal system
+    &#34;&#34;&#34;
+    decimal = 0
+    for character in base62:
+        decimal = decimal * BASE62_LEN + BASE62_DICT[character]
+    return decimal</code></pre>
+</details>
+</dd>
+<dt id="fntom.Utils.convertDecimalTo0xyz1"><code class="name flex">
+<span>def <span class="ident">convertDecimalTo0xyz1</span></span>(<span>decimal, size)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Converts the number given in the decimal system to its counterpart in the
+"0xyz1" system.</p>
+<p>The system "0xyz1" is how the elements of a f. n. tomonoid are denoted in
+the referenced papers [PeVe14,PeVe16,PeVe17,PeVe19].</p>
+<p>The bottom element is denoted as <code>"0"</code>, the top element is denoted by
+<code>"1"</code>, and the rest of the elements is denoted by lower-case letters such
+that the second greates element is denoted by <code>"z"</code>, the third greates
+element is denoted by <code>"y"</code>, and so on.</p>
+<p>Hence the elements of a f. n. tomonoid of size <code>5</code> would be:</p>
+<pre><code>    `"0"`, `"x"`, `"y"`, `"z"`, `"1"`
+</code></pre>
+<p>In this case:</p>
+<ul>
+<li><code>"0"</code> corresponds to decimal number <code>4</code></li>
+<li><code>"x"</code> corresponds to decimal number <code>3</code></li>
+<li><code>"y"</code> corresponds to decimal number <code>2</code></li>
+<li><code>"z"</code> corresponds to decimal number <code>1</code></li>
+<li><code>"1"</code> corresponds to decimal number <code>0</code></li>
+</ul>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>decimal</code></strong> :&ensp;<code>int</code></dt>
+<dd>number in the decimal system</dd>
+<dt><strong><code>size</code></strong> :&ensp;<code>int</code></dt>
+<dd>number of the elements of the f. n. tomonoid</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>str</code></dt>
+<dd>the name of the f. n. tomonoid element in the "0xyz1" system (one
+character)</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def convertDecimalTo0xyz1(decimal, size):
+    &#34;&#34;&#34;
+    Converts the number given in the decimal system to its counterpart in the
+    &#34;0xyz1&#34; system.
+
+    The system &#34;0xyz1&#34; is how the elements of a f. n. tomonoid are denoted in
+    the referenced papers [PeVe14,PeVe16,PeVe17,PeVe19].
+
+    The bottom element is denoted as `&#34;0&#34;`, the top element is denoted by
+    `&#34;1&#34;`, and the rest of the elements is denoted by lower-case letters such
+    that the second greates element is denoted by `&#34;z&#34;`, the third greates
+    element is denoted by `&#34;y&#34;`, and so on.
+
+    Hence the elements of a f. n. tomonoid of size `5` would be:
+
+            `&#34;0&#34;`, `&#34;x&#34;`, `&#34;y&#34;`, `&#34;z&#34;`, `&#34;1&#34;`
+        
+    In this case:
+
+      * `&#34;0&#34;` corresponds to decimal number `4`
+      * `&#34;x&#34;` corresponds to decimal number `3`
+      * `&#34;y&#34;` corresponds to decimal number `2`
+      * `&#34;z&#34;` corresponds to decimal number `1`
+      * `&#34;1&#34;` corresponds to decimal number `0`
+
+    Args:
+        decimal (int): number in the decimal system
+
+        size (int): number of the elements of the f. n. tomonoid
+
+    Returns:
+        str: the name of the f. n. tomonoid element in the &#34;0xyz1&#34; system (one
+            character)
+    &#34;&#34;&#34;
+    if decimal == 0:
+        return &#34;1&#34;
+    elif decimal == size - 1:
+        return &#34;0&#34;
+    elif 0 &lt; decimal &lt; size - 1:
+        return chr(ord(&#34;z&#34;) - decimal + 1)
+    else:
+        return str(decimal)</code></pre>
+</details>
+</dd>
+<dt id="fntom.Utils.convertDecimalToBase62"><code class="name flex">
+<span>def <span class="ident">convertDecimalToBase62</span></span>(<span>decimal)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Converts the number given in the decimal system to its counterpart in the
+Base62 system.</p>
+<p>Base62 is the number system with 62 symbols:</p>
+<pre><code>0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+</code></pre>
+<p>Hence, for example,</p>
+<ul>
+<li><code>0</code> is equivalent to <code>"0"</code></li>
+<li><code>10</code> is equivalent to <code>"A"</code></li>
+<li><code>20</code> is equivalent to <code>"K"</code></li>
+<li><code>36</code> is equivalent to <code>"a"</code></li>
+<li><code>61</code> is equivalent to <code>"z"</code></li>
+<li><code>62</code> is equivalent to <code>"10"</code></li>
+<li><code>620</code> is equivalent to <code>"A0"</code></li>
+</ul>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>decimal</code></strong> :&ensp;<code>int</code></dt>
+<dd>number in the decimal system</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>str</code></dt>
+<dd>number in the Base62 system</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def convertDecimalToBase62(decimal):
+    &#34;&#34;&#34;
+    Converts the number given in the decimal system to its counterpart in the
+    Base62 system.
+
+    Base62 is the number system with 62 symbols:
+
+        0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+
+    Hence, for example,
+
+      * `0` is equivalent to `&#34;0&#34;`
+      * `10` is equivalent to `&#34;A&#34;`
+      * `20` is equivalent to `&#34;K&#34;`
+      * `36` is equivalent to `&#34;a&#34;`
+      * `61` is equivalent to `&#34;z&#34;`
+      * `62` is equivalent to `&#34;10&#34;`
+      * `620` is equivalent to `&#34;A0&#34;`
+        
+    Args:
+        decimal (int): number in the decimal system
+
+    Returns:
+        str: number in the Base62 system
+    &#34;&#34;&#34;
+    base62 = &#34;&#34;
+    while decimal != 0:
+        (decimal, remainder) = divmod(decimal, BASE62_LEN)
+        base62 = BASE62_ALPH[remainder] + base62
+    if base62 == &#34;&#34;:
+        return BASE62_ALPH[0]
+    else:
+        return base62</code></pre>
+</details>
+</dd>
+<dt id="fntom.Utils.drawProgress"><code class="name flex">
+<span>def <span class="ident">drawProgress</span></span>(<span>progress, barSize=20, msg=None, showBar=True, showPercentage=True)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Draws a progress bar to the terminal output.</p>
+<p>The output is not ended by new line, hence it will be overwritten with a new
+call of this method.</p>
+<p>Additional message can be also attached to the end of the drawn progress bar.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>progress</code></strong> :&ensp;<code>float</code></dt>
+<dd>a number in the range from <code>0.0</code> to <code>1.0</code></dd>
+<dt><strong><code>barSize</code></strong> :&ensp;<code>int</code></dt>
+<dd>how many <code>"#"</code> characters the progress bar shall have</dd>
+<dt><strong><code>msg</code></strong> :&ensp;<code>str</code></dt>
+<dd>the message displayed before the percentage and the progress bar</dd>
+<dt><strong><code>showBar</code></strong> :&ensp;<code>bool</code></dt>
+<dd>if <code>True</code> the progress bar will be displayed</dd>
+<dt><strong><code>showPercentage</code></strong> :&ensp;<code>bool</code></dt>
+<dd>if <code>True</code> the percentage will be displayed</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def drawProgress(progress, barSize = 20, msg = None, showBar = True, showPercentage = True):
+    &#34;&#34;&#34;
+    Draws a progress bar to the terminal output.
+
+    The output is not ended by new line, hence it will be overwritten with a new
+    call of this method.
+
+    Additional message can be also attached to the end of the drawn progress bar.
+
+    Args:
+        progress (float): a number in the range from `0.0` to `1.0`
+        barSize (int): how many `&#34;#&#34;` characters the progress bar shall have
+        msg (str): the message displayed before the percentage and the progress bar
+        showBar (bool): if `True` the progress bar will be displayed
+        showPercentage (bool): if `True` the percentage will be displayed
+    &#34;&#34;&#34;
+    # delete all the characters on the active terminal line
+    for i in range(80):
+        print(&#34;\b&#34;, end=&#34;&#34;)
+    # write initial message
+    if msg != None:
+        print(msg, end = &#34; &#34;)
+    # write percentage
+    percentage = round(100 * progress)
+    print(f&#34;{percentage:&gt;{3}}&#34; + &#34;% &#34;, end = &#34;&#34;)
+    # draw progress bar
+    numSquares = round(barSize * progress)
+    print(&#34;[&#34;, end = &#34;&#34;)
+    for i in range(numSquares):
+        print(&#34;#&#34;, end = &#34;&#34;)
+    for i in range(barSize - numSquares):
+        print(&#34; &#34;, end = &#34;&#34;)
+    print(&#34;]&#34;, end = &#34;&#34;, flush = True)</code></pre>
+</details>
+</dd>
+<dt id="fntom.Utils.generateFNTomonoids"><code class="name flex">
+<span>def <span class="ident">generateFNTomonoids</span></span>(<span>method='levelset', startingFNTOMonoid=None, upToSize=None, depth=None, archimedean=False, commutative=False, displayProgress=False, counter=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Generates recursively all the one-element Rees co-extensions of a given
+f. n. tomonoid up to the given depth.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>method</code></strong> :&ensp;<code>str</code>, optional</dt>
+<dd>
+<p>can be <code>"levelset"</code> or <code>"brute"</code>;
+if not specified, <code>"levelset"</code> is used</p>
+<ul>
+<li><code>"levelset"</code> denotes the new method described in the referenced
+papers [PeVe14,PeVe16,PeVe17,PeVe19]</li>
+<li><code>"brute"</code> denotes "a bit intelligent" brute force method based
+on generating all the potential one-element co-extensions of a
+given tomonoid and testing whether they meet the axioms of a f.n.
+tomonoid (i.e. associativity)</li>
+</ul>
+</dd>
+<dt><strong><code>startingFNTOMonoid</code></strong> :&ensp;<code><a title="fntom.FNTOMonoid" href="FNTOMonoid.html">fntom.FNTOMonoid</a></code>, optional</dt>
+<dd>the f. n.
+tomonoid for which the co-extensions are supposed to be found;
+if not specified, the trivial (one-element) monoid is used</dd>
+<dt><strong><code>upToSize</code></strong> :&ensp;<code>int</code>, optional</dt>
+<dd>up to which size the co-extensions are
+recursively supposed to be found;
+if not specified, the depth of value <code>1</code> is used which means that
+only co-extensions of the size greater by one are found</dd>
+<dt><strong><code>depth</code></strong> :&ensp;<code>int</code>, optional</dt>
+<dd>up to which size, compared to the size of this
+f. n. tomonoid, the co-extensions are recursively supposed to be found;
+for example: if the size is <code>5</code> and <code>depth</code> is <code>3</code> then the
+co-extensions are supposed to be generated up to size <code>8</code>;
+if not specified, the depth of value <code>1</code> is used which means that
+only co-extensions of the size greater by one are found</dd>
+<dt><strong><code>archimedean</code></strong> :&ensp;<code>bool</code>, optional</dt>
+<dd>if <code>True</code>, only Archimedean co-extensions
+are found;
+it is supposed that the starting f. n. tomonoid is Archimedean</dd>
+<dt><strong><code>commutative</code></strong> :&ensp;<code>bool</code>, optional</dt>
+<dd>if <code>True</code>, only commutative co-extensions
+are found;
+it is supposed that the starting f. n. tomonoid is commutative</dd>
+<dt><strong><code>displayProgress</code></strong> :&ensp;<code>bool</code></dt>
+<dd>if <code>True</code> then a progres bar will be
+displayed on the terminal during the computation of the
+co-extensions</dd>
+<dt><strong><code>counter</code></strong> :&ensp;<code><a title="fntom.Counter" href="Counter.html">fntom.Counter</a></code>, optional</dt>
+<dd>counter that will be used to
+give unique identifiers to the generated f. n. tomonoids;
+if not specified, the function will create its own instance of
+<code><a title="fntom.Counter" href="Counter.html">fntom.Counter</a></code></dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>list</code> of <code><a title="fntom.FNTOMonoid" href="FNTOMonoid.html">fntom.FNTOMonoid</a></code></dt>
+<dd>the generated f. n. tomonoids</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def generateFNTomonoids(
+        method = &#34;levelset&#34;,
+        startingFNTOMonoid = None,
+        upToSize = None,
+        depth = None,
+        archimedean = False,
+        commutative = False,
+        displayProgress = False,
+        counter = None):
+    &#34;&#34;&#34;
+    Generates recursively all the one-element Rees co-extensions of a given
+    f. n. tomonoid up to the given depth.
+
+    Args:
+        method (str, optional): can be `&#34;levelset&#34;` or `&#34;brute&#34;`;
+            if not specified, `&#34;levelset&#34;` is used
+
+              * `&#34;levelset&#34;` denotes the new method described in the referenced
+                papers [PeVe14,PeVe16,PeVe17,PeVe19]
+              * `&#34;brute&#34;` denotes &#34;a bit intelligent&#34; brute force method based
+                on generating all the potential one-element co-extensions of a
+                given tomonoid and testing whether they meet the axioms of a f.n.
+                tomonoid (i.e. associativity)
+
+        startingFNTOMonoid (fntom.FNTOMonoid, optional): the f. n.
+            tomonoid for which the co-extensions are supposed to be found;
+            if not specified, the trivial (one-element) monoid is used
+
+        upToSize (int, optional): up to which size the co-extensions are
+            recursively supposed to be found;
+            if not specified, the depth of value `1` is used which means that
+            only co-extensions of the size greater by one are found
+
+        depth (int, optional): up to which size, compared to the size of this
+            f. n. tomonoid, the co-extensions are recursively supposed to be found;
+            for example: if the size is `5` and `depth` is `3` then the
+            co-extensions are supposed to be generated up to size `8`;
+            if not specified, the depth of value `1` is used which means that
+            only co-extensions of the size greater by one are found
+
+        archimedean (bool, optional): if `True`, only Archimedean co-extensions
+            are found;
+            it is supposed that the starting f. n. tomonoid is Archimedean
+
+        commutative (bool, optional): if `True`, only commutative co-extensions
+            are found;
+            it is supposed that the starting f. n. tomonoid is commutative
+
+        displayProgress (bool): if `True` then a progres bar will be
+            displayed on the terminal during the computation of the
+            co-extensions
+
+        counter (fntom.Counter, optional): counter that will be used to
+            give unique identifiers to the generated f. n. tomonoids;
+            if not specified, the function will create its own instance of
+            `fntom.Counter`
+
+    Returns:
+        list of fntom.FNTOMonoid: the generated f. n. tomonoids
+    &#34;&#34;&#34;
+    if counter == None:
+        counter = fntom.Counter()
+    if startingFNTOMonoid == None:
+        # create the trivial monoid
+        startingFNTOMonoid = fntom.FNTOMonoid(counter.getNew(), size = 1)
+    monoids = [ startingFNTOMonoid ]
+    if upToSize == None:
+        if depth == None:
+            upToSize = startingFNTOMonoid.size + 1
+        else:
+            upToSize = startingFNTOMonoid.size + depth
+    sizeWidth = len(str(upToSize))
+    currentSize = startingFNTOMonoid.size
+    monoidsProcessed = 0
+    monoidsTotal = 1
+    numCoExtWidth = len(str(monoidsTotal))
+    report = startingFNTOMonoid.size * [ {&#34;number&#34;: None, &#34;time&#34;: None} ]
+    report.append( {&#34;number&#34;: 1, &#34;time&#34;: 0.0} )
+    index = 0
+    timeStart = timeit.default_timer()
+    numCoExt = 0
+    while index &lt; len(monoids):
+        while monoids[index].closed:
+            index += 1
+            monoidsProcessed += 1
+        if monoids[index].size &gt; currentSize:
+            if displayProgress:
+                currentMsg = &#34;Size &#34; + f&#34;{currentSize + 1:&gt;{sizeWidth}}&#34; + &#34;:&#34;
+                drawProgress(monoidsProcessed / monoidsTotal, msg = currentMsg)
+                timeEnd = timeit.default_timer()
+                timePassed = timeEnd - timeStart
+                print(&#34;&#34;, datetime.timedelta(seconds=timePassed), end = &#34; &#34;)
+                for k in range(2 * numCoExtWidth + 1):
+                    print(end = &#34; &#34;)
+                for k in range(2 * numCoExtWidth + 1):
+                    print(end = &#34;\b&#34;)
+                print(numCoExt)
+            currentSize += 1
+            monoidsProcessed = 0
+            monoidsTotal = numCoExt
+            numCoExtWidth = len(str(monoidsTotal))
+            timeEnd = timeit.default_timer()
+            timePassed = timeEnd - timeStart
+            report.append( {&#34;number&#34;: numCoExt, &#34;time&#34;: timePassed} )
+            numCoExt = 0
+            timeStart = timeEnd
+        if index &lt; len(monoids) and monoids[index].size &lt; upToSize:
+            if displayProgress:
+                currentMsg = &#34;Size &#34; + f&#34;{currentSize + 1:&gt;{sizeWidth}}&#34; + &#34;:&#34;
+                drawProgress(monoidsProcessed / monoidsTotal, msg = currentMsg)
+                if monoidsProcessed &gt; 0:
+                    timeEnd = timeit.default_timer()
+                    timePassed = timeEnd - timeStart
+                    timeEstTotal = monoidsTotal * timePassed / monoidsProcessed
+                    timeEstRemaining = timeEstTotal - timePassed
+                    print(&#34;&#34;, datetime.timedelta(seconds=timeEstRemaining), end = &#34; &#34;)
+                    print(f&#34;{monoidsProcessed:&gt;{numCoExtWidth}}&#34; + &#34;/&#34; + str(monoidsTotal), end = &#34; &#34;)
+            coextensions = monoids[index].computeCoExtensions(
+                    counter,
+                    archimedean = archimedean,
+                    commutative = commutative)
+            monoids.extend(coextensions)
+            monoids[index].closed = True
+            numCoExt += len(coextensions)
+        index += 1
+        monoidsProcessed += 1
+    return (monoids, report)</code></pre>
+</details>
+</dd>
+<dt id="fntom.Utils.saveToCompressed"><code class="name flex">
+<span>def <span class="ident">saveToCompressed</span></span>(<span>path, fntomonoids, displayProgress=False, report=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Saves a list of f. n. tomonoids to a "compressed" file given by the path.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>path</code></strong> :&ensp;<code>str</code></dt>
+<dd>path to the file</dd>
+<dt><strong><code>fntomonoids</code></strong> :&ensp;<code>list</code> of <code>coextensions.FNTOMonoid</code></dt>
+<dd>list of f. n. tomonoids
+(as, e. g., generaed by <code><a title="fntom.Utils.generateFNTomonoids" href="#fntom.Utils.generateFNTomonoids">generateFNTomonoids()</a></code>)</dd>
+<dt><strong><code>displayProgress</code></strong> :&ensp;<code>bool</code></dt>
+<dd>if <code>True</code> then a progres bar will be
+displayed on the terminal during the saving of the file</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def saveToCompressed(path, fntomonoids, displayProgress = False, report = None):
+    &#34;&#34;&#34;
+    Saves a list of f. n. tomonoids to a &#34;compressed&#34; file given by the path.
+
+    Args:
+        path (str): path to the file
+
+        fntomonoids (list of coextensions.FNTOMonoid): list of f. n. tomonoids
+            (as, e. g., generaed by `generateFNTomonoids`)
+
+        displayProgress (bool): if `True` then a progres bar will be
+            displayed on the terminal during the saving of the file
+    &#34;&#34;&#34;
+    with open(path, &#34;w&#34;) as outFile:
+        if report != None:
+            outFile.write(exportReportToText(report))
+        numTomonoids = len(fntomonoids)
+        for i in range(numTomonoids):
+            if displayProgress:
+                progress = (i + 1) / numTomonoids
+                drawProgress(progress, msg = &#34;Writing output file:&#34;)
+            outFile.write(fntomonoids[i].exportToCompressedText() + &#34;\n&#34;)
+        if displayProgress:
+            print()</code></pre>
+</details>
+</dd>
+<dt id="fntom.Utils.saveToUncompressed"><code class="name flex">
+<span>def <span class="ident">saveToUncompressed</span></span>(<span>path, fntomonoids, displayProgress=False, separator='', endLine='\n', tableSymbols='base62', identifierSymbols='base62', addOriginal=False, report=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Saves a list of f. n. tomonoids to an "uncompressed" file given by the
+path.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>path</code></strong> :&ensp;<code>str</code></dt>
+<dd>path to the file</dd>
+<dt><strong><code>fntomonoids</code></strong> :&ensp;<code>list</code> of <code>coextensions.FNTOMonoid</code></dt>
+<dd>list of f. n. tomonoids
+(as, e. g., generaed by <code><a title="fntom.Utils.generateFNTomonoids" href="#fntom.Utils.generateFNTomonoids">generateFNTomonoids()</a></code>)</dd>
+<dt><strong><code>displayProgress</code></strong> :&ensp;<code>bool</code></dt>
+<dd>if <code>True</code> then a progres bar will be
+displayed on the terminal during the saving of the file</dd>
+<dt><strong><code>separator</code></strong> :&ensp;<code>str</code>, optional</dt>
+<dd>string that separates the values in the
+table</dd>
+<dt><strong><code>endLine</code></strong> :&ensp;<code>str</code>, optional</dt>
+<dd>string that separates the rows of the
+table</dd>
+<dt><strong><code>tableSymbols</code></strong> :&ensp;<code>str</code>, optional</dt>
+<dd>
+<p>one of the following three values:</p>
+<ul>
+<li>"base62" (default) &hellip; the element of the tomonoid will be
+diplayed as symbls from the number system 62, that is, the
+characters from
+<code>0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</code>
+where <code>0</code> represents the neutral element (unit)</li>
+<li>"int" &hellip; the element of the tomonoid will be diplayed as
+non-negative integers starting from <code>0</code> which will represent
+the neutral element (unit)</li>
+<li>"0xyz1" &hellip;
+the element of the tomonoid will be diplayed as
+the characters from the set:
+<code>"0"</code>, &hellip;, <code>"x"</code>, <code>"y"</code>, <code>"z"</code>, <code>"1"</code>
+In this case, the table will be left-right flipped
+(according to the vertical axis).
+This style of depicting the Cayley table corresponds with
+the style used in the referenced papers
+[PeVe14,PeVe16,PeVe17,PeVe19], while the previous two
+styles reflect the inner representation of the tomonoid.</li>
+</ul>
+</dd>
+<dt><strong><code>identifierSymbols</code></strong> :&ensp;<code>str</code>, optional</dt>
+<dd>
+<p>in which set of symbols shall
+the f. n. tomonoid identifiers be written;</p>
+<ul>
+<li>"base62" (default) &hellip; the identifiers will be written as
+numbers in the number system with 62 digits</li>
+<li>"int" &hellip; the identifiers will be written as decimal numbers</li>
+</ul>
+</dd>
+<dt><strong><code>addOriginal</code></strong> :&ensp;<code>bool</code>, optional</dt>
+<dd>if <code>True</code> then the identifier of the
+tomonoid, from which this tomonoid has been initialized as its
+copy, will be added to the head of the returned table</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def saveToUncompressed(
+        path,
+        fntomonoids,
+        displayProgress = False,
+        separator = &#34;&#34;,
+        endLine = &#34;\n&#34;,
+        tableSymbols = &#34;base62&#34;,
+        identifierSymbols = &#34;base62&#34;,
+        addOriginal = False,
+        report = None):
+    &#34;&#34;&#34;
+    Saves a list of f. n. tomonoids to an &#34;uncompressed&#34; file given by the
+    path.
+
+    Args:
+        path (str): path to the file
+
+        fntomonoids (list of coextensions.FNTOMonoid): list of f. n. tomonoids
+            (as, e. g., generaed by `generateFNTomonoids`)
+
+        displayProgress (bool): if `True` then a progres bar will be
+            displayed on the terminal during the saving of the file
+
+        separator (str, optional): string that separates the values in the
+            table
+
+        endLine (str, optional): string that separates the rows of the
+            table
+
+        tableSymbols (str, optional): one of the following three values:
+
+            * &#34;base62&#34; (default) ... the element of the tomonoid will be
+                diplayed as symbls from the number system 62, that is, the
+                characters from
+                `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz`
+                where `0` represents the neutral element (unit)
+            * &#34;int&#34; ... the element of the tomonoid will be diplayed as
+                non-negative integers starting from `0` which will represent
+                the neutral element (unit)
+            * &#34;0xyz1&#34; ...  the element of the tomonoid will be diplayed as
+                the characters from the set:
+                `&#34;0&#34;`, ..., `&#34;x&#34;`, `&#34;y&#34;`, `&#34;z&#34;`, `&#34;1&#34;`
+                In this case, the table will be left-right flipped
+                (according to the vertical axis).
+                This style of depicting the Cayley table corresponds with
+                the style used in the referenced papers
+                [PeVe14,PeVe16,PeVe17,PeVe19], while the previous two
+                styles reflect the inner representation of the tomonoid.
+
+        identifierSymbols (str, optional): in which set of symbols shall
+            the f. n. tomonoid identifiers be written;
+
+            * &#34;base62&#34; (default) ... the identifiers will be written as
+                numbers in the number system with 62 digits
+            * &#34;int&#34; ... the identifiers will be written as decimal numbers
+
+        addOriginal (bool, optional): if `True` then the identifier of the
+            tomonoid, from which this tomonoid has been initialized as its
+            copy, will be added to the head of the returned table
+    &#34;&#34;&#34;
+    with open(path, &#34;w&#34;) as outFile:
+        if report != None:
+            outFile.write(exportReportToText(report))
+        numTomonoids = len(fntomonoids)
+        for i in range(numTomonoids):
+            if displayProgress:
+                progress = (i + 1) / numTomonoids
+                drawProgress(progress, msg = &#34;Writing output file:&#34;)
+            outFile.write(fntomonoids[i].exportToText(
+                                        separator = separator,
+                                        endLine = endLine,
+                                        tableSymbols = tableSymbols,
+                                        identifierSymbols = identifierSymbols,
+                                        addOriginal = addOriginal))
+            outFile.write(&#34;\n&#34;)
+        if displayProgress:
+            print()</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="fntom" href="index.html">fntom</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="fntom.Utils.convert0xyz1ToDecimal" href="#fntom.Utils.convert0xyz1ToDecimal">convert0xyz1ToDecimal</a></code></li>
+<li><code><a title="fntom.Utils.convertBase62ToDecimal" href="#fntom.Utils.convertBase62ToDecimal">convertBase62ToDecimal</a></code></li>
+<li><code><a title="fntom.Utils.convertDecimalTo0xyz1" href="#fntom.Utils.convertDecimalTo0xyz1">convertDecimalTo0xyz1</a></code></li>
+<li><code><a title="fntom.Utils.convertDecimalToBase62" href="#fntom.Utils.convertDecimalToBase62">convertDecimalToBase62</a></code></li>
+<li><code><a title="fntom.Utils.drawProgress" href="#fntom.Utils.drawProgress">drawProgress</a></code></li>
+<li><code><a title="fntom.Utils.generateFNTomonoids" href="#fntom.Utils.generateFNTomonoids">generateFNTomonoids</a></code></li>
+<li><code><a title="fntom.Utils.saveToCompressed" href="#fntom.Utils.saveToCompressed">saveToCompressed</a></code></li>
+<li><code><a title="fntom.Utils.saveToUncompressed" href="#fntom.Utils.saveToUncompressed">saveToUncompressed</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.9.2</a>.</p>
+</footer>
+</body>
+</html>
