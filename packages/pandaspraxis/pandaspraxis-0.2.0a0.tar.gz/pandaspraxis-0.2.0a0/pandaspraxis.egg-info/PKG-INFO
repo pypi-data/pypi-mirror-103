@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: pandaspraxis
+Version: 0.2.0a0
+Summary: A SQL to Pandas translator
+Home-page: https://github.mit.edu/jonsh/UP-translate
+Author: Shuli Jones
+Author-email: jonsh@mit.edu
+License: UNKNOWN
+Description: A SQL to Pandas translator
+Keywords: ipython,jupyter,widgets
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: IPython
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
