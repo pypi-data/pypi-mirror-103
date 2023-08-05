@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+src/aiostaticmap/__init__.py
+src/aiostaticmap/__main__.py
+src/aiostaticmap/aiostaticmap.py
+src/aiostaticmap.egg-info/PKG-INFO
+src/aiostaticmap.egg-info/SOURCES.txt
+src/aiostaticmap.egg-info/dependency_links.txt
+src/aiostaticmap.egg-info/requires.txt
+src/aiostaticmap.egg-info/top_level.txt
