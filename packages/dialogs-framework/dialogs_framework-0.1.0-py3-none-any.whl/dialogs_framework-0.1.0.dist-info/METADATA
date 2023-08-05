@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: dialogs-framework
+Version: 0.1.0
+Summary: 
+Author: Alon
+Author-email: alon.gal@khealth.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: fastapi (>=0.63.0,<0.64.0)
+Requires-Dist: gevent (>=21.1.2,<22.0.0)
+Requires-Dist: mypy (>=0.812,<0.813)
+Requires-Dist: pytest (>=6.2.3,<7.0.0)
+Requires-Dist: requests (>=2.25.1,<3.0.0)
+Requires-Dist: uvicorn (>=0.13.4,<0.14.0)
