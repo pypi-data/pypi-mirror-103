@@ -1,0 +1,12 @@
+ngwpy/__init__.py,sha256=vNKivphG0oLLJVi9Hq77yE4rl8Trm0kIKvr8vnc7xkI,23
+ngwpy/ngw/__init__.py,sha256=vNKivphG0oLLJVi9Hq77yE4rl8Trm0kIKvr8vnc7xkI,23
+ngwpy/ngw/constants.py,sha256=ajGa5NXbINmL0fBJJz-4hUCZRkCR_oRdpBzILYg5V9A,49
+ngwpy/ngw/context/__init__.py,sha256=vNKivphG0oLLJVi9Hq77yE4rl8Trm0kIKvr8vnc7xkI,23
+ngwpy/ngw/data/__init__.py,sha256=vNKivphG0oLLJVi9Hq77yE4rl8Trm0kIKvr8vnc7xkI,23
+ngwpy/ngw/report/__init__.py,sha256=vNKivphG0oLLJVi9Hq77yE4rl8Trm0kIKvr8vnc7xkI,23
+ngwpy/ngw/strategy/__init__.py,sha256=vNKivphG0oLLJVi9Hq77yE4rl8Trm0kIKvr8vnc7xkI,23
+ngwpy/ngw/utils/__init__.py,sha256=vNKivphG0oLLJVi9Hq77yE4rl8Trm0kIKvr8vnc7xkI,23
+ngwpy-0.0.1.dist-info/METADATA,sha256=u-HSDfsjyYN6wNEb4QHhwuggz4J7HLAq7stIGL0uahI,471
+ngwpy-0.0.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+ngwpy-0.0.1.dist-info/top_level.txt,sha256=kUBNKbgafvgsgmxOmN6r3TjfCjkuLRdz3ZjsHt2gxfQ,6
+ngwpy-0.0.1.dist-info/RECORD,,
