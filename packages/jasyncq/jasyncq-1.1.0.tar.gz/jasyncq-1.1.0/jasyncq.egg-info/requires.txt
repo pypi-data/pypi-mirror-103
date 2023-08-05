@@ -1,0 +1,3 @@
+pydantic==1.7.3
+aiomysql>=0.0.20
+PyPika>=0.37.6
