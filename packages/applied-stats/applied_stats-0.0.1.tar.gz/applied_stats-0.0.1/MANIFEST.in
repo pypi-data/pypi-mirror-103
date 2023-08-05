@@ -1,0 +1,3 @@
+recursive-include output_images *.png
+recursive-include applied_stats *.py
+recursive-include tests *.py
