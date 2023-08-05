@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: hawksoft.tools
+Version: 1.1.0
+Summary: Provides many useful command lines in python
+Home-page: https://github.com/xingyongkang
+Author: xingyongkang
+Author-email: xingyongkang@cqu.edu.cn
+License: MIT
+Description: # hawksoft.tools package
+        
+        - [hawksoft.tools package](#hawksofttools-package)
+          - [Installation:](#installation)
+          - [usage:](#usage)
+              - [md2zhihu](#md2zhihu)
+              - [tree](#tree)
+              - [selmv](#selmv)
+        
+        Provides many useful command line in python. 
+        
+        Now includes:
+        
+        - md2zhihu: convert md file with math formula to zhihu-compatible file.
+        - tree: show directory as tree graph. 
+        - selmv: move file with specified extensions from source directory to destine directory.
+        
+        ## Installation:
+        
+        ```
+        pip install hawksoft.tools
+        ```
+        
+        ## usage:
+        
+        #### md2zhihu
+        
+        Installation will add a new command line: md2zhihu. you can use it like this:
+        
+        ```
+         md2zhihu sourceFilename destineFilename 
+        ```
+        or
+        
+        ```
+        md2zhihu sourceFilename destineDirectory
+        ```
+        The command will create a new file which can be imported to zhihu website.
+        
+        #### tree
+        
+        Installation will add a new command line: tree. you can use it like this:
+        
+        ```
+        tree 
+        ```
+        or 
+        
+        ```
+        tree [diretory]
+        ```
+        The command will show the directory as tree graph.
+        #### selmv
+        Installation will add a new command line: selmv. you can use it as following:
+        
+        ```
+        selmv extension fromDirectory toDirectory 
+        ```
+        The command line will move all files with specified extension from fromDirectory to toDirectory, involving all the files in sub-fromDirectory.
+        
+        
+Keywords: md2zhihu tree selmv
+Platform: any
+Description-Content-Type: text/markdown
