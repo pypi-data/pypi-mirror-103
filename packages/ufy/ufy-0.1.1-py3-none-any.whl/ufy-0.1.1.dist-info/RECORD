@@ -1,0 +1,14 @@
+ufy/__init__.py,sha256=Ckacl41HE_S3gFe8JheljOpxwxmqpDib0skzOcntNBE,230
+ufy/np.py,sha256=hWxtsRvuNXXJdXnizrRkH6SbcHPqMaIA_WFul6SCGnk,585
+ufy/CV/__init__.py,sha256=8FbJxth_WYerSDSwhuxQSzPMzS7gI4rM3k23Qm4YGIQ,173
+ufy/core/__init__.py,sha256=1FJ5cL2tn6Joghee-eGW0mhx3YDCWdKbCKMunJnTEsg,173
+ufy/core/DL/__init__.py,sha256=rbAOmD4L03yq0oyY_MmMx57pPbt8qygzieUiSwbiBGk,195
+ufy/core/ML/__init__.py,sha256=8FbJxth_WYerSDSwhuxQSzPMzS7gI4rM3k23Qm4YGIQ,173
+ufy/core/ML/compaction/__init__.py,sha256=fs5N3XjVfpqO_IIn-tonHrPhZNoWlQWblnZ0NoEKJ-Q,173
+ufy/core/ML/compaction/pca.py,sha256=pFsnToP3TWuOf_xrM05AVxY7rztpIFlLutBJci_A-vs,1978
+ufy/datasets/__init__.py,sha256=asehcplCl5mjmovdQ3V0cibaFgnclb0Uu384TYgEuYs,173
+ufy/utils/__init__.py,sha256=L4-b0CZH1sELiPpQXksYh9OdIWnu_Yr4KdYrvNI183Q,173
+ufy-0.1.1.dist-info/METADATA,sha256=e7PKnjVOCEwlFda48f6biZR77a4AF6NuQJdodp0Tn2E,196
+ufy-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ufy-0.1.1.dist-info/top_level.txt,sha256=TsTpERgkBLpmnvK_5dEus_Oo9OM3RlG7PkdP1vMmheo,4
+ufy-0.1.1.dist-info/RECORD,,
