@@ -1,0 +1,6 @@
+[opentelemetry_distro]
+uptrace_distro = uptrace.distro:UptraceDistro
+
+[opentelemetry_exporter]
+uptrace_span = uptrace.spanexp:UptraceSpanExporter
+
