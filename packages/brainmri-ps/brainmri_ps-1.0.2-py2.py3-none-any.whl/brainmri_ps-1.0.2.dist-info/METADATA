@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: brainmri-ps
+Version: 1.0.2
+Summary: Automatically classify Brain MRI series by pulse sequence types: FLAIR, T1C, T2, ADC, DWI, TOF and OTHER
+Home-page: UNKNOWN
+Author: lhkhiem, tuantran
+Author-email: UNKNOWN
+License: LICENSE.txt
+Platform: UNKNOWN
+Requires-Dist: wget (>=3.2)
+Requires-Dist: gdown (>=3.11.0)
+Requires-Dist: pydicom (>=2.1.1)
+Requires-Dist: torch (>=1.8.1)
+Requires-Dist: torchvision (>=0.9.1)
+Requires-Dist: albumentations (>=0.1.12)
+
+UNKNOWN
+
+
