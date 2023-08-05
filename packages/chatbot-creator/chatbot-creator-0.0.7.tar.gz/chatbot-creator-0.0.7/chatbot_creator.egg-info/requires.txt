@@ -1,0 +1,10 @@
+pandas
+keras
+sklearn
+numpy
+nltk
+spacy
+tensorflow
+discord.py
+google
+bs4
