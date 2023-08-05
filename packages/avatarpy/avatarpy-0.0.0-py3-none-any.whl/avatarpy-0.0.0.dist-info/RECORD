@@ -1,0 +1,10 @@
+avatarpy/__init__.py,sha256=Ur5PgETGoDDphlY25rTIByT7zC1Y7MYGPz7ydGIx3Yo,61
+avatarpy/animate.py,sha256=Ap6KO62bJUnwRRgmAlcsaYuUEVql5Se6M7YObNgmxbM,4666
+avatarpy/avatar.py,sha256=dPLumi4FtNKkJcODUP0Gytyz6-oY_9DSpjXGgz6FTus,11470
+avatarpy/core.py,sha256=wPRU8t5y1gMSpPS5LMrXkZ153hyM3WKd8SYPu_jgJzw,3382
+avatarpy/transform.py,sha256=jeq9Xoc9Gq4zd2W8ZrJLeuYcOz3wQXibLP_ONKqW_sw,2827
+avatarpy-0.0.0.dist-info/LICENSE,sha256=pl_waJZY-hPBbykGLTiFDGPGt80vk-h86pxe7n4bKoI,1085
+avatarpy-0.0.0.dist-info/METADATA,sha256=MS_PVdqKV2ogWkG0gnSfvP-WvmqFLnOgQrU56i2jYs8,500
+avatarpy-0.0.0.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+avatarpy-0.0.0.dist-info/top_level.txt,sha256=8dIb8mxFyphKdChyFoZwATFMotGqO4zyUwpBfqhSzW0,9
+avatarpy-0.0.0.dist-info/RECORD,,
