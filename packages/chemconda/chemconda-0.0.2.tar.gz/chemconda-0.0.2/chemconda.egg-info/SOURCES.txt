@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+chemconda/__init__.py
+chemconda/chemconda.py
+chemconda.egg-info/PKG-INFO
+chemconda.egg-info/SOURCES.txt
+chemconda.egg-info/dependency_links.txt
+chemconda.egg-info/requires.txt
+chemconda.egg-info/top_level.txt
