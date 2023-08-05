@@ -1,0 +1,128 @@
+Metadata-Version: 2.1
+Name: data-purifier
+Version: 0.1.2
+Summary: A Python library for Automated Exploratory Data Analysis, Automated Data Cleaning and Automated Data Preprocessing For Machine Learning and Natural Language Processing in Python.
+Home-page: UNKNOWN
+Author: Abhishek Manilal Gupta
+Author-email: abhig0209@gmail.com
+License: MIT
+Keywords: automated eda exploratory-data-analysis data-cleaning data-preprocessing python jupyter ipython
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Topic :: Scientific/Engineering
+Classifier: Framework :: IPython
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4 (>=4.9.3)
+Requires-Dist: termcolor (>=1.1.0)
+Requires-Dist: joblib
+Requires-Dist: scipy (>=1.4.1)
+Requires-Dist: pandas (!=1.0.0,!=1.0.1,!=1.0.2,!=1.1.0,>=0.25.3)
+Requires-Dist: matplotlib (>=3.2.0)
+Requires-Dist: confuse (>=1.0.0)
+Requires-Dist: jinja2 (>=2.11.1)
+Requires-Dist: numpy (>=1.16.0)
+Requires-Dist: ipywidgets (>=7.6.3)
+Requires-Dist: ipykernel (>=5.5.3)
+Requires-Dist: textblob (>=0.15.3)
+Requires-Dist: tangled-up-in-unicode (>=0.0.6)
+Requires-Dist: requests (>=2.24.0)
+Requires-Dist: tqdm (>=4.48.2)
+Requires-Dist: seaborn (>=0.10.1)
+Requires-Dist: spacy (<4.0.0,>=3.0.0)
+Provides-Extra: notebook
+Requires-Dist: jupyter-client (>=6.0.0) ; extra == 'notebook'
+Requires-Dist: jupyter-core (>=4.6.3) ; extra == 'notebook'
+Requires-Dist: ipywidgets (>=7.5.1) ; extra == 'notebook'
+
+# Data-Purifier
+
+### A Python library for Automated Exploratory Data Analysis, Automated Data Cleaning and Automated Data Preprocessing For Machine Learning and Natural Language Processing in Python.
+
+## Features
+
+* It gives shape, number of categorical and numerical features, description of the dataset, and also the information about the number of null values and their respective percentage. 
+
+* For understanding the distribution of datasets and getting useful insights, there are many interactive plots generated where the user can select his desired column and the system will automatically plot it. Plot includes
+   1. Count plot
+   2. Correlation plot
+   3. Joint plot
+   4. Pair plot
+   5. Pie plot 
+
+
+## Get Started
+
+Install the packages
+
+```bash
+pip install data-purifier
+```
+
+```bash
+python -m spacy download en_core_web_sm
+```
+
+Load the module
+```python
+from datapurifier import Mleda, Nleda, Nlpurifier
+```
+
+Load the dataset and let the magic of automated EDA begin
+
+```python
+df = pd.read_csv("./datasets/iris.csv")
+ae = Mleda(df)
+ae
+```
+
+
+For Automated EDA and Automated Data Cleaning of NL dataset, load the dataset and pass the dataframe along with the targeted column containing textual data.
+
+```python
+nlp_df = pd.read_csv("./datasets/twitter16m.csv", header=None, encoding='latin-1')
+nlp_df.columns = ["tweets","sentiment"]
+```
+
+### Automated EDA 
+
+```python
+%%time
+eda = Nlpeda(nlp_df, "tweets", explore="basic")
+eda.df
+```
+
+### Automated Data Cleaning
+
+```python
+pure = Nlpurifier(nlp_df, "tweets")
+```
+
+View the processed and purified dataframe
+
+```python
+pure.df
+```
+
+
+Example: https://colab.research.google.com/drive/1J932G1uzqxUHCMwk2gtbuMQohYZsze8U?usp=sharing
+
+Python Package: https://pypi.org/project/data-purifier/
+
+
+
+
+
