@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+observer_config_json/__init__.py
+observer_config_json/cli.py
+observer_config_json.egg-info/PKG-INFO
+observer_config_json.egg-info/SOURCES.txt
+observer_config_json.egg-info/dependency_links.txt
+observer_config_json.egg-info/requires.txt
+observer_config_json.egg-info/top_level.txt
