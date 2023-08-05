@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: qrsh
+Version: 0.3
+Summary: Simple python script for scanning qr codes
+Author: f8ith
+Requires-Python: >=3.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: camera
+Requires-Dist: imutils (>=0.5.4,<0.6.0); extra == "camera"
+Requires-Dist: opencv-python (>=4.5.1,<5.0.0); extra == "camera"
+Requires-Dist: pillow
+Requires-Dist: pyzbar (>=0.1.8,<0.2.0)
+Requires-Dist: typer (>=0.3.2,<0.4.0)
