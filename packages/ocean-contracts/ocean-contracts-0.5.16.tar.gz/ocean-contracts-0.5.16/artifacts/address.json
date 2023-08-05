@@ -1,0 +1,52 @@
+{
+  "rinkeby": {
+    "DTFactory": "0x3fd7A00106038Fb5c802c6d63fa7147Fe429E83a",
+    "BFactory": "0x53eDF9289B0898e1652Ce009AACf8D25fA9A42F8",
+    "FixedRateExchange": "0xeD1DfC5F3a589CfC4E8B91C1fbfC18FC6699Fbde",
+    "Metadata": "0xFD8a7b6297153397B7eb4356C47dbd381d58bFF4",
+    "Ocean": "0x8967BCF84170c91B0d24D4302C2376283b0B3a07"
+  },
+  "ropsten": {
+    "DTFactory": "0x6ebcCa6df2CAba986FCF44E64Ee82251c1455Dcc",
+    "BFactory": "0x75be6e18c80A487C8b49663bf14f80A6495045B2",
+    "FixedRateExchange": "0xA7a711A09396DF82D9be46A26B48BafdB9BB4fA6",
+    "Metadata": "0x3cd7Ef1F207E1a46AAd7D5d7F5f0A5cF081Fc726",
+    "Ocean": "0x5e8DCB2AfA23844bcc311B00Ad1A0C30025aADE9"
+  },
+  "development": {
+    "DTFactory": "0xEC35449fDBc9805Ef321BfD62DC27d77D5bdf5eB",
+    "BFactory": "0x103280cdCbC530b659047a676973eD06eB1cF73D",
+    "FixedRateExchange": "0xA78cC4C2f1e942e3A8294128d01a1141703B9D0D",
+    "Metadata": "0x1C80975dD0Fd597174029dd53bb11B34DBB195F4",
+    "Ocean": "0x4a6E3273418ab201f81E264812b7da2F96A016A4",
+    "Dispenser": "0xFb353EbCEA022783A940A895aF800b124b709cF3"
+  },
+  "mainnet": {
+    "DTFactory": "0x57317f97E9EA49eBd19f7c9bB7c180b8cDcbDeB9",
+    "BFactory": "0xbe0083053744ECb871510C88dC0f6b77Da162706",
+    "FixedRateExchange": "0x608d05214E42722B94a54cF6114d4840FCfF84e1",
+    "Metadata": "0x1a4b70d8c9DcA47cD6D0Fb3c52BB8634CA1C0Fdf",
+    "Ocean": "0x967da4048cD07aB37855c090aAF366e4ce1b9F48"
+  },
+  "polygon": {
+    "DTFactory": "0xF6410bf5d773C7a41ebFf972f38e7463FA242477",
+    "BFactory": "0x69B6E54Ad2b3c2801d11d8Ad56ea1d892555b776",
+    "FixedRateExchange": "0x2112Eb973af1DBf83a4f11eda82f7a7527D7Fde5",
+    "Metadata": "0x80E63f73cAc60c1662f27D2DFd2EA834acddBaa8",
+    "Ocean": "0x282d8efCe846A88B159800bd4130ad77443Fa1A1"
+  },
+  "moonbeamalpha": {
+    "DTFactory": "0x80E63f73cAc60c1662f27D2DFd2EA834acddBaa8",
+    "BFactory": "0x30E4CC2C7A9c6aA2b2Ce93586E3Df24a3A00bcDD",
+    "FixedRateExchange": "0xDEfD0018969cd2d4E648209F876ADe184815f038",
+    "Metadata": "0x9C9eE07b8Ce907D2f9244F8317C1Ed29A3193bAe",
+    "Ocean": "0x3c21a90599b5B7f37014cA5Bf30d3f1b73d7e391"
+  },
+  "undefined": {
+    "DTFactory": "0xB06Ddf5CC920Cd865566386CF4900d3295EfbbbC",
+    "BFactory": "0x39A3B8d606EECf8241069F0aE07a4b6fe1663033",
+    "FixedRateExchange": "0x3cB33fd434026193FcDf77D7c392b72910d47FDd",
+    "Metadata": "0x596a0325112af2B3ff69665D38a16034d5D62f83",
+    "Dispenser": "0x781835b0D35967F49034585f378a0A9665f9CB8C"
+  }
+}
