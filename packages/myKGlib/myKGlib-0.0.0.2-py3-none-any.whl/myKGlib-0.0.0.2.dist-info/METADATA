@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: myKGlib
+Version: 0.0.0.2
+Summary: VizKG
+Home-page: UNKNOWN
+Author: Hana
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: pandas
+Requires-Dist: SPARQLWrapper
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: imageio
+Requires-Dist: plotly (==4.14.3)
+Requires-Dist: networkx
+Requires-Dist: folium
+Requires-Dist: anytree
+Requires-Dist: wordcloud
+
+UNKNOWN
+
+
