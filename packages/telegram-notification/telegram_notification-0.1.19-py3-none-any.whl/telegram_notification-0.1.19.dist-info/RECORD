@@ -1,0 +1,12 @@
+telegram_notification/__init__.py,sha256=aO9xHAvaVzuJFbhM59Hi_25tHwriNZYAm3_v2MPkdPg,112
+telegram_notification/__main__.py,sha256=VKiUKtVO7Kpf4xl6PZC6e18Q3VyJvmGfCboXFfUlfUM,369
+telegram_notification/config.ini,sha256=XJqOYjSZBZsgQ1-58n9s4rfPTEF8JGSbcxtGgvqj-8M,38
+telegram_notification/noti,sha256=fK6VbGuFEt3IyceIOmHoBVLXPeCOeMl-HblH6qUS1Vs,377
+telegram_notification/sample.py,sha256=C_WdVQzEIy3Laz3Wvg5hyPpZx7HJyceHKRnChw0825I,440
+telegram_notification/telegram_notification.py,sha256=FvjtSiQEFj9mhP82O3yfwmrrWKKUmo7bCv9UkKE6dZo,4388
+telegram_notification-0.1.19.data/scripts/config.ini,sha256=XJqOYjSZBZsgQ1-58n9s4rfPTEF8JGSbcxtGgvqj-8M,38
+telegram_notification-0.1.19.data/scripts/noti,sha256=nvUQ8AmzTQQqr7NMR0tdri48yhzqOtBQAsPTd3nzWKg,363
+telegram_notification-0.1.19.dist-info/METADATA,sha256=NJl09h3Q9QYOZQ9Kv0UEtfhJEm4DA_QkLJ5loWvHPng,1483
+telegram_notification-0.1.19.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+telegram_notification-0.1.19.dist-info/top_level.txt,sha256=YAR8lClSQW9rhEkn_50myPcc2NmGn4eU-qLzoTna6_k,22
+telegram_notification-0.1.19.dist-info/RECORD,,
