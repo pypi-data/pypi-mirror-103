@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: misk
+Version: 0.4.0
+Summary: Miscellaneous useful bits for python 3.
+Home-page: https://github.com/marzer/misk
+Author: Mark Gillard
+Author-email: mark.gillard@outlook.com.au
+License: MIT
+Download-URL: https://pypi.org/project/misk/
+Description: # misk
+        Miscellaneous useful bits for python 3.
+        
+        ```
+        pip install misk
+        ```
+        
+Keywords: utilities
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
