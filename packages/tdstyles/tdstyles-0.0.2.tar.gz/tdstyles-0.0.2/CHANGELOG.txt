@@ -1,0 +1,10 @@
+Change Log
+==========
+
+0.0.1 (20-04-2021)
+------------------
+- First Release
+
+0.0.2 (22-04-2021)
+------------------
+-Fixed issue with the urllib.request
