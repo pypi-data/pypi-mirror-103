@@ -1,0 +1,12 @@
+CHANGES.md
+MANIFEST.in
+README.md
+setup.py
+SearchEngineForJSON/__init__.py
+SearchEngineForJSON/search.py
+SearchEngineForJSON.egg-info/PKG-INFO
+SearchEngineForJSON.egg-info/SOURCES.txt
+SearchEngineForJSON.egg-info/dependency_links.txt
+SearchEngineForJSON.egg-info/top_level.txt
+testSearchEngineForJSON/__init__.py
+testSearchEngineForJSON/test_search.py
