@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+package.json
+setup.py
+pivot_table/PivotTable.py
+pivot_table/__init__.py
+pivot_table/_imports_.py
+pivot_table/metadata.json
+pivot_table/package-info.json
+pivot_table/pivot_table.min.js
+pivot_table/pivot_table.min.js.map
+pivot_table.egg-info/PKG-INFO
+pivot_table.egg-info/SOURCES.txt
+pivot_table.egg-info/dependency_links.txt
+pivot_table.egg-info/top_level.txt

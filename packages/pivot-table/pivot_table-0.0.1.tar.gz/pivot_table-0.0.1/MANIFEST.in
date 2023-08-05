@@ -1,0 +1,7 @@
+include pivot_table/pivot_table.min.js
+include pivot_table/pivot_table.min.js.map
+include pivot_table/metadata.json
+include pivot_table/package-info.json
+include README.md
+include LICENSE
+include package.json
