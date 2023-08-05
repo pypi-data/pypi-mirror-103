@@ -1,0 +1,7 @@
+README.md
+setup.py
+data_tap.egg-info/PKG-INFO
+data_tap.egg-info/SOURCES.txt
+data_tap.egg-info/dependency_links.txt
+data_tap.egg-info/requires.txt
+data_tap.egg-info/top_level.txt

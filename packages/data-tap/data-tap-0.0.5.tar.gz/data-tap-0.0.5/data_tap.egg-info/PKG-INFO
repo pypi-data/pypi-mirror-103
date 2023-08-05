@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: data-tap
+Version: 0.0.5
+Summary: A python wrapper that connects to multiple 3rd party resources for AWS.
+Home-page: https://github.com/DirksCGM/data-tap
+Author: DirkSCGM
+Author-email: dirkscgm@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: aws,datapipeline,google,analytics
+Platform: UNKNOWN
