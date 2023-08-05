@@ -1,0 +1,12 @@
+pylexitext/__init__.py,sha256=vbPlXu0sirzoW_I77N0rbYVMGdWVS4vq0nvUTA-jLq8,270
+pylexitext/downloader.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pylexitext/plots.py,sha256=npY1_c5Nae2jlADpXg5XcDu61tnrcultjibK6yHce_w,409
+pylexitext/text.py,sha256=hPMTrunCiYNFVSwcJ6dRDT3shKG9HOICnIMK_J_fKFM,12346
+pylexitext/text_bean.py,sha256=TfQijM2TtwXx3gOsnGZHRCTAzRDI6ummiQHatRIDL5Q,2907
+pylexitext/text_converter.py,sha256=LKWNqoVeVydAcrld8Kux300_EYGadw2HeI6K7qByPZw,2828
+pylexitext/text_features.py,sha256=XJtyEe4033-jwwK_EYpRtym-xxyqLN5Ua7v_sQxmSoQ,66
+pylexitext-0.2.0.dist-info/LICENSE,sha256=Hh_DmXVR6yvOSDI3Y1LEWtAoda_oEZio70IkFKA-UiE,1089
+pylexitext-0.2.0.dist-info/METADATA,sha256=1r0vkDx0cgOYo-66xjKSCvET4c6QHdRQJGBxdixkc_w,6319
+pylexitext-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pylexitext-0.2.0.dist-info/top_level.txt,sha256=c-6s8CRoS-zznDx132_lNr4KgTOrd0r3DxCCK3CaOz4,11
+pylexitext-0.2.0.dist-info/RECORD,,
