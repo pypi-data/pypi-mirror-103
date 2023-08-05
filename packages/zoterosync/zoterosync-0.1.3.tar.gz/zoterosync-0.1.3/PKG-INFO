@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: zoterosync
+Version: 0.1.3
+Summary: it syncs zotero storage with a rclone remote
+Home-page: https://gitlab.com/marceloakira/zoterosync
+Author: Marcelo Akira Inuzuka
+Author-email: marceloakira@ufg.br

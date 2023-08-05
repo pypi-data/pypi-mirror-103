@@ -1,0 +1,13 @@
+bin
+include
+lib
+Pipfile
+Pipfile.lock
+share
+sync_dirs
+.spyproject
+.env
+.vscode
+zoterosync.conf.json
+__pycache__
+dist
