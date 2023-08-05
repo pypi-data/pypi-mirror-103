@@ -1,0 +1,233 @@
+import logging
+import os
+import shutil
+import sys
+from zipfile import ZipFile
+from termcolor import colored
+
+import yaml
+from biolib.validators.validate_app_version import validate_app_version
+from biolib.validators.validate_argument import validate_argument
+from biolib.validators.validate_module import validate_module
+
+
+biolib_logger = logging.getLogger('biolib')
+
+
+class BiolibValidationError(Exception):
+    pass
+
+
+def validate_and_get_args(args):
+    if args is None:
+        args = []
+
+    if isinstance(args, str):
+        args = list(filter(lambda p: p != '', args.split(' ')))
+
+    if not isinstance(args, list):
+        raise Exception('The given input arguments must be list or str')
+
+    return args
+
+
+def get_files_dict_and_file_args(files, args):
+    if files is None:
+        files = []
+        # TODO: Figure out how to make this slightly less error prone
+        for idx, arg in enumerate(args):
+            if not arg.startswith('/'):
+                arg = f'{os.getcwd()}/{arg}'
+
+            if os.path.isfile(arg):
+                files.append(arg)
+                # Make sure that arg is only the filename
+                args[idx] = arg.split('/')[-1]
+
+    files_dict = {}
+    for file in files:
+        path = file
+        file = open(path, 'rb')
+        arg_split = path.split('/')
+        path = '/' + arg_split[-1]
+
+        files_dict[path] = file.read()
+        file.close()
+
+    return files_dict, args
+
+
+def validate_and_get_app_path(provided_app_path):
+    if provided_app_path.startswith('/'):
+        app_path = provided_app_path
+    else:
+        app_path = f'{os.getcwd()}/{provided_app_path}'
+
+    if not os.path.exists(app_path):
+        print(f'ERROR: Could not find path {app_path}')
+        sys.exit(1)
+
+    if not os.path.isdir(app_path):
+        print(f'ERROR: Path {app_path} is not a directory')
+        sys.exit(1)
+
+    return app_path
+
+
+def get_source_files_zip(app_path, source_files_temp_dir):
+    cwd = os.getcwd()
+    os.chdir(app_path)
+    zip_name = 'biolib_run_dev'
+    zip_filename = f'{zip_name}.zip'
+    biolib_logger.debug(f'Zipping app path {app_path}')
+    shutil.make_archive(f'{source_files_temp_dir.name}/{zip_name}', 'zip', base_dir='.')
+    # change back to old working directory
+    os.chdir(cwd)
+    return f'{source_files_temp_dir.name}/{zip_filename}'
+
+
+def get_yaml_data(app_path):
+    try:
+        yaml_file = open(f'{app_path}/.biolib/config.yml', 'r', encoding='utf-8')
+
+    except Exception as error:  # pylint: disable=broad-except
+        biolib_logger.error(error)
+        biolib_logger.error(f'Could not open the biolib config file at {app_path}/.biolib/config.yml')
+        sys.exit(1)
+
+    try:
+        yaml_data = yaml.safe_load(yaml_file)
+
+    except Exception as error:  # pylint: disable=broad-except
+        biolib_logger.error(error)
+        biolib_logger.error(f'Could not parse {app_path}/.biolib/config.yml. Please make sure it is valid YAML')
+        sys.exit(1)
+
+    return yaml_data
+
+
+def set_mappings_from_yaml(yaml_data, module, mapping_type):
+    module[f'{mapping_type}_files_mappings'] = []
+    for mapping in yaml_data.get(f'{mapping_type}_files'):
+        _, from_path, to_path = mapping.split(' ')
+        module[f'{mapping_type}_files_mappings'].append({'from_path': from_path, 'to_path': to_path})
+
+
+def validate_arguments(yaml_data):
+    error_dict = {'arguments': {}}
+    # Arguments are optional
+    if 'arguments' in yaml_data:
+        for argument in yaml_data['arguments']:
+            argument_errors = validate_argument(argument)
+            if argument_errors:
+                error_dict['arguments'].update(argument_errors)
+
+    # Just return empty dict if we have no errors
+    if error_dict['arguments']:
+        return error_dict
+    else:
+        return {}
+
+
+def validate_and_get_biolib_yaml_version(yaml_data, error_dict):
+    if not 'biolib_version' in yaml_data.keys():
+        error_dict['config_yml']['biolib_version'] = ['Your config file is missing the biolib_version field.']
+        print_errors(error_dict)
+        sys.exit(1)
+    else:
+        biolib_version = yaml_data['biolib_version']
+
+    if biolib_version not in (1, 2):
+        error_dict['config_yml']['biolib_version'] = \
+            [f'Biolib version can only be either 1 or 2 for now, your version is {biolib_version}.']
+        print_errors(error_dict)
+        sys.exit(1)
+
+    return biolib_version
+
+
+def validate_modules(yaml_data, biolib_yaml_version):
+    error_dict = {'modules': {}}
+    if 'modules' in yaml_data:
+        for name, task_data in yaml_data['modules'].items():
+            task_errors = validate_module(name, task_data, biolib_yaml_version)
+            if task_errors:
+                error_dict['modules'].update(task_errors)
+
+    # Just return empty dict if we have no errors
+    if error_dict['modules']:
+        return error_dict
+    else:
+        return {}
+
+
+def validate_yaml_config(yaml_data, source_files_zip_path):
+    source_files_zip = ZipFile(source_files_zip_path)
+    error_dict = {'config_yml': {}}
+
+    biolib_yaml_version = validate_and_get_biolib_yaml_version(yaml_data, error_dict)
+    error_dict['config_yml'].update(validate_app_version(yaml_data, biolib_yaml_version, source_files_zip))
+    error_dict['config_yml'].update(validate_modules(yaml_data, biolib_yaml_version))
+    error_dict['config_yml'].update(validate_arguments(yaml_data))
+
+    if error_dict['config_yml']:
+        print_errors(error_dict)
+        raise BiolibValidationError('Could not validate .biolib/config.yml')
+
+
+def print_errors(error_dict):
+    print(colored("\nThe following validation errors were found in the .biolib/config.yml file:", 'red'))
+    print(yaml.safe_dump(error_dict, allow_unicode=True, default_flow_style=False))
+
+
+def get_main_module_from_yaml(yaml_data, validate_local_docker_only=False):
+    for yaml_module_name, yaml_module in yaml_data['modules'].items():
+        if yaml_module_name != 'main':
+            continue
+        main_module = {}
+        set_mappings_from_yaml(yaml_module, main_module, mapping_type='input')
+        set_mappings_from_yaml(yaml_module, main_module, mapping_type='source')
+        set_mappings_from_yaml(yaml_module, main_module, mapping_type='output')
+
+        main_module['working_directory'] = yaml_module.get('working_directory', '/')
+        main_module['command'] = yaml_module.get('command', '')
+
+        if validate_local_docker_only:
+            main_module['image'] = validate_and_set_image(yaml_module)
+        else:
+            main_module['image'] = yaml_module.get('image')
+
+        return main_module
+
+
+def validate_and_set_image(module):
+    image = module.get('image')
+    # Image is validated to be of correct format at this point
+    environment, image_name = image.split('://')
+
+    if not environment == 'local-docker':
+        biolib_logger.error("Your app must use a local docker image to use this command.")
+        biolib_logger.error(f"Found image {image_name} using environment {environment}, please use 'local-docker://'")
+        sys.exit(1)
+
+    return image_name
+
+
+def return_results(stdout, stderr, exit_code, mapped_output_files):
+    print(colored('\nStdout: ', 'green') + f'{stdout.decode()}')
+    if stderr:
+        print(colored('\nStderr: ', 'red') + f'{stderr.decode()}')
+
+    print(colored('App exited with code: ', 'green') + f'{exit_code}')
+
+    if mapped_output_files:
+        print(colored("Output Files:", 'green'))
+        for path, data in mapped_output_files.items():
+            dirs, _ = os.path.split(path)
+            if dirs:
+                os.makedirs(f'{os.getcwd()}{dirs}', exist_ok=True)
+            open(f'{os.getcwd()}{path}', 'wb').write(data)
+
+            print(f"  - {os.getcwd()}{path}")
+
+        print('\n')
