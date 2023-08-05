@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: tuya-iot-py-sdk
+Version: 0.1.0
+Summary: A Python sdk for Tuya Open API, which provides basic IoT capabilities like device management, asset management and industry capabilities, helping you create IoT solutions.
+Home-page: https://github.com/tuya/tuya-iot-app-sdk-python
+Author: Tuya Inc.
+Author-email: developer@tuya.com
+License: MIT
+Keywords: tuya iot app sdk python
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.0
+Requires-Dist: paho-mqtt
+Requires-Dist: requests
+Requires-Dist: pycryptodome
+Provides-Extra: test
+
+UNKNOWN
+
+
