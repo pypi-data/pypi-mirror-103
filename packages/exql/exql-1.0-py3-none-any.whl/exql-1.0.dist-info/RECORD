@@ -1,0 +1,10 @@
+exql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+exql/dao.py,sha256=czE7ef-1bNJPvsRaW49NTKryecUcHCJY414PuYXdo8A,7913
+exql/exql.py,sha256=q7sj1YzgUm9oeIo_cmY3O-CmDFdKwhAK1zV9RdWDh-g,14858
+exql/logger.py,sha256=obm_MGWdZplVKbuiZx3rIx1HdDQd9hmDsxgHu2qmILw,281
+exql/sql.py,sha256=BsKtzU7BVhgcXqIhuopV-xdT2e-RQOCtjZsZY1eNPtU,355
+exql-1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+exql-1.0.dist-info/METADATA,sha256=TAAvPn9f3iAR0Nxf6kcdR_8zbzeKi2Pu4Oc6bodGp-M,2874
+exql-1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+exql-1.0.dist-info/top_level.txt,sha256=MPvEXc5rCIpEiq-vn4B-JWg7WHXwSe8zxYOuxEuCGvM,5
+exql-1.0.dist-info/RECORD,,
