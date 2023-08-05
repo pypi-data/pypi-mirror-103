@@ -1,0 +1,8 @@
+README.md
+make-help-helper.py
+setup.py
+make_help_helper.egg-info/PKG-INFO
+make_help_helper.egg-info/SOURCES.txt
+make_help_helper.egg-info/dependency_links.txt
+make_help_helper.egg-info/not-zip-safe
+make_help_helper.egg-info/top_level.txt
