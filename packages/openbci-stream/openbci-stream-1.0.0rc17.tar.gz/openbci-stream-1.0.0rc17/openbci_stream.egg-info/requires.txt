@@ -1,0 +1,13 @@
+requests>=2.25.1
+netifaces>=0.10.9
+scipy>=1.6.2
+rawutil>=2.7.0
+colorama>=0.4.4
+rpyc>=5.0.1
+mne>=0.22.1
+tables>=3.6.1
+kafka_python>=2.0.2
+ntplib>=0.3.4
+numpy>=1.20.1
+nmap>=0.0.1
+pyserial>=3.5
