@@ -1,0 +1,4 @@
+click
+click-option-group
+requests
+pywf>=0.0.4
