@@ -1,0 +1,2 @@
+PyQt5
+google_play_scraper
