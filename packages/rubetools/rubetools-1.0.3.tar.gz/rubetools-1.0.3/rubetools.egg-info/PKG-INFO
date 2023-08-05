@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: rubetools
+Version: 1.0.3
+Summary: Rubetek dataset tools.
+Home-page: https://github.com/rubetek/rubetools
+Author: RubetekAI
+License: Apache License 2.0
+Description: UNKNOWN
+Keywords: rubetools rubetek datatools ai
+Platform: UNKNOWN
+Requires-Python: >=3.6
