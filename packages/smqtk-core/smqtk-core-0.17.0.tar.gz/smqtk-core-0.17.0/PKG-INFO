@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: smqtk-core
+Version: 0.17.0
+Summary: Python toolkit for pluggable algorithms and data structures for multimedia-based machine learning.
+Home-page: https://github.com/Kitware/SMQTK-Core
+License: BSD-3-Clause
+Author: Kitware, Inc.
+Author-email: smqtk-developers@kitware.com
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: setuptools (>=53)
+Project-URL: Documentation, https://smqtk-core.readthedocs.io/
+Project-URL: Repository, https://github.com/Kitware/SMQTK-Core
+Description-Content-Type: text/markdown
+
+# SMQTK - Core
+
+## Intent
+Provide a light-weight framework for developing interfaces that have built-in
+implementation discovery and factory construction from configuration.
+
+## Documentation
+https://smqtk-core.readthedocs.io/en/stable/
+
+You can also build the sphinx documentation locally for the most up-to-date
+reference:
+```bash
+# Install dependencies
+poetry install
+# Navigate to the documentation root.
+cd docs
+# Build the docs.
+poetry run make html
+# Open in your favorite browser!
+firefox _build/html/index.html
+```
+
