@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: yapper
+Version: 0.0.2
+Summary: Simple python parser converting docstrings to markdown for static site generators.
+Home-page: https://github.com/benchmark-urbanism/yapper
+Author: Gareth Simons
+Author-email: info@benchmarkurbanism.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/benchmark-urbanism/yapper/issues
+Project-URL: Documentation, https://github.com/benchmark-urbanism/yapper
+Project-URL: Source Code, https://github.com/benchmark-urbanism/yapper
+Platform: UNKNOWN
+Requires-Dist: docspec
+Requires-Dist: docspec-python
+Requires-Dist: pyyaml
+
+UNKNOWN
+
+
