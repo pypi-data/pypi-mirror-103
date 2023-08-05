@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: QFin
+Version: 0.0.1
+Summary: A Python library for mathematical finance
+Home-page: UNKNOWN
+Author: Roman Paolucci
+Author-email: <romanmichaelpaolucci@gmail.com>
+License: UNKNOWN
+Requires-Dist: scipy
+Requires-Dist: numpy
+
+
+# Q-Fin
+
