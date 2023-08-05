@@ -1,0 +1,4 @@
+
+            [console_scripts]
+            encryptoenv=encryptoenv.__main__:main
+        
