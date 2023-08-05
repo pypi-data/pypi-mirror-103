@@ -1,0 +1,159 @@
+Metadata-Version: 2.1
+Name: empyrical-reloaded
+Version: 0.5.7
+Summary: empyrical computes performance and risk statistics commonly used in quantitative finance
+Home-page: https://empyrical.ml4trading.io
+Author: Quantopian Inc
+Maintainer: Applied AI, LLC
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.9.2)
+Requires-Dist: pandas (>=1.0.0)
+Requires-Dist: scipy (>=0.15.1)
+Requires-Dist: pandas-datareader (>=0.4)
+Requires-Dist: yfinance (>=0.1.55)
+Provides-Extra: all
+Requires-Dist: Cython ; extra == 'all'
+Requires-Dist: Sphinx (>=1.3.2) ; extra == 'all'
+Requires-Dist: numpydoc (>=0.5.0) ; extra == 'all'
+Requires-Dist: sphinx-autobuild (>=0.6.0) ; extra == 'all'
+Requires-Dist: pydata-sphinx-theme ; extra == 'all'
+Requires-Dist: sphinx-markdown-tables ; extra == 'all'
+Requires-Dist: sphinx-copybutton ; extra == 'all'
+Requires-Dist: nbsphinx ; extra == 'all'
+Requires-Dist: m2r2 ; extra == 'all'
+Requires-Dist: flake8 (>=3.9.1) ; extra == 'all'
+Requires-Dist: black ; extra == 'all'
+Requires-Dist: pre-commit (>=2.12.1) ; extra == 'all'
+Requires-Dist: tox (>=2.3.1) ; extra == 'all'
+Requires-Dist: coverage (>=4.0.3) ; extra == 'all'
+Requires-Dist: nose (>=1.3.7) ; extra == 'all'
+Requires-Dist: parameterized (>=0.6.1) ; extra == 'all'
+Requires-Dist: nose-ignore-docstring (>=0.2) ; extra == 'all'
+Requires-Dist: nose-timer (>=0.5.0) ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: flake8 (>=3.9.1) ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: pre-commit (>=2.12.1) ; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: Cython ; extra == 'doc'
+Requires-Dist: Sphinx (>=1.3.2) ; extra == 'doc'
+Requires-Dist: numpydoc (>=0.5.0) ; extra == 'doc'
+Requires-Dist: sphinx-autobuild (>=0.6.0) ; extra == 'doc'
+Requires-Dist: pydata-sphinx-theme ; extra == 'doc'
+Requires-Dist: sphinx-markdown-tables ; extra == 'doc'
+Requires-Dist: sphinx-copybutton ; extra == 'doc'
+Requires-Dist: nbsphinx ; extra == 'doc'
+Requires-Dist: m2r2 ; extra == 'doc'
+Provides-Extra: test
+Requires-Dist: tox (>=2.3.1) ; extra == 'test'
+Requires-Dist: coverage (>=4.0.3) ; extra == 'test'
+Requires-Dist: nose (>=1.3.7) ; extra == 'test'
+Requires-Dist: parameterized (>=0.6.1) ; extra == 'test'
+Requires-Dist: nose-ignore-docstring (>=0.2) ; extra == 'test'
+Requires-Dist: nose-timer (>=0.5.0) ; extra == 'test'
+Requires-Dist: flake8 (>=3.9.1) ; extra == 'test'
+Requires-Dist: black ; extra == 'test'
+
+[![PyPI Wheels](https://github.com/stefan-jansen/empyrical-reloaded/actions/workflows/build_wheels.yml/badge.svg)](https://github.com/stefan-jansen/empyrical-reloaded/actions/workflows/build_wheels.yml)
+[![CI Tests](https://github.com/stefan-jansen/empyrical-reloaded/actions/workflows/unit_tests.yml/badge.svg)](https://github.com/stefan-jansen/empyrical-reloaded/actions/workflows/unit_tests.yml)
+
+# empyrical
+
+Common financial risk metrics in Python.
+
+## Installation
+
+empyrical requires Python 3.7+. You can install it using `pip`:
+
+```bash
+pip install empyrical-reloaded
+```
+
+or `conda`:
+```bash
+conda install -c ml4t empyrical-reloaded
+```
+
+empyrical requires and installs the following packages while executing the above commands:
+
+- numpy>=1.9.2
+- pandas>=1.0.0
+- scipy>=0.15.1
+- pandas-datareader>=0.4
+- yfinance>=0.1.55
+
+## Usage
+
+Simple Statistics
+```python
+import numpy as np
+from empyrical import max_drawdown, alpha_beta
+
+returns = np.array([.01, .02, .03, -.4, -.06, -.02])
+benchmark_returns = np.array([.02, .02, .03, -.35, -.05, -.01])
+
+# calculate the max drawdown
+max_drawdown(returns)
+
+# calculate alpha and beta
+alpha, beta = alpha_beta(returns, benchmark_returns)
+
+```
+
+Rolling Measures
+```python
+import numpy as np
+from empyrical import roll_max_drawdown
+
+returns = np.array([.01, .02, .03, -.4, -.06, -.02])
+
+# calculate the rolling max drawdown
+roll_max_drawdown(returns, window=3)
+
+```
+
+Pandas Support
+```python
+import pandas as pd
+from empyrical import roll_up_capture, capture
+
+returns = pd.Series([.01, .02, .03, -.4, -.06, -.02])
+
+# calculate a capture ratio
+capture(returns)
+
+# calculate capture for up markets on a rolling 60 day basis
+roll_up_capture(returns, window=60)
+```
+
+## Support
+
+Please [open an issue](https://github.com/stefan-jansen/empyrical-reloaded/issues/new) for support.
+
+## Contributing
+
+Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/stefan-jansen/empyrical-reloaded/compare/).
+
+## Testing
+- install requirements
+  - "nose>=1.3.7",
+  - "parameterized>=0.6.1"
+
+```bash
+nosetests empyrical.tests
+```
+
+
