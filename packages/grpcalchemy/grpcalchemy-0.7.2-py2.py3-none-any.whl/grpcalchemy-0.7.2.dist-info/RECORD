@@ -1,0 +1,16 @@
+grpcalchemy/__init__.py,sha256=2Tssz5aVTHGxeKDoG0KOsBGbBdWRQcJFIBR_XHEEGtI,403
+grpcalchemy/blueprint.py,sha256=WvpSz_GQRcR-4zqgXf2P1RawLoxOiuC5-V47Kh1rlxM,13111
+grpcalchemy/config.py,sha256=8y5qDHfrHW2DIx02OilxPNUL3HKFheO20FUUykfmJRE,1869
+grpcalchemy/meta.py,sha256=EDdOTZptFRwz3mDvkmESgfoRtMES_QPEnrGTvl-v30g,666
+grpcalchemy/orm.py,sha256=ngbbzSO2RFhWW1Y3nGT7dBjE4U6C1bVlS_85vZ7mIoQ,10834
+grpcalchemy/server.py,sha256=fkDHG8iHtz5mRulG6TcL57aX6dV65sviS5PxctUn4Jo,12122
+grpcalchemy/types.py,sha256=Ct9lYqd4yEdcJDtgny4YGHZEWLMKvOG82S35fkvvIU4,1687
+grpcalchemy/utils.py,sha256=BfbICaGOs2p9JW-eEpz8d2pgQ54TLCEJJCDsxcyuvNU,6758
+grpcalchemy/templates/README.md.tmpl,sha256=BpsReKiPfxN9bAsqMkjbGjGhjwohjay5ZTOd_wZZ1SY,86
+grpcalchemy/templates/rpc.proto.tmpl,sha256=_uljiPzEyen5nBTfYYH9fJ4aFq6a--ubxozXFARGmk4,596
+grpcalchemy-0.7.2.dist-info/AUTHORS.rst,sha256=KjZonGJgmc483D3yqkYSuo_rBRanHirVRWX_9vSHUXg,157
+grpcalchemy-0.7.2.dist-info/LICENSE,sha256=G_Vw_wmSQrLUAs5ETRGcD8TGEC_dSV0UmgY7vV0TTrQ,1071
+grpcalchemy-0.7.2.dist-info/METADATA,sha256=4JymqhMJr_GohdvYsU6owKj9rxeJj4v6d0f9YDgqg2c,5444
+grpcalchemy-0.7.2.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+grpcalchemy-0.7.2.dist-info/top_level.txt,sha256=5J4AbJ7TgjPPgm1Nf3J1o7djY8Q8lwbK1tF6K7W1w78,12
+grpcalchemy-0.7.2.dist-info/RECORD,,
