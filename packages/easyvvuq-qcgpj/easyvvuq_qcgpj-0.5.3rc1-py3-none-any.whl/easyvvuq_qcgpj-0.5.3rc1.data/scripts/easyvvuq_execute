@@ -1,0 +1,31 @@
+#!/bin/bash
+
+. eqi_utils.sh
+
+# Source the site-specific configuration file
+if [[ -f $EQI_CONFIG ]]
+then
+  echo "Sourcing configuration file: $EQI_CONFIG"
+  . $EQI_CONFIG
+fi
+
+
+if [[ $# -lt 2 ]]
+then
+    echo "Usage: RUN_DIR COMMAND"
+    exit 1
+fi
+
+run="$1"
+eqi_dir=$(pwd)
+
+eqi_resume_init "$run" "execute"
+(( $? == $RET_COMPLETED )) && exit 0
+
+cd "../runs/$1"
+shift
+echo "Executing command \`$@\` in $(pwd)"
+$@
+
+cd "$eqi_dir"
+eqi_resume_finish "$run" "execute"
