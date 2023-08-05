@@ -1,0 +1,6 @@
+setup.cfg
+setup.py
+airstore.egg-info/PKG-INFO
+airstore.egg-info/SOURCES.txt
+airstore.egg-info/dependency_links.txt
+airstore.egg-info/top_level.txt
