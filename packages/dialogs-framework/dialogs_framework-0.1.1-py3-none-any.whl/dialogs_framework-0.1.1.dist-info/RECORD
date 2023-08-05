@@ -1,0 +1,11 @@
+dialogs_framework/__init__.py,sha256=ZocDAd396WDwAK-faTiTg1jVUIJHg0pN8y8itWx00Wo,310
+dialogs_framework/dialog_state.py,sha256=mMXrjq8Ap2rqhMLn49Cb5l2C1Adz-rzJ1N9G7nGAV58,2437
+dialogs_framework/dialogs.py,sha256=NNWwYLXXErx6w-O8yHW66yY_Fi9E9IcfbAuwfxdeAtI,5788
+dialogs_framework/message_queue.py,sha256=RogooUxVE6oIq6Kg9PeK5OJD75YegQhzRCuAURa28H0,773
+dialogs_framework/persistence/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dialogs_framework/persistence/in_memory.py,sha256=z_KBooZRFBQP7Vg-S6Z8EyBQBm9eujftQjqk0z68PT0,568
+dialogs_framework/persistence/persistence.py,sha256=3FtJkm4p1ufgHSfzaUjoUAjx0gIfpshVg_evm-o2cjo,506
+dialogs_framework/types.py,sha256=NXI42laWpm1uuU_QFk1T-4vfjPK-7bFoMpgyO7L_Lck,2101
+dialogs_framework-0.1.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+dialogs_framework-0.1.1.dist-info/METADATA,sha256=CEcsJHHctuanZ08GLHeWyXXX8Ig67rocrLsHmIwnV-Y,436
+dialogs_framework-0.1.1.dist-info/RECORD,,
