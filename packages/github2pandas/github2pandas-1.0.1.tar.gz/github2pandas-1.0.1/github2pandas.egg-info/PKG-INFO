@@ -1,0 +1,115 @@
+Metadata-Version: 2.1
+Name: github2pandas
+Version: 1.0.1
+Summary: github2pandas supports the aggregation of project activities in a GitHub repository and makes them available in pandas dataframes
+Home-page: https://github.com/TUBAF-IFI-DiPiT/github2pandas
+Author: Maximilian Karl & Sebastian Zug
+License: BSD 2
+Download-URL: https://github.com/user/reponame/archive/v_01.tar.gz
+Description: # Transform GitHub Activities to Pandas Dataframes
+        
+        ## General information
+        
+        This package is being developed by the participating partners (TU Bergakademie Freiberg, OVGU Magdeburg and HU Berlin) as part of the DiP-iT project [Website](http://dip-it.ovgu.de/).
+        
+        The package implements Python functions for 
+        + aggregating and preprocessing GitHub activities (Commits, Actions, Issues, Pull-Requests) and 
+        + generating project progress summaries according to different metrics (ratio of changed lines, ratio of aggregated Levenshtein distances e.g.).
+        
+        `github2pandas` stores the collected information in a collection of pandas DataFrames starting from a user defined root folder. The structure beyond that (file names, folder names) is defined as a member variable in the corresponding classes and can be overwritten. The default configuration results in the following file structure.
+        
+        ```
+        data                                     <- Root directory given as parameter
+        â”œâ”€â”€ My_Github_Repository_0               <- Repository name
+        â”‚   â”œâ”€â”€ Repo.json                        <- Json file containing user and repo name
+        â”‚   â”œâ”€â”€ Issues
+        â”‚   â”‚   â”œâ”€â”€ pdIssuesComments.p
+        â”‚   â”‚   â”œâ”€â”€ pdIssuesEvents.p
+        â”‚   â”‚   â”œâ”€â”€ pdIssues.p
+        â”‚   â”‚   â””â”€â”€ pdIssuesReactions.p
+        â”‚   â”œâ”€â”€ PullRequests
+        â”‚   â”‚   â”œâ”€â”€ pdPullRequestsComments.p
+        â”‚   â”‚   â”œâ”€â”€ pdPullRequestsEvents.p
+        â”‚   â”‚   â”œâ”€â”€ pdPullRequests.p
+        â”‚   â”‚   â”œâ”€â”€ pdPullRequestsReactions.p
+        â”‚   â”‚   â””â”€â”€ pdPullRequestsReviews.p
+        â”‚   â”œâ”€â”€ Users.p
+        â”‚   â”œâ”€â”€ Versions
+        â”‚   â”‚   â”œâ”€â”€ pdCommits.p
+        â”‚   â”‚   â”œâ”€â”€ pdEdits.p
+        â”‚   â”‚   â”œâ”€â”€ pdBranches.p
+        â”‚   â”‚   â”œâ”€â”€ repo                         <- Repository clone
+        â”‚   â”‚   â”‚   â”œâ”€â”€ ..
+        â”‚   |   |   â””â”€â”€ ..
+        â”‚   â”‚   â””â”€â”€ Versions.db
+        â”‚   â””â”€â”€ Workflows
+        â”‚       â””â”€â”€ pdWorkflows.p
+        â”œâ”€â”€ My_Github_Repository_1
+        ...
+        ```
+        The internal structure and relations of the data frames are included in the project's [wiki](https://github.com/TUBAF-IFI-DiPiT/github2pandas/wiki).
+        
+        ## Installation
+        
+        Due to the early stage of development the `github2pandas` package is not yet available as a pip package. Installations should be done accordingly as follows:
+        
+        1. Generate local clone of the package
+            ```
+            git clone https://github.com/TUBAF-IFI-DiPiT/github2pandas.git
+            ```
+        2. Include the specific folder to your python path 
+            ```
+            pipenv install --dev
+            ```
+        
+        ## Application examples 
+        
+        GitHub token is required for use, which is used for authentication. The [website](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) describes how you can generate this for your GitHub account. Customise the username and project name and explore any public or private repository you have access to with your account!
+        
+        | Aspect              | Example                                                                                                                        | Executable notebook | 
+        |:------------------- |:------------------------------------------------------------------------------------------------------------------------------ |:------------------- |
+        | Overview Example    | [Overview_Example.ipynb](https://github.com/TUBAF-IFI-DiPiT/github2pandas/blob/main/notebooks/Overview_Example.ipynb)          | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/TUBAF-IFI-DiPiT/github2pandas/HEAD?filepath=%2Fnotebooks)  |
+        | Commits & Edits     | [Version_Example.ipynb](https://github.com/TUBAF-IFI-DiPiT/github2pandas/blob/main/notebooks/Version_Example.ipynb)            |                     |
+        | Workflows / Actions | [Workflow_Example.ipynb](https://github.com/TUBAF-IFI-DiPiT/github2pandas/blob/main/notebooks/Workflow_Example.ipynb)          |                     |
+        | Issues              | [Issue_Example.ipynb](https://github.com/TUBAF-IFI-DiPiT/github2pandas/blob/main/notebooks/Issues_Example.ipynb)               |                     |
+        | Pull-Requests       | [Pull_Requests_Example.ipynb](https://github.com/TUBAF-IFI-DiPiT/github2pandas/blob/main/notebooks/Pull_Requests_Example.ipynb)|                     | 
+        
+        The documentation of the module is available at XXX. 
+        
+        # For Developers
+        
+        Naming conventions: https://namingconvention.org/python/
+        
+        ## Working with pipenv
+        
+        
+        | Process                                     | Command                                                 |
+        | ------------------------------------------- | ------------------------------------------------------- |
+        | Installation                                | `pipenv install --dev`                                  |
+        | Run specific script                         | `pipenv run python file.py`                             |
+        | Run all Tests                               | `pipenv run python -m unittest`                         |
+        | Run all tests in a specific folder          | `pipenv run python -m unittest discover -s 'tests'`     |
+        | Run all tests with specific filename        | `pipenv run python -m unittest discover -p 'test_*.py'` |
+        | Start Jupyter server in virtual environment | `pipenv run jupyter notebook`                           | 
+        
+        ## Generating documentation
+        
+        1. Run following command in main folder
+        
+        ```
+        pipenv run  sphinx-apidoc -o ./docu/source/ ./github2pandas
+        ```
+        
+        2. Generate html documentation 
+        
+        ```
+        cd docu
+        make html
+        ```
+        
+Keywords: git,github,collaborative code development,git mining
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
