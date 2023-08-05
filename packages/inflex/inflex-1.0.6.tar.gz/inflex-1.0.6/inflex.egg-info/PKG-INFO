@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: inflex
+Version: 1.0.6
+Summary: Inflection (conjugation and declension) of the English Language.
+Home-page: https://github.com/tomaarsen/inflex
+Author: Tom Aarsen
+Author-email: cubiegamedev@gmail.com
+License: MIT
+Description: 
+        # Inflex
+        Natural Language Inflection in English<br>
+        (Formerly called Inflexion)
+        
+        ---
+        
+        This README is a stub, and is yet to be written.
+        
+        ---
+        
+        ## Install
+        Inflex has no requirements, and has support for Python version 3.6 onwards.<br>
+        Install it via:
+        ```
+        pip install inflex
+        ```
+        
+        ## Sample Usage
+        ```python
+        from inflex import Noun, Verb, Adjective
+        
+        # Converting Nouns
+        Noun("book").plural()   # Produces "books"
+        Noun("book").singular() # Produces "book"
+        
+        # Converting Verbs
+        Verb("fly").plural()    # Produces "fly"
+        Verb("fly").singular()  # Produces "flies"
+        Verb("fly").past()      # Produces "flew"
+        Verb("fly").pres_part() # Produces "flying"
+        Verb("fly").past_part() # Produces "flown"
+        
+        # Converting Adjectives
+        Adjective("my").singular()       # Produces "my"
+        Adjective("our").plural()        # Produces "our"
+        Adjective("small").comparative() # Produces "smallest"
+        Adjective("small").superlative() # Produces "smaller"
+        ```
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
