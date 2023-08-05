@@ -1,0 +1,3 @@
+[console_scripts]
+pitchly = pitchly.cli:main
+
