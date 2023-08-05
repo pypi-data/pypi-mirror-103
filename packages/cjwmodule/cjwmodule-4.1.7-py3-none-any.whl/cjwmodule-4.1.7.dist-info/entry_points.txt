@@ -1,0 +1,4 @@
+[console_scripts]
+check-messages=maintenance.i18n:check
+extract-messages=maintenance.i18n:extract
+
