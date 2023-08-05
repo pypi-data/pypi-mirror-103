@@ -1,0 +1,3 @@
+Pillow==8.2.0
+arcor2~=0.15.0
+dataclasses-jsonschema[apispec,fast-validation]==2.14.1
