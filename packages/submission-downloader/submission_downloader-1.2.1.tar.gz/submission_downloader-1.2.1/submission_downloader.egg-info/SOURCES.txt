@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+submission_downloader/__init__.py
+submission_downloader/__main__.py
+submission_downloader.egg-info/PKG-INFO
+submission_downloader.egg-info/SOURCES.txt
+submission_downloader.egg-info/dependency_links.txt
+submission_downloader.egg-info/requires.txt
+submission_downloader.egg-info/top_level.txt
