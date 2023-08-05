@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: uranium-quantum
+Version: 0.1.8
+Summary: Support libraries for the Uranium quantum computing platform.
+Home-page: https://github.com/radumarg/uranium-quantum
+Author: Radu Marginean
+Author-email: radu.marg@gmail.com
+License: MIT
+Download-URL: https://github.com/radumarg/uranium-quantum/archive/refs/tags/v0.1.8.tar.gz
+Description: 
+        This package contains support Python libraries for the Uranium quantum computing platform. 
+        
+        - the circuit_composer module allows creating circuits programatically in the yaml format used by Uranium.
+        - the circuit_exporter module is used to export circuits from the yaml format internally used by Uranium to external quantum circuit formats like Qiskit, OpenQASM, Cirq, Quil and PyQuil.
+        
+        For further details please visit: https://transilvania-quantum.org/uranium
+        
+Keywords: quantum,computing,uranium platform
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
