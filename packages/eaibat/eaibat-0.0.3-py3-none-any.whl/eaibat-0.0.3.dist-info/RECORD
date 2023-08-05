@@ -1,0 +1,13 @@
+eaiBat/__init__.py,sha256=2BKx29GF2ix3-0C28B3O02a0LxoQJpXCrq_UH7UsEl0,65
+eaiBat/eaiBat.py,sha256=7Ib5whbngYgLjhltJEWUuXL9gnUVU9isaq2zIh-cejs,3752
+eaiBat/evidenceGenerators/DocxEvidence.py,sha256=qmUodVBMe9-MGBuTEdZ2RMS7b7BMnhtLaqDMzFL98M0,4232
+eaiBat/evidenceGenerators/MdEvidence.py,sha256=B7zvttu-_E47cN1hfzaWcilSiVKeRKXVWDIGUugbFu0,3801
+eaiBat/evidenceGenerators/__init__.py,sha256=2BKx29GF2ix3-0C28B3O02a0LxoQJpXCrq_UH7UsEl0,65
+evidenceGenerators/DocxEvidence.py,sha256=SrgNhbmKnfmgsAw_-Zq2at4Bact692ms0lrANmlkygY,4429
+evidenceGenerators/MdEvidence.py,sha256=yfMFSCQuay2NErpT1tVdCP21MUqdHsQy0uAf7lzWVBg,4027
+evidenceGenerators/__init__.py,sha256=2BKx29GF2ix3-0C28B3O02a0LxoQJpXCrq_UH7UsEl0,65
+eaibat-0.0.3.dist-info/LICENSE,sha256=7GKIR95QHGxZUfY_N5Or2XXBVRkLkyTRnZ_cLFyFw8s,35176
+eaibat-0.0.3.dist-info/METADATA,sha256=BAABY_S7U8dEhcPwOYvN48lxYj8fUhfXjt-yUnUKqBk,1265
+eaibat-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+eaibat-0.0.3.dist-info/top_level.txt,sha256=tQ63dWZQWadrp26mAbgMbKEawO9Cw0Sg4Dk_5pw7c_8,19
+eaibat-0.0.3.dist-info/RECORD,,
