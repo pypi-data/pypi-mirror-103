@@ -1,0 +1,7 @@
+[console_scripts]
+scepticoin-mine = scepticoin.scripts.mine:main
+scepticoin-receive = scepticoin.scripts.receive:main
+scepticoin-repl = scepticoin.scripts.repl:main
+scepticoin-send = scepticoin.scripts.send:main
+scepticoin-version = scepticoin.scripts.version:main
+
