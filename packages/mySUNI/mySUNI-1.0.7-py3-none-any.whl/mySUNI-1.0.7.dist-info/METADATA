@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: mySUNI
+Version: 1.0.7
+Summary: mySUNI CDS
+Home-page: https://github.com/BAEM1N/mySUNI
+Author: Teddy Lee, BAEM1N
+Author-email: teddylee777@gmail.com, baemin.dev@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/BAEM1N/mySUNI/archive/master.zip
+Keywords: mySUNI,CDS
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: seaborn
+Requires-Dist: requests
+Requires-Dist: scikit-learn
+Requires-Dist: xgboost
+Requires-Dist: lightgbm
+Requires-Dist: openpyxl
+Requires-Dist: xlrd
+Requires-Dist: matplotlib
+
+UNKNOWN
+
+
