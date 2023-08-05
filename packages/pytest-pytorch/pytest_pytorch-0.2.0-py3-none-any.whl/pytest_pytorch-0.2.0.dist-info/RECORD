@@ -1,0 +1,9 @@
+pytest_pytorch/__init__.py,sha256=KQO4kG5n57wkEqhVXDilzgcA45FZdliyEnpuSbj69pw,126
+pytest_pytorch/_version.py,sha256=g0RU_Fiae76hPEUjU6lGnapa9IZoqGcB4oFcTnsoMbM,142
+pytest_pytorch/plugin.py,sha256=7p0jCo8BjBTl3y4gaS1LQfIGRQit5H0ZpVlLhS7AO0g,2717
+pytest_pytorch-0.2.0.dist-info/LICENSE,sha256=Fjszq3Y7k3iXJ6dR_2jiAcaBUmqCAYayMVXX_I9Zw_A,1520
+pytest_pytorch-0.2.0.dist-info/METADATA,sha256=8FbYIMnKdL9TAtRDHvrJYYs07GHjG1k-c4JTuyHxadE,5678
+pytest_pytorch-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pytest_pytorch-0.2.0.dist-info/entry_points.txt,sha256=_F3WyjaHl5KjrqBrkcZwPomkm3dWBqmlxz9MtqSIs1U,51
+pytest_pytorch-0.2.0.dist-info/top_level.txt,sha256=Sr6TLf1TRyo8um_rmfVdYWdUdzk85XsHPywqShSZVWU,15
+pytest_pytorch-0.2.0.dist-info/RECORD,,
