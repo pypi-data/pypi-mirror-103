@@ -1,0 +1,11 @@
+hepdata_cli/__init__.py,sha256=P0t4cyb1DpxDLmoHuQ9aa2tFLznH6o-tlmVXzYr-tjI,108
+hepdata_cli/api.py,sha256=-b6BAkFAExuwUghvUcMOXlvDKuX-WScThqIIUct_9Iw,9589
+hepdata_cli/cli.py,sha256=pFKqnggz-40W8Vzgw-RKTsNZnK9c5Eff0rMtlR2aick,2830
+hepdata_cli/resilient_requests.py,sha256=Xt9s9exMp-hDXLJbuxUdLy9TOrgyzAwBvwd9_4eEVeg,1982
+hepdata_cli/version.py,sha256=HfjVOrpTnmZ-xVFCYSVmX50EXaBQeJteUHG-PD6iQs8,22
+hepdata_cli-0.2.1.dist-info/LICENSE.txt,sha256=N0P3pKtRMvfb64jmgJdlerg3TnS0a2QC776AzPsbZIg,35128
+hepdata_cli-0.2.1.dist-info/METADATA,sha256=UPtRI7A8jj3knSywy4tvrt0AudJmdR6dtxUtBHm_y04,10938
+hepdata_cli-0.2.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+hepdata_cli-0.2.1.dist-info/entry_points.txt,sha256=NGhisR_aYLcSWF416Lma649xPkKYaSLV-yhuNjxZwPQ,53
+hepdata_cli-0.2.1.dist-info/top_level.txt,sha256=YX84IXjBY5caR-7WN7hKVWvDKiweg2ObpRQlP4CwH5o,12
+hepdata_cli-0.2.1.dist-info/RECORD,,
