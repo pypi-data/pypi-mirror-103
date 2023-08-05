@@ -1,0 +1,4 @@
+bcrypt
+pyopenssl
+python-gnupg
+requests
