@@ -1,0 +1,14 @@
+pywhat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pywhat/__main__.py,sha256=iyNHcAOtdLTaDXv5kIqaf8hA06KPN-GZCXsZM8uyp_w,616
+pywhat/identifier.py,sha256=qXJw_L7U_j3E0S6K_IcZWPZlyp81EVcxC63vdTFEVKY,1455
+pywhat/languageDetector.py,sha256=4tGKFpIsDlo4lBXGwhynVYHdRyFNdSowh_IlS4GLyZU,277
+pywhat/magic_numbers.py,sha256=n0QYZyrVHusp7YTPqafjdV0Gwf7eLLv6pAgXJbmc5z8,1058
+pywhat/nameThatHash.py,sha256=eXtvtA0CD7IELD6oen5ogZGgclTEi1uZATZhCLYDNCg,355
+pywhat/printer.py,sha256=b--MnCq22GSJztS-CE9ZkPJH3BTJN7oAfsGDsLPl9Uw,3243
+pywhat/regex_identifier.py,sha256=DJ7r-BoF0PnOjsFqqYPKSDO_0rltKwkrPYfoFg4jYRA,655
+pywhat/what.py,sha256=5oWz4ebHrTmafSf5DiFnB-7Vt2liYQx7MMYFYnjOk9k,914
+pywhat-0.1.0.dist-info/entry_points.txt,sha256=azZF7L3KprPg0BoAbGd-Xs0T9bJxu10EIM5cl6NZ3nU,65
+pywhat-0.1.0.dist-info/LICENSE,sha256=ScFFXkkgRaa_w7gJQ8UmmHL0LqCaU6m0--MtTGjsLz8,1064
+pywhat-0.1.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+pywhat-0.1.0.dist-info/METADATA,sha256=EUPhKqANYR5vIPyb0p9tCiVNSm5qQ2SScLnPCM2Xwjo,590
+pywhat-0.1.0.dist-info/RECORD,,
