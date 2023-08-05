@@ -1,0 +1,57 @@
+temp_dir: ".temp"
+
+debug: False
+
+compilation:
+  exec_dir: "exec"
+  languages:
+    C++:
+      exts: ["cpp", "cc"] 
+      compile: "g++ -std=c++17 -O3 {src_path} -o {exec_path}"
+      run: "{exec_path}"
+
+generation:
+  run_deterministic_check: Yes 
+  run_duplicate_check: Yes
+  num_workers: 4
+  model_solution: "sol.cpp"
+
+tests:
+  tests_dir: "tests"
+  input_pattern: "test-{idx:02}.in"
+  answer_pattern: "test-{idx:02}.ok"
+
+evaluation:
+  timeout_multiplier: 3.0          # Execution timeout (TL multiplier) 
+  tl_close_range: [0.75, 1.25]     # Range to display close to tl warnings (TL multipliers)
+
+problem:
+  input_file: stdin
+  output_file: stdout
+  time_limit_ms: 400 
+
+discovery:
+  patterns:
+  - pattern: "tests.sh"
+    kind: tests
+
+  - pattern: "gen*.cpp"
+    kind: generator
+  - pattern: "valid*.cpp"
+    kind: validator
+  - pattern: "sol*.cpp"
+    kind: solution
+
+  - pattern: "{problem}-gen*.cpp"
+    kind: generator
+  - pattern: "{problem}_gen*.cpp"
+    kind: generator
+
+  - pattern: "{problem}-valid*.cpp"
+    kind: validator
+  - pattern: "{problem}_valid*.cpp"
+    kind: validator
+  
+  - pattern: "{problem}*.cpp"
+    kind: solution
+
