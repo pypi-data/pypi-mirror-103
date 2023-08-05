@@ -1,0 +1,15 @@
+proper_gator/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+proper_gator/authentication.py,sha256=sRV9W2qMcSbt4OA0DsLSsRdG0-Ma0DRVEHJDiA_IhpQ,1338
+proper_gator/cli.py,sha256=5EycGA9ejxrHU86u2Sfdd2bMh59wwLoZcc41aoAKilQ,2969
+proper_gator/containers.py,sha256=EYGiN3CjGDWfWxQ7l5VUbKwwFJ0GNXsf4ssyvo3Q4IA,2321
+proper_gator/proper_gator.py,sha256=WdxbSmhe-LdvGxBlnbIUpX8rdUfvXi2yF8mdEDIsy9U,2393
+proper_gator/service.py,sha256=jEBTcbD-mkiQulXxI9Q68hG88VG8hxTyqVH1NWMRYz0,1705
+proper_gator/tags.py,sha256=EB2HLVEawY_I72CONoCMMTbaaetCvvQq3_MhAoRFQ0k,5073
+proper_gator/triggers.py,sha256=OxJF2VrCm9wUheDWqpsmwepJs18JiakmdwW9eVfnm38,4848
+proper_gator/variables.py,sha256=BZR-8wiWN_kEfd4xeBS07y6I6UdD88m855XhSVRprPs,5112
+proper_gator/workspaces.py,sha256=85lxmmkW0gbqZnvQUCdHsP1a7bC3g4N3oZmnxU10nAI,2972
+proper_gator-0.1.0.dist-info/entry_points.txt,sha256=lyI0LgbxJIq8BjJF2yylX__f7hjXcPLqdglPnlL5NLY,53
+proper_gator-0.1.0.dist-info/LICENSE,sha256=tiIQ9MTAUUnyhhXpXwXrqHWRVTP6mVjH7krB3hJYaxg,1075
+proper_gator-0.1.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+proper_gator-0.1.0.dist-info/METADATA,sha256=jkrkpOg12qebO-HWz70OGpNqHoOUucER2hjtWyz4HxA,588
+proper_gator-0.1.0.dist-info/RECORD,,

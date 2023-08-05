@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: proper-gator
+Version: 0.1.0
+Summary: 
+Author: Colin Burr
+Author-email: cburr@industrydive.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: google-api-python-client (>=2.0.2,<3.0.0)
+Requires-Dist: google-auth (>=1.28.0,<2.0.0)
+Requires-Dist: google-auth-oauthlib (>=0.4.3,<0.5.0)
+Requires-Dist: pyrate-limiter (>=2.3.0,<3.0.0)

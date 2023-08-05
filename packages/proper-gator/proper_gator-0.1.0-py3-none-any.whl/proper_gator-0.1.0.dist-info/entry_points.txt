@@ -1,0 +1,3 @@
+[console_scripts]
+proper_gator=proper_gator.cli:cli
+
