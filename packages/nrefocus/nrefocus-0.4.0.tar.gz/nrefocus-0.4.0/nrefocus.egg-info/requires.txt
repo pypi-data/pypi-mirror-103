@@ -1,0 +1,5 @@
+numexpr
+numpy>=1.5.1
+
+[FFTW]
+pyfftw>=0.12.0
