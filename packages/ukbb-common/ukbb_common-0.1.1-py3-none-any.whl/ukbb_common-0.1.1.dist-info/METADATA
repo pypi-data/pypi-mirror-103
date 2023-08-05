@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ukbb-common
+Version: 0.1.1
+Summary: Common functions for UK Biobank Data
+Home-page: https://github.com/Nealelab/ukb_common
+Author: 
+Author-email: 
+License: UNKNOWN
+Project-URL: Source Code, https://github.com/Nealelab/ukb_common
+Project-URL: Issues, https://github.com/Nealelab/ukb_common/issues
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
+
