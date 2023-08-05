@@ -1,0 +1,8 @@
+numpy>=1.16
+torch
+wbml>=0.3
+plum-dispatch>=1
+backends>=1
+backends-matrix>=1
+stheno>=1
+varz>=0.6
