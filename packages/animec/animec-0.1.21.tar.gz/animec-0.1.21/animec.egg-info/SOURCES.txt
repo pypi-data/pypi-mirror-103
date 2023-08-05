@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+animec/__init__.py
+animec/anicore.py
+animec/aninews.py
+animec/gs.py
+animec/sagasu.py
+animec.egg-info/PKG-INFO
+animec.egg-info/SOURCES.txt
+animec.egg-info/dependency_links.txt
+animec.egg-info/requires.txt
+animec.egg-info/top_level.txt
+docs/conf.py
+docs/requirements.txt
