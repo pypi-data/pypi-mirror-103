@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: dwaoAdobeIO
+Version: 0.1
+Summary: Adobe IO Helping Utility
+Home-page: UNKNOWN
+Author: Ketav Sharma
+Author-email: ketavsharma@dwao.in
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: cryptography (>=3.4.7)
+Requires-Dist: PyJWT (>=2.0.1)
+
+# DWAO Adobe IO Library
+
+Library for basic Adobe IO Integrations.
+
+
+## Examples
+Needs to be added
+
+
