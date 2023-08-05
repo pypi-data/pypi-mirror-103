@@ -1,0 +1,10 @@
+pidgey/__init__.py,sha256=xkM_9vyWMqxlO-b-82tFzatLhZyGxEy95Jgo6Aw4YjE,20
+pidgey/builder.py,sha256=L8qDosyoW9AwTixhv62peYTKDYc0yup02aGn4ZE4SYc,5115
+pidgey/creator.py,sha256=JL4rAZYQ8k7FKbMir-U3uG4ujV3CZVX5qMuWLOiFJ6I,9237
+pidgey/pidgey.py,sha256=OhFSYH3JQYmZ3jZD9tQuMNTclHPAk_ZE5wSTfI2Qyjw,1931
+pidgeotto-0.0.1.dist-info/LICENSE,sha256=2FeoGDeqYWlRWNvvKUssXNW0pzIrO-VXtfw9BXiEDNs,35061
+pidgeotto-0.0.1.dist-info/METADATA,sha256=zDCfPOyk0O3aFnO6so0ofPEJuKovqFlh_BUTzIp-KVw,3205
+pidgeotto-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pidgeotto-0.0.1.dist-info/entry_points.txt,sha256=InCHKP_FxpowYAq0eg1cTeTJlLa2H4FWmBEOl0bhZV0,47
+pidgeotto-0.0.1.dist-info/top_level.txt,sha256=34vAlgK4TRPuq0Z3reCpfe0M0G37w-ID1kGlenhiNKo,7
+pidgeotto-0.0.1.dist-info/RECORD,,
