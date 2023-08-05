@@ -1,0 +1,5 @@
+ModelicaLanguage==0.0.0a6
+PyZMQ
+Arpeggio
+numpy
+typing_extensions
