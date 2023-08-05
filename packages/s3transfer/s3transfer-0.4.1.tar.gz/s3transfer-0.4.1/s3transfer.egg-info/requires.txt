@@ -1,0 +1,7 @@
+botocore<2.0a.0,>=1.12.36
+
+[:python_version=="2.7"]
+futures<4.0.0,>=2.2.0
+
+[crt]
+botocore[crt]<2.0a.0,>=1.20.29
