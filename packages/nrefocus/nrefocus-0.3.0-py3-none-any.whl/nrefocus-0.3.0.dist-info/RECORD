@@ -1,0 +1,12 @@
+nrefocus/__init__.py,sha256=6WZ0QM6xxkQ06S59vswVtazQC8_ZupCir73ZJhBS6io,235
+nrefocus/_version.py,sha256=fo5OmshoTcb5C3p3FEdDHuCx62Yx5-N0L9A6YnKhCvw,7095
+nrefocus/_version_save.py,sha256=9D5wtDlbl2dmHn4dv-DgwMXUj9VvpjjipEVDR6uNq-0,82
+nrefocus/autof.py,sha256=0tBvxT3z8NRHZXSJt_K-Ud1vN64Vss9lq_PKszX83nQ,5879
+nrefocus/legacy.py,sha256=UazM6mts92k0hERMoE0cj98LC7ExA6D6NCmflINy-l4,5606
+nrefocus/pad.py,sha256=1gNb-77oQ-EE0SnnWXVmPyhEopi5WS3_kq0mQPRwggM,5114
+nrefocus/propg.py,sha256=aboua3IirtC0s4Q6MKp0xd1Q0uhYWri8L2H2uthheQI,4074
+nrefocus-0.3.0.dist-info/LICENSE,sha256=LRbAp3h3dK189tNxMxV-FBo1D2_olQDjGkd0jXUQq6U,1479
+nrefocus-0.3.0.dist-info/METADATA,sha256=Z4AEoi7naoBvqnfK2or8XYj_UHCZ8V6-g895ROsuNtQ,1797
+nrefocus-0.3.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+nrefocus-0.3.0.dist-info/top_level.txt,sha256=mVZjuADNpY1x6lMdt1Nr7McCNY3D7m8RTZ-G_2vstqA,9
+nrefocus-0.3.0.dist-info/RECORD,,
