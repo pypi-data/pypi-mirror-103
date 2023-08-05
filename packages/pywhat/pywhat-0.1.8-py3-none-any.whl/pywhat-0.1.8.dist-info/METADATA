@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pywhat
+Version: 0.1.8
+Summary: What is that thing?
+License: GPLv3
+Author: Bee
+Author-email: github@skerritt.blog
+Requires-Python: >=3.6,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=5.4.1,<6.0.0)
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: langdetect (>=1.0.8,<2.0.0)
+Requires-Dist: name-that-hash (>=1.7.2,<2.0.0)
