@@ -1,0 +1,6 @@
+setup.cfg
+setup.py
+hydra_fair_plugins.egg-info/PKG-INFO
+hydra_fair_plugins.egg-info/SOURCES.txt
+hydra_fair_plugins.egg-info/dependency_links.txt
+hydra_fair_plugins.egg-info/top_level.txt
