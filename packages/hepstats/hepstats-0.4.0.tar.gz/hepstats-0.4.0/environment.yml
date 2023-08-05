@@ -1,0 +1,16 @@
+name: hepstats-demo
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - numpy
+  - scipy
+  - iminuit
+  - tensorflow>=2.4
+  - tensorflow-probability
+  #- zfit
+  - asdf
+  - matplotlib
+  - pip:
+    - .
+    - zfit >=0.6.4
