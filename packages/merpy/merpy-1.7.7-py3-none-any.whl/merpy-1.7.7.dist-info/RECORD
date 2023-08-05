@@ -1,0 +1,14 @@
+merpy/__init__.py,sha256=A18LoKJg-Xraby-wsvKKFEaqqYL7IOxhwun7phCmMSc,941
+merpy/merpy.py,sha256=gJXL_lizqUw4LSb8R6iVJ08yxBcUKWg0ZGc8uPekCXw,24788
+merpy/MER/NOTICE.txt,sha256=Qt9spDtKrevxbAshz58UBulBAqxCpwajR4X_t-Y09Y4,1760
+merpy/MER/README.md,sha256=iWJAuNd_r5R_3KyA7zvfZKrSXWqJ68ew8LFLPmI8e_4,10199
+merpy/MER/benchmark.py,sha256=BiiCMcGSCARj2L0xqiVzhWSBlE5ChdNIM7QgZlzq1_g,9319
+merpy/MER/get_entities.sh,sha256=5JjfYAiG52X2a4vR8XlBcIpjAn32pEZgQiZ6L7jw6ls,8624
+merpy/MER/produce_data_files.sh,sha256=slcoQkTqRHE_t86D1APQV2Onl5H9mTh23bjaF-_8TGQ,4866
+merpy/MER/stopwords.txt,sha256=z1PJwkbcenreJC_twc3tVxtvP_H-P3JWxwal4QEJ0_c,1200
+merpy/MER/test.sh,sha256=yOqOJHZ2JqOHQaMahMd0CTe9zHR1y5RHB5tsp10KcP8,621
+merpy-1.7.7.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+merpy-1.7.7.dist-info/METADATA,sha256=9JMjg4NiuTj_zA-YozXP5zUgAWRT9PKvzBLOss_jscw,6185
+merpy-1.7.7.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+merpy-1.7.7.dist-info/top_level.txt,sha256=pP_Z5_cU-6tHhpVAnF-e-EsRsYjA5xka0qf0v8BEamY,6
+merpy-1.7.7.dist-info/RECORD,,
