@@ -1,0 +1,8 @@
+README.md
+setup.py
+AnsiFmt/__init__.py
+AnsiFmt/fmt.py
+ansifmt.egg-info/PKG-INFO
+ansifmt.egg-info/SOURCES.txt
+ansifmt.egg-info/dependency_links.txt
+ansifmt.egg-info/top_level.txt
