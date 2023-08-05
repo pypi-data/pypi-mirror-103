@@ -1,0 +1,3 @@
+[console_scripts]
+use_random_color = colors.main:main
+
