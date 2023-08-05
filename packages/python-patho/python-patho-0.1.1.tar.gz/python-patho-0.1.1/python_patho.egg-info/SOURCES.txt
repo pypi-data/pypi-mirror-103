@@ -1,0 +1,10 @@
+README.md
+setup.py
+pypath/__init__.py
+pypath/stain_extractor.py
+pypath/transform.py
+python_patho.egg-info/PKG-INFO
+python_patho.egg-info/SOURCES.txt
+python_patho.egg-info/dependency_links.txt
+python_patho.egg-info/requires.txt
+python_patho.egg-info/top_level.txt
