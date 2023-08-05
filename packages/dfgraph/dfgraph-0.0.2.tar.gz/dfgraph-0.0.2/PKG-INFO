@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: dfgraph
+Version: 0.0.2
+Summary: A simple directed graph based, non-typed, but flaggable database system.
+Home-page: https://github.com/willi-z/dfgraph
+Author: Willi Zschiebsch
+Author-email: willi.w.zschiebsch@web.de
+Maintainer: DigiFors Gmbh
+Maintainer-email: contact@palletsprojects.com
+License: BSD-3-Clause
+Project-URL: Source Code, https://github.com/willi-z/dfgraph/
+Project-URL: Issue Tracker, https://github.com/willi-z/dfgraph/issues/
+Description: # DFGraph
+        
+        Is a simple graph based database library based on the `sqlalchemy` library.
+        
+        
+        ## Installation
+        
+        `pip install dfgraph`
+        
+        ## Usage
+        
+        `dfgraph` comes with two main classes: `Node` and `Relationship`.
+        
+        
+        
+        ## Multithreating and Flask Integration
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
