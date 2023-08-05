@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: wordmaze
+Version: 0.2.1
+Summary: Words and textboxes made amazing
+Home-page: https://github.com/elint-tech/wordmaze/
+Author: elint-tech
+Author-email: contato@elint.com.br
+License: MIT
+Download-URL: https://github.com/elint-tech/wordmaze/dist/wordmaze-0.2.1.tar.gz
+Description: # wordmaze
+        Handle text boxes the right way.
+        
+Keywords: wordmaze,ocr,pdf,word,words,text,textbox,textboxes
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

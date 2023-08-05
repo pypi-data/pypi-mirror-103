@@ -1,0 +1,11 @@
+README.md
+setup.py
+wordmaze/__init__.py
+wordmaze/wordmaze.py
+wordmaze.egg-info/PKG-INFO
+wordmaze.egg-info/SOURCES.txt
+wordmaze.egg-info/dependency_links.txt
+wordmaze.egg-info/requires.txt
+wordmaze.egg-info/top_level.txt
+wordmaze/utils/__init__.py
+wordmaze/utils/dataclasses.py
