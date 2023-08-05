@@ -1,0 +1,344 @@
+{
+  "DataSet": {
+    "oarepo:extends": [
+      "invenio-v1.0.0.json#/InvenioRecord"
+    ],
+    "properties": {
+      "access" : {
+        "properties": {
+          "owned_by" : {
+            "properties": {
+              "user": {
+                "type": "keyword"
+              }
+            }
+          },
+          "record": {
+            "type": "keyword"
+          },
+          "files": {
+            "type": "keyword"
+          },
+          "embargo": {
+            "properties": {
+              "active": {
+                "type": "boolean"
+              },
+              "until": {
+                "type": "date"
+              },
+              "reason": {
+                "type": "text"
+              }
+            }
+          }
+        }
+      },
+      "pids" : {
+        "properties" : {
+          "identifier" : {
+            "type" : "keyword"
+          },
+          "scheme" : {
+            "type" : "keyword"
+          },
+          "client" : {
+            "type" : "keyword",
+            "index": false
+          },
+          "provider" : {
+            "type" : "keyword",
+            "index": false
+          }
+        }
+      },
+      "contributors" : {
+        "properties" : {
+          "affiliations" : {
+            "properties" : {
+              "identifiers" : {
+                "properties": {
+                  "identifier" : {
+                    "type" : "keyword"
+                  },
+                  "scheme" : {
+                    "type" : "keyword"
+                  }
+                }
+              },
+              "name" : {
+                "type" : "text"
+              }
+            }
+          },
+          "person_or_org": {
+            "properties": {
+              "family_name" : {
+                "type" : "text"
+              },
+              "given_name" : {
+                "type" : "text"
+              },
+              "identifiers" : {
+                "properties": {
+                  "identifier" : {
+                    "type" : "keyword"
+                  },
+                  "scheme" : {
+                    "type" : "keyword"
+                  }
+                }
+              },
+              "name" : {
+                "type" : "text"
+              },
+              "type" : {
+                "type" : "keyword"
+              }
+            }
+          },
+          "role" : {
+            "type": "taxonomy-term",
+            "properties": {
+              "title": {
+                "type": "multilingual"
+              }
+            }
+          }
+        }
+      },
+      "creators" : {
+        "properties" : {
+          "affiliations" : {
+            "properties" : {
+              "identifiers" : {
+                "properties": {
+                  "identifier" : {
+                    "type" : "keyword"
+                  },
+                  "scheme" : {
+                    "type" : "keyword"
+                  }
+                }
+              },
+              "name" : {
+                "type" : "text"
+              }
+            }
+          },
+          "person_or_org": {
+            "properties": {
+              "family_name" : {
+                "type" : "text"
+              },
+              "given_name" : {
+                "type" : "text"
+              },
+              "identifiers" : {
+                "properties": {
+                  "identifier" : {
+                    "type" : "keyword"
+                  },
+                  "scheme" : {
+                    "type" : "keyword"
+                  }
+                }
+              },
+              "name" : {
+                "type" : "text"
+              },
+              "type" : {
+                "type" : "keyword"
+              }
+            }
+          },
+          "role" : {
+            "type" : "taxonomy-term",
+            "properties": {
+              "title": {
+                "type": "multilingual"
+              }
+            }
+          }
+        }
+      },
+      "dates" : {
+        "properties" : {
+          "description" : {
+            "type" : "text"
+          },
+          "date" : {
+            "type" : "keyword"
+          },
+          "date_range" : {
+            "type" : "date_range"
+          },
+          "type" : {
+            "type" : "keyword"
+          }
+        }
+      },
+      "additional_descriptions" : {
+        "type": "multilingual"
+      },
+      "identifiers" : {
+        "properties": {
+          "identifier" : {
+            "type" : "text"
+          },
+          "scheme" : {
+            "type" : "keyword"
+          }
+        }
+      },
+      "languages" : {
+        "type": "taxonomy-term",
+        "properties": {
+          "title": {
+            "type": "multilingual"
+          }
+        }
+      },
+      "rights" : {
+        "type": "taxonomy-term",
+        "properties": {
+          "title": {
+            "type": "multilingual"
+          },
+          "icon": {
+            "type": "keyword"
+          },
+          "related_URI": {
+            "type": "keyword"
+          }
+        }
+      },
+      "publication_date" : {
+        "type" : "keyword"
+      },
+      "references" : {
+        "properties" : {
+          "identifier" : {
+            "type" : "keyword"
+          },
+          "reference" : {
+            "type" : "text"
+          },
+          "scheme" : {
+            "type" : "keyword"
+          }
+        }
+      },
+      "related_identifiers" : {
+        "properties" : {
+          "identifier" : {
+            "type" : "keyword",
+            "copy_to" : [
+              "related.identifier"
+            ]
+          },
+          "relation_type" : {
+            "type" : "taxonomy-term"
+          },
+          "resource_type" : {
+            "type": "taxonomy-term",
+            "properties": {
+              "title": {
+                "type": "multilingual"
+              }
+            }
+          },
+          "scheme" : {
+            "type" : "keyword"
+          }
+        }
+      },
+      "resource_type" : {
+        "type": "taxonomy-term",
+        "properties": {
+          "title": {
+            "type": "multilingual"
+          }
+        }
+      },
+      "version": {
+        "type": "keyword"
+      },
+      "subjects" : {
+        "properties" : {
+          "identifier" : {
+            "type" : "keyword"
+          },
+          "scheme" : {
+            "type" : "keyword"
+          },
+          "subject" : {
+            "type" : "text"
+          }
+        }
+      },
+      "suggest_title" : {
+        "type" : "completion",
+        "analyzer" : "simple",
+        "preserve_separators" : true,
+        "preserve_position_increments" : true,
+        "max_input_length" : 50
+      },
+      "title" : {
+        "type" : "multilingual",
+        "copy_to" : [
+          "suggest_title"
+        ]
+      },
+      "abstract": {
+        "type" : "multilingual"
+      },
+      "created": {
+        "type": "date"
+      },
+      "updated": {
+        "type": "date"
+      },
+      "extensions": {
+        "type": "object",
+        "dynamic": false,
+        "enabled": false
+      },
+      "extensions_keywords": {
+        "type": "object",
+        "properties": {
+          "key": {"type": "keyword"},
+          "value": {"type": "keyword"}
+        }
+      },
+      "extensions_texts": {
+        "type": "object",
+        "properties": {
+          "key": {"type": "keyword"},
+          "value": {"type": "text"}
+        }
+      },
+      "extensions_longs": {
+        "type": "object",
+        "properties": {
+          "key": {"type": "keyword"},
+          "value": {"type": "long"}
+        }
+      },
+      "extensions_dates": {
+        "type": "object",
+        "properties": {
+          "key": {"type": "keyword"},
+          "value": {"type": "date"}
+        }
+      },
+      "extensions_booleans": {
+        "type": "object",
+        "properties": {
+          "key": {"type": "keyword"},
+          "value": {"type": "boolean"}
+        }
+      }
+    }
+  }
+}
