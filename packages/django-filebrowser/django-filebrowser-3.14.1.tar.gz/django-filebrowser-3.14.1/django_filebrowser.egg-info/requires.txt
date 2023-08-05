@@ -1,0 +1,3 @@
+django-grappelli<2.16,>=2.15
+pillow
+six
