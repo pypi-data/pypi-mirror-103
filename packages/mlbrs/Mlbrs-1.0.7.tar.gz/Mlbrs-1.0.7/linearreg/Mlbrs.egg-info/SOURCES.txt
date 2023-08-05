@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+linearreg/linearreg.py
+linearreg/Mlbrs.egg-info/PKG-INFO
+linearreg/Mlbrs.egg-info/SOURCES.txt
+linearreg/Mlbrs.egg-info/dependency_links.txt
+linearreg/Mlbrs.egg-info/top_level.txt
