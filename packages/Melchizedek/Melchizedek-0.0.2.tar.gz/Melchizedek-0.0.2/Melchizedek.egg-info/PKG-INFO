@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: Melchizedek
+Version: 0.0.2
+Summary: Hugo's Personnal package for own code reuse
+Home-page: UNKNOWN
+Author: Hugo Six
+Author-email: hugo.six.pro@gmail.com
+License: UNKNOWN
+Description: # Melchizedek
+        Personal code repo
+        
+        Create venv (Python3.8)  
+        Run `pip install -r requirements.txt`.  
+        Run `pip install -e .` or `python setup_py develop` to resolve module.  
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
