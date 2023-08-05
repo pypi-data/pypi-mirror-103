@@ -1,0 +1,1 @@
+{"cuda": "10.2", "packaging": "pip", "cutensor": {"version": "1.2.2", "filename": "libcutensor.so.1.2.2"}, "nccl": {"version": "2.8.4", "filename": "libnccl.so.2.8.4"}, "cudnn": {"version": "8.1.1", "filename": "libcudnn.so.8.1.1"}}
