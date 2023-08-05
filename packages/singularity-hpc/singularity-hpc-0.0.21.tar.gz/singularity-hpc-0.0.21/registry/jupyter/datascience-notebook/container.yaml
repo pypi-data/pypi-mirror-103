@@ -1,0 +1,14 @@
+docker: jupyter/datascience-notebook
+url: https://hub.docker.com/r/jupyter/datascience-notebook
+maintainer: '@vsoch'
+description: Jupyter Datascience Notebook from https://github.com/jupyter/docker-stacks
+latest:
+  latest: sha256:ef4ec44b850b5482eb45e67c7bd33b54ff5d264d57fd6ce850a58ba19c0663fc
+tags:
+  latest: sha256:ef4ec44b850b5482eb45e67c7bd33b54ff5d264d57fd6ce850a58ba19c0663fc
+filter:
+- latest
+aliases:
+- name: run-notebook
+  command: jupyter notebook --no-browser --port=$(shuf -i 2000-65000 -n 1) --ip 0.0.0.0
+  options: --home ${HOME} --bind ${HOME}/.local:/home/joyvan/.local

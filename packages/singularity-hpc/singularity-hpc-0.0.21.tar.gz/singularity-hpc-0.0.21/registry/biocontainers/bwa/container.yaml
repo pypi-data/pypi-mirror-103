@@ -1,0 +1,12 @@
+docker: biocontainers/bwa
+url: https://hub.docker.com/r/biocontainers/bwa
+maintainer: '@vsoch'
+description: BWA is a software package for mapping low-divergent sequences against
+  a large reference genome, such as the human genome.
+latest:
+  v0.7.17_cv1: sha256:9479b73e108ded3c12cb88bb4e918a5bf720d7861d6d8cdbb46d78a972b6ff1b
+tags:
+  0.7.15: sha256:9479b73e108ded3c12cb88bb4e918a5bf720d7861d6d8cdbb46d78a972b6ff1b
+  v0.7.17_cv1: sha256:9479b73e108ded3c12cb88bb4e918a5bf720d7861d6d8cdbb46d78a972b6ff1b
+aliases:
+  bwa: /opt/conda/bin/bwa

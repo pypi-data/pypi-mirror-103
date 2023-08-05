@@ -1,0 +1,37 @@
+docker: openjdk
+url: https://hub.docker.com/_/openjdk
+maintainer: '@vsoch'
+description: OpenJDK is an open-source implementation of the Java Platform, Standard
+  Edition.
+latest:
+  latest: sha256:3926808fb6ea9743a00cd8aad45ba086348154f0f1ae23cacd9acba11465268e
+tags:
+  latest: sha256:3926808fb6ea9743a00cd8aad45ba086348154f0f1ae23cacd9acba11465268e
+aliases:
+  jar: /usr/bin/jar
+  jarsigner: /usr/bin/jarsigner
+  java: /usr/bin/java
+  javac: /usr/bin/javac
+  javadoc: /usr/bin/javadoc
+  javap: /usr/bin/javap
+  jcmd: /usr/bin/jcmd
+  jconsole: /usr/bin/jconsole
+  jdb: /usr/bin/jdb
+  jdeprscan: /usr/bin/jdeprscan
+  jdeps: /usr/bin/jdeps
+  jfr: /usr/bin/jfr
+  jhsdb: /usr/bin/jhsdb
+  jimage: /usr/bin/jimage
+  jinfo: /usr/bin/jinfo
+  jlink: /usr/bin/jlink
+  jmap: /usr/bin/jmap
+  jmod: /usr/bin/jmod
+  jobs: /usr/bin/jobs
+  join: /usr/bin/join
+  jpackage: /usr/bin/jpackage
+  jps: /usr/bin/jps
+  jrunscript: /usr/bin/jrunscript
+  jshell: /usr/bin/jshell
+  jstack: /usr/bin/jstack
+  jstat: /usr/bin/jstat
+  jstatd: /usr/bin/jstatd
