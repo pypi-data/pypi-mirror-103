@@ -1,0 +1,10 @@
+README.md
+setup.py
+stencil/__init__.py
+stencil/timer.py
+stencil/utils.py
+stencil_data_science.egg-info/PKG-INFO
+stencil_data_science.egg-info/SOURCES.txt
+stencil_data_science.egg-info/dependency_links.txt
+stencil_data_science.egg-info/requires.txt
+stencil_data_science.egg-info/top_level.txt
