@@ -1,0 +1,3 @@
+[console_scripts]
+termtitle = termtitle.termtitle:change_title
+

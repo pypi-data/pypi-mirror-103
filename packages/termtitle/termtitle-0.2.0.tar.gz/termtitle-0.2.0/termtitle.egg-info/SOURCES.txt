@@ -1,0 +1,9 @@
+README.rst
+setup.py
+termtitle/__init__.py
+termtitle/termtitle.py
+termtitle.egg-info/PKG-INFO
+termtitle.egg-info/SOURCES.txt
+termtitle.egg-info/dependency_links.txt
+termtitle.egg-info/entry_points.txt
+termtitle.egg-info/top_level.txt
