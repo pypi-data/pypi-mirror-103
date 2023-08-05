@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: rubetools
+Version: 1.0.3
+Summary: Rubetek dataset tools.
+Home-page: https://github.com/rubetek/rubetools
+Author: RubetekAI
+License: Apache License 2.0
+Keywords: rubetools rubetek datatools ai
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: tqdm (~=4.56.0)
+Requires-Dist: opencv-python (~=4.5.1.48)
+Requires-Dist: pandas (==1.1.5)
+Requires-Dist: xmltodict (~=0.12.0)
+Requires-Dist: pillow (~=8.1.0)
+Requires-Dist: shapely (~=1.7.1)
+Requires-Dist: matplotlib (~=3.3.4)
+
+UNKNOWN
+
+
