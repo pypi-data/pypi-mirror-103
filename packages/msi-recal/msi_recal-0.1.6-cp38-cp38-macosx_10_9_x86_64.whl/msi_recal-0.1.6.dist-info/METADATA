@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: msi-recal
+Version: 0.1.6
+Summary: Pipeline for mostly unsupervised recalibration of imzML mass spectrometry data
+Home-page: https://github.com/metaspace2020/metaspace/tree/master/metaspace/recal
+Author: Alexandrov Team, EMBL
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: pyimzml
+Requires-Dist: pyMSpec
+Requires-Dist: cpyMSpec
+Requires-Dist: scikit-learn
+Requires-Dist: typing-extensions
+
+UNKNOWN
+
+
