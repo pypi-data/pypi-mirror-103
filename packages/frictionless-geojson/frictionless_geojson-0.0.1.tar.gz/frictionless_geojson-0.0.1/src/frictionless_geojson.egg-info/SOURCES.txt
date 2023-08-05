@@ -1,0 +1,10 @@
+LICENSE.md
+pyproject.toml
+setup.cfg
+setup.py
+src/frictionless_geojson/__init__.py
+src/frictionless_geojson.egg-info/PKG-INFO
+src/frictionless_geojson.egg-info/SOURCES.txt
+src/frictionless_geojson.egg-info/dependency_links.txt
+src/frictionless_geojson.egg-info/requires.txt
+src/frictionless_geojson.egg-info/top_level.txt
