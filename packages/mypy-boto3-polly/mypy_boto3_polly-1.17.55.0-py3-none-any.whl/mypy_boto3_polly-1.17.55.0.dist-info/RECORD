@@ -1,0 +1,15 @@
+mypy_boto3_polly/__init__.py,sha256=wbCSX8IrYhb6wKAPA7QsWQNQMFDExXW4IXOeek43oRw,1092
+mypy_boto3_polly/__init__.pyi,sha256=2RxNxf_qflsTUwsMgPIjagv1xwVVO_uJFdTR8yVeyVA,1091
+mypy_boto3_polly/__main__.py,sha256=kcbRg5heWfjEg2-cM_iG3i7xMSVQ2LGBBArLM4Phge8,719
+mypy_boto3_polly/client.py,sha256=p_JG3pGkDZL5WpA225m9r9Rk2FkZoCCZeaddimTx9gc,12507
+mypy_boto3_polly/client.pyi,sha256=qF2-T1pJtc6Zw27rgcB_YYR3g30H7KJniluQaVI3HsI,12488
+mypy_boto3_polly/paginator.py,sha256=63qNqb-YAAoxfNwzLJw0H2nUbwmMhAwi5E0rPn5I51U,3762
+mypy_boto3_polly/paginator.pyi,sha256=2JrcAsgAR9ZNggO3PBm__k9vC9En5pA3LfE3BFM4nLo,3758
+mypy_boto3_polly/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_polly/type_defs.py,sha256=qIJHuCtv2MsSYa1VgTHpkma0dFfTMXlhMJDKU7qMZKw,9872
+mypy_boto3_polly/type_defs.pyi,sha256=h4AO_woWw_mXIq9VXE8iS97kA5MJzyCBc7sDdShBxyc,9871
+mypy_boto3_polly/version.py,sha256=_aNrd9tvN8GlgwmDr3PoY2YW-eI_qLiSXk8rsrBjz_g,57
+mypy_boto3_polly-1.17.55.0.dist-info/METADATA,sha256=juXGjSmjOe-UzKBwLyHrUw2Zd9e_Nuf-a5pP6ZiliGI,7228
+mypy_boto3_polly-1.17.55.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mypy_boto3_polly-1.17.55.0.dist-info/top_level.txt,sha256=0kSC_52R4HHyLJ7JlVHE5XAOgDLpgiiL-i7pgknM3Z4,17
+mypy_boto3_polly-1.17.55.0.dist-info/RECORD,,
