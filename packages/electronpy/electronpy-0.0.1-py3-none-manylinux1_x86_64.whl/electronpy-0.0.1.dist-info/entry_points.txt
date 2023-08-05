@@ -1,0 +1,3 @@
+[console_scripts]
+electronpy = electronpy.electron:main
+
