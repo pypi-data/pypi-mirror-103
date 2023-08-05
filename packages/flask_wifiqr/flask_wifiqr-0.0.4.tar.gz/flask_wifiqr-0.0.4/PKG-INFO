@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: flask_wifiqr
+Version: 0.0.4
+Summary: Flask_WifiQR: A simple flask app that serves your wifi password as a QR Code to smartphones
+Home-page: https://github.com/fliphess/wifiqr
+Author: Flip Hess
+Author-email: flip@fliphess.com

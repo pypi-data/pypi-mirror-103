@@ -1,0 +1,6 @@
+.dockerignore
+.git
+.gitignore
+.idea
+settings.yaml
+venv
