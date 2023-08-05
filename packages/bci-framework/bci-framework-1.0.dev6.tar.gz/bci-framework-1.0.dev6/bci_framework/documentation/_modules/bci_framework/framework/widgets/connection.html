@@ -1,0 +1,519 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bci_framework.framework.widgets.connection &#8212; BCI-Framework  documentation</title>
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/custom.css" />
+    <script id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+    <script src="../../../../_static/jquery.js"></script>
+    <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/doctools.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="shortcut icon" href="../../../../_static/favico.ico"/>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for bci_framework.framework.widgets.connection</h1><div class="highlight"><pre>
+<span></span>&quot;&quot;&quot;
+===========
+Connections
+===========
+&quot;&quot;&quot;
+
+import os
+import json
+import time
+import logging
+
+from openbci_stream.acquisition import Cyton, CytonBase
+from PySide2.QtCore import Qt, Signal, QThread, Slot
+from PySide2.QtGui import QCursor
+from PySide2.QtWidgets import QApplication
+
+from ..dialogs import Dialogs
+from ...extensions import properties as prop
+
+
+########################################################################
+<div class="viewcode-block" id="OpenBCIThread"><a class="viewcode-back" href="../../../bci_framework.framework.widgets.connection.html#bci_framework.framework.widgets.connection.OpenBCIThread">[docs]</a>class OpenBCIThread(QThread):
+    &quot;&quot;&quot;Handle the OpenBCI connection.&quot;&quot;&quot;
+
+    connection_ok = Signal()
+    connection_fail = Signal(object)
+    disconnected_ok = Signal()
+    connected = False
+
+    # ----------------------------------------------------------------------
+<div class="viewcode-block" id="OpenBCIThread.stop"><a class="viewcode-back" href="../../../bci_framework.framework.widgets.connection.html#bci_framework.framework.widgets.connection.OpenBCIThread.stop">[docs]</a>    def stop(self) -&gt; None:
+        &quot;&quot;&quot;Kill the trhrad.&quot;&quot;&quot;
+        self.terminate()</div>
+
+    # ----------------------------------------------------------------------
+<div class="viewcode-block" id="OpenBCIThread.run"><a class="viewcode-back" href="../../../bci_framework.framework.widgets.connection.html#bci_framework.framework.widgets.connection.OpenBCIThread.run">[docs]</a>    def run(self) -&gt; None:
+        &quot;&quot;&quot;Connect and configure OpenBCI board.&quot;&quot;&quot;
+
+        try:
+            self.openbci = Cyton(self.mode,
+                                 self.endpoint,
+                                 host=self.host,
+                                 capture_stream=False,
+                                 daisy=prop.DAISY,
+                                 montage=self.montage,
+                                 streaming_package_size=self.streaming_package_size)
+
+        except:
+            self.connection_fail.emit([])
+            return
+
+        if self.openbci.is_recycled:
+            self.connected = True
+            self.connection_ok.emit()
+            return
+
+        try:
+            self.openbci.command(self.sample_rate)
+            self.openbci.command(self.boardmode)
+        except TimeoutError:
+            self.connection_fail.emit(
+                [&#39;* OpenBCI board could not be connected the same network.&#39;])
+            return
+
+        # Some time this command not take effect
+        boardmode_setted = False
+        for _ in range(10):
+            response = self.openbci.command(self.boardmode)
+            if response and b&#39;Success&#39; in response:
+                logging.info(f&#39;Bardmode setted in {self.boardmode} mode&#39;)
+                boardmode_setted = True
+                break
+            time.sleep(0.1)
+
+        boardmode = self.openbci.boardmode
+        if not boardmode_setted:
+            logging.warning(&#39;Boardmode not setted!&#39;)
+        self.session_settings(self.montage, self.bias,
+                              self.gain, self.srb1, self.adsinput, self.srb2)
+
+        if not self.checkBox_send_leadoff:
+            self.openbci.leadoff_impedance(
+                self.montage, pchan=pchan, nchan=nchan)
+
+        if self.checkBox_test_signal:
+            test_signal = self.comboBox_test_signal
+            test_signal = getattr(
+                CytonBase, f&quot;TEST_{test_signal.replace(&#39; &#39;, &#39;_&#39;)}&quot;)
+            self.openbci.command(test_signal)
+
+        else:
+            all_channels = set(range(1, 17 if prop.DAISY else 9))
+            used_channels = set(self.montage.keys())
+            deactivated = all_channels.difference(used_channels)
+            if deactivated:
+                self.openbci.deactivate_channel(deactivated)
+            if used_channels:
+                self.openbci.activate_channel(used_channels)
+
+        if not self.streaming():
+            try:
+                self.openbci.start_stream()
+                self.connected = True
+                self.connection_ok.emit()
+
+                if self.mode == &#39;wifi&#39;:
+                    self.openbci.set_latency(self.tcp_latency)
+
+            except Exception as e:
+                if &#39;NoBrokersAvailable&#39; in str(e):
+
+                    self.connection_fail.emit(
+                        [&#39;* Kafka is not running on the remote acquisition system.&#39;])</div>
+
+    # ----------------------------------------------------------------------
+<div class="viewcode-block" id="OpenBCIThread.session_settings"><a class="viewcode-back" href="../../../bci_framework.framework.widgets.connection.html#bci_framework.framework.widgets.connection.OpenBCIThread.session_settings">[docs]</a>    def session_settings(self, *args) -&gt; None:
+        &quot;&quot;&quot;Create a session setting to reuse it after an impedance measurement.&quot;&quot;&quot;
+        if hasattr(self, &#39;last_settings&#39;):
+            channels, bias, gain, srb1, adsinput, srb2 = self.last_settings
+        elif args:
+            self.last_settings = args
+            channels, bias, gain, srb1, adsinput, srb2 = args
+        else:
+            return
+
+        if self.checkBox_default_settings:
+            self.openbci.command(self.openbci.DEFAULT_CHANNELS_SETTINGS)
+        else:
+            self.openbci.channel_settings(channels, power_down=CytonBase.POWER_DOWN_ON,
+                                          gain=gain,
+                                          input_type=adsinput,
+                                          bias=bias,
+                                          srb2=srb2,
+                                          srb1=srb1)</div>
+
+    # ----------------------------------------------------------------------
+<div class="viewcode-block" id="OpenBCIThread.disconnect"><a class="viewcode-back" href="../../../bci_framework.framework.widgets.connection.html#bci_framework.framework.widgets.connection.OpenBCIThread.disconnect">[docs]</a>    def disconnect(self) -&gt; None:
+        &quot;&quot;&quot;Disconnect OpenBCI.&quot;&quot;&quot;
+        try:
+            # self.openbci.stop_stream()
+            self.openbci.close()
+        except:
+            pass
+        self.disconnected_ok.emit()
+        self.connected = False</div></div>
+
+
+########################################################################
+<div class="viewcode-block" id="Connection"><a class="viewcode-back" href="../../../bci_framework.framework.widgets.connection.html#bci_framework.framework.widgets.connection.Connection">[docs]</a>class Connection:
+    &quot;&quot;&quot;Widget that handle the OpenBCI connection.&quot;&quot;&quot;
+
+    # ----------------------------------------------------------------------
+    def __init__(self, core):
+        &quot;&quot;&quot;&quot;&quot;&quot;
+        self.parent_frame = core.main
+        self.core = core
+
+        # self.parent.pushButton_disconnect.hide()
+        self.openbci = OpenBCIThread()
+        self.openbci.streaming = lambda: getattr(self.core, &#39;streaming&#39;, False)
+
+        self.openbci.connection_ok.connect(self.connection_ok)
+        self.openbci.connection_fail.connect(self.connection_fail)
+        self.openbci.disconnected_ok.connect(self.disconnected_ok)
+
+        self.config = {
+            &#39;mode&#39;: self.parent_frame.comboBox_connection_mode,
+            &#39;port&#39;: self.parent_frame.comboBox_port,
+            &#39;ip&#39;: self.parent_frame.comboBox_ip,
+            &#39;host&#39;: self.parent_frame.comboBox_host,
+            &#39;acquisition_sample_rate&#39;: self.parent_frame.comboBox_sample_rate,
+            &#39;streaming_sample_rate&#39;: self.parent_frame.comboBox_streaming_sample_rate,
+            &#39;boardmode&#39;: self.parent_frame.comboBox_boardmode,
+            &#39;gain&#39;: self.parent_frame.comboBox_gain,
+            &#39;input_type&#39;: self.parent_frame.comboBox_input_type,
+            &#39;bias&#39;: self.parent_frame.comboBox_bias,
+            &#39;srb1&#39;: self.parent_frame.comboBox_srb1,
+            &#39;srb2&#39;: self.parent_frame.comboBox_srb2,
+            &#39;pchan&#39;: self.parent_frame.comboBox_pchan,
+            &#39;nchan&#39;: self.parent_frame.comboBox_nchan,
+            &#39;test_signal_type&#39;: self.parent_frame.comboBox_test_signal,
+            &#39;test_signal&#39;: self.parent_frame.checkBox_test_signal,
+            &#39;tcp_latency&#39;: self.parent_frame.spinBox_tcp_latency,
+        }
+
+        self.load_config()
+        self.update_connections()
+        self.update_environ()
+        self.connect()
+        self.core.config.connect_widgets(self.update_config, self.config)
+
+    # ----------------------------------------------------------------------
+<div class="viewcode-block" id="Connection.on_focus"><a class="viewcode-back" href="../../../bci_framework.framework.widgets.connection.html#bci_framework.framework.widgets.connection.Connection.on_focus">[docs]</a>    def on_focus(self) -&gt; None:
+        &quot;&quot;&quot;Try to autoconnect.&quot;&quot;&quot;
+        if getattr(self.core, &#39;streaming&#39;, False) and not self.openbci.connected:
+            self.openbci_connect()</div>
+
+    # ----------------------------------------------------------------------
+<div class="viewcode-block" id="Connection.load_config"><a class="viewcode-back" href="../../../bci_framework.framework.widgets.connection.html#bci_framework.framework.widgets.connection.Connection.load_config">[docs]</a>    def load_config(self) -&gt; None:
+        &quot;&quot;&quot;Load widgets.&quot;&quot;&quot;
+        self.core.config.load_widgets(&#39;connection&#39;, self.config)
+        self.core.update_kafka(self.parent_frame.comboBox_host.currentText())</div>
+
+    # ----------------------------------------------------------------------
+<div class="viewcode-block" id="Connection.update_config"><a class="viewcode-back" href="../../../bci_framework.framework.widgets.connection.html#bci_framework.framework.widgets.connection.Connection.update_config">[docs]</a>    def update_config(self, *args, **kwargs) -&gt; None:
+        &quot;&quot;&quot;Save widgets status.&quot;&quot;&quot;
+        self.core.config.save_widgets(&#39;connection&#39;, self.config)</div>
+
+    # ----------------------------------------------------------------------
+<div class="viewcode-block" id="Connection.connect"><a class="viewcode-back" href="../../../bci_framework.framework.widgets.connection.html#bci_framework.framework.widgets.connection.Connection.connect">[docs]</a>    def connect(self) -&gt; None:
+        &quot;&quot;&quot;Connect events.&quot;&quot;&quot;
+        self.parent_frame.pushButton_connect.clicked.connect(self.on_connect)
+        self.parent_frame.comboBox_connection_mode.activated.connect(
+            self.update_connections)
+        self.parent_frame.comboBox_host.textActivated.connect(self.load_config)</div>
+
+    # ----------------------------------------------------------------------
+<div class="viewcode-block" id="Connection.update_connections"><a class="viewcode-back" href="../../../bci_framework.framework.widgets.connection.html#bci_framework.framework.widgets.connection.Connection.update_connections">[docs]</a>    def update_connections(self) -&gt; None:
+        &quot;&quot;&quot;Set widgets for connection modes.&quot;&quot;&quot;
+        if &#39;serial&#39; in self.parent_frame.comboBox_connection_mode.currentText().lower():
+
+            for index in range(1, self.parent_frame.comboBox_sample_rate.count()):
+                self.parent_frame.comboBox_sample_rate.model().item(index).setEnabled(False)
+            if self.parent_frame.comboBox_sample_rate.currentIndex() &gt;= 1:
+                self.parent_frame.comboBox_sample_rate.setCurrentIndex(0)
+
+            for index in range(3, self.parent_frame.comboBox_streaming_sample_rate.count()):
+                self.parent_frame.comboBox_streaming_sample_rate.model().item(
+                    index).setEnabled(False)
+            if self.parent_frame.comboBox_streaming_sample_rate.currentIndex() &gt;= 3:
+                self.parent_frame.comboBox_streaming_sample_rate.setCurrentIndex(
+                    2)
+
+            self.parent_frame.label_port_ip.setText(&#39;Port&#39;)
+            self.parent_frame.comboBox_ip.hide()
+            self.parent_frame.comboBox_port.show()
+            self.parent_frame.label_latency.setEnabled(False)
+            self.parent_frame.spinBox_tcp_latency.setEnabled(False)
+
+        else:
+
+            for index in range(1, self.parent_frame.comboBox_sample_rate.count()):
+                self.parent_frame.comboBox_sample_rate.model().item(index).setEnabled(True)
+
+            for index in range(3, self.parent_frame.comboBox_streaming_sample_rate.count()):
+                self.parent_frame.comboBox_streaming_sample_rate.model().item(index).setEnabled(True)
+
+            self.parent_frame.label_port_ip.setText(&#39;IP&#39;)
+            self.parent_frame.comboBox_ip.show()
+            self.parent_frame.comboBox_port.hide()
+            self.parent_frame.label_latency.setEnabled(True)
+            self.parent_frame.spinBox_tcp_latency.setEnabled(True)</div>
+
+    # ----------------------------------------------------------------------
+<div class="viewcode-block" id="Connection.on_connect"><a class="viewcode-back" href="../../../bci_framework.framework.widgets.connection.html#bci_framework.framework.widgets.connection.Connection.on_connect">[docs]</a>    def on_connect(self, toggled: bool) -&gt; None:
+        &quot;&quot;&quot;Event to handle connection.&quot;&quot;&quot;
+        if toggled:  # Connect
+            QApplication.setOverrideCursor(QCursor(Qt.WaitCursor))
+            self.core.update_kafka(
+                self.parent_frame.comboBox_host.currentText())
+            self.openbci_connect()
+
+        else:   # Disconnect
+            self.openbci.disconnect()</div>
+
+    # ----------------------------------------------------------------------
+<div class="viewcode-block" id="Connection.openbci_connect"><a class="viewcode-back" href="../../../bci_framework.framework.widgets.connection.html#bci_framework.framework.widgets.connection.Connection.openbci_connect">[docs]</a>    def openbci_connect(self) -&gt; None:
+        &quot;&quot;&quot;Recollect values from GUI.&quot;&quot;&quot;
+        if &#39;serial&#39; in self.parent_frame.comboBox_connection_mode.currentText().lower():
+            mode = &#39;serial&#39;
+            endpoint = self.parent_frame.comboBox_port.currentText()
+            os.environ[&#39;BCISTREAM_CONNECTION&#39;] = json.dumps(&#39;serial&#39;)
+        else:
+            mode = &#39;wifi&#39;
+            endpoint = self.parent_frame.comboBox_ip.currentText()
+            os.environ[&#39;BCISTREAM_CONNECTION&#39;] = json.dumps(&#39;wifi&#39;)
+
+        host = self.parent_frame.comboBox_host.currentText()
+
+        sample_rate = self.parent_frame.comboBox_sample_rate.currentText()
+        sample_rate = getattr(CytonBase, f&quot;SAMPLE_RATE_{sample_rate}SPS&quot;)
+
+        streaming_sample_rate = self.parent_frame.comboBox_streaming_sample_rate.currentText()
+
+        boardmode = self.parent_frame.comboBox_boardmode.currentText()
+        boardmode = getattr(CytonBase, f&quot;BOARD_MODE_{boardmode}&quot;)
+
+        gain = self.parent_frame.comboBox_gain.currentText()
+        gain = getattr(CytonBase, f&#39;GAIN_{gain}&#39;)
+
+        adsinput = self.parent_frame.comboBox_input_type.currentText()
+        adsinput = getattr(CytonBase, f&#39;ADSINPUT_{adsinput}&#39;)
+
+        bias = self.parent_frame.comboBox_bias.currentText()
+        bias = getattr(CytonBase, f&quot;BIAS_{bias}&quot;)
+
+        srb1 = self.parent_frame.comboBox_srb1.currentText()
+        srb1 = getattr(CytonBase, f&#39;SRB1_{srb1}&#39;)
+
+        srb2 = self.parent_frame.comboBox_srb2.currentText()
+        srb2 = getattr(CytonBase, f&#39;SRB2_{srb2}&#39;)
+
+        pchan = self.parent_frame.comboBox_pchan.currentText()
+        pchan = getattr(CytonBase, pchan.replace(&#39; &#39;, &#39;_&#39;))
+
+        nchan = self.parent_frame.comboBox_nchan.currentText()
+        nchan = getattr(CytonBase, nchan.replace(&#39; &#39;, &#39;_&#39;))
+
+        tcp_latency = self.parent_frame.spinBox_tcp_latency.value()
+
+        # channels = self.core.montage.get_mne_montage().ch_names
+
+        # self.openbci = OpenBCIThread()
+        # self.openbci.connection_ok.connect(self.connection_ok)
+        # self.openbci.connection_fail.connect(self.connection_fail)
+        # self.openbci.disconnected_ok.connect(self.disconnected_ok)
+
+        self.openbci.mode = mode
+        self.openbci.endpoint = endpoint
+        self.openbci.host = host
+        self.openbci.tcp_latency = tcp_latency
+        self.openbci.montage = prop.CHANNELS
+        self.openbci.streaming_package_size = int(streaming_sample_rate)
+        self.openbci.sample_rate = sample_rate
+        self.openbci.boardmode = boardmode
+        self.openbci.adsinput = adsinput
+        self.openbci.bias = bias
+        self.openbci.srb1 = srb1
+        self.openbci.srb2 = srb2
+        self.openbci.pchan = pchan
+        self.openbci.nchan = nchan
+        self.openbci.gain = gain
+
+        self.openbci.checkBox_send_leadoff = self.parent_frame.checkBox_send_leadoff.isChecked()
+        self.openbci.checkBox_test_signal = self.parent_frame.checkBox_test_signal.isChecked()
+        self.openbci.comboBox_test_signal = self.parent_frame.comboBox_test_signal.currentText()
+        self.openbci.checkBox_default_settings = self.parent_frame.checkBox_default_settings.isChecked()
+
+        self.parent_frame.pushButton_connect.setText(&#39;Connecting...&#39;)
+        self.parent_frame.pushButton_connect.setEnabled(False)
+        self.update_environ()
+
+        self.openbci.start()</div>
+
+    # ----------------------------------------------------------------------
+<div class="viewcode-block" id="Connection.update_environ"><a class="viewcode-back" href="../../../bci_framework.framework.widgets.connection.html#bci_framework.framework.widgets.connection.Connection.update_environ">[docs]</a>    def update_environ(self) -&gt; None:
+        &quot;&quot;&quot;Update environment variables.&quot;&quot;&quot;
+        os.environ[&#39;BCISTREAM_HOST&#39;] = json.dumps(
+            self.parent_frame.comboBox_host.currentText())
+
+        sps = self.parent_frame.comboBox_sample_rate.currentText()
+        if &#39;k&#39; in sps.lower():
+            sps = int(sps.lower().replace(&#39;k&#39;, &#39;&#39;)) * 1000
+        else:
+            sps = int(sps)
+        os.environ[&#39;BCISTREAM_SAMPLE_RATE&#39;] = json.dumps(sps)
+        os.environ[&#39;BCISTREAM_STREAMING_PACKAGE_SIZE&#39;] = json.dumps(
+            int(self.parent_frame.comboBox_streaming_sample_rate.currentText()))
+
+        os.environ[&#39;BCISTREAM_BOARDMODE&#39;] = json.dumps(
+            self.parent_frame.comboBox_boardmode.currentText().lower())</div>
+
+    # ----------------------------------------------------------------------
+<div class="viewcode-block" id="Connection.connection_ok"><a class="viewcode-back" href="../../../bci_framework.framework.widgets.connection.html#bci_framework.framework.widgets.connection.Connection.connection_ok">[docs]</a>    @Slot()
+    def connection_ok(self) -&gt; None:
+        &quot;&quot;&quot;Event for OpenBCI connected.&quot;&quot;&quot;
+        QApplication.restoreOverrideCursor()
+        self.parent_frame.pushButton_connect.setText(&#39;Disconnect&#39;)
+        self.parent_frame.pushButton_connect.setEnabled(True)
+        self.parent_frame.pushButton_connect.setChecked(True)</div>
+
+    # ----------------------------------------------------------------------
+<div class="viewcode-block" id="Connection.connection_fail"><a class="viewcode-back" href="../../../bci_framework.framework.widgets.connection.html#bci_framework.framework.widgets.connection.Connection.connection_fail">[docs]</a>    @Slot()
+    def connection_fail(self, reasons):
+        &quot;&quot;&quot;Event for OpenBCI failed connection.&quot;&quot;&quot;
+        QApplication.restoreOverrideCursor()
+
+        checks = []
+
+        if reasons:
+            checks.extend(reasons)
+
+        else:
+            if &#39;serial&#39; in self.parent_frame.comboBox_connection_mode.currentText().lower():
+                checks.extend([&#39;* Check that USB dongle were connected.&#39;,
+                               &#39;* Verify serial permissions.&#39;,
+                               ])
+
+            if self.parent_frame.comboBox_host.currentText() != &#39;localhost&#39;:
+                checks.extend([f&#39;* The server could not be running, or running on a different IP that {self.parent_frame.comboBox_host.currentText()}&#39;,
+                               &#39;* This machine must have access to the server or running on the same network.&#39;,
+                               &#39;* The daemons `stream_eeg` `stream_rpyc` could not be running&#39;,  # todo
+                               ])
+
+            if hasattr(self.core, &#39;conection_message&#39;):
+                checks.extend([self.core.conection_message])
+                self.core.conection_message = &quot;&quot;
+
+        checks = &#39;\n&#39;.join(checks)
+        Dialogs.critical_message(
+            self.parent_frame, &#39;Connection error&#39;, f&quot;{checks}&quot;)
+
+        self.parent_frame.pushButton_connect.setText(&#39;Connect&#39;)
+        self.parent_frame.pushButton_connect.setEnabled(True)
+        self.parent_frame.pushButton_connect.setChecked(False)</div>
+
+    # ----------------------------------------------------------------------
+<div class="viewcode-block" id="Connection.disconnected_ok"><a class="viewcode-back" href="../../../bci_framework.framework.widgets.connection.html#bci_framework.framework.widgets.connection.Connection.disconnected_ok">[docs]</a>    @Slot()
+    def disconnected_ok(self) -&gt; None:
+        &quot;&quot;&quot;OpenBCI disconnected.&quot;&quot;&quot;
+        self.core.stop_kafka()
+        if self.parent_frame.checkBox_test_signal.isChecked():
+            self.parent_frame.groupBox_settings.setEnabled(False)
+            self.parent_frame.groupBox_leadoff_impedance.setEnabled(False)
+
+        self.parent_frame.pushButton_connect.setText(&#39;Connect&#39;)
+        self.parent_frame.pushButton_connect.setEnabled(True)
+        self.parent_frame.pushButton_connect.setChecked(False)
+        self.core.status_bar(right_message=(&#39;Disconnected&#39;, None))
+        self.parent_frame.checkBox_view_impedances.setChecked(False)
+        self.parent_frame.stackedWidget_montage.setCurrentIndex(0)</div></div>
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../../../index.html">
+              <img class="logo" src="../../../../_static/logo.svg" alt="Logo"/>
+            </a></p><h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notebooks/00-installation.html">Installation and running</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notebooks/01-configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notebooks/02-interface.html">Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notebooks/70-data_analysis.html">Data analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notebooks/75-data_visualizations.html">Data visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notebooks/76-default_visualizations.html">Examples of data visualizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notebooks/80-stimuli_delivery.html">Stimuli delivery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notebooks/81-default_stimuli_delivery_paradigms.html">Examples of stimuli delivery paradigms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notebooks/90-event_marker_synchronization.html">Event marker synchronization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notebooks/91-eeg_records_exploring.html">EEG records exploring</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notebooks/99-ilustrative_example.html">Illustrative example</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../index.html">Documentation overview</a><ul>
+  <li><a href="../../../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Yeison Cardona.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.5.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

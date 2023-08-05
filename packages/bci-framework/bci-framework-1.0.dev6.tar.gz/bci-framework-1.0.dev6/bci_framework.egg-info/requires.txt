@@ -1,0 +1,15 @@
+matplotlib>=3.4.1
+psutil>=5.8.0
+scipy>=1.6.2
+kafka_python>=2.0.2
+simple_pid>=1.0.1
+qt_material>=2.8
+numpy>=1.20.1
+tornado>=6.1
+mne>=0.22.1
+cycler>=0.10.0
+figurestream>=1.2.1
+gcpds>=0.1a1
+openbci_stream>=1.0.0rc16
+PySide2>=5.15.2
+radiant>=3.2
