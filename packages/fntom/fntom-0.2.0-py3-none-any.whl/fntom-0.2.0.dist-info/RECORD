@@ -1,0 +1,13 @@
+fntom/CompressedFile.py,sha256=2yYr1hsCY4329I2x5cnyDu8qa4nsObEIPXVFgwasIDM,28851
+fntom/Constants.py,sha256=xMNvX-yPRuyeeO42oM8Ca_5dZkPSNPpDt8p5kTcog00,1313
+fntom/Counter.py,sha256=M4eFbzgT5OjiEUCeX5goxnHIglzdz24uS08MIofwEHM,3193
+fntom/Error.py,sha256=Tlep8P8FgjqSIuoo-qECoUE89jWRKeoHBM34i6nobpE,2070
+fntom/FNTOMonoid.py,sha256=HalB5GKhA6Czok2x-9Q-_yqKJX9PEyY7NFDRrUtxQCE,36420
+fntom/LevelEquivalence.py,sha256=iMgK8AyQJnRSX0IkOcysmyyhMH8ugykzhUEgji8tJTg,31970
+fntom/Utils.py,sha256=cqHFLxUPQE-UFQVHXm9xGjku0Oe3jUIkNe7gRteMzjY,18197
+fntom/__init__.py,sha256=sSGSw0e0FnHjUrrnol-taOOVi2qgJRd9JGD70QriO8o,14235
+fntom-0.2.0.dist-info/LICENSE,sha256=K5pNoyW2DNLZpqo3Yj5ctuQtSpSH-z59difiMm328pY,35081
+fntom-0.2.0.dist-info/METADATA,sha256=j-gmj-KCroWNqgkeSmWExUztjdGqYUXsapBvfRFyoxQ,4404
+fntom-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fntom-0.2.0.dist-info/top_level.txt,sha256=QWZp6TQxUIGn4WJ7R6utq_Y50lh1kMlL-FsMI86l954,6
+fntom-0.2.0.dist-info/RECORD,,
