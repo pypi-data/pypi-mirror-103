@@ -1,0 +1,17 @@
+README.rst
+setup.cfg
+setup.py
+codejail/__init__.py
+codejail/django_integration.py
+codejail/django_integration_utils.py
+codejail/jail_code.py
+codejail/proxy.py
+codejail/safe_exec.py
+codejail/subproc.py
+codejail/util.py
+edx_codejail.egg-info/PKG-INFO
+edx_codejail.egg-info/SOURCES.txt
+edx_codejail.egg-info/dependency_links.txt
+edx_codejail.egg-info/not-zip-safe
+edx_codejail.egg-info/requires.txt
+edx_codejail.egg-info/top_level.txt
