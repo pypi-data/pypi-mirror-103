@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "forg"
+version = "0.1.0"
+description = ""
+authors = ["rqfreitas"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+observer = "^0.1.0"
+twine = "^3.4.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["setuptools>=42","wheel"]
+
+build-backend = "setuptools.build_meta"

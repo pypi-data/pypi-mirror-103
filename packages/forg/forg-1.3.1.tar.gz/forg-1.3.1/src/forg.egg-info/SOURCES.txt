@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/forg/__init__.py
+src/forg/forg.py
+src/forg.egg-info/PKG-INFO
+src/forg.egg-info/SOURCES.txt
+src/forg.egg-info/dependency_links.txt
+src/forg.egg-info/entry_points.txt
+src/forg.egg-info/top_level.txt
+src/forg/data/__init__.py
+src/forg/data/filesext.csv
