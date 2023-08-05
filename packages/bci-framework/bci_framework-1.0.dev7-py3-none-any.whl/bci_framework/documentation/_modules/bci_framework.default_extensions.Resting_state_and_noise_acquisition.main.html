@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resting state and noise acquisition &#8212; BCI-Framework  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="shortcut icon" href="../_static/favico.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <span class="target" id="module-bci_framework.default_extensions.Resting_state_and_noise_acquisition.main"></span><div class="section" id="resting-state-and-noise-acquisition">
+<h1>Resting state and noise acquisition<a class="headerlink" href="#resting-state-and-noise-acquisition" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="bci_framework.default_extensions.Resting_state_and_noise_acquisition.main.RestingNoiseAcquisition">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">bci_framework.default_extensions.Resting_state_and_noise_acquisition.main.</span></code><code class="sig-name descname"><span class="pre">RestingNoiseAcquisition</span></code><a class="reference internal" href="bci_framework/default_extensions/Resting_state_and_noise_acquisition/main.html#RestingNoiseAcquisition"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bci_framework.default_extensions.Resting_state_and_noise_acquisition.main.RestingNoiseAcquisition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resting state and noise acquisition</p>
+<dl class="py method">
+<dt id="bci_framework.default_extensions.Resting_state_and_noise_acquisition.main.RestingNoiseAcquisition.beep">
+<code class="sig-name descname"><span class="pre">beep</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="reference internal" href="bci_framework/default_extensions/Resting_state_and_noise_acquisition/main.html#RestingNoiseAcquisition.beep"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bci_framework.default_extensions.Resting_state_and_noise_acquisition.main.RestingNoiseAcquisition.beep" title="Permalink to this definition">¶</a></dt>
+<dd><p>Play <cite>n</cite> beeps.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="bci_framework.default_extensions.Resting_state_and_noise_acquisition.main.RestingNoiseAcquisition.build_trials">
+<code class="sig-name descname"><span class="pre">build_trials</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="reference internal" href="bci_framework/default_extensions/Resting_state_and_noise_acquisition/main.html#RestingNoiseAcquisition.build_trials"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bci_framework.default_extensions.Resting_state_and_noise_acquisition.main.RestingNoiseAcquisition.build_trials" title="Permalink to this definition">¶</a></dt>
+<dd><p>Define the <cite>trials</cite> and <cite>pipeline trials</cite>.</p>
+<p>The <cite>trials</cite> consist (in this case) in a list of cues.
+The <cite>pipeline trials</cite> is a set of couples <cite>(callable, duration)</cite> that
+define a single trial, this list of functions are executed asynchronously
+and repeated for each trial.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="bci_framework.default_extensions.Resting_state_and_noise_acquisition.main.RestingNoiseAcquisition.end_trial">
+<code class="sig-name descname"><span class="pre">end_trial</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instruction</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="reference internal" href="bci_framework/default_extensions/Resting_state_and_noise_acquisition/main.html#RestingNoiseAcquisition.end_trial"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bci_framework.default_extensions.Resting_state_and_noise_acquisition.main.RestingNoiseAcquisition.end_trial" title="Permalink to this definition">¶</a></dt>
+<dd><p>End of trial.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="bci_framework.default_extensions.Resting_state_and_noise_acquisition.main.RestingNoiseAcquisition.handle_response">
+<code class="sig-name descname"><span class="pre">handle_response</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">response</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="reference internal" href="bci_framework/default_extensions/Resting_state_and_noise_acquisition/main.html#RestingNoiseAcquisition.handle_response"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bci_framework.default_extensions.Resting_state_and_noise_acquisition.main.RestingNoiseAcquisition.handle_response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Key pressed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="bci_framework.default_extensions.Resting_state_and_noise_acquisition.main.RestingNoiseAcquisition.prepare">
+<code class="sig-name descname"><span class="pre">prepare</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instruction</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="reference internal" href="bci_framework/default_extensions/Resting_state_and_noise_acquisition/main.html#RestingNoiseAcquisition.prepare"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bci_framework.default_extensions.Resting_state_and_noise_acquisition.main.RestingNoiseAcquisition.prepare" title="Permalink to this definition">¶</a></dt>
+<dd><p>A small pause before acquisition.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="bci_framework.default_extensions.Resting_state_and_noise_acquisition.main.RestingNoiseAcquisition.start">
+<code class="sig-name descname"><span class="pre">start</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="reference internal" href="bci_framework/default_extensions/Resting_state_and_noise_acquisition/main.html#RestingNoiseAcquisition.start"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bci_framework.default_extensions.Resting_state_and_noise_acquisition.main.RestingNoiseAcquisition.start" title="Permalink to this definition">¶</a></dt>
+<dd><p>Start the run.</p>
+<p>A run consist in a consecutive pipeline trials execution.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="bci_framework.default_extensions.Resting_state_and_noise_acquisition.main.RestingNoiseAcquisition.stop">
+<code class="sig-name descname"><span class="pre">stop</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="reference internal" href="bci_framework/default_extensions/Resting_state_and_noise_acquisition/main.html#RestingNoiseAcquisition.stop"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bci_framework.default_extensions.Resting_state_and_noise_acquisition.main.RestingNoiseAcquisition.stop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stop pipeline execution.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="bci_framework.default_extensions.Resting_state_and_noise_acquisition.main.RestingNoiseAcquisition.synchronizer">
+<code class="sig-name descname"><span class="pre">synchronizer</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="reference internal" href="bci_framework/default_extensions/Resting_state_and_noise_acquisition/main.html#RestingNoiseAcquisition.synchronizer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bci_framework.default_extensions.Resting_state_and_noise_acquisition.main.RestingNoiseAcquisition.synchronizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show or hide synchronizer.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="bci_framework.default_extensions.Resting_state_and_noise_acquisition.main.RestingNoiseAcquisition.syncrhonous_trial">
+<code class="sig-name descname"><span class="pre">syncrhonous_trial</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="reference internal" href="bci_framework/default_extensions/Resting_state_and_noise_acquisition/main.html#RestingNoiseAcquisition.syncrhonous_trial"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bci_framework.default_extensions.Resting_state_and_noise_acquisition.main.RestingNoiseAcquisition.syncrhonous_trial" title="Permalink to this definition">¶</a></dt>
+<dd><p>Start a trial after subject decision.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="bci_framework.default_extensions.Resting_state_and_noise_acquisition.main.RestingNoiseAcquisition.trial">
+<code class="sig-name descname"><span class="pre">trial</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instruction</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="reference internal" href="bci_framework/default_extensions/Resting_state_and_noise_acquisition/main.html#RestingNoiseAcquisition.trial"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bci_framework.default_extensions.Resting_state_and_noise_acquisition.main.RestingNoiseAcquisition.trial" title="Permalink to this definition">¶</a></dt>
+<dd><p>Full trial.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="bci_framework.default_extensions.Resting_state_and_noise_acquisition.main.RestingNoiseAcquisition.trial_instruction">
+<code class="sig-name descname"><span class="pre">trial_instruction</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instruction</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="reference internal" href="bci_framework/default_extensions/Resting_state_and_noise_acquisition/main.html#RestingNoiseAcquisition.trial_instruction"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bci_framework.default_extensions.Resting_state_and_noise_acquisition.main.RestingNoiseAcquisition.trial_instruction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show the trial instructions to the subject.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo.svg" alt="Logo"/>
+            </a></p><h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/00-installation.html">Installation and running</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/01-configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/02-interface.html">Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/70-data_analysis.html">Data analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/75-data_visualizations.html">Data visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/76-default_visualizations.html">Examples of data visualizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/80-stimuli_delivery.html">Stimuli delivery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/81-default_stimuli_delivery_paradigms.html">Examples of stimuli delivery paradigms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/90-event_marker_synchronization.html">Event marker synchronization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/91-eeg_records_exploring.html">EEG records exploring</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/99-ilustrative_example.html">Illustrative example</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Yeison Cardona.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.5.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/_modules/bci_framework.default_extensions.Resting_state_and_noise_acquisition.main.rst"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

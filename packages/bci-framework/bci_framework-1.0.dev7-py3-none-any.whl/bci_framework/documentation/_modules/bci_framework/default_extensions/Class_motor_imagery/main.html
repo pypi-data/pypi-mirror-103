@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bci_framework.default_extensions.Class_motor_imagery.main &#8212; BCI-Framework  documentation</title>
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/custom.css" />
+    <script id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+    <script src="../../../../_static/jquery.js"></script>
+    <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/doctools.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="shortcut icon" href="../../../../_static/favico.ico"/>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for bci_framework.default_extensions.Class_motor_imagery.main</h1><div class="highlight"><pre>
+<span></span>&quot;&quot;&quot;
+=====================
+4-Class motor imagery
+=====================
+
+&quot;&quot;&quot;
+
+from bci_framework.extensions.stimuli_delivery import StimuliAPI
+from bci_framework.extensions.stimuli_delivery.utils import Widgets as w
+
+from browser import html, timer
+import random
+import logging
+from typing import Literal
+
+UNICODE_CUES = {
+    &#39;Right&#39;: &#39;&amp;#x1f86a;&#39;,
+    &#39;Left&#39;: &#39;&amp;#x1f868;&#39;,
+    &#39;Up&#39;: &#39;&amp;#x1f869;&#39;,
+    &#39;Bottom&#39;: &#39;&amp;#x1f86b;&#39;,
+}
+
+
+########################################################################
+<div class="viewcode-block" id="FourClassMotorImagery"><a class="viewcode-back" href="../../../bci_framework.default_extensions.Class_motor_imagery.main.html#bci_framework.default_extensions.Class_motor_imagery.main.FourClassMotorImagery">[docs]</a>class FourClassMotorImagery(StimuliAPI):
+    &quot;&quot;&quot;Classic arrow cues for motor imagery.&quot;&quot;&quot;
+
+    # ----------------------------------------------------------------------
+    def __init__(self, *args, **kwargs):
+        &quot;&quot;&quot;&quot;&quot;&quot;
+        super().__init__(*args, **kwargs)
+        self.add_stylesheet(&#39;styles.css&#39;)
+
+        self.show_cross()
+
+        self.dashboard &lt;= w.label(&#39;4-Class motor imagery&#39;, &#39;headline4&#39;)
+        self.dashboard &lt;= w.checkbox(
+            label=&#39;Cues&#39;,
+            options=[[cue, True] for cue in UNICODE_CUES],
+            on_change=None,
+            id=&#39;cues&#39;,
+        )
+        self.dashboard &lt;= w.slider(
+            label=&#39;Trials per class:&#39;,
+            min=1,
+            max=100,
+            value=10,
+            step=1,
+            discrete=True,
+            marks=True,
+            id=&#39;repetitions&#39;,
+        )
+        self.dashboard &lt;= w.slider(
+            label=&#39;Stimulus duration&#39;,
+            min=2000,
+            max=6000,
+            value=4000,
+            step=100,
+            unit=&#39;ms&#39;,
+            id=&#39;duration&#39;,
+        )
+        self.dashboard &lt;= w.range_slider(
+            label=&#39;Stimulus onset asynchronously&#39;,
+            min=1000,
+            max=3000,
+            value_lower=2000,
+            value_upper=3000,
+            step=100,
+            unit=&#39;ms&#39;,
+            id=&#39;soa&#39;,
+        )
+        self.dashboard &lt;= w.switch(
+            label=&#39;Record EEG&#39;,
+            checked=False,
+            id=&#39;record&#39;,
+        )
+        self.dashboard &lt;= w.switch(
+            label=&#39;External marker synchronizer&#39;,
+            checked=False,
+            on_change=self.synchronizer,
+            id=&#39;record&#39;,
+        )
+
+        self.dashboard &lt;= w.button(&#39;Start run&#39;, on_click=self.start)
+        self.dashboard &lt;= w.button(&#39;Stop run&#39;, on_click=self.stop)
+
+    # ----------------------------------------------------------------------
+<div class="viewcode-block" id="FourClassMotorImagery.start"><a class="viewcode-back" href="../../../bci_framework.default_extensions.Class_motor_imagery.main.html#bci_framework.default_extensions.Class_motor_imagery.main.FourClassMotorImagery.start">[docs]</a>    def start(self) -&gt; None:
+        &quot;&quot;&quot;Start the run.
+
+        A run consist in a consecutive trials execution.
+        &quot;&quot;&quot;
+        if w.get_value(&#39;record&#39;):
+            self.start_record()
+
+        self.build_trials()
+        timer.set_timeout(lambda: self.run_pipeline(
+            self.pipeline_trial, self.trials, callback=self.stop_run), 2000)</div>
+
+    # ----------------------------------------------------------------------
+<div class="viewcode-block" id="FourClassMotorImagery.stop"><a class="viewcode-back" href="../../../bci_framework.default_extensions.Class_motor_imagery.main.html#bci_framework.default_extensions.Class_motor_imagery.main.FourClassMotorImagery.stop">[docs]</a>    def stop(self) -&gt; None:
+        &quot;&quot;&quot;Stop pipeline execution.&quot;&quot;&quot;
+        self.stop_pipeline()</div>
+        
+    # ----------------------------------------------------------------------
+<div class="viewcode-block" id="FourClassMotorImagery.stop_run"><a class="viewcode-back" href="../../../bci_framework.default_extensions.Class_motor_imagery.main.html#bci_framework.default_extensions.Class_motor_imagery.main.FourClassMotorImagery.stop_run">[docs]</a>    def stop_run(self) -&gt; None:
+        &quot;&quot;&quot;Stop pipeline execution.&quot;&quot;&quot;  
+        self.soa()
+        if w.get_value(&#39;record&#39;):
+            timer.set_timeout(self.stop_record, 2000)</div>
+
+    # ----------------------------------------------------------------------
+<div class="viewcode-block" id="FourClassMotorImagery.build_trials"><a class="viewcode-back" href="../../../bci_framework.default_extensions.Class_motor_imagery.main.html#bci_framework.default_extensions.Class_motor_imagery.main.FourClassMotorImagery.build_trials">[docs]</a>    def build_trials(self) -&gt; None:
+        &quot;&quot;&quot;Define the `trials` and `pipeline trials`.
+
+        The `trials` consist (in this case) in a list of cues.
+        The `pipeline trials` is a set of couples `(callable, duration)` that
+        define a single trial, this list of functions are executed asynchronously
+        and repeated for each trial.
+        &quot;&quot;&quot;
+        self.trials = w.get_value(&#39;cues&#39;) * w.get_value(&#39;repetitions&#39;)
+        random.shuffle(self.trials)
+
+        self.pipeline_trial = [
+            (self.soa, &#39;soa&#39;),  # `soa` is a range reference
+            (self.trial, &#39;duration&#39;),  # `duration` is a slider reference
+        ]</div>
+
+    # ----------------------------------------------------------------------
+<div class="viewcode-block" id="FourClassMotorImagery.soa"><a class="viewcode-back" href="../../../bci_framework.default_extensions.Class_motor_imagery.main.html#bci_framework.default_extensions.Class_motor_imagery.main.FourClassMotorImagery.soa">[docs]</a>    def soa(self, *args) -&gt; None:
+        &quot;&quot;&quot;Stimulus onset asynchronously.
+
+        This is a pipeline method, that explains the unused `*args` arguments.
+        &quot;&quot;&quot;
+        if element := getattr(self, &#39;cue_placeholder&#39;, None):
+            element.html = &#39;&#39;</div>
+
+    # ----------------------------------------------------------------------
+<div class="viewcode-block" id="FourClassMotorImagery.trial"><a class="viewcode-back" href="../../../bci_framework.default_extensions.Class_motor_imagery.main.html#bci_framework.default_extensions.Class_motor_imagery.main.FourClassMotorImagery.trial">[docs]</a>    def trial(self, cue: Literal[&#39;Right&#39;, &#39;Left&#39;, &#39;Up&#39;, &#39;Bottom&#39;]) -&gt; None:
+        &quot;&quot;&quot;Cue visualization.
+
+        This is a pipeline method, that means it receives the respective trial
+        as argument each time is called.
+        &quot;&quot;&quot;
+        if not hasattr(self, &#39;cue_placeholder&#39;):
+            self.cue_placeholder = html.SPAN(&#39;&#39;, id=&#39;cue&#39;)
+            self.stimuli_area &lt;= self.cue_placeholder
+
+        self.send_marker(cue)
+        self.cue_placeholder.html = UNICODE_CUES[cue]
+        self.cue_placeholder.style = {&#39;display&#39;: &#39;flex&#39;}</div>
+
+    # ----------------------------------------------------------------------
+<div class="viewcode-block" id="FourClassMotorImagery.synchronizer"><a class="viewcode-back" href="../../../bci_framework.default_extensions.Class_motor_imagery.main.html#bci_framework.default_extensions.Class_motor_imagery.main.FourClassMotorImagery.synchronizer">[docs]</a>    def synchronizer(self, value: bool) -&gt; None:
+        &quot;&quot;&quot;Show or hide synchronizer.&quot;&quot;&quot;
+        if value:
+            self.show_synchronizer()
+        else:
+            self.hide_synchronizer()</div></div>
+
+
+if __name__ == &#39;__main__&#39;:
+    FourClassMotorImagery()
+
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../../../index.html">
+              <img class="logo" src="../../../../_static/logo.svg" alt="Logo"/>
+            </a></p><h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notebooks/00-installation.html">Installation and running</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notebooks/01-configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notebooks/02-interface.html">Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notebooks/70-data_analysis.html">Data analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notebooks/75-data_visualizations.html">Data visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notebooks/76-default_visualizations.html">Examples of data visualizations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notebooks/80-stimuli_delivery.html">Stimuli delivery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notebooks/81-default_stimuli_delivery_paradigms.html">Examples of stimuli delivery paradigms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notebooks/90-event_marker_synchronization.html">Event marker synchronization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notebooks/91-eeg_records_exploring.html">EEG records exploring</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notebooks/99-ilustrative_example.html">Illustrative example</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../index.html">Documentation overview</a><ul>
+  <li><a href="../../../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Yeison Cardona.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.5.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
