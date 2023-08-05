@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: django-automatic-crud
+Version: 1.0.3
+Summary: CRUDS Automáticos con Django
+Home-page: https://github.com/developerpe/django-automatic-crud
+Author: Oliver Sandoval
+Author-email: developerpeperu@gmail.com
+License: BSD License
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.3
