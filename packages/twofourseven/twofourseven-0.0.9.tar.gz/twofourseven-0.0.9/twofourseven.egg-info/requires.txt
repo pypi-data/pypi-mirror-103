@@ -1,0 +1,4 @@
+pandas>=1
+requests>=2
+lxml>=4
+numpy>=1
