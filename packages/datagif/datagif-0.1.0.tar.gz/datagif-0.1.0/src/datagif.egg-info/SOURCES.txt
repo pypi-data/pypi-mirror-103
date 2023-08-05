@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+src/datagif/__about__.py
+src/datagif/__init__.py
+src/datagif/datagif.py
+src/datagif/utilities.py
+src/datagif.egg-info/PKG-INFO
+src/datagif.egg-info/SOURCES.txt
+src/datagif.egg-info/dependency_links.txt
+src/datagif.egg-info/not-zip-safe
+src/datagif.egg-info/requires.txt
+src/datagif.egg-info/top_level.txt
