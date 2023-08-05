@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: datajudge-client
+Version: 1.0.2
+Summary: Client to interact with datajudge.space/app
+Home-page: https://github.com/verri/datajudge-client
+Author: Filipe Verri
+Author-email: filipeverri@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/verri/datajudge-client/issues
+Description: # DataJudge Python Client
+        
+        Interacts with [DataJudge](https://datajudge.space/app).
+        
+        ## Installation
+        
+        ```sh
+        $ pip install datajudge-client
+        ```
+        
+        ## Usage
+        
+        ```sh
+        $ python -m datajudge-client --key YOUR_API_KEY teamname
+        $ python -m datajudge-client --key YOUR_API_KEY leaderboard
+        $ python -m datajudge-client --key YOUR_API_KEY submit --input SUBMISSION_FILE
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
