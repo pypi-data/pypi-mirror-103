@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: python-pie
+Version: 0.1.0
+Summary: Parse static files such as YAML and insert in them data from environment variables
+Home-page: https://github.com/igorMIA/python-pie
+Author: Igor Matchenko
+Author-email: igor@matchenko.com
+License: UNKNOWN
+Keywords: environment variables,deployments,settings,env,configurations,python,pie
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# python-pie
+
+Python-pie reads key-value pairs from a `.env` file and can set them as environment
+variables. It helps in the development of applications following the
+
+## Getting Started
+
+```shell
+pip install python-pie
+```
+
+
