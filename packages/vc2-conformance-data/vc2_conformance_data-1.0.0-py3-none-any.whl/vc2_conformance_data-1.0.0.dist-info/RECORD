@@ -1,0 +1,17 @@
+vc2_conformance_data/__init__.py,sha256=25KJzgnrehmUKJ3wh0Bts3gdCYcWMF5ihoDQ_yzYhZg,3921
+vc2_conformance_data/berries.json,sha256=Uhq61YB-YBNRREi5jV0u7H0ZjQ8DPjDZPM2kxfEmTBo,558
+vc2_conformance_data/berries.raw,sha256=mONQr0bGJjLIzHUptr8dIfbhTg45Td8Aty04E9kXBZw,72317952
+vc2_conformance_data/kingswood.json,sha256=Uhq61YB-YBNRREi5jV0u7H0ZjQ8DPjDZPM2kxfEmTBo,558
+vc2_conformance_data/kingswood.raw,sha256=_Z3UmrFWmek4EsavYfMjzX3r1cwGudXOVcPhIv57Bqk,72317952
+vc2_conformance_data/pointer.json,sha256=wkU283hi-pTPKzCpfQzszba_nunAYjAETheH_Q4sRrE,551
+vc2_conformance_data/pointer.raw,sha256=XGo6p8gATdHhmVAYnK0b0OZudna2RQVi_uFHtkZOmbI,49152
+vc2_conformance_data/static_filter_analysis_bundle.zip,sha256=7dPqbdOL2e-dYQohbV5MaYWCFE4eC3Kg9blmGy97M9A,48805887
+vc2_conformance_data/trees.json,sha256=Uhq61YB-YBNRREi5jV0u7H0ZjQ8DPjDZPM2kxfEmTBo,558
+vc2_conformance_data/trees.raw,sha256=3QwOiHolwbZ8Wpu0ANJNS9fye2yxE9SlnUREHjR56Ws,72317952
+vc2_conformance_data/version.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
+vc2_conformance_data-1.0.0.dist-info/LICENSE.txt,sha256=5X8cMguM-HmKfS_4Om-eBqM6A1hfbgZf6pfx2G24QFI,35150
+vc2_conformance_data-1.0.0.dist-info/METADATA,sha256=mEKDiVVdrpoPaGlCukkvwuD6XjOBVaVXkTrRPo54OZw,2420
+vc2_conformance_data-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+vc2_conformance_data-1.0.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+vc2_conformance_data-1.0.0.dist-info/top_level.txt,sha256=UT_ivYvXjNGbfpRf1pMYXNtSNdj48kj91ho1VlhkAio,21
+vc2_conformance_data-1.0.0.dist-info/RECORD,,
