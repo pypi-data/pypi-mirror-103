@@ -1,0 +1,11 @@
+papi/__init__.py,sha256=PzEXwCkRSWo_CJ5CPhpI8WHgcyRsoqyEYJgJx_Wb_RY,2423
+papi/base.py,sha256=9EzPBYMUIy4v6nP5iah4pw3q2U7dKY0196vLVQSOV7I,433
+papi/contexts.py,sha256=2qPKsOJ-elZXgCyOVND5MTYi2Tw-2qqdMBPeROuJwoE,153
+papi/edges.py,sha256=VVr6gKC9QCrqL_F2hIurOZurw80WrRgUbPzeROvK5w8,1535
+papi/nodes.py,sha256=o7JSxRfkd8donPAN6G6fZOZ4fovkMbxi4TL0CRW1wKU,3875
+papi/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+papi/utils.py,sha256=tW6-NdNYrNlcEs_L_-5H2zZ3zlyH0wnIHXB_aWt8kGY,110
+valohai_papi-0.1.1.dist-info/LICENSE,sha256=UILDb4E4Qj7KHoQrYrjnOKF94MVHABkUcDOMC7RRQeo,1075
+valohai_papi-0.1.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+valohai_papi-0.1.1.dist-info/METADATA,sha256=Ff8Tw9T_bY6rj3FsQQWjyMD-ZzuBIR9MZ99lyiFV8Ls,607
+valohai_papi-0.1.1.dist-info/RECORD,,
