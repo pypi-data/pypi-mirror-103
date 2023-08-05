@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: ew_dsb_client_lib
+Version: 0.1.1a7
+Summary: Python client library for the EW-SMS module
+Home-page: https://github.com/energywebfoundation/sms-client-lib-py.git
+Author: Pablo Buitrago
+Author-email: messaging@energyweb.org
+License: LICENSE
+Project-URL: Bug Tracker, https://github.com/energywebfoundation/sms-client-lib-py/issues
+Description: <div align="center">
+          <a href="https://www.energyweb.org/"><img src="https://www.energyweb.org/wp-content/uploads/2019/04/logo-brand.png" alt="EnergyWeb" width="150"></a>
+          <h1 style="padding:25px;">
+            DSB Client Library
+          </h1>
+        </div>
+        
+        A Python Client Library for the Energy Web Decentralised Service Bus. Please take a moment to [ReadTheDocs](https://energy-web-foundation-sms-client-lib-py.readthedocs-hosted.com/en/latest/).
+        
+Keywords: ethereum decentralised energy-web pubsub messaging
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: all
+Provides-Extra: test
