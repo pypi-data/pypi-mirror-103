@@ -1,0 +1,11 @@
+S3Scanner/S3Bucket.py,sha256=Kp-Q-uI5iKUiHc6HHtxDir_C5F-kL3zKIw21O_El6B4,5899
+S3Scanner/S3Service.py,sha256=7w--IwVeUNFL9jn_c1YeGoZ__Dv8BTzPrfbmSJFgZdc,23278
+S3Scanner/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+S3Scanner/__main__.py,sha256=_gIQFryMfggynGMt9V2WyjEGwTc3iRB16h4tzyv6foI,10705
+S3Scanner/exceptions.py,sha256=NGs1WyGyfCwOmeZWi0FagquHV0f4tBaCQ3LAMjwuoh0,423
+S3Scanner-2.0.0.dist-info/LICENSE,sha256=QXJVZdELw80jHPpm9v7mD33CIEc4HvSiGYcTUAgp4D8,1067
+S3Scanner-2.0.0.dist-info/METADATA,sha256=s_kOZyvoHxRKOBZ8b8PBFAvxh1B5RQFckuG07x2TPR8,5310
+S3Scanner-2.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+S3Scanner-2.0.0.dist-info/entry_points.txt,sha256=JhVQlE1849p-HJMjgo_r0Do1MHMJFcEAclYzZ8VqNdw,55
+S3Scanner-2.0.0.dist-info/top_level.txt,sha256=bhNKYvvBf7uOcNB1V02RLgA1AJWGwpTb_QytJiiy4A8,10
+S3Scanner-2.0.0.dist-info/RECORD,,
