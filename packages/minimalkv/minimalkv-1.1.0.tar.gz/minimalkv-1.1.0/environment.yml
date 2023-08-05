@@ -1,0 +1,24 @@
+name: minimalkv
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python
+  - dulwich
+  - mock
+  - pytest
+  - pytest-mock
+  - pytest-xdist
+  - redis-py
+  - psycopg2
+  - six
+  - sqlalchemy
+  - google-cloud-storage
+  - azure-storage-blob
+  - boto
+  - pymongo
+  - docker-compose
+  - pymysql
+  - pre-commit
+  - setuptools-scm
+  - uritools
