@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: dsd
+Version: 0.0.1
+Summary: Dense subgraph discovery
+Home-page: https://github.com/tsourakakis-lab
+Author: C.E. Tsourakakis and Tianyi Chen
+Author-email: graphminingtoolbox@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/tsourolampis/dense-subgraph-discovery/
+Description: # dsd_pip
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
