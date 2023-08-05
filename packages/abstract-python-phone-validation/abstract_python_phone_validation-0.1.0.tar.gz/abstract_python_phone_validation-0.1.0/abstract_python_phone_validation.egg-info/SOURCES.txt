@@ -1,0 +1,9 @@
+README.md
+setup.py
+abstract_python_phone_validation.egg-info/PKG-INFO
+abstract_python_phone_validation.egg-info/SOURCES.txt
+abstract_python_phone_validation.egg-info/dependency_links.txt
+abstract_python_phone_validation.egg-info/requires.txt
+abstract_python_phone_validation.egg-info/top_level.txt
+python_phone_validation/__init__.py
+python_phone_validation/python_phone_validation.py
