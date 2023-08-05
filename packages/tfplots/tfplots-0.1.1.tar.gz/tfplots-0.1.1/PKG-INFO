@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: tfplots
+Version: 0.1.1
+Summary: Utilities for quickly plotting logged tensorflow data
+License: MIT
+Author: Andy Jackson
+Author-email: amjack100@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: altair (>=4.1.0,<5.0.0)
+Requires-Dist: altair-saver (>=0.5.0,<0.6.0)
+Requires-Dist: matplotlib (>=3.4.1,<4.0.0)
+Requires-Dist: pandas (>=1.2.4,<2.0.0)
