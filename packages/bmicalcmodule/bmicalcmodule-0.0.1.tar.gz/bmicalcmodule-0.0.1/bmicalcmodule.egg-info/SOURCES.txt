@@ -1,0 +1,6 @@
+setup.py
+bmicalcmodule.egg-info/PKG-INFO
+bmicalcmodule.egg-info/SOURCES.txt
+bmicalcmodule.egg-info/dependency_links.txt
+bmicalcmodule.egg-info/requires.txt
+bmicalcmodule.egg-info/top_level.txt

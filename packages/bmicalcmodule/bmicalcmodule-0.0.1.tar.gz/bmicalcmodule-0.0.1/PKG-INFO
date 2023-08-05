@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: bmicalcmodule
+Version: 0.0.1
+Summary: BMI Calculation Tool
+Home-page: UNKNOWN
+Author: Jatin Pandey
+Author-email: <jatinpandeywork@gmail.com>
+License: UNKNOWN
+Description: BMI Calculation Tool for Json as input data
+Keywords: python,BMI TOOL
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
