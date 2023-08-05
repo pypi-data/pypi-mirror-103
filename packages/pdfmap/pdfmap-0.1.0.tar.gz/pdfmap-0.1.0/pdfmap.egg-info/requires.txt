@@ -1,0 +1,5 @@
+pdfminer==20191125
+wordmaze==0.2.1
+
+[:python_version < "3.7"]
+dataclasses==0.8
