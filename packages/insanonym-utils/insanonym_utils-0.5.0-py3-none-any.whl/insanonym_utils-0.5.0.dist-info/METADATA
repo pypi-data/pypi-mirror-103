@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: insanonym-utils
+Version: 0.5.0
+Summary: Execute anonymization scripts over a table
+Author: Daniel Mathiot
+Author-email: d.danymat@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: numpy (>=1.20.2,<2.0.0)
+Requires-Dist: pandas (>=1.2.4,<2.0.0)
+Requires-Dist: pydantic (>=1.8.1,<2.0.0)
+Requires-Dist: pytest (>=6.2.3,<7.0.0)

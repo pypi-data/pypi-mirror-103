@@ -1,0 +1,11 @@
+insanonym_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+insanonym_utils/algorithms.py,sha256=jEqPfWqSOni-QwQKFTCB2CCDJGFA-JBEZlMEBJm1tQQ,194
+insanonym_utils/main.py,sha256=9asMxoWgp0VgZSi_dv93-cKVyUmsHWUblurfYfJU8OQ,559
+insanonym_utils/models.py,sha256=iwHmQaLJbgtoqc_t93II1GFa-DrDNoJTm60sUnCG1Jk,1012
+insanonym_utils/runner.py,sha256=Evw73Y4_yE4MK9m_7XPEX_AYeTInJAJs0gbr12mC8uk,1697
+insanonym_utils/utils.py,sha256=6BYHx6TEaQIkMYJkKsBEoLAEiq-3G2aaYM_K4ZfcZg0,1004
+insanonym_utils-0.5.0.dist-info/entry_points.txt,sha256=7L5t16gm0uCDfU9vd-T7NpsIyux5VSd6ly8cS99yL9U,50
+insanonym_utils-0.5.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+insanonym_utils-0.5.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+insanonym_utils-0.5.0.dist-info/METADATA,sha256=hoIdQvrWpunm9wZVk7Yblnhz1JhJyeSxtsO6720fUAM,502
+insanonym_utils-0.5.0.dist-info/RECORD,,
