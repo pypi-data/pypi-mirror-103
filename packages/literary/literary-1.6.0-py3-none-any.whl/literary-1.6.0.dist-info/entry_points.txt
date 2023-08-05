@@ -1,0 +1,6 @@
+[console_scripts]
+literary = literary.__main__:run
+
+[nbconvert.exporters]
+literary = literary.exporter:LiteraryPythonExporter
+
