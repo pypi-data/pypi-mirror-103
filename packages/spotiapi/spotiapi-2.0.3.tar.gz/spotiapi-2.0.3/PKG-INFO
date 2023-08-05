@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: spotiapi
+Version: 2.0.3
+Summary: A small asynchronous Wrapper for Spotify Web API.
+License: MIT
+Author: Aleksey Demchenkov
+Author-email: admin@julheer.ru
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: http3 (>=0.6.7,<0.7.0)
