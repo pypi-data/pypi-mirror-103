@@ -1,0 +1,17 @@
+CHANGES
+=======
+
+0.4.0
+-----
+
+* add command ps
+* add usbmuxd dump script
+* add project link: https://github.com/electricbubble/gidevice
+* update readme about appium run in windows
+* update example
+* add screenrecord example
+* fix cmd:install with url which contains ?
+* update readme
+* fix typo, close #42
+* add ipa sign script
+* add more command
