@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: DisplayHelper
+Version: 1.0.0
+Summary: Python REST-Api for the Alarmdisplay software from 112-Online.com
+Home-page: https://gitlab.zoios.net/112-online/alarmdisplay-helper
+Maintainer: mzimmer
+Maintainer-email: mzimmer@zoios.net
+License: CC BY-NC-ND 4.0
+Description: # Alarmdisplay-Helper
+        
+        Python REST-Api for the Alarmdisplay software from 112-Online.com
+        
+        # Notice
+        
+        This Software is using Flask: [Copyright 2010 Pallets](https://flask.palletsprojects.com/)
+        
+Keywords: Feuerwehr,112-Online,Alarmdisplay
+Platform: UNKNOWN
+Requires-Python: >=3
+Description-Content-Type: text/markdown
