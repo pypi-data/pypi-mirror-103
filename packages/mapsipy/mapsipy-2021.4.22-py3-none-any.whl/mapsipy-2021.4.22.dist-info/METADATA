@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: mapsipy
+Version: 2021.4.22
+Summary: MVVM UI Framework for Python and Brython
+Home-page: https://github.com/eseunghwan/mapsipy
+Author: eseunghwan
+Author-email: shlee0920@naver.com
+License: MIT license
+Keywords: mapsipy,brython,mvvm
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Korean
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: brython
+Requires-Dist: lxml
+
+
+<hr>
+<p align="center">
+<img src="https://github.com/eseunghwan/mapsi.py/blob/master/mapsi/assets/mapsi_big.png?raw=true" width=400 />
+<br>
+MVVM UI Framework for Python and Brython
+<br>
+<a href="https://pypi.python.org/pypi/mapsipy"><image src="https://img.shields.io/pypi/v/mapsipy.svg" /></a>
+<a href="https://travis-ci.com/eseunghwan/mapsi"><image src="https://img.shields.io/travis/eseunghwan/mapsipy.svg" /></a>
+<a href="https://mapsipy.readthedocs.io/en/latest/?version=latest"><image src="https://readthedocs.org/projects/mapsipy/badge/?version=latest" alt="Documentation Status" /></a>
+</p>
+<hr>
+
+<br><br>
+
+# Install
+## using pip(stable)
+```powershell
+pip3 install mapsipy
+```
+## using git(dev)
+```powershell
+pip3 install https://github.com/eseunghwan/pyvuejs.git
+```
+<br><br>
+
+# Usage
+### create project with cli
+```powershell
+mapsipy-cli init [dest]
+```
+<br>
+
+### run with server
+```powershell
+mapsipy-cli serve
+```
+<br>
+
+### build project file to standalone .html and .js
+```powershell
+mapsipy-cli build [dest]
+```
+<br><br>
+
+# TODO
+[ ] classified virtual dom<br>
+[ ] classified viewmodel
+
+
+
+# History
+
+## 2021.04.20
+- init release
+- mvvm skeleton completed
+
+## 2021.04.21
+- bug fix on init project
+    - do not remove directory anymore
+- bug fix on package install
+    - template files now include
+
+## 2021.04.22
+- conditions(if, elif, else) include
+- loop(for) include
+
+

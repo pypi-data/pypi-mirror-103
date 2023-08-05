@@ -1,0 +1,35 @@
+
+<template>
+    <div id="app">
+        <p>{count}</p>
+        <p :if="count == 0">count zero</p>
+        <p :elif="count < 10">count 1 digit</p>
+        <p :elif="count < 12">hey!</p>
+        <p :else>wow!</p>
+        <button :click="count_up">+</button>
+        <button :click="count_down">-</button>
+    </div>
+</template>
+
+<style scoped>
+button {
+    color: black;
+}
+</style>
+
+<python>
+class Component:
+    def data():
+        return {
+            "count": 0
+        }
+
+    @Component.method
+    def count_up(self, event):
+        self.count += 1
+
+    @Component.method
+    def count_down(self, event):
+        if self.count > 0:
+            self.count -= 1
+</python>
