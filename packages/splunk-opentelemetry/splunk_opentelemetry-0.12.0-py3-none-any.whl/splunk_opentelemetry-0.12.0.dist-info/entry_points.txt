@@ -1,0 +1,7 @@
+[console_scripts]
+splk-py-trace=splunk_otel.cmd.trace:run
+splk-py-trace-bootstrap=splunk_otel.cmd.bootstrap:run
+
+[opentelemetry_distro]
+splunk_distro=splunk_otel.distro:SplunkDistro
+
