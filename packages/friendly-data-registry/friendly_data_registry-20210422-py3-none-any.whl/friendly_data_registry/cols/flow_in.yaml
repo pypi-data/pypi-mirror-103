@@ -1,0 +1,4 @@
+name: flow_in
+type: number
+constraints:
+  minimum: 0
