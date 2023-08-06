@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: termux-menu
+Version: 0.0.5
+Summary: Python basic but powerfull UX console library
+Home-page: https://github.com/pomaretta/termux-menu
+Author: Carlos Pomares
+Author-email: cpomaresp@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/pomaretta/termux-menu/issues
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
