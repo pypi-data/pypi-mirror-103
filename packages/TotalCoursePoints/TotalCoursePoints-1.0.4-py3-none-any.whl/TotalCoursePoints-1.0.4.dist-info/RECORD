@@ -1,0 +1,13 @@
+TotalCoursePoints/__init__.py,sha256=-p8VrKOCgtbvyfzK6jHYAzw-9EtbmhiaSNuW8IXsVy0,439
+TotalCoursePoints/assignment.py,sha256=OpuYvM1rINIwBg7FlJhTJR5rL4JpLk-zS5TUSExSj70,18681
+TotalCoursePoints/category.py,sha256=Ai9ke2MMhuHWd2mUp7mH7RZpW3DknPBn7ICsuPXriJ4,11784
+TotalCoursePoints/classroom.py,sha256=Dzge6qPtZtJ-TOlRbNEwJuFsoIT4QDxDxy__3Rwh9qs,19762
+TotalCoursePoints/grade_bins.py,sha256=DgWRMU_ZwWRu3rqtpiNJjcVQgiRuhJZbNBA8blAUYOs,6750
+TotalCoursePoints/group.py,sha256=_wRGerxq-ex3h3qikC3vsItrAtp8E0vP12Z7sqxRPNc,164
+TotalCoursePoints/student.py,sha256=OrT9SaIMlHm2aL67Vj-DWmMD7dI0umW-M37taLuki40,10325
+TotalCoursePoints/utils.py,sha256=vlftrqUJS9QLQjQqOt0QaTszrevBxi4wKS3PTzDN6ZE,19189
+TotalCoursePoints-1.0.4.dist-info/LICENSE,sha256=UIp30ue1HZit7tMmSK0SS3swJBqOcLLnLJn5LY5YdNE,1036
+TotalCoursePoints-1.0.4.dist-info/METADATA,sha256=5Z2s3UWeGmjys1crHox9cYhZ4pfaW2RcE3vM6SieoeQ,684
+TotalCoursePoints-1.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+TotalCoursePoints-1.0.4.dist-info/top_level.txt,sha256=N1D44AezATcv_0K7WX-7bU3irKIQ8BJXb19YQ72xq94,18
+TotalCoursePoints-1.0.4.dist-info/RECORD,,
