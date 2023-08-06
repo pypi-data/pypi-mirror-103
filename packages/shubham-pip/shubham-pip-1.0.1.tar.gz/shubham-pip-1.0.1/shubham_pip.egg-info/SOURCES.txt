@@ -1,0 +1,7 @@
+README.md
+setup.py
+shubham_pip.egg-info/PKG-INFO
+shubham_pip.egg-info/SOURCES.txt
+shubham_pip.egg-info/dependency_links.txt
+shubham_pip.egg-info/requires.txt
+shubham_pip.egg-info/top_level.txt
