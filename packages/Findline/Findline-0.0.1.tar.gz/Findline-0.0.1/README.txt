@@ -1,0 +1,1 @@
+this is a python library to help people working with databases it finds a line in which you have your keyword and then prints or inserts that whole line

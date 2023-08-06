@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: Findline
+Version: 0.0.1
+Summary: It is a python library to help people working with databses my email is yash.m.nine@gmail.com you can mail me incase of any issues I respond usually within hours if not minutes. 
+Home-page: UNKNOWN
+Author: Yash Mittal
+Author-email: yash.m.nine@gmail.com
+License: MIT
+Description: this is a python library to help people working with databases it finds a line in which you have your keyword and then prints or inserts that whole line
+        
+        Change Log
+        ==========
+        
+        0.0.1(25/4/2021)
+        ----------------
+        -First Release 
+Keywords: Database,findLines
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
