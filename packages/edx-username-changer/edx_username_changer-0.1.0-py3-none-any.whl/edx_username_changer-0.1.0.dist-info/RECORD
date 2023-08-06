@@ -1,0 +1,13 @@
+edx_username_changer/__init__.py,sha256=Xw1lkPUCtB62HYPPyezLIEXcNzdsYn1L62Ek_qmh9oI,96
+edx_username_changer/admin.py,sha256=NqpLH-ZCiUc2nHkKu8jx0xEm51G1tBTUXIlysnVvK4M,994
+edx_username_changer/apps.py,sha256=ShE3-yY1UFPA14FJqGLRdf4Uf7fvjRfn2Ub1asqRffQ,1162
+edx_username_changer/exceptions.py,sha256=m3fF46Nq9tbh3QmArJvB0VPSRmYums_c5DtVSGQFh9Q,363
+edx_username_changer/signals.py,sha256=ayDgPnr1nkwvINjJt3eqpIRlk3da5ueLqqy8vHF95ak,1538
+edx_username_changer/tasks.py,sha256=rRJ3KvdaxlcCcMjSz_0EYmPDDmj5FfOn891vRA_a4m4,1321
+edx_username_changer/utils.py,sha256=3UGBe3ihlDD-T3avy0cj8bK43ZVm0hOkLiOclxrQVpw,3678
+edx_username_changer-0.1.0.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+edx_username_changer-0.1.0.dist-info/METADATA,sha256=DYRDTUiq77O-nMEjNxAzCh2HG2GnX5YAljBU-wt810M,2224
+edx_username_changer-0.1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+edx_username_changer-0.1.0.dist-info/entry_points.txt,sha256=OTjzmTljYBjU38G2h51aU1x1W2WsAPydwVzA7XZczHg,182
+edx_username_changer-0.1.0.dist-info/top_level.txt,sha256=kzzSoJBSTwVe7uX2CWg4KiYLl6BhnNqxdOKff0fS6EQ,21
+edx_username_changer-0.1.0.dist-info/RECORD,,
