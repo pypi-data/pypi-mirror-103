@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: hakai_api
+Version: 1.1.1
+Summary: Get Hakai database resources using http calls
+Home-page: https://github.com/tayden/hakai-api-client-python
+Author: Taylor Denouden
+Author-email: taylor.denouden@hakai.org
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
