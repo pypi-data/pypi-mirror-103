@@ -1,0 +1,3 @@
+[console_scripts]
+fibery=fibery.console.main:main
+
