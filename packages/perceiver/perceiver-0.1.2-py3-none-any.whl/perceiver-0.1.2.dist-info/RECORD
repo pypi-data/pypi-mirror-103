@@ -1,0 +1,13 @@
+perceiver/__init__.py,sha256=KPpiHwNmAyL-jVsaJE4B3G7Pa2gACO1sjFw4-NMW9ZU,67
+perceiver/attention.py,sha256=F9izi8M_zHjFopCHR6poX65epS6R72UU2Djcp5k-Z50,1946
+perceiver/feedforward.py,sha256=hpgtam1tDajY407lp7b95XyeleTq2CSBNZV2FQMVr6Q,537
+perceiver/fourier_encode.py,sha256=j-YrvDekaFlwr4XVGYGWW-sT7AzUKEzzdHjAddWYqO8,564
+perceiver/geglu.py,sha256=wGASdgJLX1lTnz2mhZsX_7IDqAl2FExGmKQ_4VQtnPo,165
+perceiver/perceiver.py,sha256=oMNIOKPASVTaXC7Jln7-4u298stECBKEBuUra0L801g,3667
+perceiver/prenorm.py,sha256=NuRE3lHKsIJlYI5cwj0iLU8fvbHJ_mkrn2dpJc3hvXY,485
+perceiver/version.py,sha256=YvuYzWnKtqBb-IqG8HAu-nhIYAsgj9Vmc_b9o7vO-js,22
+perceiver-0.1.2.dist-info/LICENSE,sha256=PZQAWYQ3Y_OtNUSbV3kMosQo7MKgrmZ3nCC0kR6gpQ0,1069
+perceiver-0.1.2.dist-info/METADATA,sha256=c4Bz9_WfBwdN7_7DrpZj4Gxxa9kmZe76nLKyZqpMsh4,7396
+perceiver-0.1.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+perceiver-0.1.2.dist-info/top_level.txt,sha256=0Mqir4bUBQX0DqKYglENpGulJ8biQUjtfiqrD5IHHDA,10
+perceiver-0.1.2.dist-info/RECORD,,
