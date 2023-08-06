@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: deep-chainmap
+Version: 0.0.1
+Summary: A recursive subclass of ChainMap
+Home-page: https://github.com/neutrinoceros/deep_chainmap
+Author: C.M.T. Robert
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: pytest (>=6.0.2) ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+
+# DeepChainMap
+![PyPI](https://img.shields.io/pypi/v/deep-chainmap)
+[![codecov](https://codecov.io/gh/neutrinoceros/deep_chainmap/branch/main/graph/badge.svg)](https://codecov.io/gh/neutrinoceros/deep_chainmap)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/neutrinoceros/deep_chainmap/main.svg)](https://results.pre-commit.ci/latest/github/neutrinoceros/deep_chainmap/main)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+A recursive subclass of collections.ChainMap
+
+
