@@ -1,0 +1,12 @@
+docs/user-guide/commands/check-deck.md,sha256=cK9inT7QPbLrGG-KuZt7uLnGq22saWJLSzbdI9pjmSM,1197
+docs/user-guide/commands/print-deck.md,sha256=SsdkGTyHa77P4AQIYURHHJzXQUtfCISQ-ZcDzz0DQHw,683
+sarar/click_utils.py,sha256=S6JlcZc3a9oLzWCVQFF9_4z8wfjtAoCkh7vcYH7nvwQ,2474
+sarar/commands/check_deck.py,sha256=CAIkEm2y7802JUCH6osF58Qehk-qijLkhWJENvoKQF0,21149
+sarar/commands/print_deck.py,sha256=2hZvA91D01XWBHLpK8cku_K-8miDuiTeqms3Yro4a0w,1272
+sarar/decorators.py,sha256=jzIkdR2_91LAQijWzafCcFxQv0hHaWeXHbVNBXdDrE0,2291
+sarar/sarar.py,sha256=gCLUwYDawLlbU9xe65dHCmYQ3uvzBaaVYkiVgfv19zk,7109
+sarar-0.1.0.dist-info/entry_points.txt,sha256=uTBZQVRxWXZx2FtmcSE-cNW6XkWXoLZlSpT7ASYGzSs,42
+sarar-0.1.0.dist-info/LICENSE.md,sha256=5X8cMguM-HmKfS_4Om-eBqM6A1hfbgZf6pfx2G24QFI,35150
+sarar-0.1.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+sarar-0.1.0.dist-info/METADATA,sha256=p8rkpaAW1IEsqzlqyoorY-dwUt551-NviOSfD_BxBxs,5107
+sarar-0.1.0.dist-info/RECORD,,
