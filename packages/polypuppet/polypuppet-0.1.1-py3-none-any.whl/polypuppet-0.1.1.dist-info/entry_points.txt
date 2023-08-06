@@ -1,0 +1,4 @@
+[console_scripts]
+polypuppet=polypuppet.agent.cli:cli
+polypuppet-autosign=polypuppet.agent.cli:autosign
+
