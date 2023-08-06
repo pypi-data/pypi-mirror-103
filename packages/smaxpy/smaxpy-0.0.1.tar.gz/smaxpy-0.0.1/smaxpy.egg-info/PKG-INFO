@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: smaxpy
+Version: 0.0.1
+Summary: Just a small wrapper to website scraping utilities.
+Home-page: https://github.com/ootiq/smax
+Author: TheBoringDude
+Author-email: iamcoderx@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/ootiq/smax/issues
+Description: # smax
+        Just a small wrapper to website scraping utilities.
+        
+        It just wraps around `requests`, `bs4` and `cloudscraper`.
+        
+        ## Install
+        ```
+        pip3 install smaxpy
+        ```
+        
+        
+        ## Usage
+        ```python
+        from smaxpy import Smax
+        
+        a = Smax()
+        
+        print(a.title)
+        ```
+        
+        ## 
+        ### &copy; 2021 TheBoringDude
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown

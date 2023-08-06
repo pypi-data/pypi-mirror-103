@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+smaxpy/__init__.py
+smaxpy/errors.py
+smaxpy/request.py
+smaxpy/smax.py
+smaxpy.egg-info/PKG-INFO
+smaxpy.egg-info/SOURCES.txt
+smaxpy.egg-info/dependency_links.txt
+smaxpy.egg-info/requires.txt
+smaxpy.egg-info/top_level.txt
