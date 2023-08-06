@@ -1,0 +1,13 @@
+osu/__init__.py,sha256=kraorE6kcc0xSYRzf2F1ECS_8_8my0Lefov87osQjPg,137
+osu/auth.py,sha256=elyZD6o45hJTuz4B_35mrKDGGb9HrkZAGEVtN0R7UGY,5103
+osu/client.py,sha256=SCxVoAcM72v8yx9lweTuTT3mWRxNrydzZ5LdNJrumdg,14582
+osu/constants.py,sha256=q34c8iRzekKXVj9TheLtELA8zen-svxzZfMTA0KGdOQ,295
+osu/exceptions.py,sha256=5N9tvLG_e4CqJiv-wdrkW76vwnNGHz9l6XxAcq9VC24,160
+osu/http.py,sha256=9tQ6_2eD_rEt5LOlIhwnBnn18SXmCVLapiAqUV6lQJg,2030
+osu/objects.py,sha256=-ElzIHMcVm2uwyqJaMqkQQknq37h4RTJ_i9EQyimMoA,59819
+osu/util.py,sha256=ydVlJtM5CJcOLFTuT5DlUQ_5sZGlsHwChX-7XSEwOVg,1088
+osu.py-0.1.3.dist-info/LICENSE,sha256=rub5eW_s8ULjqESxC63e7llG-oQ0e_5-wKqVKWyeUfY,1086
+osu.py-0.1.3.dist-info/METADATA,sha256=F7jENzHzGEKum_WkQ4I-LH9sjoQaNDyIjjp1WgHcozs,1768
+osu.py-0.1.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+osu.py-0.1.3.dist-info/top_level.txt,sha256=zx-pgIv7UAOjuUsiuZkUW4GFPbYRSOcm1Nt3GQYa0E8,4
+osu.py-0.1.3.dist-info/RECORD,,
