@@ -1,0 +1,13 @@
+folium
+ipyleaflet
+ipyfilechooser
+ipywidgets
+pyshp
+pandas
+geopandas
+shapely
+earthengine-api
+scikit-learn 
+python-box
+ee
+geemap
