@@ -1,0 +1,3 @@
+[console_scripts]
+akafra-demo = StringUtils:test
+
