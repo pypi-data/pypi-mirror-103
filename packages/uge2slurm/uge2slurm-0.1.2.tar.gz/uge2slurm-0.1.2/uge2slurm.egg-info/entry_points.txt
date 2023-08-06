@@ -1,0 +1,27 @@
+[console_scripts]
+qacct = uge2slurm.commands.qacct:main
+qalter = uge2slurm.commands.qalter:main
+qconf = uge2slurm.commands.qconf:main
+qdel = uge2slurm.commands.qdel:main
+qhold = uge2slurm.commands.qhold:main
+qhost = uge2slurm.commands.qhost:main
+qlogin = uge2slurm.commands.qlogin:main
+qmake = uge2slurm.commands.qmake:main
+qmod = uge2slurm.commands.qmod:main
+qmon = uge2slurm.commands.qmon:main
+qping = uge2slurm.commands.qping:main
+qquota = uge2slurm.commands.qquota:main
+qralter = uge2slurm.commands.qralter:main
+qrdel = uge2slurm.commands.qrdel:main
+qresub = uge2slurm.commands.qresub:main
+qrls = uge2slurm.commands.qrls:main
+qrsh = uge2slurm.commands.qrsh:main
+qrstat = uge2slurm.commands.qrstat:main
+qrsub = uge2slurm.commands.qrsub:main
+qselect = uge2slurm.commands.qselect:main
+qsh = uge2slurm.commands.qsh:main
+qstat = uge2slurm.commands.qstat:main
+qsub = uge2slurm.commands.qsub:main
+uge2slurm = uge2slurm.commands.uge2slurm:main
+wrapper = uge2slurm.commands.wrapper:main
+
