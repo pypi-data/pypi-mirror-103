@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: MyBotUtils
+Version: 0.1
+Summary: Simple discord.py bot utils for personal use
+Home-page: UNKNOWN
+Author: Megan
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: discord.py (>=1.6)
+Requires-Dist: toml
+Requires-Dist: asyncpg
+Requires-Dist: aioredis
+Requires-Dist: aiohttp
+
+This literally only exists so I dont have to git pull everytime I update something
+
+
