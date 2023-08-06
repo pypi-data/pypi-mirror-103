@@ -1,0 +1,16 @@
+ pyproject.toml
+LICENSE.md
+MANIFEST.in
+Pipfile
+Pipfile.lock
+README.md
+__init__.py
+setup.py
+src/__init__.py
+src/xml2json.py
+src/xml2dictionary.egg-info/PKG-INFO
+src/xml2dictionary.egg-info/SOURCES.txt
+src/xml2dictionary.egg-info/dependency_links.txt
+src/xml2dictionary.egg-info/top_level.txt
+tests/__init__.py
+tests/sample.xml
