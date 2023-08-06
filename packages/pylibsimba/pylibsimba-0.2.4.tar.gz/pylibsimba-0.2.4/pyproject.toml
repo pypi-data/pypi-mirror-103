@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pylibsimba"
+version = "0.2.4"
+description = "A library simplifying the use of SIMBAChain APIs"
+authors = ["ian.harvey <ian.harvey@simbachain.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+web3 = "^5.18.0"
+hdwallet = "^1.1.1"
+
+[tool.poetry.dev-dependencies]
+Sphinx = "^3.5.4"
+sphinx-rtd-theme = "^0.5.2"
+twine = "^3.4.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
