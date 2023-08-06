@@ -1,0 +1,515 @@
+﻿
+<html><head>
+<meta charset='utf-8'><title>全文搜索</title>
+ <meta http-equiv=Content-Type content="text/html;charset=utf-8">
+
+<!-- 启用360浏览器的极速模式(webkit) -->
+<meta name="renderer" content="webkit">
+
+<!--让其它冒牌的浏览器按正规的浏览器标准显示,避免IE使用兼容模式 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<!-- viewport 可以让布局在移动浏览器上显示的更好。-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+.geopos i:before {
+    content: "";
+    width: .8em;
+    height: .8em;
+    border: .14em solid green;
+    border-top: .14em solid transparent;
+    border-radius: 100%;
+    position: absolute;
+    top: .2em;
+    -webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	margin-left:10px;
+}
+
+
+</style>
+
+
+<script src="jquery-1.10.2.min.js"></script>
+<script>
+var interval_stamp = null || window.localStorage && localStorage.getItem("interval_stamp");
+var interval_running = 0;
+function showgaoji(obj){
+	//var obs = document.querySelectorAll('.gaoji')
+	$('.gaoji').toggle()
+}
+function subx(){
+	var words_v = $('input[name=words]').val()
+	var rewords_v = $('input[name=rewords]').val()
+	$('input[name=words]').val(rewords_v)
+	$('input[name=rewords]').val(words_v)
+}
+function download(path, is_view){
+	var url='/find_download?file='+path
+	if(is_view)url=url+'&is_view=1'
+	path && setTimeout(function(){ 
+		window.open(url)	
+	}, 500);
+}
+
+function findBTloading(){
+	$('#findBT')[0].innerHTML = "查找中>>"
+	$('#findBT')[0].disabled = true
+	$('#subBT')[0].disabled = true
+	//window.subBT.disabled = true
+	window.result.innerHTML = ""
+	$('#stopBT').show()
+}
+function findBTClear(interval_id){
+	clearInterval(interval_id)
+	$('#findBT')[0].innerHTML = "全部查找"
+	$('#findBT')[0].disabled = false
+	$('#subBT')[0].disabled = false
+	$('#stopBT').hide()
+	stop_find(1)
+	
+}
+function find(form, _stamp){
+	if(!_stamp && (form.rewords.value||form.mass_words.value) && !confirm('真的全部替换吗?')){
+		return false
+	}else if(!_stamp && window.interval_stamp){
+		$.ajax({
+			url: "/stop_find",
+			type: "POST",
+			async: false, 
+			data: {
+				"interval": window.interval_stamp
+			}
+		});
+	}
+	
+	var n=0,p=0,started=!!_stamp,stamp = _stamp || new Date().toJSON()
+	form.interval.value = stamp
+	window.interval_stamp = stamp
+	window.interval_running = 1;
+	if(!_stamp && window.localStorage)localStorage.setItem("interval_stamp",stamp);
+	findBTloading()
+	var interval_id = setInterval(function(){ 
+		++n;++p;
+		if(n>2 && !started || !interval_running){findBTClear(interval_id);}
+		if(interval_running && p%10==1)$.post("/find", $("form").serializeArray(),function(res){
+			started = 1; p=0;
+			if(res.data.finish){
+				download(res.data.download_path)
+				findBTClear(interval_id);	
+			}
+			console.log(res)
+			window.result.innerHTML = res.data.result.join("\r\n")
+            if(!res.data.finish)$('#findBT')[0].innerHTML = "查找中"+(n%2?'>.':'..')	
+            		
+		}, 'json').fail(function(response) {
+			console.log(response)
+			findBTClear(interval_id)
+			window.result.innerHTML = window.result.innerHTML+"\r\nerror:\r\n"+(response.responseText||'程序错误')
+			//alert('Error: ' + response.responseText);
+		});	
+	}, 1500);
+	//alert(stamp)
+	return false
+  	
+}
+function start_find(){
+	$('.rewords').val('')
+	
+}
+function get_find(e){
+	interval_stamp && $.post("/get_find", {interval:interval_stamp}, function(res){
+		if(res.pros && !res.finish){
+			find(document.forms[0], interval_stamp)
+		}
+	}, 'json')
+}
+
+function stop_find(e){	
+	var event = e || window.event;
+	if(e==1){
+		window.interval_running = false;
+		setTimeout(function(){
+			$.post("/stop_find", {interval:interval_stamp}, function(){})
+		},1600)
+		return false;
+	}else if(window.interval_running){
+		//window.interval_running = false;
+		//$.ajax({
+		//	url: "/stop_find",
+		//	type: "POST",
+		//	async: false, 
+		//	data: {
+		//		"interval": interval_stamp
+		//	}
+		//});
+		//return "真的离开?";
+		event.preventDefault();
+		event.returnValue ='真的离开?';
+		return null	
+	};
+    return false	
+}
+
+//window.onbeforeunload = stop_find
+//window.addEventListener("beforeunload", function (e) {
+//  var confirmationMessage = "\o/";
+//
+//  (e || window.event).returnValue = confirmationMessage;     // Gecko + IE
+//  return confirmationMessage;                                /* Safari, Chrome, and other
+//                                                              * WebKit-derived browsers */
+//});
+
+
+$(function(){
+	$("#is_utf8_compare").change(function () {
+        var checked = $(this).is(':checked');
+        $('.subBT').attr("disabled",checked);
+    });
+	
+	$("#is_downzip").change(function () {
+        var checked = $(this).is(':checked');
+        $('.plugin-box input,.plugin-fix input').attr("disabled",checked);
+    });
+	
+	if(/debug/.test(location.search)){
+		$('.debug').show();
+	}
+	
+})
+</script>
+<body onload="get_find()" onbeforeunload="stop_find()">
+<style>
+    .box{	
+		background: grey;
+	}
+	.box{
+		position: fixed;
+		margin:0;
+		width: 100%;
+		height: 100%;
+		background: rgb(122 212 200);
+		z-index: 999;
+		display: none;
+	}
+	.box1{
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		//left: 50%; 
+		//top: 25%;
+		//margin-left: -250px;
+		
+		border: 1px solid #000000;
+		
+	}
+	
+	.box p,.box a{margin-left:10px; margin-top:0px}
+</style>
+<div class="box" style1="overflow-y:scroll;">
+	<div class="box1" style="overflow-y:scroll;">
+	<div style1="overflow-y:scroll;">	
+		<a href="javascript:;" onclick="jQuery('.box').hide()" class="close">关闭</a>
+		<p style="color:red">
+		请注意: 请不要把本代码或附属关联软件用于违法犯罪活动,否则所造成的任何后果,本人概不负责!
+		<p>
+		1.问: 请问本软件pip可以py2.7里面运行吗?<br>
+		~ 可以的,支持py2.6, 2.7, 3.3+; 但是在py2.X对中文支持不够好.比如:中文路径或内容搜索
+		<p>
+        2.问: 请问本软件在Window和Centos上运行是一致的吗?<br>
+		~ 稍微有些不同. 比如centos上无法解析DOC文档搜索(非docx),但window下可以
+		<p>
+		3.问: 为什么我点击内容搜索无法搜索到pdf/docx/pptx/xls/rtf/odt/epub等里面的内容?<br>
+		~ 需要PIP安装以下安装包才能对应识别文件<br>
+		~ **** .pdf:   pip install pdfminer.six PyPDF2<br>
+		~ **** docx/odt:  pip install python-docx pypiwin32<br>
+		~ **** pptx:  pip install python-pptx<br>
+		~ **** epub:  pip install python-ebooklib<br>
+		~ **** png/jpg:  pip install Pillow cnocr <br>
+		~ **** rar: pip install rarfile  <br>
+		~ ***** 7z: pip install py7zr
+		<p>
+		4.问: 请问可以指定文件部分名称搜索吗?<br>
+		~ 完全没有问题. 在文件目标输入部分文件名即可,但带有特殊符号(如$)会在后台正则搜索.
+		<p>
+		5.问: 请问对所有文件(包压缩包内,PDF/DOC等)可进行搜索或替换内容吗?<br>
+		~ 目前可以在压缩包内进行一次解包搜索文件名或文件里内容,包含搜索包里PDF/DOC文档<br>
+		~ 但目前压缩包内任何文件不会替换内容,包括非压缩包的PDF/DOCX等文档也不会替换内容.
+		<p>
+		6.问: 为什么有时替换内容(或批量替换)不成功?<br>
+		~ 下面情况将不会内容替换<br>
+		~ 1)替换内容为空 2)已选中转UTF8后比较 3)压缩包文档 4)解析后文档 5)识别后文档
+		<p>
+		7.问: 文件时间是指文件最后修改时间吗?<br>
+		~ 完全正确; DHMSY表示天时分秒年; 默认为天; 另外+代表之前,-代表之后; 比如:<br>
+		~ 1)+10D 表示搜索10天以前的文档 2)-60H 表示搜索60小时内文档 3)1D~3H 表示1天以内到3小时以前
+		<p>
+		8.问: 怎么样指定文件大小搜索?<br>
+		~ BKMGTP表示大小单位,两两相差*1024; B代表为bytes, 默认为B <br>
+		~ 1)+10K 表示搜索大于10K的文件 2)-60M 表示搜索小于60M的文档 3)60M~10K 表示大于10K且小于60M
+		<p>
+		9.问: 怎么使用批量替换?<br>
+		~ 每一行中用空格分隔, 左边为需要替换的内容, 右边为替换后内容<br>
+		~ 请注意~~::: 要是只有需要替换的内容而没有替换后内容, 结果会替换为空值.
+		<p>
+		10.问: 怎么我搜索的速度很慢,是不是卡住了?<br>
+		~ 只要([查找中..])内容在变化表示搜索还在正常运行,并没有卡住.<br>
+		~ 文件目标默认是全部文件,包含二进制文件(exe/so等),二进制文件搜索是非常慢的(如jpg),想快速搜索请指定文件目标的后缀名
+		<p>
+		11.问: 请问下一版本有什么新功能吗?
+		<code>
+	<pre style="color:green">
+	1. 添加图片二维码解码后内容搜索
+	2. 能对docx, xlsx等一些类型文件修改(不包括pdf等)
+	3. 能大批量关键字搜索内容
+	4. 可对http(s)://网页模式深度内容搜索
+	5. 可对mysql://数据库模式字段内容搜索
+	6. 可对ftp://网络协议模式深度内容搜索
+	7. 添加备份还原功能
+	8. 添加筛选文件编码格式[UTF8/GBK]再内容搜索或替换
+	9. 添加替换文件名功能
+		</pre></code>
+		<br>
+		<p>
+		<p>
+		<p>
+		<br>
+		<p>
+		<br>
+		<p>
+		<br>
+	</div>
+	</div>
+	
+</div>
+	
+<div class="">
+    <div class="">
+		<form id="mffindForm" enctype="multipart/form-data" onsubmit="find(this);return false">
+			<input type="hidden" name="interval" id="interval" />
+			<div style=""> 
+				<label> 文件目标: </label> <input name="name" class=""  list="name_list" placeholder="部分文件名,默认全部文本"> 
+				<label style="width:180px"><input name="ftype" value="2"  type="checkbox" /><span>正则匹配</span></label>
+				<label style="width:120px"><input name="fcase" value="1"  checked type="checkbox" /><span>忽略大小写 </span></label>
+				<button class="rpc" id="findBT" onclick="return start_find()">全部查找</button>
+				<datalist id="name_list">
+				<option>.php</option>
+				<option>.txt</option>
+				<option>.(php|html|txt|py)$</option>
+				<option>.(jpg|png)$</option>
+				<option>.(xls|xlsx)$</option>
+				</datalist>
+			</div>
+			
+			<div style=""> 
+				<label> 内容目标: </label> <input name="words" class=""  placeholder="搜索内容,空值不搜索内容"> 
+				<label style="width:180px"><input name="wcase" value="2"  type="radio" /><span>正则匹配</span></label>
+				<label style="width:120px"><input name="wcase" value="1"  type="radio" /><span>忽略大小写 </span></label>
+				<label style="width:120px"><input name="wcase" value=""  checked type="radio" /><span>无 </span></label>	
+			</div>
+			
+            <div style="position: relative;"> 
+				<label> 替换内容: </label> <input name="rewords" class="rewords"  placeholder="不替换压缩包,pdf/doc等"> 
+				<label style="width:180px"><input name="use_backup" value="1" checked type="checkbox" /><span>备份</span></label>
+				<button class="rpc subBT" id="subBT" onclick="">全部替换</button>	
+				<span class="geopos" onclick="subx()"><i></i></span>
+			</div>    
+                
+				<div  style="margin-bottom:1px"> 
+					<label> 查找目录: </label> <input  webkitdirectory multiple name="basedir" class="" 
+					_onclick='javascript: new ActiveXObject("Shell.Application").BrowseForFolder(0, "请选择路径", 0, "")'
+					placeholder="默认当前命令路径"  > 
+					<label style="width:80px"><input name="isdeep" checked value="1" type="checkbox" /><span>包含子目录</span></label> 
+					<button style="color:red;display:none" class="" id="stopBT" onclick="return stop_find(1)">停止</button> 
+				</div>
+				
+				<div  style="margin-bottom:1px"> 
+					<label> 查找模式: </label> 
+                    <label style=""><input name="show_only_file" value="1" type="checkbox" /><span>不输出行信息</span></label>
+					<label style=""><input name="isgit" value="1" type="checkbox" /><span>只对GIT文件</span></label>
+					<label style=""><input id="gaoji" type="checkbox" onchange="showgaoji(this)" /><span>高级选项</span></label>
+				</div>
+				
+				<div  style="margin-bottom:1px;display:none"  class='gaoji'> 
+					<label> 文件时间: </label> <input placeholder="+前-后 时间段需用~分隔" name="mtime" id="mtime" class=""  >	
+					(例: +10D DHMSY表示天时分秒年)                         
+				</div>
+				
+				<div  style="margin-bottom:1px;display:none"  class='gaoji'> 
+					<label> 文件大小: </label> <input placeholder="+前-后 大小段需用~分隔" name="fsize" id="fsize" class=""  >	
+					(例: +10K BKMGTP表示大小单位 )                         
+				</div>
+				
+				<div  class="gaoji plugin-box" style="margin-bottom:1px;display:none"> 
+					<label> 压缩包内搜: </label> 
+                    <label style=""><input name="plugin_box" value=".zip" type="checkbox" /><span>zip</span></label>
+					<label style=""><input name="plugin_box" value=".gz" type="checkbox" /><span>gz</span></label>
+					<label style=""><input name="plugin_box" value=".tar" type="checkbox" /><span>tar</span></label>
+					<label style=""><input name="plugin_box" value=".bz2" type="checkbox" /><span>bz2</span></label>
+					<label style=""><input name="plugin_box" value=".xz" type="checkbox" /><span>xz</span></label>
+					<label style=""><input name="plugin_box" value=".rar" type="checkbox" /><span>rar</span></label>
+					<label style=""><input name="plugin_box" value=".7z" type="checkbox" /><span>7z</span></label>
+					<label style=""><input name="plugin_box" value=".jar" type="checkbox" /><span>jar</span></label>
+					<label style=""><input name="plugin_box" value=".cab" type="checkbox" /><span>cab</span></label>	
+				</div>
+				
+				<div  class="gaoji plugin-fix" style="margin-bottom:1px;display:none"> 
+					<label> 解析后搜索: </label> 
+                    <label style=""><input name="plugin_fix" value=".pdf" type="checkbox" /><span>pdf</span></label>
+					<label style=""><input name="plugin_fix" value=".doc(x)" type="checkbox" /><span>doc(x)</span></label>
+					<label style=""><input name="plugin_fix" value=".pptx" type="checkbox" /><span>pptx</span></label>
+					<label style=""><input name="plugin_fix" value=".xls(x)" type="checkbox" /><span>xls(x)</span></label>
+					<label style=""><input name="plugin_fix" value=".rtf" type="checkbox" /><span>rtf</span></label>
+					<label style=""><input name="plugin_fix" value=".eml" type="checkbox" /><span>eml</span></label>
+					<label style=""><input name="plugin_fix" value=".epub" type="checkbox" /><span>epub</span></label>
+					
+				</div>
+				
+				<div  class="gaoji plugin-fix" style="margin-bottom:1px;display:none"> 
+					<label> 识别后搜索: </label> 
+                    <label style=""><input name="plugin_fix" value=".png" type="checkbox" /><span>png</span></label>
+					<label style=""><input name="plugin_fix" value=".jpg" type="checkbox" /><span>jpg</span></label>
+					<label style=""><input name="plugin_fix" value=".wav" type="checkbox" /><span>wav</span></label>
+				</div>
+				<div  class="gaoji" style="margin-bottom:1px;display:none"> 
+					<label> 多忽略选项: </label> 
+					<label style=""><input name="istry" value="1" checked type="checkbox" /><span>忽略错误运行&thinsp; </span></label>
+					<label style=""><input name="prune" value="on" checked type="checkbox" /><span>忽略备份目录</span></label>
+					<label style=""><input name="is_auto_prune" value="1"  type="checkbox" /><span>忽略.开头文件夹</span></label>
+				</div>
+				<div  class="gaoji22" style="margin-bottom:1px;display:none"> 
+					<label> &#12288;&#12288;&thinsp; </label> 
+                    
+					
+					
+				</div>
+				
+				<div  class="debug" style="margin-bottom:1px;display:none"> 
+					<label> 独立插件文件: </label> 
+                    <input name="plugin_main" class=""  style="width:50%;max-width:400px" placeholder="py插件执行文件路径"> 
+					
+					
+				</div>
+				
+				
+				<div  class="gaoji" style="margin-bottom:1px;display:none"> 
+					<label> 其他&#12288;&#12288;&#12288;: </label> 
+                    <label style=""><input name="is_utf8_compare" id="is_utf8_compare" value="1" type="checkbox" /><span>转UTF8后比较</span></label>
+					<label style=""><input name="is_downzip" id="is_downzip" value="1" type="checkbox" /><span>打包下载</span></label>
+					<label style=""><input type="checkbox" class="subBT" onclick="$('.gaoji2').toggle()" /><span>批量替换</span></label>
+					
+				</div>
+				
+				<div  class="gaoji2" style="margin-bottom:1px;display:none"> 
+                    <textarea name="mass_words" id="mass_words" class="rewords" rows="3" style="width:100%"> </textarea>					
+                    
+				</div>
+				
+				
+				<div  style="margin-bottom:1px"> 
+					<label> 开发Q群: </label> <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=05716e05d6ea059e6217cf22a780c1d71b1dae6fa99bd38e8af176e78405b8eb"> 226895834 </a> 
+					(By 牧飞) 
+					<a href="http://www.mufei.ltd/mufei/weixin-shoukuang2.jpg" target="_blank">赞助</a> V0.1.0 
+					<a href="javascript:;" style="color:grey" onclick="jQuery('.box').show()" class="show">(帮助)</a>
+				</div>
+				
+			</form>
+			<hr />
+			<textarea id="result" rows="30" style="width:100%" readonly="readonly"> </textarea>
+			<div >
+			</div>
+			</div>
+			
+			<div id='rightmenu' tabindex="-1">
+				<ul id='rightmenulist'>
+					<li class="click-list">文件预览</li>
+					<li class="click-list">文件下载</li>
+					<li class="click-list">文件编辑</li>
+				</ul>
+			</div>
+		</div>
+		
+		
+<style>
+#rightmenu{
+	position:absolute;
+	width: 100px;
+	font-size: 12px;
+	display: none;
+	border:1px solid;
+	border-radius: 4px;
+	z-index: 100;
+}
+
+#rightmenu li{
+	cursor: pointer;
+	height: 30px;
+	line-height: 30px;
+	background-color: white;
+	padding-left: 5px;
+}
+#rightmenu li:hover{
+	background-color: silver;
+}
+#rightmenu ul,#rightmenu li{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+#rightmenu li{
+	padding-left:10px;
+}
+</style>		
+<script>
+//textarea右键编辑功能
+document.oncontextmenu = function(e){
+   // return false;
+}
+window.addEventListener('click',function(){
+	rightmenu.style.display='none';
+});
+
+var rightmenu_text = ''
+result.addEventListener('contextmenu',function(e){
+	var from = result.selectionStart;
+	var to = result.selectionEnd;
+	var selected = result.value.slice(from,to).replace(/(^\s*)|(\s*$)/g, "");
+	rightmenu_text = selected
+	if(/^\S+[.]\w+$/.test(selected)){ //from<to
+		rightmenu.style.display = 'block';
+		rightmenu.style.left = e.pageX+'px';
+		rightmenu.style.top = e.pageY+'px';
+		//rightmenu.focus();
+		e.preventDefault()	
+	}else if(from == to){
+		console.log(e)
+	}
+})
+rightmenulist.addEventListener('click',function(e){
+	var lists = rightmenulist.querySelectorAll('li');
+	switch(e.target){
+		case lists[0]:
+			download(rightmenu_text, 1)
+			break;
+		case lists[1]:
+			download(rightmenu_text)
+			break;
+		case lists[2]:
+			alert('待开发')
+			break;
+		default:
+			break;
+	}
+	rightmenu.style.display = 'none'
+})
+
+rightmenu.addEventListener('blur',function(){
+	rightmenu.style.display='none';
+});
+
+</script>    
+	
+</body></html>
+
+           
