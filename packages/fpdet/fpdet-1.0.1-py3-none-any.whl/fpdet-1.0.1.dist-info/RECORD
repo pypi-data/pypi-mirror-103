@@ -1,0 +1,9 @@
+fpdet/__init__.py,sha256=ITu5CJk9bve3_UmotZ6zZLkTJgVGxrkUgm_OjmsQObU,102
+fpdet/_dcore.py,sha256=WBEutOhoYrrRcNzELA8MhXaoe3DL9YLzH3otC4ilEtk,5203
+fpdet/_dmatrix.py,sha256=wdSaM24RxeGKG9P0NcYixylXoOmgLmuHu9YM8ESSx2w,4060
+fpdet/_numpy_core.py,sha256=GUhrzvpUT7NEAuMO7opt8RsokA6y8N4uqS2JpepE1NI,4398
+fpdet-1.0.1.dist-info/LICENSE,sha256=NhRA5bUUyd3ZIPTZ6Js6UXwZG4KtXZdjmVHcMWDbU7E,1066
+fpdet-1.0.1.dist-info/METADATA,sha256=ixFdn4Y9vT07zRaSxG45g2r34imjTohTTfT0b1NNwr0,1133
+fpdet-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fpdet-1.0.1.dist-info/top_level.txt,sha256=PbTS9URsy7-nesyiWTNtAlsLgLBOgSPf-oVRD8e5Kb8,6
+fpdet-1.0.1.dist-info/RECORD,,
