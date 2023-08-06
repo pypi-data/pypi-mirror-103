@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: slicer-img
+Version: 2.0.1
+Summary: Slices an image into its constituent parts
+Home-page: https://github.com/fl1ghtly/slicer
+Author: James Nguyen
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow (==8.1.1)
+
+# Description
+This script takes images and uses transparent pixel grids in order to seperate each object into smaller files. A test image is included in order to see how this script works.
+
+# Requirements
+This package needs Pillow 8.1.1 which can be done through:
+```
+pip install Pillow==8.1.1
+```
+
+# Installation
+To install:
+```
+pip install slicer
+```
+
+# Usage
+```
+cd {main folder}
+slice {path to image file} {format}
+```
+
+# Examples
+Uses test.png and outputs in default png format
+```
+slice test.png
+```
+
+To specify a different format, type the format like below
+```
+slice test.png jpg
+```
+
+This format works too
+```
+slice test.png .jpg
+```
+
+
+
+
