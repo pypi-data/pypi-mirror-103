@@ -1,0 +1,11 @@
+README.md
+setup.py
+pyvba/__init__.py
+pyvba/browser.py
+pyvba/export.py
+pyvba/viewer.py
+pyvba.egg-info/PKG-INFO
+pyvba.egg-info/SOURCES.txt
+pyvba.egg-info/dependency_links.txt
+pyvba.egg-info/requires.txt
+pyvba.egg-info/top_level.txt
