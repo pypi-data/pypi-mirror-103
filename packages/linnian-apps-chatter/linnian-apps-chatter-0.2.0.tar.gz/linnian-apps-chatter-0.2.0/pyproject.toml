@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "linnian-apps-chatter"
+version = "0.2.0"
+description = "qwq"
+authors = ["LinNian <2544704967@qq.com>"]
+license = "MIT"
+packages = [
+    { include = "linnian", from = "src" }
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+ujson = "^4.0.2"
+pydantic = "^1.6.1"
+loguru = "^0.4.0"
+aiofiles = "^0.4.0"
+
+[tool.poetry.dev-dependencies]
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
