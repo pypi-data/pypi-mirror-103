@@ -1,0 +1,10 @@
+libgenparser/__init__.py,sha256=Hw6vmgcjKGI1f0kwWN54hVe2vB0upTWiDDbLrXmhIEU,116
+libgenparser/__main__.py,sha256=RqcBFZYncysVj1-wyLsejJ7jCZk6d3MZi8zMZ6E7udU,19
+libgenparser/parser.py,sha256=gZuuhQkRBe2v-QIZ51AcItzuzERu02WC71qtztzOYRg,8976
+libgenparser/required_data.py,sha256=9dofKbZEVYl47amxT0hxX9UCHLuLsK8RQiW17Ff_TXY,1320
+libgenparser/__future__/__init__.py,sha256=N-jcCxiv1FmO6eXzi1oknxpir7ur-DD6vzgiJDD7das,283
+libgenparser/__future__/parser.py,sha256=Xo0JFzje0ionOJRCV2SW235ch5XF9tmQN8yvI79FH5Q,9176
+libgenparser-0.1.0.dist-info/METADATA,sha256=Cy8XJ0LCY4Vxm9Xj2NU8jHScw32piC8GlAt2ET0d13c,4624
+libgenparser-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+libgenparser-0.1.0.dist-info/top_level.txt,sha256=XW_ugAQbXURfBCaadE4ovsechPKMFH2dOSO-gog3c3Q,13
+libgenparser-0.1.0.dist-info/RECORD,,
