@@ -1,0 +1,10 @@
+setup.py
+globaltrie/__init__.py
+globaltrie/__main__.py
+globaltrie/client_class.py
+globaltrie/client_cli.py
+globaltrie.egg-info/PKG-INFO
+globaltrie.egg-info/SOURCES.txt
+globaltrie.egg-info/dependency_links.txt
+globaltrie.egg-info/entry_points.txt
+globaltrie.egg-info/top_level.txt
