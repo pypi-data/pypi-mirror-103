@@ -1,0 +1,14 @@
+pycwatch/__init__.py,sha256=fBD10VeLVhHMGg0SfVYsVs77I5rMU1juVAijv6MLHs0,134
+pycwatch/errors.py,sha256=mMvrKsI-BBApStGrT4lqFSYc8uvjVXX9tWy5WiIgSjM,841
+pycwatch/resources.py,sha256=xE23w8Y1bcKpOZoKoEOzDOL4_nSuGq6xzK2hUg5YDkM,7737
+pycwatch/rest.py,sha256=Kr51gdVU8EHXZZjxf-0Ly2_43Uud06-3EBB4-n5nadw,7790
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=SyuuPXbRmmXKtwo3dRgDLCL4abr5b9uxCsI72uaqEUQ,1457
+tests/test_api.py,sha256=QwEFdIfYUiI-_ufheGINltgAVxqKWzObTwlNyyTQB_U,26994
+tests/test_http_client.py,sha256=svSGY2A8wx-qrggvfGYSi6vTsyfnTWyWjIjG8Pzs8jw,2791
+tests/test_resources.py,sha256=z4Tg7zrLpxhOgG42c1XrTWjDRplI6czS4Xa5uTTbqOE,7385
+pycwatch-0.2.1.dist-info/LICENSE,sha256=kIcJrSoo23CZkByuuu12DfS8yhpxS87CQqzmKfAPg20,1050
+pycwatch-0.2.1.dist-info/METADATA,sha256=Y50utGu5uc-11Ittc8QJ3Vk9n6pP3uZ7rrvfx1xE9fM,1345
+pycwatch-0.2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pycwatch-0.2.1.dist-info/top_level.txt,sha256=PCI5xUm3Zo8Ndfqu2ccrYs5sMCqCKs_Fq6NwA4HeSb8,15
+pycwatch-0.2.1.dist-info/RECORD,,
