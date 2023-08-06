@@ -1,0 +1,13 @@
+VirtualAssistant/__init__.py,sha256=HbxtjIgHRLAOFZxcRphYiGZKWdM0F6ZK2uaqU1ICDOg,1347
+VirtualAssistant/audioinout.py,sha256=5SKV3lmpCxyC-8-FFTuyQ9oigAm9uZhW2snfU6hmAXE,1385
+VirtualAssistant/computer.py,sha256=Brhm09tSfnQ6zz_gqSZJ0fPxTzo0ZDM9C3ykUkdtNoU,1474
+VirtualAssistant/errors.py,sha256=31HdCZWCdqaxmmE7bushYChpE7jfq5ftXQROqclzT8o,72
+VirtualAssistant/gettimedate.py,sha256=Ndt6nI3AQ92pBGCgNuF4xww56sjjZ2qJjRmcYfKRQkQ,1020
+VirtualAssistant/internet.py,sha256=jKFmursPdO1YUExd-AaazFHyBoMS9PJQR77RpeTKWLQ,4965
+VirtualAssistant/others.py,sha256=W6RhzGrydeZbKs8AUbj4kCDy8Vs3PDLXXQFhWWmLJ6c,318
+VirtualAssistant/picture.py,sha256=1qUY51YIbqRjsl3mR0eQdMhsuZ0ghSriJTfeslkeS-c,1456
+VirtualAssistant-0.0.3.dist-info/LICENSE,sha256=_WjQVz_-rLr1Pf0kNPH9hKY1w7kRcgISZIguelxL7sw,1091
+VirtualAssistant-0.0.3.dist-info/METADATA,sha256=iptlyXbhGVH9AdJUNQ9HRuLdns22VLsivnlFcCTuimw,1444
+VirtualAssistant-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+VirtualAssistant-0.0.3.dist-info/top_level.txt,sha256=3oTERYTng_lVGJnoiS-kCVTi63_FlkF0dFKgbaiTJB4,17
+VirtualAssistant-0.0.3.dist-info/RECORD,,
