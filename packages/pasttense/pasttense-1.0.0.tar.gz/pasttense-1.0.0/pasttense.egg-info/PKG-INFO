@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pasttense
+Version: 1.0.0
+Summary: A past tense package
+Home-page: https://github.com/Haardispro/module2
+Author: Haard Majmudar
+Author-email: haardmajmudar2827@email.com
+License: UNKNOWN
+Description: This is a module that converts present tense to past tense
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

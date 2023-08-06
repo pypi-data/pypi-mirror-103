@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+pasttense.egg-info/PKG-INFO
+pasttense.egg-info/SOURCES.txt
+pasttense.egg-info/dependency_links.txt
+pasttense.egg-info/top_level.txt
