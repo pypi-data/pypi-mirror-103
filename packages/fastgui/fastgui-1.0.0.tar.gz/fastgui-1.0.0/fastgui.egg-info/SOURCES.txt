@@ -1,0 +1,9 @@
+setup.py
+fastgui/1.ico
+fastgui/__init__.py
+fastgui/_testgui.py
+fastgui.egg-info/PKG-INFO
+fastgui.egg-info/SOURCES.txt
+fastgui.egg-info/dependency_links.txt
+fastgui.egg-info/requires.txt
+fastgui.egg-info/top_level.txt
