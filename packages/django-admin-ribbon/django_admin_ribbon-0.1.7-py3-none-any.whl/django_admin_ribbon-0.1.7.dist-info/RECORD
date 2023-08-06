@@ -1,0 +1,8 @@
+adminribbon/__init__.py,sha256=IfXGmb6Lp6RdmZmO6O6AVU_MN2zVBPIyfBn5GAbT_IU,146
+adminribbon/context_processors.py,sha256=JGnXVZ9K47757CiuvahNzjUGbsrrNem0UvtO-myN7Vg,205
+adminribbon/templates/admin/base_site.html,sha256=YupmedftTkGQXo3HGfTYDZdZOmoz4X_TOG_Vur5S1mI,611
+django_admin_ribbon-0.1.7.dist-info/LICENSE,sha256=OfTdYRqgl7l2F6w5E0DfNMXnexQ9oOcsOPYmT719x80,1084
+django_admin_ribbon-0.1.7.dist-info/METADATA,sha256=G1L92-ACs2grKqacRWLGfLX4QJ8xVCv7RmE4mnJO038,875
+django_admin_ribbon-0.1.7.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_admin_ribbon-0.1.7.dist-info/top_level.txt,sha256=DiqI_QK_cePyjFhrvxixSodM0jVt6kG1ADMQejBrHVk,12
+django_admin_ribbon-0.1.7.dist-info/RECORD,,
