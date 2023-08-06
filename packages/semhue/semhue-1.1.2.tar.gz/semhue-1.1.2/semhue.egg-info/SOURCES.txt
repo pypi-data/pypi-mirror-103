@@ -1,0 +1,8 @@
+README.md
+semhue.py
+setup.py
+semhue.egg-info/PKG-INFO
+semhue.egg-info/SOURCES.txt
+semhue.egg-info/dependency_links.txt
+semhue.egg-info/requires.txt
+semhue.egg-info/top_level.txt
