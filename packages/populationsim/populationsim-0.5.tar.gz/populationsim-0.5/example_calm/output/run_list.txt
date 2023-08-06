@@ -1,0 +1,56 @@
+resume_after: None
+multiprocess: True
+models:
+  -  input_pre_processor
+  -  setup_data_structures
+  -  initial_seed_balancing
+  -  meta_control_factoring
+  -  final_seed_balancing
+  -  integerize_final_seed_weights
+  -  sub_balancing.geography=TRACT
+  -  sub_balancing.geography=TAZ
+  -  expand_households
+  -  summarize
+  -  write_synthetic_population
+  -  write_data_dictionary
+  -  write_tables
+
+multiprocess_steps:
+  step: mp_seed_balancing
+    name: mp_seed_balancing
+    begin: input_pre_processor
+    step_num: 0
+    num_processes: 1
+    chunk_size: 0
+    last_model_in_previous_multiprocess_step: None
+    models:
+       - input_pre_processor
+       - setup_data_structures
+       - initial_seed_balancing
+       - meta_control_factoring
+       - final_seed_balancing
+       - integerize_final_seed_weights
+       - sub_balancing.geography=TRACT
+  step: mp_sub_balancing_TAZ
+    name: mp_sub_balancing_TAZ
+    begin: sub_balancing.geography=TAZ
+    num_processes: 2
+    slice: {'tables': ['slice_crosswalk', 'crosswalk'], 'except': True, 'coalesce': ['TAZ_weights', 'TAZ_weights_sparse', 'trace_TAZ_weights']}
+    step_num: 1
+    chunk_size: 0
+    last_model_in_previous_multiprocess_step: sub_balancing.geography=TRACT
+    models:
+       - sub_balancing.geography=TAZ
+  step: mp_summarize
+    name: mp_summarize
+    begin: expand_households
+    step_num: 2
+    num_processes: 1
+    chunk_size: 0
+    last_model_in_previous_multiprocess_step: sub_balancing.geography=TAZ
+    models:
+       - expand_households
+       - summarize
+       - write_synthetic_population
+       - write_data_dictionary
+       - write_tables

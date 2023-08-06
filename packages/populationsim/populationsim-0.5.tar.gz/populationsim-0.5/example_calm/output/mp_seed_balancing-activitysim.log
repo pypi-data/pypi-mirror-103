@@ -1,0 +1,243 @@
+22/04/2021 15:28:43 - INFO - activitysim - Read logging configuration from: configs\logging.yaml
+22/04/2021 15:28:43 - DEBUG - activitysim.core.mp_tasks - mp_run_simulation mp_seed_balancing locutor=True 
+22/04/2021 15:28:43 - INFO - activitysim.core.mem - init_trace file_name mem.csv
+22/04/2021 15:28:43 - INFO - activitysim.core.pipeline - open_pipeline
+22/04/2021 15:28:43 - INFO - activitysim.core.random - Set random seed base to 0
+22/04/2021 15:28:43 - DEBUG - activitysim.core.pipeline - open_pipeline - new, empty pipeline
+22/04/2021 15:28:43 - DEBUG - activitysim.core.pipeline - opened pipeline_store output\pipeline.h5
+22/04/2021 15:28:43 - DEBUG - activitysim.core.pipeline - add_checkpoint init timestamp 2021-04-22 15:28:43.024737
+22/04/2021 15:28:43 - DEBUG - activitysim.core.pipeline - open_pipeline complete
+22/04/2021 15:28:43 - INFO - activitysim.core.pipeline - #run_model running step input_pre_processor
+22/04/2021 15:28:43 - INFO - populationsim.steps.input_pre_processor - Using table list: [{'tablename': 'households', 'filename': 'seed_households.csv', 'index_col': 'hh_id', 'rename_columns': {'hhnum': 'hh_id'}}, {'tablename': 'persons', 'filename': 'seed_persons.csv', 'rename_columns': {'hhnum': 'hh_id', 'SPORDER': 'per_num'}, 'drop_columns': ['indp02', 'naicsp02', 'occp02', 'socp00', 'occp10', 'socp10', 'indp07', 'naicsp07']}, {'tablename': 'geo_cross_walk', 'filename': 'geo_cross_walk.csv', 'column_map': {'TRACTCE': 'TRACT'}}, {'tablename': 'TAZ_control_data', 'filename': 'control_totals_taz.csv'}, {'tablename': 'TRACT_control_data', 'filename': 'control_totals_tract.csv'}, {'tablename': 'REGION_control_data', 'filename': 'scaled_control_totals_meta.csv'}]
+22/04/2021 15:28:43 - INFO - activitysim.core.input - Reading CSV file data\seed_households.csv
+22/04/2021 15:28:43 - DEBUG - activitysim.core.input - raw households table size: (4841, 198) 7.3 MB
+22/04/2021 15:28:43 - DEBUG - activitysim.core.input - renaming columns: {'hhnum': 'hh_id'}
+22/04/2021 15:28:43 - DEBUG - activitysim.core.input - households table columns: ['RT' 'SERIALNO' 'DIVISION' 'PUMA' 'REGION' 'ST' 'ADJHSG' 'ADJINC' 'WGTP'
+ 'NP' 'TYPE' 'ACR' 'AGS' 'BDS' 'BLD' 'BUS' 'CONP' 'ELEP' 'FS' 'FULP'
+ 'GASP' 'HFL' 'INSP' 'MHP' 'MRGI' 'MRGP' 'MRGT' 'MRGX' 'RMS' 'RNTM' 'RNTP'
+ 'SMP' 'TEL' 'TEN' 'VACS' 'VAL' 'VEH' 'WATP' 'YBL' 'FES' 'FINCP' 'FPARC'
+ 'GRNTP' 'GRPIP' 'HHL' 'HHT' 'HINCP' 'HUGCL' 'HUPAC' 'HUPAOC' 'HUPARC'
+ 'KIT' 'LNGI' 'MV' 'NOC' 'NPF' 'NPP' 'NR' 'NRC' 'OCPIP' 'PARTNER' 'PLM'
+ 'PSF' 'R18' 'R60' 'R65' 'RESMODE' 'SMOCP' 'SMX' 'SRNT' 'SVAL' 'TAXP'
+ 'WIF' 'WKEXREL' 'WORKSTAT' 'FACRP' 'FAGSP' 'FBDSP' 'FBLDP' 'FBUSP'
+ 'FCONP' 'FELEP' 'FFSP' 'FFULP' 'FGASP' 'FHFLP' 'FINSP' 'FKITP' 'FMHP'
+ 'FMRGIP' 'FMRGP' 'FMRGTP' 'FMRGXP' 'FMVP' 'FPLMP' 'FRMSP' 'FRNTMP'
+ 'FRNTP' 'FSMP' 'FSMXHP' 'FSMXSP' 'FTAXP' 'FTELP' 'FTENP' 'FVACSP' 'FVALP'
+ 'FVEHP' 'FWATP' 'FYBLP' 'WGTP1' 'WGTP2' 'WGTP3' 'WGTP4' 'WGTP5' 'WGTP6'
+ 'WGTP7' 'WGTP8' 'WGTP9' 'WGTP10' 'WGTP11' 'WGTP12' 'WGTP13' 'WGTP14'
+ 'WGTP15' 'WGTP16' 'WGTP17' 'WGTP18' 'WGTP19' 'WGTP20' 'WGTP21' 'WGTP22'
+ 'WGTP23' 'WGTP24' 'WGTP25' 'WGTP26' 'WGTP27' 'WGTP28' 'WGTP29' 'WGTP30'
+ 'WGTP31' 'WGTP32' 'WGTP33' 'WGTP34' 'WGTP35' 'WGTP36' 'WGTP37' 'WGTP38'
+ 'WGTP39' 'WGTP40' 'WGTP41' 'WGTP42' 'WGTP43' 'WGTP44' 'WGTP45' 'WGTP46'
+ 'WGTP47' 'WGTP48' 'WGTP49' 'WGTP50' 'WGTP51' 'WGTP52' 'WGTP53' 'WGTP54'
+ 'WGTP55' 'WGTP56' 'WGTP57' 'WGTP58' 'WGTP59' 'WGTP60' 'WGTP61' 'WGTP62'
+ 'WGTP63' 'WGTP64' 'WGTP65' 'WGTP66' 'WGTP67' 'WGTP68' 'WGTP69' 'WGTP70'
+ 'WGTP71' 'WGTP72' 'WGTP73' 'WGTP74' 'WGTP75' 'WGTP76' 'WGTP77' 'WGTP78'
+ 'WGTP79' 'WGTP80' 'AGEHOH' 'HTYPE' 'NWESR' 'nuniv_schg' 'HHINCADJ'
+ 'famTag' 'dupcount' 'n']
+22/04/2021 15:28:43 - DEBUG - activitysim.core.input - households table size: (4841, 197) 7.3 MB
+22/04/2021 15:28:43 - INFO - activitysim.core.input - households index name: hh_id
+22/04/2021 15:28:43 - INFO - populationsim.steps.input_pre_processor - registering table households
+22/04/2021 15:28:43 - INFO - activitysim.core.input - Reading CSV file data\seed_persons.csv
+22/04/2021 15:28:43 - DEBUG - activitysim.core.input - raw persons table size: (11734, 236) 21.1 MB
+22/04/2021 15:28:43 - DEBUG - activitysim.core.input - dropping columns: ['indp02', 'naicsp02', 'occp02', 'socp00', 'occp10', 'socp10', 'indp07', 'naicsp07']
+22/04/2021 15:28:43 - DEBUG - activitysim.core.input - renaming columns: {'hhnum': 'hh_id', 'SPORDER': 'per_num'}
+22/04/2021 15:28:43 - DEBUG - activitysim.core.input - persons table columns: ['RT' 'SERIALNO' 'per_num' 'PUMA' 'ST' 'ADJINC' 'PWGTP' 'AGEP' 'CIT' 'COW'
+ 'ENG' 'FER' 'GCL' 'GCM' 'GCR' 'INTP' 'JWMNP' 'JWRIP' 'JWTR' 'LANX' 'MAR'
+ 'MIG' 'MIL' 'MLPA' 'MLPB' 'MLPC' 'MLPD' 'MLPE' 'MLPF' 'MLPG' 'MLPH'
+ 'MLPI' 'MLPJ' 'MLPK' 'NWAB' 'NWAV' 'NWLA' 'NWLK' 'NWRE' 'OIP' 'PAP'
+ 'RELP' 'RETP' 'SCH' 'SCHG' 'SCHL' 'SEMP' 'SEX' 'SSIP' 'SSP' 'WAGP' 'WKHP'
+ 'WKL' 'WKW' 'YOEP' 'ANC' 'ANC1P' 'ANC2P' 'DECADE' 'DRIVESP' 'ESP' 'ESR'
+ 'HISP' 'JWAP' 'JWDP' 'LANP' 'MIGPUMA' 'MIGSP' 'MSP' 'NATIVITY' 'NOP' 'OC'
+ 'PAOC' 'PERNP' 'PINCP' 'POBP' 'POVPIP' 'POWPUMA' 'POWSP' 'QTRBIR' 'RAC1P'
+ 'RAC2P' 'RAC3P' 'RACAIAN' 'RACASN' 'RACBLK' 'RACNHPI' 'RACNUM' 'RACSOR'
+ 'RACWHT' 'RC' 'SFN' 'SFR' 'VPS' 'WAOB' 'FAGEP' 'FANCP' 'FCITP' 'FCOWP'
+ 'FENGP' 'FESRP' 'FFERP' 'FGCLP' 'FGCMP' 'FGCRP' 'FHISP' 'FINDP' 'FINTP'
+ 'FJWDP' 'FJWMNP' 'FJWRIP' 'FJWTRP' 'FLANP' 'FLANXP' 'FMARP' 'FMIGP'
+ 'FMIGSP' 'FMILPP' 'FMILSP' 'FOCCP' 'FOIP' 'FPAP' 'FPOBP' 'FPOWSP' 'FRACP'
+ 'FRELP' 'FRETP' 'FSCHGP' 'FSCHLP' 'FSCHP' 'FSEMP' 'FSEXP' 'FSSIP' 'FSSP'
+ 'FWAGP' 'FWKHP' 'FWKLP' 'FWKWP' 'FYOEP' 'PWGTP1' 'PWGTP2' 'PWGTP3'
+ 'PWGTP4' 'PWGTP5' 'PWGTP6' 'PWGTP7' 'PWGTP8' 'PWGTP9' 'PWGTP10' 'PWGTP11'
+ 'PWGTP12' 'PWGTP13' 'PWGTP14' 'PWGTP15' 'PWGTP16' 'PWGTP17' 'PWGTP18'
+ 'PWGTP19' 'PWGTP20' 'PWGTP21' 'PWGTP22' 'PWGTP23' 'PWGTP24' 'PWGTP25'
+ 'PWGTP26' 'PWGTP27' 'PWGTP28' 'PWGTP29' 'PWGTP30' 'PWGTP31' 'PWGTP32'
+ 'PWGTP33' 'PWGTP34' 'PWGTP35' 'PWGTP36' 'PWGTP37' 'PWGTP38' 'PWGTP39'
+ 'PWGTP40' 'PWGTP41' 'PWGTP42' 'PWGTP43' 'PWGTP44' 'PWGTP45' 'PWGTP46'
+ 'PWGTP47' 'PWGTP48' 'PWGTP49' 'PWGTP50' 'PWGTP51' 'PWGTP52' 'PWGTP53'
+ 'PWGTP54' 'PWGTP55' 'PWGTP56' 'PWGTP57' 'PWGTP58' 'PWGTP59' 'PWGTP60'
+ 'PWGTP61' 'PWGTP62' 'PWGTP63' 'PWGTP64' 'PWGTP65' 'PWGTP66' 'PWGTP67'
+ 'PWGTP68' 'PWGTP69' 'PWGTP70' 'PWGTP71' 'PWGTP72' 'PWGTP73' 'PWGTP74'
+ 'PWGTP75' 'PWGTP76' 'PWGTP77' 'PWGTP78' 'PWGTP79' 'PWGTP80' 'wgtp'
+ 'employed' 'soc' 'OCCP' 'famTag' 'dupcount' 'OSUTAG' 'n' 'hh_id']
+22/04/2021 15:28:43 - DEBUG - activitysim.core.input - persons table size: (11734, 228) 20.4 MB
+22/04/2021 15:28:43 - INFO - activitysim.core.input - persons index name: None
+22/04/2021 15:28:43 - INFO - populationsim.steps.input_pre_processor - registering table persons
+22/04/2021 15:28:43 - INFO - activitysim.core.input - Reading CSV file data\geo_cross_walk.csv
+22/04/2021 15:28:43 - DEBUG - activitysim.core.input - raw geo_cross_walk table size: (930, 10) 72.8 KB
+22/04/2021 15:28:43 - DEBUG - activitysim.core.input - renaming columns: {'TRACTCE': 'TRACT'}
+22/04/2021 15:28:43 - DEBUG - activitysim.core.input - geo_cross_walk table columns: ['TAZ' 'BLKGRP' 'STATEFP' 'COUNTYFP' 'TRACT' 'GEOID' 'NAME' 'NAMELSAD'
+ 'PUMA' 'REGION']
+22/04/2021 15:28:43 - DEBUG - activitysim.core.input - geo_cross_walk table size: (930, 10) 72.8 KB
+22/04/2021 15:28:43 - INFO - activitysim.core.input - geo_cross_walk index name: None
+22/04/2021 15:28:43 - INFO - populationsim.steps.input_pre_processor - registering table geo_cross_walk
+22/04/2021 15:28:43 - INFO - activitysim.core.input - Reading CSV file data\control_totals_taz.csv
+22/04/2021 15:28:43 - DEBUG - activitysim.core.input - raw TAZ_control_data table size: (930, 25) 181.8 KB
+22/04/2021 15:28:43 - DEBUG - activitysim.core.input - TAZ_control_data table columns: ['TAZ' 'POPBASE' 'HHBASE' 'HHSIZE1' 'HHSIZE2' 'HHSIZE3' 'HHSIZE4' 'HHAGE1'
+ 'HHAGE2' 'HHAGE3' 'HHAGE4' 'HHINC1' 'HHINC2' 'HHINC3' 'HHINC4' 'OSUFAM'
+ 'OSUNFAM' 'STATEFP' 'COUNTYFP' 'TRACTCE' 'TRACTGEOID' 'PUMA' 'REGION'
+ 'MAZ' 'xTAZ']
+22/04/2021 15:28:43 - DEBUG - activitysim.core.input - TAZ_control_data table size: (930, 25) 181.8 KB
+22/04/2021 15:28:43 - INFO - activitysim.core.input - TAZ_control_data index name: None
+22/04/2021 15:28:43 - INFO - populationsim.steps.input_pre_processor - registering table TAZ_control_data
+22/04/2021 15:28:43 - INFO - activitysim.core.input - Reading CSV file data\control_totals_tract.csv
+22/04/2021 15:28:43 - DEBUG - activitysim.core.input - raw TRACT_control_data table size: (35, 17) 4.8 KB
+22/04/2021 15:28:43 - DEBUG - activitysim.core.input - TRACT_control_data table columns: ['STATEFIPS' 'COUNTY' 'TRACT' 'HHWORK0' 'HHWORK1' 'HHWORK2' 'HHWORK3' 'SF'
+ 'DUP' 'MF' 'MH' 'TRACTGEOID' 'HHBASE' 'POPBASE' 'PUMA' 'REGION' 'TAZ']
+22/04/2021 15:28:43 - DEBUG - activitysim.core.input - TRACT_control_data table size: (35, 17) 4.8 KB
+22/04/2021 15:28:43 - INFO - activitysim.core.input - TRACT_control_data index name: None
+22/04/2021 15:28:43 - INFO - populationsim.steps.input_pre_processor - registering table TRACT_control_data
+22/04/2021 15:28:43 - INFO - activitysim.core.input - Reading CSV file data\scaled_control_totals_meta.csv
+22/04/2021 15:28:43 - DEBUG - activitysim.core.input - raw REGION_control_data table size: (1, 24) 320.0
+22/04/2021 15:28:43 - DEBUG - activitysim.core.input - REGION_control_data table columns: ['PUMA' 'REGION' 'POPBASE' 'AGE1' 'AGE2' 'AGE3' 'AGE4' 'AGE5' 'AGE6'
+ 'AGE7' 'AGE8' 'AGE9' 'AGE10' 'AGE11' 'AGE12' 'OCCP1' 'OCCP2' 'OCCP3'
+ 'OCCP4' 'OCCP5' 'OCCP6' 'OCCP7' 'OCCP8' 'NLF']
+22/04/2021 15:28:43 - DEBUG - activitysim.core.input - REGION_control_data table size: (1, 24) 320.0
+22/04/2021 15:28:43 - INFO - activitysim.core.input - REGION_control_data index name: None
+22/04/2021 15:28:43 - INFO - populationsim.steps.input_pre_processor - registering table REGION_control_data
+22/04/2021 15:28:43 - DEBUG - activitysim.core.tracing - Time to execute #run_model completed step 'input_pre_processor' : 0.501 seconds (0.0 minutes)
+22/04/2021 15:28:43 - DEBUG - activitysim.core.pipeline - add_checkpoint input_pre_processor timestamp 2021-04-22 15:28:43.541600
+22/04/2021 15:28:43 - DEBUG - activitysim.core.pipeline - add_checkpoint 'input_pre_processor' table 'households' (4841, 197) 7.3 MB
+22/04/2021 15:28:43 - DEBUG - activitysim.core.pipeline - add_checkpoint 'input_pre_processor' table 'persons' (11734, 228) 20.4 MB
+22/04/2021 15:28:43 - DEBUG - activitysim.core.pipeline - add_checkpoint 'input_pre_processor' table 'geo_cross_walk' (930, 10) 72.8 KB
+22/04/2021 15:28:43 - DEBUG - activitysim.core.pipeline - add_checkpoint 'input_pre_processor' table 'TAZ_control_data' (930, 25) 181.8 KB
+22/04/2021 15:28:43 - DEBUG - activitysim.core.pipeline - add_checkpoint 'input_pre_processor' table 'TRACT_control_data' (35, 17) 4.8 KB
+22/04/2021 15:28:43 - DEBUG - activitysim.core.pipeline - add_checkpoint 'input_pre_processor' table 'REGION_control_data' (1, 24) 320.0
+22/04/2021 15:28:43 - INFO - activitysim.core.pipeline - #run_model running step setup_data_structures
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - Reading control file configs\controls.csv
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - dropping 149 TAZ control rows with empty total_hh_control
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - dropped 0 households not in seed zones
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - kept 4839 households in seed zones
+22/04/2021 15:28:43 - DEBUG - activitysim.core.pipeline - rewrap table households inplace=False
+22/04/2021 15:28:43 - DEBUG - activitysim.core.pipeline - rewrap table persons inplace=False
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - control target num_hh
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table households
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression (households.WGTP > 0) & (households.WGTP < np.inf)
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - control target hh_size_1
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table households
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression households.NP == 1
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - control target hh_size_2
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table households
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression households.NP == 2
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - control target hh_size_3
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table households
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression households.NP == 3
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - control target hh_size_4_plus
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table households
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression households.NP >= 4
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - control target hh_age_15_24
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table households
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression (households.AGEHOH > 15) & (households.AGEHOH <= 24)
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - control target hh_age_25_54
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table households
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression (households.AGEHOH > 24) & (households.AGEHOH <= 54)
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - control target hh_age_55_64
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table households
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression (households.AGEHOH > 54) & (households.AGEHOH <= 64)
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - control target hh_age_65_plus
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table households
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression (households.AGEHOH > 64) & (households.AGEHOH <= np.inf)
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - control target hh_inc_15
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table households
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression (households.HHINCADJ > -999999999) & (households.HHINCADJ <= 21297)
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - control target hh_inc_15_30
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table households
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression (households.HHINCADJ >21297) & (households.HHINCADJ <= 42593)
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - control target hh_inc_30_60
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table households
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression (households.HHINCADJ > 42593) & (households.HHINCADJ <= 85185)
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - control target hh_inc_60_plus
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table households
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression (households.HHINCADJ > 85185) & (households.HHINCADJ <= 999999999)
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - control target students_by_family_housing_type
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table persons
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression persons.OSUTAG == 1
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - control target students_by_nonfamily_housing_type
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table persons
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression persons.OSUTAG == 2
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - control target hh_wrks_0
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table households
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression households.NWESR == 0
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - control target hh_wrks_1
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table households
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression households.NWESR == 1
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - control target hh_wrks_2
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table households
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression households.NWESR == 2
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - control target hh_wrks_3_plus
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table households
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression households.NWESR >= 3
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - control target hh_by_type_sf
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table households
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression households.HTYPE == 1
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - control target hh_by_type_mf
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table households
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression households.HTYPE == 2
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - control target hh_by_type_mh
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table households
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression households.HTYPE == 3
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - control target hh_by_type_dup
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table households
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression households.HTYPE == 4
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - control target persons_occ_1
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table persons
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression persons.OCCP == 1
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - control target persons_occ_2
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table persons
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression persons.OCCP == 2
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - control target persons_occ_3
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table persons
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression persons.OCCP == 3
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - control target persons_occ_4
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table persons
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression persons.OCCP == 4
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - control target persons_occ_5
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table persons
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression persons.OCCP == 5
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - control target persons_occ_6
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table persons
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression persons.OCCP == 6
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - control target persons_occ_7
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table persons
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression persons.OCCP == 7
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - control target persons_occ_8
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table persons
+22/04/2021 15:28:43 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression persons.OCCP == 8
+22/04/2021 15:28:43 - INFO - populationsim.steps.setup_data_structures - grouped incidence table has 1808 entries, ungrouped has 4839
+22/04/2021 15:28:44 - DEBUG - activitysim.core.tracing - Time to execute #run_model completed step 'setup_data_structures' : 0.28 seconds (0.0 minutes)
+22/04/2021 15:28:44 - DEBUG - activitysim.core.pipeline - add_checkpoint setup_data_structures timestamp 2021-04-22 15:28:44.005989
+22/04/2021 15:28:44 - DEBUG - activitysim.core.pipeline - add_checkpoint 'setup_data_structures' table 'crosswalk' (930, 4) 36.3 KB
+22/04/2021 15:28:44 - DEBUG - activitysim.core.pipeline - add_checkpoint 'setup_data_structures' table 'slice_crosswalk' (35, 3) 1.1 KB
+22/04/2021 15:28:44 - DEBUG - activitysim.core.pipeline - add_checkpoint 'setup_data_structures' table 'control_spec' (31, 6) 1.6 KB
+22/04/2021 15:28:44 - DEBUG - activitysim.core.pipeline - add_checkpoint 'setup_data_structures' table 'REGION_controls' (1, 31) 256.0
+22/04/2021 15:28:44 - DEBUG - activitysim.core.pipeline - add_checkpoint 'setup_data_structures' table 'PUMA_controls' (1, 23) 192.0
+22/04/2021 15:28:44 - DEBUG - activitysim.core.pipeline - add_checkpoint 'setup_data_structures' table 'TRACT_controls' (35, 23) 6.6 KB
+22/04/2021 15:28:44 - DEBUG - activitysim.core.pipeline - add_checkpoint 'setup_data_structures' table 'TAZ_controls' (781, 15) 97.6 KB
+22/04/2021 15:28:44 - DEBUG - activitysim.core.pipeline - add_checkpoint 'setup_data_structures' table 'households' (4839, 197) 7.3 MB
+22/04/2021 15:28:44 - DEBUG - activitysim.core.pipeline - add_checkpoint 'setup_data_structures' table 'persons' (11734, 228) 20.4 MB
+22/04/2021 15:28:44 - DEBUG - activitysim.core.pipeline - add_checkpoint 'setup_data_structures' table 'household_groups' (4839, 3) 132.3 KB
+22/04/2021 15:28:44 - DEBUG - activitysim.core.pipeline - add_checkpoint 'setup_data_structures' table 'incidence_table' (1808, 36) 508.6 KB
+22/04/2021 15:28:44 - INFO - activitysim.core.pipeline - #run_model running step initial_seed_balancing
+22/04/2021 15:28:44 - INFO - populationsim.steps.initial_seed_balancing - initial_seed_balancing seed id 600
+22/04/2021 15:28:46 - INFO - populationsim.steps.initial_seed_balancing - seed_balancer status: {'converged': True, 'iter': 913, 'delta': 2.8558033546730845e-10, 'max_gamma_dif': 9.554526059218915e-10}
+22/04/2021 15:28:46 - INFO - populationsim.steps.initial_seed_balancing - Total balanced weights for seed 600 = 62041.00000024537
+22/04/2021 15:28:46 - DEBUG - activitysim.core.tracing - Time to execute #run_model completed step 'initial_seed_balancing' : 1.966 seconds (0.0 minutes)
+22/04/2021 15:28:46 - DEBUG - activitysim.core.pipeline - add_checkpoint initial_seed_balancing timestamp 2021-04-22 15:28:46.224459
+22/04/2021 15:28:46 - DEBUG - activitysim.core.pipeline - add_checkpoint 'initial_seed_balancing' table 'PUMA_weights' (1808, 4) 56.6 KB
+22/04/2021 15:28:46 - INFO - activitysim.core.pipeline - #run_model running step meta_control_factoring
+22/04/2021 15:28:46 - INFO - populationsim.steps.meta_control_factoring - meta_control_factoring 8 targets
+22/04/2021 15:28:46 - DEBUG - activitysim.core.pipeline - rewrap table PUMA_controls inplace=False
+22/04/2021 15:28:46 - DEBUG - activitysim.core.tracing - Time to execute #run_model completed step 'meta_control_factoring' : 0.047 seconds (0.0 minutes)
+22/04/2021 15:28:46 - DEBUG - activitysim.core.pipeline - add_checkpoint meta_control_factoring timestamp 2021-04-22 15:28:46.293587
+22/04/2021 15:28:46 - DEBUG - activitysim.core.pipeline - add_checkpoint 'meta_control_factoring' table 'PUMA_controls' (1, 31) 332.0
+22/04/2021 15:28:46 - INFO - activitysim.core.pipeline - #run_model running step final_seed_balancing
+22/04/2021 15:28:46 - INFO - populationsim.steps.final_seed_balancing - final_seed_balancing seed id 600

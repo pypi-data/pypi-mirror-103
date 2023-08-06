@@ -1,0 +1,36 @@
+22/04/2021 15:28:41 - INFO - activitysim - Read logging configuration from: configs\logging.yaml
+22/04/2021 15:28:41 - INFO - activitysim.cli.run - SETTING configs_dir: ['configs_mp', 'configs']
+22/04/2021 15:28:41 - INFO - activitysim.cli.run - SETTING settings_file_name: settings.yaml
+22/04/2021 15:28:41 - INFO - activitysim.cli.run - SETTING data_dir: data
+22/04/2021 15:28:41 - INFO - activitysim.cli.run - SETTING output_dir: output
+22/04/2021 15:28:41 - INFO - activitysim.cli.run - SETTING multiprocess: True
+22/04/2021 15:28:41 - INFO - activitysim.cli.run - SETTING num_processes: 2
+22/04/2021 15:28:41 - INFO - activitysim.cli.run - SETTING resume_after: None
+22/04/2021 15:28:41 - INFO - activitysim.cli.run - SETTING GROUP_BY_INCIDENCE_SIGNATURE: True
+22/04/2021 15:28:41 - INFO - activitysim.cli.run - SETTING INTEGERIZE_WITH_BACKSTOPPED_CONTROLS: True
+22/04/2021 15:28:41 - INFO - activitysim.cli.run - SETTING SUB_BALANCE_WITH_FLOAT_SEED_WEIGHTS: False
+22/04/2021 15:28:41 - INFO - activitysim.cli.run - SETTING meta_control_data: None
+22/04/2021 15:28:41 - INFO - activitysim.cli.run - SETTING control_file_name: controls.csv
+22/04/2021 15:28:41 - INFO - activitysim.cli.run - SETTING USE_CVXPY: False
+22/04/2021 15:28:41 - INFO - activitysim.cli.run - SETTING USE_SIMUL_INTEGERIZER: True
+22/04/2021 15:28:41 - INFO - activitysim.cli.run - run multiprocess simulation
+22/04/2021 15:28:41 - INFO - activitysim.core.mem - init_trace file_name mem.csv
+22/04/2021 15:28:41 - INFO - activitysim.core.mem - trace_memory_info run_multiprocess.start rss: 0.07GB used: 6.72 GB percent: 42.4%
+22/04/2021 15:28:41 - INFO - activitysim.core.mp_tasks - run_multiprocess fail_fast: None
+22/04/2021 15:28:41 - INFO - activitysim.core.mp_tasks - allocate_shared_skim_buffer
+22/04/2021 15:28:41 - INFO - activitysim.core.tracing - Time to execute allocate shared skim buffer : 0.0 seconds (0.0 minutes)
+22/04/2021 15:28:41 - INFO - activitysim.core.mem - trace_memory_info allocate_shared_skim_buffer.completed rss: 0.07GB used: 6.72 GB percent: 42.4%
+22/04/2021 15:28:41 - INFO - activitysim.core.mp_tasks - allocate_shared_shadow_pricing_buffers
+22/04/2021 15:28:41 - INFO - activitysim.core.tracing - Time to execute allocate shared shadow_pricing buffer : 0.0 seconds (0.0 minutes)
+22/04/2021 15:28:41 - INFO - activitysim.core.mem - trace_memory_info allocate_shared_shadow_pricing_buffers.completed rss: 0.07GB used: 6.72 GB percent: 42.4%
+22/04/2021 15:28:41 - INFO - activitysim.core.mp_tasks - run_sub_simulations step mp_seed_balancing models resume_after None
+22/04/2021 15:28:41 - INFO - activitysim.core.mp_tasks - start process mp_seed_balancing
+22/04/2021 15:28:43 - INFO - activitysim.core.mem - trace_memory_info mp_seed_balancing.start rss: 0.15GB used: 6.78 GB percent: 42.7%
+22/04/2021 15:28:44 - INFO - activitysim.core.mp_tasks - mp_seed_balancing input_pre_processor : 0.686 seconds (0.0 minutes)
+22/04/2021 15:28:44 - INFO - activitysim.core.mem - trace_memory_info mp_seed_balancing.input_pre_processor.completed rss: 0.18GB used: 6.83 GB percent: 43.1%
+22/04/2021 15:28:45 - INFO - activitysim.core.mp_tasks - mp_seed_balancing setup_data_structures : 0.532 seconds (0.0 minutes)
+22/04/2021 15:28:45 - INFO - activitysim.core.mem - trace_memory_info mp_seed_balancing.setup_data_structures.completed rss: 0.18GB used: 6.85 GB percent: 43.2%
+22/04/2021 15:28:47 - INFO - activitysim.core.mp_tasks - mp_seed_balancing initial_seed_balancing : 1.988 seconds (0.0 minutes)
+22/04/2021 15:28:47 - INFO - activitysim.core.mem - trace_memory_info mp_seed_balancing.initial_seed_balancing.completed rss: 0.18GB used: 6.83 GB percent: 43.1%
+22/04/2021 15:28:47 - INFO - activitysim.core.mp_tasks - mp_seed_balancing meta_control_factoring : 0.085 seconds (0.0 minutes)
+22/04/2021 15:28:47 - INFO - activitysim.core.mem - trace_memory_info mp_seed_balancing.meta_control_factoring.completed rss: 0.18GB used: 6.83 GB percent: 43.1%

@@ -1,0 +1,9 @@
+process,time,rss,used,available,percent,event
+main, 22/04/2021 15:28:41, 0.07, 6.72, 9.14, 42.4%, run_multiprocess.start
+main, 22/04/2021 15:28:41, 0.07, 6.72, 9.14, 42.4%, allocate_shared_skim_buffer.completed
+main, 22/04/2021 15:28:41, 0.07, 6.72, 9.14, 42.4%, allocate_shared_shadow_pricing_buffers.completed
+main, 22/04/2021 15:28:43, 0.15, 6.78, 9.08, 42.7%, mp_seed_balancing.start
+main, 22/04/2021 15:28:44, 0.18, 6.83, 9.03, 43.1%, mp_seed_balancing.input_pre_processor.completed
+main, 22/04/2021 15:28:45, 0.18, 6.85, 9.00, 43.2%, mp_seed_balancing.setup_data_structures.completed
+main, 22/04/2021 15:28:47, 0.18, 6.83, 9.03, 43.1%, mp_seed_balancing.initial_seed_balancing.completed
+main, 22/04/2021 15:28:47, 0.18, 6.83, 9.03, 43.1%, mp_seed_balancing.meta_control_factoring.completed

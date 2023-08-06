@@ -1,0 +1,5 @@
+process_name,model_name,seconds,minutes
+mp_seed_balancing,input_pre_processor,0.7,0.0
+mp_seed_balancing,setup_data_structures,0.5,0.0
+mp_seed_balancing,initial_seed_balancing,2.0,0.0
+mp_seed_balancing,meta_control_factoring,0.1,0.0
