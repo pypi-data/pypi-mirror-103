@@ -1,0 +1,101 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block head_title %}
+    Enter your bank details
+{% endblock %}
+
+
+{% block scripts %}
+    <script>
+        $('#accept_checkbox').change(function() {
+             $('#input-fields').collapse();
+             $('#accept_checkbox').prop( "checked", true ).prop( "disabled", true );
+        })
+    </script>
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="row mb-4">
+            <div class="col-md-8 header mr-auto">
+                <img src="{% static "vceepayment/vcee_logo.jpg" %}" class="img-fluid"/>
+            </div>
+        </div>
+        <form>
+        <div class="row">
+            <div class="col-12">
+                <h4>Your earnings</h4>
+
+                <p>You have earned <span class="font-weight-bold">{{ final_payoff }}</span> in this experiment.</p>
+
+                <h4>Getting your payment</h4>
+
+                <p>To send you your payment, we need your name, your IBAN, and&mdash;if you are not using an Austrian or German bank account&mdash;your BIC.</p>
+
+                <p>
+                    Your bank details are collected and processed by the VCEE Laboratory and not by the experimenter.
+                    Thus, the data collected during the experiment and your bank details are kept separated at all times.
+                    Therefore, your behavior in the experiment cannot be linked to you.
+                </p>
+
+                <h4>How your bank details are processed</h4>
+
+                <p>
+                    To process your payment, we will share your bank details with the Accounting and Finance Service of the University of Vienna.
+                    We will not share it with anyone else, including the experimenter.
+                </p>
+
+                <h4>Security</h4>
+
+                <p>We will automatically remove your payment information after four weeks.</p>
+
+                <p>
+                    Due to security reasons, we will not be able to change your bank details after you have submitted them.
+                    Thus, we ask you to make sure the information you enter is correct.
+                    In particular, please write your name as it is written in your bank account and on the ORSEE platform you signed up with.
+                </p>
+                    <div class="form-check m-4">
+                        <input type="checkbox" class="form-check-input" id="accept_checkbox">
+                        <label class="form-check-label" for="accept_checkbox">I have read and understood the information above.</label>
+                    </div>
+            </div>
+        </div>
+
+
+    <!--
+        <div class="bg-warning">
+            Test data: <br>
+            DE40100100100000012345 <br>
+            GENO DE M1 GLS
+        </div>
+    -->
+            <div class="collapse" id="input-fields">
+                <div class="form-group row p-t-5">
+                    <label for="FullName" class="col-sm-2 col-form-label">Full Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="FullName" placeholder="Firstname Lastname" name="full_name" value="{{ saved.full_name }}">
+                        <small id="FullName" class="form-text text-muted">This name needs to match the name you use on your bank account and on the ORSEE recruitment platform.</small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="iban" class="col-sm-2 col-form-label">IBAN</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="iban" placeholder="DE40100100100000012345" name="iban" value="{{ saved.iban }}">
+                        <small id="iban" class="form-text text-muted">Include the country identifier.</small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="bic" class="col-sm-2 col-form-label">BIC</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="bic" placeholder="PBNKDEFF" name="bic" value="{{ saved.bic }}">
+                        <small id="bic" class="form-text text-muted">If your IBAN starts with AT or DE, you can leave this empty.</small>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <button class="ml-auto btn btn-primary btn-lg">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+{% endblock %}

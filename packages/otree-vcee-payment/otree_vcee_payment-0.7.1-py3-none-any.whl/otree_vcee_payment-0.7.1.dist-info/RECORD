@@ -1,0 +1,13 @@
+vceepayment/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vceepayment/encryption.py,sha256=xml51QCMsUZf84KiWb-fpJVJrsHP4Jeux9oDT4bslWg,2176
+vceepayment/models.py,sha256=gRjKhUQPBoX74Lmq29Nc4Vk3YQq3t0vfK79eKXKeRZs,983
+vceepayment/pages.py,sha256=XJ-6LqoeD9ZaJp2PDGdfDA7eHXUI8Em9O2lJXsbIj1I,3432
+vceepayment/tests.py,sha256=DCa_UmdDEyDMahbACkE1atcYHvGWexhysg_xF1AMdcI,2588
+vceepayment/_builtin/__init__.py,sha256=XAOhjcfrMCw52YAshrC4RiS0oC9i81g_VfckZfsIMFY,448
+vceepayment/static/vceepayment/vcee_logo.jpg,sha256=JBlMQ_JrnsJQWvqpVx8xR_Iq2ARu1dqT84Mn9Kupj5g,166949
+vceepayment/templates/vceepayment/ConfirmationPage.html,sha256=CnppluwOOyWpKuAIBi5YSmX6Xiziuprxav16Or8QGD4,1139
+vceepayment/templates/vceepayment/PaymentInfos.html,sha256=xaxFmM76qack7MxPTpqd1bYC2K7J7IhABF1w0KyhMw4,4722
+otree_vcee_payment-0.7.1.dist-info/METADATA,sha256=NGnjiWxefYmncvdzvUa4gESHI0JIXwbJATZsxunzBm8,679
+otree_vcee_payment-0.7.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+otree_vcee_payment-0.7.1.dist-info/top_level.txt,sha256=bUsN80mKym3BwR2hhI2xlj_SUB1gejy2G_hiF2_fU-E,12
+otree_vcee_payment-0.7.1.dist-info/RECORD,,
