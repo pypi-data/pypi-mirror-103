@@ -1,0 +1,6 @@
+README.md
+setup.py
+apptify.egg-info/PKG-INFO
+apptify.egg-info/SOURCES.txt
+apptify.egg-info/dependency_links.txt
+apptify.egg-info/top_level.txt
