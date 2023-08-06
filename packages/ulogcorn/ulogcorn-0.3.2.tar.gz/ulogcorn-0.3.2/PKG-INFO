@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ulogcorn
+Version: 0.3.2
+Summary: Unify logging for a gunicorn and uvicorn application with loguru
+Author: 欧德天.尼维森莫.纳墨迪奥
+Author-email: icocoabeans@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: loguru (>=0.5.3,<0.6.0)
