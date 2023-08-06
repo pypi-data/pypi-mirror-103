@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: propheto
+Version: 0.1.0
+Summary: Propheto - MLOps Software Platform
+Home-page: https://github.com/Propheto-io/propheto
+License: MIT
+Author: Dan McDade
+Author-email: dan@propheto.io
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/x-rst
+
+Propheto
+========
+
+MLOps software tooling for cloud environments.
+
+
