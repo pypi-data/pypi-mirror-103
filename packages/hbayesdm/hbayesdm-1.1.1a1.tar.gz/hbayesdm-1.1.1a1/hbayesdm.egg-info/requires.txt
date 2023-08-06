@@ -1,0 +1,6 @@
+numpy
+scipy
+pandas
+pystan<3.0.0,>=2.19.1
+matplotlib
+arviz
