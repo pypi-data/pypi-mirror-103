@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: azure-blob-storage-cache
+Version: 0.1.0
+Summary: Azure Blob Storage as object cache
+License: MIT
+Author: peder2911
+Author-email: pglandsverk@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: azure-storage-blob (>=12.8.1,<13.0.0)
