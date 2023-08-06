@@ -1,0 +1,12 @@
+emojifier/__init__.py,sha256=wqvfd1RIckvARYME5eSTYq5neDju6l7qT_gPzaaLMJs,120
+emojifier/generator.py,sha256=5hEITrHgLUcuVl8-skmyKEFM_C4BZlMEH6-XPKGbB2A,2061
+emojifier/data/__init__.py,sha256=N3N4DtVT-lNBuvqgU5v43TL-Y-Dr7KHy3Xi5jtWGyx0,5
+emojifier/util/__init__.py,sha256=N3N4DtVT-lNBuvqgU5v43TL-Y-Dr7KHy3Xi5jtWGyx0,5
+emojifier/util/emojify.py,sha256=I14Hia1wbtjFKt2Qjw1PY_8tutzfNXWAs_disixuNBo,182
+emojifier/util/files.py,sha256=JLF0HFC5JhYQDrfZRHzgz-mPxtBL2Hg1iv2QjAAdKsI,346
+emojifier/util/text.py,sha256=Qs7-rCwL8icxPOADBz7v-AChRDa4X5wYASBuxW3NAaM,660
+emojifier-1.1.0.dist-info/LICENSE,sha256=aIY0tYhByeFRtAljkQLVZoELm7AGn1fl1vCgAAQaBs8,35814
+emojifier-1.1.0.dist-info/METADATA,sha256=48mDImZ7ISUlPl671M4b9GNcqup45n9_VFNrFdVaf3c,2162
+emojifier-1.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+emojifier-1.1.0.dist-info/top_level.txt,sha256=T1LWPgd3E6YmxFp9FDqF480TkYzXG5LvyZZsQvM4GdE,10
+emojifier-1.1.0.dist-info/RECORD,,
