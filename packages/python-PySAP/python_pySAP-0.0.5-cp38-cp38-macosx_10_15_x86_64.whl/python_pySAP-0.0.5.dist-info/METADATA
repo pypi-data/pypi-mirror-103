@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: python-pySAP
+Version: 0.0.5
+Summary: 
+Requires-Dist: scipy (==1.5.4)
+Requires-Dist: numpy (==1.19.5)
+Requires-Dist: matplotlib (==3.3.4)
+Requires-Dist: astropy (==4.1)
+Requires-Dist: nibabel (==3.2.1)
+Requires-Dist: pyqtgraph (==0.11.1)
+Requires-Dist: progressbar2 (==3.53.1)
+Requires-Dist: modopt (==1.5.1)
+Requires-Dist: scikit-learn (==0.24.1)
+Requires-Dist: PyWavelets (==1.1.1)
+Provides-Extra: gui
+Requires-Dist: PySide (>=1.2.2) ; extra == 'gui'
+
+PYthon Sparse data Analysis Package
+
+Home-page: https://github.com/CEA-COSMIC/pysap
+Author: 
+Antoine Grigis <antoine.grigis@cea.fr>
+Samuel Farrens <samuel.farrens@cea.fr>
+Jean-Luc Starck <jl.stark@cea.fr>
+Philippe Ciuciu <philippe.ciuciu@cea.fr>
+
+Author-email: antoine.grigis@cea.fr
+License: CeCILL-B
+Description: pySAP
+        
+        pySAP is a Python package related to sparsity and its application inastronomical or mediacal data analysis.
+        This package binds the 'sparse2d' C++ librarythat allows sparse decomposition, denoising and deconvolution.
+        
+Platform: Linux
+Platform: OSX
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Provides-Extra: gui
