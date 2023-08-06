@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+deep_chainmap/__init__.py
+deep_chainmap.egg-info/PKG-INFO
+deep_chainmap.egg-info/SOURCES.txt
+deep_chainmap.egg-info/dependency_links.txt
+deep_chainmap.egg-info/requires.txt
+deep_chainmap.egg-info/top_level.txt
