@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+pysitcom/Comet.py
+pysitcom/Sitcom.py
+pysitcom/__init__.py
+pysitcom/similarity.py
+pysitcom.egg-info/PKG-INFO
+pysitcom.egg-info/SOURCES.txt
+pysitcom.egg-info/dependency_links.txt
+pysitcom.egg-info/requires.txt
+pysitcom.egg-info/top_level.txt
+test/test.py
