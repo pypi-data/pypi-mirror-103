@@ -1,0 +1,62 @@
+{
+    "definitions": {
+        "DCObject": {
+            "title": "DublinCore Object v2.0.0",
+            "description": "DublinCore Object basic metadata v2.0.0",
+            "type": "object",
+            "properties": {
+                "identifier": {
+                    "description": "Primary resource identifier",
+                    "type": "string"
+                },
+                "abstract": {
+                    "description": "Multilingual abstract description for record (may contain HTML).",
+                    "$ref": "multilingual-v2.0.0.json#/definitions/multilingual"
+                },
+                "title": {
+                    "description":  "Primary (multilingual) title of the record.",
+                    "$ref": "multilingual-v2.0.0.json#/definitions/multilingual"
+                },
+                "alternative": {
+                    "$ref": "multilingual-v2.0.0.json#/definitions/multilingual"
+                },
+                "description": {
+                    "description": "Multilingual description for record.",
+                    "$ref": "multilingual-v2.0.0.json#/definitions/multilingual"
+                },
+                "created": {
+                    "description": "Record creation timestamp",
+                    "type": "string",
+                    "format": "date"
+                },
+                "available": {
+                    "description": "Record made available timestamp",
+                    "type": "string",
+                    "format": "date"
+                },
+                "dateSubmitted": {
+                    "description": "Record submitted timestamp",
+                    "type": "string",
+                    "format": "date"
+                },
+                "modified": {
+                    "description": "Record modification timestamp",
+                    "type": "string",
+                    "format": "date"
+                },
+                "creator": {
+                    "description": "Resource creator",
+                    "type": "string"
+                },
+                "contributor": {
+                    "description": "Resource contributor",
+                    "type": "string"
+                },
+                "language": {
+                    "description": "Primary language of described resource",
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
