@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: model-observer
+Version: 0.0.1
+Summary: Model Observer is a Django package that provides functionality to track events of the model. Based on django signals.
+Home-page: https://git2.devebs.net/ebs-backend/python/packages/model-observer
+Author: Victor Elceaninov & Dorin Musteata
+Author-email: victor.elceaninov@ebs-integrator.org, dorin.musteata@ebs-integrator.org
+License: UNKNOWN
+Project-URL: Bug Tracker, https://git2.devebs.net/ebs-backend/python/packages/model-observer/-/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
+
