@@ -1,0 +1,6 @@
+[databroker.ingestors]
+application/x-hdf5 = xicam.XPCS.ingestors:ingest_nxXPCS
+
+[xicam.plugins.GUIPlugin]
+xpcs_gui_plugin = xicam.XPCS:XPCS
+
