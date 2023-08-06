@@ -1,0 +1,10 @@
+pyrpc/__init__.py,sha256=QncEZxhBlKcVKzVltmJGDKW4Sc9DgaV5u2XeDtmMtHY,152
+pyrpc/__main__.py,sha256=HaPEMiVlsRuonHAUeL5qHuJdCHh2Nxu6Syl8VOPwCLQ,1681
+pyrpc/classmodule.py,sha256=DHIKTTvKYq0WHH9xYxy4LLzlnaGf5K95r0GfhGKl0vo,886
+pyrpc/funcmodule.py,sha256=FnkXQMpUwHfnEv_7XPYerSqy8y_8Z-zl3Jl6JLSvd-Q,4626
+pyrpc_discord-1.1.1.dist-info/LICENSE,sha256=3pq2YhgGAE-iA0iLfQZxn0tMaNqDVkxcrXj7jd9HN08,1089
+pyrpc_discord-1.1.1.dist-info/METADATA,sha256=CuE-y5vyGLog1S_Bj2sRCVOTNZQJ6y3UPS5pj3Cn3ps,878
+pyrpc_discord-1.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyrpc_discord-1.1.1.dist-info/entry_points.txt,sha256=ecymUmPY2WobzlRz8N4_eic0xLRv49c8RYrvt_QU08g,47
+pyrpc_discord-1.1.1.dist-info/top_level.txt,sha256=uoZ3WADyXYwShB1p4C2k2X8_1xmQGb-FhsrEkBjPYlc,6
+pyrpc_discord-1.1.1.dist-info/RECORD,,

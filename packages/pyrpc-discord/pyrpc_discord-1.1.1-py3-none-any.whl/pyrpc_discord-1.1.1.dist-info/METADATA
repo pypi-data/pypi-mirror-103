@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pyrpc-discord
+Version: 1.1.1
+Summary: A Small Project To Automate Discord Rich Presence using CLI
+Home-page: https://github.com/bartick/pyrpc-discord
+Author: Bartick Maiti
+Author-email: blackmumba890@gmail.com
+License: MIT
+Platform: Windows
+Platform: Linux
+Platform: OSX
+Classifier: Framework :: AsyncIO
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: pypresence (>=4.2.0)
+
+## This Is a README 
+
+Readme is yet to write
+
