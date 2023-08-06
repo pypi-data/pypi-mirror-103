@@ -1,0 +1,12 @@
+ic_slide/__init__.py,sha256=liNwy2wvkMPpxckfUyRtOCG9GPGk3-gPDRDnc3gLPxM,454
+ic_slide/api_urls.py,sha256=pDoaPTVacaxG8ElH_I-UzOapChsmBDGaRjiRHGxgixs,1324
+ic_slide/auth.py,sha256=awlui7qR-VFCrp43rdlWIaGm8RUXu-po7ZNuCNe5_5w,2084
+ic_slide/config.py,sha256=vm3yrcdAD_L7HMpoa6bnc7neZXjWJ6-7X1TjfHmP5BI,2361
+ic_slide/slide_index.py,sha256=YHdnPKiIGUzuKAFqRckcWPHXZP0UoEaDuAYXMj3Mvcw,9215
+ic_slide/slide_source.py,sha256=u1JSCHCU4KIMh4mr4GrVXzblELnBC2D7kgoTQimKJps,13873
+ic_slide/time_utils.py,sha256=zQokPR9yy2sokM07VhjvdYXu9_6ejtW4yuVpV9Yiavw,474
+ic_slide-0.3.1.dist-info/LICENSE,sha256=z8IfXovWVa6ZfuyRYTi3B7HSkLgycsAqlcn4IbjIcxA,1116
+ic_slide-0.3.1.dist-info/METADATA,sha256=m-d8xhwRvXNlGL4DcnS3gb1ut57sgErsjLPvwnKrhSk,2272
+ic_slide-0.3.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ic_slide-0.3.1.dist-info/top_level.txt,sha256=MgB2eHim3DyS73rzEYM9xubXu4vW6zXXV--8WAIuKVA,9
+ic_slide-0.3.1.dist-info/RECORD,,
