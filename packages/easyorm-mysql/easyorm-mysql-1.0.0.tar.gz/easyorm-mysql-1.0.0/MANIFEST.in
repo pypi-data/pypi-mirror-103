@@ -1,0 +1,2 @@
+recursive-include easyorm/conf *
+exclude easyorm/conf/excludeme.txt
