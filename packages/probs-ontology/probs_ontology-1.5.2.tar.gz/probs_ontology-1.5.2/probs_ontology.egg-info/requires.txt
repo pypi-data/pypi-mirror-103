@@ -1,0 +1,23 @@
+
+[docs]
+jupyter-book<0.11,>=0.10
+rdfox_runner
+pandas
+
+[docs:python_version < "3.9"]
+importlib_resources
+
+[runner]
+rdfox_runner
+pandas
+
+[runner:python_version < "3.9"]
+importlib_resources
+
+[test]
+pytest
+rdfox_runner
+pandas
+
+[test:python_version < "3.9"]
+importlib_resources
