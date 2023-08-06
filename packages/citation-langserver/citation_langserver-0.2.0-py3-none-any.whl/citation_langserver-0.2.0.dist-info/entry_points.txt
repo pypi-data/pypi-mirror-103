@@ -1,0 +1,3 @@
+[console_scripts]
+citation-langserver=citation_langserver.cli:cli
+

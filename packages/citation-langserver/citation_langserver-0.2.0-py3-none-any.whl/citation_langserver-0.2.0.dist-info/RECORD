@@ -1,0 +1,14 @@
+LICENSE,sha256=zhXu5Q9RwJw5EdcRKsAe1J9EN-tS6LuRDnJJx_D9Aag,1066
+citation_langserver/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+citation_langserver/__main__.py,sha256=Y6GsIEKFf9o7x0Cf8Nb0yAMG6VEx3tVyoAn_A4s_GbA,60
+citation_langserver/bibliography.py,sha256=fsgzpCjet0uY1qIN9O2wjx_uYvbWHPBF9J2c0fn_jUQ,874
+citation_langserver/cli.py,sha256=D57KpJQ1dv3qZxYdLQdo6YqCVLAvPJah_ZKVGTBf7MM,947
+citation_langserver/completion.py,sha256=ftu2dNB4Rm-vVy_S69YGABF3X2SwRzYgb6B9q3FlQxw,801
+citation_langserver/document.py,sha256=TlsEegTA4Qz2ryM_9A5kRxpySDTC63WBRjIim05AFRA,2675
+citation_langserver/format.py,sha256=Ofe_kBRdLXUj6DI9Jo1vvNqXAg6klRofYB8nZ_GFQXc,784
+citation_langserver/server.py,sha256=aMMTD_pZFnqzSzWFqrUSAgmDmlumSneSFJjd0kZ0L2k,9288
+citation_langserver-0.2.0.dist-info/entry_points.txt,sha256=dOy-GnN6ZQr0F01lQRrjguwnQZZZVze-BF9NxCq7i2w,67
+citation_langserver-0.2.0.dist-info/LICENSE,sha256=zhXu5Q9RwJw5EdcRKsAe1J9EN-tS6LuRDnJJx_D9Aag,1066
+citation_langserver-0.2.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+citation_langserver-0.2.0.dist-info/METADATA,sha256=ot1keffJP91hk27P0gb1OzUHBYPUgUx9Ukovna9zeuk,2287
+citation_langserver-0.2.0.dist-info/RECORD,,
