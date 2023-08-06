@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: portfolio-test
+Version: 0.0.1
+Summary: My first package to pypi
+Home-page: UNKNOWN
+Author: Amanda Li
+Author-email: amandali14124277@gmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: BSD License
