@@ -1,0 +1,4 @@
+include versioneer.py
+include exconfig/_version.py
+include LICENSE
+include requirements.txt
