@@ -1,0 +1,11 @@
+include *.py
+include *.txt
+recursive-include Docs *.md
+recursive-include SpaceTraders *.json
+recursive-include SpaceTraders *.py
+recursive-include docs *.bat
+recursive-include docs *.py
+recursive-include docs *.rst
+recursive-include docs Makefile
+recursive-include tests *.json
+recursive-include tests *.py
