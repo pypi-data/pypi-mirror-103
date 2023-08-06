@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ntsc-py
+Version: 0.0.0
+Summary: An interface to various graphical NTSC filters.
+Home-page: https://github.com/Kautenja/ntsc-py
+Author: Christian Kauten
+Author-email: kautencreations@gmail.com
+License: MIT
+Keywords: NTSC Graphics Filter
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+
+# NTSC-py
+
+
