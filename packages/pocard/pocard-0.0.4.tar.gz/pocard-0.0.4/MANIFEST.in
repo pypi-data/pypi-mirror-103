@@ -1,0 +1,6 @@
+include pocard/*
+include pocard/assets/*
+include pocard/font/*
+include README.md
+include MANIFES*
+global-include pocard/*.py pocard/assets/*.json pocard/font/*.ttf pocard/assets/*.*
