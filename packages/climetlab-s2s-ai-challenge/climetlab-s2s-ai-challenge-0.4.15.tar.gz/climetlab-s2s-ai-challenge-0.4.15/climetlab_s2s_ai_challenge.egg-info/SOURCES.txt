@@ -1,0 +1,13 @@
+README.md
+setup.py
+climetlab_s2s_ai_challenge/__init__.py
+climetlab_s2s_ai_challenge/forecast_input.py
+climetlab_s2s_ai_challenge/info.py
+climetlab_s2s_ai_challenge/training_input.py
+climetlab_s2s_ai_challenge.egg-info/PKG-INFO
+climetlab_s2s_ai_challenge.egg-info/SOURCES.txt
+climetlab_s2s_ai_challenge.egg-info/dependency_links.txt
+climetlab_s2s_ai_challenge.egg-info/entry_points.txt
+climetlab_s2s_ai_challenge.egg-info/requires.txt
+climetlab_s2s_ai_challenge.egg-info/top_level.txt
+climetlab_s2s_ai_challenge.egg-info/zip-safe
