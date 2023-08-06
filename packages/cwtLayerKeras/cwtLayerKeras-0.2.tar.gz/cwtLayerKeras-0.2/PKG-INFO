@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: cwtLayerKeras
+Version: 0.2
+Summary: Keras layer to compute the cwt(continuous wavelet transformation) scalogram of signals
+Home-page: https://github.com/fmolivato/cwtLayerKeras
+Author: fmolivato
+Author-email: f.olivato.97@gmail.com
+License: GNU AGPLv3
+Download-URL: https://github.com/fmolivato/cwtLayerKeras/archive/refs/tags/v_01.tar.gz
+Description: This project main goal is to produce a simple way to compute CWT (Continuous Wavelet Transformation) on signals with keras functional API.
+Keywords: keras,tensorflow2,scalogram,wavelet
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
