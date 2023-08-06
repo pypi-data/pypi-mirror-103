@@ -1,0 +1,14 @@
+collective.base64imagepatch-0.13-py2.7-nspkg.pth,sha256=i6xUrA2XwWgxJ31EmKS8F0wCvv6o3Db_2POBVx1bZDM,559
+collective/base64imagepatch/__init__.py,sha256=StWIVm0EjxtdgfBiL3VfvHkdyWopJ94yl--QvCsbhaU,544
+collective/base64imagepatch/configure.zcml,sha256=zD0eUaihchPxjlU1eQclIQ19dUYIQFaDmr2q3pcZTEE,1062
+collective/base64imagepatch/patch.py,sha256=9TeRQeJHkr6ChoxugVPFtnce53q31RrQzGNEZ5x5voc,10300
+collective/base64imagepatch/patch_all_view.py,sha256=EDsU5jsLlEoADpIfLQgjNN8Y1RY7og8gjN6qNTbs9S0,2460
+collective/base64imagepatch/subscribers.py,sha256=kYNPKVLrR0KFl4LRiToePQOi0uuWbQ7XHqqPT8JFAJE,422
+collective/base64imagepatch/tests.py,sha256=vUEiSbimKSStE3Cc6879dfpM1vVAaL20tdVtto_wgpY,1586
+collective.base64imagepatch-0.13.dist-info/METADATA,sha256=Z7c2JMPYKdbZ-nj9ulu7QL-he6OBSkQuotKzMXzV48I,3442
+collective.base64imagepatch-0.13.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+collective.base64imagepatch-0.13.dist-info/entry_points.txt,sha256=YUAwlEY6kPJ-aAYeqiyde03a-yf9cs9HctlUrUuvFKM,90
+collective.base64imagepatch-0.13.dist-info/namespace_packages.txt,sha256=FyC0xnd95fkjCaKazR3nfIgNqhWMpB0mYBlzALyXKTg,11
+collective.base64imagepatch-0.13.dist-info/paster_plugins.txt,sha256=V9rnyrW6sA44E3stVS2r9FQFHnHBJjl0PckIWyMccSU,9
+collective.base64imagepatch-0.13.dist-info/top_level.txt,sha256=FyC0xnd95fkjCaKazR3nfIgNqhWMpB0mYBlzALyXKTg,11
+collective.base64imagepatch-0.13.dist-info/RECORD,,
