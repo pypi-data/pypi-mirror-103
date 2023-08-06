@@ -1,0 +1,6 @@
+lxml
+netCDF4
+rioxarray
+geopandas
+sertit[full]
+rtree
