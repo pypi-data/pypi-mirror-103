@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: tricli
+Version: 2.1.0
+Summary: tricli manages a trie data structure that can be globally accessed.
+Home-page: UNKNOWN
+Author: Anish Lakkapragada
+Author-email: anish.lakkapragada@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: REST,Data Structures,Trie
+Platform: UNKNOWN
