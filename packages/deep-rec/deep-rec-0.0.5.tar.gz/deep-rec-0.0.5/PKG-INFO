@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: deep-rec
+Version: 0.0.5
+Summary: PyTorch implementation of Deep Factorization Machine Models
+Home-page: https://github.com/jaisenbe58r/deep-rec
+Author: Jaime Sendra Berenguer
+Author-email: jaimesendraberenguer@gmail.com
+License: UNKNOWN
+Description: # Factorization Machine models in PyTorch
+          
+        This package provides a PyTorch implementation of Deep Factorization Machine ;odels and common datasets in Retail Recommendation.
+        
+        
+        ## Available Datasets
+        
+        * [Retail Case Study Data](https://www.kaggle.com/darpan25bajaj/retail-case-study-data/download)
+        
+        
+        ## Available Models
+        
+        | Model | Reference |
+        |-------|-----------|
+        | DeepFM | [H Guo, et al. DeepFM: A Factorization-Machine based Neural Network for CTR Prediction, 2017.](https://arxiv.org/abs/1703.04247) |
+        | xDeepFM | [J Lian, et al. xDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems, 2018.](https://arxiv.org/abs/1803.05170) |
+        
+        
+        ## Environment
+        
+            
+            conda env create -f environment_conda.yml
+            source activate environment_conda
+            
+        
+        ## Installation
+        
+            pip install deep-rec
+        
+        ## Example
+        
+            python main.py --device cpu --epoch 2 
+        
+        ## API Documentation
+        
+        https://rixwew.github.io/deep-rec (en construcción)
+        
+        
+        ## Licence
+        
+        MIT
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

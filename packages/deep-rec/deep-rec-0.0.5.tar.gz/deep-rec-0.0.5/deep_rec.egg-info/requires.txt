@@ -1,0 +1,6 @@
+pandas
+numpy
+wandb==0.10.27
+tqdm
+scikit-learn
+setuptools
