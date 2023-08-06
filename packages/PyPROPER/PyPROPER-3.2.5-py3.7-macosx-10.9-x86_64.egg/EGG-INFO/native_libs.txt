@@ -1,0 +1,3 @@
+proper/libcconv.cpython-37m-darwin.so
+proper/libcconvthread.cpython-37m-darwin.so
+proper/libszoom.cpython-37m-darwin.so
