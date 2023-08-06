@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="{{ overview_css }}">
+{% extends 'base.html' %}
+
+{% block header %}
+{% block title %}Overview{% endblock %}
+{% endblock %}
+
+{% block content %}
+
+<div class="describe-tables">
+    <div class="describe">
+        <div class="section-title">Numeric</div>
+        <div>{{ described_numeric }}</div>
+    </div>
+    <div class="describe">
+        <div class="section-title">Categorical</div>
+        <div>{{ described_categorical }}</div>
+    </div>
+    <div class="describe-unused">
+        <div class="section-title">Unused Columns</div>
+        <div>{{ unused_cols }}</div>
+    </div>
+</div>
+<div class="head">
+    <div class="section-title">First 5 rows of data (transposed)</div>
+    <div>{{ head }}</div>
+</div>
+<div class="pairplot">
+    <div class="section-title">Pairplot of Features</div>
+    <div class="pairplot-img">{{ pairplot }}</div>
+</div>
+
+{% endblock %}
