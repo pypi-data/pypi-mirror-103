@@ -1,0 +1,10 @@
+curatorbin/__init__.py,sha256=vfNDiR1bA97vNc_AHbhKRIwVYySUuQlfbU-erznJzko,3128
+curatorbin/arm/curator,sha256=3pFSCMcf8-2w3kwEbSQibvIfexI_AzPACPj9LRbX3ng,36634624
+curatorbin/macos/curator,sha256=00Diy8PN2gk9obGzYMvRmJH_1AKZD1F0vUNBF2TzPfk,43180556
+curatorbin/macos-arm64/curator,sha256=HeQvXJEgbNCtGrJNK5IBk2tuf2BR44quZiefjTUET6M,35077762
+curatorbin/ubuntu1604/curator,sha256=LvO3t46p0tlzg0YMoDwixDfiRslltUHi6_sdgniB-GI,34591904
+curatorbin/windows-64/curator.exe,sha256=eQzV455IHpgm5LB9EtRIKrQUNcCyNyAPNaOAlMxkgR8,37691904
+curatorbin-1.2.1.dist-info/METADATA,sha256=UNjMa3ROmxRMBUiYar2tEu3fJNSwirhdr0PnD5rL7Lk,551
+curatorbin-1.2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+curatorbin-1.2.1.dist-info/top_level.txt,sha256=txw4KbhvfDjy11vM_N3602wxHYwUmI6b_GtcUPsGiqU,11
+curatorbin-1.2.1.dist-info/RECORD,,
