@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: esparto
+Version: 0.2.1
+Summary: Minimal frontend web framework written in Python.
+Home-page: https://domvwt.github.io/esparto
+License: MIT
+Author: Dominic Thorn
+Author-email: dominic.thorn@gmail.com
+Requires-Python: >=3.6.1,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: extras
+Provides-Extra: test
+Requires-Dist: Pillow (<9.0.0)
+Requires-Dist: Pillow (>=7.0.0)
+Requires-Dist: beautifulsoup4 (>=4.9.3,<5.0.0); extra == "extras"
+Requires-Dist: black (>=20.8b1,<21.0); extra == "test"
+Requires-Dist: coverage (>=5.5,<6.0); extra == "test"
+Requires-Dist: flake8 (>=3.9.0,<4.0.0); extra == "test"
+Requires-Dist: html5lib (>=1.1,<2.0); extra == "test"
+Requires-Dist: jinja2 (>=2.10.1,<3.0.0)
+Requires-Dist: markdown (>=3.1,<4.0)
+Requires-Dist: mypy (>=0.812,<0.813); extra == "test"
+Requires-Dist: pytest (>=6.2.2,<7.0.0); extra == "test"
+Project-URL: Repository, https://github.com/domvwt/esparto
+Description-Content-Type: text/markdown
+
+esparto
+=======
+
+[![image](https://img.shields.io/pypi/v/esparto.svg)](https://pypi.python.org/pypi/esparto)
+[![Build Status](https://travis-ci.com/domvwt/esparto.svg?branch=main)](https://travis-ci.com/domvwt/esparto)
+[![codecov](https://codecov.io/gh/domvwt/esparto/branch/main/graph/badge.svg?token=35J8NZCUYC)](https://codecov.io/gh/domvwt/esparto)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=domvwt_esparto&metric=alert_status)](https://sonarcloud.io/dashboard?id=domvwt_esparto)
+
+Esparto is a super minimal frontend web framework written in Python. Its primary use is for generating shareable single page documents
+with content from popular analytics and data science libraries.
+
+Full documentation and examples at [domvwt.github.io/esparto/](https://domvwt.github.io/esparto/).
+
+### Features
+* Lightweight API
+* No CSS or HTML required
+* Device responsive display
+* Self contained / inline dependencies
+* Jupyter Notebook support
+* MIT License
+
+### Supported Content
+* Markdown text
+* Images
+* Matplotlib figures
+* Pandas DataFrames
+* Bokeh objects
+* Plotly figures
+
