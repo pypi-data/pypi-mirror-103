@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: yaddy
+Version: 0.1.1
+Summary: Yet Another Domain (Driven) Development librarY for Python
+Home-page: https://github.com/python-yaddy/yaddy
+License: MIT
+Author: S. Guliaev
+Author-email: dev.sagul@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/python-yaddy/yaddy
+Description-Content-Type: text/markdown
+
+# yaddy
+Yet Another Domain (Driven) Development librarY for Python
+
+Warning: This repository is in WIP (Work In Progress) state. None
+of the APIs are fixed, do not use it in your production environment.
+
+yaddy is a library that provides a basis for DDD (Domain Driven
+Development) in python. It is mostly developed for my own needs,
+but any suggestions are appreciated.
+
+## Tests
+
+High-level (acceptance, e2e) tests
+could be run with:
+
+```Shell
+poetry run accept
+```
+
+Developer (unit) tests could be run
+with:
+
+```Shell
+poetry run unit
+```
