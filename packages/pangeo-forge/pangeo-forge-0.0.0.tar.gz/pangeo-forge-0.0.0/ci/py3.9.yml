@@ -1,0 +1,40 @@
+name: pangeo-forge
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - aiohttp
+  - black
+  - boto3
+  - cfgrib
+  - codecov
+  - dask
+#  - distributed
+  - fsspec
+  - h5netcdf
+  - h5py
+  - hdf5
+  - lxml    # Optional dep of pydap
+  - netcdf4
+  - numpy
+  - pandas
+  - pip
+  - prefect
+  - pydap
+# bring back eventually once pynio conda-forge package supports py3.9
+#  - pynio
+  - pytest
+  - pytest-cov
+  - pytest-lazy-fixture
+  - rasterio
+  - requests
+  - scipy
+  - setuptools
+  - toolz
+#  - xarray>=0.16.2
+  - zarr>=2.6.0
+  - pip:
+    - git+https://github.com/rabernat/xarray.git@zarr-chunk-fixes
+    - git+https://github.com/pangeo-data/rechunker.git@master
+    - git+https://github.com/intake/filesystem_spec.git@master
+    - pytest-timeout

@@ -1,0 +1,11 @@
+sphinx
+pydata-sphinx-theme>=0.4.2
+sphinx_book_theme
+myst-parser
+myst-nb
+sphinx-copybutton
+sphinx-autodoc-typehints
+fsspec
+prefect
+git+https://github.com/pangeo-data/rechunker.git
+-e .
