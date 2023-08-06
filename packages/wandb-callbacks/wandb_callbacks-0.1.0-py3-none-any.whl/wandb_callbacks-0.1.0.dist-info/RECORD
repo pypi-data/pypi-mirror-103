@@ -1,0 +1,6 @@
+build/lib/wandb_callbacks/__init__.py,sha256=0Hsz-VxzL_OGpHCDhfDHBkWfTGuc-LstK78rbl8lYVo,129
+wandb_callbacks/__init__.py,sha256=0Hsz-VxzL_OGpHCDhfDHBkWfTGuc-LstK78rbl8lYVo,129
+wandb_callbacks-0.1.0.dist-info/METADATA,sha256=CEvKdbekXsInRvARieNCFdOOUmEjEGfpCwseOa_pZ1A,868
+wandb_callbacks-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+wandb_callbacks-0.1.0.dist-info/top_level.txt,sha256=wzpVH_YdiDQBogHQ6uscZQyILoNgFmM1XKolNx18NAQ,27
+wandb_callbacks-0.1.0.dist-info/RECORD,,
