@@ -1,0 +1,4 @@
+# train
+wandb
+grpcio
+tensorflow_serving_api
