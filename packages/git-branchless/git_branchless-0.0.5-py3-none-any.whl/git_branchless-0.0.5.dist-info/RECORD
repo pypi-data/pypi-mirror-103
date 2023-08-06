@@ -1,0 +1,10 @@
+git_branchless-0.0.5.data/scripts/git-branchless-pick,sha256=BipZVQVPscPA7nGK8B88gpDgBnK2eeojTdIJu-puRKs,1506
+gitbranchless/__init__.py,sha256=S7u1lbuWmM3A3ajykBialmPoJUK6Jg-WmNqM-9OZFdk,22
+gitbranchless/main.py,sha256=I-II4Cn5jCeCvbTTe1LWZpURv-AZdJsrJg8zJ0splvM,15287
+git_branchless-0.0.5.dist-info/LICENSE,sha256=1w_8G4e9OdXrpsBtShuj4e2eta5NdOM2-_5kExliDwQ,1065
+git_branchless-0.0.5.dist-info/METADATA,sha256=HNNbj4nxyHhcc6BrEm8vSmszDeqGxgtTr0A6Ee5VKXs,7357
+git_branchless-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+git_branchless-0.0.5.dist-info/dependency_links.txt,sha256=RL9G1FykdFAjFOvrcVaxC1fNJIJpdktqp_3H5RBC6Rw,86
+git_branchless-0.0.5.dist-info/entry_points.txt,sha256=Fa3vh1Z22RGJ96LDWmVMCU7-CLc_mz9117NX7vkTKuA,60
+git_branchless-0.0.5.dist-info/top_level.txt,sha256=39A_VbNlB3V8v3chb4xW_mEsBZkeM5UlIhs9ShhgMbI,14
+git_branchless-0.0.5.dist-info/RECORD,,

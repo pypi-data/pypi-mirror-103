@@ -1,0 +1,55 @@
+#!/bin/sh
+
+usage() {
+	echo "\
+usage: git ${0##*/git-} <base_commit>..<commit> [<rebase-args>...]
+
+Start a new interactive rebase, with these steps planned:
+- drop commits whose subjects start with \"[<commit>] \"
+- cherry-pick the range of commits and prefix their subjects with \"[<commit>] \"
+
+Arguments beyond the first are passed on to git-rebase(1)." && exit 1
+}
+
+test "$1" || usage
+range=$1
+shift
+base_commit="${range%%..*}" # Left part of the range.
+topic="${range#*..}" # Right part of range.
+topic="${topic#*/}" # Drop remote.
+
+prefix=$(git config branchless.subjectPrefixPrefix || echo [)
+suffix=$(git config branchless.subjectPrefixSuffix || echo ])
+
+cherries=$(
+	git log --reverse --format="pick %h $prefix${topic}$suffix %s" "$range"
+)
+if ! [ "$cherries" ]; then
+	echo "Nothing to cherry-pick from $range"
+	exit 0
+fi
+
+todo=$(IFS='
+'
+for cherry in $cherries
+do
+	printf '%s\nexec %s\n' \
+		"$cherry" \
+		"GIT_EDITOR='perl -pi -e \"s{^}{$prefix${topic}$suffix } if $. == 1\"' git commit --amend --allow-empty"
+done
+)
+todo=$todo \
+editor=$(git var GIT_EDITOR) \
+topic=$topic prefix=$prefix suffix=$suffix \
+GIT_SEQUENCE_EDITOR='
+	perl -pi -e '\''
+		use Env;
+		if (m/^pick \S+ \Q$prefix$topic\E(?::[:+\w]+?)?\Q$suffix /) {
+			s/^pick/drop/;
+			$dropped_any = 1;
+		} elsif ($todo and ($dropped_any or m/^$/)) {
+			$_ = $todo . "\n" . $_;
+			$todo = "";
+		}
+		END { exec "$editor .git/rebase-merge/git-rebase-todo"; }
+	'\''' git rebase -i --no-autosquash "$(git merge-base "$base_commit" HEAD)" "$@"
