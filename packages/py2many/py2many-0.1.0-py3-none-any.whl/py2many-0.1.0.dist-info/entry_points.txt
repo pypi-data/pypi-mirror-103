@@ -1,0 +1,3 @@
+[console_scripts]
+py2many = py2many.cli:main
+
