@@ -1,0 +1,15 @@
+README.md
+setup.py
+sacrefilter/__init__.py
+sacrefilter/length.py
+sacrefilter/regexes.py
+sacrefilter/string.py
+sacrefilter.egg-info/PKG-INFO
+sacrefilter.egg-info/SOURCES.txt
+sacrefilter.egg-info/dependency_links.txt
+sacrefilter.egg-info/requires.txt
+sacrefilter.egg-info/top_level.txt
+sacrefilter/langidentify/__init__.py
+sacrefilter/langidentify/chardet_detect.py
+sacrefilter/langidentify/cld_detect.py
+sacrefilter/langidentify/langidpy_detect.py
