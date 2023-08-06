@@ -1,0 +1,3 @@
+[console_scripts]
+nuctool = nuc_data_tool.__main__:main
+
