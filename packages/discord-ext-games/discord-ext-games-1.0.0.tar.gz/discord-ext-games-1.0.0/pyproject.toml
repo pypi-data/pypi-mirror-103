@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "discord-ext-games"
+version = "0.1.0"
+description = "This library provides bunch of games that can be played on discord."
+authors = ["Wiper-R <rshivang12345@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
