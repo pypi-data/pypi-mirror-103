@@ -1,0 +1,8 @@
+setup.py
+produttore_e_consumatore2/__init__.py
+produttore_e_consumatore2.egg-info/PKG-INFO
+produttore_e_consumatore2.egg-info/SOURCES.txt
+produttore_e_consumatore2.egg-info/dependency_links.txt
+produttore_e_consumatore2.egg-info/requires.txt
+produttore_e_consumatore2.egg-info/top_level.txt
+produttore_e_consumatore2.egg-info/zip-safe

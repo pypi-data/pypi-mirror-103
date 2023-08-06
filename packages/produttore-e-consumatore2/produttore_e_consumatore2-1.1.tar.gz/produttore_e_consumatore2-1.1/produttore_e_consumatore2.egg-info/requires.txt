@@ -1,0 +1,4 @@
+tabular-log
+requests
+programGUI>=1.4
+psutil>=5.8.0
