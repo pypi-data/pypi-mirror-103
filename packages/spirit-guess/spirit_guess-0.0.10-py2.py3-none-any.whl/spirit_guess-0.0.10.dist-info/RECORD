@@ -1,0 +1,12 @@
+spirit_guess/__init__.py,sha256=KuonATejmvavkGqmwhl9BNV91AjYM7XGq28kpXHanl4,214
+spirit_guess/enchant_detect.py,sha256=q0rSMB3q_pqM1LOx_1gqMIswDR-ggN8h3FFClcScewo,2070
+spirit_guess/languages.py,sha256=CJlJvTRg920iKO0rY4nLLTraQnkxVNvDGlqF0Iw2UnY,9646
+spirit_guess/ngram_detect.py,sha256=VlPNqfzcvT-pKofocOb0456rxzgdS3OBs19_KUT7c38,1818
+spirit_guess/ngram_model.py,sha256=lEUklSvApe9p4ODVJEt4SL1y-tQbtwcTK3LZoPpDDSs,1467916
+spirit_guess/orthography.py,sha256=ZPmT6Q5koRNqr8JGdNOq1WDG1Mlgnpw3NQ5i4hfy4Fg,1057
+spirit_guess/tokenize.py,sha256=mqJVJv9evo1qymWIh_42UmkfyxFjYEQ2mO1DdhpLMFg,179
+spirit_guess-0.0.10.dist-info/LICENSE,sha256=vfr9181BW7wH814Wr5AelbJ78jhC1xync351iRnhL5k,1066
+spirit_guess-0.0.10.dist-info/METADATA,sha256=APC7RZFOGcwLzRzX57jE3J8EEugCeUdBpzGd_zxs0es,235
+spirit_guess-0.0.10.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+spirit_guess-0.0.10.dist-info/top_level.txt,sha256=NymQtCQe3LoQNTNeX7LFAwywsNq4KsVWD8OScJCi1Gw,13
+spirit_guess-0.0.10.dist-info/RECORD,,
