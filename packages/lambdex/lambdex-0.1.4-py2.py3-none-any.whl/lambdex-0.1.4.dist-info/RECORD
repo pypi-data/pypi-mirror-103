@@ -1,0 +1,11 @@
+lambdex/__init__.py,sha256=4vbPVoez1QFRNKWTDd1nB6m53xhdKhw0c_F17S1jeEI,437
+lambdex/version.py,sha256=iJvI0qD9uIsZ9RfGKCHAsapqnEJvC9HlUIipGYutDRw,154
+lambdex/bin/__init__.py,sha256=Fj3G-cILhxLZ7F6uqEm8289PlyllMYcv8byjni4WqfY,131
+lambdex/bin/lambdex.py,sha256=5_efAHV4LwRGoLgswjpyzxme1LG1_AbyLQmavJo6QNY,6018
+lambdex/resources/__init__.py,sha256=Fj3G-cILhxLZ7F6uqEm8289PlyllMYcv8byjni4WqfY,131
+lambdex/resources/lambdex_handler.py,sha256=Cd7sHCpKxmtY5_VAQjghzzOrk6KH6Rfvtbo1Y-wYU8s,1682
+lambdex-0.1.4.dist-info/entry_points.txt,sha256=lfzzfUu8RdbgcAk-8Wi-G8K1ICtn0r1WotcgvY9-0JI,52
+lambdex-0.1.4.dist-info/LICENSE,sha256=bcDgaNzzpbyOBUIFuFt3IOHUkmW7xkv1FdLPeRl99po,11323
+lambdex-0.1.4.dist-info/WHEEL,sha256=iTBNkFIR26Wnx2cg5455J1IIBEskRg4YJC9DJwgu-js,99
+lambdex-0.1.4.dist-info/METADATA,sha256=VlUwax1hkhb7qemlmVfu6U6FP8_4RhD_bDQgmCpiFKs,4839
+lambdex-0.1.4.dist-info/RECORD,,
