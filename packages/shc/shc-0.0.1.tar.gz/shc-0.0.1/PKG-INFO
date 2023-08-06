@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: shc
+Version: 0.0.1
+Summary: SMART Health Card Tools
+Home-page: https://github.com/TransparentHealth/healthcards_python_sample_scripts
+Author: James Kizer
+Author-email: sales@videntity.com
+License: UNKNOWN
+Download-URL: https://pypi.org/project/shc/
+Description: A collection of scripts for working with SMART Health Cards.
+Platform: UNKNOWN
