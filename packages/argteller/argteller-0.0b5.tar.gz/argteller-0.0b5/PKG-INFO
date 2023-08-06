@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: argteller
+Version: 0.0b5
+Summary: Decorator for stylized interactive constructor using DSL and parser.
+Home-page: https://github.com/mozjay0619/argteller
+Author: Jay Kim
+License: DSB 3-clause
+Description: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
