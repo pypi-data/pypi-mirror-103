@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+addoneexample/__init__.py
+addoneexample.egg-info/PKG-INFO
+addoneexample.egg-info/SOURCES.txt
+addoneexample.egg-info/dependency_links.txt
+addoneexample.egg-info/top_level.txt

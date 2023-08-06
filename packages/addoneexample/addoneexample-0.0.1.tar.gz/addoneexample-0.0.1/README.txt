@@ -1,0 +1,1 @@
+This is an example library for testing, which just adds 1 to any number.
