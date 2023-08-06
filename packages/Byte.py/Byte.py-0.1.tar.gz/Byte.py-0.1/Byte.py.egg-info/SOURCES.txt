@@ -1,0 +1,9 @@
+setup.py
+Byte.py.egg-info/PKG-INFO
+Byte.py.egg-info/SOURCES.txt
+Byte.py.egg-info/dependency_links.txt
+Byte.py.egg-info/not-zip-safe
+Byte.py.egg-info/requires.txt
+Byte.py.egg-info/top_level.txt
+ByteAPI/ByteAPI.py
+ByteAPI/__init__.py
