@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+setup.py
+src/weightedDelaunay/__init__.py
+src/weightedDelaunay.egg-info/PKG-INFO
+src/weightedDelaunay.egg-info/SOURCES.txt
+src/weightedDelaunay.egg-info/dependency_links.txt
+src/weightedDelaunay.egg-info/requires.txt
+src/weightedDelaunay.egg-info/top_level.txt
+test/testWeightedDelaunay.py

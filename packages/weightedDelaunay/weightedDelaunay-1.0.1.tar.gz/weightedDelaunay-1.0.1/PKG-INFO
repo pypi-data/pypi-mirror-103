@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: weightedDelaunay
+Version: 1.0.1
+Summary: A packaged used to calculate the weighted delaunay triangulation in N-dimensions
+Home-page: https://github.com/Ale0x78/weightedDelaunay
+Author: Mark Klose, Bansi Chhatrala, Alex Nahapetyan
+Author-email: mwklose@ncsu.edu, bschhatr@ncsu.edu, anahape@ncsu.edu
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Ale0x78/weightedDelaunay/issues
+Description: # weighted-delaunay
+        A packaged used to calculate the weighted delaunay triangulation in N-dimensions
+        
+        # Usage
+        
+        ## WeightedDelaunay(points, weights)
+        ### Paramesters
+        - points: ndarray with all the points
+        - weights: a list of weights that matches the index of the points
+        ### Returns
+        A weighted Delaunay datastructure
+        
+        ## tiangulation()
+        ### Returns
+        A list of the simplexes for the triangulation
+        
+        ## add_point(point, weight)
+        ### Paramesters
+        - point: the point to add
+        - weight: the weight of that point
+        ### Returns
+        N/A
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
