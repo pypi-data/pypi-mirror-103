@@ -1,0 +1,3 @@
+[console_scripts]
+mapsipy-cli = mapsi.cli:main
+
