@@ -1,0 +1,3 @@
+[console_scripts]
+urlshrink = urlshrink.__main__:main
+
