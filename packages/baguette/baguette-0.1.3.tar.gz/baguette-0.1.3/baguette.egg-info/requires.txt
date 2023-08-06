@@ -1,0 +1,15 @@
+cachetools
+
+[dev]
+autoflake
+black
+flake8
+isort
+pytest
+pytest-asyncio
+pytest-cov
+requests
+twine
+
+[uvicorn]
+uvicorn[standard]
