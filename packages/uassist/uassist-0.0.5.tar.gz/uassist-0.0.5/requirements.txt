@@ -1,0 +1,6 @@
+folium
+ipyleaflet
+ipyfilechooser
+pyshp
+exifread
+earthengine-api
