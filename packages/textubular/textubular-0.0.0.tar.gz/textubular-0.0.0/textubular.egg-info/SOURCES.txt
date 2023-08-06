@@ -1,0 +1,8 @@
+README.md
+setup.py
+textubular/__init__.py
+textubular/checker.py
+textubular.egg-info/PKG-INFO
+textubular.egg-info/SOURCES.txt
+textubular.egg-info/dependency_links.txt
+textubular.egg-info/top_level.txt
