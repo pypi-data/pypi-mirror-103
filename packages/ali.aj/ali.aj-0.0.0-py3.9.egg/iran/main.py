@@ -1,0 +1,2 @@
+def jadi():
+    print('hello')

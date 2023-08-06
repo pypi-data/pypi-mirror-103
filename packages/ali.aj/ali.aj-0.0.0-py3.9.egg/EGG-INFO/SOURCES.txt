@@ -1,0 +1,7 @@
+setup.py
+ali.aj.egg-info/PKG-INFO
+ali.aj.egg-info/SOURCES.txt
+ali.aj.egg-info/dependency_links.txt
+ali.aj.egg-info/top_level.txt
+iran/__init__.py
+iran/main.py
