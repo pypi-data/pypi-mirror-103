@@ -1,0 +1,11 @@
+pyasge.cpython-37m-x86_64-linux-gnu.so,sha256=OzH2_xjYhTkhNZu-i0QE9E7FaZIrZJ1YNYjyD2ME7oU,3909688
+pyasge-1.0.0b2.dist-info/LICENSE,sha256=S2nd-7BFd7mvHrPqa4o68NtQ75uSvhlIOY9imdac_qk,1071
+pyasge-1.0.0b2.dist-info/METADATA,sha256=RnBeFqbb8cvXBwfZ3GJRby85bRhOMblv6Of3fLUkoxA,5053
+pyasge-1.0.0b2.dist-info/RECORD,,
+pyasge-1.0.0b2.dist-info/WHEEL,sha256=cCcIocQWsRcjbZ8DFZU6x3YDrwDcwVuuUbwJVUWc_xU,112
+pyasge-1.0.0b2.dist-info/top_level.txt,sha256=PstXetLTBJFGWTsAjyBfmpg2je90Pl2O8oI1_9amfXw,7
+pyasge.libs/libz-745e0a09.so.1.2.7,sha256=qQL6_XYFNzGpn7FbxE6MCwxM96dzN4Ik8FXfgl_vPR8,96272
+pyasge.libs/libbz2-a273e504.so.1.0.6,sha256=rG90qT6zByoD_7GEoC9BGhcYmz84nAlVGMxs0ts9bqw,70992
+pyasge.libs/libbrotlicommon-95fdbc49.so.1.0.7,sha256=mMXQTOHTIY3ELek1DAZb7LxnDDgVaSA1fYibipd1ZqU,131824
+pyasge.libs/libpng15-ce838cd1.so.15.13.0,sha256=3lPf10fzXzPKVhTwaKpTeF6Im4H-cwAIecTAId0UF_0,193544
+pyasge.libs/libbrotlidec-8214216c.so.1.0.7,sha256=0aiLE5Vi_qo9sUFKzS8IdWG2Y8BNUcA_-28UacvbEIA,58088
