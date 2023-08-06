@@ -1,0 +1,9 @@
+README.md
+setup.py
+PrettyPlotting.egg-info/PKG-INFO
+PrettyPlotting.egg-info/SOURCES.txt
+PrettyPlotting.egg-info/dependency_links.txt
+PrettyPlotting.egg-info/requires.txt
+PrettyPlotting.egg-info/top_level.txt
+prettyplotting/PrettyPlot.py
+prettyplotting/__init__.py
