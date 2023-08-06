@@ -1,0 +1,3 @@
+[console_scripts]
+bd-results = blackduck_results.risklibs:cli
+
