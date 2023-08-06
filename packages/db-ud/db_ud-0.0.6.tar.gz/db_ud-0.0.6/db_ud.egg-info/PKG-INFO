@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: db-ud
+Version: 0.0.6
+Summary: database connection
+Home-page: UNKNOWN
+Author: lovic
+Author-email: 
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
