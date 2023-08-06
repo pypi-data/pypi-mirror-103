@@ -1,0 +1,2 @@
+dimond>=0.3
+requests
