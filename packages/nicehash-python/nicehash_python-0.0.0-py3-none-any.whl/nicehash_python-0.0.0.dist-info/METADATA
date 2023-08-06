@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: nicehash-python
+Version: 0.0.0
+Summary: NiceHash API
+Home-page: https://github.com/skeetzo/nicehash-python
+Author: Skeetzo
+Author-email: WebmasterSkeetzo@gmail.com
+License: UNKNOWN
+Keywords: nicehash,api,python
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Requires-Dist: python-dotenv (>=0.17.0)
+Requires-Dist: requests
+
+**nicehash-python**
+fork of nicehash/rest-clients-demo with updated python client
+
+# rest-clients-demo
+
+### Source
+
+- [python](https://github.com/nicehash/rest-clients-demo/blob/master/python/nicehash.py)
+
+### TEST environment
+
+Generate Api key and Secret for test platform on:
+
+https://test.nicehash.com (User / Settings / API Keys)
+Organization ID is displayed just above "+ Create new API key" button.
+
+Use https://api-test.nicehash.com for API domain.
+
+The entire platform runs on testnet. This means that you don’t have to use your own funds to test the platform. This is the opportunity to familiarize yourself with the new system, place hash-power orders and try trading without spending any real money.
+
+![](https://raw.githubusercontent.com/nicehash/rest-clients-demo/master/generate_key.gif)
+
+### PRODUCTION environment
+
+To use production just generate key the same way on https://www.nicehash.com and use https://api2.nicehash.com for API domain.
+
+### API docs
+Can be found here: https://docs.nicehash.com/
+
+
