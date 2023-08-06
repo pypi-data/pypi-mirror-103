@@ -1,0 +1,348 @@
+#!python
+
+
+import os
+import re
+import time
+import json
+import shutil
+import argparse
+from getkey import getkey,keys
+
+home = os.path.expanduser('~')
+downloads = os.path.join(home,'Downloads')
+documents = os.path.join(home,'Documents')
+desktop = os.path.join(home,'Desktop')
+
+class Category:
+    def __init__(self,name,keywords=[]):
+        self.name = name
+        self.keywords = keywords
+
+    def add_keyword(self,keyword):
+        if not self.haskeyword(keyword):
+            self.keywords.append(keyword)
+
+    def dict(self):
+        return self.__dict__
+
+    def match(self,filename):
+        #returns bool indicating whether or not a keyword is present in filename
+        for kw in self.keywords:
+            regex = re.compile(kw,re.IGNORECASE)
+            res = regex.search(filename)
+            if res is not None:
+                return True
+        return False
+
+    def haskeyword(self,keyword):
+        return keyword in self.keywords
+    
+    def save(self):
+        home_dir = os.path.expanduser('~')
+        filename = 'categories.json'
+        path = os.path.join(home_dir,filename)
+        with open(path,'r') as inp:
+            cats = json.load(inp)
+        cats[self.name] = self.dict()
+        save_categories(cats)
+
+    def addfile(self,filename,parent_dir):
+        source_dir = os.path.join(parent_dir,filename)
+        target = os.path.join(parent_dir,self.name)
+        destination = os.path.join(target,filename)
+        #make category directory if it doesn't exist
+        if not os.path.exists(target):
+            os.mkdir(target)
+        #move file
+        shutil.move(source_dir,destination)
+
+def load_category(name):
+    if not category_exists(name):
+        print("Attempt to retrieve category has failed. ERROR: Category does not exist. Aborting...")
+        exit(1)
+    home_dir = os.path.expanduser('~')
+    filename = 'categories.json'
+    path = os.path.join(home_dir,filename)
+    with open(path,'r') as inp:
+        cat = json.load(inp)[name]
+    obj = Category(cat['name'],cat['keywords'])
+    return obj
+
+def category_exists(name):
+    home_dir = os.path.expanduser('~')
+    filename = 'categories.json'
+    path = os.path.join(home_dir,filename)
+    with open(path,'r') as inp:
+        cats = json.load(inp)
+    return name in cats
+    
+
+def load_categories():
+    home_dir = os.path.expanduser('~')
+    filename = 'categories.json'
+    try:
+        path = os.path.join(home_dir,filename)
+        if not os.path.exists(path):
+            print("No categories were added. Try using --ac to add a category so you can start grouping related files.")
+            exit(1)
+        with open(path,'r') as inp:
+            cats = json.load(inp)
+        categories = []
+        for c in cats:
+            cat = Category(cats[c]['name'],cats[c]['keywords'])
+            categories.append(cat)
+        return categories
+    except Exeception as e:
+        print(e)
+
+def save_categories(categories):
+    home_dir = os.path.expanduser('~')
+    filename = 'categories.json'
+    try:
+        category_dict = {}
+        #handle each case; list, dict or single category object
+        if type(categories) is list:
+            for c in categories:
+                category_dict[c.name] = c.dict()
+        elif type(categories) is dict:
+            category_dict = categories
+        elif type(categories) is Category:
+            category_dict[categories.name] = categories.dict()
+            
+        jsonstr = json.dumps(category_dict, indent = 4)
+        path = os.path.join(home_dir,filename)
+        with open(path,'w') as out:
+            out.write(jsonstr)
+            
+    except Exception as e:
+        print(e)
+
+
+def create_new_category():
+    sel = ''
+    print("Existing categories will simply be updated.")
+    name = input("Enter the name of the category\n(this will be used to name the folder): ")
+    if name=='':
+        print("\nNo category name entered. Aborting.")
+        exit(1)
+    elif category_exists(name):
+        category = load_category(name)
+    else:
+        category = Category(name)
+    while True:
+        print("\nEnter a keyword/phrase associated with this category. \nThe more descriptive the better ;)  ",end='')
+        kw = input()
+        if kw=='':
+            print("Keyword empty. Try typing something thats related to the category. ")
+            while True:
+                print("Do you want to try again (y,n)? {0}".format(sel),end='\r')
+                sel = getkey().lower()
+                if sel=='y' or  sel=='n':
+                    print("Do you want to try again (y,n)? {0}".format(sel),end='\r')
+                    break
+                elif sel==keys.BACKSPACE:
+                    sel=' '
+            if sel=='n':
+                break
+            sel=''
+        else:
+            category.add_keyword(kw)
+        while True:
+            print("Do you want to add another keyword (y,n)? {0}".format(sel),end='\r')
+            sel = getkey().lower()            
+            if sel=='y' or sel=='n':
+                print("Do you want to add another keyword (y,n)? {0}".format(sel),end='\r')
+                break
+            elif sel==keys.BACKSPACE:
+                sel=' '
+        if sel=='n':
+            break
+        sel=''
+    if len(category.keywords)!=0:
+        category.save()
+        print("\n\nCategories updated successfully. \nYou can now group files by category in a \nspecific directory using the command \n'sorta -d /path/to/dir -c'")    
+    else:
+        print()
+
+class FileType:
+    def __init__(self,folder,regex):
+        self.folder = folder
+        self.regex = regex
+
+    def match(self,filename):
+        for r in self.regex:
+            if re.search(r,filename):
+                return True
+        return False
+
+    def save(self,filename,parent_dir,group_dir):
+        source = os.path.join(parent_dir,filename)
+        group_dir = os.path.join(parent_dir,group_dir)
+        target = os.path.join(group_dir,self.folder)
+        destination = os.path.join(target,filename)
+        #make the group folder if it doesn't exist
+        if not os.path.exists(group_dir):
+            os.mkdir(group_dir)
+
+        if not os.path.exists(target):
+            os.mkdir(target)
+       
+         #move file
+        shutil.move(source,destination)
+
+class Group:
+    def __init__(self,filetypes,directory):
+        self.filetypes = filetypes
+        self.directory = directory
+
+def getfiles(directory):
+    files = []
+    li = os.listdir(directory)
+    for f in li:
+        if os.path.isfile(os.path.join(directory,f)):
+            files.append(f)
+    return files
+
+def cleanup(groups,directories):
+    for g in groups:
+        for d in directories:
+            files = getfiles(d)
+            for f in files:
+                for filetype in g.filetypes:
+                    if filetype.match(f):
+                        filetype.save(f,d,g.directory)
+                        break
+    #account for files without extensions(executables)
+    for d in directories:
+        files = getfiles(d)
+        target_folder = os.path.join(d,'Executables')
+        for f in files:
+            if '.' not in f:
+                if not os.path.exists(target_folder):
+                    os.mkdir(target_folder)
+                source = os.path.join(d,f)
+                destination = os.path.join(target_folder,f)
+                shutil.move(source,destination)
+
+
+def cleanup_by_category(categories,directories):
+    for d in directories:
+        files = getfiles(d)
+        for f in files:
+            for c in categories:
+                if c.match(f):
+                    c.addfile(f,d)
+                    break
+                    
+
+def main():
+    document_types = []
+    picture_types = []
+    audio_types = []
+    video_types = []
+    coding_types = []
+
+    pdf_ft = FileType('PDF',['\.pdf$'])
+    jpg_ft = FileType('JPG',['\.jpg$','\.jpeg$'])
+    mp3_ft = FileType('MP3',['\.mp3$'])
+    golang_ft = FileType('Golang',['\.go$'])
+    python_ft = FileType('Python',['\.py$'])
+    epub_ft = FileType('Epub(Ebooks)',['\.epub$'])
+    html_ft = FileType('HTML',['\.html$'])
+    json_ft = FileType('JSON',['\.json$'])
+    text_ft = FileType('Text',['\.txt$'])
+    mp4_ft = FileType('MP4',['\.mp4$'])
+    png_ft = FileType('PNG',['\.png$'])
+    webp_ft = FileType('WEBP',['\.webp$'])
+  
+   
+    document_types.append(pdf_ft)
+    picture_types.append(jpg_ft)
+    audio_types.append(mp3_ft)
+    document_types.append(epub_ft)
+    coding_types.append(python_ft)
+    coding_types.append(golang_ft)
+    coding_types.append(html_ft)
+    coding_types.append(json_ft)
+    document_types.append(text_ft)
+    video_types.append(mp4_ft)
+    picture_types.append(png_ft)
+    picture_types.append(webp_ft)    
+
+    document_group = Group(document_types,'Documents')
+    picture_group = Group(picture_types,'Pictures')
+    audio_group = Group(audio_types,'Audio')
+    video_group = Group(video_types,'Video')
+    coding_group = Group(coding_types,'Code')
+
+    groups = [document_group, picture_group, audio_group,video_group,coding_group]
+    directories = [downloads,desktop,documents]    
+    
+    parser = argparse.ArgumentParser(description="Sorta, organize your filesystem. Running sorta without arguments organizes your files in (documents,desktop, and downloads) by their filetype.")
+    parser.add_argument("-b","--background",help="Runs sorta indefinitely.",action="store_true")
+    parser.add_argument("-d","--directory",help="The directory you want to run sorta on.",metavar='')
+    parser.add_argument("-i","--interval",type=int,help="How frequently you want sorta to run, in minutes.",metavar='')
+    parser.add_argument("-c","--category",help="Sort files by category.",action="store_true")
+    parser.add_argument("-ac","--addcategory",help="Add or update an existing category to group files by.",action="store_true")
+    args = parser.parse_args()
+
+    if args.background:
+        print("Running sorty in the background.")
+        interval = 30
+        path = ''
+
+        if args.interval:
+            interval = args.interval
+        else:
+            print("Interval not set. Using default {0} minutes.".format(interval))
+
+        if args.directory:
+            if not os.path.exists(path):
+                print("That path does not exists. Aborting.")
+                exit(1)
+            else:
+                print(f'Cleaning up {path} every {interval} minutes.')
+                directories = [path]
+        else:
+            print("Cleaning general directories(downloads,documents,desktop) every {0} minutes.".format(interval))
+    
+        print("Press Ctrl+c to exit. . .")
+        try:        
+            while True:
+                print("Cleaning up. . .")
+                cleanup(groups,directories)
+                time.sleep(60*interval)
+        except KeyboardInterrupt:
+            print("Exitting.")
+        
+    elif args.directory:
+        if not os.path.exists(args.directory):
+            print("That path does not exists. Aborting.")
+            exit(1)
+        directories=[args.directory]
+        if args.category:
+            print(f'Organizing your files in {args.directory} by category.')
+            categories = load_categories()
+            cleanup_by_category(categories,directories)
+        else:
+            print(f'Organizing your files in {args.directory} by default attribute - filetype.')
+            cleanup(groups,directories)
+
+    elif args.addcategory:
+        create_new_category()
+    else:
+        if args.category:
+            print("Organizing your files in (documents,desktop,downloads) by category.")
+            categories = load_categories()
+            cleanup_by_category(categories,directories)
+        else:
+            print("Organizing your files in (documents,desktop,downloads) by default attribue - filetype.")
+            cleanup(groups,directories)
+
+if __name__=='__main__':
+    main()
+            
+            
+    
+    
