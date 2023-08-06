@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: xk_user
+Version: 0.0.1
+Summary: xing kuang SDK
+Home-page: http://test.com
+Author: zhanglei
+Author-email: test@gmail.com
+License: MIT Licence
+Description: eds sdk for python
+Platform: any
