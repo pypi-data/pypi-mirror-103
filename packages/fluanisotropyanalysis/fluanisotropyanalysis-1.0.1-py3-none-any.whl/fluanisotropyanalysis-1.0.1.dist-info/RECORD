@@ -1,0 +1,9 @@
+fluanisotropyanalysis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fluanisotropyanalysis/flu_ani_analysis.py,sha256=O4AYUC1CU98Y0XoHLfs1CHs8lPyzbxd_Fp4CSQI--rQ,114401
+tests/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tests/test_flu_ani_analysis.py,sha256=BWrLFvuaoEC-vDC1OdPCj7MdoC9oEE7_TA7c8kQWxE8,24959
+fluanisotropyanalysis-1.0.1.dist-info/LICENSE,sha256=y8SPsLcH2RY-tsX9nTa5Y9LZV2vSTwAjLupsGbfNaCI,1068
+fluanisotropyanalysis-1.0.1.dist-info/METADATA,sha256=3H04fT1yvx7cu7C9FSmmgEkpOSFcOHDoUv6cIElodyg,1692
+fluanisotropyanalysis-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fluanisotropyanalysis-1.0.1.dist-info/top_level.txt,sha256=sx1ruP9yoPCD_Je32B6deQ6oON2n7mBDCagIJni2noA,28
+fluanisotropyanalysis-1.0.1.dist-info/RECORD,,
