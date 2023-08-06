@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: WebGenericScraper
+Version: 0.0.14
+Summary: This is a generic web scraper fro scraping web page and execute some actions on top
+Home-page: https://github.com/idanp/WebGenericScraper
+Author: Idan Perez
+Author-email: kimpatz@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: WLO
+Requires-Dist: selenium
+
+file: README.md
+
+
