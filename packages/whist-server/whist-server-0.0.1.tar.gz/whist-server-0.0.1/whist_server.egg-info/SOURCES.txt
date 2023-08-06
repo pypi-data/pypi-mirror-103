@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+whist/__init__.py
+whist/server/__init__.py
+whist/server/api.py
+whist/server/main.py
+whist_server.egg-info/PKG-INFO
+whist_server.egg-info/SOURCES.txt
+whist_server.egg-info/dependency_links.txt
+whist_server.egg-info/requires.txt
+whist_server.egg-info/top_level.txt
