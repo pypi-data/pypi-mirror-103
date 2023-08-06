@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: xkpassgen
+Version: 1.0.6
+Summary: xkpassgen is now xkcd_pass
+Home-page: UNKNOWN
+License: UNKNOWN
+Description: # xkpassgen is now xkcd_pass
+        
+        This package has been renamed. Use `pip install xkcd_pass` instead.
+        
+        New package: https://pypi.org/project/xkcd_pass/
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown

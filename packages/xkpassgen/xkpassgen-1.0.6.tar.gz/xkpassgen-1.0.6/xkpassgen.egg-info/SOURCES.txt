@@ -1,0 +1,7 @@
+README.md
+setup.py
+xkpassgen.egg-info/PKG-INFO
+xkpassgen.egg-info/SOURCES.txt
+xkpassgen.egg-info/dependency_links.txt
+xkpassgen.egg-info/requires.txt
+xkpassgen.egg-info/top_level.txt
