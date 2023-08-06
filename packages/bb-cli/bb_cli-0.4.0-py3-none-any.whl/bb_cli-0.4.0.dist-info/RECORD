@@ -1,0 +1,11 @@
+bb/cmd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bb/cmd/auth.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bb/cmd/pr.py,sha256=SeaNH0S-BmarQwMsXlb2I7FgOOwpJujxyexgw07wxQM,9021
+bb/cmd/repo.py,sha256=toLC0DOW-h1YcwAQ4TYYJb-QlTAQnBfgENO9xRG8YDo,1033
+bb/config.py,sha256=8rMPbkFUCJwboo7MRVV1c6IBk27zo6EC9skaXvjxeko,667
+bb/main.py,sha256=Cqqg3k3n-8ra_Ow0CMo_uhoi-jQkyLHVLmiD_e5QMPA,171
+bb/utils.py,sha256=MUbl7kbP0LINUlr6EHBE05tYW04y7b1GR1AjbFvM6Ic,2043
+bb_cli-0.4.0.dist-info/entry_points.txt,sha256=AEzrezij0t6cTZ0sE4r9RFK08m3-UblAUTeVD3NcYEs,34
+bb_cli-0.4.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+bb_cli-0.4.0.dist-info/METADATA,sha256=KWxxcdp1QWKy_pNfSPpaOfQx08QZMCbxwT0H4L5FxNU,541
+bb_cli-0.4.0.dist-info/RECORD,,

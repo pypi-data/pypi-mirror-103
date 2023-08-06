@@ -1,0 +1,3 @@
+[console_scripts]
+bb=bb.main:app
+
