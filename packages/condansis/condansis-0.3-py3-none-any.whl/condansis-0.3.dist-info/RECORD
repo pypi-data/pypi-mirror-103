@@ -1,0 +1,12 @@
+condansis/__init__.py,sha256=w84cSXuYGUAqOsiKWr3VLjhaNpSzmPm15sj5Lg91b4Q,76
+condansis/_version.py,sha256=Cl7DWkrPP64Ofc2ILXnudFOdnCuKs2p0Pm7ykZOOPh4,19
+condansis/installer.py,sha256=uedxqqtHPyZnsSj8ha_cqQLCFMDarNX3Mu7_UOYy7LY,13924
+condansis/installer_template.nsi,sha256=8QcB1pcXn7OSJdttIg7FVVY0HQdl5GkITuhO6MQIOPg,8066
+condansis/sitecustomize.py,sha256=9Advp4PPgJb57o4jVCyylyVPscaDMpfc6M8YMbpB7Bk,627
+condansis/test_installer.py,sha256=QIRCawKWXROLOmavuus-5NT5hjJcxyVJBnD69enuH4Q,3956
+condansis/test_files/environment.yml,sha256=MqZ8BThLoogLwIFtSioOEi0cK_mc_adl5C4fiVdGC2U,91
+condansis-0.3.dist-info/LICENSE.txt,sha256=H2LP2-7enz7OXEKwhbJAgpJx-_EG8vGl37Oin9yOut4,1455
+condansis-0.3.dist-info/METADATA,sha256=A-aARATSBkjmgkXbhZQXpHGiYVwSn6X2vbjqiddMl7o,2293
+condansis-0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+condansis-0.3.dist-info/top_level.txt,sha256=maRUBK4MPH_eou9RLjV4gORUuFaz50_I40OV-6b6r3g,10
+condansis-0.3.dist-info/RECORD,,
