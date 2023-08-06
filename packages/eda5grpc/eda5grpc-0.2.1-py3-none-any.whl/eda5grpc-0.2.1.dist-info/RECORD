@@ -1,0 +1,14 @@
+eda5grpc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eda5grpc/client.py,sha256=G5GTtcLk-CrZcP-m4EFEFsKBwUm8Tg1yxfAlhgDc4Zg,986
+eda5grpc/client_test.py,sha256=pVi5BPtgdTIhx0_q6jksY6Ap34P03bByH9Tke5pYHJs,542
+eda5grpc/eda_games_pb2.py,sha256=YfBnAwBkKVT95SkfWUL-YyBL-KFqo6q5p_Xexz9nnsE,10090
+eda5grpc/eda_games_pb2_grpc.py,sha256=9EJcZ4aYJAmlHXDOuI-xUowKiVaEOAWICiQ8Ap9b9Bk,6931
+eda5grpc/game_state.py,sha256=PIdsRrUYJ7sC8pZ2Y6ODoJWEIbCaHPntWZ81RqyI-14,798
+eda5grpc/server.py,sha256=Sh3sOvFjLy6I21xSdMsjd8kx7t5ZVc17hTqnFYhPlXk,2645
+eda5grpc/server_test.py,sha256=DJLVrExwMsfqmbH2YdDRjrpsempigRB5gqnXMpkMrMM,903
+eda5grpc/utils.py,sha256=mVtnzxqqM0gV9hcWF4xZZw47uLYWJAnbJS0UCHLHFh8,277
+eda5grpc-0.2.1.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+eda5grpc-0.2.1.dist-info/METADATA,sha256=B82bbXdGJ8pDDnPW58MEp6RsuVs7LKeA9rTpxp9ZsTI,681
+eda5grpc-0.2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+eda5grpc-0.2.1.dist-info/top_level.txt,sha256=PQQ5A2nuCeOR8x6b0VtSorJV08r38JfRLs3XiQ4rfjM,9
+eda5grpc-0.2.1.dist-info/RECORD,,
