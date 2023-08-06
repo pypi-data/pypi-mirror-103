@@ -1,0 +1,7 @@
+[console_scripts]
+cli.py = yoda_powers.scripts.cli:main
+filter_mummer.py = yoda_powers.scripts.filter_mummer:main
+
+[yoda_powers]
+yoda_powers = __init__
+
