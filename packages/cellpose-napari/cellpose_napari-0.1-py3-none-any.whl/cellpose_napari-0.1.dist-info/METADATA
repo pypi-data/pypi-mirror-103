@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: cellpose-napari
+Version: 0.1
+Summary: a generalist algorithm for anatomical segmentation
+Home-page: https://github.com/carsen-stringer/cellpose-napari
+Author: Carsen Stringer
+Author-email: stringerc@janelia.hhmi.org
+License: BSD-3
+Requires-Dist: napari-plugin-engine (>=0.1.4)
+Requires-Dist: numpy
+Requires-Dist: cellpose
+Requires-Dist: imagecodecs
+
+# cellpose-napari
+
+

@@ -1,0 +1,16 @@
+cellpose_napari/__init__.py,sha256=xbLm7ropae3hRLUiC8MVJz7yEUKWIfz9KOTCOuB5J8w,227
+cellpose_napari/__main__.py,sha256=k1D3MalH4C3DY76qDCBpUiKUBd7jWHxR4Od80pA42UA,368
+cellpose_napari/_dock_widget.py,sha256=OH-5ewb3RamGMQqivY4D79JJXxml9Z5-keX47GzEvRg,15697
+cellpose_napari/_dock_widget_class.py,sha256=Fn5ktLiZhP6zrKVECMG5qgVxeyVkde4PnQcSlvvvn5U,8588
+cellpose_napari/_dock_widget_magic.py,sha256=30V6E6qifME9gqKCbs_i0k16VyXDjzn3p4R1OxoC3YQ,15114
+cellpose_napari/_dock_widget_magic2.py,sha256=roub3J01Co2nnf5bvpjJQ_eLv1Y7dafaqXAdrPmqLUw,15714
+cellpose_napari/_sample_data.py,sha256=mtwLVxmcHA1c-7s_wBct1IquEmg4fNqnKn1W5bE36c0,1343
+cellpose_napari/_version.py,sha256=Lklfgt9PYoi4No8pCJPdyZJnqpzsjnaX-gHO0kqrYKg,196
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_plugin.py,sha256=fxfQ3k5wRfOzcAnW74rgyAyu-H_gjUEQxpnKLmgcXmw,911
+cellpose_napari-0.1.dist-info/LICENSE,sha256=1VCGwv2BUTVirrffW8pKXFi8Ii6VVqDWOoXbOzRVnSE,1517
+cellpose_napari-0.1.dist-info/METADATA,sha256=S3yBaeVXGUujgFJXcI9jdPav6hMNfaTonI_OU9wa2hY,398
+cellpose_napari-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cellpose_napari-0.1.dist-info/entry_points.txt,sha256=7y4VoBcCsjcq1gpiUed_-AsiXdWPFdmvTASF-BZjaA0,51
+cellpose_napari-0.1.dist-info/top_level.txt,sha256=-sS5lCaKdnEbpYpD5-rySFE3pDXZk15e_LkxtCPks8o,22
+cellpose_napari-0.1.dist-info/RECORD,,
