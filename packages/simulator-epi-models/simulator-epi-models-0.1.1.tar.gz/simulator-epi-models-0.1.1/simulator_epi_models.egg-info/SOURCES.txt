@@ -1,0 +1,172 @@
+MANIFEST.in
+README.md
+setup.py
+epi_models/__init__.py
+epi_models/deterministic_compartmental_model.py
+epi_models/deterministic_compartmental_model_scenario.py
+epi_models/model.py
+epi_models/params.py
+epi_models/config/__init__.py
+epi_models/config/compartmental_model.py
+epi_models/config/epidemic_params.py
+epi_models/config/contact_matrices/Albania.csv
+epi_models/config/contact_matrices/Algeria.csv
+epi_models/config/contact_matrices/Andorra.csv
+epi_models/config/contact_matrices/Antigua and Barbuda.csv
+epi_models/config/contact_matrices/Argentina.csv
+epi_models/config/contact_matrices/Armenia.csv
+epi_models/config/contact_matrices/Australia.csv
+epi_models/config/contact_matrices/Austria.csv
+epi_models/config/contact_matrices/Azerbaijan.csv
+epi_models/config/contact_matrices/Bahamas.csv
+epi_models/config/contact_matrices/Bahrain.csv
+epi_models/config/contact_matrices/Bangladesh.csv
+epi_models/config/contact_matrices/Belarus.csv
+epi_models/config/contact_matrices/Belgium.csv
+epi_models/config/contact_matrices/Belize.csv
+epi_models/config/contact_matrices/Benin.csv
+epi_models/config/contact_matrices/Bhutan.csv
+epi_models/config/contact_matrices/Bolivia.csv
+epi_models/config/contact_matrices/Bosnia and Herzegovina.csv
+epi_models/config/contact_matrices/Botswana.csv
+epi_models/config/contact_matrices/Brazil.csv
+epi_models/config/contact_matrices/Brunei Darussalam.csv
+epi_models/config/contact_matrices/Bulgaria.csv
+epi_models/config/contact_matrices/Burkina Faso.csv
+epi_models/config/contact_matrices/Cabo Verde.csv
+epi_models/config/contact_matrices/Cambodia.csv
+epi_models/config/contact_matrices/Cameroon.csv
+epi_models/config/contact_matrices/Canada.csv
+epi_models/config/contact_matrices/Chile.csv
+epi_models/config/contact_matrices/China.csv
+epi_models/config/contact_matrices/Colombia.csv
+epi_models/config/contact_matrices/Congo.csv
+epi_models/config/contact_matrices/Costa Rica.csv
+epi_models/config/contact_matrices/Croatia.csv
+epi_models/config/contact_matrices/Cyprus.csv
+epi_models/config/contact_matrices/Czech Republic.csv
+epi_models/config/contact_matrices/Denmark.csv
+epi_models/config/contact_matrices/Dominican Republic.csv
+epi_models/config/contact_matrices/Ecuador.csv
+epi_models/config/contact_matrices/Egypt.csv
+epi_models/config/contact_matrices/El Salvador.csv
+epi_models/config/contact_matrices/Estonia.csv
+epi_models/config/contact_matrices/Ethiopia.csv
+epi_models/config/contact_matrices/Fiji.csv
+epi_models/config/contact_matrices/Finland.csv
+epi_models/config/contact_matrices/France.csv
+epi_models/config/contact_matrices/Georgia.csv
+epi_models/config/contact_matrices/Germany.csv
+epi_models/config/contact_matrices/Ghana.csv
+epi_models/config/contact_matrices/Greece.csv
+epi_models/config/contact_matrices/Guatemala.csv
+epi_models/config/contact_matrices/Guinea.csv
+epi_models/config/contact_matrices/Guyana.csv
+epi_models/config/contact_matrices/Haiti.csv
+epi_models/config/contact_matrices/Honduras.csv
+epi_models/config/contact_matrices/Hong Kong SAR, China.csv
+epi_models/config/contact_matrices/Hungary.csv
+epi_models/config/contact_matrices/Iceland.csv
+epi_models/config/contact_matrices/India.csv
+epi_models/config/contact_matrices/Indonesia.csv
+epi_models/config/contact_matrices/Iran (Islamic Republic of).csv
+epi_models/config/contact_matrices/Iran.csv
+epi_models/config/contact_matrices/Iraq.csv
+epi_models/config/contact_matrices/Ireland.csv
+epi_models/config/contact_matrices/Israel.csv
+epi_models/config/contact_matrices/Italy.csv
+epi_models/config/contact_matrices/Jamaica.csv
+epi_models/config/contact_matrices/Japan.csv
+epi_models/config/contact_matrices/Jordan.csv
+epi_models/config/contact_matrices/Kazakhstan.csv
+epi_models/config/contact_matrices/Kenya.csv
+epi_models/config/contact_matrices/Kiribati.csv
+epi_models/config/contact_matrices/Kuwait.csv
+epi_models/config/contact_matrices/Kyrgyzstan.csv
+epi_models/config/contact_matrices/Lao People's Democratic Republic.csv
+epi_models/config/contact_matrices/Latvia.csv
+epi_models/config/contact_matrices/Lebanon.csv
+epi_models/config/contact_matrices/Lesotho.csv
+epi_models/config/contact_matrices/Liberia.csv
+epi_models/config/contact_matrices/Lithuania.csv
+epi_models/config/contact_matrices/Luxembourg.csv
+epi_models/config/contact_matrices/Malaysia.csv
+epi_models/config/contact_matrices/Maldives.csv
+epi_models/config/contact_matrices/Malta.csv
+epi_models/config/contact_matrices/Mauritania.csv
+epi_models/config/contact_matrices/Mauritius.csv
+epi_models/config/contact_matrices/Mexico.csv
+epi_models/config/contact_matrices/Monaco.csv
+epi_models/config/contact_matrices/Mongolia.csv
+epi_models/config/contact_matrices/Montenegro.csv
+epi_models/config/contact_matrices/Morocco.csv
+epi_models/config/contact_matrices/Mozambique.csv
+epi_models/config/contact_matrices/Namibia.csv
+epi_models/config/contact_matrices/Nepal.csv
+epi_models/config/contact_matrices/Netherlands.csv
+epi_models/config/contact_matrices/New Zealand.csv
+epi_models/config/contact_matrices/Nicaragua.csv
+epi_models/config/contact_matrices/Niger.csv
+epi_models/config/contact_matrices/Nigeria.csv
+epi_models/config/contact_matrices/Oman.csv
+epi_models/config/contact_matrices/Pakistan.csv
+epi_models/config/contact_matrices/Panama.csv
+epi_models/config/contact_matrices/Paraguay.csv
+epi_models/config/contact_matrices/Peru.csv
+epi_models/config/contact_matrices/Philippines.csv
+epi_models/config/contact_matrices/Poland.csv
+epi_models/config/contact_matrices/Portugal.csv
+epi_models/config/contact_matrices/Qatar.csv
+epi_models/config/contact_matrices/Republic of Korea.csv
+epi_models/config/contact_matrices/Romania.csv
+epi_models/config/contact_matrices/Russian Federation.csv
+epi_models/config/contact_matrices/Rwanda.csv
+epi_models/config/contact_matrices/Saint Lucia.csv
+epi_models/config/contact_matrices/Samoa.csv
+epi_models/config/contact_matrices/Sao Tome and Principe .csv
+epi_models/config/contact_matrices/Sao Tome and Principe.csv
+epi_models/config/contact_matrices/Saudi Arabia.csv
+epi_models/config/contact_matrices/Senegal.csv
+epi_models/config/contact_matrices/Serbia.csv
+epi_models/config/contact_matrices/Seychelles.csv
+epi_models/config/contact_matrices/Sierra Leone.csv
+epi_models/config/contact_matrices/Singapore.csv
+epi_models/config/contact_matrices/Slovakia.csv
+epi_models/config/contact_matrices/Slovenia.csv
+epi_models/config/contact_matrices/Solomon Islands.csv
+epi_models/config/contact_matrices/South Africa.csv
+epi_models/config/contact_matrices/Spain.csv
+epi_models/config/contact_matrices/Sri Lanka.csv
+epi_models/config/contact_matrices/Suriname.csv
+epi_models/config/contact_matrices/Sweden.csv
+epi_models/config/contact_matrices/Switzerland.csv
+epi_models/config/contact_matrices/Syrian Arab Republic.csv
+epi_models/config/contact_matrices/TFYR of Macedonia.csv
+epi_models/config/contact_matrices/Taiwan.csv
+epi_models/config/contact_matrices/Tajikistan.csv
+epi_models/config/contact_matrices/Thailand.csv
+epi_models/config/contact_matrices/Timor-Leste.csv
+epi_models/config/contact_matrices/Tonga.csv
+epi_models/config/contact_matrices/Tunisia.csv
+epi_models/config/contact_matrices/Turkey.csv
+epi_models/config/contact_matrices/Uganda.csv
+epi_models/config/contact_matrices/Ukraine.csv
+epi_models/config/contact_matrices/United Arab Emirates.csv
+epi_models/config/contact_matrices/United Kingdom of Great Britain.csv
+epi_models/config/contact_matrices/United Republic of Tanzania.csv
+epi_models/config/contact_matrices/United States of America.csv
+epi_models/config/contact_matrices/Uruguay.csv
+epi_models/config/contact_matrices/Uzbekistan.csv
+epi_models/config/contact_matrices/Vanuatu.csv
+epi_models/config/contact_matrices/Venezuela (Bolivarian Republic).csv
+epi_models/config/contact_matrices/Venezuela.csv
+epi_models/config/contact_matrices/Vietnam.csv
+epi_models/config/contact_matrices/Yemen.csv
+epi_models/config/contact_matrices/Zambia.csv
+epi_models/config/contact_matrices/Zimbabwe.csv
+simulator_epi_models.egg-info/PKG-INFO
+simulator_epi_models.egg-info/SOURCES.txt
+simulator_epi_models.egg-info/dependency_links.txt
+simulator_epi_models.egg-info/not-zip-safe
+simulator_epi_models.egg-info/requires.txt
+simulator_epi_models.egg-info/top_level.txt
