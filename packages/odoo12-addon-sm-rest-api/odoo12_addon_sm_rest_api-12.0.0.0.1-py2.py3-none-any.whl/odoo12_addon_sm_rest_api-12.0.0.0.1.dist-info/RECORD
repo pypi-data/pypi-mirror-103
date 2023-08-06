@@ -1,0 +1,8 @@
+odoo/addons/sm_rest_api/__init__.py,sha256=Z0H-7tnW3JmMNtRFk_MxwVzutPYWpm0Ljnk9Fb4hEoc,45
+odoo/addons/sm_rest_api/__manifest__.py,sha256=BVa7tz2QsiSkU-qAz0rkS8pXQQlKeThGCX_OqVlYsSA,600
+odoo/addons/sm_rest_api/models/__init__.py,sha256=Ax4qLxdb9ATk05MF7cSQ0BdpYCpGVYFy9n4U4zODf9o,46
+odoo/addons/sm_rest_api/models/models.py,sha256=VXzysi2bEorHKcxh3xqpM8i5zaDX7zPyFO4XgYOFBpw,1206
+odoo12_addon_sm_rest_api-12.0.0.0.1.dist-info/METADATA,sha256=2vQsECcIfvbG9iKLGhbJXTcDqmfGLRzHOLSssypC0T8,369
+odoo12_addon_sm_rest_api-12.0.0.0.1.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+odoo12_addon_sm_rest_api-12.0.0.0.1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo12_addon_sm_rest_api-12.0.0.0.1.dist-info/RECORD,,
