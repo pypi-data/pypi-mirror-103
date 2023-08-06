@@ -1,0 +1,9 @@
+exclude *.DS_STORE
+
+include README.md
+include LICENSE
+include CONTRIBUTORS.md
+
+recursive-include docs/*
+
+recursive-include examples/*

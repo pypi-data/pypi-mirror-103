@@ -1,0 +1,207 @@
+Metadata-Version: 2.1
+Name: avents
+Version: 0.8.1
+Summary: An asynchronous event library
+Home-page: https://gitlab.cloud-technology.io/Open-Source/async-events
+Author: Price Hiller
+Author-email: philler3138@gmail.com
+License: BSD 3-Clause
+Project-URL: Documentation, https://gitlab.cloud-technology.io/Open-Source/async-events/docs/
+Project-URL: Tracker, https://gitlab.cloud-technology.io/Open-Source/async-events/issues/
+Description: ```yaml
+        Author: Price Hiller
+        Contributors:
+            - Jacob B. Sanders
+        Description: A python library for emitting and reading events asynchronously.
+        Type: Library
+        License: BSD 3-Clause License
+        Copyright: 2021, Price Hiller
+        ```
+        
+        # Async Events
+        
+        A(n) OOP asynchronous Python library capable of emitting custom events based on string matching.
+        
+        ## Table Of Contents
+        
+        - [Async Events](#async-events)
+            - [Table Of Contents](#table-of-contents)
+            - [Installation](#installation)
+            - [Usage](#usage)
+                - [Basic Usage](#basic-usage)
+                - [Advanced Usage](#advanced-usage)
+                    - [Event Types](#event-types)
+                    - [Custom Event Listeners](#custom-event-listeners)
+        
+        ## Installation
+        - From pip
+        ```bash
+        python3 -m pip install avents
+        ```
+        
+        ## Installation from Source ##
+        
+        ```bash
+        python[3] setup.py install
+        ```
+        
+        ## Usage
+        
+        ### Basic Usage
+        
+        Using the `listen` decorator you can define a function to listen for an event like so and attach a parser for the events:
+        ```python
+        from avents import listen # the listener that matches for a string via `listen("some string")`
+        from avents import Event # an event object defining a name of the event and the event content
+        from avents import parse # the parser required to emit events via `await parse(Event("some event", "event content")
+        
+        # The listener
+        @listen("event", "another event") # A listener can listen to multiple events
+        async def example_event_function(event: Event):
+            print(f"Received event: \"{event.name}\", with content: \"{event.content}\"")
+        
+        # The parser
+        async def parser():
+            # The actual parsing of an event below
+            await parse(Event(name="event", content="example event content"))
+            await parse(Event(name="another event", content="another event for the same handler"))
+        ```
+        
+        A full, runnable, example:
+        
+        ```python
+        import asyncio # Required to run the application
+        
+        # avents imports
+        from avents import listen # the listener that matches for a string via `listen("some string")`
+        from avents import Event # an event object defining a name of the event and the event content
+        from avents import parse # the parser required to emit events via `await parse(Event("some event", "event content")
+        
+        # The listener
+        @listen("event")
+        async def your_event(event: Event):
+            print(f"Received event: \"{event.name}\", with content: \"{event.content}\"")
+        
+        async def main():
+            # The actual parsing of an event below
+            await parse(Event(name="event", content="this is some event content"))
+        
+        
+        if __name__ == "__main__":
+            loop = asyncio.get_event_loop()
+            loop.run_until_complete(main())
+        ```
+        
+        ### Advanced Usage
+        #### Event Types
+        Instead of using raw strings in the `listen` decorator, for larger projects it may become much more practical to use a
+        class container of events to listen for.
+        
+        Avents provides a base event type class to inherit from, that being `BaseEventType` which is an enum object.
+        
+        To define event type enums inherit from the said base class:
+        
+        ```python
+        from avents import BaseEventType
+        
+        class CustomEventType(BaseEventType):
+            SOME_EVENT: str = "an event"
+        ```
+        
+        This can then be used in conjunction with the `listen` decorator to maintain consistency throughout a larger project
+        like so:
+        
+        ```python
+        from avents import BaseEventType
+        from avents import listen
+        from avents import Event
+        
+        class CustomEventType(BaseEventType):
+            SOME_EVENT: str = "an event"
+        
+        @listen(CustomEventType.SOME_EVENT)
+        async def some_event(event: Event):
+            print(event)
+        ```
+        
+        #### Custom Event Listeners
+        In the scenario in which you may want to parse a base event and then pass it to further sub event parsing creating a 
+        custom event listener can save quite the headache.
+        
+        In a basic use case we only used the `EventListener` as provided to us by avents which is exposed by `listen` and 
+        `parse` in more simplistic use cases.
+        
+        With the custom listener inheriting the base `EventListener` exposes custom listening:
+        
+        ```python
+        from avents import EventListener
+        
+        class CustomEventListener(EventListener):
+            ...
+        ```
+        
+        Or you can include a constructor as well:
+        
+        ```python
+        from avents import EventListener
+        
+        class CustomEventListener(EventListener):
+            
+            def __init__(self):
+                super().__init__()
+        ```
+        
+        Once a custom event listener has been created the `listen` and `parse` methods are immediately available:
+        
+        ```python
+        from avents import EventListener
+        from avents import Event
+        
+        class CustomEventListener(EventListener):
+            ...
+        
+        async def example_event_emitter():
+            for i in range(2):
+                await CustomEventListener.parse(Event(name=str(i), content=i))
+        
+        @CustomEventListener.listen("0", "1", "2") # Listen() can take multiple events to listen for
+        async def listen_for_one(event: Event):
+            print(event)
+        ```
+        
+        It can be extended further by incorporating the `EventListener` class as the base event handler in the following
+        pattern:
+        
+        ```python
+        from avents import EventListener
+        from avents import Event
+        
+        class CustomEventListener(EventListener):
+            ...
+        
+        async def example_event_emitter():
+            for i in range(2):
+                await EventListener.parse(Event(name=str(i), content=i))
+        
+        @EventListener.listen("0")      
+        async def base_event_handler(event: Event):
+            await CustomEventListener.parse(Event(name=event.content + 1, 
+                                                  content="We incremented to generate a design pattern")
+                                            )
+        
+        @CustomEventListener.listen("1")
+        async def listen_for_one(event: Event):
+            print(event)
+        ```
+        
+        Notice that we use the base `EventListener` for the initial parsing of an emitted event by `example_event_emitter`
+        which will then be passed to the `base_event_handler` when an event of name `0` is emitted which then does subparsing
+        for the `CustomEventListener` class.
+        
+        This can be extended to create entire command structures or other such hierarchical structures.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
