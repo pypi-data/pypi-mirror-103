@@ -1,0 +1,10 @@
+coqui_stt_ctcdecoder/__init__.py,sha256=NBb6rDWJ_7jC8QceiuAGXmNqzyTpFM92axU0EE2IUmw,9492
+coqui_stt_ctcdecoder/_swigwrapper.cpython-36m-darwin.so,sha256=2D-CXkZgDZWc8t-iqYnarc8ZiE9K84qpJfXyQTE5eLE,3339904
+coqui_stt_ctcdecoder/swigwrapper.py,sha256=9l_uZCPo7nd0Ih5kE7QA7RcHRogsql3L95Mv7fWqjj4,27368
+coqui_stt_ctcdecoder-0.10.0a5.dist-info/COPYING,sha256=isrDXFkSVDyKtDpTuGa7KqZJr2ZTQyEd9NwOn9v0RlU,402
+coqui_stt_ctcdecoder-0.10.0a5.dist-info/LICENSE.paddlepaddle,sha256=4gg7gGIkh71vzcj8eB3Df3_2My1qgq8dpmBkpU4NwaU,11380
+coqui_stt_ctcdecoder-0.10.0a5.dist-info/LICENSE.parlance,sha256=C3BUrZ9M16KR9EBQ0haxRrXji9Y6HgmJwInKemkPxLw,1112
+coqui_stt_ctcdecoder-0.10.0a5.dist-info/METADATA,sha256=8vvlqHuDC2uq1Fnuin7U5s3vAX6nVh7l6FPKduKHV2w,215
+coqui_stt_ctcdecoder-0.10.0a5.dist-info/WHEEL,sha256=rN-COMjwDiVWmTcrYAElRkvxoNnzEI4xhJ2z6VJa86c,110
+coqui_stt_ctcdecoder-0.10.0a5.dist-info/top_level.txt,sha256=td_AfbOj9SFqzgd33WMaX1FJ5rqPndphVRywSkUFUPw,21
+coqui_stt_ctcdecoder-0.10.0a5.dist-info/RECORD,,
