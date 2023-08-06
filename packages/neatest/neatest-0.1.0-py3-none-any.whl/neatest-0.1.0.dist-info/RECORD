@@ -1,0 +1,12 @@
+neatest/__init__.py,sha256=vdh8fGVda51sXuARvNmDWCauFbgh6Stl3jZSKaNClZc,155
+neatest/__main__.py,sha256=rHINSVtuIm2cXXha4t0vgmJ31VaWBwcWeFh5kFWtJJg,88
+neatest/constants.py,sha256=KWWSudM20VSAg3oB2wZyuocjl7xP2C4VGY1vtI31u2M,101
+neatest/neatest.py,sha256=OlPveHI-d93iXbyf5yJunWnBZZH0Pebf8GUvQfJ1jeQ,9815
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_unit.py,sha256=nDwd4zQLDEOdqfPsIbI8RWlURv5cS_z4V2rLFz9TeyU,2145
+neatest-0.1.0.dist-info/LICENSE,sha256=WRDtYJNLZFEEPBkjHciTZSYMGVHO81rmwYC2azmbMzA,1091
+neatest-0.1.0.dist-info/METADATA,sha256=xoKlP9_vt0ZVTRdtKZ4CqS6QuN1AGOY_HjcKd5XJ36o,4197
+neatest-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+neatest-0.1.0.dist-info/entry_points.txt,sha256=mSvYouD4Pg46sXhM8n5qv3OCVyMuKyrnKhyxcwNoFBM,54
+neatest-0.1.0.dist-info/top_level.txt,sha256=oRaTJkyn31zvULlpL5zY6nibQX6GpM3DXU4YpxUDxJw,14
+neatest-0.1.0.dist-info/RECORD,,
