@@ -1,0 +1,13 @@
+msprites/__init__.py,sha256=hRmiueZfzN_jKtFMFee2Tf4NZoZ24zlCf-3DnSYo2Mg,181
+msprites/command.py,sha256=I78WKB_QuSTXE1USLj32gMpCzt7lvPJzYJdJCjDcSfM,518
+msprites/constants.py,sha256=7N1N2rn5duBt98j-mX5yHBAeQ6QI9LBFcz1mr8G9BPQ,459
+msprites/ffmpeg_thumbnails.py,sha256=Yzp7kyd5mtCiTtTVW6tTCMmMdg-cu7T-WoyMI3aphKI,1306
+msprites/montage_sprites.py,sha256=Ues0zv7DUNrZNzoFDJ73oud_Y0N37S8V1nMNmsqdONU,1903
+msprites/settings.py,sha256=PoxtOWFeejkUpCH1-d4SMnGB12oWX2RfYP-K5s2Bk18,644
+msprites/temp_file.py,sha256=YC7ufFNCTYMzw6_MFBU2FR6JggUD-ONqwMjO4G73Tiw,122
+msprites/webvtt.py,sha256=G_ZPvSO786GUkBT5auNHZp3ANJwuHfyROia7LWYswsY,3277
+msprites-1.0.8.dist-info/LICENSE,sha256=_xuMWXpLmJzFAJNl1GffUijgKQYNRlV_dMg9DVVFXpY,1073
+msprites-1.0.8.dist-info/METADATA,sha256=UbviJnKcJCeXqrsg0JWuB_YWVX4t2xcTRkia-QT6NUY,1564
+msprites-1.0.8.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+msprites-1.0.8.dist-info/top_level.txt,sha256=9fBlmG7zlVVNtfppPMxENLOegSW6HCISO1XnaBpVz1A,9
+msprites-1.0.8.dist-info/RECORD,,
