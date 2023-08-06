@@ -1,0 +1,13 @@
+README.md
+setup.py
+libgenparser/__init__.py
+libgenparser/__main__.py
+libgenparser/parser.py
+libgenparser/required_data.py
+libgenparser.egg-info/PKG-INFO
+libgenparser.egg-info/SOURCES.txt
+libgenparser.egg-info/dependency_links.txt
+libgenparser.egg-info/requires.txt
+libgenparser.egg-info/top_level.txt
+libgenparser/__future__/__init__.py
+libgenparser/__future__/parser.py
