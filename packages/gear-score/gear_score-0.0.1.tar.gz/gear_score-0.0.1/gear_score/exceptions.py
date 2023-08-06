@@ -1,0 +1,2 @@
+class ItemObtainingFailed(Exception):
+    pass

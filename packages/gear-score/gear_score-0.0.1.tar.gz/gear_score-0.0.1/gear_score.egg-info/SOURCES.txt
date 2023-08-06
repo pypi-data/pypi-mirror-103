@@ -1,0 +1,16 @@
+README.md
+setup.py
+gear_score/__init__.py
+gear_score/coefficients.py
+gear_score/config.py
+gear_score/db.py
+gear_score/enums.py
+gear_score/exceptions.py
+gear_score/getters.py
+gear_score/models.py
+gear_score/utils.py
+gear_score.egg-info/PKG-INFO
+gear_score.egg-info/SOURCES.txt
+gear_score.egg-info/dependency_links.txt
+gear_score.egg-info/requires.txt
+gear_score.egg-info/top_level.txt
