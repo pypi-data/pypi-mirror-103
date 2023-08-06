@@ -1,0 +1,4 @@
+flask-jwt-extended
+celery
+flask
+flask-mail
