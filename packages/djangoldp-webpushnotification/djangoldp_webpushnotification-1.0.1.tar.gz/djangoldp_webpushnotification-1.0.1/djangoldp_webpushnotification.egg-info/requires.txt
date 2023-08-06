@@ -1,0 +1,10 @@
+djangoldp~=2.1
+djangoldp_account~=2.1
+ecdsa~=0.16.1
+django-webpush~=0.3
+
+[dev]
+factory_boy>=2.11.0
+
+[include_package_data]
+True

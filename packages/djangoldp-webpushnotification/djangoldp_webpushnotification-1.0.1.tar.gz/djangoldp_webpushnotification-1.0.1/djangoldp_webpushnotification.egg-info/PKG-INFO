@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: djangoldp-webpushnotification
+Version: 1.0.1
+Summary: DjangoLDP web push notifications package
+Home-page: https://git.autonomic.zone/autonomic-cooperative/djangoldp-webpushnotification
+Author: Autonomic Co-operative
+Author-email: helo@autonomic.zone
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: include_package_data
+Provides-Extra: dev
