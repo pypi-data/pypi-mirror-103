@@ -1,0 +1,9 @@
+CHANGELOG.md,sha256=urKlgTxn52Q77fScIC-XM8wvg6HYpbrA48u4rIWteX8,375
+LICENSE,sha256=6XS1M2N8dbYiKM2gKd1ZcCQYFW0cstvG452-teaK3u4,1073
+whiteless/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whiteless/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whiteless/templatetags/whiteless.py,sha256=dnSe3cUti_M7nWISq-Q4C9tCj4gRtge5fQYzBLKsT2U,4476
+django_whiteless-1.0.0.dist-info/LICENSE,sha256=6XS1M2N8dbYiKM2gKd1ZcCQYFW0cstvG452-teaK3u4,1073
+django_whiteless-1.0.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+django_whiteless-1.0.0.dist-info/METADATA,sha256=JEAY-7zGHuarZsGxDTWvd5S18GOyYHQtNxZwVHQGmJk,3141
+django_whiteless-1.0.0.dist-info/RECORD,,
