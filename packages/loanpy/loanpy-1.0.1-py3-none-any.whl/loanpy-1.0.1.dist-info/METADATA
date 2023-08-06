@@ -1,0 +1,120 @@
+Metadata-Version: 2.1
+Name: loanpy
+Version: 1.0.1
+Summary: Python framework for detecting old loanwords
+Home-page: UNKNOWN
+Author: Viktor Martinović
+Author-email: viktor.gmx@gmx.at
+License: UNKNOWN
+Project-URL: Documentation, https://martino-vic.github.io/loanpy/index.html
+Project-URL: Citation, https://zenodo.org/record/4716940#.YISSF5D7SLQ
+Project-URL: Git, https://github.com/martino-vic/loanpy
+Project-URL: Twitter, https://twitter.com/martino_vic
+Keywords: historical computational linguistics,automated borrowing-detection,loanwords,language contact,Hungarian,Gothic,Uralistics
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Hungarian
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: Academic Free License (AFL)
+Classifier: Topic :: Database
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+Requires-Dist: et-xmlfile (==1.0.1)
+Requires-Dist: gensim (==4.0.1)
+Requires-Dist: ipatok (==0.2.0)
+Requires-Dist: numpy (==1.20.2)
+Requires-Dist: openpyxl (==3.0.7)
+Requires-Dist: pandas (==1.2.4)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: python-Levenshtein (==0.12.2)
+Requires-Dist: pytz (==2021.1)
+Requires-Dist: scipy (==1.6.2)
+Requires-Dist: six (==1.15.0)
+Requires-Dist: smart-open (==5.0.0)
+
+============
+Installation
+============
+
+::
+
+    $ python -m pip install loanpy
+
+
+================
+Documentation
+================
+
+
+.. image:: https://raw.githubusercontent.com/martino-vic/loanpy/master/white_logo_dark_background.jpg
+   :target: https://martino-vic.github.io/loanpy/index.html
+
+
+====================
+Citation
+====================
+
+.. image:: https://zenodo.org/badge/259611202.svg
+   :target: https://zenodo.org/badge/latestdoi/259611202
+
+============
+Description
+============
+
+loanpy is a toolkit for historical linguists.
+It extracts sound changes from an etymological dictionary.
+It reconstructs hypothetical roots of modern L1 words.
+It creates hypothetical adaptions of L2 words into proto-L1.
+It searches for potential loanwords by first finding phonetic matches
+and then calculating their semantic similarity.
+
+
+Data Sources
+~~~~~~~~~~~~~~~~~~~~~~~
+
+- **dfhun_zaicz_backup.csv**: data frame based on the `Hungarian etymological dictionary (Zaicz 2006) <https://regi.tankonyvtar.hu/hu/tartalom/tinta/TAMOP-4_2_5-09_Etimologiai_szotar/adatok.html>`__
+
+- **dfgot_wikiling_backup.csv**: data frame based on `Wikiling <https://koeblergerhard.de/wikiling/?f=got>`__
+
+- **dfgot_wiktionary_backup.csv**: data frame based on `Wiktionary <https://en.wiktionary.org/wiki/Category:Gothic_lemmas>`__
+
+- **dfuralonet.csv**: data frame based on `Uralonet <http://uralonet.nytud.hu>`__
+
+- **substi.csv**: Sound substitutions based on `Information-theoretic causal inference of lexical flow (Dellert 2017)  <https://langsci-press.org/catalog/book/233>`__
+
+- **wordvectornames.xlsx**: Names of pretrained word vector models from `gensim-data  <https://github.com/RaRe-Technologies/gensim-data>`__
+
+
+Dependencies
+~~~~~~~~~~~~~~~~~~~
+
+- `gensim  <https://pypi.org/project/gensim/>`__
+
+- `ipatok  <https://pypi.org/project/ipatok/>`__
+
+- `python-Levenshtein <https://pypi.org/project/python-Levenshtein>`__
+
+- `pandas <https://pypi.org/project/pandas/>`__
+
+- see also requirements.txt
+
+
+License
+~~~~~~~~~~~~~~~~
+
+Academic Free License (AFL)
+
+
+
+=======
+Git
+=======
+
+.. image:: https://raw.githubusercontent.com/martino-vic/loanpy/master/Octocat.png
+   :target: https://github.com/martino-vic/loanpy
+   :scale: 30%
+
