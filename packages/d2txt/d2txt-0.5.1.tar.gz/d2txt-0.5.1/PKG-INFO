@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: d2txt
+Version: 0.5.1
+Summary: Parses Diablo II's TXT files and converts them to TOML files.
+Home-page: https://github.com/pastelmind/d2txt
+Author: pastelmind
+Author-email: keepyourhonor@gmail.com
