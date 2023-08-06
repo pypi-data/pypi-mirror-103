@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: elmax
+Version: 0.1.2
+Summary: Python client for the Elmax Cloud services
+Home-page: https://github.com/home-assistant-ecosystem/python-elmax
+License: Apache-2.0
+Keywords: iot,cloud,home-assistant
+Author: Fabian Affolter
+Author-email: fabian@affolter-engineering.ch
+Requires-Python: >=3.7.0,<4.0.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Home Automation
+Requires-Dist: httpx (>=0.18,<0.19)
+Requires-Dist: yarl (>=1.6,<2.0)
+Project-URL: Documentation, https://github.com/home-assistant-ecosystem/python-elmax
+Project-URL: Repository, https://github.com/home-assistant-ecosystem/python-elmax
+Description-Content-Type: text/markdown
+
+# Python Elmax Cloud client
+
+Asynchronous Python API client for interacting with the Elmax Cloud services.
+
+This module is not official, developed, supported or endorsed by Elmax.
+For questions and other inquiries, use the issue tracker in this repo please.
+
+## Installation
+
+The package is available in the [Python Package Index](https://pypi.python.org/).
+
+```bash
+$ pip3 install elmax --user
+```
+
+For Nix or NixOS users is a package available. Keep in mind that the lastest
+releases might only be present in the `unstable` channel.
+
+```bash
+$ nix-env -iA nixos.python38Packages.elmax
+```
+
+## Usage
+
+For details about the usage please check the `examples.py` file.
+
+## License
+
+This project is licensed under ASL 2, for more details check LICENSE.
+
