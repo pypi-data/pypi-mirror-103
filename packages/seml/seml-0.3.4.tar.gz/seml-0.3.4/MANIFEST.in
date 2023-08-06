@@ -1,0 +1,2 @@
+include seml/slurm_template.sh
+include seml/jupyter_template.sh
