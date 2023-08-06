@@ -1,0 +1,8 @@
+redistq/__init__.py,sha256=2NGZRLCLagbx3W7-Fk2cSn0t1t_Yg3GtCncOCDfy_xA,48
+redistq/task_queue.py,sha256=TQ6EK0D9s6BJb1SdQWKMvEblqjQmuhXvg3DdHgbgwrY,13201
+redistq/version.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+redis_tq-0.0.3.dist-info/LICENSE,sha256=XCGx5Vn_pkmtGmgpW2472PLGnFI9sxGWcmeLQpDqrW0,1079
+redis_tq-0.0.3.dist-info/METADATA,sha256=iYx-TANlotZf4VZoN04PFyrSfqy_GoZZ9sigvMlVoJw,733
+redis_tq-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+redis_tq-0.0.3.dist-info/top_level.txt,sha256=2r8rV-buyAmM_BB6svnm0np_6x_Z-CNuOIYzqf8JxAY,8
+redis_tq-0.0.3.dist-info/RECORD,,
