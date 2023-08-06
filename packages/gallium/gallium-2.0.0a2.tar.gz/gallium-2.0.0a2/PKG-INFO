@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: gallium
+Version: 2.0.0a2
+Summary: A micro CLI development framework
+Home-page: https://github.com/shiroyuki/gallium
+Author: Juti Noppornpitak
+Author-email: juti_n@yahoo.co.jp
+License: MIT
+Description: # Gallium - A Collection of Tools for Python Application Development
+        
+        > For Gallium 1.x, see the `v1` branch.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
