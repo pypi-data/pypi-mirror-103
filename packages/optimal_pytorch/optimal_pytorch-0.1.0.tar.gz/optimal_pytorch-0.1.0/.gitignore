@@ -1,0 +1,13 @@
+optimal_pytorch.egg-info/
+__pycache__/
+Data/MNIST/
+examples/MNIST/data
+examples/MNIST/runs
+examples/grid_search/tune_results
+.DS_Store
+.vscode
+.tox
+.coverage
+.pytest_cache/
+tests/.coverage
+.mypy_cache/

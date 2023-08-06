@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: optimal_pytorch
+Version: 0.1.0
+Summary: :mod:`optimal_pytorch` is a package implementing various coin-betting algorithms,
+Home-page: https://github.com/bremen79/optimal-pytorch/
+Author: Nicolò Campolongo, Vibhu Bhatia, Zhenxun Zhuang
+Author-email: nico.campolongo@gmail.com
