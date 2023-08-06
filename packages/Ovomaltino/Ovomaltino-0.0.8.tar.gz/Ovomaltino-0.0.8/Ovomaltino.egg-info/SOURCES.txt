@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+Ovomaltino.egg-info/PKG-INFO
+Ovomaltino.egg-info/SOURCES.txt
+Ovomaltino.egg-info/dependency_links.txt
+Ovomaltino.egg-info/requires.txt
+Ovomaltino.egg-info/top_level.txt
+ovomaltino/__init__.py
+ovomaltino/ovomaltino.py
