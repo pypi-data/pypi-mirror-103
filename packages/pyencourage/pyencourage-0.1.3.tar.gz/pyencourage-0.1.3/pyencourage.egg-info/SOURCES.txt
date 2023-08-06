@@ -1,0 +1,16 @@
+LICENCE.txt
+MANIFEST.in
+README.rst
+setup.py
+pyencourage/__init__.py
+pyencourage/encourage_en.py
+pyencourage/pyencourage.py
+pyencourage.egg-info/PKG-INFO
+pyencourage.egg-info/SOURCES.txt
+pyencourage.egg-info/dependency_links.txt
+pyencourage.egg-info/entry_points.txt
+pyencourage.egg-info/requires.txt
+pyencourage.egg-info/top_level.txt
+pyencouragecli/__init__.py
+pyencouragecli/pyencourage.py
+pyencouragecli/pyencouragement.py
