@@ -1,0 +1,12 @@
+Release/_impl.cp37-win_amd64.exp,sha256=7e-8f0Y8NJBqtn0CUx0Wp5VbQM-rfmpx_YHE1B9uzdQ,737
+Release/_impl.cp37-win_amd64.lib,sha256=4E8tFElVJvTGh1H82GBlOA6r5XDbNPD2wclXcw05fuw,1964
+stt/__init__.py,sha256=iT9rcKFEje3UL8BVMcpQ9K-LW-gkmXLwm-0jDknDpsQ,12862
+stt/_impl.cp37-win_amd64.pyd,sha256=VoUnVBOmS2IsVHdVu0QCcKyOfrOFitsdhUEvadxe6Ik,75264
+stt/client.py,sha256=OIGzF8Zo-vaM5C7EiMlJycFEpo1rgQx2CbKfo2yiHlY,6782
+stt/impl.py,sha256=7nx1D04p8biiiZHbE4fSa-2iv-wJ8KSRSn2Kj-ILRKc,7409
+stt/lib/libstt.so,sha256=d97EvYehfptvGKF9pvg5PSpq0aCvBlMOgHGGxw0JItI,2501120
+stt_tflite-0.10.0a5.dist-info/METADATA,sha256=snI6GNp9JSZWzpri5XxWrAOIQ8GRKiWbtpv2TBHmqiM,1346
+stt_tflite-0.10.0a5.dist-info/WHEEL,sha256=uaZe_9gV-4T_d4AskuIQkCgcY8wMc0UXsVFnf0_mBGs,106
+stt_tflite-0.10.0a5.dist-info/entry_points.txt,sha256=-RJKAhqFH3le0allDtX9BNVyOHyAXMbyweoEXUinoRI,41
+stt_tflite-0.10.0a5.dist-info/top_level.txt,sha256=U36suN9i5BZ2UbKj5dzgbpHmkIEAvyge7wRwJVB24jk,4
+stt_tflite-0.10.0a5.dist-info/RECORD,,
