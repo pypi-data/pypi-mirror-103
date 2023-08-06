@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: sber-payments
+Version: 0.2.0
+Summary: SBERBank Payments Python Client Library
+Home-page: https://github.com/jokerinteractive/sber-payments/
+Author: Anton Popov
+Author-email: anton@jokerinteractive.ru
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/jokerinteractive/sber-payments/issues
+Project-URL: Funding, https://yoomoney.ru/to/41001137693525
+Project-URL: Say Thanks!, https://saythanks.io/to/ademaro%40ya.ru
+Project-URL: Source, https://github.com/jokerinteractive/sber-payments/
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Office/Business
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Requires-Dist: requests
+
+Python библиотека к программному интерфейсу (API) СБЕРа
+=======================================================
+
+Подключение через программный интерфейс (API) позволяет использовать всю доступную функциональность платёжного шлюза.
+
+Использование
+-------------
+
+.. code-block:: python
+
+    from sber_payouts import Client
+
+    client = Client('TOKEN')
+
+    client.register_order(order_number='001', amount=100, return_url='https://shopname.ru/')
+
+
+
