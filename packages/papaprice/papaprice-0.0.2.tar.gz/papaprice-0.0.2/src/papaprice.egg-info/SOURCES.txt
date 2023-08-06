@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/papaprice/__init__.py
+src/papaprice/papaprice.py
+src/papaprice.egg-info/PKG-INFO
+src/papaprice.egg-info/SOURCES.txt
+src/papaprice.egg-info/dependency_links.txt
+src/papaprice.egg-info/not-zip-safe
+src/papaprice.egg-info/requires.txt
+src/papaprice.egg-info/top_level.txt
