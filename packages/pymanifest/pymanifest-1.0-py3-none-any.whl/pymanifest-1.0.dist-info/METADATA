@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pymanifest
+Version: 1.0
+Summary: File list utility
+Home-page: https://github.com/claybrooks/pymanifest
+Author: Clay Brooks
+Author-email: clay_brooks@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# PyManifest
+
+## Requirements
+
+* Python 3.0+
+* Pip
+
+> If you're having any troubles with installation, this guide may help you: https://github.com/BurntSushi/nfldb/wiki/Python-&-pip-Windows-installation
+
+## Install & Run
+
+```
+pip install pymanifest
+python -m pymanifest --directory /path/to/include --ignore-directory /path/to/exclude --file /path/to/single/file
+```
+
+
