@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+byid/__init__.py
+byid.egg-info/PKG-INFO
+byid.egg-info/SOURCES.txt
+byid.egg-info/dependency_links.txt
+byid.egg-info/entry_points.txt
+byid.egg-info/requires.txt
+byid.egg-info/top_level.txt
+byid/doi/__init__.py
+byid/doi/__main__.py
+byid/doi/service.py
+byid/doi/utils.py

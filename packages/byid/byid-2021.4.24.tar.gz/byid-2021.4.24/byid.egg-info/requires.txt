@@ -1,0 +1,4 @@
+requests
+tqdm
+ijson
+xmltodict
