@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: pyalgorand
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://bitbucket.org/kuiristo/pyalgorand
+Author: Jean-Baptiste Poullet
+Author-email: jeanbaptistepoullet@gmail.com
+License: Apache Software License 2.0
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: py-algorand-sdk (>=1.4.1)
+Requires-Dist: apscheduler (>=3.6.3)
+Requires-Dist: ipfshttpclient (>=0.7.0)
+Requires-Dist: pyyaml (>=5.4.1)
+Provides-Extra: docs
+Requires-Dist: sphinx (~=3.4.3) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme (==0.5.1) ; extra == 'docs'
+Requires-Dist: nbsphinx (==0.8.1) ; extra == 'docs'
+Requires-Dist: nbstripout (==0.3.3) ; extra == 'docs'
+Requires-Dist: recommonmark (==0.7.1) ; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints (==1.11.1) ; extra == 'docs'
+Requires-Dist: sphinx-copybutton (==0.3.1) ; extra == 'docs'
+Requires-Dist: ipykernel (~=5.3) ; extra == 'docs'
+
+# Pyalgorand
+
+
+```
+
+  ____           _    _                                 _
+ |  _ \ _   _   / \  | | __ _  ___  _ __ __ _ _ __   __| |
+ | |_) | | | | / _ \ | |/ _` |/ _ \| '__/ _` | '_ \ / _` |
+ |  __/| |_| |/ ___ \| | (_| | (_) | | | (_| | | | | (_| |
+ |_|    \__, /_/   \_\_|\__, |\___/|_|  \__,_|_| |_|\__,_|
+        |___/           |___/
+
+```
+
+
+## Overview
+
+PyAlgorand aims at simplifying development on the Algorand blockchain.
+
+## Installation
+
+pip install pyalgorand
+
+## Optional installation
+
+If one wants to use an Algorand sandbox network, please go to https://github.com/algorand/sandbox for more details.
+
+If one wants to use IPFS features in pyalgorand and test them locally, it is recommended to use the following procedure:
+
+```bash
+
+ wget https://dist.ipfs.io/go-ipfs/v0.7.0/go-ipfs_v0.7.0_linux-amd64.tar.gz
+ tar -xvzf go-ipfs_v0.7.0_linux-amd64.tar.gz
+ cd go-ipfs && sudo ./install.sh && ipfs init && ipfs daemon &
+
+```
+
+Note that `sudo` might not be necessary on your system.
+
+
+## Getting started
+
+Some examples are available in [here](https://bitbucket.org/kuiristo/pyalgorand/src/master/examples/):
+
+- how to create accounts
+- share files on IPFS and secure them
+
+Start with the creation of accounts. Some of the examples require Purestake API, register [here](https://developer.purestake.io/login).
+
+
