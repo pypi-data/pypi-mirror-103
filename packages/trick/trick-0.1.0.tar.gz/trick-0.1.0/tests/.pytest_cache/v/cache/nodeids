@@ -1,0 +1,4 @@
+[
+  "test_compose.py::test_associative_law",
+  "test_compose.py::test_compose_order"
+]
