@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+emojifier/__init__.py
+emojifier/generator.py
+emojifier.egg-info/PKG-INFO
+emojifier.egg-info/SOURCES.txt
+emojifier.egg-info/dependency_links.txt
+emojifier.egg-info/requires.txt
+emojifier.egg-info/top_level.txt
+emojifier/data/__init__.py
+emojifier/util/__init__.py
+emojifier/util/emojify.py
+emojifier/util/files.py
+emojifier/util/text.py
