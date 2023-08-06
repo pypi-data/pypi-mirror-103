@@ -1,0 +1,2 @@
+recursive-include sphinxext_autox *.py
+recursive-include sphinxext_autox *.rst
