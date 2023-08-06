@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+hLepor.egg-info/PKG-INFO
+hLepor.egg-info/SOURCES.txt
+hLepor.egg-info/dependency_links.txt
+hLepor.egg-info/top_level.txt
+hlepor/__init__.py
+hlepor/hlepor.py
+hlepor/setup.py
