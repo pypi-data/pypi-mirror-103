@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: irct-api
+Version: 1.0.1
+Summary: Unofficial API for irct.ir
+Home-page: https://github.com/L1xPy/irct-api
+Author: LixPy
+Author-email: LixPy@protonmail.ch
+License: GPLv3
+Description: # IRCT Unofficial Python3 Api
+        Just a simple api interface for searching in irct.ir.
+        
+        ## TODO
+        * Add `AND` and `OR` support for advance searching.
+        * Add more exporting types.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
