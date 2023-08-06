@@ -1,0 +1,11 @@
+fanorona_aec/__init__.py,sha256=M8VjaHciruhRChPPHge__zR2S3RC_mlxeWIK2rWP1W0,26
+fanorona_aec/fanorona_env.py,sha256=85vKaLnK3RJdzqhxMqxdK_LRhkQ4Nzz-9722lxdlV9A,5478
+fanorona_aec/fanorona_v0.py,sha256=M0ZagkS2ZFMJikNfR4QKV4o2ucGS5OcTp8uO8Kue0zQ,39
+fanorona_aec/move.py,sha256=Mou7bLBDkLHu6i2XpKdu4uIHvnPlignFci7VMwHE_eY,3779
+fanorona_aec/state.py,sha256=PzllKozo0c75u1I0cVsn1XcEMrUirn2sQPaXe0xo3Eo,19406
+fanorona_aec/utils.py,sha256=jVpWa6sonsJuX9tcHnC2gndocEV705N0hR33ego47QU,6293
+fanorona_aec-1.0.0.dist-info/LICENSE,sha256=2D0pU4D7gWjo1yAOIVX-7khD2hLQu0P1gSakuj1lH1Y,1060
+fanorona_aec-1.0.0.dist-info/METADATA,sha256=s6WGTsrWh-YLsyGKq-VvLX5krnwcATPp7Mq6e0Er4zE,1656
+fanorona_aec-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fanorona_aec-1.0.0.dist-info/top_level.txt,sha256=JZnp3xCDDRjXPATnNiSTZpcPUrZ4q0skHvJ53feDWLg,13
+fanorona_aec-1.0.0.dist-info/RECORD,,
