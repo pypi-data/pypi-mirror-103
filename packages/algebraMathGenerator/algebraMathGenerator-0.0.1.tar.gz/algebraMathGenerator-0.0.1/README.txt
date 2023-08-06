@@ -1,0 +1,1 @@
+Algebra generator that can easily create algebra equations in the Ax + b = C format. It can also solve equations in Ax + b = C. Right now, only the operations, '-' and '+' are supported
