@@ -1,0 +1,17 @@
+openclean_notebook/__init__.py,sha256=vYUdEEkRfmv74xQbKxkyt6veNzU1PvF2D_I7C7QdwV4,269
+openclean_notebook/engine.py,sha256=hckpJPxVsC7xVfGA8Hd0imGLi5qpWNSG95VdCtIkU2E,5903
+openclean_notebook/version.py,sha256=ZPu9-sPqJWML3mCSh984V7CVMJ4iALwmURfWZlS7KT8,298
+openclean_notebook/controller/__init__.py,sha256=qP-lnq9CL5smmCMMqbRwEL5eGomCgNzwkld0Ix-gdkE,213
+openclean_notebook/controller/comm.py,sha256=7sEuMr3jh2AV4biLpduRu0xsfEuR8YdiyR6ooXhZLhM,3435
+openclean_notebook/controller/html.py,sha256=IfF5ealXiXeGNL_AGycJ7bkicDZkrouX8B7X4adOLBg,2741
+openclean_notebook/controller/spreadsheet/__init__.py,sha256=qP-lnq9CL5smmCMMqbRwEL5eGomCgNzwkld0Ix-gdkE,213
+openclean_notebook/controller/spreadsheet/base.py,sha256=7EdsOVWxtzmQgnlBwC2yVoByU2Y5HhjZ0B4qUR6vdkI,11098
+openclean_notebook/controller/spreadsheet/data.py,sha256=uWk7HX0wrV-bbPs5_Ez06vsyJPPM7pP74HUB71hwBXs,4685
+openclean_notebook/controller/spreadsheet/schema.json,sha256=skROMBqM2MDrSLvH7p1TnXTsdpaLSKI15YQRx-9Okwk,14284
+openclean_notebook/metadata/datamart.py,sha256=spW0ZzbOxbk3hYEZfaXnbzrM0sHicxpCG-dStIEANZE,1567
+openclean_notebook/ui/templates/spreadsheet.html,sha256=Sd7rIXjKmYoeSsbB6W7tBTuHai5hD7I0-iMTdCUbqfg,207
+openclean_notebook-0.1.5.dist-info/LICENSE,sha256=rEvLnigWI29DXjKLsNPXLz5kTNYohOQ0GydxMGQzTAI,1525
+openclean_notebook-0.1.5.dist-info/METADATA,sha256=gFo-mm3i4x46MId7y_NZrVq6veWK7IbcXuLpA4FW7Rw,5216
+openclean_notebook-0.1.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+openclean_notebook-0.1.5.dist-info/top_level.txt,sha256=2CbX1ag9skU_tTYSHs64n7uvo5TAih7cLVlpznj2Cnw,19
+openclean_notebook-0.1.5.dist-info/RECORD,,
