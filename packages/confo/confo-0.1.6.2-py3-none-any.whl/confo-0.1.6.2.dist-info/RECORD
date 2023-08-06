@@ -1,0 +1,12 @@
+confo/Confo.py,sha256=paqPVAA0vIhhfD9FE2w1W8C22P1hUDWAXnyJlE59m60,3286
+confo/__init__.py,sha256=QhiAfDEXhxnUHS5LPnTsMWMDb17xbpWT1gGxA-mwpbo,11
+confo/Backends/AbstractBackend.py,sha256=wHnzcmwdsdG96VQrNcZDuV5Qm35cab9P5UuT-KMgm6Q,2770
+confo/Backends/FileBackend.py,sha256=KKS8itUa0iUwBFavRbY4FlX2DLCWz-vSRlgEIL5rjTA,3863
+confo/Backends/ZookeeperBackend.py,sha256=vu7ljZsxCefPQNcV1Gt93EXA2HHyZRE7Ham8tsi3gOc,5084
+confo/Backends/__init__.py,sha256=DTGKh8pzh-eHr80SV1zKNoGLwKHc7SbwoOMHPyRbr5s,303
+confo/Exceptions/__init__.py,sha256=DqvobaK21bJhHK1jZLmMMsvTzN1Uv7ydDUOZg5SmNgc,399
+confo-0.1.6.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+confo-0.1.6.2.dist-info/METADATA,sha256=Dzd1kKtcNH9wQVGY-IGfPdgiz_QCdRCR8heib795APo,3063
+confo-0.1.6.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+confo-0.1.6.2.dist-info/top_level.txt,sha256=7KRzdU7HFkwPJ0WOUIaouOzje6bMhm7ZFGAr3hhTwr0,6
+confo-0.1.6.2.dist-info/RECORD,,
