@@ -1,0 +1,12 @@
+monipy/__init__.py,sha256=6nM9DA9z9W6uCyjjB5u2fi0Geh4a8yhZvEYI26A-H-I,96
+monipy/__version__.py,sha256=DmUgym_O9k02TWw9uwCN0JqAVA5I_KmC25TLQfRv9m8,74
+monipy/app.py,sha256=IiPhUUHdkq01wJMVIMY90otOJHiXgGbKUuIIcY436vQ,749
+monipy/collectors.py,sha256=a38vWRCMO7ecn7bc9XrWY8Rgp0vqbPXhCnIKMdlb8wE,1303
+monipy/databases.py,sha256=0_bZKWe2eoJV9f7Li3pd5imfw9m0efowLeipKXiWfq0,5343
+monipy/main.py,sha256=ddRxvDcAkll_Q6t72-G6uVXOuMJBPLFvf7wSuuUDHQQ,316
+monipy/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+monipy/templates/index.html.jinja,sha256=ua66u_mi_4k2WdA6I3pCYhpCyEZ5EjdwCBWgxPMoO7k,392
+monipy-0.1.0.dist-info/entry_points.txt,sha256=0yVimPzy1lN4eu4sFxbaorwfgIMshgSXe5ilqjRM6LY,38
+monipy-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+monipy-0.1.0.dist-info/METADATA,sha256=ISYTuoVf3-mgU0MdvPrtfPsjfyTg89fAsM6Ul4SjT9w,2397
+monipy-0.1.0.dist-info/RECORD,,
