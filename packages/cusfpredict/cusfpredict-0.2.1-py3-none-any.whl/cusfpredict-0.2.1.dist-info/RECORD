@@ -1,0 +1,9 @@
+cusfpredict/__init__.py,sha256=Oe09ps5m4D1O54NmvQE_3p5GyjfRAdCaLCo2LFvyWpw,162
+cusfpredict/gfs.py,sha256=3MPh6J_FSqBYeZMS0FwC2kt0xYsf3Xy6ciUeFzGYAkA,20231
+cusfpredict/predict.py,sha256=wKtURcIGUX0yWRQyGlF68r1xUsLCu_Zkvkya_sb1zvo,8269
+cusfpredict/reader.py,sha256=G3NBT-QWeQPy-yYQ8WStCOTKwn1c9Iqp34bpqG0ZAlE,3336
+cusfpredict/utils.py,sha256=uwVSG8UcNQ4kmPtD7WZe9k_OvNwdjAuN0OJCZuMq2Z4,5688
+cusfpredict-0.2.1.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+cusfpredict-0.2.1.dist-info/WHEEL,sha256=G_NFpzHmv_dUXgCUSAWL0-bLL-eMzYU6DzDeGXbRXUk,83
+cusfpredict-0.2.1.dist-info/METADATA,sha256=Q9xoE7VxBvbj-SWkB-pTBr9K9_ldpESMM4u9vXvMj_Y,673
+cusfpredict-0.2.1.dist-info/RECORD,,
