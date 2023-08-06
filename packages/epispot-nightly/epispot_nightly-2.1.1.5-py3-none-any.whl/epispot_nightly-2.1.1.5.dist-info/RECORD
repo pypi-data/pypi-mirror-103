@@ -1,0 +1,12 @@
+epispot/__init__.py,sha256=A38r6WmYTBI2oUn9IJYii_D0Z0YcM_9VPOmFqkVSvR4,800
+epispot/comps.py,sha256=L3bz8s0fopRf0R3cCHMiKKmQPCLF74ouqaAbopbG_G8,47089
+epispot/fitters.py,sha256=Y6HtnrjMGJDfExwi0-lmWF7cpGqb7SW982X-kd38UG4,4526
+epispot/models.py,sha256=baNXxN4TdQKuXC5z4SC-cebGFqcn3ZOHR4ur-7OjKwU,6302
+epispot/plots.py,sha256=ZdURoO09bbWoyCbJhX67LM7t2bUwnigyILWWJ--1dyk,4164
+epispot/pre.py,sha256=bgrqrDNAju-tvsTeVlklGckjVWQyaqKr_iJ4WH01Jnw,8993
+epispot_nightly-2.1.1.5.data/scripts/epispot,sha256=njl40ff5IRtNlZWnE57O14KQlzzBfHt6MSkJFICvcYg,1100
+epispot_nightly-2.1.1.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+epispot_nightly-2.1.1.5.dist-info/METADATA,sha256=0XN3Z2RVlw2GLxr22UaGyElW_rbvtQ_4VZqD-DyXFSY,3261
+epispot_nightly-2.1.1.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+epispot_nightly-2.1.1.5.dist-info/top_level.txt,sha256=BG2UsdebjdQTLKWtSLjlTPs1qJGZ4IaHtqNYzTQnAfo,8
+epispot_nightly-2.1.1.5.dist-info/RECORD,,
