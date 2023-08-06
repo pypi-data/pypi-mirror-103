@@ -1,0 +1,8 @@
+README.md
+setup.py
+simple_python_debugger/__init__.py
+simple_python_debugger/debugger.py
+simple_python_debugger.egg-info/PKG-INFO
+simple_python_debugger.egg-info/SOURCES.txt
+simple_python_debugger.egg-info/dependency_links.txt
+simple_python_debugger.egg-info/top_level.txt

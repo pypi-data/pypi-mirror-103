@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: simple-python-debugger
+Version: 0.0.2
+Summary: Simple Debugger for Python
+Home-page: https://github.com/mzebin/simple-debgugger
+Author: Mohammed Zebin
+License: MIT
+Description: # Simple-Python-Debugger
+        Simple Debugger Package for python.
+        
+Keywords: Python,Python3,Debugger
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
