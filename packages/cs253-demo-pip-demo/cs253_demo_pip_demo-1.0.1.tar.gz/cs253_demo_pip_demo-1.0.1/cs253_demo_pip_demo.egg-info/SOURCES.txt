@@ -1,0 +1,7 @@
+README.md
+setup.py
+cs253_demo_pip_demo.egg-info/PKG-INFO
+cs253_demo_pip_demo.egg-info/SOURCES.txt
+cs253_demo_pip_demo.egg-info/dependency_links.txt
+cs253_demo_pip_demo.egg-info/requires.txt
+cs253_demo_pip_demo.egg-info/top_level.txt
