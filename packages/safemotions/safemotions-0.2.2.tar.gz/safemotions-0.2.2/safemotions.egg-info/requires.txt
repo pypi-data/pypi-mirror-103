@@ -1,0 +1,8 @@
+numpy
+klimits
+matplotlib
+pybullet
+gym
+ray[tune]==0.8.4
+ray[rllib]==0.8.4
+tensorflow
