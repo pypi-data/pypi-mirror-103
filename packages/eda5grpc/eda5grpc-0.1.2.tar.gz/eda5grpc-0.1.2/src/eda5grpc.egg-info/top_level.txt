@@ -1,0 +1,6 @@
+client
+eda_games_pb2
+eda_games_pb2_grpc
+game_state
+server
+utils
