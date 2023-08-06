@@ -1,0 +1,9 @@
+defusedxml
+cython
+numpy
+scikit-learn>=0.24.1
+scipy
+click
+colorama
+joblib
+progressbar2
