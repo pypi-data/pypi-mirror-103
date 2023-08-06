@@ -1,0 +1,3 @@
+[console_scripts]
+luban = Luban.shell_entrance:main
+
