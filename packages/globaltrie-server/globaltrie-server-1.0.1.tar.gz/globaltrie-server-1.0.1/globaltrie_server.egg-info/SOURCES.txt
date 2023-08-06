@@ -1,0 +1,11 @@
+setup.py
+globaltrie_server.egg-info/PKG-INFO
+globaltrie_server.egg-info/SOURCES.txt
+globaltrie_server.egg-info/dependency_links.txt
+globaltrie_server.egg-info/entry_points.txt
+globaltrie_server.egg-info/requires.txt
+globaltrie_server.egg-info/top_level.txt
+globaltrieserver/__init__.py
+globaltrieserver/__main__.py
+globaltrieserver/server_cli.py
+globaltrieserver/trie.py
