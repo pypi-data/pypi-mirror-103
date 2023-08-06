@@ -1,0 +1,13 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "emergency_simulation"
+author = "Lucca Bertoncini"
+author-email = "luccabazzo@gmail.com"
+description-file = "README.md"
+requires-python = ">=3.8.2"
+home-page = "https://github.com/luccabb/emergency_simulation"
+classifiers = [ "License :: OSI Approved :: MIT License",]
+
