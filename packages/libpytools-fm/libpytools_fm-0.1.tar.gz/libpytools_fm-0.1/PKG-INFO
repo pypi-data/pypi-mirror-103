@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: libpytools_fm
+Version: 0.1
+Summary: Módulo para exemplificar a construção de projetos Python
+Home-page: https://github.com/FerreiraMa/libpytools
+Author: Marcelo Ferreira
+Author-email: ferreirasantos1976@uol.com.br
+License: GNU AFFERO GENERAL PUBLIC LICENSE
+Description: # libpytools
+        
+        Módulo para exemplificar a construção de projetos Python.
+        
+        Exemplo de como contribuir com projetos de código aberto
+        
+        Link [libpytools](https://github.com/FerreiraMa/libpytools/)
+        
+        ![fluxo de trabalho](https://github.com/FerreiraMa/libpytools/actions/workflows/python-app.yml/badge.svg)
+        [![Updates](https://pyup.io/repos/github/FerreiraMa/libpytools/shield.svg)](https://pyup.io/repos/github/FerreiraMa/libpytools/)
+        [![Python 3](https://pyup.io/repos/github/FerreiraMa/libpytools/python-3-shield.svg)](https://pyup.io/repos/github/FerreiraMa/libpytools/)
+        
+        
+        Suporta versão 3 do Python
+        
+        Para instalar:
+        
+        ```console
+        python3 -m venv .venv
+        source .venv/bin/activate
+        pip install -r requirements-dev.txt
+        ```
+        
+        Para conferir qualidade de códigos:
+        
+        ```console
+        flake8
+        
+        ```
+        
+        Tópicos a serem abordados:
+        1. Git
+        2. Virtualenv
+        3. Pip
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Framework :: Pytest
+Description-Content-Type: text/markdown
