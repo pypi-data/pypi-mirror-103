@@ -1,0 +1,6 @@
+questionary
+rich
+click
+prompt_toolkit
+requests
+validator-collection
