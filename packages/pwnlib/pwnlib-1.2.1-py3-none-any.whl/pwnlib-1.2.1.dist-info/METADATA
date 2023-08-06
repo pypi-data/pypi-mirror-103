@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pwnlib
+Version: 1.2.1
+Summary: Pwnlib project
+Home-page: https://github.com/Gallopsled/pwntools
+Author: Frank
+Author-email: frank8754@osuskins.cf
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Gallopsled/pwntools
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+# Python Pwnlib
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
