@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+aitx/__init__.py
+aitx/aitx.py
+aitx/history.py
+aitx/lightbox.py
+aitx.egg-info/PKG-INFO
+aitx.egg-info/SOURCES.txt
+aitx.egg-info/dependency_links.txt
+aitx.egg-info/not-zip-safe
+aitx.egg-info/top_level.txt
+tests/.DS_Store
+tests/__init__.py
+tests/test_aitx.py
