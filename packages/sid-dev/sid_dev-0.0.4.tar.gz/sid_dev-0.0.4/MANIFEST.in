@@ -1,0 +1,12 @@
+include CITATION
+include LICENSE
+
+recursive-include src *.csv
+
+exclude *.yaml
+exclude *.yml
+exclude tox.ini
+
+prune .conda
+prune docs
+prune tests
