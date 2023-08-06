@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+choice_composer.egg-info/PKG-INFO
+choice_composer.egg-info/SOURCES.txt
+choice_composer.egg-info/dependency_links.txt
+choice_composer.egg-info/entry_points.txt
+choice_composer.egg-info/top_level.txt
+choices/__init__.py
+choices/__main__.py
