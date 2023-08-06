@@ -1,0 +1,9 @@
+log_retention_compliance/__init__.py,sha256=-qJ1eoqsCAIQV3BWZ5sNuRU8v-VAHPxG1jsmwB62mw0,595
+log_retention_compliance/entrypoint.py,sha256=xBTSE4Qt1ubfwnlnaiSvdpN1DItiw0Riecok6fvHWl8,7733
+cloudwatch_log_retention_manager-0.0.3.dist-info/AUTHORS.rst,sha256=yAazThtLZfyLVX4d6qDPUgYRWqg-znFPgs_GhNarJZ0,91
+cloudwatch_log_retention_manager-0.0.3.dist-info/LICENSE.txt,sha256=XqaghY8jGNngeztzxcItJzVRJb4BoWr-n9oS1gWg7pA,1083
+cloudwatch_log_retention_manager-0.0.3.dist-info/METADATA,sha256=SSBOaBu4JYB5t5S7yUYg-s-0z7QAU2aaHHtlZshFalo,1535
+cloudwatch_log_retention_manager-0.0.3.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+cloudwatch_log_retention_manager-0.0.3.dist-info/entry_points.txt,sha256=klLEQ_Z_XjYKESLJXCA9hbYKgXVDuV5fw2G5X2HVobM,67
+cloudwatch_log_retention_manager-0.0.3.dist-info/top_level.txt,sha256=kq0w77UyyPRsoO-idc0ltMKP3P5BAPurOAWm5eLrikg,25
+cloudwatch_log_retention_manager-0.0.3.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+cwlrm = log_retention_compliance.entrypoint:run
+

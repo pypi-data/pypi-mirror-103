@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: cloudwatch-log-retention-manager
+Version: 0.0.3
+Summary: Tooling to manage the Retention Compliance for AWS CloudWatch logs
+Home-page: https://github.com/cevoaustralia/cloudwatch-log-retention-manager
+Author: Steve Mactaggart
+Author-email: steve.mactaggart@cevo.com.au
+License: MIT
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Description-Content-Type: text/x-rst; charset=UTF-8
+Requires-Dist: boto3 (==1.17.56)
+Requires-Dist: PyYAML (==5.4.1)
+Requires-Dist: importlib-metadata ; python_version < "3.8"
+Provides-Extra: testing
+Requires-Dist: setuptools ; extra == 'testing'
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+================================
+cloudwatch-log-retention-manager
+================================
+
+
+CloudWatch Retention Manager is a configurable tool that can be used to validate or enforce CloudWatch log retention rules.
+
+
+Description
+===========
+
+The CloudWatch log retention manager can be used in 2 modes - **validate** or **update**.
+
+Validate mode
+-------------
+
+When used in **validate** mode, the compliance of the log groups will be checked against the supplied configuration,
+with the tool failing if any log groups are identified out of compliance.
+
+Update mode
+-----------
+
+
+Configuration
+=============
+
+
+
+.. _pyscaffold-notes:
+
+Note
+====
+
+This project has been set up using PyScaffold 4.0.1. For details and usage
+information on PyScaffold see https://pyscaffold.org/.
+
+
