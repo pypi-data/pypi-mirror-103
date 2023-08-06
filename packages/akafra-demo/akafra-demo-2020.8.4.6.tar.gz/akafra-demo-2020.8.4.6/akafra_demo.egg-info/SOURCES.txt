@@ -1,0 +1,7 @@
+setup.py
+akafra_demo.egg-info/PKG-INFO
+akafra_demo.egg-info/SOURCES.txt
+akafra_demo.egg-info/dependency_links.txt
+akafra_demo.egg-info/entry_points.txt
+akafra_demo.egg-info/requires.txt
+akafra_demo.egg-info/top_level.txt
