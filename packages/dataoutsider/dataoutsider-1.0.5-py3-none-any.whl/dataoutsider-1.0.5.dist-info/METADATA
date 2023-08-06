@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: dataoutsider
+Version: 1.0.5
+Summary: Data visualization toolbox.
+Home-page: https://pypi.org/project/dataoutsider/
+Author: Nick Gerend
+Author-email: nickgerend@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+# dataoutsider
+
+# Welcome to the dataoutsider visualization toolbox!
+
