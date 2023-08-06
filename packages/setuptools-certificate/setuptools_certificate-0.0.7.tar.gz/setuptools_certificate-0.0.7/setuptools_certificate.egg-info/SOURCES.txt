@@ -1,0 +1,10 @@
+README.md
+setup.py
+setuptools_certificate/__init__.py
+setuptools_certificate/version.py
+setuptools_certificate.egg-info/PKG-INFO
+setuptools_certificate.egg-info/SOURCES.txt
+setuptools_certificate.egg-info/dependency_links.txt
+setuptools_certificate.egg-info/entry_points.txt
+setuptools_certificate.egg-info/requires.txt
+setuptools_certificate.egg-info/top_level.txt
