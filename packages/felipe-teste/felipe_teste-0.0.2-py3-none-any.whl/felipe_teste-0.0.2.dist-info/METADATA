@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: felipe-teste
+Version: 0.0.2
+Summary: A teste package
+Home-page: https://github.com/sfmpds/felipe_teste/
+Author: Felipe Marcelo
+Author-email: felipemarcelo@usp.br
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Dist: ray
+Requires-Dist: NanoFilt (>=2.8.0)
+
+# felipe_teste
+
+
