@@ -1,0 +1,2 @@
+binalyzer
+leb128>=1.0.2

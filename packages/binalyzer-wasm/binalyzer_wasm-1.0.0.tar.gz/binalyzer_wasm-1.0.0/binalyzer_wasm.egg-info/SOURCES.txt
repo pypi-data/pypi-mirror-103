@@ -1,0 +1,13 @@
+AUTHORS
+CHANGELOG.md
+LICENSE.rst
+README.md
+setup.py
+binalyzer_wasm/__init__.py
+binalyzer_wasm/extension.py
+binalyzer_wasm/wasm.py
+binalyzer_wasm.egg-info/PKG-INFO
+binalyzer_wasm.egg-info/SOURCES.txt
+binalyzer_wasm.egg-info/dependency_links.txt
+binalyzer_wasm.egg-info/requires.txt
+binalyzer_wasm.egg-info/top_level.txt
