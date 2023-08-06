@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: PythonTrojanHorse
+Version: 0.1
+Summary: Trojan Horse application
+Home-page: https://github.com/aaronyouch/PythonTrojanHorse
+Author: Michael Wright, Aaron Youch, Petro Skrypnyk, Brandon Krupinski, Bryan Hill, Jaysson Solano
+Author-email: skrypn62@students.rowan.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+This package is created for educational purposes,
+to demostrate the work of a payload in a vulnerable application 
+which will establish sensitive communication to an external server 
+controlled by the attackers 
+
+It has class Trojan with Cryptofunctions
+as well as client and server code for port listening 
+and data transmitting
+
