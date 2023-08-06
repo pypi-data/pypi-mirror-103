@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+ocean_abis/__init__.py
+ocean_contracts.egg-info/PKG-INFO
+ocean_contracts.egg-info/SOURCES.txt
+ocean_contracts.egg-info/dependency_links.txt
+ocean_contracts.egg-info/not-zip-safe
+ocean_contracts.egg-info/top_level.txt
