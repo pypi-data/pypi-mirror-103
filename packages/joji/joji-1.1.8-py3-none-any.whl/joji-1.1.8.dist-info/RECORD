@@ -1,0 +1,10 @@
+joji/create_dataset.py,sha256=4CWd0CQ-P4GGeOcbxsHOoXKoPVfbzaoH-0umHfeR2lU,506
+joji/create_new_dataset.py,sha256=XYgwKMN-U_0JbLISisr7pQ3-amSB9PXeesQx8P-iaPU,241819
+joji/emoji.py,sha256=DI7lFHuD4cSptTvdmpSslPRzbW-4Vrnq6L2-f-LacAs,2285
+joji/jojify.py,sha256=Dm6PURwpbp5pALK4S3f0G8gNbRQqmIqeYA9Og53KJvA,2447
+joji/data/emoji_dict.p,sha256=ziK-2jXnHV0Mzp9uP6tJ-OcGgV1Sa8sILTdBofI89pA,61658412
+joji/data/emoji_dict1.p,sha256=f-NWj_aatqtYglAunfPJzgVTr6aDQvW4_bpmjfys_YA,61581015
+joji-1.1.8.dist-info/METADATA,sha256=a7G6JB7VzKiyzxIuvD8xk6Eg5Bb7s8HVJiFez9PR4KM,1791
+joji-1.1.8.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+joji-1.1.8.dist-info/top_level.txt,sha256=78nAzAajeEjEe60VRVZXOOCNvHq995r9rm6to3B-I4M,5
+joji-1.1.8.dist-info/RECORD,,
