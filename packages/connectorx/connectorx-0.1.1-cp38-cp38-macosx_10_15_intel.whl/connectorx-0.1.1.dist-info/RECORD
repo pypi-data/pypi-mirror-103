@@ -1,0 +1,7 @@
+connectorx/__init__.py,sha256=kbQgquZ1UKs0opxLCovbbPu2e7crU8s0I2rA-kkiVR0,3033
+connectorx/connectorx_python.cpython-38-darwin.so,sha256=5wgOaZycsGnFtYiONgoXYoL4GHm1lzfr0c6C4cbE8do,9141408
+connectorx/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+connectorx/tests/test_read_sql.py,sha256=2wuxJxv0c2ysM1CsN99xXD0reWLFpge_bGGRnmRb9Ik,14071
+connectorx-0.1.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+connectorx-0.1.1.dist-info/METADATA,sha256=wvveFGgM7bJuNlmRMON2Ce4PEzV_xhE8lWWuslirdAY,6071
+connectorx-0.1.1.dist-info/RECORD,,
