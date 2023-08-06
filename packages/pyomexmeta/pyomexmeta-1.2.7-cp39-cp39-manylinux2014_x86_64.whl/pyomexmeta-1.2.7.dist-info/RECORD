@@ -1,0 +1,12 @@
+pyomexmeta-1.2.7.data/purelib/pyomexmeta/__init__.py,sha256=S276ShoBtH0fBB6CfxnhpwCDtmsVRWM7HqB2c6zU4q8,607
+pyomexmeta-1.2.7.data/purelib/pyomexmeta/api_tests.py,sha256=6aXLJ7RqMfGy6ew2hl2q4HhL7H_U3MiwrLhAdhGFk8E,72085
+pyomexmeta-1.2.7.data/purelib/pyomexmeta/libOmexMetaCAPI.so.1.2.7,sha256=DBdbLxTSCDgM8ER4eSdY3FpE61x3lRdh6kVoHbvf77k,11838528
+pyomexmeta-1.2.7.data/purelib/pyomexmeta/pyomexmeta.py,sha256=WXpC3QQk2O4pb9_duUnsm0tU3AdombYYml95JvCUD8c,35227
+pyomexmeta-1.2.7.data/purelib/pyomexmeta/pyomexmeta_api.py,sha256=KRSLTnXcM7wx5IwpLzSSk4KT6Pusv6l_Dfod43-ptb4,37579
+pyomexmeta-1.2.7.data/purelib/pyomexmeta/pyomexmeta_tests.py,sha256=OvBR6CaQ56v1AkXScLUInCn5c7Y4qTM08FBL-donB-w,62768
+pyomexmeta-1.2.7.data/purelib/pyomexmeta/test_strings.py,sha256=rYkccxP6BuksLVwTZXIIwNYgK4mFjNP0-flYGY_HAzA,4058
+pyomexmeta-1.2.7.dist-info/LICENCE.txt,sha256=SbvpEU5JIU3yzMMkyzrI0dGqHDoJR_lMKGdl6GZHsy4,11558
+pyomexmeta-1.2.7.dist-info/METADATA,sha256=ac29s7UQULdkGcpVnBXp2q3vneUDUnylrU7A66kdrIo,8798
+pyomexmeta-1.2.7.dist-info/WHEEL,sha256=jR_DIfh0YPrTez7i3YqBzGYuKdVs75FjZMdMtvIwioM,103
+pyomexmeta-1.2.7.dist-info/top_level.txt,sha256=aii0l5bNUh8ZC2epa7gK0DFxxl9yW9WSnStISUh0Tew,11
+pyomexmeta-1.2.7.dist-info/RECORD,,
