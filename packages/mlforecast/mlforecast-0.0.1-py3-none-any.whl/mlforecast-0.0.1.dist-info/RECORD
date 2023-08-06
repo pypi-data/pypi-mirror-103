@@ -1,0 +1,11 @@
+mlforecast/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+mlforecast/_nbdev.py,sha256=HI95XKhPzb7w4bqIbmZuwkk2Y0ILCOk5FxpI7Wz4Zug,834
+mlforecast/core.py,sha256=SzBzk9tbI_f5gWE-5dDMYKE-oNjck1OspAeJaSlIGVs,11603
+mlforecast/forecast.py,sha256=ZZJDiz-jFOfDb76owxQLFVb0sGXuKj6GqRqs3hdkHww,1450
+mlforecast/utils.py,sha256=j77yy--YkDYi4FP0ZjWK7NDm8SE15wQW5rs9vtiDaXA,2138
+mlforecast-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+mlforecast-0.0.1.dist-info/METADATA,sha256=2JagDkLW1mTl6MmWXCgXKPNQ232cLltv47Xy-u7nHAM,1174
+mlforecast-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mlforecast-0.0.1.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+mlforecast-0.0.1.dist-info/top_level.txt,sha256=yAGYnEfmaglo5iyIiJ_oj2-HiKTbP1MqK8Jd9AT2klY,11
+mlforecast-0.0.1.dist-info/RECORD,,
