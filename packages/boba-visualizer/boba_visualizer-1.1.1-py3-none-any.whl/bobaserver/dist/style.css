@@ -1,0 +1,78 @@
+.text-small {
+    font-size: 0.8rem;
+}
+
+.text-large {
+    font-size: 1.2rem;
+}
+
+.font-semi-bold {
+    font-weight: 500;
+}
+
+.mouse-pointer {
+    cursor: pointer
+}
+
+.bb-border-top {
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.bb-border-bottom {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.bb-bar-title {
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.mn-card {
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 2px;
+    padding: 1rem;
+}
+
+.mn-card-title {
+    font-size: 0.8em;
+    font-weight: 500;
+    color: #6c757d;
+}
+
+.mn-card-title-lg {
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #6c757d;
+}
+
+.mn-card-body {
+    font-size: 0.8em;
+    color: #6c757d;
+}
+
+.mn-drop-container .mn-drop-menu {
+    font-size: 12px;
+    line-height: 1.5;
+    min-width: 100px;
+    padding: 0.2rem 0;
+}
+
+.mn-drop-container .btn {
+    font-size: 12px;
+}
+
+.mn-dot.muted {
+    fill: #9ca5ad;
+}
+
+.axis.muted .domain{
+    stroke: #6c757d
+}
+.axis.muted .tick text {
+    fill: #6c757d
+}
+text.axis-label.muted {
+    fill: #6c757d
+}
