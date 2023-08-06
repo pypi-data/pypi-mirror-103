@@ -1,0 +1,221 @@
+CHANGES
+=======
+
+v0.0.13
+-------
+
+* move service file to etc/, add link to it in debian folder, bump up v0.0.13
+* fix systemd service name
+* fix rpm packaging: use rpm macros, exclude .build-id, install motley\_cue in virtual env, package all config files, provide only relevant files
+* add python as rpm dependency
+* update url in rpm spec file
+* remove python2 support
+* add systemd service file to data files installed with setuptools
+* undo spaces in assurancne
+* renamed from ldf\_adapter.conf
+* rename ldf\_adapter.config to feudal\_adapter.config, including environment variable
+* add a postinst script; adjust paths to avoid conflicts
+* remvoe the skip-qa, add fix-venv-path, install the system file
+* virtualenv is not aware of the rpm build env
+* fix ln -s bug
+* remove useless commentline
+* add more -e that were previously dropped
+* change -e back and force shell to bash
+* remve -e from echo command
+* add RuntimeDirectory
+
+v0.0.12
+-------
+
+* bumped up deb pkg version
+* reload nginx config on motley-cue install
+
+v0.0.11
+-------
+
+* increased version number for deb and rpm to 0.0.11
+* change default port for motley\_cue site in nginx to 8080
+* deb: fix issue of nginx not fully configured before motley-cue
+* add nginx.motley\_cue site file to pip install in etc
+* fix aarc\_g002\_group default config value as string instead of bool
+* fix issue with naming of pkgs \_/- by passing different pkg name to build.sh
+* increase version number to 0.0.10 for deb&rpm pkgs
+* temporary fix for package name with \_ instead of -
+* use latest tag to create packages
+* enable interpretation of newline for echo to Dockerfile
+* fix publishing
+* add publish-to-repo target
+* update build instructions
+* ignore \*.swp
+* add some dependencies
+* remove centos7
+* included dockerfile stuff into the Makefile
+* switch from apt to yum
+* integrate dockers and rpm
+* adapt for rpm builds
+* fix - => \_
+* remove unsupported distros
+* now builds also with ubuntu-focal
+* enforce python3
+* add dockerfiles
+* reduce debian version
+* update deb changelog for v0.0.9
+* update readme with info on nginx default site
+* update readme with info on running motley\_cue in production
+* change log files default location and create dir when installing deb pkg
+* add nginx configs to debian package
+* run gunicorn behind nginx, add nginx site configuration file
+* bind gunicorn to unix socket instead of host and port
+* update debian changelog with new version number
+* update debian changelog with new version number
+* update requirements to use uvicorn[standard] which already includes uvloop and httptools
+* dockerfile to build the deb package for debian testing
+* update readme with info on deb package and config files
+* fix dh virtualenv path
+* install config files in /etc/motley\_cue with deb pkg
+* added config files to go in /etc on install to setup.cfg
+* update readme with config file search locations
+* use separate config files for motley\_cue and ldf\_adapter
+* install feudalAdapter directly from pypi, updated requirements
+* comment out non-working part
+* add DESTDIR
+* trying to add data\_files, no success
+* change order of debhelper
+* remove shlibs depends
+* change dir to /usr/lib
+* adapt to virtualenv
+* re-add #DEBHELPER
+* initial versin
+* tried different locatin
+* fix outptu
+* reduce output
+* bump version
+* dont fail
+* add upgrade code
+* derive version number from git tag
+* bump version number
+* include debian into git-enabled ignorance
+* no binaries in git repos
+* debian building
+* ensure python3
+* ignore \*.swp
+* add some dependencies
+* remove centos7
+* included dockerfile stuff into the Makefile
+* switch from apt to yum
+* integrate dockers and rpm
+* adapt for rpm builds
+* fix - => \_
+
+v0.0.10
+-------
+
+* update readme with debian repo info, ssh integration info (pam, mc\_ssh)
+* add info on disabling nginx default site
+* better defaults and config templates
+* remove unsupported distros
+* now builds also with ubuntu-focal
+* enforce python3
+* add dockerfiles
+* read login\_info from ldf\_adapter CONFIG instead of mapper CONFIG
+* use relative path to install files in etc/motley\_cue
+* reduce debian version
+
+v0.0.9
+------
+
+* update deb changelog for v0.0.9
+* update readme with info on nginx default site
+* update readme with info on running motley\_cue in production
+* change log files default location and create dir when installing deb pkg
+* add nginx configs to debian package
+* run gunicorn behind nginx, add nginx site configuration file
+* bind gunicorn to unix socket instead of host and port
+
+v0.0.8
+------
+
+* update package version to non-native
+* update debian changelog with new version number
+* update debian changelog with new version number
+* update requirements to use uvicorn[standard] which already includes uvloop and httptools
+* dockerfile to build the deb package for debian testing
+* update readme with info on deb package and config files
+* fix dh virtualenv path
+* install config files in /etc/motley\_cue with deb pkg
+* added config files to go in /etc on install to setup.cfg
+* update readme with config file search locations
+* use separate config files for motley\_cue and ldf\_adapter
+* install feudalAdapter directly from pypi, updated requirements
+* comment out non-working part
+* add DESTDIR
+* trying to add data\_files, no success
+* change order of debhelper
+* remove shlibs depends
+* change dir to /usr/lib
+* adapt to virtualenv
+* re-add #DEBHELPER
+* initial versin
+* tried different locatin
+* fix outptu
+* reduce output
+* bump version
+* dont fail
+* add upgrade code
+* derive version number from git tag
+* bump version number
+* include debian into git-enabled ignorance
+* no binaries in git repos
+* updated requirements
+
+v0.0.7
+------
+
+* updated ldfAdapter tar
+* debian building
+* ensure python3
+
+v0.0.6
+------
+
+* added gunicorn configs
+* updated dependencies
+* updated info endpoint with login info and authz info
+* updated feudalAdapter to latest version that supports 'limited' state
+* removed possibility for admin users to undeploy accounts
+* removed possibility for admin users to expire accounts
+* changed priority of possible config files
+
+v0.0.5
+------
+
+* added admin authorisation support
+* added support for feudalAdapter v3.9: disable commandline args
+* refactoring for spelling consistency of authorised
+* add http bearer security requirement for validate\_user
+* added support for additional states
+* updated feudal-adapter package
+
+v0.0.4
+------
+
+* support changes in version 0.3.2 of feudal adapter, e.g. non-interactivity
+* updated installation instructions in readme
+
+v0.0.3
+------
+
+* return state for /user/get and /verify\_user
+* added two options for mappings database: redis and file
+
+v0.0.2
+------
+
+* added info on docker image repo
+* more .gitignore stuff
+* added primitive db to store mappings remote id -> local id
+
+v0.0.1
+------
+
+* initial commit of mapper api prototype
