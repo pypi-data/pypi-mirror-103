@@ -1,0 +1,6 @@
+[daipe]
+input_decorator_mapping=daipecore.lineage.mapping:get_mapping
+
+[pyfony.bundle]
+create=daipecore.DaipeCore:DaipeCore
+
