@@ -1,0 +1,10 @@
+tz: Asia/Shanghai
+redis:
+  dsn: redis://${REDIS_HOST}:${REDIS_PORT}
+postgres:
+  dsn: postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DB}
+  enabled: ${POSTGRES_ENABLED}
+omega:
+  home: ~/.zillionare/omega
+  urls:
+    quotes_server: http://localhost:3181
