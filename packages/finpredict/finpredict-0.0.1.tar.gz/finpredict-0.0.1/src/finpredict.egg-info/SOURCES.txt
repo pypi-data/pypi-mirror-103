@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/finpredict.egg-info/PKG-INFO
+src/finpredict.egg-info/SOURCES.txt
+src/finpredict.egg-info/dependency_links.txt
+src/finpredict.egg-info/top_level.txt
