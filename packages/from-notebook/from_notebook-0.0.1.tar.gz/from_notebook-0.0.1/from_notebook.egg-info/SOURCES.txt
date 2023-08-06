@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+from_notebook.egg-info/PKG-INFO
+from_notebook.egg-info/SOURCES.txt
+from_notebook.egg-info/dependency_links.txt
+from_notebook.egg-info/top_level.txt
