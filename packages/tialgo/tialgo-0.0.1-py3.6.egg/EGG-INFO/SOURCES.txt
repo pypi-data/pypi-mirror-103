@@ -1,0 +1,9 @@
+README.md
+setup.py
+tialgo/__init__.py
+tialgo/table_data_model.py
+tialgo.egg-info/PKG-INFO
+tialgo.egg-info/SOURCES.txt
+tialgo.egg-info/dependency_links.txt
+tialgo.egg-info/requires.txt
+tialgo.egg-info/top_level.txt
