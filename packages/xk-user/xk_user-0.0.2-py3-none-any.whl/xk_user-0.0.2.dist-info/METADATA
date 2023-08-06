@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: xk-user
+Version: 0.0.2
+Summary: xing kuang SDK
+Home-page: http://test.com
+Author: zhanglei
+Author-email: test@gmail.com
+License: MIT Licence
+Platform: any
+Requires-Dist: protobuf (==3.15.8)
+Requires-Dist: grpcio (==1.37.0)
+Requires-Dist: grpcio-tools (==1.37.0)
+Requires-Dist: six (==1.15.0)
+
+eds sdk for python
+
+
