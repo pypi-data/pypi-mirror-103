@@ -1,0 +1,3 @@
+[console_scripts]
+tap-bamboohr=tap_teamwork.tap:cli
+
