@@ -1,0 +1,4 @@
+[console_scripts]
+create_asset = archivist:entry.create_asset
+create_event = archivist:entry.create_event
+

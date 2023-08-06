@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: jitsuin-archivist
+Version: 0.1.0a1
+Summary: Jitsuin Archivist Client
+Home-page: https://github.com/jitsuin-inc/archivist-python/
+Author: Jitsuin Inc.
+Author-email: support@jitsuin.com
+License: UNKNOWN
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: certifi (==2020.12.5)
+Requires-Dist: flatten-dict (==0.3.0)
+Requires-Dist: iso8601 (==0.1.13)
+Requires-Dist: requests-toolbelt (==0.9.1)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: rfc3339 (==6.2)
+
+# Jitsuin Archivist Client
+
+The standard Jitsuin Archivist python client
+
+# Development Workflow
+
+To see what is available simply execute:
+
+```bash
+task
+```
+
+To builde the docekr builder image:
+```bash
+task builder
+```
+
+Make a change to the code and execute:
+
+```bash
+task check
+```
+
+to validate the code.
+
+If ok run the unittests:
+
+```bash
+task unittests
+```
+
+If 100% coverage and no test failures generate the wheel:
+
+```bash
+task wheel
+```
+
+
