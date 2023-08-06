@@ -1,0 +1,11 @@
+LICENSE
+README.md
+git-branchless-pick
+setup.py
+git_branchless.egg-info/PKG-INFO
+git_branchless.egg-info/SOURCES.txt
+git_branchless.egg-info/dependency_links.txt
+git_branchless.egg-info/entry_points.txt
+git_branchless.egg-info/top_level.txt
+gitbranchless/__init__.py
+gitbranchless/main.py
