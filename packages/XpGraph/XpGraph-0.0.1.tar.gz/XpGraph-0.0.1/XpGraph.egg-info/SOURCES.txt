@@ -1,0 +1,13 @@
+README.rst
+XpG.py
+setup.cfg
+setup.py
+XpGraph.egg-info/PKG-INFO
+XpGraph.egg-info/SOURCES.txt
+XpGraph.egg-info/dependency_links.txt
+XpGraph.egg-info/requires.txt
+XpGraph.egg-info/top_level.txt
+xpg/__init__.py
+xpg/axp.py
+xpg/cxp.py
+xpg/xpg.py
