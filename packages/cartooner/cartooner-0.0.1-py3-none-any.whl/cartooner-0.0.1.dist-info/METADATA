@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: cartooner
+Version: 0.0.1
+Summary: This tool converts your photo into a cartoon-like image
+Home-page: https://github.com/lutianming/cartoonizer
+Author: Tianming LU
+Author-email: tianming.lu@foxmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: opencv-python
+
+## Cartoonizer
+  This tool converts your photo into a cartoon-like image
+
+## Samples
+   ![input](/imgs/input/Street.jpg)
+
+
+   ![output](/imgs/output/Street_cartoon.jpg)
+
+## Dependences
+  + numpy
+  + scipy
+  + opencv-python
+
+  ```python
+  pip install -r requirement.txt
+  ```
+
+## How it works
+  This cartoonizer uses K-means algorithm to cluster the histogram of image.
+  The value K is auto selected by the method in this [paper](http://papers.nips.cc/paper/2526-learning-the-k-in-k-means.pdf).
+
+
