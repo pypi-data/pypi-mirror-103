@@ -1,0 +1,20 @@
+click
+Markdown>=3.0
+markdown-svgbob
+markdown-aafigure
+markdown-blockdiag
+markdown-katex
+Pygments
+Pyphen
+WeasyPrint
+beautifulsoup4
+Jinja2
+PyPDF2
+CairoSVG>=2.5.2
+toml
+PyYAML
+redis
+zstandard
+
+[:python_version <= "3.8"]
+importlib-resources
