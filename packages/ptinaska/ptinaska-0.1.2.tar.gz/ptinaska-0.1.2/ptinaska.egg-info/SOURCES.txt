@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+ptinaska/__init__.py
+ptinaska/__main__.py
+ptinaska/cli.py
+ptinaska/version.py
+ptinaska.egg-info/PKG-INFO
+ptinaska.egg-info/SOURCES.txt
+ptinaska.egg-info/dependency_links.txt
+ptinaska.egg-info/top_level.txt
