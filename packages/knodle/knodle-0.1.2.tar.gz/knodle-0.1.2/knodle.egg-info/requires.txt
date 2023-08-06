@@ -1,0 +1,14 @@
+joblib
+tqdm
+numpy<1.20.0,>=1.16.5
+scipy
+pandas
+scikit-learn
+torch
+snorkel<=0.9.7
+annoy
+matplotlib
+
+[test]
+pytest
+pytest-cov
