@@ -1,0 +1,4 @@
+[console_scripts]
+sta_phrase=subtitle_analyzer.entry:subtitle_phrase
+sta_vocab=subtitle_analyzer.entry:subtitle_vocab
+
