@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pyrigidbody3d
+Version: 0.3
+Summary: Very simple toy implementation of a 3d rigid body physics engine in Python.
+Home-page: https://github.com/erwincoumans/py_rigidbody_3d
+Author: Erwin Coumans
+Author-email: erwincoumans@google.com
+License: UNKNOWN
+Description: Very simple toy implementation of a 3d rigid body physics engine in Python.
+Platform: UNKNOWN
