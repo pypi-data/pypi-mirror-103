@@ -1,0 +1,5 @@
+cobra>=0.17.1
+jinja2>=2.10.0
+scikit-learn>=0.22.0
+scipy>=1.0.0
+symengine>=0.6.1
