@@ -1,0 +1,9 @@
+README.md
+setup.py
+hellowww/__init__.py
+hellowww/hello.py
+hellowww.egg-info/PKG-INFO
+hellowww.egg-info/SOURCES.txt
+hellowww.egg-info/dependency_links.txt
+hellowww.egg-info/requires.txt
+hellowww.egg-info/top_level.txt
