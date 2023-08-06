@@ -1,0 +1,7 @@
+__pycache__
+
+pydingo.egg-info
+sts_pydingo.egg-info
+
+build
+dist
