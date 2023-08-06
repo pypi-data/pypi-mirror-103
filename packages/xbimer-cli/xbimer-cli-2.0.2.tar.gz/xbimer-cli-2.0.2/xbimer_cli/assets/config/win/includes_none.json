@@ -1,0 +1,6 @@
+[
+  ".\\libs\\python37\\include",
+  ".\\libs\\pybind11\\include",
+  ".\\libs\\cast",
+  "%(AdditionalIncludeDirectories)"
+]
