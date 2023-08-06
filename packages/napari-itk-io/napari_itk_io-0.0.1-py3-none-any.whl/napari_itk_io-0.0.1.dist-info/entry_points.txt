@@ -1,0 +1,3 @@
+[napari.plugin]
+napari-itk-io = napari_itk_io
+
