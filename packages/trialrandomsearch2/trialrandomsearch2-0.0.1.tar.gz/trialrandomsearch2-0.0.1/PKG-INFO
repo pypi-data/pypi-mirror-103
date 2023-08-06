@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: trialrandomsearch2
+Version: 0.0.1
+Summary: just a trial of making library
+Home-page: UNKNOWN
+Author: Selin Zaza
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: justtrialofwhatshappeninghere
+        
+        change log
+        ==========
+        
+        
+        0.0.1 (23/04/2021)
+        
+        -----------------
+        
+        -First Release
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
