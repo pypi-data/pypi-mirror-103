@@ -1,0 +1,9 @@
+tencentcloud/__init__.py,sha256=rh3Lc0BVR_fNDjjyo6bd3z21DvsypGw0OFaV6Vm3B7A,630
+tencentcloud/gpm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/gpm/v20200820/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/gpm/v20200820/gpm_client.py,sha256=7UbY-Y2wVp-DBmSSV3NRwZFroOV2tYFY55e2McO-0Q4,21527
+tencentcloud/gpm/v20200820/models.py,sha256=xLhHa9A6e8bKhEHCNtAMcPCFDD7I5Kuai-mObCGJeDg,55054
+tencentcloud_sdk_python_gpm-3.0.383.dist-info/METADATA,sha256=ad3MZdG6gLkEhyf5Z2DM80s3JHNk9bG5XrrRnzDjODQ,1432
+tencentcloud_sdk_python_gpm-3.0.383.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+tencentcloud_sdk_python_gpm-3.0.383.dist-info/top_level.txt,sha256=g-8OyzoqI6O6LiS85zkeNzhB-osEnRIPZMdyRd_0eL0,13
+tencentcloud_sdk_python_gpm-3.0.383.dist-info/RECORD,,
