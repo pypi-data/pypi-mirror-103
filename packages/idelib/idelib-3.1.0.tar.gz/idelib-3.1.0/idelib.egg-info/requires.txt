@@ -1,0 +1,14 @@
+numpy
+ebmlite>=3.0.0
+
+[example]
+numpy
+ebmlite>=3.0.0
+matplotlib
+
+[test]
+numpy
+ebmlite>=3.0.0
+pytest>=4.6
+mock
+pytest-cov
