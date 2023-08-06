@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pawnshop
+Version: 1.0.1
+Summary: A simple chess library as hobby project.
+Home-page: https://github.com/NilsForssen/pawnshop
+Author: Nils Forssén
+Author-email: forssennils@gmail.com
+License: UNKNOWN
+Description: # Pawnshop
+        A simple chess package for python written solely as hobby project. I've also written a GUI with networking socket capabilities (add link here) and might create some AI furter down the line.
+        
+        The package also includes a 4-player mode, although the ruleset is unchanged from the classic game, Checkmate -> Game Over!
+        ## Background
+        This is my first real project to scale (> 1000 lines of code) and the first to be published to [PyPi](https://pypi.org/project/pawnshop/).
+        
+        The project has certainly been a product of time with other hobby projects and school often taking priority. This along with multiple mid-project large scale refractorizations, reconsiderations and laziness should explain the unorganized codebase.
+        
+        Needless to say, I've attempted to document the code well and create a proper package that I can "proudly" publish, Although I still don't recommend anyone to continue developing or using this outside of simple projects like this. There are definitely better alternatives out there.
+        
+        Some central documentation, more extensive testing and usage examples would have been beneficial, but as of now I just want to continue with other projects and leave this as finished for the time being.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
