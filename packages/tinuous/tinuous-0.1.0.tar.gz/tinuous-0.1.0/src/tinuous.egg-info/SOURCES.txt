@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+versioneer.py
+src/tinuous/__init__.py
+src/tinuous/__main__.py
+src/tinuous/_version.py
+src/tinuous.egg-info/PKG-INFO
+src/tinuous.egg-info/SOURCES.txt
+src/tinuous.egg-info/dependency_links.txt
+src/tinuous.egg-info/entry_points.txt
+src/tinuous.egg-info/requires.txt
+src/tinuous.egg-info/top_level.txt
