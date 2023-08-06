@@ -1,0 +1,3 @@
+[console_scripts]
+hugo-deployer-git = hugo_deployer_git.cli.__main__:main
+

@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: hugo-deployer-git
+Version: 0.0.5
+Summary: Deploy your hugo site with github pages using one command
+Home-page: https://github.com/ianre657/hugo-deployer-git
+Author: Ian Chen
+Author-email: ianre657@gmail.com
+License: MIT
+Description: # hugo-deployer-git
+        
+        Deploy your hugo site using one command
+        
+        Inspired by [hexo-deployer-git](https://github.com/hexojs/hexo-deployer-git).
+        
+        ## Installation
+        
+        `pip3 install hugo-deployer-git`
+        
+        ## Setup
+        
+        In your `config.toml`, insert this section with your configs.
+        
+        ```toml
+        [hugo-deployer-git]
+            # required
+            repo = "your github page repo"
+            branch =  "master"
+        
+            # optoinal
+            name= "haha"
+            email= "test@testtest.com"
+            message = ""
+            build-config= "--minify"
+        ```
+        
+        ## How to use
+        
+        cd to your hugo project and use `hugo-deployer-git`.
+Keywords: hugo,github pages,deploy,git,blogger,utility,static site
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
