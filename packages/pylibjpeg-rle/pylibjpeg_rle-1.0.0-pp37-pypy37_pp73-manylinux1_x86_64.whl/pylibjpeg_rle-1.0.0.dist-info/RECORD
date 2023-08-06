@@ -1,0 +1,15 @@
+rle/_rle.pypy37-pp73-x86_64-linux-gnu.so,sha256=3nKzUxjPNWkMQMa2izQ0ojWo5xiMQ6ZZN9h41y9iL2k,3483368
+rle/utils.py,sha256=IDSTtc8rJzUDWKpRUYJPpHomKzAJWwwgWRqwpLkYJgc,5109
+rle/_version.py,sha256=0GED-UttYZ3twas-h61sw4Pa6yAglUrC-dpAzJsWq_g,1446
+rle/__init__.py,sha256=q_SnWo80_8QWxbE5z3ygs2eiZtvL-AyWFWERKYdYDgg,137
+rle/benchmarks/bench_decode.py,sha256=DXinOkHkfejwa-nxtXd9VwUw77-fv9Tpm33wkAFKUTk,4701
+rle/benchmarks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rle/tests/test_handler.py,sha256=ng2g7FSshf9Aty9bxI-pIH4vD8fssTqU2L0H1y35srw,1863
+rle/tests/test_decode.py,sha256=dWsHMqmkzsqtfovUVLTpH3sjnNA9UPRGaHoOi6XnM8Q,30136
+rle/tests/__init__.py,sha256=ZMEVLEMVK9Pglc_ieMY3ukRgME01yZUtmT51OunFl-E,228
+pylibjpeg_rle-1.0.0.dist-info/LICENSE,sha256=H3lmyjm9TFBrHfHWjpNpQGszUrs9uojWGLgeL5IccfQ,1074
+pylibjpeg_rle-1.0.0.dist-info/METADATA,sha256=Yf15bCEijI3bUglZzVykYCggf7eaFotvW3_Ads9j6E4,4579
+pylibjpeg_rle-1.0.0.dist-info/RECORD,,
+pylibjpeg_rle-1.0.0.dist-info/WHEEL,sha256=5eKR7c5dibGZKEK6kbL-D-hiFV8ofa-hLPJLh2aaTRk,115
+pylibjpeg_rle-1.0.0.dist-info/entry_points.txt,sha256=i4_K1WZTxsdgIk_2O-wAMHRu5vvkxBNp7uuj6ZF30S8,77
+pylibjpeg_rle-1.0.0.dist-info/top_level.txt,sha256=gy2d4lmAEc4nALqS3325NPlITUGanbXJkhTcDKI1A3Y,4
