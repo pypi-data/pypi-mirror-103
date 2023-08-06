@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+pyrconsole.egg-info/PKG-INFO
+pyrconsole.egg-info/SOURCES.txt
+pyrconsole.egg-info/dependency_links.txt
+pyrconsole.egg-info/requires.txt
+pyrconsole.egg-info/top_level.txt
