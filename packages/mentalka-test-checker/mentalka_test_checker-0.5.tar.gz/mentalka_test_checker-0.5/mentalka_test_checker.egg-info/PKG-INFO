@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mentalka-test-checker
+Version: 0.5
+Summary: OCR system for table-test check
+Home-page: https://github.com/SalimMaxHigh/test_checker
+Author: Salim
+Author-email: cvwisework@gmail.com
+License: UNKNOWN
+Description: OCR system for table-test check. Use 
+            result, scans, rects, blank_type, qr_code = check_test(image)
+            painted_image = paint(image, all_marks, rects, blank_type)
+            
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
