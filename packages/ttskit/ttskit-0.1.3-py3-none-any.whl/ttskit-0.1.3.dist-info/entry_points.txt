@@ -1,0 +1,4 @@
+[console_scripts]
+tkcli = ttskit.cli_api:tts_cli
+tkhttp = ttskit.http_server:start_sever
+
