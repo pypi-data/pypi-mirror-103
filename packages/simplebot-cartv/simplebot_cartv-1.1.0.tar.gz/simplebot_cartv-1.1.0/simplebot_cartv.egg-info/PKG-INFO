@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: simplebot-cartv
+Version: 1.1.0
+Summary: Cartelera de la TV cubana (plugin para SimpleBot)
+Home-page: https://github.com/adbenitez/simplebot_cartv
+Author: The SimpleBot Contributors
+Author-email: adbenitez@nauta.cu, correaleyval@gmail.com
+License: MPL
+Description: Cartelera TV
+        ============
+        
+        .. image:: https://img.shields.io/github/v/release/adbenitez/simplebot_cartv
+           :target: https://pypi.org/project/simplebot_cartv
+        
+        .. image:: https://img.shields.io/pypi/pyversions/simplebot_cartv.svg
+           :target: https://pypi.org/project/simplebot_cartv
+        
+        .. image:: https://pepy.tech/badge/simplebot_cartv
+           :target: https://pepy.tech/project/simplebot_cartv
+        
+        .. image:: https://img.shields.io/pypi/l/simplebot_cartv.svg
+           :target: https://pypi.org/project/simplebot_cartv
+        
+        .. image:: https://github.com/adbenitez/simplebot_cartv/actions/workflows/python-ci.yml/badge.svg
+           :target: https://github.com/adbenitez/simplebot_cartv/actions/workflows/python-ci.yml
+        
+        .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+           :target: https://github.com/psf/black
+        
+        Un plugin para `SimpleBot`_ que permite ver la cartelera de la TV cubana
+        desde Delta Chat.
+        
+        Instalación
+        -----------
+        
+        Para instalar este plugin::
+        
+          pip install simplebot-cartv
+        
+        
+        .. _SimpleBot: https://github.com/simplebot-org/simplebot
+        
+        Changelog
+        =========
+        
+        `1.1.0`_
+        --------
+        
+        - update to new service api
+        
+        1.0.2
+        -----
+        
+        - initial release
+        
+        .. _Unreleased: https://github.com/simplebot-org/simplebot/compare/v1.1.0...HEAD
+        .. _1.1.0: https://github.com/simplebot-org/simplebot/compare/v1.0.2...v1.1.0
+        
+Keywords: simplebot plugin deltachat
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
+Description-Content-Type: text/x-rst
+Provides-Extra: test
