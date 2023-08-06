@@ -1,0 +1,9 @@
+dnsblock_update/__init__.py,sha256=lQL0AUlcqmJBgh7pwe2hMdjAqfpC9fc-gM0ov_31A90,692
+dnsblock_update/__main__.py,sha256=ntO4IrX1ldIVuSvPiMd6sJdYr-3rM_niztZGkSHWGCk,68
+dnsblock_update/blocklist.py,sha256=ierYNByaG7CWXxYhdjKsGQ5uLktcA_Tk2ioBxwECQEo,2693
+dnsblock_update/config.py,sha256=kbNgwPschnABAZ5U0Ru7vK-C1KZWqcOdQCTAzIvpYy8,529
+dnsblock_update-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dnsblock_update-0.0.1.dist-info/METADATA,sha256=vUV0pUIQTX8j9pvHPVnKqSwRzsYharfq4-XV9ZDPXbQ,1784
+dnsblock_update-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dnsblock_update-0.0.1.dist-info/top_level.txt,sha256=YMh2hKtyrwYaXrVLDw8MVt_H_PYyESW2qIA8HOqpSF8,16
+dnsblock_update-0.0.1.dist-info/RECORD,,
