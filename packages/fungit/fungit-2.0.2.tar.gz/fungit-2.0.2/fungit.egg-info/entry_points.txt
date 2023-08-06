@@ -1,0 +1,5 @@
+
+        [console_scripts]
+        fungit=fungit.main:main
+        g=fungit.terminal_git.main:command_g
+    
