@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: netsuite
+Version: 0.6.3
+Summary: Wrapper around Netsuite SuiteTalk SOAP/REST Web Services and Restlets.
+Home-page: https://jmagnusson.github.io/netsuite/
+License: MIT
+Author: Jacob Magnusson
+Author-email: m@jacobian.se
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: all
+Provides-Extra: cli
+Provides-Extra: rest_api
+Requires-Dist: authlib (>=0.15.3,<0.16.0); extra == "rest_api" or extra == "all"
+Requires-Dist: httpx (>=0.17,<0.18); extra == "rest_api" or extra == "all"
+Requires-Dist: ipython (>=7,<8); extra == "cli" or extra == "all"
+Requires-Dist: orjson (>=3,<4)
+Requires-Dist: requests-oauthlib (>=1.3,<2.0)
+Requires-Dist: zeep (>=4,<5)
+Project-URL: Documentation, https://jmagnusson.github.io/netsuite/
+Project-URL: Repository, https://github.com/jmagnusson/netsuite
+Description-Content-Type: text/markdown
+
+# netsuite
+
+[![Continuous Integration Status](https://github.com/jmagnusson/netsuite/actions/workflows/ci.yml/badge.svg)](https://github.com/jmagnusson/netsuite/actions/workflows/ci.yml)
+[![Continuous Delivery Status](https://github.com/jmagnusson/netsuite/actions/workflows/cd.yml/badge.svg)](https://github.com/jmagnusson/netsuite/actions/workflows/cd.yml)
+[![Code Coverage](https://img.shields.io/codecov/c/github/jmagnusson/netsuite?color=%2334D058)](https://codecov.io/gh/jmagnusson/netsuite)
+[![PyPI version](https://img.shields.io/pypi/v/netsuite.svg)](https://pypi.python.org/pypi/netsuite/)
+[![License](https://img.shields.io/pypi/l/netsuite.svg)](https://pypi.python.org/pypi/netsuite/)
+[![Python Versions](https://img.shields.io/pypi/pyversions/netsuite.svg)](https://pypi.org/project/netsuite/)
+[![PyPI status (alpha/beta/stable)](https://img.shields.io/pypi/status/netsuite.svg)](https://pypi.python.org/pypi/netsuite/)
+
+Make requests to NetSuite SuiteTalk SOAP/REST Web Services and Restlets
+
+## Installation
+
+Programmatic use only:
+
+    pip install netsuite
+
+With NetSuite SuiteTalk REST Web Services API support:
+
+    pip install netsuite[rest_api]
+
+With CLI support:
+
+    pip install netsuite[cli]
+
+With all features:
+
+    pip install netsuite[all]
+
+## Documentation
+
+Is found here: https://jmagnusson.github.io/netsuite/
+
