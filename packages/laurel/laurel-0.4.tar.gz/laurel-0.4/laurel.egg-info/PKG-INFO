@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: laurel
+Version: 0.4
+Summary: Python control of C by GE Bluetooth lightbulbs
+Home-page: http://github.com/mjg59/python-laurel
+Author: Matthew Garrett
+Author-email: mjg59@srcf.ucam.org
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
