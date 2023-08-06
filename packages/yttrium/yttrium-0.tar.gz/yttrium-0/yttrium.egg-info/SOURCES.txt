@@ -1,0 +1,5 @@
+pyproject.toml
+yttrium.egg-info/PKG-INFO
+yttrium.egg-info/SOURCES.txt
+yttrium.egg-info/dependency_links.txt
+yttrium.egg-info/top_level.txt
