@@ -1,0 +1,5 @@
+[console_scripts]
+get_hrrr_archive = weather_forecast_retrieval.hrrr_archive:cli
+grib2nc = weather_forecast_retrieval.grib2nc:main
+hrrr_preprocessor = weather_forecast_retrieval.hrrr_preprocessor:cli
+
