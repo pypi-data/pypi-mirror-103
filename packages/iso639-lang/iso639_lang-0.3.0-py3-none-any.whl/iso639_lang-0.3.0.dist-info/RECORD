@@ -1,0 +1,14 @@
+iso639/ISO-639-2_utf-8.txt,sha256=50w2LQgT-S8VA8Zj2JDgb6_aPHQ_ithyYoGs9TGsHRs,15595
+iso639/__init__.py,sha256=NxR7t-cm2_vY5sz7VaPlCDYRnOFSF0LWCZI5CGn9vjY,44
+iso639/exceptions.py,sha256=KUZPsI85lUuiwJ-LeTHObiW1t0hh7TchIMDLnRrasis,1596
+iso639/iso-639-3-macrolanguages.tab,sha256=dYy3vp7rovQqZLz_TYCsSAaB_CMxCVFvPvOHKTAMQbg,5001
+iso639/iso-639-3.tab,sha256=C3yNT54y0qDSy7l6hL4TD40bWuKbohHf26U0GhsW88A,185381
+iso639/iso-639-3_Retirements.tab,sha256=3jtpY0QJqzv_kp-1MGjZBkN2pdf1GWaqXsNDWS6zLDk,18626
+iso639/iso639-5.tsv,sha256=sEiJavGUQdq5bXQoWxpMajLHUulgAJuTvqXc-DMr4L8,10282
+iso639/iso639.py,sha256=uGQvj1b1FbCYvzwSsUYUGrqlEdMcis9_yfVEWnUAOXM,6895
+iso639/mapping.py,sha256=N4zE3knxS11Gjx-AvjwgHPYEdvJaleSk0Zt3aEUS-qk,7911
+iso639_lang-0.3.0.dist-info/LICENSE.txt,sha256=zjCxVsQVwKIp6OzuLFYpUWiKc63Piby6VN35aSSKjXc,1066
+iso639_lang-0.3.0.dist-info/METADATA,sha256=2aGXaGLPA02gc-9PGCKVcci0i8Z0mEkwZVtIVjMvRGE,4705
+iso639_lang-0.3.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+iso639_lang-0.3.0.dist-info/top_level.txt,sha256=phLVuJxujEeJhkT0hgTMQiSvs3UVIIwVHW4lbuJdCb0,7
+iso639_lang-0.3.0.dist-info/RECORD,,
