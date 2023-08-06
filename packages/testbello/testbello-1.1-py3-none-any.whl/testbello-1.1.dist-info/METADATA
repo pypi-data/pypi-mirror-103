@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: testbello
+Version: 1.1
+Summary: z
+Home-page: https://github.com/repos/CastellaniDavide/testbello
+Author: DavideC03
+Author-email: help@castellanidavide.it
+License: GNU
+Platform: linux_distibution
+Requires-Python: >=3.6
+Requires-Dist: tabular-log
+Requires-Dist: requests
+Requires-Dist: programGUI
+
+UNKNOWN
+
+
