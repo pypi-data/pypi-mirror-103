@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: paspymod
+Version: 0.0.1
+Summary: Centrify PAS REST API Module to run scripts
+Home-page: https://github.com/ajskrilla/pas_py_mod
+Author: Andrew Schilling
+Author-email: andrew.schilling@centrify.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: centrify.dmc
+Requires-Dist: cachetools
+
+Purpose is to provide the back bone library for the auth requests in the command line library in the github posted in the setup file. 
+
+
