@@ -1,0 +1,34 @@
+# Python
+*.pyc
+# IntelliJ IDEA (IDE-related files)
+*.iml
+.idea/*
+.ipynb_checkpoints/*
+
+# Setuptools.
+dist
+*.egg-info
+
+# pytest
+.cache/*
+.pytest_cache/*
+
+# Jupyter notebook
+jupyterhub.sqlite
+jupyterhub_cookie_secret
+index.ipynb
+
+docs/_build/*
+
+build/
+*.py[cod]
+node_modules/
+package-lock.json
+js/package-lock.json
+jslab/package-lock.json
+
+# Compiled javascript
+ipyslickgrid/static/
+
+# OS X
+.DS_Store
