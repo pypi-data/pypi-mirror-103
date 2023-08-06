@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: fuo_kuwo
+Version: 0.1.3
+Summary: Kuwo music provider for FeelUOwn music player
+Home-page: https://github.com/BruceZhang1993/feeluown-kuwo
+Author: BruceZhang1993
+Author-email: zttt183525594@gmail.com
+License: GPL
+Description: UNKNOWN
+Keywords: feeluown,plugin,kuwo
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
