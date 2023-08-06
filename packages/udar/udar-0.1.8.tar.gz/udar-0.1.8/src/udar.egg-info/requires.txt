@@ -1,0 +1,16 @@
+bs4
+fastapi
+hfst
+nltk
+pandas
+pexpect
+sphinx_autodoc_typehints
+stanza>=1.1.1
+uvicorn
+
+[test]
+pytest>=4.6
+pytest-cov
+pytest-flake8
+pytest-mypy
+pytest-timeout
