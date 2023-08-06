@@ -1,0 +1,17 @@
+.gitignore
+LICENSE
+README.md
+demo_1.py
+demo_2.py
+setup.py
+fastpip/__init__.py
+fastpip/errors.py
+fastpip/fastpip.py
+fastpip/findpath.py
+fastpip/pathutil.py
+fastpip/versions.py
+fastpip.egg-info/PKG-INFO
+fastpip.egg-info/SOURCES.txt
+fastpip.egg-info/dependency_links.txt
+fastpip.egg-info/requires.txt
+fastpip.egg-info/top_level.txt
