@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+hbreader = "*"
+# Note: pyld needs requests package to access contexts
+requests = "*"
+pyld = { git = "https://github.com/hsolbrig/pyld" }
+jsonasobj = ">=2.0.2dev4"
+pyyaml = ">=5.1"
+rdflib = "*"
+rdflib-pyld-compat = "*"
+rdflib-jsonld = "*"
+click = "*"
+prefixcommons = "*"
+shexjsg = "*"
+
+[dev-packages]
+
+[pipenv]
+allow_prereleases = true
