@@ -1,0 +1,29 @@
+python-zapf (0.1.0) focal; urgency=medium
+
+  * bump PyTango requirement
+  * fix/address pylint issues
+  * run isort
+  * simulator: add lword and lreal
+  * debian: add build files
+  * io: add missing write methods
+  * pylint: enable inconsistent-return-statements
+  * fix a bug in the cache impl
+  * device: register cache range on init
+  * io: show byteorder/float after finding magic
+  * ads: allow nonstandard port, fix error translation
+  * fix a few typos
+  * device: add get_limits() API, change_target() needs to set status
+  * device: simplify discrete classes
+  * device: fix status size and param/device number
+  * device: always write target+status atomically
+  * device: fix reading and writing 32-bit statuses
+  * device: implement 64-bit vector devices
+  * ads: fall back to adding a route if connection is closed
+
+ -- Georg Brandl <jenkins@jenkins02.admin.frm2.tum.de>  Fri, 23 Apr 2021 13:05:22 +0200
+
+python-zapf (0.0.0) unstable; urgency=low
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Tue, 20 Apr 2021 12:00:00 +0200
