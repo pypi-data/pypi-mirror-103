@@ -1,0 +1,13 @@
+matplotlib<=3.2.0
+numpy
+scipy
+scikit-learn>=0.24.1
+pandas>=1.0.0
+shap>=0.36.0
+ipython>=7.11.0
+bayesian-optimization>=1.2.0
+catboost>=0.23.2
+xgboost>=1.4.1
+lightgbm>=2.3.0
+mlxtend>=0.17.0
+python-levenshtein-wheels>=0.13.1
