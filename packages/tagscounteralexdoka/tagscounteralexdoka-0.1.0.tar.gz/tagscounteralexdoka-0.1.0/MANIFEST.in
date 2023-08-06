@@ -1,0 +1,4 @@
+include tagscounteralexdoka/*.yaml
+include tagscounteralexdoka/*.db
+include tagscounteralexdoka/tags_log_file
+include README.rst
