@@ -1,0 +1,10 @@
+pydingo/__init__.py,sha256=41-qJpIyL39brKv6U9PqAL27vZ0x_DD_nNE_f4xoTP8,55
+pydingo/client.py,sha256=lEBlOuSI4lApYEcxQnde5TZozzmeLEeOa8qZALAJPcY,7514
+pydingo/client_connection.py,sha256=8lIFRIKQ1_ctuuTdoFfwLSaK8MODRsgPUP6Frl1svQE,4291
+pydingo/image.py,sha256=ZNpzKTsok_MJjlge2_FyRvR9Ygup8hjG9z7FdgtKkqM,566
+pydingo/rpc_session.py,sha256=ordAmauF7h_j1ni8heE7br91SSHOXniVdXPGc1SC83g,926
+pydingo/video.py,sha256=IMOZlA9JdEeL2Bsuvw-5nYkcgaE46vHNImIJUDIge-Q,898
+sts_pydingo-0.1.dev105.dist-info/METADATA,sha256=LsKrBnR63ITheeILxczu2PHaN3iOGEB8TgUqCGF8m6A,271
+sts_pydingo-0.1.dev105.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sts_pydingo-0.1.dev105.dist-info/top_level.txt,sha256=lJ3cR-9Ku6MuZYBpFgxtNVfZzcvKbEoGPYL69Fouxlw,8
+sts_pydingo-0.1.dev105.dist-info/RECORD,,
