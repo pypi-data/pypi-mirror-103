@@ -1,0 +1,4 @@
+name: "Adidas Confirmed"
+schema: 0.0.1
+date_format: "DD/MM/YY, hh:mm:ss"
+scope_delimiter: "::"

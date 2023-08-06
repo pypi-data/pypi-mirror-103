@@ -1,0 +1,15 @@
+type: map
+mapping:
+  name:
+    type: str
+    required: True
+  schema:
+    required: True
+    type: str
+    pattern: "^(\\*|\\d+(\\.\\d+){0,2}(\\.\\*)?)$"
+  date_format:
+    required: True
+    type: str
+  scope_delimiter:
+    required: False
+    type: str
