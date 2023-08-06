@@ -1,0 +1,16 @@
+README.md
+setup.py
+netbox_interface_sync/__init__.py
+netbox_interface_sync/forms.py
+netbox_interface_sync/template_content.py
+netbox_interface_sync/urls.py
+netbox_interface_sync/utils.py
+netbox_interface_sync/views.py
+netbox_interface_sync.egg-info/PKG-INFO
+netbox_interface_sync.egg-info/SOURCES.txt
+netbox_interface_sync.egg-info/dependency_links.txt
+netbox_interface_sync.egg-info/not-zip-safe
+netbox_interface_sync.egg-info/top_level.txt
+netbox_interface_sync/templates/netbox_interface_sync/compare_interfaces_button.html
+netbox_interface_sync/templates/netbox_interface_sync/interface_comparison.html
+netbox_interface_sync/templates/netbox_interface_sync/number_of_interfaces_panel.html
