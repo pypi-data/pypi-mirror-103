@@ -1,0 +1,15 @@
+subdivisions/__init__.py,sha256=XxXhu8-QnuD9hA8Ah0WX5rgpt_DwOQmAwcK-FtpngyQ,22
+subdivisions/base.py,sha256=BF2EXv2ATu3XQ7nfH2p4eoNWtAY398A6e8iX-jeKKHE,2637
+subdivisions/builders/__init__.py,sha256=qdZEgLg5dAYWyF6nrqcx5SEiWggH_R2PIGbHh_dxPCE,768
+subdivisions/builders/events.py,sha256=CvAPe3TCUEVtTsgSPQDp2Z9jMFAtlEqF8dTEItJgLGI,3022
+subdivisions/builders/sns.py,sha256=bs8OYkfvY1EBGcE7begNv-jFRDroF0vshgP2gMlSNlQ,1888
+subdivisions/builders/sqs.py,sha256=1xo_mt9raKRivv0uFTxxr-mHTYkqncx3xBiOSKNA7JQ,3133
+subdivisions/client.py,sha256=ZNn3u-AoXd0-THPbYk6OvAgXaPAt3duzVT1-8pHI_LY,6398
+subdivisions/config.py,sha256=gI4WquvIqybPFn2tmK8VQ8BuRHL0X6tHb57wh86eYjs,6397
+subdivisions/events.py,sha256=3axYMEAiW_DMKeYg67IV0lFxxJWZSYKz1bXANM5Zq0E,506
+subdivisions/exceptions.py,sha256=vLxPr4kZF7iDlJZVZQEx77leAQYnpbu9gze6dYMmH8o,43
+subdivisions/policies.py,sha256=sAXlBrvqF_Vpqmrs7RbH2R06xLeWLR37x4rXr80CcdM,1149
+subdivisions/utils.py,sha256=qT_T_U4_2RXq0n4hmH-uFu4mB3HFZD0U2cCtoKSS_Dg,715
+subdivisions-1.1.4.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+subdivisions-1.1.4.dist-info/METADATA,sha256=GYj2scWLN8rEjoDKDDlwNx0HT4WJpS_lIIM6r72COTI,4955
+subdivisions-1.1.4.dist-info/RECORD,,
