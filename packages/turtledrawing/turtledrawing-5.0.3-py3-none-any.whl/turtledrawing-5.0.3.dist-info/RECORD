@@ -1,0 +1,9 @@
+shapes/__init__.py,sha256=qiBXa-nEnHYnOyPYSOhDOWgG148IK4zIMvhCtEIjHIQ,80
+shapes/car.py,sha256=T53ux0dH76WixiVfnFMGi8IvVk7gB9mHHDKM9Jj_C00,1233
+shapes/circle.py,sha256=xf732vMHZqDy2mHVu7DtHKbsXixiV8ovEdZQHpAQRRw,518
+shapes/rectangle.py,sha256=NVroVea_XcTR3UykmvyurTK3JuKqinsEpvr3bSUtREc,720
+turtledrawing-5.0.3.dist-info/METADATA,sha256=h8UubTSXamGc66xFSH30dV6wHxDe-OZO7HJk16de7WY,478
+turtledrawing-5.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+turtledrawing-5.0.3.dist-info/entry_points.txt,sha256=mDtq5fbYTdTDXA-CdbL8J4uUGDm5_js9Ys2qp_8k3q4,53
+turtledrawing-5.0.3.dist-info/top_level.txt,sha256=EIv_QfabiYhrrdf51A0U9qr2-SWEMm1F5tisQJ68Uns,7
+turtledrawing-5.0.3.dist-info/RECORD,,
