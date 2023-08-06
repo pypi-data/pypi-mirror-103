@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+analytics_sdk/__init__.py
+analytics_sdk/oap_dash.py
+analytics_sdk/utilities.py
+opsramp_analytics_utils.egg-info/PKG-INFO
+opsramp_analytics_utils.egg-info/SOURCES.txt
+opsramp_analytics_utils.egg-info/dependency_links.txt
+opsramp_analytics_utils.egg-info/requires.txt
+opsramp_analytics_utils.egg-info/top_level.txt
