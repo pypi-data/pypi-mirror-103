@@ -1,0 +1,40 @@
+image: python
+stages:
+  - build
+  - test
+  - deploy
+
+before_script:
+  - apt-get update
+
+build_cpp:
+  stage: build
+  script:
+    - apt-get install cmake --yes
+    - apt-get install gcc
+    - mkdir build
+    - cd build
+    - cmake ..
+    - make
+
+test_python:
+  stage: test
+  script:
+    - apt-get install gcc
+    - pip install -r requirements.txt
+    - pip install pytest
+    - python setup.py develop
+    - pytest
+
+deploy_pypi:
+  stage: deploy
+  rules:
+    - if: '$CI_COMMIT_TAG =~ /^v\d+.\d+.\d+/'
+  script:
+    - apt-get install gcc
+    - pip install -r requirements.txt
+    - pip install setuptools setuptools_scm twine pytest
+    - python setup.py sdist
+    - twine check dist/*
+    # upload to official PyPI
+    - twine upload -u __token__ --repository-url https://upload.pypi.org/legacy/ dist/*

@@ -1,0 +1,3 @@
+recursive-exclude tests *
+recursive-exclude demo_kplib *
+recursive-exclude doc *
