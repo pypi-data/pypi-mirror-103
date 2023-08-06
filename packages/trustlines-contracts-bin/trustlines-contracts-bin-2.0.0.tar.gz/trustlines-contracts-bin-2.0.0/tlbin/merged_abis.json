@@ -1,0 +1,1581 @@
+{
+  "MergedCurrencyNetworksAbi": {
+    "abi": [
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "beacon_",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "data",
+            "type": "bytes"
+          }
+        ],
+        "stateMutability": "payable",
+        "type": "constructor"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "previousAdmin",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "newAdmin",
+            "type": "address"
+          }
+        ],
+        "name": "AdminChanged",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "previousBeacon",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "newBeacon",
+            "type": "address"
+          }
+        ],
+        "name": "BeaconChanged",
+        "type": "event"
+      },
+      {
+        "stateMutability": "payable",
+        "type": "fallback"
+      },
+      {
+        "inputs": [],
+        "name": "admin",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "admin_",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "beacon",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "beacon_",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "newAdmin",
+            "type": "address"
+          }
+        ],
+        "name": "changeAdmin",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "newBeacon",
+            "type": "address"
+          }
+        ],
+        "name": "changeBeacon",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "newBeacon",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "data",
+            "type": "bytes"
+          }
+        ],
+        "name": "changeBeaconAndCall",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "implementation",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "impl",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "stateMutability": "payable",
+        "type": "receive"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "authorized",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "allower",
+            "type": "address"
+          }
+        ],
+        "name": "AuthorizedAddressAdd",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "authorized",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "allower",
+            "type": "address"
+          }
+        ],
+        "name": "AuthorizedAddressRemove",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "_from",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "_to",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "int256",
+            "name": "_value",
+            "type": "int256"
+          }
+        ],
+        "name": "BalanceUpdate",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "_debtor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "_creditor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "int256",
+            "name": "_newDebt",
+            "type": "int256"
+          }
+        ],
+        "name": "DebtUpdate",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "authorized",
+            "type": "address"
+          }
+        ],
+        "name": "GlobalAuthorizedAddressAdd",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "authorized",
+            "type": "address"
+          }
+        ],
+        "name": "GlobalAuthorizedAddressRemove",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [],
+        "name": "NetworkFreeze",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [],
+        "name": "NetworkUnfreeze",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "_onboarder",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "_onboardee",
+            "type": "address"
+          }
+        ],
+        "name": "Onboard",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [],
+        "name": "OwnerRemoval",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "_from",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "_to",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "_value",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "bytes",
+            "name": "_extraData",
+            "type": "bytes"
+          }
+        ],
+        "name": "Transfer",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "_creditor",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "_debtor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "_creditlineGiven",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "_creditlineReceived",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "int256",
+            "name": "_interestRateGiven",
+            "type": "int256"
+          },
+          {
+            "indexed": false,
+            "internalType": "int256",
+            "name": "_interestRateReceived",
+            "type": "int256"
+          },
+          {
+            "indexed": false,
+            "internalType": "bool",
+            "name": "_isFrozen",
+            "type": "bool"
+          }
+        ],
+        "name": "TrustlineUpdate",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "_initiator",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "_counterparty",
+            "type": "address"
+          }
+        ],
+        "name": "TrustlineUpdateCancel",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "_creditor",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "_debtor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "_creditlineGiven",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "_creditlineReceived",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "int256",
+            "name": "_interestRateGiven",
+            "type": "int256"
+          },
+          {
+            "indexed": false,
+            "internalType": "int256",
+            "name": "_interestRateReceived",
+            "type": "int256"
+          },
+          {
+            "indexed": false,
+            "internalType": "bool",
+            "name": "_isFrozen",
+            "type": "bool"
+          },
+          {
+            "indexed": false,
+            "internalType": "int72",
+            "name": "_transfer",
+            "type": "int72"
+          }
+        ],
+        "name": "TrustlineUpdateRequest",
+        "type": "event"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "target",
+            "type": "address"
+          }
+        ],
+        "name": "addAuthorizedAddress",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_counterParty",
+            "type": "address"
+          }
+        ],
+        "name": "applyInterests",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "name": "authorizedBy",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_a",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_b",
+            "type": "address"
+          }
+        ],
+        "name": "balance",
+        "outputs": [
+          {
+            "internalType": "int256",
+            "name": "_balance",
+            "type": "int256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "int72",
+            "name": "_balance",
+            "type": "int72"
+          },
+          {
+            "internalType": "uint256",
+            "name": "_startTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "_endTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int16",
+            "name": "_interestRateGiven",
+            "type": "int16"
+          },
+          {
+            "internalType": "int16",
+            "name": "_interestRateReceived",
+            "type": "int16"
+          }
+        ],
+        "name": "calculateBalanceWithInterests",
+        "outputs": [
+          {
+            "internalType": "int72",
+            "name": "",
+            "type": "int72"
+          }
+        ],
+        "stateMutability": "pure",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_counterparty",
+            "type": "address"
+          }
+        ],
+        "name": "cancelTrustlineUpdate",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "capacityImbalanceFeeDivisor",
+        "outputs": [
+          {
+            "internalType": "uint16",
+            "name": "",
+            "type": "uint16"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_otherParty",
+            "type": "address"
+          }
+        ],
+        "name": "closeTrustline",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_otherParty",
+            "type": "address"
+          },
+          {
+            "internalType": "uint64",
+            "name": "_minBalance",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "_maxBalance",
+            "type": "uint64"
+          }
+        ],
+        "name": "closeTrustlineByDirectTransfer",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_otherParty",
+            "type": "address"
+          },
+          {
+            "internalType": "uint64",
+            "name": "_maxFee",
+            "type": "uint64"
+          },
+          {
+            "internalType": "address[]",
+            "name": "_path",
+            "type": "address[]"
+          }
+        ],
+        "name": "closeTrustlineByTriangularTransfer",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_creditor",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_debtor",
+            "type": "address"
+          }
+        ],
+        "name": "creditline",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "_creditline",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "customInterests",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint64",
+            "name": "_value",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "_maxFee",
+            "type": "uint64"
+          },
+          {
+            "internalType": "address[]",
+            "name": "_path",
+            "type": "address[]"
+          },
+          {
+            "internalType": "bytes",
+            "name": "_extraData",
+            "type": "bytes"
+          }
+        ],
+        "name": "debitTransfer",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "bytes32",
+            "name": "",
+            "type": "bytes32"
+          }
+        ],
+        "name": "debt",
+        "outputs": [
+          {
+            "internalType": "int256",
+            "name": "",
+            "type": "int256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "decimals",
+        "outputs": [
+          {
+            "internalType": "uint8",
+            "name": "",
+            "type": "uint8"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "defaultInterestRate",
+        "outputs": [
+          {
+            "internalType": "int16",
+            "name": "",
+            "type": "int16"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "expirationTime",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "freezeNetwork",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_a",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_b",
+            "type": "address"
+          }
+        ],
+        "name": "getAccount",
+        "outputs": [
+          {
+            "internalType": "int256",
+            "name": "",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "",
+            "type": "int256"
+          },
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          },
+          {
+            "internalType": "int256",
+            "name": "",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "",
+            "type": "int256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "getAllDebtors",
+        "outputs": [
+          {
+            "internalType": "address[]",
+            "name": "",
+            "type": "address[]"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "debtor",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "creditor",
+            "type": "address"
+          }
+        ],
+        "name": "getDebt",
+        "outputs": [
+          {
+            "internalType": "int256",
+            "name": "",
+            "type": "int256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_user",
+            "type": "address"
+          }
+        ],
+        "name": "getDebtorsOfUser",
+        "outputs": [
+          {
+            "internalType": "address[]",
+            "name": "",
+            "type": "address[]"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_user",
+            "type": "address"
+          }
+        ],
+        "name": "getFriends",
+        "outputs": [
+          {
+            "internalType": "address[]",
+            "name": "",
+            "type": "address[]"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "getUsers",
+        "outputs": [
+          {
+            "internalType": "address[]",
+            "name": "",
+            "type": "address[]"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "name": "globalAuthorized",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "creditor",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "value",
+            "type": "uint256"
+          }
+        ],
+        "name": "increaseDebt",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "string",
+            "name": "_name",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "_symbol",
+            "type": "string"
+          },
+          {
+            "internalType": "uint8",
+            "name": "_decimals",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint16",
+            "name": "_capacityImbalanceFeeDivisor",
+            "type": "uint16"
+          },
+          {
+            "internalType": "int16",
+            "name": "_defaultInterestRate",
+            "type": "int16"
+          },
+          {
+            "internalType": "bool",
+            "name": "_customInterests",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "_preventMediatorInterests",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "_expirationTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address[]",
+            "name": "authorizedAddresses",
+            "type": "address[]"
+          }
+        ],
+        "name": "init",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_creditor",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_debtor",
+            "type": "address"
+          }
+        ],
+        "name": "interestRate",
+        "outputs": [
+          {
+            "internalType": "int16",
+            "name": "_interestRate",
+            "type": "int16"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "isInitialized",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "isNetworkFrozen",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "a",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "b",
+            "type": "address"
+          }
+        ],
+        "name": "isTrustlineFrozen",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "name",
+        "outputs": [
+          {
+            "internalType": "string",
+            "name": "",
+            "type": "string"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "name": "onboarder",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "owner",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "preventMediatorInterests",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "target",
+            "type": "address"
+          }
+        ],
+        "name": "removeAuthorizedAddress",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "removeOwner",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_creditor",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_debtor",
+            "type": "address"
+          },
+          {
+            "internalType": "uint64",
+            "name": "_creditlineGiven",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "_creditlineReceived",
+            "type": "uint64"
+          },
+          {
+            "internalType": "int16",
+            "name": "_interestRateGiven",
+            "type": "int16"
+          },
+          {
+            "internalType": "int16",
+            "name": "_interestRateReceived",
+            "type": "int16"
+          },
+          {
+            "internalType": "bool",
+            "name": "_isFrozen",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint32",
+            "name": "_mtime",
+            "type": "uint32"
+          },
+          {
+            "internalType": "int72",
+            "name": "_balance",
+            "type": "int72"
+          }
+        ],
+        "name": "setAccount",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "debtor",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "creditor",
+            "type": "address"
+          },
+          {
+            "internalType": "int256",
+            "name": "value",
+            "type": "int256"
+          }
+        ],
+        "name": "setDebt",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "onBoarder",
+            "type": "address"
+          }
+        ],
+        "name": "setOnboarder",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_creditor",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_debtor",
+            "type": "address"
+          },
+          {
+            "internalType": "uint64",
+            "name": "_creditlineGiven",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "_creditlineReceived",
+            "type": "uint64"
+          },
+          {
+            "internalType": "int16",
+            "name": "_interestRateGiven",
+            "type": "int16"
+          },
+          {
+            "internalType": "int16",
+            "name": "_interestRateReceived",
+            "type": "int16"
+          },
+          {
+            "internalType": "bool",
+            "name": "_isFrozen",
+            "type": "bool"
+          }
+        ],
+        "name": "setTrustlineRequest",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "bytes4",
+            "name": "interfaceID",
+            "type": "bytes4"
+          }
+        ],
+        "name": "supportsInterface",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ],
+        "stateMutability": "pure",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "symbol",
+        "outputs": [
+          {
+            "internalType": "string",
+            "name": "",
+            "type": "string"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint64",
+            "name": "_value",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "_maxFee",
+            "type": "uint64"
+          },
+          {
+            "internalType": "address[]",
+            "name": "_path",
+            "type": "address[]"
+          },
+          {
+            "internalType": "bytes",
+            "name": "_extraData",
+            "type": "bytes"
+          }
+        ],
+        "name": "transfer",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint64",
+            "name": "_value",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "_maxFee",
+            "type": "uint64"
+          },
+          {
+            "internalType": "address[]",
+            "name": "_path",
+            "type": "address[]"
+          },
+          {
+            "internalType": "bytes",
+            "name": "_extraData",
+            "type": "bytes"
+          }
+        ],
+        "name": "transferFrom",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint64",
+            "name": "_value",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "_maxFee",
+            "type": "uint64"
+          },
+          {
+            "internalType": "address[]",
+            "name": "_path",
+            "type": "address[]"
+          },
+          {
+            "internalType": "bytes",
+            "name": "_extraData",
+            "type": "bytes"
+          }
+        ],
+        "name": "transferReceiverPays",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "unfreezeNetwork",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_debtor",
+            "type": "address"
+          },
+          {
+            "internalType": "uint64",
+            "name": "_creditlineGiven",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "_creditlineReceived",
+            "type": "uint64"
+          }
+        ],
+        "name": "updateCreditlimits",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_debtor",
+            "type": "address"
+          },
+          {
+            "internalType": "uint64",
+            "name": "_creditlineGiven",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "_creditlineReceived",
+            "type": "uint64"
+          },
+          {
+            "internalType": "int16",
+            "name": "_interestRateGiven",
+            "type": "int16"
+          },
+          {
+            "internalType": "int16",
+            "name": "_interestRateReceived",
+            "type": "int16"
+          },
+          {
+            "internalType": "bool",
+            "name": "_isFrozen",
+            "type": "bool"
+          },
+          {
+            "internalType": "int72",
+            "name": "_transfer",
+            "type": "int72"
+          }
+        ],
+        "name": "updateTrustline",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_debtor",
+            "type": "address"
+          },
+          {
+            "internalType": "uint64",
+            "name": "_creditlineGiven",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "_creditlineReceived",
+            "type": "uint64"
+          },
+          {
+            "internalType": "int16",
+            "name": "_interestRateGiven",
+            "type": "int16"
+          },
+          {
+            "internalType": "int16",
+            "name": "_interestRateReceived",
+            "type": "int16"
+          },
+          {
+            "internalType": "bool",
+            "name": "_isFrozen",
+            "type": "bool"
+          }
+        ],
+        "name": "updateTrustline",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "_creditor",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "_debtor",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "_creditlineGiven",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "_creditlineReceived",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "int256",
+            "name": "_interestRateGiven",
+            "type": "int256"
+          },
+          {
+            "indexed": false,
+            "internalType": "int256",
+            "name": "_interestRateReceived",
+            "type": "int256"
+          },
+          {
+            "indexed": false,
+            "internalType": "bool",
+            "name": "_isFrozen",
+            "type": "bool"
+          }
+        ],
+        "name": "TrustlineUpdateRequest",
+        "type": "event"
+      }
+    ]
+  }
+}
