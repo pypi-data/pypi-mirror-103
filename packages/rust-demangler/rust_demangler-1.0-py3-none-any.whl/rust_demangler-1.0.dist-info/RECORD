@@ -1,0 +1,9 @@
+rust_demangler/__init__.py,sha256=qODOX4cCIZWPQ1tVUc8O_N8KxmR-mkasu_RfCB5sCPU,43
+rust_demangler/main.py,sha256=zg72YB0TeO-nZyt9DbhaP9_RecW1axmbKKwe8QY0n7w,136
+rust_demangler/rust.py,sha256=r36DkBqXQyCIMhx9POcq24cvy0UOgpHNOgd_y7Khgug,1549
+rust_demangler/rust_legacy.py,sha256=tAojtm0VT4C4txNphLZIWasasaGyYHIZAdH7wj_BkY4,4868
+rust_demangler/rust_v0.py,sha256=a-dUxavZRILjKVwzeM1a27irYNk3naFXo80X92i1XfA,20877
+rust_demangler-1.0.dist-info/METADATA,sha256=_fvlkDOvHFe6b5g_azoQsClQUx4P11OgVAQq9n_2T9I,866
+rust_demangler-1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+rust_demangler-1.0.dist-info/top_level.txt,sha256=VdmRZEvjIFaS2Lil26nE3S8PEO13GONb3uq3ICHZn4g,15
+rust_demangler-1.0.dist-info/RECORD,,
