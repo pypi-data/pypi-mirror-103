@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/pyuhand/__init__.py
+src/pyuhand/motion.py
+src/pyuhand/uhand.py
+src/pyuhand.egg-info/PKG-INFO
+src/pyuhand.egg-info/SOURCES.txt
+src/pyuhand.egg-info/dependency_links.txt
+src/pyuhand.egg-info/top_level.txt
