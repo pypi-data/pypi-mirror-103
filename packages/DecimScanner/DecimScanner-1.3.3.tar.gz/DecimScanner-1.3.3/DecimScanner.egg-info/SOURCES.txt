@@ -1,0 +1,10 @@
+README.md
+setup.py
+DecimScanner/__init__.py
+DecimScanner/__main__.py
+DecimScanner.egg-info/PKG-INFO
+DecimScanner.egg-info/SOURCES.txt
+DecimScanner.egg-info/dependency_links.txt
+DecimScanner.egg-info/entry_points.txt
+DecimScanner.egg-info/requires.txt
+DecimScanner.egg-info/top_level.txt
