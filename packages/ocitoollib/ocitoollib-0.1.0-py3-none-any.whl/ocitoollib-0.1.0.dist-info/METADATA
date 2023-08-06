@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ocitoollib
+Version: 0.1.0
+Summary: ocitool Python library
+Home-page: UNKNOWN
+Author: James Jeong
+Author-email: james1.jeong@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: oci
+
+UNKNOWN
+
+
