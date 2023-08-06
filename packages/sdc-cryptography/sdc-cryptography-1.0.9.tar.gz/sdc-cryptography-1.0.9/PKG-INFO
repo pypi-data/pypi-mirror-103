@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: sdc-cryptography
+Version: 1.0.9
+Summary: A shared library for SDC services that use JWT with JWE
+Home-page: https://github.com/ONSdigital/sdc-cryptography
+Author: ONS
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
