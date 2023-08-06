@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: dynakit
+Version: 0.0.2
+Summary: Machine Learning Toolkit for LS-Dyna Simulations
+Home-page: https://github.com/dynapy/dynakit/tree/main/
+Author: Jobin
+Author-email: jobin.john@chalmers.se
+License: Apache Software License 2.0
+Description: # dynakit
+        > Machine Learning Toolkit for LS-Dyna Simulations
+        
+        
+        Coming soon!
+        
+        ## Install
+        
+        `pip install dynakit`
+        
+        ## How to use
+        
+        Fill me in please! Don't forget code examples:
+        
+        ```
+        1+1
+        ```
+        
+        
+        
+        
+            2
+        
+        
+        
+Keywords: LS-Dyna,ML,FE
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

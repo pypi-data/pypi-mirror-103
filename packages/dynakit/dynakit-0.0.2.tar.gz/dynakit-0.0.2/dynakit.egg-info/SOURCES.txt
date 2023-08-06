@@ -1,0 +1,17 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+dynakit/FE.py
+dynakit/__init__.py
+dynakit/_nbdev.py
+dynakit/test.py
+dynakit.egg-info/PKG-INFO
+dynakit.egg-info/SOURCES.txt
+dynakit.egg-info/dependency_links.txt
+dynakit.egg-info/entry_points.txt
+dynakit.egg-info/not-zip-safe
+dynakit.egg-info/requires.txt
+dynakit.egg-info/top_level.txt
