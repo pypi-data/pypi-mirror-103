@@ -1,0 +1,12 @@
+README.md
+setup.py
+pyBittle/__init__.py
+pyBittle/bittleManager.py
+pyBittle/bluetoothManager.py
+pyBittle/wifiManager.py
+pyBittle.egg-info/PKG-INFO
+pyBittle.egg-info/SOURCES.txt
+pyBittle.egg-info/dependency_links.txt
+pyBittle.egg-info/not-zip-safe
+pyBittle.egg-info/requires.txt
+pyBittle.egg-info/top_level.txt
