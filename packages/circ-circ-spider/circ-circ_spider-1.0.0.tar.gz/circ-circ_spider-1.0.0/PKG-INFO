@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: circ-circ_spider
+Version: 1.0.0
+Summary: A small example package
+Home-page: https://git.e-nci.com/yangzhongyang/circ_spider.git
+Author: Akafra
+Author-email: 306525121@qq.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://git.e-nci.com/yangzhongyang/circ_spider.git
+Description: 
+        # 1. Generating distribution archives
+        
+            python -m pip install --upgrade build
+        
+            python -m build
+        
+        
+        # 2. Uploading the distribution archives
+        
+        
+            python -m twine upload --repository testpypi dist/*
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
