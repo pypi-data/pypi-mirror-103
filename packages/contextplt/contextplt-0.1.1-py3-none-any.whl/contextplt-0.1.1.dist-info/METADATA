@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: contextplt
+Version: 0.1.1
+Summary: Context manager style of matplotlib.
+Home-page: https://github.com/toshiakiasakura/contextplt
+Author: toshiakiasakura
+Author-email: wordpress.akitoshi@gmail.com
+License: MIT
+Keywords: context matplotlib plt
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+
+# contextplt
+Context manager style of matplotlib.
+
+
