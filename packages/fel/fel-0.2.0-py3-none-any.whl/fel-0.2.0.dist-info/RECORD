@@ -1,0 +1,15 @@
+fel/__init__.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+fel/__main__.py,sha256=VFq22OCP0KE4L4jB2AO11i3A0sFhNvJWAJEnBNO1FZM,4565
+fel/land.py,sha256=EaFERWHCKhvSOHT6F9ZgIru2B_tsxc28i-H5Rnj6XGc,2677
+fel/meta.py,sha256=K8dk3EZ00hbUTaaLmuktGRW8LsXSrGfNd_NPBz2E4Os,528
+fel/pr.py,sha256=7gyIWX8HWIJ5xpxqedBgW4sJGTqM98Ia9uK_C73wblU,1669
+fel/rebase.py,sha256=a48MxjK9875Kwqnl50XZw4R9GTkYfw8d-ZxIE6yUm1Y,1624
+fel/stack.py,sha256=cS2-t5YXt4n5zfofMg5X3WU5CxbeCfYl2l290MPTwMQ,1132
+fel/submit.py,sha256=GWQBKTJqOokpUDOpZ7cvWPid1s8CFatHwAirL_Z8ksY,4188
+fel/util.py,sha256=fXa-rDDVmdhTXzltJuSIg0ipIDBmrjCIRkhk1ma2R8U,1159
+fel-0.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+fel-0.2.0.dist-info/METADATA,sha256=JoYu1hjJ1cUx2O9oGdy49iNb_mnpt5s3Yz9oFkSNp38,3145
+fel-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fel-0.2.0.dist-info/entry_points.txt,sha256=yDrWAXWa2a8eCZzj5MNYiEHfDuFH9iWinrCiIkAiNGE,43
+fel-0.2.0.dist-info/top_level.txt,sha256=vLT-E0H5WvuKemh7kqhoN6AXskSJjtt3X8RJPOzV3sA,4
+fel-0.2.0.dist-info/RECORD,,
