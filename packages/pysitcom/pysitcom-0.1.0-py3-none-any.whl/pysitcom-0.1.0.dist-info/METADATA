@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pysitcom
+Version: 0.1.0
+Summary: Stochastic optimization techniques in identify the multi-criteria decision model
+Home-page: UNKNOWN
+Author: Bartlomiej Kizielewicz
+Author-email: bartlomiej-kizielewicz@zut.edu.pl
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: pyswarms
+Requires-Dist: scikit-learn (==0.22)
+Requires-Dist: mlrose
+Requires-Dist: pyyaml
+
+UNKNOWN
+
+
