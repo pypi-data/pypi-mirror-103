@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+deepops/__init__.py
+deepops/diff.py
+deepops/filter.py
+deepops/get.py
+deepops/merge.py
+deepops/path.py
+deepops/removeitems.py
+deepops/setdefault.py
+deepops.egg-info/PKG-INFO
+deepops.egg-info/SOURCES.txt
+deepops.egg-info/dependency_links.txt
+deepops.egg-info/top_level.txt
