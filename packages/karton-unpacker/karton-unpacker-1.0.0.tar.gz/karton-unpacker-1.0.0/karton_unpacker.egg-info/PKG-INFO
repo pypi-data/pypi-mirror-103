@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: karton-unpacker
+Version: 1.0.0
+Summary: A modular Karton Framework service that unpacks common packers like UPX, MPress and others using the Qilling Framework.
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
