@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: scml-vis
+Version: 0.2.0
+Summary: A simple visualiser for SCML worlds and tournaments
+Home-page: https://github.com/scml-vis/scml-vis
+License: Apache-2.0
+Author: Yasser Mohammad
+Author-email: yasserfarouk@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyQt5 (>=5.15.4,<6.0.0)
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: click-config-file (>=0.6.0,<0.7.0)
+Requires-Dist: csvs-to-sqlite (>=1.2,<2.0)
+Requires-Dist: datasette-vega (>=0.6.2,<0.7.0)
+Requires-Dist: numpy (>=1.20.2,<2.0.0)
+Requires-Dist: pandas (>=1.2.3,<2.0.0)
+Requires-Dist: plotly (>=4.14.3,<5.0.0)
+Requires-Dist: seaborn (>=0.11.1,<0.12.0)
+Requires-Dist: streamlit (>=0.80.0,<0.81.0)
+Requires-Dist: watchdog (>=2.0.2,<3.0.0)
+Project-URL: Repository, https://github.com/scml-vis/scml-vis
+Description-Content-Type: text/markdown
+
+# scml-vis
+
+[![ci](https://github.com/yasserfarouk/scml-vis/actions/workflows/main.yml/badge.svg)](https://github.com/yasserfarouk/scml-vis/actions/workflows/main.yml)
+[![documentation](https://img.shields.io/badge/docs-mkdocs%20material-blue.svg?style=flat)](https://scml-vis.github.io/scml-vis/)
+[![pypi version](https://img.shields.io/pypi/v/scml-vis.svg)](https://pypi.org/project/scml-vis/)
+[![gitter](https://badges.gitter.im/join%20chat.svg)](https://gitter.im/scml-vis/community)
+
+A simple visualiser for SCML worlds and tournaments
+
+## Screenshots
+![Screen Shot 1](docs/shot1.png)
+![Screen Shot 2](docs/shot2.png)
+
+## Main Features
+
+- Displays any world/tournament run using the [SCML package](https://www.github.com/yasserfarouk/scml)
+- Allows filtering using worlds, agent types, and agent instances
+- Shows world statistics, agent type and instance statistics and contract 
+  statistics as functions of simulation step/time
+
+## TODO List (Good Ideas for PRs)
+
+- Show negotiation logs (i.e. negotiation results)
+- Display all contracts (i.e. in a table) based on selection criteria
+- Zoom on negotiation details (i.e. exchanged offers)
+- Add dynamic figures using plotly/altair
+- Add networkx like graphs of contracts / negotiations / offers
+- Add new figure types that do not have time/step in the x-axis
+- Allow starting the app without specifying a folder. In this case, it should 
+  have a dropdown list showing the latest tournament/world runs (requires 
+  changes to [scml](https://www.github.com/yasserfarouk/scml))
+
+## Requirements
+
+scml-vis requires Python 3.8 or above.
+
+## Installation
+
+With `pip`:
+```bash
+python3 -m pip install scml-vis
+```
+
+With [`pipx`](https://github.com/pipxproject/pipx):
+```bash
+python3 -m pip install --user pipx
+
+pipx install scml-vis
+```
+
