@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: tracko
+Version: 0.0.0
+Summary: Track your movies, series and everything else!
+Home-page: https://github.com/revisto/tracko2
+Author: Alireza Shabani
+Author-email: walt.shabani@gmail.com
+License: LGPL-2.1-or-later
+Project-URL: Changelog, https://github.com/revisto/tracko/blob/master/CHANGELOG.rst
+Project-URL: Issue Tracker, https://github.com/revisto/tracko/issues
+Description: # Tracko
+        ## _Track your movies, series and everything else!_
+        
+        
+        ## 🤝 Contributing
+        
+        Contributions, issues and feature requests are welcome.<br />
+        Feel free to check [issues page](https://github.com/revisto/tracko2/issues) if you want to contribute.<br /><br />
+        
+        
+        ## Show your support
+        
+        Please ⭐️ this repository if this project helped you!
+        
+        
+        ## 📝 License
+        
+        GNUv2
+        
+        **Free Software, Hell Yeah!**
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown

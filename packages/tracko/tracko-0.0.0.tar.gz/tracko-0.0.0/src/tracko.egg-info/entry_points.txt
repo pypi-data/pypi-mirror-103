@@ -1,0 +1,3 @@
+[console_scripts]
+tracko = tracko2.cli:main
+
