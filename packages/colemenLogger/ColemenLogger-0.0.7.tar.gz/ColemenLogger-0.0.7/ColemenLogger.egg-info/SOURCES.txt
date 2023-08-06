@@ -1,0 +1,9 @@
+setup.py
+ColemenLogger.egg-info/PKG-INFO
+ColemenLogger.egg-info/SOURCES.txt
+ColemenLogger.egg-info/dependency_links.txt
+ColemenLogger.egg-info/top_level.txt
+colemenLogger.egg-info/PKG-INFO
+colemenLogger.egg-info/SOURCES.txt
+colemenLogger.egg-info/dependency_links.txt
+colemenLogger.egg-info/top_level.txt
