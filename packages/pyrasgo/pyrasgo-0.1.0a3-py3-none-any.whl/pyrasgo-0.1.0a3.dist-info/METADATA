@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: pyrasgo
+Version: 0.1.0a3
+Summary: Alpha version of the Rasgo Python interface.
+Home-page: https://www.rasgoml.com/
+Author: Patrick Dougherty
+Author-email: patrick@rasgoml.com
+License: MPL 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: idna (<3,>=2.5)
+Requires-Dist: more-itertools
+Requires-Dist: pandas
+Requires-Dist: pyarrow (>=3.0.0)
+Requires-Dist: pydantic
+Requires-Dist: pyyaml
+Requires-Dist: requests
+Requires-Dist: snowflake-connector-python (>=2.4.0)
+Requires-Dist: snowflake-connector-python[pandas]
+Requires-Dist: tqdm
+
+pyRasgo is a python SDK to interact with the Rasgo API. Rasgo accelerates feature engineering for Data Scientists.
+
+Visit us at https://www.rasgoml.com/ to turn your data into Features in minutes!
+
+Documentation is available at:
+https://docs.rasgoml.com/rasgo-docs/pyrasgo/
+
+
+Package Dependencies
+-------------------------------------------------------------------------------
+- idna>=2.5,<3
+- more-itertools
+- pandas
+- pyarrow>=3.0
+- pydantic
+- pyyaml
+- requests
+- snowflake-connector-python>=2.4.0
+- tqdm
+
+
+Release Notes
+-------------------------------------------------------------------------------
+
+- v0.0.79(April 19,2021)
+   - support additional datetime data types on Features
+   - resolve import errors
+
+- v0.0.78(April 5,2021)
+   - add include_shared param to get_collections() method
+
+- v0.0.77(April 5,2021)
+   - adds convenience method to rename a feature’s displayName
+   - adds convenience method to promote a feature from Sandbox to Production status
+   - fixes permissions bug when trying to read Community data sources from a public org
+
+- v0.0.76(April 5,2021)
+   - adds columns to DataSource primitive
+   - adds verbose error message to inform users when a Feature name conflict is preventing creation
+
+- v0.0.75(April 5,2021)
+   - introduce interactive Rasgo primitives
+
+- v0.0.74(March 25,2021)
+   - upgrade Snowflake python connector dependency to 2.4.0
+   - upgrade pyarrow dependency to 3.0
+
