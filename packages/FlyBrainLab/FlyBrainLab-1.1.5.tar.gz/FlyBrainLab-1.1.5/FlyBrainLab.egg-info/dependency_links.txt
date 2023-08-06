@@ -1,0 +1,4 @@
+https://github.com/flybrainlab/neuroballad/tarball/master#egg=neuroballad-0.1.0
+https://github.com/mkturkcan/autobahn-sync/tarball/master#egg=autobahn_sync-0.3.2
+https://github.com/palash1992/GEM/tarball/master#egg=gem-1.0.0
+https://github.com/mkturkcan/nxcontrol/tarball/master#egg=nxcontrol-0.2
