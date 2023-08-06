@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: DBigBang
+Version: 0.1
+Summary: Analysis of Mailman archives
+Home-page: https://gitbub.com/datactive/bigbang
+Author: Sebastian Benthall
+Author-email: sb@ischool.berkeley.edu
+License: UNKNOWN
+Download-URL: https://gitbub.com/datactive/bigbang
+Description: Analysis of Mailman archives
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
