@@ -1,0 +1,17 @@
+click-stubs/METADATA.toml,sha256=UCeB452SPwfmvUZ_B_b1UHmJd9YZkyh6ZzO2hxh5IpI,31
+click-stubs/__init__.pyi,sha256=3oe1-v8WfI-v6asPrtdIp1ochj2vT_cKOt4W6PBUx0E,2273
+click-stubs/_termui_impl.pyi,sha256=rv0OPQbgoTrXHhYpQ7fJPGPwDGBgupmz9t1t1jOn6rE,575
+click-stubs/core.pyi,sha256=jxQn0W21OL187H4FR-3jny9Z6NCzGRHeR4E8mXj1AGY,11168
+click-stubs/decorators.pyi,sha256=X6cZwvGGTHjvHWuFccrSO3eMACIQGrfNX2VIOfjquDU,9176
+click-stubs/exceptions.pyi,sha256=DcIkdPldhaDC6Od38QQDadeY860RD3DHuWPzUR6JF2I,2012
+click-stubs/formatting.pyi,sha256=RANCC6wwwN7mtf33bJlEm5iOsCpmc-DlNCbBOTyj9Pw,1357
+click-stubs/globals.pyi,sha256=Xi3fHtTEJHjVyQ-djJEaQkDxnZ9RE5xD-uh2B1xs9ho,274
+click-stubs/parser.pyi,sha256=tSKZ0bKLpIObxaSZ86IBpk7PsR6idJGXD2bZzgya5ss,2006
+click-stubs/termui.pyi,sha256=OawsflHiAqy4KSRBSIAymHCnE8_nvqXc7ftpgOMycXo,3301
+click-stubs/testing.pyi,sha256=s1GKTPK-blyfhaXqk3NvFBAXRBGuCR73RRH_weGbOcs,2136
+click-stubs/types.pyi,sha256=VSx6kUdgT7LHTW2Ig8-pvnD9t8AxUYYSYUabbpsDdyM,5045
+click-stubs/utils.pyi,sha256=VUOHe90S-l4ZoNiD888esE2PqGqqxyg9IxP9gFmHkN0,2003
+types_click-0.1.8.dist-info/METADATA,sha256=bjBvcJvHFLa6c9saCbYQI0iTX_lu_cy5KqitTW7WRlA,780
+types_click-0.1.8.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+types_click-0.1.8.dist-info/top_level.txt,sha256=9Lflu_cjwUsyYo6bGh5jS0mMg988yDJW9OgBJWvY_VI,12
+types_click-0.1.8.dist-info/RECORD,,
