@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: hamlet-cli
+Version: 7.0.6.dev2
+Summary: UNKNOWN
+Home-page: https://github.com/hamlet-io/executor-python
+Author: Hamlet
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Java
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: click (<8.0.0,>=7.0.0)
+Requires-Dist: click-configfile (<1.0.0,>=0.2.3)
+Requires-Dist: pytest (<7.0.0,>=6.0.0)
+Requires-Dist: cookiecutter (<2.0.0,>=1.7.0)
+Requires-Dist: tabulate (<1.0.0,>=0.8.0)
+Requires-Dist: Jinja2 (<3.0.0,>=2.11.0)
+Requires-Dist: cfn-lint (<1.0.0,>=0.25.0)
+Requires-Dist: cfn-flip (<2.0.0,>=1.2.0)
+Requires-Dist: diagrams (<1.0.0,>=0.18.0)
+Requires-Dist: marshmallow (<4.0.0,>=3.7.0)
+Requires-Dist: jmespath (>=0.10.0<1.0.0)
+
+# Hamlet Deploy - Cli
+
+This is a python-based CLI for the Hamlet Deploy application. It acts as the primary interface to Hamlet Deploy, its Plugins and Extensions.
+
+See https://docs.hamlet.io for more info on Hamlet Deploy
+
+
