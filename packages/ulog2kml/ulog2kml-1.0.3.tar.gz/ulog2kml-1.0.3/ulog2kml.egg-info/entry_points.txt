@@ -1,0 +1,3 @@
+[console_scripts]
+ulog2kml = ulog2kml.ulog2kml:main
+
