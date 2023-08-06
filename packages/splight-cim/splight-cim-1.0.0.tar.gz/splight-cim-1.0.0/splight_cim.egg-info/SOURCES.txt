@@ -1,0 +1,8 @@
+README.md
+setup.py
+cimlib/CIMlib.py
+cimlib/__init__.py
+splight_cim.egg-info/PKG-INFO
+splight_cim.egg-info/SOURCES.txt
+splight_cim.egg-info/dependency_links.txt
+splight_cim.egg-info/top_level.txt
