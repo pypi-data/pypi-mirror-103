@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: AlgoOmid
+Version: 1.0.12
+Summary: A few Classes and Functions for Algorithmic Trading++
+Home-page: https://github.com/behzadazadie/OmidAlgo
+Author: Behzad Azadie faraz
+Author-email: b.azadi@webmail.omid.ir
+License: OmidAnalyzer
+Download-URL: https://github.com/behzadazadie/AlgoOmid/archive/refs/tags/v1.0.12.tar.gz
+Description: UNKNOWN
+Keywords: Algorithmic Trading,Finance,Trading
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
