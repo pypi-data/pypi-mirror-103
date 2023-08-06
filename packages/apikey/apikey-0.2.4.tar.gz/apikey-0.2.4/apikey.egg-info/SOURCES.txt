@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+README.rst
+setup.py
+apikey/__init__.py
+apikey/apikey.py
+apikey.egg-info/PKG-INFO
+apikey.egg-info/SOURCES.txt
+apikey.egg-info/dependency_links.txt
+apikey.egg-info/top_level.txt
+apikey.egg-info/zip-safe
+test/__init__.py
+test/test_apikey.py
