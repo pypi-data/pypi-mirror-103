@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: simple-tsne
+Version: 1.0.0
+Summary: numpy implementation of the original T-SNE paper
+Home-page: https://github.com/epswartz/t-SNE
+Author: Abdullah AlOthman, Ethan Swartzentruber
+Author-email: eswartzen@gmail.com
+License: MIT
+Download-URL: https://github.com/epswartz/t-SNE/archive/1.0.0.zip
+Keywords: t-sne,manifold,visualization,numpy
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Requires-Dist: numpy
+Requires-Dist: tqdm
+
+UNKNOWN
+
+
