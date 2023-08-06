@@ -1,0 +1,7 @@
+python-magic
+ssdeep
+pyyaml<5.2,>=5.1
+requests
+packaging
+cerberus
+texttable

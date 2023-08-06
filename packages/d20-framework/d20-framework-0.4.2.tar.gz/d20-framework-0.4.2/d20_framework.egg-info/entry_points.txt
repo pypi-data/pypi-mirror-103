@@ -1,0 +1,4 @@
+[console_scripts]
+d20 = d20.Manual.Entry:main
+d20-shell = d20.Manual.Entry:shellmain
+
