@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: nlkit
+Version: 0.0.1b1
+Summary: easy to use nlp tools
+Home-page: https://shihanmax.top
+Author: shihanmax
+Author-email: shihanmax@foxmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy (>=1.17.0)
+Requires-Dist: scipy (>=1.5.0)
+Requires-Dist: matplotlib (>=3.0.0)
+Requires-Dist: torch (>=1.6.0)
+Requires-Dist: gensim (>=3.7.0)
+
+# nlkit - nlp toolkit
+
+Collection of easy-to-use tools in NLP.
+
+Warning: this repository is still under developing.
+
+Feel free to contact me at shihanmax@foxmail.com if you have any questions on 
+this tool.
+
