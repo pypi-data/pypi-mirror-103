@@ -1,0 +1,18 @@
+xsdata==21.4.*
+
+[:python_version < "3.8"]
+typing-extensions
+
+[docs]
+Sphinx
+sphinx-autodoc-typehints
+
+[lxml]
+xsdata[lxml]==21.4.*
+
+[test]
+pytest
+pytest-cov
+pytest-pythonpath
+xmljson
+xsdata[lxml]==21.4.*
