@@ -1,0 +1,10 @@
+rick_roll_detector/__init__.py,sha256=bLfuP6-WZYEmTdFD32fPXOMkSJVsxwGD21HxVgrv1Sc,160
+rick_roll_detector/image.py,sha256=e1HHG8KXdGzodk7VQngt7pqgfDP41iKAcGxP0-kWuyY,897
+rick_roll_detector/video.py,sha256=14ZSNPuo350WiD7ExWuD6aIYK0zhnhqZkTnPzGTxTsc,511
+rick_roll_detector/youtube.py,sha256=D_s_NC1b0V0-z4MYTWRUKl3nNo8jkJFdqsXWKNZffwo,263
+rick_roll_detector/assets/training.jpg,sha256=Lhrk3NPvKfeDTv3AtvzG3STxRUm_FpkyNE3U3YemznI,65665
+rick_roll_detector-1.0.0.dist-info/LICENSE,sha256=IG1WyjOYlHqTCMyvGvkZgBWkCRKIXP3zsgBGG_4F0ec,1068
+rick_roll_detector-1.0.0.dist-info/METADATA,sha256=A5OaRiOyHVysYyA0LQF81Tx1-y-v8Y9HETcHk2d2e0w,515
+rick_roll_detector-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+rick_roll_detector-1.0.0.dist-info/top_level.txt,sha256=vwG9LzNktJaDaf8_ItdMAYExwFDaR7XxNzlngxIGLsI,19
+rick_roll_detector-1.0.0.dist-info/RECORD,,
