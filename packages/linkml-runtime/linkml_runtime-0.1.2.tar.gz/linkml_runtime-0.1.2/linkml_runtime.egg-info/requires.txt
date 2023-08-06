@@ -1,0 +1,10 @@
+click
+hbreader
+jsonasobj==2.0.2dev1
+prefixcommons
+pyld
+pyyaml>=5.1
+rdflib
+rdflib-jsonld
+rdflib-pyld-compat
+shexjsg
