@@ -1,0 +1,17 @@
+dist: xenial
+language: python
+cache: pip
+python:
+  - '3.7'
+  - '3.9'
+branches:
+  only:
+  - master  # All other branches should become (draft) PRs and be build that way
+
+install:
+  - pip install flit coveralls
+  - flit install --deps develop
+script:
+  - PYTHONPATH=. pytest --cov=get_version --black
+  - rst2html.py --halt=2 README.rst >/dev/null
+after_success: coveralls
