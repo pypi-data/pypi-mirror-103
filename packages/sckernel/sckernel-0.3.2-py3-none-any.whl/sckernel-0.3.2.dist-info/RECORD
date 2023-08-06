@@ -1,0 +1,14 @@
+sckernel/__init__.py,sha256=LPI7yxJ_nk5QcaNYxOChvNTUGWJSP7AwwRwL6oZHvaE,94
+sckernel/__main__.py,sha256=OTAXG-UPVwL1PERg2GK6G7ufRKe8shWhmLWl74Xn-gw,119
+sckernel/config.py,sha256=2qZ6OLjCH3fVohXfkvBQj_TkBzAKyqB0gU1L_jRqkdw,735
+sckernel/convertNotebookToScd.py,sha256=HwxyMgm_nh84_EBljt1KwHnVzaJBmPvwV5tU2qYrhn4,2465
+sckernel/install.py,sha256=hNR89Q5SqkpIOk0J7OiS5d7VjPr5W0lOsvUOiHalbnY,1892
+sckernel/kernel.js,sha256=gwFXk7M0kDPFkwo5OoYu5Z68CTGo4YBXfk9BCDwqsHQ,5122
+sckernel/kernel.py,sha256=yopEk7I4PV2XcPq9tRSORaRumuhMOZ9af3odqpPEZsg,1323
+sckernel/sclangSub.py,sha256=JGnPTOM8FN30jjmDZO1V4GnG_DiFx_xlgmIiP_QIq_U,5808
+sckernel/window.py,sha256=Mw89VB1cCXjpMP8Ftdr3WOWXvEXasIH9SHaIZ7XIew4,2492
+sckernel-0.3.2.dist-info/LICENSE,sha256=ui6SW6XO2sPDjD5T1gyUnkwnp4wzr30hN51eCIYhqO8,1072
+sckernel-0.3.2.dist-info/METADATA,sha256=SCU3thk_W-itWomyJLlbdWhnuYYyyvj_f2tLbzI7WGQ,4411
+sckernel-0.3.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sckernel-0.3.2.dist-info/top_level.txt,sha256=yBdwOCz1KBQ1ejN1Gyost4XfIRDcRmOu1ybJVh-eotk,9
+sckernel-0.3.2.dist-info/RECORD,,
