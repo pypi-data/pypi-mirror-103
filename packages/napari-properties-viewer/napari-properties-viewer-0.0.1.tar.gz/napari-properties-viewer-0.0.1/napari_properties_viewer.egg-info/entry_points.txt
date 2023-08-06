@@ -1,0 +1,3 @@
+[napari.plugin]
+napari-properties-viewer = napari_properties_viewer
+
