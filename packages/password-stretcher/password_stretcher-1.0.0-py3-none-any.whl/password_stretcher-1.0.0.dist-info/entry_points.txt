@@ -1,0 +1,3 @@
+[console_scripts]
+password-stretcher=password_stretcher.stretcher:main
+
