@@ -1,0 +1,9 @@
+riordinato/__init__.py,sha256=uI_DYaeq4BJBugmR9D67rXBENCGN60RnZ0TO3nvt0c4,31
+riordinato/cli.py,sha256=UNLZ3vq6r1wgFl6reTBIXO3uss_FJ2REFZzHhEDVD6E,4179
+riordinato/cli_utils.py,sha256=0JYc1KHeCUN--MRNCeU5geG-mRBIRcBbAMyOJR2AxvU,1024
+riordinato/exceptions.py,sha256=z-YfN-9BeK29v-Io5hxH9RvJ8aCd-AORK7r31rTVQn8,926
+riordinato/files.py,sha256=KMF4xWOf-FVfLe-zsGAW5NysBHBiOVfw1Ojjqx5yfik,5782
+riordinato-1.7.3.dist-info/entry_points.txt,sha256=xjnDvSVzQazxNyXS4FvusPl00AqEoUibWVRBIx8oKZ4,50
+riordinato-1.7.3.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+riordinato-1.7.3.dist-info/METADATA,sha256=YHYXZ2mPWx_iACUM99vzImRNrA7YfWrFr7SKWOwVWbA,4683
+riordinato-1.7.3.dist-info/RECORD,,
