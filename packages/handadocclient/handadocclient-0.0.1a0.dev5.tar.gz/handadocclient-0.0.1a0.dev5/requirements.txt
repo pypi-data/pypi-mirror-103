@@ -1,0 +1,5 @@
+myminions
+jsonschema>=3.2
+doctestprinter>=1.0.0
+click
+requests
