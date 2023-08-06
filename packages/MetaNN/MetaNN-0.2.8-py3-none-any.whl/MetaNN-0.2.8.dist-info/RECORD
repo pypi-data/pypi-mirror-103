@@ -1,0 +1,12 @@
+metann/__init__.py,sha256=acv4bYuQxGbtputinLbHBy6LwS_F09OKjIBMl5Z7140,153
+metann/dependentmodule.py,sha256=lBrdKWXkLISydMPFGfziPshivQk7mSQ0ix-ks1t5R9w,10119
+metann/meta.py,sha256=WzqdR-hnVoyUyjrDEN8z-Oa4HNyJfHFq12ZcFHU4v1A,6777
+metann/proto.py,sha256=R253h4DFx8Qn5NPpx1nZjiGbH1VZZ1YRxaZRyZsp7mU,1418
+metann/utils/__init__.py,sha256=oTUheBRuz6u7gdsp2SudTELgbwqDWlKX-9csxqfcPvk,60
+metann/utils/containers.py,sha256=oURrNTZ9BczfndvWviJV7Uk1eRFbfEzsJw8fz9v_sQM,3636
+metann/utils/numpy.py,sha256=VDm1fcVKN_tVJ5y-Z7BL4y1WCQJsW_BmhEPwXqFZ_U0,194
+MetaNN-0.2.8.dist-info/LICENSE,sha256=2g6ECsLaJxmi9Hm5ZVioijaANkhfnBg1J__gb4SB8e0,1094
+MetaNN-0.2.8.dist-info/METADATA,sha256=kcKOBWCRXYbpaebDRAoKiOaHktugsKaQO9WP1aex0rI,2067
+MetaNN-0.2.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+MetaNN-0.2.8.dist-info/top_level.txt,sha256=9EJybZlVFRZ4gOVVMFtwxfmtqfWVwkEjHJ-t6KGIxXc,7
+MetaNN-0.2.8.dist-info/RECORD,,
