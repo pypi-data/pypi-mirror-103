@@ -1,0 +1,9 @@
+scipy
+numpy
+pandas
+matplotlib
+numba
+scikit-learn
+
+[gstools]
+gstools>=1.3
