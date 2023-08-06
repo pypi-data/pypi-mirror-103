@@ -1,0 +1,16 @@
+ostir/ViennaRNA.py,sha256=4V9Fb4D2Ie4KzBpSECeJD9zupYBGI3EEcfg6ihilsA0,13712
+ostir/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ostir/ostir.py,sha256=joKyBqc2xo7Foa6GYAv9Vgaiwctj132J2Fo4hMUVSOU,19347
+ostir/ostir_factory.py,sha256=l6VzrKW3mAeBfpflHzKamI1AVSUo3UPCzrFqgHzaz-I,36146
+ostir/ostir_validation.py,sha256=Epd5t_Y2qzVVm_Ei-rQgqVU8B3O5-9GTX0ChKlIlr_k,1972
+ostir/ostir_validation_generator.py,sha256=4VsKJ5soOnMCB8P3B0Z0DSXxL7Jb6A6oo-ME-DwYXk0,1822
+ostir/ostir_validation_table.json,sha256=pnPcS9bS7XFjwJthlilimOowJbWIR82oZgkxVKSVwBc,212482
+ostir/rna_turner1999.par,sha256=iYBh_e-Puu_cmnLLiWe_oIf42jc0bBhvDWcTUCBt0cg,261042
+ostir/rna_turner2004.par,sha256=WMJOr32RlugSv76gDNpjDxYN6hiNYgusbPwgZcU5jRk,389752
+ostir/salis_2009_input.csv,sha256=S1vJv8Ex_cXZ1-O8q_805_mIn4aui3SVeQ_R152XOx4,11903
+OSTIR-1.0.0.dist-info/LICENSE,sha256=jgAwNvjc3cKpX9y3Ws03U1g9Pp5kyOcmIUeYMII_TIs,35811
+OSTIR-1.0.0.dist-info/METADATA,sha256=Br2ztojQBnCqJbBGhogVvsQWkKYRjMuGRnxIoIUsbN0,4747
+OSTIR-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+OSTIR-1.0.0.dist-info/entry_points.txt,sha256=s1fikJsQqyP8hV9s0JhCCnPIykDl4Oopyn8Z5GiwaXI,44
+OSTIR-1.0.0.dist-info/top_level.txt,sha256=kmAX1SoCPdkxmY5PW9epn27Hh78kbOVdrsLGbwrxO_A,6
+OSTIR-1.0.0.dist-info/RECORD,,
