@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: stonky-bot
+Version: 0.0.2
+Summary: A python crypto trading bot for Kraken
+Home-page: https://github.com/mortafix/Stonky
+Author: Moris Doratiotto
+Author-email: moris.doratiotto@gmail.com
+License: UNKNOWN
+Description: # Stonky
+        A crypto trading bot written in Python.  
+        For every information check the [Wiki](https://github.com/Mortafix/Stonky/wiki).
+        
+Keywords: bot,trading,crypto,kraken
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
