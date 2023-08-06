@@ -1,0 +1,8 @@
+linnian/apps/chatter/__init__.py,sha256=-U3hz7nMroRPr87Rp1N60OR6MAELFueoWEHPsWd6K-c,5049
+linnian/apps/chatter/chat_types.py,sha256=t-F_A0OvAXkbjK-T9MeOL5cGugVcwxYP_LQTQmFw5dg,2220
+linnian/apps/chatter/test.py,sha256=_nMYGfvgNbneVOARfP9YeHbSo2O3LaElG04xMKDKhCs,1164
+linnian/apps/chatter/utils.py,sha256=UkCGncuSGj38tkx40AoiVED3qsIs1puKwb1tMEtgfEM,772
+linnian_apps_chatter-0.1.9.dist-info/LICENSE,sha256=T9qeM0eekYmDt82wHCTaUggfAcZKqZt7zgjT6C-wLH0,1092
+linnian_apps_chatter-0.1.9.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+linnian_apps_chatter-0.1.9.dist-info/METADATA,sha256=k58DRzrlWmTz3dUc0Gm2Wx7ekorcS_HZYMRn8cxN7Og,483
+linnian_apps_chatter-0.1.9.dist-info/RECORD,,
