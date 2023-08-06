@@ -1,0 +1,57 @@
+parameters:
+  pysparkbundle:
+
+services:
+  pysparkbundle.logger: '@daipecore.logger'
+
+  pysparkbundle.lineage.argument.ArgumentMapping:
+    tags:
+      - 'lineage.decorator.function.argument_mapping'
+
+  pysparkbundle.read.PathReader.delta:
+    class: pysparkbundle.read.PathReader
+    arguments:
+      - 'delta'
+      - '@pysparkbundle.logger'
+
+  pysparkbundle.read.PathReader.parquet:
+    class: pysparkbundle.read.PathReader
+    arguments:
+      - 'parquet'
+      - '@pysparkbundle.logger'
+
+  pysparkbundle.read.PathReader.json:
+    class: pysparkbundle.read.PathReader
+    arguments:
+      - 'json'
+      - '@pysparkbundle.logger'
+
+  pysparkbundle.read.PathReader.csv:
+    class: pysparkbundle.read.PathReader
+    arguments:
+      - 'csv'
+      - '@pysparkbundle.logger'
+
+  pysparkbundle.write.PathWriter.delta:
+    class: pysparkbundle.write.PathWriter
+    arguments:
+      - 'delta'
+      - '@pysparkbundle.logger'
+
+  pysparkbundle.write.PathWriter.parquet:
+    class: pysparkbundle.write.PathWriter
+    arguments:
+      - 'parquet'
+      - '@pysparkbundle.logger'
+
+  pysparkbundle.write.PathWriter.json:
+    class: pysparkbundle.write.PathWriter
+    arguments:
+      - 'json'
+      - '@pysparkbundle.logger'
+
+  pysparkbundle.write.PathWriter.csv:
+    class: pysparkbundle.write.PathWriter
+    arguments:
+      - 'csv'
+      - '@pysparkbundle.logger'
