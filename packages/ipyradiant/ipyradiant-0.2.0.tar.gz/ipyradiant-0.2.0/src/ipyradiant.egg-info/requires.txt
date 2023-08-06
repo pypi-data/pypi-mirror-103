@@ -1,0 +1,15 @@
+bokeh
+datashader
+holoviews
+ipycytoscape>=1.2
+ipywidgets<8,>=7.6
+networkx>=2
+pandas
+rdflib
+rdflib-jsonld
+scikit-image
+
+[lab3]
+jupyterlab==3.*
+ipycytoscape>=1.2.0
+pyviz_comms>=1.0.3
