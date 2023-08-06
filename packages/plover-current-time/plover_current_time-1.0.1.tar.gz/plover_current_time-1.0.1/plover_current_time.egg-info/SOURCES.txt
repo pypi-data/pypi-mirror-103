@@ -1,0 +1,11 @@
+README.md
+current_time.py
+setup.cfg
+setup.py
+plover_current_time.egg-info/PKG-INFO
+plover_current_time.egg-info/SOURCES.txt
+plover_current_time.egg-info/dependency_links.txt
+plover_current_time.egg-info/entry_points.txt
+plover_current_time.egg-info/requires.txt
+plover_current_time.egg-info/top_level.txt
+plover_current_time.egg-info/zip-safe
