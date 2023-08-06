@@ -1,0 +1,11 @@
+coscine/__init__.py,sha256=D6DaE-8j122XQy4rmH37N4NONFLjkLov1tt2t0L16Ow,48
+coscine/coscine.py,sha256=7FH2CHuGUH603Xwj61QLeiCyoK5YMaQIoIT-QQ5DBX8,11852
+coscine/exceptions.py,sha256=y9AsnyxJFh4u6QIgYhyjd_4NDussLwGHJfd4akqo0e4,2821
+coscine/metadata.py,sha256=_P559mIYy03bx1glGMdb2L77WEDjXtmu6ngCkmlU0k0,6817
+coscine/profile.py,sha256=qQl0YzvwO8LS_4znULKABMLlolVEjY9oIPM_DqlFZI0,4983
+coscine/util.py,sha256=ZYw5dPsyacX9ONOhXeFJtdbsaZH66ty_Wgdnc7_7WPM,3023
+coscine-0.2.0.dist-info/LICENSE,sha256=6LX68hDbHJu1Rl9aRoR1sUNJNbDwB6Qzytv2frSFrwg,1072
+coscine-0.2.0.dist-info/METADATA,sha256=PP6GTgodY9iK_YLv1_oEsAbMr4XD47I9mTXo0JTAzZU,12499
+coscine-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+coscine-0.2.0.dist-info/top_level.txt,sha256=QLNIni4zqMAj39wvnLZEyZmu8GhYRuSFRv2h3061jeA,8
+coscine-0.2.0.dist-info/RECORD,,
