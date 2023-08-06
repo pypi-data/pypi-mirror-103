@@ -1,0 +1,4 @@
+py-algorand-sdk>=1.4.1
+apscheduler>=3.6.3
+ipfshttpclient>=0.7.0
+pyyaml>=5.4.1
