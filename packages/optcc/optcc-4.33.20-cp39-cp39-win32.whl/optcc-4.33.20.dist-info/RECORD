@@ -1,0 +1,16 @@
+_optcc.cp39-win32.pyd,sha256=m_oUa3oI4tsuv94q5d5ggan7WHEgDBJrv2_RPHxBxXs,188928
+optcc/__init__.py,sha256=_pNhehGpw9OjIC0K6rCqtZ0Ap-ZjjeR8gbG3MlVlnr8,20
+optcc/optcc.i,sha256=-HYX-Ry3JUpNmVbIGvlbIoAc84XbtE5HJ-eoXQ1YbMU,14416
+optcc/optcc.py,sha256=GvbvrXQNcXx3wmm8dkz7S8Y35Tiu0TWW0UBHvB_YM2E,25152
+optcc/C/gclgms.c,sha256=t_cJrqNfp5LRIh-d7SQoS6PdvjcSSTHEqGuB4FACZuQ,6474
+optcc/C/gclgms.h,sha256=eJ9Svx68WM6JHkJaHqX6DKjl5VZKqW1-RyXtx75ra5M,5724
+optcc/C/gcmt.c,sha256=bjHcseTD789xOmIjrRpSqeLzZUvOcxNCtIODA8PthS8,12233
+optcc/C/gcmt.h,sha256=bGT1JsPtn2-PnmyC9aQGUHScXKZ83KxPol7kMgezLo8,3692
+optcc/C/optcc.c,sha256=1TPYO1-yP9Da45NFe3PPTdPln9ZxzTHcbHYAQ3qTCFY,45498
+optcc/C/optcc.h,sha256=bqmlQhgQIR6e6RBYOJfayudODCRCorNktPTY-b35V_0,24116
+optcc/C/optcc_wrap.c,sha256=EuUapEgLc7cFxG9UsiPB182kdTE_NKy7DU5VMXqDp7E,353208
+optcc-4.33.20.dist-info/LICENSE,sha256=CC0gPTpZCsBdFfpYTvSV2tEJ7Mdz9EbCMupK3kDrzx4,1225
+optcc-4.33.20.dist-info/METADATA,sha256=57ZaqXKFr2-sFak7sQWsBd3H4JJOqk6uz-CdN0HRXeg,280
+optcc-4.33.20.dist-info/WHEEL,sha256=oz1Y-dEwtUqQxLRjBaFy1chmu8DINNM_NE3ttEIz2rw,96
+optcc-4.33.20.dist-info/top_level.txt,sha256=zj9QWTG4mBA6sozclQCMbTCYQYkd3xSSmMvK5q1Ompc,13
+optcc-4.33.20.dist-info/RECORD,,
