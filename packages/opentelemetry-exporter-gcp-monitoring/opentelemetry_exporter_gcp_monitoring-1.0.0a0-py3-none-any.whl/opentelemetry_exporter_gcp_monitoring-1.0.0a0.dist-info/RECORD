@@ -1,0 +1,9 @@
+opentelemetry/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opentelemetry/exporter/cloud_monitoring/__init__.py,sha256=Unn7Hc76L6buzh7XDsTVeCgdK55jV4oSI_mvxO8yrJg,14275
+opentelemetry/exporter/cloud_monitoring/_time.py,sha256=hR1npJtNrUHOOvTzfp2-lS1Jta8uIXVgMyzmTS5uMaI,932
+opentelemetry/exporter/cloud_monitoring/version.py,sha256=7Br9gS6tISWa3NXZnMnU3Xh_6FH3HDn1zb6SK-afp4I,614
+opentelemetry_exporter_gcp_monitoring-1.0.0a0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+opentelemetry_exporter_gcp_monitoring-1.0.0a0.dist-info/METADATA,sha256=3359ER5bdoNcfxVDEPR4csHsYlnM8ZkFGQpA42F9lMU,2874
+opentelemetry_exporter_gcp_monitoring-1.0.0a0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+opentelemetry_exporter_gcp_monitoring-1.0.0a0.dist-info/top_level.txt,sha256=5p97iTMneNm1LAKDalzEVpYhvPZsaqJZzdLuD_upSaQ,14
+opentelemetry_exporter_gcp_monitoring-1.0.0a0.dist-info/RECORD,,
