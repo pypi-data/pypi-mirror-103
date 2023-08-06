@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: gridvoting
+Version: 0.0.1
+Summary: Spatial Voting simulations on a grid with random challengers
+Home-page: https://github.com/drpaulbrewer/gridvoting
+Author: Paul Brewer
+Author-email: drpaulbrewer@eaftc.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/drpaulbrewer/gridvoting/issues
+Description: # gridvoting
+        
+        Voting simulations on a 2D grid of feasible outcomes
+        
+        Helper class and functions for a Markov Chain voting model
+        based on a series of status quos and random challenges.
+        
+        **This software is at a pre-release stage and not yet intended for general use.**
+        
+        Inputs:
+        
+        * grid size in 2D -glimit <= x,y <= glimit
+        * utility functions for each voter for each point on the grid
+        * challenger strategy (zi True/False)
+        
+        Outputs:
+        * Markov chain transition matrix
+        * Existence of core (absorbing) points
+        * Stationary distributions (no core)
+        * Diagnostic and distribution plots
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: GPU
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
