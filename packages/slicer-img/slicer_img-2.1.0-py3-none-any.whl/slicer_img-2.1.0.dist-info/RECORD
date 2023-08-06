@@ -1,0 +1,8 @@
+slice/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slice/image_split.py,sha256=VXcZWLBjcLzvl1DodhVa9BIdT9S8N5vmGL28mLhShCI,7960
+slicer_img-2.1.0.dist-info/LICENSE,sha256=Jd3-dJngc1Yv3Aby6qrQaeEE7Zl6siQKAbrIFlrg0Gc,1069
+slicer_img-2.1.0.dist-info/METADATA,sha256=4rLVunIyqBqcz64IA59aQjf11GzDTHuVlUo1yYYpFbQ,1326
+slicer_img-2.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+slicer_img-2.1.0.dist-info/entry_points.txt,sha256=Z0f-JhKw7ynYfc7vZ24CfKX_HTy8e5PYSE5cf9wAV5c,57
+slicer_img-2.1.0.dist-info/top_level.txt,sha256=lxyUAeWGecJnCrkbg9s4RuR5J9npxSfqlS8p0Rx1Ffk,6
+slicer_img-2.1.0.dist-info/RECORD,,
