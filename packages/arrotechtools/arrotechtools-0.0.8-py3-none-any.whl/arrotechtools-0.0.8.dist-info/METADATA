@@ -1,0 +1,410 @@
+Metadata-Version: 2.1
+Name: arrotechtools
+Version: 0.0.8
+Summary: Library with most of the useful methods in the world of programming
+Home-page: UNKNOWN
+Author: Harun Gachanja
+Author-email: arrotechdesign@gmail.com
+License: MIT
+Keywords: roles
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: Flask-JWT-Extended (==4.1.0)
+Requires-Dist: celery (==5.0.5)
+Requires-Dist: Flask (==1.1.2)
+Requires-Dist: Flask-Mail (==0.9.1)
+
+# Installation
+
+You can install the library with the following command:
+
+`pip install arrotechtools`
+
+# Getting Started
+
+After installation, you can immediately start using the library.
+
+Importing a class, an object, or a method is straight forward.
+
+Let simulate an import.
+
+```
+from arrotechtools import Validators, Serializer, admin_required
+```
+
+`Validators` and `Serializer` are classes while `admin_required` is a method.
+
+# Validation
+
+Supported validation inputs include:
+
+1. Email
+2. Password
+3. Integer
+4. Name
+5. Phone:   `phone, airtel, safaricom, orange, equitel`
+
+
+| Method        | Input Type | Sample |
+| --------------|-----------|----------|
+| email         | String    | test@gmail.com |
+| password      | String    | HeuliaI!djvb24628 |
+| integer       | Integer   | 23 `+ or -` are also accepted i.e `+25` or `-22` |
+| name          | String    | John doe |
+| phone, airtel, safaricom, orange, equitel | String | +254712345678 |
+
+
+#### Email validation
+
+Lets begin with validating an email provided by a user. 
+
+```
+from arrotechtools import Validators, Serializer
+
+email = "your@gmail.com"
+...
+if not Validators(email).email():
+    return Serializer.raise_error(400, "invalid email format")
+else:
+    ...
+```
+
+Here, we are checking if the input is a valid email. In this case, the class `Validators` takes an email as an argument to validate against. 
+
+#### Phone validation
+
+Lets take a look at another example. This time round we will try to validate user phone number.
+
+```
+from arrotechtools import Validators, Serializer
+
+phone = "your@gmail.com"
+...
+if not Validators(phone).safaricom():
+    return Serializer.raise_error(400, "invalid email format")
+else:
+    ...
+```
+Here, we are checking if the input is a valid safaricom phone number. In this case, the class `Validators` takes the phone number as an argument to validate against.
+
+#### Json Keys validation
+
+It becomes even easier when validating json keys from request body.
+Lets look at simple body and how we can validate the json request body.
+
+```
+from arrotechtools import Validators, Serializer
+
+
+def sign_up():
+
+    json_request_body = ['firstname', 'lastname']
+    errors = Validators(json_request_body).error_in_json_keys(request)
+    if errors:
+        return Serializer.raise_error(400, "Invalid {} key".format(', '.join(errors)))
+    data = request.get_json()
+    firstname = data['firstname']
+    lastname = data['lastname']
+
+    ...
+```
+
+If the json keys from request body do not match with those that you provide, then you will get an exception outlining any key that you mispelled or missed.
+This helps validate the request body. This type of validation/corner case is important especially when testing your `API's` on `POSTMAN` or any other clients.
+
+#### Validate User Input
+
+Suppose you strictly except certain user inputs, then you can always validate user input with the `input_restriction` method. This will raise an error if the user did not provide the expected data.
+
+```
+from arrotechtools import Validators, Serializer
+
+def signup():
+    data = request.get_json()
+    firstname = data['firstname']
+    lastname = data['lastname']
+    gender = data['gender']
+
+    expected_gender = ['Male', 'Female']
+    if not Validators(gender).input_restriction(expected_gender):
+        return Serializer.raise_error(400, "Gender should be Male or Female")
+
+    ...
+```
+
+In this case we only accept `Male` or `Female` as data input. Anything else will raise an exception. Please note that it's `CASE SENSITIVE`.
+
+# Serializing data output
+
+```
+from arrotechtools import Serializer
+
+#Fetching data from a database or a data structure i.e list
+response = Users().get_users()
+...
+if response:
+    return Serializer.serialize(response, 200, "Success")
+else:
+    ...
+```
+Here, we are fetch some data from a database and storing the data in a variable `response`. Then we serialize the data into json object or an array.
+The `serialize` object can serialize any different types data into json object(s). That includes `lists, dictionaries, or arrays`.
+
+#### Serialize error messages
+
+```
+from arrotechtools import Serializer, Validators
+
+name = "jane doe"
+...
+if not Validators(name).name():
+    return Serializer.raise_error(400, "Name is invalid")
+else:
+    ...
+```
+
+The method raise_error takes `status code` and `error meassage` as arguments.
+We are simply validating the name provided by the user. If the name is not a word, then the function will return an error message and an appropriate status code.
+
+#### Error handling
+
+With the `Serializer` class, you can handle errors accross your application.
+Errors captured include:
+
+1. Bad Request: `bad_request`
+
+    ```
+    message: "bad request",
+    status: "400"
+    ```
+2. Resourse not found: `page_not_found`
+
+    ```
+    message: "resource not found",
+    status: "404"
+    ```
+4. Method not allowed: `method_not_allowed`
+
+    ```
+    message: "method not allowed",
+    status: "405"
+    ```
+4. Internal Server Error: `internal_server_error`
+
+    ```
+    message: "internal server error",
+    status: "500"
+    ```
+**#Example 1**
+
+Below is an example illustrating how to use the `page_not_found` object to capture exceptions as a result non-existing resources.
+
+```
+from arrotechtools import Serializer
+
+#Fetch an item from a database or data structure i.e list
+response = User().get_user_by_id(id)
+
+if response:
+    ...
+else:
+    return Serializer.page_not_found()
+```
+
+**#Example 2**
+
+Lets a look at how we can capture errors at the entry point of a flask application.
+
+```
+from flask import Flask
+from arrotechtools import Serializer
+
+app = Flask(__name__)
+...
+
+#register error handlers
+app.register_error_handler(400, Serializer.bad_request)
+app.register_error_handler(404, Serializer.page_not_found)
+app.register_error_handler(405, Serializer.method_not_allowed)
+app.register_error_handler(500, Serializer.internal_server_error)
+```
+This is a straight forward way of handling errors in flask.
+
+# Tokens
+
+Using the Serializer class you can also encode your own tokens. You can as well decode those tokens and generate urls using them.
+
+#### Encode Tokens
+
+This is how to encode your token with an email:
+
+```
+from flask import current_app
+from arrotechtools import Serializer
+
+email = "janedoe@mail.com"
+token = Serializer.default_encode_token(current_app.config['SECRET_KEY'], email, salt='confirm-email-key')
+
+```
+
+All you need to pass to the `default_encode_token` method is an instance of your application `secret key`, `variable(email or username)`, and a `salt key`.
+
+#### Decode Tokens
+
+You can as well decode your encoded tokens:
+
+```
+from flask import current_app
+from arrotechtools import Serializer
+
+token = "JFKUjIFoOGIFCOIjVISFCJVH.FVIWFHIWFIQDVHi.CVIWIVCWHIC"
+
+try:
+    email = Serializer.default_decode_token(current_app.config['SECRET_KEY']
+        token, salt='confirm-email-key', expiration=3600)
+except Exception:
+    return raise_error(404, "resource not found")
+```
+
+#### Generate URLs
+
+This is how to generate url:
+
+**With Blueprints**
+
+```
+from arrotechtools import Serializer
+
+confirm_url = Serializer.generate_url('blueprint_1.confirm_email', token=token)
+```
+
+The first argument is the blueprint name and the method name i.e `blueprint_name.method_name`. Then provide a `token`.
+
+**Without Blueprints**
+
+```
+from arrotechtools import Serializer
+
+confirm_url = Serializer.generate_url('confirm_email', token=token)
+```
+
+The first argument is the method name i.e `method_name`. Then provide a `token`.
+
+# Asynchronous Emails
+
+This is how to send a simple email using the `send_email` method.
+You should first create an instance of your application and then configure your mail server as follows:
+
+
+```
+from flask import Flask, render_template
+from arrotechtools import send_email
+
+app = Flask(__name_)
+
+app.config['MAIL_SERVER'] = 'smtp.gmail.com'
+app.config['MAIL_PORT'] = 465
+app.config['MAIL_USERNAME'] = 'your_email@example.com'
+app.config['MAIL_PASSWORD'] = 'YOUR_PASSWORD'
+app.config['MAIL_USE_TLS'] = False
+app.config['MAIL_USE_SSL'] = True
+
+...
+
+send_email(app,
+           'Confirm Your Email',
+           sender='johndoe@mail.example',
+           recipients=['email1@example.com', 'email2@example.com'],
+           text_body=render_template(
+           'email_confirmation.txt'),
+           html_body=render_template('email_confirmation.html')
+
+...
+
+```
+
+The send email method takes the following variables as arguments:
+
+1. Instance of the flask application: `app`
+2. Subject: `Confirm Your Email`
+3. sender: `johndoe@mail.example`
+4. recipients: List of emails for the recipients
+5. text_body : Text template
+6. html_body: HTML template
+
+# Tasks
+
+#### Asynchronous Tasks with Celery
+
+You can create `async tasks with celery` in order to run certain tasks on the `background`.
+This method is so important when `sending async emails`. In this section we will see how we can send async emails using `celery`.
+
+```
+from flask import Flask
+from arrotechtools import make_celery
+
+app = Flask(__name__)
+
+# configure your email server as explained in the previous section
+
+# define a task
+celery = make_app(app, 'your broker url', 'your backend url')
+
+# register task
+@celery.task(name="my_task.send_email_with_attachement")
+def send_email_with_attachement():
+    ...
+
+# use task
+send_email_with_attachement.delay()
+
+...
+
+```
+
+The `make_app` method takes an instance of the `application`, `broker_url`, and `backend_url` as arguments.
+The name of the task should follow the following procedure: `task_name.method_name` where task name is any you can think of and the method name is the name of your method.
+
+
+# Admin Protected Route
+
+This is a function that takes an array of users as an argument and checks if the role is an admin.
+If that isn't the case, the function returns an unauthorized status code and message. 
+Otherwise, the user is permitted to use the function.
+
+#### How to use the decorator to protect routes
+
+**example:**
+
+```
+from functools import partial
+from arrotechtools import admin_required
+from your_database import User
+
+admin_route = partial(admin_required, users=User.query.all())
+
+@jwt_required
+@admin_route
+def signup():
+    ...
+```
+
+Partial method returns a new partial object which when called will behave like func called with the positional arguments args and keyword arguments keywords. If more arguments are supplied to the call, they are appended to args. If additional keyword arguments are supplied, they extend and override keywords.
+
+# Support Team
+
+    Email: arrotechdesign@gmail.com
+    Phone: +254 711 371 265
+
+# Authors
+
+    Harun Gachanja G.
+
+
