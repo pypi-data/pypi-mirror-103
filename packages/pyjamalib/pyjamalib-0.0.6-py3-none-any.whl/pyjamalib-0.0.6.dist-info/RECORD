@@ -1,0 +1,11 @@
+pyjama/DataHandler.py,sha256=hCoqYQrjxk5Q8YNI9NG_3di2pePTNsu8HPAo4i8_UP0,38729
+pyjama/IMUDataProcessing.py,sha256=TBIy8esAODvfo3rCrw6Fj75DqIdJzKG3yqGO7tRGHtg,70516
+pyjama/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyjamalib/DataHandler.py,sha256=hCoqYQrjxk5Q8YNI9NG_3di2pePTNsu8HPAo4i8_UP0,38729
+pyjamalib/IMUDataProcessing.py,sha256=qefwVNimlza6D5CaKy6Z67cJV0Wx4MCUSueO3VU20lk,70472
+pyjamalib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyjamalib-0.0.6.dist-info/LICENSE,sha256=_nITY3abxFcxp4LtqFvatDCcr3F9UKMGsvIeDmw8Rd0,1093
+pyjamalib-0.0.6.dist-info/METADATA,sha256=DUCHukVrtLGcBCPpUeYyv8bRdVNpoOorFCiQWB7CVjA,526
+pyjamalib-0.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyjamalib-0.0.6.dist-info/top_level.txt,sha256=MsERVf-HTDuNQhgxFicug1lrXegNKigFNIjOJkSLSf8,10
+pyjamalib-0.0.6.dist-info/RECORD,,
