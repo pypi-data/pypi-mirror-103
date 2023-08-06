@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+perceiver/__init__.py
+perceiver/attention.py
+perceiver/feedforward.py
+perceiver/fourier_encode.py
+perceiver/geglu.py
+perceiver/perceiver.py
+perceiver/prenorm.py
+perceiver/version.py
+perceiver.egg-info/PKG-INFO
+perceiver.egg-info/SOURCES.txt
+perceiver.egg-info/dependency_links.txt
+perceiver.egg-info/requires.txt
+perceiver.egg-info/top_level.txt

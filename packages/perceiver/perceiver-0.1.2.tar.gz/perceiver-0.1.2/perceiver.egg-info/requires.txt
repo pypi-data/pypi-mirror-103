@@ -1,0 +1,7 @@
+tensorflow~=2.4.0
+einops>=0.3
+
+[dev]
+check-manifest
+twine
+numpy
