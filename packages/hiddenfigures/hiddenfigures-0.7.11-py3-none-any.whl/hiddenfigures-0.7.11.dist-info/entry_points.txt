@@ -1,0 +1,3 @@
+[console_scripts]
+hiddenfigures = hiddenfigures.command_line:main
+
