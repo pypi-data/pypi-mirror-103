@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+pkgpy/__init__.py
+pkgpy.egg-info/PKG-INFO
+pkgpy.egg-info/SOURCES.txt
+pkgpy.egg-info/dependency_links.txt
+pkgpy.egg-info/not-zip-safe
+pkgpy.egg-info/top_level.txt
+test/test.py
