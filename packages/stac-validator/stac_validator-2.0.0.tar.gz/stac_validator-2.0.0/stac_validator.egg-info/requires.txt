@@ -1,0 +1,4 @@
+requests>=2.19.1
+jsonschema==3.2.0
+pystac==0.5.6
+click==7.1.2
