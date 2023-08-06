@@ -1,0 +1,3 @@
+[console_scripts]
+pwn = thglib.commandline.main:main
+
