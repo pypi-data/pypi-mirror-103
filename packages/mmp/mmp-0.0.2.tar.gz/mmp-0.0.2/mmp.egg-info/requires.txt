@@ -1,0 +1,2 @@
+virtualenv>=20.4.4
+docopt==0.6.2
