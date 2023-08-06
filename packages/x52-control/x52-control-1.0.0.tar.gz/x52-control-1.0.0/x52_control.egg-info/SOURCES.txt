@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+x52.py
+x52_control.egg-info/PKG-INFO
+x52_control.egg-info/SOURCES.txt
+x52_control.egg-info/dependency_links.txt
+x52_control.egg-info/top_level.txt
