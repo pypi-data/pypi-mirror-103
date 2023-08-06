@@ -1,0 +1,5 @@
+README.rst
+gdxcc.egg-info/PKG-INFO
+gdxcc.egg-info/SOURCES.txt
+gdxcc.egg-info/dependency_links.txt
+gdxcc.egg-info/top_level.txt
