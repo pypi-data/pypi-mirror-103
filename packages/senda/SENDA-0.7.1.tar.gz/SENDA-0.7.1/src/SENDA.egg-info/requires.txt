@@ -1,0 +1,10 @@
+torch
+transformers
+sklearn
+nltk
+pandas
+pyconll
+tweepy
+danlp
+datasets
+numpy
