@@ -1,0 +1,119 @@
+Metadata-Version: 2.1
+Name: tialgo
+Version: 0.0.2
+Summary: Algorithm SDK for TencentCloud TIONE
+Home-page: https://cloud.tencent.com
+Author: liang chen
+Author-email: chenliang@tencent.com
+License: MIT
+Description: ### Algorithm SDK for TencentCloud TIONE
+        
+        [![License](https://img.shields.io/github/license/tencent-youtu-visionseed/yt-visionseed-sdk-python)](https://raw.githubusercontent.com/tencent-youtu-visionseed/yt-visionseed-sdk-python/master/LICENSE)
+        
+        ---
+        
+        # install
+        ```shell
+        pip3 install --upgrade tialgo
+        ```
+        
+        # example
+        ```python
+        import os
+        import sys
+        import pandas as pd
+        from sklearn.preprocessing import LabelEncoder
+        from sklearn.ensemble import RandomForestClassifier
+        from tialgo import TableDataModel
+        
+        class Model(TableDataModel):
+            def __init__(self):
+                super(Model, self).__init__()
+        
+            def train(self, df):
+                super().train(df)
+        
+                #字符串索引化
+                for col in ["term","grade","home_ownership","verification_status"]:
+                    # 需要保存的对象
+                    encoder = LabelEncoder()
+                    df[col] = encoder.fit_transform(df[col])
+                    self.put_model(encoder)
+        
+                feature = [col for col in df.columns if col not in ["loan_status"]]
+                X,y = df[feature], df["loan_status"]
+        
+                #随机森林分类
+                model = RandomForestClassifier(max_depth = 7, n_estimators = 20,)
+                model.fit(X, y)
+                self.put_model(model)
+        
+                print('自动保存模型：')
+                self.print_model()
+        
+            def predict(self, df):
+                super().predict(df)
+        
+                feature = [col for col in df.columns if col not in ["loan_status"]]
+                df = df[feature]
+        
+                #字符串索引化 贷款期限 贷款信用评级 贷款客户房屋所有权状况 收入认证状态
+                for col in ["term","grade","home_ownership","verification_status"]:
+                    # 需要保存的对象
+                    encoder = self.get_model()
+                    df[col] = encoder.transform(df[col])
+        
+                #分类
+                model = self.get_model()
+                y_pred_proba = model.predict_proba(df)
+                return pd.DataFrame(y_pred_proba)
+        
+            def load_train_data(self):
+                return {'data': df, 'label': 'loan_status'}
+        
+        
+        run_mode = os.environ.get('run_mode') or 'train'
+        print('run_mode:', run_mode)
+        
+        if run_mode=='train':
+            df = pd.read_csv("demo.csv")
+        
+        model = Model()
+        model.run(run_mode)
+        
+        model.run('predict_online')
+        
+        ```
+        
+        # test data
+        save as demo.csv
+        ```
+        loan_amnt,term,int_rate,grade,emp_length,home_ownership,annual_inc,verification_status,dti,delinq_2yrs,inq_last_6mths,chargeoff_within_12_mths,loan_status
+        15000.0, 60 months,25.82,E,0.0,OWN,25000.0,Source Verified,2.26,0.0,0.0,0.0,0
+        20000.0, 36 months,6.11,A,4.0,MORTGAGE,95000.0,Not Verified,15.32,1.0,2.0,0.0,1
+        15000.0, 36 months,10.91,B,0.0,RENT,38000.0,Not Verified,23.63,0.0,1.0,0.0,1
+        4800.0, 36 months,12.62,C,3.0,RENT,100000.0,Source Verified,10.31,0.0,0.0,0.0,0
+        16000.0, 60 months,19.42,D,6.0,MORTGAGE,60000.0,Verified,22.68,0.0,0.0,0.0,1
+        40000.0, 60 months,7.21,A,3.0,MORTGAGE,130000.0,Source Verified,18.0,0.0,0.0,0.0,1
+        4000.0, 36 months,29.69,F,2.0,RENT,47000.0,Source Verified,25.97,0.0,1.0,0.0,0
+        30000.0, 60 months,12.73,B,11.0,RENT,102000.0,Source Verified,21.11,0.0,0.0,0.0,1
+        5000.0, 36 months,10.08,B,0.0,OWN,46000.0,Source Verified,30.42,0.0,0.0,0.0,1
+        16000.0, 36 months,8.08,A,5.0,RENT,30000.0,Source Verified,25.08,0.0,0.0,0.0,0
+        8000.0, 36 months,9.92,B,11.0,RENT,105000.0,Not Verified,11.28,0.0,1.0,0.0,1
+        10000.0, 36 months,15.05,C,4.0,RENT,50000.0,Source Verified,14.12,0.0,0.0,0.0,0
+        22000.0, 60 months,15.02,C,0.0,RENT,80000.0,Not Verified,36.51,0.0,0.0,0.0,1
+        ```
+        
+        # test the online service
+        ```shell
+        curl http://127.0.0.1:8501 -X POST --data-binary @demo.csv
+        ```
+        
+        # more
+        Homepage: https://cloud.tencent.com
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
