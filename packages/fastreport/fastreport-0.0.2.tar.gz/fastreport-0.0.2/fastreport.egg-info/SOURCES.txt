@@ -1,0 +1,6 @@
+README.md
+setup.py
+fastreport.egg-info/PKG-INFO
+fastreport.egg-info/SOURCES.txt
+fastreport.egg-info/dependency_links.txt
+fastreport.egg-info/top_level.txt
