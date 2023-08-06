@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/dnsblock_update/__init__.py
+src/dnsblock_update/__main__.py
+src/dnsblock_update/blocklist.py
+src/dnsblock_update/config.py
+src/dnsblock_update.egg-info/PKG-INFO
+src/dnsblock_update.egg-info/SOURCES.txt
+src/dnsblock_update.egg-info/dependency_links.txt
+src/dnsblock_update.egg-info/requires.txt
+src/dnsblock_update.egg-info/top_level.txt

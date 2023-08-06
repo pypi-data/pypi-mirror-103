@@ -1,0 +1,9 @@
+requests
+pyyaml
+
+[dev]
+setuptools
+wheel
+
+[test]
+coverage

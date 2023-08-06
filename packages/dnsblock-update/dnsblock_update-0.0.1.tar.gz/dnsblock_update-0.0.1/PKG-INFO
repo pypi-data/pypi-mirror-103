@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: dnsblock_update
+Version: 0.0.1
+Summary: Blocklist Updater for DNS Masq
+Home-page: https://github.com/raynigon/dnsblock-update
+Author: Simon Schneider
+Author-email: dev@raynigon.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/raynigon/dnsblock-update/issues
+Project-URL: Funding, https://donate.pypi.org
+Project-URL: Say Thanks!, http://saythanks.io/to/example
+Project-URL: Source, https://github.com/pypa/sampleproject/
+Description: # dnsblock-update
+        Blocklist Updater for DNSmasq
+        
+        ## Usage
+        
+        ### Installation
+        
+        Run the following command:
+        ```pip3 install dnsblock_update```
+        
+        ### Configuration
+        
+        Create a configuration file with the following content:
+        ```yaml
+        dnsmasq: 
+          path: "result.conf"   # Generated DNSMasq configuration
+        repository:
+          path: "./repo/"       # Path to the cache repository used by the updater
+        blocklists:
+          - name: "notracking"                      # name of the blocklist
+            url: https://example.com/blacklist.txt  # url of the blocklist
+        ```
+        
+        ### Execution
+        
+        Create a cronjob:
+        ```
+        0 2 * * * /usr/bin/python3 -m dnsblock_update /etc/dnsblock_update/config.yml
+        ```
+        
+Keywords: dnsmasq
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test
