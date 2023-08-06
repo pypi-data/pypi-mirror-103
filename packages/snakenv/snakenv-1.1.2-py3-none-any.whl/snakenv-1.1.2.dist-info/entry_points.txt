@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        snakenv=snakenv.__main__:cli
+    
