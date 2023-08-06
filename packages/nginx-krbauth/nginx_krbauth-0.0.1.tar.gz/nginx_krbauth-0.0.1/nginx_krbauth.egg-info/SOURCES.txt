@@ -1,0 +1,9 @@
+LICENSE
+README.md
+nginx_krbauth.py
+setup.py
+nginx_krbauth.egg-info/PKG-INFO
+nginx_krbauth.egg-info/SOURCES.txt
+nginx_krbauth.egg-info/dependency_links.txt
+nginx_krbauth.egg-info/requires.txt
+nginx_krbauth.egg-info/top_level.txt
