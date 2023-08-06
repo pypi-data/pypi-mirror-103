@@ -1,0 +1,17 @@
+casanova/__init__.py,sha256=4GBWhjLRwJykJcL1Mx6ebpnt3etRsNKwaWifBIulhwM,894
+casanova/_namedtuple.py,sha256=ZrJe5TMArrOzYYtJAAsCLNoFtL-FWMqAXBwqAVK1gcs,6613
+casanova/contiguous_range_set.py,sha256=_9_QULqLT2adKBxjCLG9Vid3NBI4wSHrFpK7ylRtmb8,3303
+casanova/enricher.py,sha256=OawLI52xIBQdowSzEd7rUCjl-UsFrQbmw4HNRElr2zc,6017
+casanova/exceptions.py,sha256=1cwRbS4_9hjrZmksNRJAadc6YnvbUhEUO_wN4nZK_QY,586
+casanova/namedrecord.py,sha256=gBcMQ_X0PEOUxElAYg2OagC_TWYbOXLZ4u4lT9YVhV8,2374
+casanova/reader.py,sha256=OL3-upLhTZpfcNvUVB4z2QuhTRUmK9ugAvjWgpxiOOU,7476
+casanova/resuming.py,sha256=KP5TTpx97Okk9ggVeBDpt9qca8430fGKVmBlWMyJbfA,6629
+casanova/reverse_reader.py,sha256=OnnoyPxNliXb0OaiYNsP0mFm5pH-bU2f3mOPtNYIWLE,3659
+casanova/utils.py,sha256=fjsOovTcz8tTyK9teOPnhVcNdYyTnR4XA-Yff-xYbZQ,1362
+casanova/writer.py,sha256=SCgoNRH7-hlY_m4oE4IZb8B_7TNWtIZ5l0Jv6DSSC-8,1331
+casanova-0.14.0.dist-info/LICENSE.txt,sha256=zNIfdf5WnMfIf3tcNMMmO_oSPVZb-uGsR1gU4Ny_n5w,1104
+casanova-0.14.0.dist-info/METADATA,sha256=Ss-QHajhh3UNwHJpOn4IfTYQPRp3Ubf4qfMIFdnXU6g,9432
+casanova-0.14.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+casanova-0.14.0.dist-info/top_level.txt,sha256=tO2qAYfFX9kf6mLSfOJ-GOFVVpC56JEamCrgmmTxSLI,9
+casanova-0.14.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+casanova-0.14.0.dist-info/RECORD,,
