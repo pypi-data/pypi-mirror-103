@@ -1,0 +1,6 @@
+kafka_bundle/__init__.py,sha256=E0GaltDRw3u2L9YmTtmL1cHjeu3-1zBOTAt0PS5vjAE,65
+kafka_bundle/bundle.py,sha256=mFEyWJucbTvhUwnne6JTpLioyYVnp__YEOdadZXhfR8,2615
+kafka_bundle-2.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+kafka_bundle-2.0.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+kafka_bundle-2.0.1.dist-info/METADATA,sha256=wawNQFsy1JKBxmQ0t5gYVhAfzH6BTRifpo2ZUPGygNo,489
+kafka_bundle-2.0.1.dist-info/RECORD,,
