@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: chaqum
+Version: 0.8
+Summary: [ˈkeɪkjuːm], the queue manager for chaotic job queues.
+Home-page: https://github.com/wagnerflo/chaqum
+Author: Florian Wagner
+Author-email: florian@wagner-flo.net
+License: UNKNOWN
+Description: # chaqum
+        
+        The [ˈkeɪkjuːm] job manager handles job queues and the closely
+        associated workload of process spawning, log managment and interprocess
+        messaging. It tries to be unixy and powerful while keeping complexity
+        and the learning curve as low as possible.
+        
+        Documentation is available as man pages. Start by reading
+        [chaqum(1)](https://wagnerflo.github.io/chaqum/chaqum.1.html).
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >= 3.8
+Description-Content-Type: text/markdown

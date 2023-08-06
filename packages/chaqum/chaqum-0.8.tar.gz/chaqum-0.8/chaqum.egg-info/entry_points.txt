@@ -1,0 +1,3 @@
+[console_scripts]
+chaqum = chaqum.cmdline:main
+
