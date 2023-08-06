@@ -1,0 +1,8 @@
+sysq/__init__.py,sha256=V0JvePVy_0NDQQopbG83OOHI2H-ZX7tCiZVz34ZJ3E8,109
+sysq/__main__.py,sha256=qgxFkiPxw5kySu7ejeIneqKB8P54zys9lPx0EsnKtdE,99
+sysq/core.py,sha256=8UfviTEsYu-4LwcyHB-lcdnVq4S_VxGrzvGXkQa7PbY,590
+sysq/data/file.txt,sha256=jdVTLdR7hVFTvkTsrJYOOyddj_xc8_9p71WdXSg9lSE,3
+sysq-1.7.0.dist-info/entry_points.txt,sha256=l4SDMLPiNH5C2S8FEB8GDHOYopht_RGYql3oWAIR0V8,39
+sysq-1.7.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+sysq-1.7.0.dist-info/METADATA,sha256=r4U7ew1ltadjTkvFnYearPk4qZOlV4-f7FRUNcQ6JXc,356
+sysq-1.7.0.dist-info/RECORD,,
