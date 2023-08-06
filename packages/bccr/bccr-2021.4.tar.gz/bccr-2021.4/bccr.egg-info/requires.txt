@@ -1,0 +1,7 @@
+pandas
+numpy
+anytree
+requests
+beautifulsoup4
+plotly
+dash
