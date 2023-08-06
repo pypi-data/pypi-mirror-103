@@ -1,0 +1,12 @@
+PyJWT
+google-auth-oauthlib
+pyramid>=2.0.0
+
+[tests]
+PyJWT
+coverage
+google-auth-oauthlib
+h-matchers
+pyramid>=2.0.0
+pytest
+webtest
