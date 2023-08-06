@@ -1,0 +1,14 @@
+README.md
+setup.py
+cfbs/__init__.py
+cfbs/__main__.py
+cfbs/filesystem.py
+cfbs/main.py
+cfbs/old_main.py
+cfbs/version.py
+cfbs.egg-info/PKG-INFO
+cfbs.egg-info/SOURCES.txt
+cfbs.egg-info/dependency_links.txt
+cfbs.egg-info/entry_points.txt
+cfbs.egg-info/requires.txt
+cfbs.egg-info/top_level.txt
