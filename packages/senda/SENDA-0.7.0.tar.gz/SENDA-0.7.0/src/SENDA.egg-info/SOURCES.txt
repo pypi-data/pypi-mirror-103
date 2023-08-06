@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+src/SENDA/Model.py
+src/SENDA/__init__.py
+src/SENDA/angry_tweets.py
+src/SENDA.egg-info/PKG-INFO
+src/SENDA.egg-info/SOURCES.txt
+src/SENDA.egg-info/dependency_links.txt
+src/SENDA.egg-info/requires.txt
+src/SENDA.egg-info/top_level.txt
