@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+xlsOperator/__init__.py
+xlsOperator/xls.py
+xlsOperator/xlsx.py
+xlsOperator.egg-info/PKG-INFO
+xlsOperator.egg-info/SOURCES.txt
+xlsOperator.egg-info/dependency_links.txt
+xlsOperator.egg-info/requires.txt
+xlsOperator.egg-info/top_level.txt
