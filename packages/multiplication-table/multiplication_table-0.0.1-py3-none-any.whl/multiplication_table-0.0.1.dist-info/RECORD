@@ -1,0 +1,11 @@
+multiplication_table/__init__.py,sha256=BSQeplLoQnP6b7pTtzlAFlZqzaDkkFWfzI74dPSYseM,256
+multiplication_table/process_math/Graph.py,sha256=xdv9VH8nL5UssjLsgjGYRmbWHPlnVTeJHpyvT8LFwlI,2498
+multiplication_table/process_math/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+multiplication_table/process_vis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+multiplication_table/process_vis/base_vis.py,sha256=t9D_KMm3fMgxzL2ro0gLyfD0gP1z0tzqwILBUns6Ecc,4460
+multiplication_table/process_vis/edges_vis.py,sha256=GjRoHDfn4m4Pjst4SICeEkzfdva9o0TpgpaudEAEe8s,2306
+multiplication_table/process_vis/interface.py,sha256=5bhDyox5fYPh0Vk-EaQPrIcA0Acv-OfJ5IS3tL84a2s,13547
+multiplication_table-0.0.1.dist-info/METADATA,sha256=7l8fqKYkRbOMPkluKnEasbiXTQG1GNXEOxQUTR7GrAw,487
+multiplication_table-0.0.1.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+multiplication_table-0.0.1.dist-info/top_level.txt,sha256=a58WcnX0mMb7c1ifj1QdQDBhmT6sXYO9DN2ul4d6e0M,21
+multiplication_table-0.0.1.dist-info/RECORD,,
