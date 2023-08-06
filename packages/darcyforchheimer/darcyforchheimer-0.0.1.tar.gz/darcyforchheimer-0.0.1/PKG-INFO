@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: darcyforchheimer
+Version: 0.0.1
+Summary: darcy-forchheimer parameters calculator helper
+Home-page: https://github.com/Hynack/darcyforchheimer
+Author: David Hinojosa
+Author-email: hynack@gmail.com
+License: UNKNOWN
+Description: # darcy-forchheimer calculator
+        
+        The goal of the package is to help obtaining the Darcy and Forchheimer coefficients, very useful for porous material fluid simulations.
+        
+        ## Installation
+        
+        Run the following to install:
+        
+        ```python
+        pip install darcyforchhiemer
+        ```
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Provides-Extra: dev
