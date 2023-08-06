@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/clip_values/__init__.py
+src/clip_values.egg-info/PKG-INFO
+src/clip_values.egg-info/SOURCES.txt
+src/clip_values.egg-info/dependency_links.txt
+src/clip_values.egg-info/top_level.txt
