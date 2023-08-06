@@ -1,0 +1,11 @@
+cortx_jupyter/__init__.py,sha256=ulkdmqZXh0xUgEd8g4mKBQ4JQQudpOul07D00mR0xUI,86
+cortx_jupyter/constants.py,sha256=c7j3GzPmK7DaTMRw_i8q-UtpibokHMUQhr32JVITIXg,162
+cortx_jupyter/cortx_constants.py,sha256=c7j3GzPmK7DaTMRw_i8q-UtpibokHMUQhr32JVITIXg,162
+cortx_jupyter/cortx_jupyter.py,sha256=DmrTZUVIhykvAPuQFM3dgJULIScsAkuxlOdFkMCJJmE,27211
+cortx_jupyter/cortx_jupyter_original.py,sha256=DfwfGGCkEXXA7jUAbr_brxQtcQVeSUXfCwjLy5MMLVo,28605
+cortx_jupyter-0.1.8.dist-info/DESCRIPTION.rst,sha256=kKdncOXN-_8DCTW_b5Fz_Py5r518_LIUPGSDL6JSU0I,165
+cortx_jupyter-0.1.8.dist-info/METADATA,sha256=KgSorMsGAjZ-tkIUOy3ZtsSTIzMPuhIr-k5Xz6UtTMM,406
+cortx_jupyter-0.1.8.dist-info/RECORD,,
+cortx_jupyter-0.1.8.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+cortx_jupyter-0.1.8.dist-info/metadata.json,sha256=wJHijaJOF2t6Ojs95C_qKMSbNHIRLzD6naNNYyrsQ7g,385
+cortx_jupyter-0.1.8.dist-info/top_level.txt,sha256=ph1HvLNrJvG24rJrr9d7ZHjOgb17gmzNDyMPkpCoXpI,14
