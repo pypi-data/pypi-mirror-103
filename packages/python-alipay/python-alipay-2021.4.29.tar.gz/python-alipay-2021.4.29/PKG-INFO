@@ -1,0 +1,42 @@
+Metadata-Version: 1.1
+Name: python-alipay
+Version: 2021.4.29
+Summary: Alipay for Python
+Home-page: https://github.com/catroll/python-alipay
+Author: catroll
+Author-email: ninedoors@126.com
+License: BSD
+Description: 快速开始
+        ==============
+        
+        安装
+        ----
+        
+        使用pip
+        
+        .. code-block:: python
+        
+            sudo pip install python-wechat
+        
+        使用easy_install
+        
+        .. code-block:: python
+        
+            sudo easy_install python-wechat
+        
+        安装开发版本
+        
+        .. code-block:: python
+        
+            sudo pip install git+https://github.com/catroll/python-wechat@dev
+        
+Keywords: alipay,alipay pay,alipay login,alipay mp,alipay python
+Platform: any
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
