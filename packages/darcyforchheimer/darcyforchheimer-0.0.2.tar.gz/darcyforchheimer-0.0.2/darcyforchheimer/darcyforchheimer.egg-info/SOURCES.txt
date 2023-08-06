@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+darcyforchheimer/__init__.py
+darcyforchheimer/darcyforchheimer.py
+darcyforchheimer/darcyforchheimer.egg-info/PKG-INFO
+darcyforchheimer/darcyforchheimer.egg-info/SOURCES.txt
+darcyforchheimer/darcyforchheimer.egg-info/dependency_links.txt
+darcyforchheimer/darcyforchheimer.egg-info/requires.txt
+darcyforchheimer/darcyforchheimer.egg-info/top_level.txt
+darcyforchheimer/tests/test_coefficients.py
