@@ -1,0 +1,13 @@
+httptools/__init__.py,sha256=plt3MIbueJdco9Dy7zoH3ksLNeyirqWagat5rwRmAjo,147
+httptools/_version.py,sha256=rncRPkROTW8_WCE9RY8xXut6umeYjNTQP7X0jCAzDIY,575
+httptools/parser/__init__.py,sha256=fWyconPEHZlJojzRwmBKSn4C85OGXmKEwiEcdjHqXO8,166
+httptools/parser/errors.py,sha256=ZVrtN1smPIb_opQ2Ud3uCbGlNLMlECYM2-6S7r5LnHs,566
+httptools/parser/parser.c,sha256=q8ZTbg7Gfu0PjAVAI5JjgCjdBE6IHv3SOdx7x1ctkcU,395529
+httptools/parser/parser.cpython-36m-darwin.so,sha256=chBZK-hMDAgeg-SqElIXloCY-YyjfV726xL7hWOa0B4,147928
+httptools/parser/url_parser.c,sha256=ilDn-x_bRK46U8_eO0w3-5MDHKBrpZPh8qjtGtVLSaY,232237
+httptools/parser/url_parser.cpython-36m-darwin.so,sha256=T5mV51S3IqElEpHLlUYQCw3AntsIonb1iGANypMFHAk,88144
+httptools-0.2.0.dist-info/LICENSE,sha256=9Fc-fLdnZ0X7W402-lSKqT45HPtoct2s1lEwxF6mqS0,1093
+httptools-0.2.0.dist-info/METADATA,sha256=cqgH4ZzR1cdYYRxdGRAUf7TPnhAfUW2FyYv6741d5MU,3524
+httptools-0.2.0.dist-info/WHEEL,sha256=m6LthcvwM6bA7Fe4dG2Xs3dEArBbF6m1zJ0P98B951A,111
+httptools-0.2.0.dist-info/top_level.txt,sha256=APjJKTbZcj0OQ4fdgf2eTCk82nK1n2BFXOD7ky41MPY,10
+httptools-0.2.0.dist-info/RECORD,,
