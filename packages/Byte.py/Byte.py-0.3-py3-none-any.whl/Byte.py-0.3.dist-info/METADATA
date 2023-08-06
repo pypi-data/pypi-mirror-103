@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: Byte.py
+Version: 0.3
+Summary: A Python API Wrapper to interact with with the SocialMedia platform Byte.co
+Home-page: https://rpwnage.github.io/ByteAPI/
+Author: rpwnage
+Author-email: rpwnage@protonmail.com
+License: MIT
+Keywords: api,byte.co,byte
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+
+# ByteAPI
+Byte.py is a python wrapper for the inofficial API that runs the SocialMedia platform Byte.co. This is pretty basic as of now, and will be updated in future releases. For more information about this package's capabilities please refer to the documentation.
+# Basic usage
+The following snippet is an example on how to create a new Byte.py client instance and fetch the username of the logged-in user.
+```python
+from ByteAPI import ByteAPI
+
+byteClient = ByteAPI(<Your Token>)
+print(byteClient.username)
+```
+
+
