@@ -1,0 +1,16 @@
+pull_request_rules:
+    - actions:
+        merge:
+            method: rebase
+            rebase_fallback: merge
+            strict: true
+      conditions:
+          - label!=no-mergify
+          - '#approved-reviews-by>=1'
+          - status-success=Run tests / test (2.7)
+          - status-success=Run tests / test (3.6)
+          - status-success=Run tests / test (3.8)
+          - status-success=Run tests / test (3.9)
+          - status-success=Run tests / flake8
+          - status-success=Run tests / integration
+      name: default
