@@ -1,0 +1,3 @@
+[console_scripts]
+reviews = cli:main
+
