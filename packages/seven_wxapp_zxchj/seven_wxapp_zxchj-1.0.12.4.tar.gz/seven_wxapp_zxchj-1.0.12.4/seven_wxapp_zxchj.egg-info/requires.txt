@@ -1,0 +1,2 @@
+seven-framework>=1.0.121
+seven_wxapp>=1.0.7
