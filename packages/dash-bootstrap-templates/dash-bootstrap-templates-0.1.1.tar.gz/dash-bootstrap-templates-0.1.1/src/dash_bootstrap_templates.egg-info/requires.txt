@@ -1,0 +1,13 @@
+dash
+dash-bootstrap-components
+numpy
+
+[:python_version < "3.9"]
+importlib_resources<6.0.0,>=5.1.0
+
+[:python_version == "3.7"]
+importlib_metadata<4.0.0,>=3.4.0
+
+[dev]
+tinycss2
+spectra
