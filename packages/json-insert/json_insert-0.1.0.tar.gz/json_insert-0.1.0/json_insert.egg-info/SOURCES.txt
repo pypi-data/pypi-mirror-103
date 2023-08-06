@@ -1,0 +1,10 @@
+README.md
+setup.py
+json_insert/__init__.py
+json_insert/streamer.py
+json_insert.egg-info/PKG-INFO
+json_insert.egg-info/SOURCES.txt
+json_insert.egg-info/dependency_links.txt
+json_insert.egg-info/top_level.txt
+tests/__init__.py
+tests/test_streamer.py
