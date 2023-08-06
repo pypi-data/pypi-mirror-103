@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: checkDebug-swordyrepo
+Version: 0.0.1
+Summary: checkDebug debugger line by line debugging
+Home-page: https://github.com/swordysrepo/checkDebug
+Author: swordyrepo
+Author-email: swordysbot@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+UNKNOWN
+
+
