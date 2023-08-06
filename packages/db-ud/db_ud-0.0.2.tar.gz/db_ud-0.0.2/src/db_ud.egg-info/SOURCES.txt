@@ -1,0 +1,6 @@
+pyproject.toml
+setup.cfg
+src/db_ud.egg-info/PKG-INFO
+src/db_ud.egg-info/SOURCES.txt
+src/db_ud.egg-info/dependency_links.txt
+src/db_ud.egg-info/top_level.txt
