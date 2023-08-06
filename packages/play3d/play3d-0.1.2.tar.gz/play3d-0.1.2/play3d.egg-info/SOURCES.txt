@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+play3d/__about__.py
+play3d/__init__.py
+play3d/matrix.py
+play3d/models.py
+play3d/three_d.py
+play3d/utils.py
+play3d.egg-info/PKG-INFO
+play3d.egg-info/SOURCES.txt
+play3d.egg-info/dependency_links.txt
+play3d.egg-info/requires.txt
+play3d.egg-info/top_level.txt
