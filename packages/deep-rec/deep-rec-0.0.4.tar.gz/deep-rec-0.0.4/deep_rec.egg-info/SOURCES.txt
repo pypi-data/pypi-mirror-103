@@ -1,0 +1,12 @@
+README.md
+setup.py
+deep_rec.egg-info/PKG-INFO
+deep_rec.egg-info/SOURCES.txt
+deep_rec.egg-info/dependency_links.txt
+deep_rec.egg-info/top_level.txt
+deeprec/__init__.py
+deeprec/data/__init__.py
+deeprec/data/load_dataset.py
+deeprec/models/__init__.py
+deeprec/models/deepfm.py
+deeprec/models/layers.py
