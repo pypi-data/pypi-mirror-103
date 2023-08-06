@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: discogslearner
+Version: 0.1
+Summary: Machine Learning module for Discogs
+Home-page: https://github.com/Pascallio
+Author: Pascal Maas
+Author-email: p.maas92@gmail.com
+License: GPL-3.0
+Download-URL: https://github.com/Pascallio/DiscogsLearner/archive/refs/tags/v0.1.tar.gz
+Description: UNKNOWN
+Keywords: Discogs,Machine Learning
+Platform: UNKNOWN

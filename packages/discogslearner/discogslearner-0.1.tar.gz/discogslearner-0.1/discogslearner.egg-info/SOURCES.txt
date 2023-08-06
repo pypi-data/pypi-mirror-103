@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+discogslearner/DiscogsChunker.py
+discogslearner/DiscogsExtracter.py
+discogslearner/DiscogsLearner.py
+discogslearner/__init__.py
+discogslearner.egg-info/PKG-INFO
+discogslearner.egg-info/SOURCES.txt
+discogslearner.egg-info/dependency_links.txt
+discogslearner.egg-info/requires.txt
+discogslearner.egg-info/top_level.txt

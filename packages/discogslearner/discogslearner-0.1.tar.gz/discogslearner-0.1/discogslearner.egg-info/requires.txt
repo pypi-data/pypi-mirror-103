@@ -1,0 +1,5 @@
+pandas
+tqdm
+numpy
+sklearn
+discogs_client
