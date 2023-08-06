@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+emfreeze/__init__.py
+emfreeze/__main__.py
+emfreeze/cli.py
+emfreeze/compile_build.py
+emfreeze/copy_site_packages.py
+emfreeze/download_embed.py
+emfreeze.egg-info/PKG-INFO
+emfreeze.egg-info/SOURCES.txt
+emfreeze.egg-info/dependency_links.txt
+emfreeze.egg-info/entry_points.txt
+emfreeze.egg-info/top_level.txt
