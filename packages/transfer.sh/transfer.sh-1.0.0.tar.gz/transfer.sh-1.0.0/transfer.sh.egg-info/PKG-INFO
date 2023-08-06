@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: transfer.sh
+Version: 1.0.0
+Summary: unofficial transfer.sh CLI
+Home-page: https://github.com/mayankfawkes
+Author: Mayank Gupta
+Author-email: mayankfawkes@gmail.com
+License: MIT License
+Project-URL: Documentation, https://github.com/mayankfawkes
+Project-URL: Source, https://github.com/mayankfawkes
+Description: # Transfer.sh
+        
+        This is reserved by [Mayank](https://github.com/mayankfawkes)
+        
+Platform: UNKNOWN
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Natural Language :: English
+Classifier: Environment :: Plugins
+Classifier: Environment :: Console
+Classifier: Topic :: Terminals
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
