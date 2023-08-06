@@ -1,0 +1,11 @@
+Orange3>=3.27.1
+orange-widget-base
+AnyQt
+numpy
+pyqtgraph
+scipy
+shap==0.37.*
+
+[test]
+pytest
+coverage
