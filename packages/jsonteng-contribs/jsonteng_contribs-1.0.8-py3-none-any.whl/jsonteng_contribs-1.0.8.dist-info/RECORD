@@ -1,0 +1,10 @@
+jsonteng_contribs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jsonteng_contribs/tags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jsonteng_contribs/tags/ipv4_host_gateway_tag.py,sha256=A3MJEPILBhceQ1aXMVRGX-hvCluRy4dwPcWsJ05Z_hk,1523
+jsonteng_contribs/tags/ipv4_host_ip_tag.py,sha256=f9P0W3HztvEyafTbdxCW9s2igb8eJtMlPMIulQufMiU,1591
+jsonteng_contribs/tags/ipv4_host_netmask_tag.py,sha256=hzKqV4WniZNRECwgOMn3QvI75w9uoHfaWk7I8sbgG80,1428
+jsonteng_contribs/tags/ipv4_subnet_tag.py,sha256=36gKSu8y1XqpWZyJYiVz1-xYiJ0sl918NNQyTuzZsUs,2168
+jsonteng_contribs-1.0.8.dist-info/METADATA,sha256=Tfc0PThdaMTqzjUpB05zIbG8aEcRiw42HkvaEOmqGMk,407
+jsonteng_contribs-1.0.8.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+jsonteng_contribs-1.0.8.dist-info/top_level.txt,sha256=5zGY-KzBiPV-yuFg7n8GUJjUGUU9UIZC8tWTbqAnncs,18
+jsonteng_contribs-1.0.8.dist-info/RECORD,,
