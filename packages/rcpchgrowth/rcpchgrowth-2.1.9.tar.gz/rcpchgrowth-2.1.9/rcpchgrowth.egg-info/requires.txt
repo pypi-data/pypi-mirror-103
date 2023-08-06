@@ -1,0 +1,11 @@
+marshmallow
+numpy
+python-dateutil
+scipy
+six
+
+[dev]
+check-manifest
+
+[test]
+coverage
