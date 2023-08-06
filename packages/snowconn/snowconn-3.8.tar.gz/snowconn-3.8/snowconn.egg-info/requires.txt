@@ -1,0 +1,14 @@
+wheel==0.32.3
+snowflake-connector-python==2.4.2
+snowflake-sqlalchemy
+
+[all]
+boto3
+snowflake-connector-python[pandas,secure-local-storage]==2.4.2
+
+[pandas]
+snowflake-connector-python[pandas]==2.4.2
+
+[storage]
+snowflake-connector-python[secure-local-storage]==2.4.2
+wheel
