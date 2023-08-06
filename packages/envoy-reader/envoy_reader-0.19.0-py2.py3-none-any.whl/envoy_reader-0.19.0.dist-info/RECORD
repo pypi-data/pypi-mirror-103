@@ -1,0 +1,10 @@
+envoy_reader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+envoy_reader/envoy_reader.py,sha256=zA3e1dmiknlZH-XEJVooUb6Ouw1hsOMpPFR7MB9e4rA,22157
+tests/__init__.py,sha256=POsTyg4gsrBTSrWyH_Wxg1OnZGzBCvEsTFbzZoHFZt8,70
+tests/conftest.py,sha256=2un8k8GFsH9dCD4_ZThEPCMZq_JL335e0Wzkk034rmo,48
+tests/test_envoy_reader.py,sha256=cMCiKogo1htkZFBTxL8D0V_njsqNH4Xa3X45yWANfKU,6194
+envoy_reader-0.19.0.dist-info/LICENSE,sha256=oqs0PMtZ-djST2YGr67DD7Jjms4O6e-PWDgPF3RJn8Y,1074
+envoy_reader-0.19.0.dist-info/METADATA,sha256=Mh80psW_0XBzsL9K_ioVMrlZMJQz4TpVaCqQbv0sCXs,4086
+envoy_reader-0.19.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+envoy_reader-0.19.0.dist-info/top_level.txt,sha256=1KDYvifoKMr6_4bp90L6spD2P2274bO4K5N-oiysfnc,19
+envoy_reader-0.19.0.dist-info/RECORD,,
