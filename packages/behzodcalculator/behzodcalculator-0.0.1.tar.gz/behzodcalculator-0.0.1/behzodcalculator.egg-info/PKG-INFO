@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: behzodcalculator
+Version: 0.0.1
+Summary: Juda oddiy kalkulyator
+Home-page: UNKNOWN
+Author: Asliddinov Behzod
+Author-email: uzpythonistadeveloper@gmail.com
+License: MIT
+Description: Bu juda oddiy kalkulator.Vazifasi 2 ta sonni qo'shish,ayirish ,ko'paytirish,bo'lish.
+        
+        
+        versiya
+        0.0.1(23/04/2021)
+        
+        
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

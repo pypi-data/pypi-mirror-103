@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+behzodcalculator/__init__.py
+behzodcalculator.egg-info/PKG-INFO
+behzodcalculator.egg-info/SOURCES.txt
+behzodcalculator.egg-info/dependency_links.txt
+behzodcalculator.egg-info/top_level.txt
