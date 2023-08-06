@@ -1,0 +1,13 @@
+doma/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+doma/apps.py,sha256=72yMB8DnBVCqiJlAVmSfT1vuR5u25NmAdlorU4th1JI,377
+doma/migrations/0001_initial.py,sha256=Eha0zfwS8W6qbyQb5NnQE6ubgUSJ2K32aG1AhQK98xY,2662
+doma/migrations/0002_alter_document_file.py,sha256=dPPADQ-31e5HKg8t4sk3BehAo7qlvjy_dpHxgkNbHeQ,391
+doma/migrations/0003_alter_document_preview.py,sha256=SOrMxqA6xqovswGmpw2dwnqbfd5Ef56qCO15N7Rrwag,416
+doma/migrations/0004_alter_document_replaces.py,sha256=bHcnVewUPn5tJu_ngTmTwMDj-GNvcgidwC7Anot6w48,622
+doma/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+doma/models.py,sha256=6fe36CAzpX7r2sD8pjrWFJuV0fBBgih6rZYs8-I44DU,3117
+doma/settings.py,sha256=AQvFA270iE32nY-AOF51Ho8VNAcEf7WwcY5Y3npQkTw,341
+doma/signals.py,sha256=wuN19lpvyOWWkwZsWpr59Mnxccv0VsKdqUhxaHDcxj4,470
+django_doma-0.2.2.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+django_doma-0.2.2.dist-info/METADATA,sha256=UC_A8LP7SEYtD-l5XMwedTEXj_ZE9KkgDtqzBxIINUQ,1636
+django_doma-0.2.2.dist-info/RECORD,,
