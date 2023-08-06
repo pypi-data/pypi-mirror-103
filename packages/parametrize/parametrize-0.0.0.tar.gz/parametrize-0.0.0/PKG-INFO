@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: parametrize
+Version: 0.0.0
+Summary: Drop-in @pytest.mark.parametrize replacement for unittest.TestCase
+License: MIT
+Author: MrMrRobat
+Author-email: appkiller16@gmail.com
+Requires-Python: >=3.6.2,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
