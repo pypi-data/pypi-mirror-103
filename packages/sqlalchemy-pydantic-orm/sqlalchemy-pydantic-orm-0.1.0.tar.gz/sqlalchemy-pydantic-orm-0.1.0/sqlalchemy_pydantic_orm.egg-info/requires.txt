@@ -1,0 +1,10 @@
+pydantic~=1.8.1
+sqlalchemy~=1.4.11
+
+[dev]
+pytest>=6.2.3
+coverage>=5.5
+flake8>=3.9.1
+black>=20.8
+mypy>=0.812
+pdoc3>=0.9.2
