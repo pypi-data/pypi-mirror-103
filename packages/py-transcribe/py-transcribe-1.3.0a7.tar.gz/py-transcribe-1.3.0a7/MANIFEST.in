@@ -1,0 +1,10 @@
+include README.md
+include CHANGES.rst
+include MANIFEST.in
+include LICENSE
+include setup.py
+recursive-include transcribe *.py
+recursive-include py.requirements  *.txt
+
+prune .venv*
+prune **/__pycache__
