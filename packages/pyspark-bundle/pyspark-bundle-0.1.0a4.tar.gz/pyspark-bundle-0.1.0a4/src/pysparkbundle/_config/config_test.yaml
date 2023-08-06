@@ -1,0 +1,5 @@
+services:
+  pysparkbundle.test.DummySparkFactory:
+
+  pyspark.sql.session.SparkSession:
+    factory: ['@pysparkbundle.test.DummySparkFactory', 'create']
