@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: SC-search
+Version: 0.0.1
+Summary: Single-cell search tool
+Home-page: https://github.com/KongNingZhe/SC-search
+Author: Cheng Zhang
+Author-email: Richard_Z@88.com
+License: UNKNOWN
+Description: # SC-search
+         you can compare single cell samples and search similar samples in single cell database
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

@@ -1,0 +1,9 @@
+README.md
+setup.py
+SC_search/__init__.py
+SC_search/directi.py
+SC_search.egg-info/PKG-INFO
+SC_search.egg-info/SOURCES.txt
+SC_search.egg-info/dependency_links.txt
+SC_search.egg-info/requires.txt
+SC_search.egg-info/top_level.txt
