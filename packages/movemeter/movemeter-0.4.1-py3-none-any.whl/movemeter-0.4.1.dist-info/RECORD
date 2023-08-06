@@ -1,0 +1,15 @@
+movemeter/__init__.py,sha256=pjj0yXe18Zy2P8FAtmpE4ipGDwzyJUecQHVMN4-NBdQ,253
+movemeter/directories.py,sha256=vIasr_HGDBsnJMY4Pi3Tiob7CWeaNtj5NxtuCih_TcQ,467
+movemeter/heatmap.py,sha256=6FvujKUBVytfEEEdWhP6_Jx3f494BKEK1LmOwBmuG0I,3294
+movemeter/movemeter_class.py,sha256=o8tqdt7jIV-HoA9Y8unBCb3g0VIgtji6mOOtO50lpAc,16987
+movemeter/roi.py,sha256=62DzIRCLkCoyKQ07kxnzLbzKk2T7uvANenuU_wJbBP0,4529
+movemeter/tk_heatmap.py,sha256=EBa8_CCOuUznR60u6zk7IVEIe4vOWty-sZyOuEDI8_Y,5731
+movemeter/tkgui.py,sha256=lnmw1WMiBYYFKRXhhq1gbe-JA7sylVwuTyA4O-SPphg,49332
+movemeter/version.py,sha256=pMtTmSUht-XtbR_7Doz6bsQqopJJd8rZ8I8zy2HwwoA,22
+movemeter/cc_backends/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+movemeter/cc_backends/opencv.py,sha256=q-FQQ5A9H2lquOL6_tu92zLXZFwAXiRQ_HoDqWXToLo,1946
+movemeter-0.4.1.dist-info/LICENSE,sha256=5X8cMguM-HmKfS_4Om-eBqM6A1hfbgZf6pfx2G24QFI,35150
+movemeter-0.4.1.dist-info/METADATA,sha256=5vnHcqWqku5_Rw8ScPtSoPPqgAR25qgYRlVP4P0mkUA,1905
+movemeter-0.4.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+movemeter-0.4.1.dist-info/top_level.txt,sha256=m2G4NPNtP6HYPHCU_o3gC6rqieMk-DBtVa1ACO17N8Y,10
+movemeter-0.4.1.dist-info/RECORD,,
