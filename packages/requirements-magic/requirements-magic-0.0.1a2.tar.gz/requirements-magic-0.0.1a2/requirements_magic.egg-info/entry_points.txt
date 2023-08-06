@@ -1,0 +1,5 @@
+[console_scripts]
+pyreq-audit = requirements_magic.runnable.audit:main
+pyreq-merge = requirements_magic.runnable.merge:main
+pyreq-update = requirements_magic.runnable.update:main
+

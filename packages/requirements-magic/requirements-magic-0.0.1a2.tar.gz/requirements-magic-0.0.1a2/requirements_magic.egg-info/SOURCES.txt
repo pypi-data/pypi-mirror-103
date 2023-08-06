@@ -1,0 +1,14 @@
+setup.cfg
+setup.py
+requirements_magic/__init__.py
+requirements_magic/check.py
+requirements_magic/error.py
+requirements_magic.egg-info/PKG-INFO
+requirements_magic.egg-info/SOURCES.txt
+requirements_magic.egg-info/dependency_links.txt
+requirements_magic.egg-info/entry_points.txt
+requirements_magic.egg-info/requires.txt
+requirements_magic.egg-info/top_level.txt
+requirements_magic/runnable/audit.py
+requirements_magic/runnable/merge.py
+requirements_magic/runnable/update.py
