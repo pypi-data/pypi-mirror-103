@@ -1,0 +1,12 @@
+LICENSE
+README.md
+ScrapingMessageCreator.py
+WebScarpingWork
+WebSitesScrapingWorker.py
+pyproject.toml
+setup.py
+WebGenericScraper.egg-info/PKG-INFO
+WebGenericScraper.egg-info/SOURCES.txt
+WebGenericScraper.egg-info/dependency_links.txt
+WebGenericScraper.egg-info/requires.txt
+WebGenericScraper.egg-info/top_level.txt
