@@ -1,0 +1,8 @@
+README.md
+setup.py
+yapy/__init__.py
+yapy_arm64.egg-info/PKG-INFO
+yapy_arm64.egg-info/SOURCES.txt
+yapy_arm64.egg-info/dependency_links.txt
+yapy_arm64.egg-info/requires.txt
+yapy_arm64.egg-info/top_level.txt
