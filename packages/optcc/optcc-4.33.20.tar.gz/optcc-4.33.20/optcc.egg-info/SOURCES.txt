@@ -1,0 +1,5 @@
+README.rst
+optcc.egg-info/PKG-INFO
+optcc.egg-info/SOURCES.txt
+optcc.egg-info/dependency_links.txt
+optcc.egg-info/top_level.txt
