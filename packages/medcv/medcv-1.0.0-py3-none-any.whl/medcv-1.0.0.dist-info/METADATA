@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: medcv
+Version: 1.0.0
+Summary: OpenCV for medical image
+Home-page: https://github.com/szuboy/medcv#readme
+Author: szuboy
+Author-email: medcv@googlegroups.com
+License: Apache License
+Project-URL: Documentation, https://medcv.readthedocs.io/en/latest/index.html
+Project-URL: Github, https://github.com/szuboy/medcv
+Requires-Dist: PyQt5
+Requires-Dist: PyQt5-sip
+Requires-Dist: numpy (>=1.9.2)
+Requires-Dist: opencv-python
+Requires-Dist: six (>=1.10.0)
+
+# MedCV
+
+
