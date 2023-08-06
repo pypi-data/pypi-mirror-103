@@ -1,0 +1,30 @@
+[tool.black]
+line-length = 127
+target-version = ['py37', 'py38']
+include = '\.pyi?$'
+
+[tool.pytest.ini_options]
+addopts = "--full-trace -vs"
+testpaths = ["tests"]
+
+[tool.poetry]
+name = "classy-json"
+version = "3.2.1"
+description = "Dot-access for Python dictionaries like JS!"
+authors = ["Milo Weinberg <iapetus011@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/Iapetus-11/Classy-JSON"
+keywords = ["json", "dot-access", "dot access", "js", "javascript"]
+packages = [{ include = "classyjson" }]
+
+[tool.poetry.dependencies]
+python = "^3.7.3"
+
+[tool.poetry.dev-dependencies]
+black = "^21.4b1"
+flake8 = "^3.9.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
