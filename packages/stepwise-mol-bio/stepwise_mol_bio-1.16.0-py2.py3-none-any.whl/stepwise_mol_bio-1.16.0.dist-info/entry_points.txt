@@ -1,0 +1,8 @@
+[freezerbox.make]
+inverse-pcr=stepwise_mol_bio.invpcr:InversePcr
+ivt=stepwise_mol_bio.ivt:Ivt
+pcr=stepwise_mol_bio.pcr:Pcr
+
+[stepwise.protocols]
+molbio=stepwise_mol_bio:Plugin
+
