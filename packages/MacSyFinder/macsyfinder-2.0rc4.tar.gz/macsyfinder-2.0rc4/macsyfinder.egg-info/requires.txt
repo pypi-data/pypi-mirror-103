@@ -1,0 +1,12 @@
+colorlog
+pyyaml
+packaging
+networkx
+pandas
+
+[dev]
+sphinx
+sphinx_rtd_theme
+sphinx-autodoc-typehints
+sphinxcontrib-svg2pdfconverter
+coverage
