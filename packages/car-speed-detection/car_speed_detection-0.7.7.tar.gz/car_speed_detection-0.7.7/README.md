@@ -1,0 +1,57 @@
+# Car-Speed-Detection
+Car-Speed-Detection provides a python library to detect the speed of the driving 
+car itself by the video stream from the dashboard camera installed on the car.
+
+Car-Speed-Detection separates the speed detection process into three steps, 
+preprocessing, training, and speed detection. By using Gunnar-Farneback optical flow
+algorithm along with the pipeline we developed, we are able to extract each frame into
+a small size matrix depends on developers preference. We use the Artifitial Neural 
+Network (ANN) to train our model with the preprocessed matrix acquired from preprocessing
+function. Developers could use the trained model to detect the speed of the car
+at each frame using our speed detection function.
+
+## Getting Started
+### Installation
+Car-Speed-Detection is available on [PyPI](https://pypi.org/project/car-speed-detection/) and can be
+installed via [`pip`](https://pypi.org/project/pip/). See
+[car-speed-detection.readthedocs.io](https://car-speed-detection.readthedocs.io/en/latest/)
+to learn about system dependencies and installation alternatives and
+recommendations.
+
+```shell
+pip install car-speed-detection
+```
+
+### Read, Preprocess, Train, and Detect the Car Speed
+The [Car-Speed-Detection](https://pypi.org/project/car-speed-detection/) library consists of the
+following parts:
+- Read (Read the mp4 video and output each frame into a designated directory)
+- Preprocess (Preprocess each frame and output a feature set for training)
+- Train (Train the model using the feature set and Artifitial Neural Network)
+- Speed Detection (Detect the speed using the model and video)
+
+## API and Example Code
+Take a look at the [API](https://car-speed-detection.readthedocs.io/en/latest/API.html#) to know more about
+the Application Programming Interface and [Sample](https://car-speed-detection.readthedocs.io/en/latest/Example%20Code.html) for further information on how to use our library.
+
+## Result
+In our [example code](https://car-speed-detection.readthedocs.io/en/latest/Example%20Code.html), we are able to train the model with MSE error less than 2 using the training video provided by comma.ai. We separate the video into 75% for training and 25% for testing so the result woud
+be fair. The ANN model has also substaintially small amount of parameters (< 45,000), which yeild a lower latency 
+compare to [other solutions](https://ucladatares.medium.com/predicting-speed-from-video-frames-dissecting-the-comma-ai-challenge-5da697b55886).
+
+## Bugs Report
+Issues and bugs can be reported by emailing lienshaochieh@gmail.com
+
+At a minimum, the report must contain the following:
+* Description of the program.
+* Expected Result.
+* Actual Result.
+* Steps to reproduce the issue.
+
+Please do not use the GitHub issue tracker to submit bugs reports. The
+issue tracker is intended to make feature requests.
+
+## Acknowledge
+This project is managed by Shao-Chieh Lien, the software architect and students at Purdue University. Meenakshi 
+Pavithran and Christopher Crocker also contribute substaintially in this project. Meenakshi is in charge or 
+paper writing and Christopher Croker is in charge of [training and testing data generation](https://github.com/CrockerC/carla_recording).
