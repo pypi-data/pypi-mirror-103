@@ -1,0 +1,7 @@
+guided_lambda_handler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+guided_lambda_handler/guided_lambda_handler.py,sha256=i1I8cnXxw7U3t___IL-QlnELPYNQOU4h3ccBF6LuySI,2906
+guided_lambda_handler/translators.py,sha256=HZktJhK-LUYtk2p-Bjq0uvgt02dyjkZrAoiP4K6hkIM,162
+guided_lambda_handler_tj-0.0.16.dist-info/METADATA,sha256=doTVPxgG0VskhYT3zsfwDjslB-0JM5MCt2Vsh-dHUlo,1549
+guided_lambda_handler_tj-0.0.16.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+guided_lambda_handler_tj-0.0.16.dist-info/top_level.txt,sha256=GhbUo1B-FawyhfaYJWgTOGeTY5s2JzFF3w9e0kmK4tk,22
+guided_lambda_handler_tj-0.0.16.dist-info/RECORD,,
