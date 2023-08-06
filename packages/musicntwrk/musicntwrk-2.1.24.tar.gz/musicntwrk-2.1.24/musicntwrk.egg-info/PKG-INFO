@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: musicntwrk
+Version: 2.1.24
+Summary: music as data, data as music
+Home-page: https://www.musicntwrk.com
+Author: Marco Buongiorno Nardelli
+Author-email: mbn@unt.edu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: OS independent
+Provides-Extra: with_MPI
