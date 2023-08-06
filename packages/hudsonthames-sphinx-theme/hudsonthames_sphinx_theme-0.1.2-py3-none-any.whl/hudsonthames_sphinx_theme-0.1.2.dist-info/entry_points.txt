@@ -1,0 +1,3 @@
+[sphinx.html_themes]
+hudsonthames_sphinx_theme = hudsonthames_sphinx_theme
+
