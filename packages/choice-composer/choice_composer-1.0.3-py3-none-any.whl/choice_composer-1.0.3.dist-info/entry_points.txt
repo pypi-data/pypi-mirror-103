@@ -1,0 +1,3 @@
+[console_scripts]
+choice_composer = choice_composer.__main__:main
+
