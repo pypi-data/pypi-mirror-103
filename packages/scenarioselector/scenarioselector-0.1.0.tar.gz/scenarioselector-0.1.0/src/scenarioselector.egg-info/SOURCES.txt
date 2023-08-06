@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/scenarioselector/__init__.py
+src/scenarioselector/exceptions.py
+src/scenarioselector/pivot_dimensions.py
+src/scenarioselector/pivot_generators.py
+src/scenarioselector/pivot_trials.py
+src/scenarioselector/scatter_plot.py
+src/scenarioselector/scenario_selector.py
+src/scenarioselector.egg-info/PKG-INFO
+src/scenarioselector.egg-info/SOURCES.txt
+src/scenarioselector.egg-info/dependency_links.txt
+src/scenarioselector.egg-info/top_level.txt
