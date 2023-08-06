@@ -1,0 +1,10 @@
+ERROR.txt
+LICENSE.md
+PACKAGE_NAME
+README.rst
+package_info.py
+setup.py
+nvidia_nvml_dev.egg-info/PKG-INFO
+nvidia_nvml_dev.egg-info/SOURCES.txt
+nvidia_nvml_dev.egg-info/dependency_links.txt
+nvidia_nvml_dev.egg-info/top_level.txt
