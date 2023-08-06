@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: fhirdatetime
+Version: 0.1.0b1
+Summary: A datetime-compatible class for FHIR date/datetime values.
+Author: Mike Mabey
+Author-email: mike.mabey@ooda-health.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
