@@ -1,0 +1,5 @@
+        [pyramid.scaffold]
+        datastore-sqlite=nive_datastore.scaffolds:DatastoreSqliteTemplate
+        datastore-mysql=nive_datastore.scaffolds:DatastoreMysqlTemplate
+        datastore-postgres=nive_datastore.scaffolds:DatastorePostgresTemplate
+      
