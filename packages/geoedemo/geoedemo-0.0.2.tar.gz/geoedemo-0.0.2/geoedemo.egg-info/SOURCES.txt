@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+geoedemo/__init__.py
+geoedemo/geoedemo.py
+geoedemo.egg-info/PKG-INFO
+geoedemo.egg-info/SOURCES.txt
+geoedemo.egg-info/dependency_links.txt
+geoedemo.egg-info/not-zip-safe
+geoedemo.egg-info/top_level.txt
