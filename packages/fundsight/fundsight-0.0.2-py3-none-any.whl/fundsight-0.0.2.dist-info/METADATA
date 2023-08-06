@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: fundsight
+Version: 0.0.2
+Summary: Asset management fund performance and reporting modules
+Home-page: https://github.com/ahgperrin/fundsight
+Author: Antoine Perrin
+Author-email: antoineperrin.pro1@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: workalendar
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: datetime
+
+# fundsight
+
+This package allows you to calculate a panel of performance indicators from a Fund net asset value serie or Asset price serie.
+Indicators are multiple from annualised volatility, to calmar or sharpe ratio.
+
+## Installation Process
+
+:construction:
+
+## Examples
+
+:construction:
+
+
