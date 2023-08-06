@@ -1,0 +1,12 @@
+karton_unpacker-1.1.1-nspkg.pth,sha256=vHa-jm6pBTeInFrmnsHMg9AOeD88czzQy-6QCFbpRcM,539
+karton/unpacker/__init__.py,sha256=49GlAyidAJstneocDWV2MLfj1csm4zZ_TMplB0D9Nkg,31
+karton/unpacker/__main__.py,sha256=Out-JFQ6BAOAF7O84GgfvnZs3E9QmlmWo6kudhAZf9Y,48
+karton/unpacker/__version__.py,sha256=q8_5C0f-8mHWNb6mMw02zlYPnEGXBqvOmP3z0CEwZKM,22
+karton/unpacker/unpacker.py,sha256=PUDGBF3_7u3K39_uP6Nkcq-VCEAo8mEsO7vHlh63cH4,2862
+karton_unpacker-1.1.1.dist-info/LICENSE,sha256=o8h7hYhn7BJC_-DmrfqWwLjaR_Gbe0TZOOQJuN2ca3I,1519
+karton_unpacker-1.1.1.dist-info/METADATA,sha256=taBBG_N626HLsi_f5B12KC1Kibsg3gH-OEBkh3LvKWc,5053
+karton_unpacker-1.1.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+karton_unpacker-1.1.1.dist-info/entry_points.txt,sha256=v8zlirDTnemSe_SlFkaASmEGYiH5RalacgstWvsAv3Y,67
+karton_unpacker-1.1.1.dist-info/namespace_packages.txt,sha256=X8SslCPsqXDCnGZqrYYolzT3xPzJMq1r-ZQSc0jfAEA,7
+karton_unpacker-1.1.1.dist-info/top_level.txt,sha256=X8SslCPsqXDCnGZqrYYolzT3xPzJMq1r-ZQSc0jfAEA,7
+karton_unpacker-1.1.1.dist-info/RECORD,,
