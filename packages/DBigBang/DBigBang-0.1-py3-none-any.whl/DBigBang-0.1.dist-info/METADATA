@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: DBigBang
+Version: 0.1
+Summary: Analysis of Mailman archives
+Home-page: https://gitbub.com/datactive/bigbang
+Author: Sebastian Benthall
+Author-email: sb@ischool.berkeley.edu
+License: UNKNOWN
+Download-URL: https://gitbub.com/datactive/bigbang
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+Requires-Dist: beautifulsoup4
+Requires-Dist: chardet
+Requires-Dist: common
+Requires-Dist: coverage
+Requires-Dist: html2text
+Requires-Dist: ipython
+Requires-Dist: jinja2
+Requires-Dist: jsonschema
+Requires-Dist: matplotlib
+Requires-Dist: networkx
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: powerlaw
+Requires-Dist: pytest
+Requires-Dist: python-Levenshtein
+Requires-Dist: python-dateutil
+Requires-Dist: pytz
+Requires-Dist: pyyaml
+Requires-Dist: pyzmq
+Requires-Dist: requests
+Requires-Dist: tornado
+
+Analysis of Mailman archives
+
+
