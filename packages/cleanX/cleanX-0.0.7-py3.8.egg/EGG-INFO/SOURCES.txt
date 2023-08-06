@@ -1,0 +1,9 @@
+README.md
+cleanX.py
+setup.py
+cleanX.egg-info/PKG-INFO
+cleanX.egg-info/SOURCES.txt
+cleanX.egg-info/dependency_links.txt
+cleanX.egg-info/requires.txt
+cleanX.egg-info/top_level.txt
+test/test_cleanx.py
