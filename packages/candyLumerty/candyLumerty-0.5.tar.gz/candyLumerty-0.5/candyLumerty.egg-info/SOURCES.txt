@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+candyLumerty/__init__.py
+candyLumerty/settings.py
+candyLumerty.egg-info/PKG-INFO
+candyLumerty.egg-info/SOURCES.txt
+candyLumerty.egg-info/dependency_links.txt
+candyLumerty.egg-info/top_level.txt
