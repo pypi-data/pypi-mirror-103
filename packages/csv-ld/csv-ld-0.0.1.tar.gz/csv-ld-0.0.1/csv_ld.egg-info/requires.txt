@@ -1,0 +1,10 @@
+python-dotenv
+requests
+toolz
+
+[dev]
+black
+invoke
+pytest
+setuptools-scm
+twine

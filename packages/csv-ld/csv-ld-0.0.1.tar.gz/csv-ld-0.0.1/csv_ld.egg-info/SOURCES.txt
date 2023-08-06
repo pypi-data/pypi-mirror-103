@@ -1,0 +1,17 @@
+.gitignore
+LICENSE
+Makefile
+README.md
+setup.py
+tasks.py
+csv_ld.egg-info/PKG-INFO
+csv_ld.egg-info/SOURCES.txt
+csv_ld.egg-info/dependency_links.txt
+csv_ld.egg-info/requires.txt
+csv_ld.egg-info/top_level.txt
+csvld/__init__.py
+examples/articles.csv
+requirements/dev.in
+requirements/dev.txt
+requirements/main.in
+requirements/main.txt
