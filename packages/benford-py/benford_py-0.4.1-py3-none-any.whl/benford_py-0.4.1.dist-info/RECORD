@@ -1,0 +1,14 @@
+benford/__init__.py,sha256=2BUcGpfn1JEt5Eoy81WaGwGQf6NmnujqyRH8xykxdgk,868
+benford/benford.py,sha256=LUUX087QZPymhpv_6exd0tY0X4OwUM7TKvIE4b74SWE,95513
+benford/checks.py,sha256=4-fbhgqoDYwBUJ1KgOKT2xm3gORGeKISi_T1R-SbxEs,3048
+benford/constants.py,sha256=i85FuNY0trlfMgOPnf_PntXJxsVwzKW3YXOhn0ywPBo,3402
+benford/expected.py,sha256=UkzzdMNU977Dat-f0tD-QuW0GVhv-D1GvQ_CDJIfBJE,6290
+benford/reports.py,sha256=ibY6ibPVg7YLpZsY-CEl5ue15O29g3CADtZXDDwVGxQ,6183
+benford/stats.py,sha256=BaEOp8JWDhcQywg5J81spAMzT8_cEH-eTNwVA3BIOW0,7443
+benford/utils.py,sha256=rEVNwNYoy0HMmVi4uTDee_eKYJHsOhrVfiOFOm_h_aM,6559
+benford/viz.py,sha256=jkPfeIr4orpbOVjfGO_Ty3LX3g3UaKtlQ2wUImr5iiw,12135
+benford_py-0.4.1.dist-info/LICENSE.txt,sha256=lWyDqcUnGUxXdjFfLJwkve8PzHQXjoJCvcv0ebwKs8U,1498
+benford_py-0.4.1.dist-info/METADATA,sha256=ksU7FENnjsEDYD8V8p0M-ZTIOcFZuyRdISTkO_H9H2U,7647
+benford_py-0.4.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+benford_py-0.4.1.dist-info/top_level.txt,sha256=bOEEx8Jt89bLwsXjF4m166zhEmTvziKj9heoHJ6NQVA,8
+benford_py-0.4.1.dist-info/RECORD,,
