@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: hydromt_wflow
+Version: 0.1.0
+Summary: hydroMT plugin for wflow models.
+Home-page: None
+Author: None
+Author-email: Dirk Eilander <dirk.eilander@deltares.nl>, Hélène Boisgontier <helene.boisgontier@deltares.nl>
