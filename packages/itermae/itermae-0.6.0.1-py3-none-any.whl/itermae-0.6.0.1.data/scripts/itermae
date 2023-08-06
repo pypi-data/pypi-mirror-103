@@ -1,0 +1,173 @@
+#!python
+
+# I believe these are standard, or at least they're in the ubuntu python package
+import argparse
+import re
+import sys
+import time
+
+# These need to be installed from pip
+import regex # python3 -m pip install regex
+import yaml # python3 -m pip install pyyaml
+
+import itermae
+
+if __name__ == '__main__':
+
+    # First, we read in the potential arugments - using argparse of course
+    # I assume most of this is self-documenting.
+
+    parser = argparse.ArgumentParser(
+        description=("itermae - iteratively chop sequences using fuzzy regex"),
+        add_help=False)
+
+    parser_config = parser.add_argument_group("Configuration file (optional)")
+    parser_config.add_argument("--config",
+        help=("File path to the config file. If specified, that file is set "
+            "first, then other relevant arguments from the command-line are "
+            "set. See examples/docs.") )
+
+    parser_input = parser.add_argument_group("Defining input sources")
+    parser_input.add_argument("-i","--input",
+        help=("Specify where the input reads are from. This can be a file "
+            "path, but the suggested default is standard input ( 'STDIN' ).") )
+    parser_input.add_argument("-z","--gzipped",action="store_true",default=None,
+        help=("Use this flag if the input is a gzipped file. I can't gunzip "
+            "a file pipe-d in, so use 'zcat'.") )
+    parser_input.add_argument("--input-format",
+        help=("Specify what format the input is. Default is 'FASTQ'. "
+            "I expect this, or 'SAM', 'FASTA', or 'txt'. Case insensitive.") )
+
+    parser_output = parser.add_argument_group("Defining where to output")
+    parser_output.add_argument("-o","--output",
+        help=("Specify where to output successful matched groups to. The "
+            "recommended default is standard out ( 'STDOUT' ), but this can "
+            "also be a filepath to write.") )
+    parser_output.add_argument("--output-format",
+        help=("Specify what format the output should be in. Default is an "
+            "unmapped SAM ('SAM'), also available are 'FASTQ' and 'FASTA', "
+            "case insensitive.") )
+    parser_output.add_argument("-f","--failed",
+        help=("Optional filepath for passing-through the input reads that "
+            "failed at any stage of matching, filtering, or forming output "
+            "groups. Can also be directed to 'STDOUT' or 'STDERR' by "
+            "specifying those.") )
+    parser_output.add_argument("-r","--report",
+        help=("Optional filepath for writing a report of read-level "
+            "statistics. This is a large inefficient output, but useful for "
+            "debugging by using with a small subset of the data (such as "
+            "1000 lines or so).") )
+
+    parser_match = parser.add_argument_group('Matches')
+    parser_match.add_argument("-m","--match",action="append",default=[],
+        help=("Specify what is being matched against, the "
+            "regular expression, and what groups to extract. Format example: "
+            "\n    'someInputGroup > regExprWith(?P<someGroupName>MatchGroups)'"
+            "\nIf no input group is specified on the left of a ' > ' "
+            "delimiter, then I assume you mean the raw input sequence "
+            "(ie the same as putting 'input > ' in front). This, and several "
+            "other group names ('dummyspacer', 'description', and 'id') are "
+            "internally reserved names for groups (use something else!). "
+            "Each match is done in the order you specify, so later matches "
+            "can use previous matching groups as inputs (like 'someInputGroup' "
+            "in the above example). *Importantly*, all input sequences are "
+            "converted to uppercase, so write all regex in uppercase !"
+            "\n\nFor more details, please refer to the README, documentation, "
+            "and tutorial, and the regex module documentation.") )
+
+    parser_groups = parser.add_argument_group('Define groups output',
+        ("Each ID, sequence, and filter is grouped together used in order, "
+            "so the first ID is used with the first sequence and the first "
+            "filter -- unless there is only one, in which case it is recycled "
+            "for all output groups.") )
+    parser_groups.add_argument("-oi","--output-id",action="append",
+        default=[],
+        help=("The ID field of an output. These should evaluate to a string "
+            "in Python. You can build this by concatenating together parts "
+            "of the matched groups, such as:"
+            "\n    'id+\"_\"+umi' "
+            "\n to append the index sequence to the input's ID. Available is "
+            "each group (their name), which is the sequence matched. 'id' is "
+            "input ID field, 'description' is input description field.") )
+    parser_groups.add_argument("-od","--output-description",action="append",
+        default=[],
+        help=("The description field of an output. These should "
+            "evaluate to a string in Python. You can build this by "
+            "concatenating together 'description' (which represents the input "
+            "description) and names of the matched groups to get their "
+            "sequence, such as:"
+            "\n    'description+\" umi=\"+umi' "
+            "\nwould output the input description, then ' umi=ATCG' or "
+            "whatever sequence the 'umi' group has matched to.") )
+    parser_groups.add_argument("-os","--output-seq",action="append",
+        default=[],
+        help=("The sequence of an output. This is evaluated to form a "
+            "BioPython SeqRecord, so can be assembled by combining the names of "
+            "matched groups. For example:"
+            "\n    'sample+barcode+umi'"
+            "\nwould append the sequence of these three groups together. "
+            "Group 'dummyspacer' is also available to insert an 'X' into the "
+            "sequence for subsequent parsing.") )
+    parser_groups.add_argument("-of","--output-filter",action="append",
+        default=[],
+        help=("Define a filter that must be true in order to output "
+            "this group. This must evaluate to True or False (in python), and "
+            "can use some attributes of the matches or matched groups. "
+            "For example: "
+            "\n    'umi.length == 5 & statistics.mean(barcode.quality) >= 30' "
+            "\nwill only output when the matched UMI is 5 bases and the mean "
+            "quality of the barcode match is more than 30. While "
+            "\n    'sample_barcode == \"TTCAC\"' "
+            "\nwill only output when the sample_barcode group is exactly "
+            "that sequence. See the documentation for details and more "
+            "examples. If there is only one filter defined, it is "
+            "recycled to filter for all output groups.") )
+
+    parser_misc = parser.add_argument_group()
+    parser_misc.add_argument("-v","--verbose",action="count",
+        help=("Level of information to pipe out to STDERR. "
+            "None of these means itermae runs silently. "
+            "\n    -v prints setup messages and start-stop messsages."
+            "\n    -vv also prints read-level details."
+            "\n     -vvv also prints match-level details.") )
+    parser_misc.add_argument("-h","--help",action="store_true",default=False)
+    parser_misc.add_argument("--version",action="store_true",default=False)
+
+    # Parse the arguments
+    args = parser.parse_args()
+
+    # From https://stackoverflow.com/questions/10698468/argparse-check-if-any-arguments-have-been-passed#10699527
+    # This is a way to tell if you've not passed any arguments at all -> help!
+    if not len(sys.argv) > 1:
+        parser.print_help()
+        exit(1)
+
+    # Necessary since I disabled the auto-'help' argument so that it wouldn't
+    # print as part of an 'optional' header
+    if args.help:
+        parser.print_help()
+        exit(1)
+
+    if args.version:
+        print("itermae version 0.6.0, 2021-04-19")
+        exit(1)
+
+    configuration = itermae.Configuration()
+    configuration.config_from_file(args.config)
+    configuration.config_from_args(args)
+
+    if configuration.verbosity >= 1:
+        print(configuration.summary(),file=sys.stderr)
+
+    if configuration.verbosity >= 1:
+        print("["+str(time.time())+"] : Begin running the reader function "+
+            "to initiate chopping...",file=sys.stderr)
+
+    configuration.reader()
+
+    if configuration.verbosity >= 1:
+        print("["+str(time.time())+"]"+" : "+
+            "All worked 'till the work is done --- or some fatal error.",
+            file=sys.stderr)
+
+    exit(0)
