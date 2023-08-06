@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+hello-module/_init_.py
+thebrukhellomodule.egg-info/PKG-INFO
+thebrukhellomodule.egg-info/SOURCES.txt
+thebrukhellomodule.egg-info/dependency_links.txt
+thebrukhellomodule.egg-info/not-zip-safe
+thebrukhellomodule.egg-info/top_level.txt
