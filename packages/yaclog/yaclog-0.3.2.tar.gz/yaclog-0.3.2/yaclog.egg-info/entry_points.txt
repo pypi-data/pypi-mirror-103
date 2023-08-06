@@ -1,0 +1,3 @@
+[console_scripts]
+yaclog = yaclog.cli.__main__:cli
+
