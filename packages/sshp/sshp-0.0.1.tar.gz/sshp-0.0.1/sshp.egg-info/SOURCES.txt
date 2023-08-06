@@ -1,0 +1,5 @@
+setup.py
+sshp.egg-info/PKG-INFO
+sshp.egg-info/SOURCES.txt
+sshp.egg-info/dependency_links.txt
+sshp.egg-info/top_level.txt
