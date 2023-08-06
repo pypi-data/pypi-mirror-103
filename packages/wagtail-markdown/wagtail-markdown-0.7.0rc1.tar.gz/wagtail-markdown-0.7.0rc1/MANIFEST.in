@@ -1,0 +1,5 @@
+global-exclude *.py[cod] __pycache__
+include LICENSE *.md
+graft wagtailmarkdown
+prune wagtailmarkdown/tests
+exclude .pre-commit-config.yaml runtests.py tox.ini

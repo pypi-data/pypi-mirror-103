@@ -1,0 +1,6 @@
+Markdown<4,>=3
+bleach<4,>=3.3.0
+Wagtail>=2.0
+
+[testing]
+dj_database_url==0.5.0
