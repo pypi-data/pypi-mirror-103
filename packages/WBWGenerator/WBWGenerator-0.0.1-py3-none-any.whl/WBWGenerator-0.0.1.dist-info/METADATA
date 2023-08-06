@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: WBWGenerator
+Version: 0.0.1
+Summary: A package to generate text word by word
+Home-page: https://github.com/Ulto85/WBW
+Author: Robowolf
+Author-email: ultoulto4@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Ulto85/WBW/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Check https://www.github/Ulto85/WBW
+
+
