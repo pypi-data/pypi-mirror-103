@@ -1,0 +1,4 @@
+twarc>=2.0.4
+pandas>=1.2.3
+more-itertools>=8.7.0
+tqdm>=4.59.0
