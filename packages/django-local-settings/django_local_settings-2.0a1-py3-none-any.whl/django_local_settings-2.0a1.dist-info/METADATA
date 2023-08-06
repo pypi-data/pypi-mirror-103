@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: django-local-settings
+Version: 2.0a1
+Summary: Define Django settings using TOML
+Home-page: https://github.com/wylee/django-local-settings
+License: MIT
+Author: Wyatt Baldwin
+Author-email: self@wyattbaldwin.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Django
+Project-URL: Repository, https://github.com/wylee/django-local-settings
