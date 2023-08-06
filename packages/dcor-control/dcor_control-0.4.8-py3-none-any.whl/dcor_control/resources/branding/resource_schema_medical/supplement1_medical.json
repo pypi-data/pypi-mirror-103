@@ -1,0 +1,23 @@
+{
+"key": "medical",
+"name": "Custom DCOR-med options",
+"requires": {},
+"items": [
+  {"key": "pseudonym",
+   "name": "Pseudonym",
+   "hint": "Pseudonymized patient identifier",
+   "type": "string"
+   },
+  {"key": "execution",
+   "name": "Execution",
+   "hint": "How was the data recorded?",
+   "type": "string",
+   "options": ["choices fixed"],
+   "choices": [
+     "unagted, short-time",
+     "gated, long-time"
+     ]
+   }
+  ]
+}
+
