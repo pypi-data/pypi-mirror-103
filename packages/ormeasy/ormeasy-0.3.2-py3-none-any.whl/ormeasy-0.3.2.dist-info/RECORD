@@ -1,0 +1,10 @@
+ormeasy/__init__.py,sha256=SzBfBLW0daaLArUcU0obkUe_EVcBFkhMIt1UIJSgk2c,223
+ormeasy/alembic.py,sha256=PR2mv8FAPAiwswsVXFF1FLa0F38eUZY9kVlvPrNAIkw,1939
+ormeasy/asyncsqlalchemy.py,sha256=sSoja1QiwLZsdKWgYx18AU-fxL1UkiYmywS88J6gupE,2356
+ormeasy/common.py,sha256=VelA0UJsP5bzveS-EQCaQpGeYyZI82i0fv-kOF5vmtw,2701
+ormeasy/sqlalchemy.py,sha256=lzeuf-3cDs13zoic2r1Ojsdqz-usZiuuvv2uwpcThxU,3771
+ormeasy-0.3.2.dist-info/LICENSE,sha256=ruSJPM_dXbPCaBZXCmC2TGHKNLZyUxR7B0qt9BVymx0,1088
+ormeasy-0.3.2.dist-info/METADATA,sha256=LqD6wJJWiUywvt7xb_kmDIlS_TqfCOcNVml9vWwCSHQ,1323
+ormeasy-0.3.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ormeasy-0.3.2.dist-info/top_level.txt,sha256=fjF_7cotilLoAmuRyQbFvo95rgNsr6qZ3yEaXGktBRs,8
+ormeasy-0.3.2.dist-info/RECORD,,
