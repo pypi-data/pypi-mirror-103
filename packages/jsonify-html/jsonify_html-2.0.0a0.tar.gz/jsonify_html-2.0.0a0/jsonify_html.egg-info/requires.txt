@@ -1,0 +1,6 @@
+lxml
+pytidylib
+python-dateutil
+django-htmlmin
+cssselect
+pyyaml
