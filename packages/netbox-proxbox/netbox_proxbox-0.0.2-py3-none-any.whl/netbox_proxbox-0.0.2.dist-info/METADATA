@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: netbox-proxbox
+Version: 0.0.2
+Summary: Netbox Plugin - Integrate Proxmox and Netbox
+License: Apache-2.0
+Author: Emerson Felipe
+Author-email: emerson.felipe@nmultifibra.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
