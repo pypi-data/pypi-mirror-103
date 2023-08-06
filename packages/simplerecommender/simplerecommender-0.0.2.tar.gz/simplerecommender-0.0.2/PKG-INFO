@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: simplerecommender
+Version: 0.0.2
+Summary: Items recommendation for a specific user
+Home-page: https://github.com/sujanshirol/simplerecommender
+Author: Sujan Shirol
+Author-email: <sshirol73@gmail.com>
+License: UNKNOWN
+Description: Recommending items for a specific existing user based on user rating and average rating per item
+        
+        ## Installation
+        
+        Run the following to install:
+        
+        ```python
+        pip install simplerecommender
+        ```
+        
+        ## Usage
+        
+        ```python
+        import simplerecommender
+        
+        # get recommendations
+        
+        simplerecommender.rec(df,
+        		      genre_col,
+        		      user_col,
+        		      user,
+        		      user_rating_col,
+        		      avg_rating_col,
+        		      sep=None)
+        ```
+        
+        [GitHub](https://github.com/sujanshirol/simplerecommender)
+Keywords: python,recommendation algorithm,recommender,recommendation
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown

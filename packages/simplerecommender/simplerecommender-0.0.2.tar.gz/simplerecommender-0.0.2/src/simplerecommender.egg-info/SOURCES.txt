@@ -1,0 +1,7 @@
+README.txt
+setup.py
+src/simplerecommender.py
+src/simplerecommender.egg-info/PKG-INFO
+src/simplerecommender.egg-info/SOURCES.txt
+src/simplerecommender.egg-info/dependency_links.txt
+src/simplerecommender.egg-info/top_level.txt
