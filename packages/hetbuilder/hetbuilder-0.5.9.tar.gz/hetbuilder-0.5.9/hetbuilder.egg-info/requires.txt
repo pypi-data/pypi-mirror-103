@@ -1,0 +1,11 @@
+spglib
+numpy
+scipy
+matplotlib
+ase
+networkx
+cmake
+pybind11
+pretty_errors
+rich
+typer
