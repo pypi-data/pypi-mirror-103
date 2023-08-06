@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+mediaman/config.py
+mediaman.egg-info/PKG-INFO
+mediaman.egg-info/SOURCES.txt
+mediaman.egg-info/dependency_links.txt
+mediaman.egg-info/entry_points.txt
+mediaman.egg-info/top_level.txt
