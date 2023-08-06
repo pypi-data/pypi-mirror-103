@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: terra-colab
+Version: 0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: dill (>=0.3.3)
+Requires-Dist: requests (~=2.23.0)
+Requires-Dist: folium (==0.2.1)
+
+# Terra Colab
+
+Terra Colab contains methods for working in a Colaboratory notebook
+
+
