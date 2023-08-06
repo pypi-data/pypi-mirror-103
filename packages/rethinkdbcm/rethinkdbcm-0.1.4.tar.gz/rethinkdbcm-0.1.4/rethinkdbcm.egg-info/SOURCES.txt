@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+rethinkdbcm/__init__.py
+rethinkdbcm/rethinkdbcm.py
+rethinkdbcm.egg-info/PKG-INFO
+rethinkdbcm.egg-info/SOURCES.txt
+rethinkdbcm.egg-info/dependency_links.txt
+rethinkdbcm.egg-info/requires.txt
+rethinkdbcm.egg-info/top_level.txt
