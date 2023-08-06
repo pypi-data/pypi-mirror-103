@@ -1,0 +1,19 @@
+{
+  "arguments": {
+    "TARGET": "true,ip",
+    "PORT_LIST": "false,range",
+    "OPTION_SC": "false,boolean",
+    "OPTION_SV": "false,boolean",
+    "OPTION_PN": "false,boolean",
+    "SCRIPT_TIMEOUT": "false,integer",
+    "HOST_TIMEOUT": "false,integer",
+    "TOP_PORTS": "false,list"
+  },
+  "environment_variables": [
+
+  ],
+  "check_cmds": [
+    "nmap --version"
+  ],
+  "cmd": "python3 {EXECUTOR_FILE_PATH}"
+}
