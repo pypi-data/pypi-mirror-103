@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: xoverturning
+Version: 0.0.1
+Summary: compute overturning in xarray
+Home-page: https://github.com/raphaeldussin/xoverturning
+Author: Raphael Dussin
+Author-email: raphael.dussin@gmail.com
+License: GPLv3
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: numpy
+Requires-Dist: cmip-basins
+Requires-Dist: scipy
+Requires-Dist: setuptools (>=41.2)
+Requires-Dist: xarray
+
+UNKNOWN
+
+
