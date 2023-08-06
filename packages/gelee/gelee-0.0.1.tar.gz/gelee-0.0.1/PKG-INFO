@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: gelee
+Version: 0.0.1
+Summary: Configuration format validator for CSV, INI, JSON, TOML, XML, and YAML.
+Home-page: https://github.com/sthagen/solid-umbrella
+Author: Stefan Hagen
+Author-email: stefan@hagen.link
+License: MIT
+Description: # Solid Umbrella
+        
+        Configuration linter for typical formats.
+        
+        ## Status
+        
+        Experimental.
+        
+        **Note**: The default branch is `default`.
+        
+        Later we use mkdocs
+        
+        
+        
+        
+        
+        # Change History
+        
+        ## 0.0.1 (2021-04-26)
+        
+        * Initial release on PyPI
+        
+        
+Keywords: csv development lint ini json toml xml yaml validation
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
