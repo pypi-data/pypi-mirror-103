@@ -1,0 +1,8 @@
+dataclasses
+matplotlib
+numpy
+pandas
+python-libsbml
+scipy
+black
+sympy
