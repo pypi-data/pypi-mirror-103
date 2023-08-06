@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: syrup
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/xqk/syrup
+Author: xqk
+Author-email: xiaqiankun@outlook.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi (==0.63.0)
+Requires-Dist: uvicorn (==0.13.4)
+Requires-Dist: PyYaml (==5.4.1)
+Requires-Dist: PyPika (==0.48.1)
+Requires-Dist: asyncpg (==0.22.0)
+Requires-Dist: aiosqlite (==0.17.0)
+Requires-Dist: pytz (==2021.1)
+Requires-Dist: aiohttp (==3.7.4.post0)
+Requires-Dist: astroid (==2.5.3)
+Requires-Dist: pylint (==2.7.4)
+Requires-Dist: Quart (==0.14.1)
+Requires-Dist: sanic (==21.3.4)
+Requires-Dist: asynctest (==0.13.0)
+Requires-Dist: iso8601 (==0.1.14)
+Requires-Dist: Mako (==1.1.4)
+
+# syrup
+
+## 本地开发安装 syrup
+```shell script
+pip3 install .
+```
+
