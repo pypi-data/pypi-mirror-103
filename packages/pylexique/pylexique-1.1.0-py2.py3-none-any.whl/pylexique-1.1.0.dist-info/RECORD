@@ -1,0 +1,11 @@
+pylexique/__init__.py,sha256=WmyrbbAT6wkEB4kRFkucuZJkQpYUcq0jszkOO1xksI4,888
+pylexique/cli.py,sha256=5yiADmP_9m98H3rD-KcSLIVNv_kyQ0KCQ5n5UpLC6RI,437
+pylexique/pylexique.py,sha256=i_7-JYLSi--rIgPNFaYEXfAvgQt0uY4TWnmecef_iAc,11000
+pylexique/utils.py,sha256=K1qPFsNtdqM_faRQw_GDQmp7g5-Kn9I1h0Q5_NLmKZI,1984
+pylexique-1.1.0.dist-info/AUTHORS.rst,sha256=i3tWuu1OnaowdJDVkU1FZSpFI6BCa4uNWKHmqe11quU,162
+pylexique-1.1.0.dist-info/LICENSE,sha256=awURw9T9iSl5htZXYvX2aouyavTnw2695vCK-Kq1IeY,1071
+pylexique-1.1.0.dist-info/METADATA,sha256=o_SFlIg5hVZHtFxl0kgsct2y9hSGPpSkZRs-25vQk4E,3534
+pylexique-1.1.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+pylexique-1.1.0.dist-info/entry_points.txt,sha256=ZHM6MwrU0bTENiGkYf1THE-32i-OC2Z-YzOOgF6Kzms,50
+pylexique-1.1.0.dist-info/top_level.txt,sha256=D5U2frkp30qSCO5yoTsbQqopm1DUw5uCaiRV9AGVY0Q,10
+pylexique-1.1.0.dist-info/RECORD,,
