@@ -1,0 +1,10 @@
+deepfakeecg/__init__.py,sha256=TSh_JcXMWb2L9k68vZL0NZ6jgGiQ_c6FaJNNWygIRok,85
+deepfakeecg/deepfakeecg.py,sha256=ymaYh6V2UlArK1T3g6NuZFThpTsD6oaRLCSaFTm1OgA,1011
+deepfakeecg/checkpoints/g_stat.pt,sha256=Z2YZyzuB7WN-Xvk_q9WRIg0Ee8T14Zn_zpMKOv-wXLo,42371528
+deepfakeecg/models/__init__.py,sha256=Wbk5oOIloGN6A5MZ_zSflTVjxsvnvClxIWae40thKAI,125
+deepfakeecg/models/pulse2pulse.py,sha256=qIf2ItjHY37PZCkUu_-7zy3EC09q8snF3MWtfIQB6hw,10383
+deepfake_ecg-1.1.0.dist-info/LICENSE,sha256=j1bgqEjNspjJuZfH2XGI692z0SPIV2hMZgtmYavs5xI,1074
+deepfake_ecg-1.1.0.dist-info/METADATA,sha256=3ecMw4MNeMV01dT0t7MHqXhwg_qfrRhximuc0B1nU6U,2198
+deepfake_ecg-1.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+deepfake_ecg-1.1.0.dist-info/top_level.txt,sha256=SfKDGpCwZCYfIveYWEiSCgC7quo5XGSOyXIJVSX6oPw,12
+deepfake_ecg-1.1.0.dist-info/RECORD,,
