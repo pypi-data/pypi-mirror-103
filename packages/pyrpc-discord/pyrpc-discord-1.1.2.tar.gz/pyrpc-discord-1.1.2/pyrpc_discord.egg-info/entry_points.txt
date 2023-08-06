@@ -1,0 +1,3 @@
+[console_scripts]
+pyrpc = pyrpc.__main__:main
+
