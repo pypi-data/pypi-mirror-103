@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: torchshard
+Version: 0.1.0
+Summary: Torchshard: Slicing a PyTorch Tensor Into Parallel Shards.
+Home-page: https://github.com/KaiyuYue/torchshard
+Author: Kaiyu Yue
+Author-email: kaiyuyue@umd.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+
+TorchShard is a lightweight engine for slicing a PyTorch tensor into parallel shards. It can reduce GPU memory and scale up the training when the model has massive linear layers (e.g., ViT, BERT and GPT) or huge classes (millions). It has the same API design as PyTorch.
+
+
