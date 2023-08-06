@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+src/farmhash.cc
+src/farmhash.h
+src/python-farmhash.cc
+src/python-farmhash.h
+src/farmhashpy.egg-info/PKG-INFO
+src/farmhashpy.egg-info/SOURCES.txt
+src/farmhashpy.egg-info/dependency_links.txt
+src/farmhashpy.egg-info/top_level.txt
