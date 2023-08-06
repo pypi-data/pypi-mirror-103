@@ -1,0 +1,15 @@
+thonny_seal/__init__.py,sha256=s2hrcl7eKR7Z8gHsRK08hoWT4bmmN0F9xvkU4vfGWzw,68
+thonny_seal/__main__.py,sha256=452EczXZ7xLUIKpOaV2wZy0YjUHzR4m71B__iAMYyfQ,173
+thonny_seal/main.py,sha256=YoruHnlDhr7_giouR-myDMVldukbVzvqfayZVTDiTwc,4923
+thonny_seal/py.typed,sha256=khpbcpOVE7E_NRCoQIpjYweIJllq-X09OHpKq1CaCjA,64
+thonny_sealed-1.0.0b2.data/data/LICENSE,sha256=Ptgf9awHEpcxjzFxotq2v3RQKO3uaFxLrk9rBRQ7p9w,1090
+thonny_sealed-1.0.0b2.data/data/README.rst,sha256=fhfGyJKxtxyPuPzDTiDct_1pSZc4GHOw7O6_AzdbSkI,4932
+thonny_sealed-1.0.0b2.data/data/requirements.txt,sha256=6n3Juw9EEQ9uQ51dyDDJ0OGAcvVw1nBmp31dnYM8idM,36
+thonnycontrib/thonny_sealed/__init__.py,sha256=fIUMrt3MKyHwMnIbd0QqNS6k49SD0p3m-7xZzNHv4aQ,31916
+thonnycontrib/thonny_sealed/py.typed,sha256=khpbcpOVE7E_NRCoQIpjYweIJllq-X09OHpKq1CaCjA,64
+thonny_sealed-1.0.0b2.dist-info/LICENSE,sha256=Ptgf9awHEpcxjzFxotq2v3RQKO3uaFxLrk9rBRQ7p9w,1090
+thonny_sealed-1.0.0b2.dist-info/METADATA,sha256=SHx3GkbmDfR4sxOW5ahq6nq2tt5QxJ1P9kb8Ce_Q6gE,6741
+thonny_sealed-1.0.0b2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+thonny_sealed-1.0.0b2.dist-info/entry_points.txt,sha256=hzcLGhj5dNEfrknq3Sd6WvF6FP1EBLxZQcO3ELh19QE,101
+thonny_sealed-1.0.0b2.dist-info/top_level.txt,sha256=W5p0yZMFOQQLROx-zvpzNFBpnDVu_Yb2IbozBXD_dcc,26
+thonny_sealed-1.0.0b2.dist-info/RECORD,,

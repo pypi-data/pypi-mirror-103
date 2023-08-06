@@ -1,0 +1,6 @@
+[console_scripts]
+thonny-seal = thonny_seal.main:entry_point
+
+[hypothesis]
+_ = icontract_hypothesis
+
