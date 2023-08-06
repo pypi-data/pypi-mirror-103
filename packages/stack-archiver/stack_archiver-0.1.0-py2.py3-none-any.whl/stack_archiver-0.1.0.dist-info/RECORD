@@ -1,0 +1,13 @@
+stack_archiver/__init__.py,sha256=aUspNWDJP_7blYlh0G1vo3SJYZucE9AqoaFOk_aE7p4,58
+stack_archiver/__main__.py,sha256=xRN9FdvQHmQjFHqsvWkULqj3zSvYTduawolKTi9V_H4,55
+stack_archiver/_version.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+stack_archiver/main.hy,sha256=mq-m9LqWNErkE2-_vjWmqTHfxLormyaoiQQ7h9mZ4gE,2723
+stack_archiver/__pycache__/__init__.cpython-38.pyc,sha256=5qfKJ5OIZfkotuthcbLoEvxhsBNb_MELBP0ur69VOV8,250
+stack_archiver/__pycache__/__main__.cpython-38.pyc,sha256=W-moUmUAfxJfn9yVqdkBFV3lgGNmyr0KWHdxvC8nLhA,242
+stack_archiver/__pycache__/_version.cpython-38.pyc,sha256=hn-NVyMk14O_4RawJwmfjR9IHI5-Y2ccrE4rybV03kA,198
+stack_archiver/__pycache__/main.cpython-38.pyc,sha256=yKtESVSoa61Pyk_6VUlirWxGJl9kXQb-fIX-PSu0FH8,3236
+stack_archiver-0.1.0.dist-info/METADATA,sha256=E8_H8X5_RAKjdaw5oqzrwT4cJGqMmwllNH_b8c5OVjY,1973
+stack_archiver-0.1.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+stack_archiver-0.1.0.dist-info/dependency_links.txt,sha256=Qfx5AKlY68PzrwNSkbj2rhwirWbUXiwJ3Vf7Sw0SAAA,94
+stack_archiver-0.1.0.dist-info/top_level.txt,sha256=WWvk9Sfcfo6ofB04oBF3JpXqoaHuJSbPKkvdmKfX_PY,15
+stack_archiver-0.1.0.dist-info/RECORD,,
