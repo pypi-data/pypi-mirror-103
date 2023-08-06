@@ -1,0 +1,3 @@
+[napari.plugin]
+cellpose-napari = cellpose_napari
+
