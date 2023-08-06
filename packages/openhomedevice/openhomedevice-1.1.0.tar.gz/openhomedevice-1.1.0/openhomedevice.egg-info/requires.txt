@@ -1,0 +1,2 @@
+async_upnp_client>=0.16.1
+lxml>=4.6.3
