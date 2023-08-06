@@ -1,0 +1,3 @@
+[console_scripts]
+aws-net-scan = aws_net_scan.__main__:main
+
