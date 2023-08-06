@@ -1,0 +1,73 @@
+python-zapf (0.1.2) focal; urgency=medium
+
+  [ Georg Brandl ]
+  * modbus: allow not specifying slave number
+  * device: prettify device names a bit
+  * sim proto: log errors in PLC impl and do not abort communication thread
+  * simulator: avoid heap overflow into MB area
+  * sim proto: reduce cycle time
+  * simulator: more debug info for failed writes
+
+  [ Enrico Faulhaber ]
+  * fillup testplc with devices of all kind
+
+  [ Georg Brandl ]
+  * indexer: better attribute names
+
+ -- Georg Brandl <jenkins@jenkins01.admin.frm2.tum.de>  Tue, 27 Apr 2021 18:54:06 +0200
+
+python-zapf (0.1.1) focal; urgency=medium
+
+  * setup.py: fix license and version classifiers
+  * proto: add a callback for connection events
+  * indexer: size >= 22 is guaranteed
+  * indexer: implement number of devices from plc infostruct
+  * tango: support Profibus interface (i.e. Entangle iodev via zapf)
+  * scan: return a namedtuple from scanning, include devnumber
+  * device: allow changing status unconditionally
+  * device: fix setting target of status-less devices
+  * indexer: fix casing of error messages
+  * tango: make PyTango optional
+  * io: add a callback for cache updates
+  * device: make some par-ctrl functions public and unify parameter mapping
+  * device: add "value_fmt" for all devices
+  * move simulator to main package, add protocol
+  * avoid manually calculating sizes/addresses by giving more info in the device table
+  * spec: reason strings for handling REASON like a bitfield
+  * all: isort
+  * proto: do not log connection errors separately
+  * proto: make a full "disconnect" when connection breaks
+  * device: add a function to give a concise typecode description
+  * io: expand cache API
+
+ -- Georg Brandl <jenkins@jenkins01.admin.frm2.tum.de>  Mon, 26 Apr 2021 15:20:50 +0200
+
+python-zapf (0.1.0) focal; urgency=medium
+
+  * bump PyTango requirement
+  * fix/address pylint issues
+  * run isort
+  * simulator: add lword and lreal
+  * debian: add build files
+  * io: add missing write methods
+  * pylint: enable inconsistent-return-statements
+  * fix a bug in the cache impl
+  * device: register cache range on init
+  * io: show byteorder/float after finding magic
+  * ads: allow nonstandard port, fix error translation
+  * fix a few typos
+  * device: add get_limits() API, change_target() needs to set status
+  * device: simplify discrete classes
+  * device: fix status size and param/device number
+  * device: always write target+status atomically
+  * device: fix reading and writing 32-bit statuses
+  * device: implement 64-bit vector devices
+  * ads: fall back to adding a route if connection is closed
+
+ -- Georg Brandl <jenkins@jenkins02.admin.frm2.tum.de>  Fri, 23 Apr 2021 13:05:22 +0200
+
+python-zapf (0.0.0) unstable; urgency=low
+
+  [ Jenkins ]
+
+ -- Jenkins <jenkins@debuild.taco.frm2>  Tue, 20 Apr 2021 12:00:00 +0200
