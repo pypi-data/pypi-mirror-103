@@ -1,0 +1,11 @@
+hub:
+  extraConfig:
+    jupyterhub_extra_config: |
+{% filter indent(width=6) %}
+{% include "templates/jupyterhub_config.py.j2" %}
+{% endfilter %}
+
+cull:
+  enabled: true
+  timeout: 1800 # cull after 30min of inactivity
+  every: 600
