@@ -1,0 +1,7 @@
+name: handadoc-client
+title: Handadoc Client Documentation
+description: >
+    Documentation on how to use the handadoc-client within local repositories to
+    package and post the build documentation to the handadoc webserver.
+doc_location: docs/_build/html
+server_url: http://127.0.0.1:8000

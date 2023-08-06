@@ -1,0 +1,6 @@
+name: handadoc-client-test1
+title: Handadoc Client Documentation Test1
+description: A set of test documentation files.
+doc_location: tests/resources/sample_1/html
+server_url: http://127.0.0.1:8000
+version: 0.1a2.dev3
