@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: jsoni18n
+Version: 0.0.1
+Summary: A simple i18n system using json + pycountry alpha_3 ISO codes.
+Home-page: https://github.com/Pycryptor10/py-jsoni18n
+Author: Pycryptor10
+Author-email: Pycryptor10@gmail.com
+License: GPL3
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: pycountry (==20.7.3)
+
+# py-jsoni18n
+A simple i18n system using json + pycountry alpha_3 ISO codes
+
+
