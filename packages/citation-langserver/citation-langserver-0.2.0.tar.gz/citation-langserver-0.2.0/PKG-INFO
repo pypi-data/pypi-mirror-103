@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: citation-langserver
+Version: 0.2.0
+Summary: A language server for managing citations stored in BibTeX and BibLaTeX files.
+Home-page: https://github.com/oncomouse/citation-langserver
+License: MIT
+Author: oncomouse
+Author-email: oncomouse@gmail.com
+Requires-Python: >=3.6.1,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Text Editors
+Classifier: Topic :: Text Editors :: Integrated Development Environments (IDE)
+Classifier: Topic :: Text Editors :: Text Processing
+Classifier: Topic :: Text Processing :: Markup
+Classifier: Topic :: Text Processing :: Markup :: Markdown
+Requires-Dist: bibparse (>=1.0.0,<2.0.0)
+Requires-Dist: pygls (>=0.10.2,<0.11.0)
+Project-URL: Repository, https://github.com/oncomouse/citation-langserver
+Description-Content-Type: text/markdown
+
+# citation-langserver
+
+citation-langserver is a language server for working with citations stored in BibTeX or BibLaTeX files.
+
+citation-langserver supports code completion, hover, jump to definition, and find references. It supports absolute file paths for bibliographies, relative file paths, as well as glob-based file paths. It is compatible with all clients that support the [Language Server Protocol](https://langserver.org/)
+
+# Installation
+
+Run `pip3 install citation-langserver` to install.
+
+# Usage
+
+Configure `citation-langserver` as you would any other LSP in your text editor of choice.
+
+For instance, using [CoC](https://github.com/neoclide/coc.nvim) in Vim, you might add the following to your `coc-settings.json` file:
+
+```json
+  "languageserver": {
+    "citation": {
+      "command": "/usr/local/bin/citation-langserver",
+      "filetypes": ["markdown"],
+      "settings": {
+        "citation": {
+          "bibliographies": [
+            "~/library.bib",
+			"./*.bib"
+          ]
+        }
+      }
+    }
+  }
+```
+
+## Configuration
+
+The setting `citation.bibliographies` needs to be sent by the client to the server and contain an array of file paths. The file paths can include:
+
+- Absolute paths
+- Relative paths
+- Globs (absolute or relative)
+
