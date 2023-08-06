@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: comsar
+Version: 0.0.3
+Summary: Computational Music and Sound Archiving
+Home-page: UNKNOWN
+Author: Michael Blaß
+Author-email: mblass@posteo.net
+License: BSD-3-Clause
+Project-URL: Source code, https://github.com/ifsm/comsar
+Project-URL: Bug tracker, https://github.com/ifsm/comsar/issues
+Project-URL: Documentation, http://comsar.readthedocs.io
+Keywords: comsar,music,analysis,ethnomusicology
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Database
+Classifier: Topic :: Multimedia :: Sound/Audio :: Analysis
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: BSD License
+Requires-Dist: apollon (>=0.1.2.1)
+Requires-Dist: numpy (>=1.20)
+Requires-Dist: pandas
+
+UNKNOWN
+
+
