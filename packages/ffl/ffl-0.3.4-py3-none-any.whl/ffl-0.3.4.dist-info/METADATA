@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: ffl
+Version: 0.3.4
+Summary: Forcast Federated Learning
+Home-page: https://github.com/forcast-open
+Author: Forcast OpenSource
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: attrs (==20.3.0)
+Requires-Dist: dataclasses (==0.8)
+Requires-Dist: importlib-metadata (==4.0.1)
+Requires-Dist: iniconfig (==1.1.1)
+Requires-Dist: joblib (==1.0.0)
+Requires-Dist: numpy (==1.19.4)
+Requires-Dist: opacus (==0.11.0)
+Requires-Dist: packaging (==20.9)
+Requires-Dist: pandas (==1.1.5)
+Requires-Dist: Pillow (==8.0.1)
+Requires-Dist: pluggy (==0.13.1)
+Requires-Dist: py (==1.10.0)
+Requires-Dist: pyparsing (==2.4.7)
+Requires-Dist: pytest (==6.2.2)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: pytz (==2020.4)
+Requires-Dist: scikit-learn (==0.23.2)
+Requires-Dist: scipy (==1.5.4)
+Requires-Dist: six (==1.15.0)
+Requires-Dist: sklearn (==0.0)
+Requires-Dist: tenseal (==0.3.0)
+Requires-Dist: threadpoolctl (==2.1.0)
+Requires-Dist: toml (==0.10.2)
+Requires-Dist: torch (==1.7.1)
+Requires-Dist: torchcsprng (==0.1.4)
+Requires-Dist: torchvision (==0.8.2)
+Requires-Dist: tqdm (==4.56.0)
+Requires-Dist: typing-extensions (==3.7.4.3)
+Requires-Dist: zipp (==3.4.0)
+
+# Forcast Federated Learning
+
+Forcast Federated Learning (FFL) is an open-source [Pytorch](https://pytorch.org/) based framework for machine learning on decentralized data. FFL has been developed to facilitate open experimentation with [Federated Learning (FL)](https://ai.googleblog.com/2017/04/federated-learning-collaborative.html), an approach to machine learning where a shared global model is trained across
+many participating clients that keep their training data locally. For example,
+FL has been used to train
+[prediction models for mobile keyboards](https://arxiv.org/abs/1811.03604)
+without uploading sensitive typing data to servers.
+
+FFL enables developers to use low level model aggregation into a federated model. Explicitly using individual data per client and sharing only the local models or model gradients. This helps bridge the gap from simulation, into simulation with isolated clients and private data and onto deployment.
+
+## Installation
+
+See the [install](docs/install.md) documentation for instructions on how to
+install FFL as a package or build FFL from
+source.
+
+## Getting Started
+
+See the [get started](docs/get_started.md) documentation for instructions on
+how to use FFL.
+
