@@ -1,0 +1,9 @@
+README.md
+setup.py
+py_anki/__init__.py
+py_anki/py_anki_class.py
+py_anki.egg-info/PKG-INFO
+py_anki.egg-info/SOURCES.txt
+py_anki.egg-info/dependency_links.txt
+py_anki.egg-info/requires.txt
+py_anki.egg-info/top_level.txt
