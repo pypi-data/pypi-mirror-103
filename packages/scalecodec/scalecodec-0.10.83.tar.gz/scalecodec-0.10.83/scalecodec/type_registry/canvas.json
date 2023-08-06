@@ -1,0 +1,15 @@
+{
+  "runtime_id": 10,
+  "types": {
+    "Keys": {
+      "type": "struct",
+      "type_mapping": [
+         ["aura", "AccountId"],
+         ["grandpa", "AccountId"]
+      ]
+    },
+    "ContractExecResult": "ContractExecResultTo260"
+  },
+  "versioning": [
+  ]
+}
