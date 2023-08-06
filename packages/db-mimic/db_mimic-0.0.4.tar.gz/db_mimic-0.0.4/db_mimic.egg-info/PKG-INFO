@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: db-mimic
+Version: 0.0.4
+Summary: package to emulate simple db functions
+Home-page: UNKNOWN
+Author: Alex Kuhn
+Author-email: <alex.kuhn1123@gmail.com>
+License: UNKNOWN
+Description: package to emulate simple db functions: create_table, select_from_table, show_table, filter_table
+Keywords: python,db_mimic
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
