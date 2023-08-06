@@ -1,0 +1,1 @@
+from kolibri.backend.tensorflow.models.text.classification.models import BiLSTM_Model
