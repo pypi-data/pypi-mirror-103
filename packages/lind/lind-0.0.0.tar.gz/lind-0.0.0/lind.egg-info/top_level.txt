@@ -1,0 +1,5 @@
+docker
+docs
+lind
+notebooks
+tests

@@ -1,0 +1,3 @@
+include lind/_version.py
+include LICENSE.md
+include README.md
