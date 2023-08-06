@@ -1,0 +1,9 @@
+aioairtable/__init__.py,sha256=LQ3J9dHt7fKSy5B_mQY0NMXF2_oZwzF9azaPWA19iyM,467
+aioairtable/aioairtable.py,sha256=TwZ9eIYpM4DUDvGDT_UO2kqXr6jP1-X5noLOuS1ATq8,11481
+aioairtable/helpers.py,sha256=_olmJNdyuh2f1Jx2l-FkUNIMfTfF2JNDKS_WAp-1CC4,515
+aioairtable/py.typed,sha256=C8SjMqesxYJ3ny-ckbsxfIYevSBO3W4BDRHpbtBm4jw,14
+aioairtable-0.0.11.dist-info/LICENSE,sha256=t1zLrqFDwVmlEIGDu0RREVMWR5v_E0fudfO-gpi1u80,1068
+aioairtable-0.0.11.dist-info/METADATA,sha256=Jn4OJxpJhaJ82ZKNOPwqCbv2HtTjq3lSdFcar7zj9S0,3005
+aioairtable-0.0.11.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aioairtable-0.0.11.dist-info/top_level.txt,sha256=sq0ADCQfOhq4-Hx0W6fDh-heD0wwKwA0G3x593rHOio,12
+aioairtable-0.0.11.dist-info/RECORD,,
