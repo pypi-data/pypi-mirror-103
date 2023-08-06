@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: pycolorpy
+Version: 0.1.2
+Summary: Adds typographical emphasis and text / background color for strings in python.
+Home-page: https://github.com/erwinerdem/pycolorpy
+Author: Erwin Erdem
+Author-email: erwin.erdem@outlook.com
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+
+# pycolorpy
+
+Adds typographical emphasis and text / background color for strings in python.
+
+## Installation
+
+```bash
+pip install pycolorpy
+```
+
+## Usage
+
+```python
+from pycolorpy import black, red, green, yellow, blue, magenta, cyan, white
+
+example_string = yellow('Hello ', options=['blink'], background='red') + magenta('World', options=['underline', 'italic'], background='green') + cyan('!')
+print(example_string)
+```
+
+## Available options
+
+* bright
+* dark
+* italic
+* underline
+* blink
+* selected
+
+## Available background colors
+
+* black
+* red
+* green
+* yellow
+* blue
+* magenta
+* cyan
+* white
+
