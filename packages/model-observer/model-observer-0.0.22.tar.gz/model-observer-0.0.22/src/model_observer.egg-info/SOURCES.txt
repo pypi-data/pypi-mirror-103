@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/model_observer/__init__.py
+src/model_observer/model.py
+src/model_observer.egg-info/PKG-INFO
+src/model_observer.egg-info/SOURCES.txt
+src/model_observer.egg-info/dependency_links.txt
+src/model_observer.egg-info/top_level.txt
