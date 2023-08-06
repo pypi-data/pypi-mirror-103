@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/reddiornaut/__init__.py
+src/reddiornaut/fetch.py
+src/reddiornaut/objects.py
+src/reddiornaut.egg-info/PKG-INFO
+src/reddiornaut.egg-info/SOURCES.txt
+src/reddiornaut.egg-info/dependency_links.txt
+src/reddiornaut.egg-info/top_level.txt
