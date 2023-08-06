@@ -1,0 +1,2 @@
+recursive-include src/nexradutils/data *.wld
+recursive-include src/nexradutils/tests *.png
