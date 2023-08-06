@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: get-gifNimage
+Version: 0.2.1
+Summary: Downloading image from URL, displaying from the drive
+Home-page: https://github.com/Drill-N-Bass/get_gifNimage.git
+Author: Pawel Pedryc
+Author-email: pawel.pedryc@gmail.com
+License: UNKNOWN
+Description: Function `get_gifNimage()` opens any image (jpg, jpeg, png, svg) or gif from a link (in string format). 
+        After that, it will be saved in the current folder, convert (if needed) to png (from svg format) andâ€“ finally â€“ displayed. 
+        The function deletes the svg file after conversion â€“ in that case, it will leave only the png version so there won't be any useless files in the folder.
+        
+        Change Log
+        ==========
+        
+        0.2.1 (28.04.2021)
+        ------------------
+        -First Relase
+Keywords: get_gifNimage
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Programming Language :: Python :: 3
