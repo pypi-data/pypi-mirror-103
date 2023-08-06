@@ -1,0 +1,16 @@
+bonfire/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bonfire/bonfire.py,sha256=rRZeAq34u2NAmSP52oPGai2eWrWzXJwuuB9mAY3CDG0,18659
+bonfire/config.py,sha256=vey6lveNHhncwsGBPsY9-bs_swAztlfH5u5bIQBTPI8,3333
+bonfire/local.py,sha256=oTsNp8LGxgT3NjQ1Vu1RkN7owIg-H-4c-0P7nKtAlis,1795
+bonfire/namespaces.py,sha256=FbMHLurBrUjEcjAC7WQnsoJasRLGap1I3R3oVbbCOaM,14172
+bonfire/openshift.py,sha256=u_T4MkqoGzx5WM6MYNELJrA2qbgaBOUmmjYfK6LDHc8,21435
+bonfire/processor.py,sha256=gFxyB6ru0dYSSO0M-wKQXSTve3cZ5vtjobx6FRv4G5c,8849
+bonfire/qontract.py,sha256=SshUk-dFajp5EnrdXLwJDWUWpBXg785RdsFHxAhxQUU,9257
+bonfire/utils.py,sha256=EEbvjFmuXJ-Aa9_xpq72pnAuXWdxYfZkM7ZqN9yJcJs,7172
+bonfire/resources/default_config.yaml,sha256=OTyIK_eCF1a_ymStS0FEE5CacaH9YqVmh6spoyWjoSE,498
+bonfire/resources/ephemeral-clowdenvironment.yaml,sha256=I-RlfE1hRpPsiW0_oPOIk6O2OKp1mxaeWrLMyVVu7V4,1026
+crc_bonfire-1.0.2.dist-info/METADATA,sha256=yj6mqTYD_wzJYo360Zu5qHeVSGNrCbJoI6-ZPhM4VoM,11641
+crc_bonfire-1.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+crc_bonfire-1.0.2.dist-info/entry_points.txt,sha256=tyvPHMDfsMnnJIi3R2jIhQTZIeetkkQz36bzFkDJAlU,49
+crc_bonfire-1.0.2.dist-info/top_level.txt,sha256=gS6035fhSDs4Wc57Cigr0pqT8DjtlDFutDYrLMAqfNQ,8
+crc_bonfire-1.0.2.dist-info/RECORD,,
