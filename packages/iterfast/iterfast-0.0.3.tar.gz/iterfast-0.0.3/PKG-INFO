@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: iterfast
+Version: 0.0.3
+Summary: A library for fast iterative operations.
+Home-page: https://github.com/pradipbankar0097/iterfast
+Author: Pradip Bankar
+Author-email: pradipbankar0097@gmail.com
+License: UNKNOWN
+Description: # <img alt="iterfast" src="/docs/images/logo/iterfast-logo.png" height="60">
+         Fasten the iterations
+         -----------------------
+         - **Just**
+          
+            `pip install iterfast`
+         - **And then**
+         
+            `import iterfast`
+        
+         
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
