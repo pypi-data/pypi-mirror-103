@@ -1,0 +1,6 @@
+[freezerbox.make]
+pcr=stepwise_mol_bio.pcr:Pcr
+
+[stepwise.protocols]
+molbio=stepwise_mol_bio:Plugin
+
