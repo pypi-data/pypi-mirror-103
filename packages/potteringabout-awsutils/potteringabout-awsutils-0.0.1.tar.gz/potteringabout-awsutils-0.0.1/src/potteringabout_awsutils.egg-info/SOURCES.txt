@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/potteringabout/__init__.py
+src/potteringabout/awsutils/__init__.py
+src/potteringabout/awsutils/account.py
+src/potteringabout_awsutils.egg-info/PKG-INFO
+src/potteringabout_awsutils.egg-info/SOURCES.txt
+src/potteringabout_awsutils.egg-info/dependency_links.txt
+src/potteringabout_awsutils.egg-info/requires.txt
+src/potteringabout_awsutils.egg-info/top_level.txt

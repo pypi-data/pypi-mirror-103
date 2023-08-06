@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: potteringabout-awsutils
+Version: 0.0.1
+Summary: Some bits and bobs for AWS python coding.
+Home-page: https://github.com/AntonyPotter/awsutils.git
+Author: Antony Potter
+Author-email: tone@potteringabout.net
+License: UNKNOWN
+Description: # awsutils
+        
+        Just a few bits and bobs to help remove reduce some of the repetative code we 
+        have when using boto3.
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
