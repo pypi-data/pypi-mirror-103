@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/quants.egg-info/PKG-INFO
+src/quants.egg-info/SOURCES.txt
+src/quants.egg-info/dependency_links.txt
+src/quants.egg-info/top_level.txt
