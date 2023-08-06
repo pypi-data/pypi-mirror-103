@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+labanotation/__init__.py
+labanotation.egg-info/PKG-INFO
+labanotation.egg-info/SOURCES.txt
+labanotation.egg-info/dependency_links.txt
+labanotation.egg-info/not-zip-safe
+labanotation.egg-info/top_level.txt
