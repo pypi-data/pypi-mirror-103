@@ -1,0 +1,6 @@
+README.md
+setup.py
+Encrypto.egg-info/PKG-INFO
+Encrypto.egg-info/SOURCES.txt
+Encrypto.egg-info/dependency_links.txt
+Encrypto.egg-info/top_level.txt
