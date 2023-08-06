@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "libsimba.py-platform"
+version = "0.1.2"
+description = ""
+authors = [
+    "Adam Brinckman <abrinckm@gmail.com>",
+    "Ian Harvey <ian.harvey@simbachain.com>"
+]
+
+packages = [
+    { include = "libsimba" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.25.1"
+
+[tool.poetry.dev-dependencies]
+Sphinx = "^3.5.4"
+sphinx-rtd-theme = "^0.5.2"
+twine = "^3.4.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+test = 'libsimba.simba:Simba.test'
