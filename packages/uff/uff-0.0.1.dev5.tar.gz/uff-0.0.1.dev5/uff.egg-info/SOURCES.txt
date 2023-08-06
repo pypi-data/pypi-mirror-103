@@ -1,0 +1,10 @@
+ERROR.txt
+LICENSE.md
+PACKAGE_NAME
+README.rst
+package_info.py
+setup.py
+uff.egg-info/PKG-INFO
+uff.egg-info/SOURCES.txt
+uff.egg-info/dependency_links.txt
+uff.egg-info/top_level.txt
