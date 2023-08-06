@@ -1,0 +1,3 @@
+[console_scripts]
+prefetch = windowsprefetch.scripts.prefetch:main
+
