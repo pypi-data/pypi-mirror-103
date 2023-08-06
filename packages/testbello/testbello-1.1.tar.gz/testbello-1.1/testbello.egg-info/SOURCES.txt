@@ -1,0 +1,8 @@
+setup.py
+testbello/__init__.py
+testbello.egg-info/PKG-INFO
+testbello.egg-info/SOURCES.txt
+testbello.egg-info/dependency_links.txt
+testbello.egg-info/requires.txt
+testbello.egg-info/top_level.txt
+testbello.egg-info/zip-safe
