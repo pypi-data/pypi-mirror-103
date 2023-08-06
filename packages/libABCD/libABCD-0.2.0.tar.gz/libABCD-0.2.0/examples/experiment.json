@@ -1,0 +1,16 @@
+{
+  "run":{
+    "Spy":{
+      "cmd":"./S.py"
+    },
+    "client1":{
+      "cmd":"./exec-client.py client1"
+    },
+    "client2":{
+      "cmd":"./exec-client.py client2"
+    },
+    "client3":{
+      "cmd":"./exec-client.py client3"
+    }
+  }
+}

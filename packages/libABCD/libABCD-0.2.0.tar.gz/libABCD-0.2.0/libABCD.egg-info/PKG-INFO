@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: libABCD
+Version: 0.2.0
+Summary: the Autonomous Bariloche Central DAQ, a centralized DAQ system for scientific experiments
+Home-page: http://gitlab.com/bertou/libabcd
+Author: Xavier Bertou, Laboratorio Detección de Partículas y Radiación
+Author-email: bertou@cab.cnea.gov.ar
+License: MIT
+Description: # Autonomous Bariloche Central DAQ
+        
+        ## concept
+        
+        The main concept for the DAQ is that it orbits around a central server. Control and information run through this server allowing a permanent follow-up of what is happening. The raw data is handled by the clients themselves and is not seen by the DAQ.
+        The central server is a MQTT broker. We recommend using mosquitto.
+        
+        ## code
+        
+        All the code is in the libABCD directory.
+        Example applications are in the examples directory. They include:
+        * S.py, a "spy" application that requests all messages being exchanged in the system and logs them
+        * exec-client.py, an example application that runs commands sent to it (warning, this is a huge security risk, do not run in unprotected environment)
+        * run.py, a run controller app that looks at an experiment description in a JSON file and runs the programs in screens and restarts them in case they die (includes the experiment.json example of JSON file)
+        * send.py, a simple message sender
+        
+        Running the examples can be done by launching run.py experiment, and using send.py to see what happens, for example with _./send.py '{"to":"client1","cmd":"exec","py":"print(1)"}'_ which should have client1 print 1. Running S.py manually can also be interesting to see all messages going through. Mosquitto should be run at a system level.
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
