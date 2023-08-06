@@ -1,0 +1,4 @@
+[console_scripts]
+pywriter = openpower.decoder.pseudo.pywriter:pywriter
+sv_analysis = openpower.sv:sv_analysis
+
