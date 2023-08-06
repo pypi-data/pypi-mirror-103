@@ -1,0 +1,52 @@
+Install via pip
+===============
+
+```
+pip install basicmathfunctions
+```
+
+Functions
+=========
+
+```
+add_two_numbers(number1, number2)
+``` - Add two numbers
+
+```
+subtract_two_numbers(number1, number2)
+``` - Subtract two numbers
+
+```
+multiply_two_numbers(number1, number2)
+``` - Multiply two numbers
+
+```
+divide_two_numbers(number1, number2)
+``` - Divide two numbers
+
+```
+pi()
+``` - Get value of pi (to 4 decimal places)
+
+```
+the_power_of(number, power)
+``` - Get a number to the power of another number
+
+```
+sqrt(number)
+``` - Get the square root of a number
+
+```
+f_to_c(temperature)
+``` - Convert fahrenheit to celsius
+
+```
+c_to_f(temperature)
+``` - Convert celsius to fahrenheit
+
+Change Log
+==========
+
+0.0.1 (4/28/2021)
+-----------------
+- First Release
