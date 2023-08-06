@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: gradient-free-objective-functions
+Version: 0.0.1
+Summary: A collection and visualization of black-box objective functions
+Home-page: https://github.com/SimonBlanke/gradient-free-objective-functions
+Author: Simon Blanke
+Author-email: simon.blanke@yahoo.com
+License: MIT
+Keywords: visualization,data-science
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+<H1 align="center">
+    gradient-free-objective-functions
+</H1>
+
+<br>
+
+<H2 align="center">
+    A collection and visualization of black-box objective functions
+</H2>
+
+
+
+
+
