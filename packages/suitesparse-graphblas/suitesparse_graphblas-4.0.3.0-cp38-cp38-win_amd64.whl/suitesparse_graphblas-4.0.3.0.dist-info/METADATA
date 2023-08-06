@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: suitesparse-graphblas
+Version: 4.0.3.0
+Summary: SuiteSparse:GraphBLAS Python bindings.
+Home-page: https://github.com/GraphBLAS/python-suitesparse-graphblas
+Author: Michel Pelletier, James Kitchen, Erik Welch
+Author-email: michel@graphegon.com,jim22k@gmail.com,erik.n.welch@gmail.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: cffi (>=1.0.0)
+Requires-Dist: numpy (>=1.15)
+
+# python-suitesparse-graphblas
+Python CFFI Binding around
+[SuiteSparse:GraphBLAS](https://github.com/DrTimothyAldenDavis/GraphBLAS)
+
+This is a base package that exposes only the low level CFFI API
+bindings and symbols.  This package is shared by the syntax bindings
+[pygraphblas](https://github.com/Graphegon/pygraphblas) and
+[grblas](https://github.com/metagraph-dev/grblas).
+
+
