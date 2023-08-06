@@ -1,0 +1,27 @@
+more-itertools>=8.6
+numpy!=1.19.4,<2,>=1.19
+typing-extensions>=3.7
+
+[:python_version >= "3.6" and python_version < "3.7"]
+dataclasses>=0.7
+
+[dev]
+flake8
+future
+mypy
+pyls-mypy
+python-language-server
+yapf
+
+[docs]
+Sphinx>=3.5
+sphinx-autodoc-typehints==1.11.1
+sphinx-rtd-theme==0.5.2
+
+[examples]
+matplotlib
+opencv-python
+
+[test]
+pytest
+tox
