@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: bundestag-drucksache
+Version: 0.1
+Summary: Download and find official Drucksache objects from the bundestag. Search yourself there: https://pdok.bundestag.de
+Home-page: https://github.com/AdriDevelopsThings/bundestag-drucksache
+Author: adridoesthings
+Author-email: github@adridoesthings.com
+License: gpl-3.0
+Download-URL: https://github.com/AdriDevelopsThings/bundestag-drucksache/archive/refs/tags/0.1.tar.gz
+Description: UNKNOWN
+Keywords: bundestag,drucksache,germany,politic,parliament
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
