@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+http_file/__init__.py
+http_file/download_file.py
+http_file.egg-info/PKG-INFO
+http_file.egg-info/SOURCES.txt
+http_file.egg-info/dependency_links.txt
+http_file.egg-info/requires.txt
+http_file.egg-info/top_level.txt
