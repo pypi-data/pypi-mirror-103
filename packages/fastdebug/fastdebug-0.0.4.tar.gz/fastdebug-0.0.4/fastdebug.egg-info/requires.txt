@@ -1,0 +1,6 @@
+pip
+packaging
+torch>=1.7.0
+fastai>=2.0.0
+
+[dev]
