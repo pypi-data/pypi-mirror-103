@@ -1,0 +1,15 @@
+README.md
+setup.py
+VirtualAssistant/__init__.py
+VirtualAssistant/audioinout.py
+VirtualAssistant/computer.py
+VirtualAssistant/errors.py
+VirtualAssistant/gettimedate.py
+VirtualAssistant/internet.py
+VirtualAssistant/others.py
+VirtualAssistant/picture.py
+VirtualAssistant.egg-info/PKG-INFO
+VirtualAssistant.egg-info/SOURCES.txt
+VirtualAssistant.egg-info/dependency_links.txt
+VirtualAssistant.egg-info/requires.txt
+VirtualAssistant.egg-info/top_level.txt
