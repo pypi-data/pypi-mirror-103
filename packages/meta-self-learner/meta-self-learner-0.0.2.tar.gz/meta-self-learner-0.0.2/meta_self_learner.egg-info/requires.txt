@@ -1,0 +1,14 @@
+Python
+dependencies
+required
+for
+deployment
+pandas
+numpy
+scikit-learn
+tabulate
+xgboost
+scipy
+six
+matplotlib
+plot-metric
