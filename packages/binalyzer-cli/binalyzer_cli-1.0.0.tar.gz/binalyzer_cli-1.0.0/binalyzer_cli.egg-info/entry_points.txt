@@ -1,0 +1,5 @@
+
+        [binalyzer.commands]
+        dump=binalyzer_cli.commands:dump
+        template=binalyzer_cli.commands:template
+    
