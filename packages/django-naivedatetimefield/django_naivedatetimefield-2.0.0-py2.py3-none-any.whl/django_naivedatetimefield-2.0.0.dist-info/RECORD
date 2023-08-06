@@ -1,0 +1,10 @@
+naivedatetimefield/__init__.py,sha256=7r7GRaQDRcJTq9bW9PrDxO0Aeca1y0p45Uwyg4cx4jU,10126
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/models.py,sha256=kjckb9J2_zCJAsi3q6UJiFCXC3lJemlKussDwU8rWog,657
+tests/settings.py,sha256=3CkiuOTc_E_1GYVUTSaRHTn2gHXxsNb6Uv6siX9G6JU,1219
+tests/tests.py,sha256=sfZ-RhwoHaoN55GMCHOcvLCQb_YvK0d2xROU-7qDtS4,19832
+django_naivedatetimefield-2.0.0.dist-info/LICENSE,sha256=s75B_QGaZVNSngMSjCg93CHIhE08ukwAAEh1g-M1S_8,1072
+django_naivedatetimefield-2.0.0.dist-info/METADATA,sha256=jCuSuKyVNPKwqdmO6e13VqrgCzaUa4zn4iCH77-Cxb8,1583
+django_naivedatetimefield-2.0.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+django_naivedatetimefield-2.0.0.dist-info/top_level.txt,sha256=SiI3uTw702CjoWTCAdEdpTDqtc_9X4MqEFtRmNX_4tM,25
+django_naivedatetimefield-2.0.0.dist-info/RECORD,,

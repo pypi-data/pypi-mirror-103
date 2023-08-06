@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: django-naivedatetimefield
+Version: 2.0.0
+Summary: NaiveDateTimeField for storing a naive timestamp. This is useful for baking in a local timestamp.
+Home-page: https://github.com/camflan/django-naivedatetimefield/
+Author: Camron Flanders
+Author-email: me@camronflanders.com
+License: MIT
+Keywords: django,datetime,field
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6, <4
+Requires-Dist: pytz
+
+# django-naivedatetimefield
+![build status](https://api.travis-ci.org/camflan/django-naivedatetimefield.svg?branch=master)
+
+
+NaiveDateTimeField offers the ability to store a naive timestamp, useful for baking in a local timestamp.
+
+
+
+## Contributors
+- [Camron Flanders](https://github.com/camflan)
+- [Alex Hill](https://github.com/AlexHill)
+- [Lincoln Puzey](https://github.com/LincolnPuzey)
+
+
