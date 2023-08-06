@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: rethinkdbcm
+Version: 0.1.4
+Summary: RethinkDB context manager
+Home-page: https://github.com/gwvsol/RethinkDB-context-manager
+Author: Fedorov Mikhail
+Author-email: jwvsol@yandex.ru
+License: MIT
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: Russian
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Requires-Dist: rethinkdb
+Requires-Dist: six
+
+# RethinkDB context manager
+
+This is a RethinkDB context manager package. You can use
+[RethinkDB-context-manager](https://github.com/gwvsol/RethinkDB-context-manager)
+to write your content.
+
+
