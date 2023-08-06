@@ -1,0 +1,1 @@
+## Technicolor Gateway Scraper library
