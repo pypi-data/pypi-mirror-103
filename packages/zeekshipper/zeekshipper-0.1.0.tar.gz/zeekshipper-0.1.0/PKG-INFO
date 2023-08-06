@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: zeekshipper
+Version: 0.1.0
+Summary: using it:.log to parquet,and push it to minio,final back to you a .txt file with cmd-line for trino to build table.
+Author: Mutu
+Author-email: mutou_nan@163.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: fastparquet (>=0.5.0,<0.6.0)
+Requires-Dist: minio (>=7.0.3,<8.0.0)
+Requires-Dist: pathlib (>=1.0.1,<2.0.0)
+Requires-Dist: s3fs (>=2021.4.0,<2022.0.0)
+Requires-Dist: zat (>=0.4.2,<0.5.0)
