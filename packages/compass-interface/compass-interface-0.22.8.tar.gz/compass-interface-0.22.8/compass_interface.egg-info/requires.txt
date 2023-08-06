@@ -1,0 +1,14 @@
+compass-interface-core>=0.13.0
+pandas
+pyarrow
+fastapi
+pydantic
+cryptography
+python-jose
+aioredis
+python-multipart
+
+[deploy]
+uvicorn
+uvloop
+httptools
