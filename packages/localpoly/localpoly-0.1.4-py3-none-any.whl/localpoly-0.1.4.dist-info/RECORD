@@ -1,0 +1,10 @@
+localpoly/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+localpoly/base.py,sha256=JEuPM5qwl5nIKvstwimyJgbEMCJtXLLVhzzOCOxOe7w,8900
+localpoly/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+localpoly/utils/helpers.py,sha256=eSKYZiJR2QF13YpqIVtZ9q7hjmssIulq284lDe9pM8M,1223
+localpoly/utils/kernels.py,sha256=lKWCL4dRWRSmxEKU3JYpYM4veLDYLdGeS5EB6hXRISk,1091
+localpoly-0.1.4.dist-info/LICENSE,sha256=XQay6eZ987h-2_fbkVygEfYCUFG19-EfmXsuON2R4BM,1063
+localpoly-0.1.4.dist-info/METADATA,sha256=hVUKV66eMJDFaW62UExeKXqcS6U1EGERb-Idoyssjlc,1379
+localpoly-0.1.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+localpoly-0.1.4.dist-info/top_level.txt,sha256=6VIyIYAGXIrCDD1VNrjdHUKUee2y3LTvKeAs3PPoU_I,10
+localpoly-0.1.4.dist-info/RECORD,,
