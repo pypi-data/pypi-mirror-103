@@ -1,0 +1,37 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer"
+        },
+        "customfieldId": {
+            "type": "integer"
+        },
+        "projectId": {
+            "type": "integer"
+        },
+        "value": {
+            "type": ["string", "null"]
+        },
+        "createdAt": {
+            "type": "string"
+        },
+        "createdBy": {
+            "type": "integer"
+        },
+        "description": {
+            "type": ["string", "null"]
+        },
+        "entity": {
+            "type": "string"
+        },
+        "name": {
+            "type": ["string", "null"]
+        },
+        "type": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": true
+}

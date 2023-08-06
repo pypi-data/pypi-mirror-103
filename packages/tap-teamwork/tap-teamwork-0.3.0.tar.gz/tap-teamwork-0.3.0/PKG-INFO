@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: tap-teamwork
+Version: 0.3.0
+Summary: Singer.io tap for Teamwork.com
+License: MIT
+Author: Stephen Bailey
+Author-email: stkbailey@gmail.com
+Requires-Python: >=3.8,<3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: singer-sdk (>=0.1.3,<0.2.0)
