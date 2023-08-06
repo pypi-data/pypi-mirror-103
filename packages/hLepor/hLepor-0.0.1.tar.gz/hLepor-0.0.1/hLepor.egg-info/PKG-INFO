@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: hLepor
+Version: 0.0.1
+Summary: This is Python port of original algorithm by Hang Lifeng
+Home-page: https://github.com/logrusglobal/hLepor-python-port
+Author: Irina Sorokina, Gleb Erofeev, Serge Gladkoff
+Author-email: rd@logrusglobal.com
+License: Apache Software License
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Description: Library to calculate hLEPOR score (harmonic mean of enhanced Length Penalty, Precision, n-gram Position difference Penalty and Recall) has been created as port from Perl on materials of the following atricle by Aaron Li-Feng Han, Derek F. Wong, Lidia S. Chao, Liangye He Yi Lu, Junwen Xing, and Xiaodong Zeng. 2013. ["Language-independent Model for Machine Translation Evaluation with Reinforced Factors"](https://www.researchgate.net/profile/Aaron-L-F-Han/publication/256460090_MT_SUMMIT13Language-independent_Model_for_Machine_Translation_Evaluation_with_Reinforced_Factors/links/00463522d48942210c000000/MT-SUMMIT13Language-independent-Model-for-Machine-Translation-Evaluation-with-Reinforced-Factors.pdf). In Proceedings of the XIV Machine Translation Summit.
+        
+        All hLepor score calculation functions take mandatory and optional parameters for input; mandatory parameters are: ```reference``` (ideal translation), ```hypothesis``` - new translation which has to be compared with reference.
+        
+        Optional parameters are: 
+        
+        - ```preprocess``` is a function to preprocess strings, default is ```str.lower()```. 
+        
+        - ```separate_punctuation``` allows different tokenization options: by default standard ```word_tokenize()``` function from ```nltk.tokenize``` is used, for this option you can specify the language (default is English), if  ```separate_punctuation = False```, sentence is tikenized by spaces.
+        
+        Other optional parameters control hLepor algorithm:
+        - ```alpha``` and ```beta``` -- recall and  precision weights, respectively, to calculate weighted Harmonic mean of precision and recall;
+        - ```n``` -- number of words in vicinity of current word in N-gram word alignment algorithm;
+        - ```weight_elp, weight_pos, weight_pr``` -- weigths for enhanced length penalty, N-gram Position Difference Penalty and weighted Harmonic mean of precision and recall for   hLepor calculation.
+        
+        Main functions:
+        1. To calculate hLepor on one pair of sentences you need to pass these strings to single_hlepor_score function:
+        ```
+        reference = 'It is a guide to action that ensures that the military will forever heed Party commands'
+        hypothesis = 'It is a guide to action which ensures that the military always obeys the commands of the party'
+        hLepor_value = single_hlepor_score(reference, hypothesis)
+        round(hLepor_value, 4)
+        ```
+        The result if 0.7842.
+        
+        2. To calculate hLepor on a set of sentences they need to be passed to hLepor as a list of strings:
+        ```
+        reference = ['It is a guide to action that ensures that the military will forever heed Party commands',
+                     'It is the practical guide for the army always to heed the directions of the party']
+        hypothesis = ['It is a guide to action which ensures that the military always obeys the commands of the party',
+                      'It is to insure the troops forever hearing the activity guidebook that party direct']
+        hLepor_value = hlepor_score(reference, hypothesis)
+        round(hLepor_value, 4)
+        ```
+        This code will calculate hLepor on each pair of sentences and mean value will be calculated, the result should be 0.6214.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
