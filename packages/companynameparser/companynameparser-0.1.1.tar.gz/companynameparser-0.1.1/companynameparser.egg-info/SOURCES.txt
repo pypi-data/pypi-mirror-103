@@ -1,0 +1,16 @@
+README.md
+setup.py
+companynameparser/__init__.py
+companynameparser/__main__.py
+companynameparser/logger.py
+companynameparser/parser.py
+companynameparser/place.py
+companynameparser/tokenizer.py
+companynameparser.egg-info/PKG-INFO
+companynameparser.egg-info/SOURCES.txt
+companynameparser.egg-info/dependency_links.txt
+companynameparser.egg-info/requires.txt
+companynameparser.egg-info/top_level.txt
+companynameparser/../LICENSE
+companynameparser/../README.md
+companynameparser/../requirements.txt
