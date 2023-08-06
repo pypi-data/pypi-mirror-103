@@ -1,0 +1,12 @@
+README.md
+setup.py
+vaccine_feed_ingest_schema/__init__.py
+vaccine_feed_ingest_schema/common.py
+vaccine_feed_ingest_schema/load.py
+vaccine_feed_ingest_schema/location.py
+vaccine_feed_ingest_schema/schema.py
+vaccine_feed_ingest_schema.egg-info/PKG-INFO
+vaccine_feed_ingest_schema.egg-info/SOURCES.txt
+vaccine_feed_ingest_schema.egg-info/dependency_links.txt
+vaccine_feed_ingest_schema.egg-info/requires.txt
+vaccine_feed_ingest_schema.egg-info/top_level.txt
