@@ -1,0 +1,9 @@
+mutation {
+  CreateDefinedTermSet(
+additionalType: ["https://vocab.trompamusic.eu/vocab#TagCollection"]
+        creator: "https://trompamusic.eu/user/mozart"
+        name: "Bowing direction"
+) {
+identifier
+}
+}

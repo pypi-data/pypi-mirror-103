@@ -1,0 +1,8 @@
+mutation {
+  UpdateDefinedTerm(
+identifier: "07e8458f-7597-4a67-80bd-06035d01456f"
+        termCode: "down"
+) {
+identifier
+}
+}

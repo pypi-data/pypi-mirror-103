@@ -1,0 +1,11 @@
+mutation {
+  CreateRating(
+creator: "https://trompamusic.eu/user/beethoven"
+        ratingValue: 4
+        bestRating: 5
+        worstRating: 1
+        additionalType: "https://vocab.trompamusic.eu/vocab#PerformanceFeedback"
+) {
+identifier
+}
+}
