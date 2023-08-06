@@ -1,0 +1,3 @@
+[console_scripts]
+nbterm = nbterm.nbterm:cli
+
