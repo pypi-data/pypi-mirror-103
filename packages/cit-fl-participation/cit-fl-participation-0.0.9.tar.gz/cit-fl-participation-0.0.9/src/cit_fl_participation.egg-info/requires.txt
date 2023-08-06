@@ -1,0 +1,8 @@
+boto3
+grpcio
+idna
+numpy
+protobuf
+schema
+scipy
+toml
