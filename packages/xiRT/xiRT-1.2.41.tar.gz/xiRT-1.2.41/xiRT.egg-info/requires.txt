@@ -1,0 +1,13 @@
+numpy
+pandas
+tensorflow
+seaborn
+xlwt
+pyyaml
+pyteomics
+sklearn
+tqdm
+biopython
+palettable
+statannot
+tensorflow_addons
