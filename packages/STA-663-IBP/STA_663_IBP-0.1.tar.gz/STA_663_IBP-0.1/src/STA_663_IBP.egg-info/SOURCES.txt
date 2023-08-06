@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/IBP_Sampler_Package/IBP_Sampler.py
+src/IBP_Sampler_Package/__init__.py
+src/STA_663_IBP.egg-info/PKG-INFO
+src/STA_663_IBP.egg-info/SOURCES.txt
+src/STA_663_IBP.egg-info/dependency_links.txt
+src/STA_663_IBP.egg-info/top_level.txt
