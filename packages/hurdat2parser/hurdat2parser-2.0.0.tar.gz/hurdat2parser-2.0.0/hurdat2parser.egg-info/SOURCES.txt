@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+hurdat2parser/__init__.py
+hurdat2parser.egg-info/PKG-INFO
+hurdat2parser.egg-info/SOURCES.txt
+hurdat2parser.egg-info/dependency_links.txt
+hurdat2parser.egg-info/not-zip-safe
+hurdat2parser.egg-info/requires.txt
+hurdat2parser.egg-info/top_level.txt
