@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: jutest
+Version: 1.1.0
+Summary: Library for easy testing CSV data using Jupyter notebook
+Home-page: UNKNOWN
+Author: Alex Ermolaev
+Author-email: abionics.dev@gmail.com
+License: UNKNOWN
+Description: In development :)
+        
+Keywords: test jupyter csv data testing
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Markup
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown

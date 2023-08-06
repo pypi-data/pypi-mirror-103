@@ -1,0 +1,4 @@
+IPython
+pandas
+Jinja2
+ahocorapy
