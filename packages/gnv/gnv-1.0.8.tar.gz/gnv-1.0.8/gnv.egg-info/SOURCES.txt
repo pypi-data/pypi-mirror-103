@@ -1,0 +1,15 @@
+CHANGELOG.txt
+LICENSE.txt
+README.md
+requirements.txt
+setup.py
+gnv/__init__.py
+gnv/cli.py
+gnv.egg-info/PKG-INFO
+gnv.egg-info/SOURCES.txt
+gnv.egg-info/dependency_links.txt
+gnv.egg-info/entry_points.txt
+gnv.egg-info/requires.txt
+gnv.egg-info/top_level.txt
+gnv/commands/__init__.py
+gnv/commands/cmd_git.py
