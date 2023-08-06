@@ -1,0 +1,73 @@
+{% extends "django_sql_dashboard/base.html" %}
+{% load django_sql_dashboard %}
+
+{% block title %}{{ html_title }}{% endblock %}
+
+{% block content %}
+<h1>{{ title }}</h1>
+{% if saved_dashboard %}
+  <p>{{ description }}</p>
+{% endif %}
+
+{% if unverified_sql_queries %}
+  <div style="background-color: pink; padding: 0.5em 1em 1em 1em; border: 2px solid red; margin-bottom: 1em">
+    <h2 style="margin-top: 0.5em">Unverified SQL</h2>
+    <p>The link you followed here included SQL that was missing its verification signatures.</p>
+    <p>If this link was provided to you by an untrusted source, they may be trying to trick you into executing queries that you do not want to execute.</p>
+    <p>Review these queries and copy and paste them once you have confirmed them:</p>
+    {% for query in unverified_sql_queries %}
+      <p><textarea>{{ query }}</textarea></p>
+    {% endfor %}
+  </div>
+{% endif %}
+<form action="" method="{% if saved_dashboard %}GET{% else %}POST{% endif %}">
+  {% if not saved_dashboard %}{% csrf_token %}{% endif %}
+  {% if parameter_values %}
+    <h3>Query parameters</h3>
+    <div class="query-parameters">
+    {% for name, value in parameter_values %}
+        <label for="qp{{ forloop.counter }}">{{ name }}</label>
+        <input type="text" id="qp{{ forloop.counter }}" name="{{ name }}" value="{{ value }}">
+    {% endfor %}
+    </div>
+    <input
+      class="btn"
+      type="submit"
+      value="Run quer{% if query_results|length > 1 %}ies{% else %}y{% endif %}"
+    />
+  {% endif %}
+  {% for result in query_results %}
+    {% include result.templates with result=result %}
+  {% endfor %}
+  {% if not saved_dashboard %}
+    <p>Add another query:</p>
+
+    <textarea
+      style="
+        width: 60%;
+        height: 10em;
+        border: 2px solid #666;
+        padding: 0.5em;
+      "
+      name="sql"
+    ></textarea>
+
+    <p>
+      <input
+        class="btn"
+        type="submit"
+        value="Run quer{% if query_results|length > 1 %}ies{% else %}y{% endif %}"
+      />
+    </p>
+  {% endif %}
+</form>
+
+{% if not saved_dashboard %}
+  <h2>Available tables</h2>
+  <ul style="column-count: 2">
+    {% for table in available_tables %}
+      <li><a href="?sql={% filter sign_sql|urlencode %}select count(*) from {{ table }}{% endfilter %}&sql={% filter sign_sql|urlencode %}select * from {{ table }}{% endfilter %}">{{ table }}</a></li>
+    {% endfor %}
+{% endif %}
+
+{% endblock %}
