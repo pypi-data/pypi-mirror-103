@@ -1,0 +1,10 @@
+balsam_flow
+matplotlib
+spglib
+networkx
+ase
+scipy
+numpy
+PyYAML
+Sella
+sphinx
