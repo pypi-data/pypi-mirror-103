@@ -1,0 +1,7 @@
+README.md
+setup.py
+sanjay_cs253_demo_pip.egg-info/PKG-INFO
+sanjay_cs253_demo_pip.egg-info/SOURCES.txt
+sanjay_cs253_demo_pip.egg-info/dependency_links.txt
+sanjay_cs253_demo_pip.egg-info/requires.txt
+sanjay_cs253_demo_pip.egg-info/top_level.txt
