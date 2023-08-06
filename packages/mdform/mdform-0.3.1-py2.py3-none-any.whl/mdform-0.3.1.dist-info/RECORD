@@ -1,0 +1,14 @@
+mdform/__init__.py,sha256=WJOYR5oKYlyGqD206Ax_PnPaQSlpTSSZjLyzMqIqDS0,656
+mdform/extension.py,sha256=7DfAUFhIVcH8a6wu2UW6URiyy6b-GB6BQbyxYDRIemo,4386
+mdform/fields.py,sha256=P7YYBBsiSjSV83A9aDLkPKpVWNcXPvFXV1dQEkwZ4us,9776
+mdform/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mdform/test/test_extension.py,sha256=VkAbxEAQLUcbnvfD7vfVpiwQ8Ifdf89UwX2MY64tzaM,1867
+mdform/test/test_fields.py,sha256=cz62dQj0ibzbuoUcHXXo9s42fbjdYXcBsDeE8RadQ9w,5989
+mdform-0.3.1.dist-info/AUTHORS,sha256=F6wektrgQc2H3g7VxHTe8VfIbXPzX8oZ3PFJ6Aoa1pQ,81
+mdform-0.3.1.dist-info/LICENSE,sha256=RuQ_tGP-Lg4osyyQC7vbbzdpWd85NuHBNFZoYKVbIRI,1584
+mdform-0.3.1.dist-info/METADATA,sha256=VRCHkpqfFCY4M85TMPI8l1_mKfqLkYOZJyUZNponmpU,8583
+mdform-0.3.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+mdform-0.3.1.dist-info/entry_points.txt,sha256=PoL5lhOmoM1T2VR0OccNKy3ilQQJOCEuiczqjSg-DKQ,51
+mdform-0.3.1.dist-info/top_level.txt,sha256=rmGWlazf3xRRbygy6lWgw1IqX2OOds8VCk6oHZC8XY4,7
+mdform-0.3.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+mdform-0.3.1.dist-info/RECORD,,
