@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: django-doma
+Version: 0.2.1
+Summary: Simple Document Management for Django
+Home-page: https://github.com/olf42/django-doma
+License: GPL-3.0
+Author: Florian Rämisch
+Author-email: olf@subsignal.org
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Django (>=3.2,<4.0)
+Requires-Dist: Pillow (>=8.2.0,<9.0.0)
+Requires-Dist: freezegun (>=1.1.0,<2.0.0)
+Requires-Dist: pdf2image (>=1.14.0,<2.0.0)
+Project-URL: Repository, https://github.com/olf42/django-doma
+Description-Content-Type: text/markdown
+
+# doma
+
+**doma** is a simple document managment app for django.
+It provides the necessary models and view and is ready to be included into your project.
+
+Detailed documentation is in the "docs" directory.
+
+## Installation
+
+Install `django-doma` using pip:
+
+```zsh
+$ pip install django-doma
+```
+
+## Quick start
+
+1. Add "doma" to your INSTALLED_APPS setting like this::
+
+```python
+INSTALLED_APPS = [
+    ...
+    "doma",
+]
+```
+
+2. Include the polls URLconf in your project urls.py like this::
+
+    path('doma/', include('doma.urls')),
+
+3. Run ``python manage.py migrate`` to create the doma models.
+
+4. Visit http://127.0.0.1:8000/doma/ to start accounting.
+
