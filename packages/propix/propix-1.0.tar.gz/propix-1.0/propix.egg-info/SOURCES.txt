@@ -1,0 +1,8 @@
+README.md
+setup.py
+propix/__init__.py
+propix/propix.py
+propix.egg-info/PKG-INFO
+propix.egg-info/SOURCES.txt
+propix.egg-info/dependency_links.txt
+propix.egg-info/top_level.txt
