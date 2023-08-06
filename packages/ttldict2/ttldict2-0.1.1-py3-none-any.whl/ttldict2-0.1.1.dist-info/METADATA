@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: ttldict2
+Version: 0.1.1
+Summary: Another dictionary with expiring keys.
+Home-page: https://github.com/Traktormaster/ttldict2
+Author: Nándor Mátravölgyi
+Author-email: nandor.matra@gmail.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Description-Content-Type: text/markdown
+
+# ttldict2
+Another dictionary with expiring keys.
+
+## Details
+There are quire a few expiring/ttl dictionary libraries available. This one might be a better choice for you if:  
+  - Only need support for Python 3.7+ or PyPy3
+  - Use it in a single/asyncio thread
+  - Work correctly regardless of system-clock adjustments
+
+The implementation is a wrapper around the builtin dict. As a design choice the methods that are not wrapped with
+TTL logic are accessible and can be used with caution.
+
+# Install & usage
+It is available on PyPI:
+
+```console
+$ python -m pip install ttldict2
+```
+
+```pycon
+>>> import time
+>>> import ttldict2
+>>> d = ttldict2.TTLDict(ttl_seconds=1.0)
+>>> d["a"] = 5
+>>> d.get("a")
+5
+>>> time.sleep(1.1)
+>>> d.get("a")
+None
+```
+
+
