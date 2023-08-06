@@ -1,0 +1,4 @@
+[
+  "test_agent.py::TestAgent::test_query",
+  "test_agent.py::TestConversation::test_query"
+]
