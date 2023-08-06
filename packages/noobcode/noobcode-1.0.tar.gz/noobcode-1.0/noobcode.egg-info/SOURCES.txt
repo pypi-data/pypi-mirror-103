@@ -1,0 +1,5 @@
+setup.py
+noobcode.egg-info/PKG-INFO
+noobcode.egg-info/SOURCES.txt
+noobcode.egg-info/dependency_links.txt
+noobcode.egg-info/top_level.txt
