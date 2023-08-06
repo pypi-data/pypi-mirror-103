@@ -1,0 +1,15 @@
+foursquare_swarm_ical/__init__.py,sha256=FNDvX9R3xK-PzLcxwHvoV4hllGG8dq3PHrCmqhS4n9w,211
+foursquare_swarm_ical/__main__.py,sha256=ocBM3RQZI4cWoOtt2xySj2ZMl8I7Iz3Ow10cKy-IqB4,52
+foursquare_swarm_ical/config_file.py,sha256=7WpAYruedI9v16KBfsJy-3BiRqTwcVrxorkRkuDZ3aQ,2579
+foursquare_swarm_ical/db.py,sha256=Dn3_sh9RCG73v7p9c1iglymiOUAoUaJOMy5lq1jDiXU,1306
+foursquare_swarm_ical/emoji.py,sha256=H06DPACYfxVbz_JwNhi9OXEIXK0_9Sbkll2sicAZZSA,2131
+foursquare_swarm_ical/emoji.yaml,sha256=yOG7s6KIJpM7iMxZCM1fTgZKNK9Sww1Dr8LDuPzZLK0,63578
+foursquare_swarm_ical/ical.py,sha256=LeZelLO1bOv2N9aar9utyaVqlgtHakYJPHkLnq_AHFY,1313
+foursquare_swarm_ical/main.py,sha256=EFYJaGnv5YUAFZQ3z2_2xAsYa9t5yjaHUsDP48HtZKM,1585
+foursquare_swarm_ical/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+foursquare_swarm_ical-1.0.0b6.dist-info/LICENSE,sha256=eg9zq-M3enHYfHlktzoLJfsPoCVyuniPuuF7EJC62_o,1074
+foursquare_swarm_ical-1.0.0b6.dist-info/METADATA,sha256=J5gkidpZR86Gdn8qZP6I8QNJnqxiNis9tK-6Elz6I8w,4287
+foursquare_swarm_ical-1.0.0b6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+foursquare_swarm_ical-1.0.0b6.dist-info/entry_points.txt,sha256=o_3F5wpjvTOJREYFKdky-OasyG968DRGFvjKDcO6BJk,75
+foursquare_swarm_ical-1.0.0b6.dist-info/top_level.txt,sha256=URymeh-5Abpve2EpuN-8oCO-yp6zV8ZGL0d_lih-5eM,22
+foursquare_swarm_ical-1.0.0b6.dist-info/RECORD,,
