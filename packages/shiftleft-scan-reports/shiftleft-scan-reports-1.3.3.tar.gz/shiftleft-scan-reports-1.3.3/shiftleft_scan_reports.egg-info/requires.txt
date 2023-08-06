@@ -1,0 +1,6 @@
+Jinja2
+markdown
+requests
+rich
+pyjwt
+joern2sarif
