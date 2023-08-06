@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/Vector/Vector2d.py
+src/Vector/Vector3d.py
+src/Vector/__init__.py
+src/vector_pkg_enderrayquaza.egg-info/PKG-INFO
+src/vector_pkg_enderrayquaza.egg-info/SOURCES.txt
+src/vector_pkg_enderrayquaza.egg-info/dependency_links.txt
+src/vector_pkg_enderrayquaza.egg-info/top_level.txt
