@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+secure_socket/__init__.py
+secure_socket.egg-info/PKG-INFO
+secure_socket.egg-info/SOURCES.txt
+secure_socket.egg-info/dependency_links.txt
+secure_socket.egg-info/requires.txt
+secure_socket.egg-info/top_level.txt
