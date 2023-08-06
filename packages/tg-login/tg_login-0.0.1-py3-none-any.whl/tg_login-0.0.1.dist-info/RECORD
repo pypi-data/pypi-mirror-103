@@ -1,0 +1,8 @@
+tg_login/__init__.py,sha256=WHizC8UzElmTH3641zjnMTLUHmP2rliWLTalgHU6vMA,75
+tg_login/cli.py,sha256=j_LkLWQiHiHsgnX1_8ApVEy8-nHMR_aide9LQjKCt2E,1078
+tg_login/login.py,sha256=_Jnz7wRcqkdJzo0UNWo8Vn2YXPTqpn9BLzUzH414YZo,1126
+tg_login-0.0.1.dist-info/entry_points.txt,sha256=9H6P15BZ53BLjnE-68C3iVoKzF3p2ZaaCG5NtWSlWSM,45
+tg_login-0.0.1.dist-info/LICENSE,sha256=MHJ4EXS3YdtMSurZLxfCNyX-B-YXJfmNTgQ-HsTnfkU,1066
+tg_login-0.0.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+tg_login-0.0.1.dist-info/METADATA,sha256=KkeIZ4IVBapcCZEVIWs3UKYyDhmEST83DLzF2su4d14,1638
+tg_login-0.0.1.dist-info/RECORD,,
