@@ -1,0 +1,10 @@
+glueather/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+glueather/__main__.py,sha256=CkbK70zvJkYIsRlYN7ZYn9sxR9-6Tu8jzab7YomeKog,8465
+glueather/ui_mainwindow.py,sha256=_f0Zaz0fHMUqZXrL6FxiDnS-tYOW4sJm4SJfBEAZ1LE,4446
+glueather/weathermanager.py,sha256=5mccwKBija9iCj9D3YEoFEiOLVtXF0KA6QD6nDXa-d4,6199
+glueather-1.1.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+glueather-1.1.0.dist-info/METADATA,sha256=Oo9NYB25sdyTsVI8nyshua_zsrsMHrZYb--KfAXeX9A,2462
+glueather-1.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+glueather-1.1.0.dist-info/entry_points.txt,sha256=i6JgLpdoX1J5ifp8qdObA8xS4klSFY5y2CXUp8dC3ZE,51
+glueather-1.1.0.dist-info/top_level.txt,sha256=kJrB9mbzOczTV3lqXOK1kYcSKjmWOY66NXu5Bs9zWb8,10
+glueather-1.1.0.dist-info/RECORD,,
