@@ -1,0 +1,11 @@
+beautifulsoup4
+requests
+python-dateutil
+
+[dev]
+lxml
+pytest
+
+[docs]
+sphinx
+recommonmark
