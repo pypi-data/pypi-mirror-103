@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+mypro.egg-info/PKG-INFO
+mypro.egg-info/SOURCES.txt
+mypro.egg-info/dependency_links.txt
+mypro.egg-info/top_level.txt
