@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: kolore
+Version: 0.1.10
+Summary: A small cli utility to convert krita palette files into png images
+Home-page: https://gitlab.com/AlvarBer/kolore
+License: MIT
+Keywords: colors,palette,krita,image
+Author: AlvarBer
+Author-email: git@alvarber.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Pillow (>=8.1.0,<9.0.0)
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Project-URL: Repository, https://gitlab.com/AlvarBer/kolore
+Description-Content-Type: text/markdown
+
+# Kolore
+
+A small cli utility to convert krita palette files into png images.
+
+## Install
+
+`pip install kolore`
+
+## Usage
+
+To create a palette, simply type
+
+`kolore palette.kpl`
+
+By default the file will be called `palette.png`, but you can specify another name as well
+
+`kolore palette.kpl --output result.png`
+
+You can also set the size of the generated image
+
+`kolore palette.kpl --output result.png --width 200 --height 100`
+
+Get general help with
+
+`kolore --help`
