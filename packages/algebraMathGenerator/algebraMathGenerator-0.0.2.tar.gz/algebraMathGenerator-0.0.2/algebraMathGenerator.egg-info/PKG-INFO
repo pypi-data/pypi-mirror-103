@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: algebraMathGenerator
+Version: 0.0.2
+Summary: An easy way to generate algebraic equations and even solve them
+Home-page: UNKNOWN
+Author: Megabrains
+Author-email: aadibhuskute@yahoo.com
+License: MIT
+Description: Algebra generator that can easily create algebra equations in the Ax + b = C format. It can also solve equations in Ax + b = C. Right now, only the operations, '-' and '+' are supported
+        
+        Change Log
+        ==========
+        
+        0.0.1 (04/23/2020)
+        -------------------
+        - First Release
+Keywords: algebra
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

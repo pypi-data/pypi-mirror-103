@@ -1,0 +1,9 @@
+CHANGELOG.txt
+MANIFEST.in
+README.txt
+setup.py
+algebraMathGenerator/__init__.py
+algebraMathGenerator.egg-info/PKG-INFO
+algebraMathGenerator.egg-info/SOURCES.txt
+algebraMathGenerator.egg-info/dependency_links.txt
+algebraMathGenerator.egg-info/top_level.txt
