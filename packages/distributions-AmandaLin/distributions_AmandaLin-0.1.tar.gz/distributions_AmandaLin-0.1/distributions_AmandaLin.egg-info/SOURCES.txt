@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+distributions_AmandaLin/Binomialdistribution.py
+distributions_AmandaLin/Gaussiandistribution.py
+distributions_AmandaLin/Generaldistribution.py
+distributions_AmandaLin/__init__.py
+distributions_AmandaLin.egg-info/PKG-INFO
+distributions_AmandaLin.egg-info/SOURCES.txt
+distributions_AmandaLin.egg-info/dependency_links.txt
+distributions_AmandaLin.egg-info/not-zip-safe
+distributions_AmandaLin.egg-info/top_level.txt
