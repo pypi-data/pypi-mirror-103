@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: ahead
+Version: 0.1.5
+Summary: Time series forecasting
+Home-page: UNKNOWN
+Author: Thierry Moudiki
+Author-email: thierry.moudiki@gmail.com
+License: BSD3 Clause Clear
+Description: A package for time series forecasting
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
