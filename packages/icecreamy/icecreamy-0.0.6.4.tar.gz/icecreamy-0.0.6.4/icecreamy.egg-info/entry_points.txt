@@ -1,0 +1,3 @@
+[console_scripts]
+make_project = ICECREAM.makeproject:make_project
+
