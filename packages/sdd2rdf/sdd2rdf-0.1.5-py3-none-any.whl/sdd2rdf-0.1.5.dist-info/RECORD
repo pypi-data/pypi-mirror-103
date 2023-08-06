@@ -1,0 +1,10 @@
+sdd2rdf/__init__.py,sha256=KK700Vpxpgpq-H2KZ2Ng1gd3NMNs2Qmkolzb9nOqiEY,303
+sdd2rdf/sdd2rdf.py,sha256=oOQmb-VU-7izJQQRW-Y2MzlLMFqMBT-l53JbXjRBy9M,116185
+sdd2rdf/sdd2setl.py,sha256=8SkGUqQDYIeNwqpgwK80xNDS0oiIeotQ4b_oHQM9NNI,9178
+sdd2rdf/templates/sdd_setl_template.jinja,sha256=GlVBGkZ6xiWS1VEsPzT_ZQyIQI7qYd-1a4gBoQavyWI,9285
+sdd2rdf-0.1.5.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+sdd2rdf-0.1.5.dist-info/METADATA,sha256=n-elbS9ru3MPomxn_LMeMiJD4-ynrS2jqbEWBmKduCs,786
+sdd2rdf-0.1.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sdd2rdf-0.1.5.dist-info/entry_points.txt,sha256=t4AWGBeZjC-vb3gShkZRyRj1lh8iLBEn2jLYWjBfOuM,52
+sdd2rdf-0.1.5.dist-info/top_level.txt,sha256=kGVOtcFe_aHgACndtPB8ptplgEVOp9XvVAtG8G-dG40,8
+sdd2rdf-0.1.5.dist-info/RECORD,,
