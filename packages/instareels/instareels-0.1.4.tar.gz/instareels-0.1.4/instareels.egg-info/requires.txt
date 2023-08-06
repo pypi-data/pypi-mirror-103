@@ -1,0 +1,6 @@
+requests-HTML
+requests
+wheel
+libxml2
+libxslt
+libiconv
