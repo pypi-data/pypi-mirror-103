@@ -1,0 +1,17 @@
+pymilvus_orm/__init__.py,sha256=79FT2Jvf9opbVJrPkYLbux4NuV-8VMVx6PuhZ2mGiaY,830
+pymilvus_orm/collection.py,sha256=oeqkevXkASUCEOrwY1ZwXtREpoTlqyAg0GfZ0_KPSKs,24413
+pymilvus_orm/connections.py,sha256=fM4euOyE75VKHq-YEz_Ftujfg9qTe8vxCZX0WVwip94,4235
+pymilvus_orm/constants.py,sha256=BN8OByi_UZxjcHPF-wKGGPMezP8XMAXo7wf4E49ToH4,629
+pymilvus_orm/default_config.py,sha256=7mmzsQTdjgNQZDVtljQoJEnF9R9jyY4qBBUXt6nkM6M,775
+pymilvus_orm/exceptions.py,sha256=UN0uATlKIBmntoDChyUtSYkFoGO5F_xwUOuXQapYg2U,2399
+pymilvus_orm/index.py,sha256=ht5ckYFU5VIdH6LU1irnLnxP7g3v-csgM_w2TaX-6hA,3101
+pymilvus_orm/partition.py,sha256=Qpbc6khUAuC0tHPcCXtZZMUqCd-pCAKgX748sQk3Hrw,6145
+pymilvus_orm/prepare.py,sha256=_k7xfHftOkMAbDz_drla9MT3oNpdgSZ_EHOTqAAzmD4,1305
+pymilvus_orm/schema.py,sha256=B_tbSZ4xTOE54Lbu1WGEkZet-a-1OwYAfw_JITioUy0,3560
+pymilvus_orm/search.py,sha256=Yd-NTTdxIHO35HbIyh9Sk1EXhH9lhmAcC4W0vhtOsEc,2442
+pymilvus_orm/types.py,sha256=hnV9pZ_c7LzTc2QcAZpoLnEgJg5EC0sXcqfkDINhA8I,839
+pymilvus_orm/utility.py,sha256=_A_p30WU9YO_lvlekt9pDXbdBglOV6jJamWCXENAqpQ,4437
+pymilvus_orm-0.0.1.dist-info/METADATA,sha256=sVCNmNrvaNdVpwCiCQhdJULoR_Jef-4-Zgec9nZE5Fc,1318
+pymilvus_orm-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pymilvus_orm-0.0.1.dist-info/top_level.txt,sha256=3AJDBDI9T3I4thlKgyMZsjRQhB_Zpe8wLrVacURRYLA,13
+pymilvus_orm-0.0.1.dist-info/RECORD,,
