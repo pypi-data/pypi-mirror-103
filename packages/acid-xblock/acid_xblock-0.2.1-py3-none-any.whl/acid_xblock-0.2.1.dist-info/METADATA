@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: acid-xblock
+Version: 0.2.1
+Summary: Acid XBlock Test
+Home-page: https://github.com/edx/acid-block
+Author: edX
+Author-email: oscm@edx.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: Mako
+Requires-Dist: XBlock
+Requires-Dist: lazy
+
+acid-block
+==========
+
+An XBlock for testing XBlock Runtimes
+
+
