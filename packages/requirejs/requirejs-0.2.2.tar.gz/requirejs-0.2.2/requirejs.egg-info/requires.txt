@@ -1,0 +1,6 @@
+
+[:platform_system == "Darwin"]
+py-mini-racer<0.6
+
+[:platform_system == "Linux"]
+py-mini-racer<0.6
