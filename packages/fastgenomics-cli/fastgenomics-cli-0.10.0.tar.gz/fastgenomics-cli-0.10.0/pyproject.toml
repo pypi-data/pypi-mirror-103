@@ -1,0 +1,21 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "fastgenomics_cli"
+dist-name = "fastgenomics-cli"
+author = "FASTGenomics"
+author-email = "team@fastgenomics.org"
+home-page = "https://beta.fastgenomics.org"
+description-file = "fastgenomics_cli.md"
+requires=[
+    "fastgenomics >= 3.1",
+    "requests >=2",
+    "tqdm >=4",
+    "update_checker >= 0.18"
+]
+
+[tool.flit.scripts]
+fg-upload = "fastgenomics_cli.fg_upload:main"
+fg-cli = "fastgenomics_cli.fg_cli:run"
