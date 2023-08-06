@@ -1,0 +1,570 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Degradation Correction &mdash; tsipy 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Sensor Fusion" href="fusion.html" />
+    <link rel="prev" title="Experiment ACRIM1 and HF" href="notebooks/exp_acrim1_hf.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> tsipy
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/demo_degradation.html">Degradation Correction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/demo_fusion.html">Sensor Fusion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/demo_localgp.html">Local GP and Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/demo_noise.html">Measurement Noise Estimation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Experiments</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/exp_spm.html">VIRGO SPM dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/exp_acrim1_hf.html">ACRIM1 and HF with LocalGP</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Package Reference</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Degradation Correction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#exposure">Exposure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#algorithms">Algorithms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#degradation-models">Degradation Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#signal-generator">Signal Generator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="fusion.html">Sensor Fusion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="utils.html">Utilities</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">tsipy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Degradation Correction</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/correction.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="module-tsipy.correction">
+<span id="degradation-correction"></span><h1><a class="toc-backref" href="#id5">Degradation Correction</a><a class="headerlink" href="#module-tsipy.correction" title="Permalink to this headline">¶</a></h1>
+<div class="contents topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#module-tsipy.correction" id="id5">Degradation Correction</a></p>
+<ul>
+<li><p><a class="reference internal" href="#exposure" id="id6">Exposure</a></p></li>
+<li><p><a class="reference internal" href="#algorithms" id="id7">Algorithms</a></p></li>
+<li><p><a class="reference internal" href="#degradation-models" id="id8">Degradation Models</a></p></li>
+<li><p><a class="reference internal" href="#signal-generator" id="id9">Signal Generator</a></p></li>
+<li><p><a class="reference internal" href="#references" id="id10">References</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="exposure">
+<h2><a class="toc-backref" href="#id6">Exposure</a><a class="headerlink" href="#exposure" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt>
+<code class="sig-prename descclassname"><span class="pre">tsipy.correction.</span></code><code class="sig-name descname"><span class="pre">compute_exposure</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'num_measurements'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_mean</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Computes exposure of a given signal.</p>
+<p>In literature, exposure is found under an alias exposure time.
+If <code class="docutils literal notranslate"><span class="pre">num_measurements</span></code> method is selected, then the exposure equals to the number
+of measurements up to time <code class="docutils literal notranslate"><span class="pre">t</span></code>.
+If <code class="docutils literal notranslate"><span class="pre">exposure_sum</span></code> method is selected, then the exposure equals to the cumulative
+sum of measurement values up to time <code class="docutils literal notranslate"><span class="pre">t</span></code>. Works only for measurements with
+positive values. <code class="docutils literal notranslate"><span class="pre">x_mean</span></code> normalizes values before cumulative sum.</p>
+<dl>
+<dt>Examples:</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">compute_exposure</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s2">&quot;num_measurements&quot;</span><span class="p">)</span>
+<span class="go">array([1., 1., 2., 3., 4.])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">compute_exposure</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s2">&quot;exposure_sum&quot;</span><span class="p">)</span>
+<span class="go">array([ 1.,  1.,  4.,  8., 13.])</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="algorithms">
+<h2><a class="toc-backref" href="#id7">Algorithms</a><a class="headerlink" href="#algorithms" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">tsipy.correction.</span></code><code class="sig-name descname"><span class="pre">History</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iteration</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ratio</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>History(iteration, a, b, ratio)A <code class="xref py py-class docutils literal notranslate"><span class="pre">namedtuple</span></code> representing step at aparticular step of degradation correction.</p>
+<dl class="py attribute">
+<dt>
+<code class="sig-name descname"><span class="pre">a</span></code></dt>
+<dd><p>Corrected signal <code class="docutils literal notranslate"><span class="pre">a</span></code> at <code class="docutils literal notranslate"><span class="pre">iteration</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt>
+<code class="sig-name descname"><span class="pre">b</span></code></dt>
+<dd><p>Corrected signal <code class="docutils literal notranslate"><span class="pre">b</span></code> at <code class="docutils literal notranslate"><span class="pre">iteration</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt>
+<code class="sig-name descname"><span class="pre">iteration</span></code></dt>
+<dd><p>Iteration of degradation correction algorithm.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt>
+<code class="sig-name descname"><span class="pre">ratio</span></code></dt>
+<dd><p>Ratio between <code class="docutils literal notranslate"><span class="pre">a</span></code> and ˙˙b˙˙ at iteration <code class="docutils literal notranslate"><span class="pre">iteration</span></code>.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt>
+<code class="sig-prename descclassname"><span class="pre">tsipy.correction.</span></code><code class="sig-name descname"><span class="pre">correct_both</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">t_m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a_m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">e_a_m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">e_b_m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1e-06</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_iter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Executes degradation correction algorithm <code class="docutils literal notranslate"><span class="pre">CorrectBoth</span></code>.</p>
+<p>The algorithm is described in <span id="id1">Kolar <em>et al.</em> [<a class="reference internal" href="#id4">1</a>]</span>.</p>
+<p>It is shown that corrected signals converge to the ground truth in the absence of
+measurement noise.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>Corrected signals <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code>, degradation model <code class="docutils literal notranslate"><span class="pre">d_c(.)</span></code> and correction
+history.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">DegradationModel</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">History</span></code>]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt>
+<code class="sig-prename descclassname"><span class="pre">tsipy.correction.</span></code><code class="sig-name descname"><span class="pre">correct_degradation</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">t_m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a_m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">e_a_m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">e_b_m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'correct_one'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1e-06</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_iter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Selects and executes a correction algorithm.</p>
+<p>This is a wrapper function for <code class="xref py py-func docutils literal notranslate"><span class="pre">correct_one()</span></code> and <code class="xref py py-func docutils literal notranslate"><span class="pre">correct_both()</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">DegradationModel</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">History</span></code>]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt>
+<code class="sig-prename descclassname"><span class="pre">tsipy.correction.</span></code><code class="sig-name descname"><span class="pre">correct_one</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">t_m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a_m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">e_a_m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">e_b_m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1e-06</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_iter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Executes degradation correction algorithm <code class="docutils literal notranslate"><span class="pre">CorrectOne</span></code>.</p>
+<p>The algorithm is described in <span id="id2">Kolar <em>et al.</em> [<a class="reference internal" href="#id4">1</a>]</span>.</p>
+<p>It is shown that corrected signals converge to the ground truth in the absence of
+measurement noise.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>Corrected signals <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code>, degradation model <code class="docutils literal notranslate"><span class="pre">d_c(.)</span></code> and correction
+history.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">DegradationModel</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">History</span></code>]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="degradation-models">
+<h2><a class="toc-backref" href="#id8">Degradation Models</a><a class="headerlink" href="#degradation-models" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">tsipy.correction.</span></code><code class="sig-name descname"><span class="pre">DegradationModel</span></code></dt>
+<dd><p>Abstract class for degradation model, that learns the degradation function.</p>
+<p>It must implement two methods <code class="xref py py-func docutils literal notranslate"><span class="pre">˙__call__()</span></code> for inference and <code class="xref py py-func docutils literal notranslate"><span class="pre">fit()</span></code> for
+training.</p>
+<p>For each degradation model, it must hold</p>
+<div class="math notranslate nohighlight">
+\[f(0, \theta) = 1.\]</div>
+<dl class="py method">
+<dt>
+<em class="property"><span class="pre">abstract</span> </em><code class="sig-name descname"><span class="pre">fit</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ratio</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Learns a mapping from exposure to signal ratio..</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname"><span class="pre">initial_fit</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_b</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Obtains an initial approximation for the model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">tsipy.correction.</span></code><code class="sig-name descname"><span class="pre">ExpLinModel</span></code></dt>
+<dd><p>Degradation model with prediction function in exponential form.</p>
+<p>Exact equation is:</p>
+<div class="math notranslate nohighlight">
+\[f(x, \theta) = 1 - e^{\theta_1 \cdot \theta_2} + \theta_3 \cdot x.\]</div>
+<dl class="py method">
+<dt>
+<code class="sig-name descname"><span class="pre">fit</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ratio</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Learns a mapping from exposure to signal ratio..</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname"><span class="pre">initial_fit</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_b</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Obtains an initial approximation for the model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">tsipy.correction.</span></code><code class="sig-name descname"><span class="pre">ExpModel</span></code></dt>
+<dd><p>Degradation model with prediction function in exponential form.</p>
+<p>Exact equation is:</p>
+<div class="math notranslate nohighlight">
+\[f(x, \theta) = 1 - e^{\theta_1 \cdot \theta_2}.\]</div>
+<dl class="py method">
+<dt>
+<code class="sig-name descname"><span class="pre">fit</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ratio</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Learns a mapping from exposure to signal ratio..</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname"><span class="pre">initial_fit</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_b</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Obtains an initial approximation for the model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">tsipy.correction.</span></code><code class="sig-name descname"><span class="pre">MRModel</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_max</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_min</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_of_bounds</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'clip'</span></span></em><span class="sig-paren">)</span></dt>
+<dd><dl class="py method">
+<dt>
+<code class="sig-name descname"><span class="pre">fit</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ratio</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Learns a mapping from exposure to signal ratio..</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">tsipy.correction.</span></code><code class="sig-name descname"><span class="pre">SmoothMRModel</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_max</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_min</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_of_bounds</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'clip'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_pts</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">999</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lam</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">solver</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'quadprog'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">convex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span></dt>
+<dd><dl class="py method">
+<dt>
+<code class="sig-name descname"><span class="pre">fit</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ratio</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Learns a mapping from exposure to signal ratio..</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt>
+<code class="sig-prename descclassname"><span class="pre">tsipy.correction.</span></code><code class="sig-name descname"><span class="pre">load_model</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Loads a degradation model given the model name.</p>
+<dl class="simple">
+<dt>Currently, the following models are implemented</dt><dd><ul class="simple">
+<li><p>exponential <code class="docutils literal notranslate"><span class="pre">exp</span></code>,</p></li>
+<li><p>exponential with linear term <code class="docutils literal notranslate"><span class="pre">explin</span></code>,</p></li>
+<li><p>monotonic regression <code class="docutils literal notranslate"><span class="pre">mr</span></code>, and</p></li>
+<li><p>smooth monotonic regression <code class="docutils literal notranslate"><span class="pre">smr</span></code>.</p></li>
+</ul>
+</dd>
+<dt>Args:</dt><dd><p>model: String abbreviation of the model name.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">DegradationModel</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="signal-generator">
+<h2><a class="toc-backref" href="#id9">Signal Generator</a><a class="headerlink" href="#signal-generator" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">tsipy.correction.</span></code><code class="sig-name descname"><span class="pre">SignalGenerator</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">length</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_center</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_degradation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_noise</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">downsampling_rates</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0.9,</span> <span class="pre">0.2)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise_stds</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0.025,</span> <span class="pre">0.015)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exposure_method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'num_measurements'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Class for generating sample signals.</p>
+<dl class="py method">
+<dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">data</span></code></dt>
+<dd><p>Two.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">DataFrame</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="references">
+<h2><a class="toc-backref" href="#id10">References</a><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<p id="id3"><dl class="citation">
+<dt class="label" id="id4"><span class="brackets">1</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>)</span></dt>
+<dd><p>Luka Kolar, Rok Šikonja, and Lenart Treven. Iterative correction of sensor degradation and a bayesian multi-sensor data fusion method. 2020. <a class="reference external" href="https://arxiv.org/abs/2009.03091">arXiv:2009.03091</a>.</p>
+</dd>
+</dl>
+</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="fusion.html" class="btn btn-neutral float-right" title="Sensor Fusion" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="notebooks/exp_acrim1_hf.html" class="btn btn-neutral float-left" title="Experiment ACRIM1 and HF" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Rok Šikonja.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,527 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Utilities &mdash; tsipy 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Sensor Fusion" href="fusion.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> tsipy
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/demo_degradation.html">Degradation Correction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/demo_fusion.html">Sensor Fusion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/demo_localgp.html">Local GP and Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/demo_noise.html">Measurement Noise Estimation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Experiments</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/exp_spm.html">VIRGO SPM dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/exp_acrim1_hf.html">ACRIM1 and HF with LocalGP</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Package Reference</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="correction.html">Degradation Correction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fusion.html">Sensor Fusion</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Utilities</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-tsipy.utils.data">Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-tsipy.utils.print">Print</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-tsipy.utils.plot">Plot</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">tsipy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Utilities</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/utils.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="utilities">
+<h1>Utilities<a class="headerlink" href="#utilities" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-tsipy.utils.data">
+<span id="data"></span><h2>Data<a class="headerlink" href="#module-tsipy.utils.data" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="tsipy.utils.data.closest_binary_search">
+<code class="sig-prename descclassname"><span class="pre">tsipy.utils.data.</span></code><code class="sig-name descname"><span class="pre">closest_binary_search</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">array</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tsipy.utils.data.closest_binary_search" title="Permalink to this definition">¶</a></dt>
+<dd><p>Finds and returns the index of the closest element to <code class="docutils literal notranslate"><span class="pre">value</span></code>.</p>
+<dl>
+<dt>Args:</dt><dd><p>array: Sorted 1D array.</p>
+<p>value: Value to be searched.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tsipy.utils.data.create_dir">
+<code class="sig-prename descclassname"><span class="pre">tsipy.utils.data.</span></code><code class="sig-name descname"><span class="pre">create_dir</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">results_dir_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dir_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'results'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tsipy.utils.data.create_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a directory with added timestamp of creation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tsipy.utils.data.denormalize">
+<code class="sig-prename descclassname"><span class="pre">tsipy.utils.data.</span></code><code class="sig-name descname"><span class="pre">denormalize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mean</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tsipy.utils.data.denormalize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Denormalize array in the first dimension as given by x = y * scale + mean.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tsipy.utils.data.downsample_signal">
+<code class="sig-prename descclassname"><span class="pre">tsipy.utils.data.</span></code><code class="sig-name descname"><span class="pre">downsample_signal</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tsipy.utils.data.downsample_signal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Downsamples a signal uniformly with a rate of <code class="docutils literal notranslate"><span class="pre">k</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tsipy.utils.data.downsampling_indices_by_max_points">
+<code class="sig-prename descclassname"><span class="pre">tsipy.utils.data.</span></code><code class="sig-name descname"><span class="pre">downsampling_indices_by_max_points</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_points</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100000</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tsipy.utils.data.downsampling_indices_by_max_points" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes indices of a uniformly downsampled signal of length <code class="docutils literal notranslate"><span class="pre">max_points</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tsipy.utils.data.get_time_output">
+<code class="sig-prename descclassname"><span class="pre">tsipy.utils.data.</span></code><code class="sig-name descname"><span class="pre">get_time_output</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">t_nns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_per_unit</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tsipy.utils.data.get_time_output" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a time array with n_per_unit` elements per unit.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tsipy.utils.data.get_window_indices">
+<code class="sig-prename descclassname"><span class="pre">tsipy.utils.data.</span></code><code class="sig-name descname"><span class="pre">get_window_indices</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_end</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tsipy.utils.data.get_window_indices" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtain the start and end indices in x that are in window [x_start, x_end].</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>x: Sorted 1-D array.
+x_start: Window start.
+x_end: Window end.</p>
+</dd>
+<dt>Returns: A tuple of a start and end index of x, such that</dt><dd><p>x_start &lt;= x[x_start_id:x_end_id + 1] &lt;= x_end.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tsipy.utils.data.is_integer">
+<code class="sig-prename descclassname"><span class="pre">tsipy.utils.data.</span></code><code class="sig-name descname"><span class="pre">is_integer</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tsipy.utils.data.is_integer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if the input has an integer type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tsipy.utils.data.is_sorted">
+<code class="sig-prename descclassname"><span class="pre">tsipy.utils.data.</span></code><code class="sig-name descname"><span class="pre">is_sorted</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">array</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tsipy.utils.data.is_sorted" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if array is sorted.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>array:  1-D array.</p>
+</dd>
+<dt>Returns:</dt><dd><p>True if array is sorted and False otherwise.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tsipy.utils.data.make_dir">
+<code class="sig-prename descclassname"><span class="pre">tsipy.utils.data.</span></code><code class="sig-name descname"><span class="pre">make_dir</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">directory</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tsipy.utils.data.make_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a directory if it does not exist.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tsipy.utils.data.nonclipped_indices">
+<code class="sig-prename descclassname"><span class="pre">tsipy.utils.data.</span></code><code class="sig-name descname"><span class="pre">nonclipped_indices</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tsipy.utils.data.nonclipped_indices" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return non-clipped indices that are close to array mean.</p>
+<dl class="simple">
+<dt>Non-clipped index i satisfies:</dt><dd><p>x_mean + n_std * x_std &gt;= x[i] &gt;= x_mean - n_std * x_std.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tsipy.utils.data.normalize">
+<code class="sig-prename descclassname"><span class="pre">tsipy.utils.data.</span></code><code class="sig-name descname"><span class="pre">normalize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mean</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tsipy.utils.data.normalize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Normalize array in the first dimension as given by y = (x - mean) / scale.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tsipy.utils.data.transform_time_to_unit">
+<code class="sig-prename descclassname"><span class="pre">tsipy.utils.data.</span></code><code class="sig-name descname"><span class="pre">transform_time_to_unit</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t_label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'year'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">datetime.datetime(1996,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">0,</span> <span class="pre">0)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tsipy.utils.data.transform_time_to_unit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transforms time unit to <cite>t_label</cite> starting at <cite>start</cite>.</p>
+<dl>
+<dt>Examples:</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">366</span><span class="p">,</span> <span class="mf">365.25</span> <span class="o">/</span> <span class="mi">4</span><span class="p">)</span>  <span class="c1"># Time in days</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">transform_time_to_unit</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>  <span class="c1"># Transformed to years</span>
+<span class="go">array([1996.  , 1996.25, 1996.5 , 1996.75, 1997.  ])</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-tsipy.utils.print">
+<span id="print"></span><h2>Print<a class="headerlink" href="#module-tsipy.utils.print" title="Permalink to this headline">¶</a></h2>
+<p>Pretty print utilities with indents, print blocks and colors.</p>
+<dl class="py function">
+<dt id="tsipy.utils.print.cformat">
+<code class="sig-prename descclassname"><span class="pre">tsipy.utils.print.</span></code><code class="sig-name descname"><span class="pre">cformat</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tsipy.utils.print.cformat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Colors the input string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tsipy.utils.print.pformat">
+<code class="sig-prename descclassname"><span class="pre">tsipy.utils.print.</span></code><code class="sig-name descname"><span class="pre">pformat</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tsipy.utils.print.pformat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pretty string formatting utility function into two columns.</p>
+<dl class="simple">
+<dt>It formats arguments passed in two columns:</dt><dd><ul class="simple">
+<li><p>keyword (left aligned),</p></li>
+<li><p>values (right aligned and separated by spaces).</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tsipy.utils.print.pprint">
+<code class="sig-prename descclassname"><span class="pre">tsipy.utils.print.</span></code><code class="sig-name descname"><span class="pre">pprint</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tsipy.utils.print.pprint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pretty print utility function of arguments into two columns.</p>
+<p>Formatting is described <a class="reference internal" href="#tsipy.utils.print.pformat" title="tsipy.utils.print.pformat"><code class="xref py py-func docutils literal notranslate"><span class="pre">pformat()</span></code></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tsipy.utils.print.pprint_block">
+<code class="sig-prename descclassname"><span class="pre">tsipy.utils.print.</span></code><code class="sig-name descname"><span class="pre">pprint_block</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tsipy.utils.print.pprint_block" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pretty print utility function for code sections.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-tsipy.utils.plot">
+<span id="plot"></span><h2>Plot<a class="headerlink" href="#module-tsipy.utils.plot" title="Permalink to this headline">¶</a></h2>
+<p>Plot utilities for visualizing signals, correction history and signals with
+confidence intervals.</p>
+<dl class="py function">
+<dt id="tsipy.utils.plot.plot_signals">
+<code class="sig-prename descclassname"><span class="pre">tsipy.utils.plot.</span></code><code class="sig-name descname"><span class="pre">plot_signals</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signal_fourplets</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">results_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tight_layout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tsipy.utils.plot.plot_signals" title="Permalink to this definition">¶</a></dt>
+<dd><p>Helper function for plotting signals.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Figure</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Axes</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tsipy.utils.plot.plot_signals_and_confidence">
+<code class="sig-prename descclassname"><span class="pre">tsipy.utils.plot.</span></code><code class="sig-name descname"><span class="pre">plot_signals_and_confidence</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signal_fourplets</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">results_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">confidence</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.95</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tight_layout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tsipy.utils.plot.plot_signals_and_confidence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Helper function for plotting signal mean and confidence interval.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Figure</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Axes</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tsipy.utils.plot.plot_signals_history">
+<code class="sig-prename descclassname"><span class="pre">tsipy.utils.plot.</span></code><code class="sig-name descname"><span class="pre">plot_signals_history</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">signals_history</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">results_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_rows</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_cols</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fig_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(12,</span> <span class="pre">6)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tight_layout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tsipy.utils.plot.plot_signals_history" title="Permalink to this definition">¶</a></dt>
+<dd><p>Helper function for plotting degradation correction history.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Figure</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Axes</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="fusion.html" class="btn btn-neutral float-left" title="Sensor Fusion" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Rok Šikonja.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: tsipy
+Version: 1.0.2
+Summary: Python package for processing TSI signals.
+Home-page: https://github.com/roksikonja/tsipy
+Author: Rok Šikonja
+Author-email: sikonjarok@gmail.com
+License: MIT
+Project-URL: Source, https://github.com/roksikonja/tsipy
+Project-URL: Documentation, https://tsipy.readthedocs.io/en/latest/
+Description: <a href='https://tsipy.readthedocs.io/en/latest/?badge=latest'>
+            <img src='https://readthedocs.org/projects/tsipy/badge/?version=latest' alt='Documentation Status' />
+        </a>
+        <a href='https://github.com/roksikonja/tsipy/actions/workflows/ci.yml'>
+            <img src='https://github.com/roksikonja/tsipy/actions/workflows/ci.yml/badge.svg' alt='CI status' />
+        </a>
+        
+        # TSIPY
+        
+        Python package for processing TSI signals.
+        
+        Full documentation is available [online](https://tsipy.readthedocs.io/).
+        
+        ## Installation
+        
+            # from pypi
+            pip install tsipy
+        
+            # install from source
+            git clone https://github.com/roksikonja/tsipy.git
+            python -m pip install --upgrade pip
+            pip install -e .
+        
+        ## Usage
+        
+        Demos can be found in ```./scripts```.
+        
+            python ./scripts/exp_virgo.py
+            python ./scripts/exp_fusion.py
+        
+        ## References
+        
+        References can be found in ```./references```.
+        
+Keywords: degradation correction,data fusion,scientific computing
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7, <3.9
+Description-Content-Type: text/markdown

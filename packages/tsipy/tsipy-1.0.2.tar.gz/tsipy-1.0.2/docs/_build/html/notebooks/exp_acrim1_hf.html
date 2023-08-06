@@ -1,0 +1,1024 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Experiment ACRIM1 and HF &mdash; tsipy 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Degradation Correction" href="../correction.html" />
+    <link rel="prev" title="VIRGO SPM dataset" href="exp_spm.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> tsipy
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="demo_degradation.html">Degradation Correction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="demo_fusion.html">Sensor Fusion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="demo_localgp.html">Local GP and Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="demo_noise.html">Measurement Noise Estimation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Experiments</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="exp_spm.html">VIRGO SPM dataset</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">ACRIM1 and HF with LocalGP</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#Parameters">Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Helpers">Helpers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Load-dataset">Load dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Data-Fusion">Data Fusion</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Kernel-and-Fusion-Model">Kernel and Fusion Model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Training-and-Inference">Training and Inference</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#Results">Results</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Training">Training</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Package Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../correction.html">Degradation Correction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fusion.html">Sensor Fusion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../utils.html">Utilities</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">tsipy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Experiment ACRIM1 and HF</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/notebooks/exp_acrim1_hf.nblink.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS for nbsphinx extension */
+
+/* remove conflicting styling from Sphinx themes */
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
+}
+
+/* avoid gaps between output lines */
+div.nboutput.container div[class*=highlight] pre {
+    line-height: normal;
+}
+
+/* input/output containers */
+div.nbinput.container,
+div.nboutput.container {
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+}
+@media (max-width: 540px) {
+    div.nbinput.container,
+    div.nboutput.container {
+        flex-direction: column;
+    }
+}
+
+/* input container */
+div.nbinput.container {
+    padding-top: 5px;
+}
+
+/* last container */
+div.nblast.container {
+    padding-bottom: 5px;
+}
+
+/* input prompt */
+div.nbinput.container div.prompt pre {
+    color: #307FC1;
+}
+
+/* output prompt */
+div.nboutput.container div.prompt pre {
+    color: #BF5B3D;
+}
+
+/* all prompts */
+div.nbinput.container div.prompt,
+div.nboutput.container div.prompt {
+    width: 4.5ex;
+    padding-top: 5px;
+    position: relative;
+    user-select: none;
+}
+
+div.nbinput.container div.prompt > div,
+div.nboutput.container div.prompt > div {
+    position: absolute;
+    right: 0;
+    margin-right: 0.3ex;
+}
+
+@media (max-width: 540px) {
+    div.nbinput.container div.prompt,
+    div.nboutput.container div.prompt {
+        width: unset;
+        text-align: left;
+        padding: 0.4em;
+    }
+    div.nboutput.container div.prompt.empty {
+        padding: 0;
+    }
+
+    div.nbinput.container div.prompt > div,
+    div.nboutput.container div.prompt > div {
+        position: unset;
+    }
+}
+
+/* disable scrollbars on prompts */
+div.nbinput.container div.prompt pre,
+div.nboutput.container div.prompt pre {
+    overflow: hidden;
+}
+
+/* input/output area */
+div.nbinput.container div.input_area,
+div.nboutput.container div.output_area {
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: auto;
+}
+@media (max-width: 540px) {
+    div.nbinput.container div.input_area,
+    div.nboutput.container div.output_area {
+        width: 100%;
+    }
+}
+
+/* input area */
+div.nbinput.container div.input_area {
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    /*background: #f5f5f5;*/
+}
+
+/* override MathJax center alignment in output cells */
+div.nboutput.container div[class*=MathJax] {
+    text-align: left !important;
+}
+
+/* override sphinx.ext.imgmath center alignment in output cells */
+div.nboutput.container div.math p {
+    text-align: left;
+}
+
+/* standard error */
+div.nboutput.container div.output_area.stderr {
+    background: #fdd;
+}
+
+/* ANSI colors */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-default-inverse-fg { color: #FFFFFF; }
+.ansi-default-inverse-bg { background-color: #000000; }
+
+.ansi-bold { font-weight: bold; }
+.ansi-underline { text-decoration: underline; }
+
+
+div.nbinput.container div.input_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight].math,
+div.nboutput.container div.output_area.rendered_html,
+div.nboutput.container div.output_area > div.output_javascript,
+div.nboutput.container div.output_area:not(.rendered_html) > img{
+    padding: 5px;
+    margin: 0;
+}
+
+/* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
+div.nbinput.container div.input_area > div[class^='highlight'],
+div.nboutput.container div.output_area > div[class^='highlight']{
+    overflow-y: hidden;
+}
+
+/* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
+.prompt a.copybtn {
+    display: none;
+}
+
+/* Some additional styling taken form the Jupyter notebook CSS */
+div.rendered_html table {
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: black;
+  font-size: 12px;
+  table-layout: fixed;
+}
+div.rendered_html thead {
+  border-bottom: 1px solid black;
+  vertical-align: bottom;
+}
+div.rendered_html tr,
+div.rendered_html th,
+div.rendered_html td {
+  text-align: right;
+  vertical-align: middle;
+  padding: 0.5em 0.5em;
+  line-height: normal;
+  white-space: normal;
+  max-width: none;
+  border: none;
+}
+div.rendered_html th {
+  font-weight: bold;
+}
+div.rendered_html tbody tr:nth-child(odd) {
+  background: #f5f5f5;
+}
+div.rendered_html tbody tr:hover {
+  background: rgba(66, 165, 245, 0.2);
+}
+
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="Experiment-ACRIM1-and-HF">
+<h1>Experiment ACRIM1 and HF<a class="headerlink" href="#Experiment-ACRIM1-and-HF" title="Permalink to this headline">¶</a></h1>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">datetime</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="kn">import</span> <span class="nn">gpflow</span> <span class="k">as</span> <span class="nn">gpf</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
+
+<span class="kn">from</span> <span class="nn">tsipy.fusion</span> <span class="kn">import</span> <span class="n">LocalGPModel</span><span class="p">,</span> <span class="n">SVGPModel</span>
+<span class="kn">from</span> <span class="nn">tsipy.fusion.kernels</span> <span class="kn">import</span> <span class="n">MultiWhiteKernel</span>
+<span class="kn">from</span> <span class="nn">tsipy.fusion.utils</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">build_and_concat_label_mask</span><span class="p">,</span>
+    <span class="n">build_and_concat_label_mask_output</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">from</span> <span class="nn">tsipy.utils</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">plot_signals</span><span class="p">,</span>
+    <span class="n">plot_signals_and_confidence</span><span class="p">,</span>
+    <span class="n">pprint</span><span class="p">,</span>
+    <span class="n">sort_inputs</span><span class="p">,</span>
+    <span class="n">transform_time_to_unit</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="Parameters">
+<h2>Parameters<a class="headerlink" href="#Parameters" title="Permalink to this headline">¶</a></h2>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Widths in years</span>
+<span class="n">pred_window_width</span> <span class="o">=</span> <span class="mf">1.5</span>
+<span class="n">fit_window_width</span> <span class="o">=</span> <span class="mf">4.5</span>
+
+<span class="n">normalization</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">clipping</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="n">num_inducing_pts</span> <span class="o">=</span> <span class="mi">500</span>
+<span class="n">max_iter</span> <span class="o">=</span> <span class="mi">5000</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="Helpers">
+<h2>Helpers<a class="headerlink" href="#Helpers" title="Permalink to this headline">¶</a></h2>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="k">def</span> <span class="nf">load_dataset</span><span class="p">(</span><span class="n">dataset_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">:</span>
+    <span class="n">data_</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;../data&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">dataset_name</span><span class="si">}</span><span class="s2">.txt&quot;</span><span class="p">),</span>
+        <span class="n">delimiter</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">,</span>
+        <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="n">data_</span> <span class="o">=</span> <span class="n">data_</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span>
+        <span class="n">columns</span><span class="o">=</span><span class="p">{</span>
+            <span class="mi">0</span><span class="p">:</span> <span class="s2">&quot;t&quot;</span><span class="p">,</span>
+            <span class="mi">1</span><span class="p">:</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span>
+            <span class="mi">2</span><span class="p">:</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span>
+        <span class="p">}</span>
+    <span class="p">)</span>
+
+    <span class="n">data_</span><span class="p">[</span><span class="s2">&quot;t_org&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_</span><span class="p">[</span><span class="s2">&quot;t&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">data_</span><span class="p">[</span><span class="s2">&quot;t&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">transform_time_to_unit</span><span class="p">(</span>
+        <span class="n">data_</span><span class="p">[</span><span class="s2">&quot;t&quot;</span><span class="p">]</span> <span class="o">-</span> <span class="n">data_</span><span class="p">[</span><span class="s2">&quot;t&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span>
+        <span class="n">t_label</span><span class="o">=</span><span class="s2">&quot;year&quot;</span><span class="p">,</span>
+        <span class="n">start</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">1980</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+    <span class="p">)</span>
+
+    <span class="n">result_</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;../data&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">dataset_name</span><span class="si">}</span><span class="s2">_results.txt&quot;</span><span class="p">),</span>
+        <span class="n">delimiter</span><span class="o">=</span><span class="s2">&quot;,&quot;</span><span class="p">,</span>
+        <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="n">result_</span> <span class="o">=</span> <span class="n">result_</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span>
+        <span class="n">columns</span><span class="o">=</span><span class="p">{</span>
+            <span class="mi">0</span><span class="p">:</span> <span class="s2">&quot;t_org&quot;</span><span class="p">,</span>
+            <span class="mi">1</span><span class="p">:</span> <span class="s2">&quot;t&quot;</span><span class="p">,</span>
+            <span class="mi">2</span><span class="p">:</span> <span class="s2">&quot;s_out_mean&quot;</span><span class="p">,</span>
+            <span class="mi">3</span><span class="p">:</span> <span class="s2">&quot;s_out_std&quot;</span><span class="p">,</span>
+        <span class="p">}</span>
+    <span class="p">)</span>
+    <span class="k">return</span> <span class="n">data_</span><span class="p">,</span> <span class="n">result_</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="Load-dataset">
+<h2>Load dataset<a class="headerlink" href="#Load-dataset" title="Permalink to this headline">¶</a></h2>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">data</span><span class="p">,</span> <span class="n">result</span> <span class="o">=</span> <span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;acrim1_hf&quot;</span><span class="p">)</span>
+<span class="n">t_a</span> <span class="o">=</span> <span class="n">t_b</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;t&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;b&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+
+<span class="n">res_t</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="s2">&quot;t&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+<span class="n">res_s_mean</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="s2">&quot;s_out_mean&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+<span class="n">res_s_std</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="s2">&quot;s_out_std&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+
+<span class="n">pprint</span><span class="p">(</span><span class="s2">&quot;Input Signal&quot;</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">pprint</span><span class="p">(</span><span class="s2">&quot;- t_a&quot;</span><span class="p">,</span> <span class="n">t_a</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">pprint</span><span class="p">(</span><span class="s2">&quot;- a&quot;</span><span class="p">,</span> <span class="n">a</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">pprint</span><span class="p">(</span><span class="s2">&quot;Input Signal&quot;</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">pprint</span><span class="p">(</span><span class="s2">&quot;- t_b&quot;</span><span class="p">,</span> <span class="n">t_b</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">pprint</span><span class="p">(</span><span class="s2">&quot;- b&quot;</span><span class="p">,</span> <span class="n">b</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">pprint</span><span class="p">(</span><span class="s2">&quot;Result Signal&quot;</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">pprint</span><span class="p">(</span><span class="s2">&quot;- res_t&quot;</span><span class="p">,</span> <span class="n">t_b</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">pprint</span><span class="p">(</span><span class="s2">&quot;- res_s_mean&quot;</span><span class="p">,</span> <span class="n">res_s_mean</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">pprint</span><span class="p">(</span><span class="s2">&quot;- res_s_std&quot;</span><span class="p">,</span> <span class="n">res_s_std</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">_</span> <span class="o">=</span> <span class="n">plot_signals</span><span class="p">(</span>
+    <span class="p">[</span>
+        <span class="p">(</span><span class="n">t_a</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;$a$&quot;</span><span class="p">,</span> <span class="p">{}),</span>
+        <span class="p">(</span><span class="n">t_b</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;$b$&quot;</span><span class="p">,</span> <span class="p">{}),</span>
+    <span class="p">],</span>
+    <span class="n">x_ticker</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">_</span> <span class="o">=</span> <span class="n">plot_signals_and_confidence</span><span class="p">(</span>
+    <span class="p">[(</span><span class="n">res_t</span><span class="p">,</span> <span class="n">res_s_mean</span><span class="p">,</span> <span class="n">res_s_std</span><span class="p">,</span> <span class="s2">&quot;SVGP&quot;</span><span class="p">)],</span> <span class="n">x_ticker</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Input Signal
+    - t_a                                         (3436,)
+    - a                                           (3436,)
+Input Signal
+    - t_b                                         (3436,)
+    - b                                           (3436,)
+Result Signal
+    - res_t                                       (3436,)
+    - res_s_mean                                  (3436,)
+    - res_s_std                                   (3436,)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_exp_acrim1_hf_7_1.png" src="../_images/notebooks_exp_acrim1_hf_7_1.png" />
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_exp_acrim1_hf_7_2.png" src="../_images/notebooks_exp_acrim1_hf_7_2.png" />
+</div>
+</div>
+</div>
+<div class="section" id="Data-Fusion">
+<h2>Data Fusion<a class="headerlink" href="#Data-Fusion" title="Permalink to this headline">¶</a></h2>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">t_a</span> <span class="o">=</span> <span class="n">build_and_concat_label_mask</span><span class="p">(</span><span class="n">t_a</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">t_b</span> <span class="o">=</span> <span class="n">build_and_concat_label_mask</span><span class="p">(</span><span class="n">t_b</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">t_out</span> <span class="o">=</span> <span class="n">build_and_concat_label_mask_output</span><span class="p">(</span><span class="n">t_a</span><span class="p">)</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">((</span><span class="n">t_a</span><span class="p">,</span> <span class="n">t_b</span><span class="p">))</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">((</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)),</span> <span class="n">newshape</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+<span class="n">t</span><span class="p">,</span> <span class="n">s</span> <span class="o">=</span> <span class="n">sort_inputs</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">sort_axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="n">pprint</span><span class="p">(</span><span class="s2">&quot;Training data&quot;</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">pprint</span><span class="p">(</span><span class="s2">&quot;- t&quot;</span><span class="p">,</span> <span class="n">t</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">pprint</span><span class="p">(</span><span class="s2">&quot;- s&quot;</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Training data
+    - t                                           (6872, 2)
+    - s                                           (6872, 1)
+</pre></div></div>
+</div>
+<div class="section" id="Kernel-and-Fusion-Model">
+<h3>Kernel and Fusion Model<a class="headerlink" href="#Kernel-and-Fusion-Model" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Kernel</span>
+<span class="n">matern_kernel</span> <span class="o">=</span> <span class="n">gpf</span><span class="o">.</span><span class="n">kernels</span><span class="o">.</span><span class="n">Matern12</span><span class="p">(</span><span class="n">active_dims</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">white_kernel</span> <span class="o">=</span> <span class="n">MultiWhiteKernel</span><span class="p">(</span><span class="n">labels</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">active_dims</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># Sensors 1 and 2</span>
+<span class="n">kernel</span> <span class="o">=</span> <span class="n">matern_kernel</span> <span class="o">+</span> <span class="n">white_kernel</span>
+
+<span class="c1"># Fusion and local model</span>
+<span class="n">local_model</span> <span class="o">=</span> <span class="n">SVGPModel</span><span class="p">(</span>
+    <span class="n">kernel</span><span class="o">=</span><span class="n">kernel</span><span class="p">,</span>
+    <span class="n">num_inducing_pts</span><span class="o">=</span><span class="n">num_inducing_pts</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">fusion_model</span> <span class="o">=</span> <span class="n">LocalGPModel</span><span class="p">(</span>
+    <span class="n">model</span><span class="o">=</span><span class="n">local_model</span><span class="p">,</span>
+    <span class="n">pred_window_width</span><span class="o">=</span><span class="n">pred_window_width</span><span class="p">,</span>
+    <span class="n">fit_window_width</span><span class="o">=</span><span class="n">fit_window_width</span><span class="p">,</span>
+    <span class="n">normalization</span><span class="o">=</span><span class="n">normalization</span><span class="p">,</span>
+    <span class="n">clipping</span><span class="o">=</span><span class="n">clipping</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="Training-and-Inference">
+<h3>Training and Inference<a class="headerlink" href="#Training-and-Inference" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Train</span>
+<span class="n">fusion_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="n">max_iter</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Predict</span>
+<span class="n">s_out_mean</span><span class="p">,</span> <span class="n">s_out_std</span> <span class="o">=</span> <span class="n">fusion_model</span><span class="p">(</span><span class="n">t_out</span><span class="p">)</span>
+
+<span class="n">pprint</span><span class="p">(</span><span class="s2">&quot;Output Signal&quot;</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">pprint</span><span class="p">(</span><span class="s2">&quot;- t_out&quot;</span><span class="p">,</span> <span class="n">t_out</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">pprint</span><span class="p">(</span><span class="s2">&quot;- s_out_mean&quot;</span><span class="p">,</span> <span class="n">s_out_mean</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">pprint</span><span class="p">(</span><span class="s2">&quot;- s_out_std&quot;</span><span class="p">,</span> <span class="n">s_out_std</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Window
+    - Prediction:                                 -inf, 1981.500
+    - Training:                                   1980.000, 1983.000
+    - Data indices:                               0,     2192
+    - x, y:                                       (2193, 2), (2193, 1)
+    - n_ind_pts/time_unit                         111.333
+    - Step      1/5000:                           -4695.529
+    - Step   1000/5000:                           -2869.061
+    - Step   2000/5000:                           -2308.389
+    - Step   3000/5000:                           -2498.535
+    - Step   4000/5000:                           -2055.930
+    - Step   5000/5000:                           -2198.182
+Window
+    - Prediction:                                 1981.500, 1983.000
+    - Training:                                   1980.000, 1984.500
+    - Data indices:                               0,     3289
+    - x, y:                                       (3290, 2), (3290, 1)
+    - n_ind_pts/time_unit                         111.111
+    - Step      1/5000:                           -7810.377
+    - Step   1000/5000:                           -4188.844
+    - Step   2000/5000:                           -3571.496
+    - Step   3000/5000:                           -3294.711
+    - Step   4000/5000:                           -2971.427
+    - Step   5000/5000:                           -3180.513
+Window
+    - Prediction:                                 1983.000, 1984.500
+    - Training:                                   1981.500, 1986.000
+    - Data indices:                               1096,     4383
+    - x, y:                                       (3288, 2), (3288, 1)
+    - n_ind_pts/time_unit                         111.111
+    - Step      1/5000:                           -7800.074
+    - Step   1000/5000:                           -3799.285
+    - Step   2000/5000:                           -3598.185
+    - Step   3000/5000:                           -3274.213
+    - Step   4000/5000:                           -2655.067
+    - Step   5000/5000:                           -3012.281
+Window
+    - Prediction:                                 1984.500, 1986.000
+    - Training:                                   1983.000, 1987.500
+    - Data indices:                               2192,     5478
+    - x, y:                                       (3287, 2), (3287, 1)
+    - n_ind_pts/time_unit                         111.111
+    - Step      1/5000:                           -7321.062
+    - Step   1000/5000:                           -4113.775
+    - Step   2000/5000:                           -3388.062
+    - Step   3000/5000:                           -3210.353
+    - Step   4000/5000:                           -3376.418
+    - Step   5000/5000:                           -3240.131
+Window
+    - Prediction:                                 1986.000, 1987.500
+    - Training:                                   1984.500, 1989.000
+    - Data indices:                               3289,     6574
+    - x, y:                                       (3286, 2), (3286, 1)
+    - n_ind_pts/time_unit                         111.111
+    - Step      1/5000:                           -7255.371
+    - Step   1000/5000:                           -3321.593
+    - Step   2000/5000:                           -3651.196
+    - Step   3000/5000:                           -3488.856
+    - Step   4000/5000:                           -3051.031
+    - Step   5000/5000:                           -2572.454
+Window
+    - Prediction:                                 1987.500, 1989.000
+    - Training:                                   1986.000, 1989.405
+    - Data indices:                               4383,     6871
+    - x, y:                                       (2489, 2), (2489, 1)
+    - n_ind_pts/time_unit                         111.323
+    - Step      1/5000:                           -5862.596
+    - Step   1000/5000:                           -2799.543
+    - Step   2000/5000:                           -2457.265
+    - Step   3000/5000:                           -2400.312
+    - Step   4000/5000:                           -2183.402
+    - Step   5000/5000:                           -1719.989
+Window
+    - Prediction:                                 1989.000,      inf
+    - Training:                                   1987.500, 1989.405
+    - Data indices:                               5478,     6871
+    - x, y:                                       (1394, 2), (1394, 1)
+    - n_ind_pts/time_unit                         111.314
+    - Step      1/5000:                           -3240.337
+    - Step   1000/5000:                           -1679.898
+    - Step   2000/5000:                           -1411.971
+    - Step   3000/5000:                           -1210.601
+    - Step   4000/5000:                           -1278.131
+    - Step   5000/5000:                           -1116.003
+Output Signal
+    - t_out                                       (3436, 3)
+    - s_out_mean                                  (3436,)
+    - s_out_std                                   (3436,)
+</pre></div></div>
+</div>
+</div>
+</div>
+<div class="section" id="Results">
+<h2>Results<a class="headerlink" href="#Results" title="Permalink to this headline">¶</a></h2>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plot_signals_and_confidence</span><span class="p">(</span>
+    <span class="p">[(</span><span class="n">t_out</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">s_out_mean</span><span class="p">,</span> <span class="n">s_out_std</span><span class="p">,</span> <span class="s2">&quot;LocalGP&quot;</span><span class="p">)],</span> <span class="n">x_ticker</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">t_a</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span>
+    <span class="n">a</span><span class="p">,</span>
+    <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;$a$&quot;</span><span class="p">,</span>
+    <span class="n">s</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">t_b</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span>
+    <span class="n">b</span><span class="p">,</span>
+    <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;$b$&quot;</span><span class="p">,</span>
+    <span class="n">s</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&lt;matplotlib.collections.PathCollection at 0x1dffed32e50&gt;
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_exp_acrim1_hf_15_1.png" src="../_images/notebooks_exp_acrim1_hf_15_1.png" />
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">_</span> <span class="o">=</span> <span class="n">plot_signals_and_confidence</span><span class="p">(</span>
+    <span class="p">[(</span><span class="n">t_out</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">s_out_mean</span><span class="p">,</span> <span class="n">s_out_std</span><span class="p">,</span> <span class="s2">&quot;LocalGP&quot;</span><span class="p">)],</span> <span class="n">x_ticker</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">_</span> <span class="o">=</span> <span class="n">plot_signals_and_confidence</span><span class="p">(</span>
+    <span class="p">[(</span><span class="n">res_t</span><span class="p">,</span> <span class="n">res_s_mean</span><span class="p">,</span> <span class="n">res_s_std</span><span class="p">,</span> <span class="s2">&quot;SVGP&quot;</span><span class="p">)],</span> <span class="n">x_ticker</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_exp_acrim1_hf_16_0.png" src="../_images/notebooks_exp_acrim1_hf_16_0.png" />
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_exp_acrim1_hf_16_1.png" src="../_images/notebooks_exp_acrim1_hf_16_1.png" />
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">_</span> <span class="o">=</span> <span class="n">plot_signals_and_confidence</span><span class="p">(</span>
+    <span class="p">[</span>
+        <span class="p">(</span><span class="n">res_t</span><span class="p">,</span> <span class="n">res_s_mean</span><span class="p">,</span> <span class="n">res_s_std</span><span class="p">,</span> <span class="s2">&quot;SVGP&quot;</span><span class="p">),</span>
+        <span class="p">(</span><span class="n">t_out</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">s_out_mean</span><span class="p">,</span> <span class="n">s_out_std</span><span class="p">,</span> <span class="s2">&quot;LocalGP&quot;</span><span class="p">),</span>
+    <span class="p">],</span>
+    <span class="n">legend</span><span class="o">=</span><span class="s2">&quot;lower left&quot;</span><span class="p">,</span>
+    <span class="n">x_ticker</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_exp_acrim1_hf_17_0.png" src="../_images/notebooks_exp_acrim1_hf_17_0.png" />
+</div>
+</div>
+<div class="section" id="Training">
+<h3>Training<a class="headerlink" href="#Training" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">window</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">fusion_model</span><span class="o">.</span><span class="n">windows</span><span class="p">):</span>
+    <span class="n">elbo</span> <span class="o">=</span> <span class="n">window</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">iter_elbo</span>
+    <span class="n">plot_signals</span><span class="p">([(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">elbo</span><span class="o">.</span><span class="n">size</span><span class="p">),</span> <span class="n">elbo</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;ELBO&quot;</span><span class="p">,</span> <span class="p">{})])</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_exp_acrim1_hf_19_0.png" src="../_images/notebooks_exp_acrim1_hf_19_0.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_exp_acrim1_hf_19_1.png" src="../_images/notebooks_exp_acrim1_hf_19_1.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_exp_acrim1_hf_19_2.png" src="../_images/notebooks_exp_acrim1_hf_19_2.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_exp_acrim1_hf_19_3.png" src="../_images/notebooks_exp_acrim1_hf_19_3.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_exp_acrim1_hf_19_4.png" src="../_images/notebooks_exp_acrim1_hf_19_4.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_exp_acrim1_hf_19_5.png" src="../_images/notebooks_exp_acrim1_hf_19_5.png" />
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_exp_acrim1_hf_19_6.png" src="../_images/notebooks_exp_acrim1_hf_19_6.png" />
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../correction.html" class="btn btn-neutral float-right" title="Degradation Correction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="exp_spm.html" class="btn btn-neutral float-left" title="VIRGO SPM dataset" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Rok Šikonja.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
