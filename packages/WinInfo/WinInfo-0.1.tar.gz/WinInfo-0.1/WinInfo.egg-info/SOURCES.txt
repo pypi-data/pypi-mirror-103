@@ -1,0 +1,11 @@
+setup.py
+WinInfo/__init__.py
+WinInfo/antianalysis.py
+WinInfo/hardware.py
+WinInfo/networking.py
+WinInfo/system.py
+WinInfo.egg-info/PKG-INFO
+WinInfo.egg-info/SOURCES.txt
+WinInfo.egg-info/dependency_links.txt
+WinInfo.egg-info/requires.txt
+WinInfo.egg-info/top_level.txt
