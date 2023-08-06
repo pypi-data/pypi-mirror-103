@@ -1,0 +1,7 @@
+marshmallownumpypython-dateutilscipysix
+
+[dev]
+check-manifest
+
+[test]
+coverage
