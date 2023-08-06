@@ -1,0 +1,8 @@
+setup.py
+colorsname/__init__.py
+colorsname/_colorsname.py
+colorsname/color.json
+colorsname.egg-info/PKG-INFO
+colorsname.egg-info/SOURCES.txt
+colorsname.egg-info/dependency_links.txt
+colorsname.egg-info/top_level.txt
