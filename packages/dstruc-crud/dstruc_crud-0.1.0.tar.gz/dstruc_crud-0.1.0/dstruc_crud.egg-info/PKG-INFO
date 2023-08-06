@@ -1,0 +1,61 @@
+Metadata-Version: 1.2
+Name: dstruc-crud
+Version: 0.1.0
+Summary: This project illustrates how data structures work in Python3+ with a simple CRUD dash application.
+Home-page: https://github.com/joaoheron/dstruc_crud
+Author: Joao Heron
+Author-email: joao@mail.com
+License: Apache Software License 2.0
+Description: ===========
+        Dstruc Crud
+        ===========
+        
+        
+        .. image:: https://img.shields.io/pypi/v/dstruc_crud.svg
+                :target: https://pypi.python.org/pypi/dstruc_crud
+        
+        .. image:: https://img.shields.io/travis/joaoheron/dstruc_crud.svg
+                :target: https://travis-ci.com/joaoheron/dstruc_crud
+        
+        .. image:: https://readthedocs.org/projects/dstruc-crud/badge/?version=latest
+                :target: https://dstruc-crud.readthedocs.io/en/latest/?version=latest
+                :alt: Documentation Status
+        
+        
+        
+        
+        This project illustrates how data structures work in Python3+ with a simple CRUD dash application.
+        
+        
+        * Free software: Apache Software License 2.0
+        * Documentation: https://dstruc-crud.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        Credits
+        -------
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2021-04-25)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: dstruc_crud
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
