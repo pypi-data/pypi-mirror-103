@@ -1,0 +1,13 @@
+bildkedde/__init__.py,sha256=Z_cetXFeGMQlFNxy6F23rp0_vxb7EZ3DMoltEBsmyNI,113
+bildkedde/simple_sensor_model.py,sha256=ximv0mG4_JXPcPSQgdoZ2uWy56XzAUtm-NO7VMsH9bQ,2140
+bildkedde/version_info.py,sha256=qTNfKGffuZ8xBSFPG96FY4Ls5q_0uw54I8Lic9P1YqA,2042
+bildkedde/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bildkedde/core/link.py,sha256=Y57yFbcPBilZqKHE79SXYIcQUnJ37jJhLuYuGHV_WVM,3484
+bildkedde/core/render.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bildkedde/core/transform.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bildkedde/core/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bildkedde-0.0.1.dev0.dist-info/LICENSE,sha256=C4tL7EMGqZAbqfjWDPq_Agt9zgccSzoCuCR4NZ4-0bA,1070
+bildkedde-0.0.1.dev0.dist-info/METADATA,sha256=IyjOe8h0U2YMBUZxMtZVS_YHZH-CNUCa_oA5Rdtants,6102
+bildkedde-0.0.1.dev0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bildkedde-0.0.1.dev0.dist-info/top_level.txt,sha256=_NffzkJzpLEX36XNw78hbf3SGfeeXREOLPKek_DAz0s,10
+bildkedde-0.0.1.dev0.dist-info/RECORD,,
