@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: redicrypt-py
+Version: 0.3.0
+Summary: A python library for redicrypt
+License: MIT
+Author: Chayim Kirshen
+Author-email: c@kirshen.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: redis (>=3.5.3,<4.0.0)
