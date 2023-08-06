@@ -1,0 +1,12 @@
+strictyaml
+jinja2
+lxml
+pyyaml
+setuptools
+requests
+requests-kerberos
+
+[testing]
+pytest
+pytest-cov
+pytest-timeout
