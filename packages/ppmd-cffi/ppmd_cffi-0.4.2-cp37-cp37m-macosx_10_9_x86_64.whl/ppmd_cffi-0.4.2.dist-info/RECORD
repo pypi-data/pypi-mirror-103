@@ -1,0 +1,11 @@
+_ppmd.abi3.so,sha256=3eq3LCY9SinquhZie7LzSB38O45zn1cz48Ms9Pz_RKY,82768
+ppmd/__init__.py,sha256=YkAoRTMltuyHeUyZY5357QBH5XBKUwQy5PZZAXkY_NY,15674
+ppmd/__init__.pyi,sha256=fewnN4uSviigG2xxpDAnCbf09D1qefR_Ve50nF7_gSM,3502
+ppmd/__main__.py,sha256=5BjNuyet8AY-POwoF5rGt722rHQ7tJ0Vf0UFUfzzi-I,58
+ppmd/__main__.pyi,sha256=_72KAHJ9Npg2zFHEm4Vj-inOHwsQ6hH7Xco3uFRFcAw,27
+ppmd_cffi-0.4.2.dist-info/LICENSE,sha256=3GJlINzVOiL3J68-5Cx3DlbJemT-OtsGN5nYqwMv5VE,26530
+ppmd_cffi-0.4.2.dist-info/METADATA,sha256=EZ41eIeyC6M3sPIf59buw1uG_ftm-rLjeL1QCScRiYg,4236
+ppmd_cffi-0.4.2.dist-info/WHEEL,sha256=WVG6A_oY5zUoNXUyvfLMOSXC-hqC5VZacUL1MeSOz70,110
+ppmd_cffi-0.4.2.dist-info/entry_points.txt,sha256=znkduPaxkEpuz7yYyK55zcJrl9dJagEbnI7oB8e6wxo,36
+ppmd_cffi-0.4.2.dist-info/top_level.txt,sha256=Esf2Mw1HibWnwu2CovO23JRLCur9ZM00T4kR4naxNZ8,11
+ppmd_cffi-0.4.2.dist-info/RECORD,,
