@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: storage-service
+Version: 0.0.1
+Summary: Storage Service is a Django package that help to work with model.
+Home-page: https://git2.devebs.net/ebs-backend/python/packages/storage-service
+Author: Victor Elceaninov & Dorin Musteata
+Author-email: victor.elceaninov@ebs-integrator.org, dorin.musteata@ebs-integrator.org
+License: UNKNOWN
+Project-URL: Bug Tracker, https://git2.devebs.net/ebs-backend/python/packages/storage-service/-/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
+
