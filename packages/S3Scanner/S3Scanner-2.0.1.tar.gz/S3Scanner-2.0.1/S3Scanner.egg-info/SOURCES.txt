@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+S3Scanner/S3Bucket.py
+S3Scanner/S3Service.py
+S3Scanner/__init__.py
+S3Scanner/__main__.py
+S3Scanner/exceptions.py
+S3Scanner.egg-info/PKG-INFO
+S3Scanner.egg-info/SOURCES.txt
+S3Scanner.egg-info/dependency_links.txt
+S3Scanner.egg-info/entry_points.txt
+S3Scanner.egg-info/requires.txt
+S3Scanner.egg-info/top_level.txt

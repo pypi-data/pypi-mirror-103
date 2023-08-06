@@ -1,0 +1,3 @@
+[console_scripts]
+s3scanner = S3Scanner.__main__:main
+
