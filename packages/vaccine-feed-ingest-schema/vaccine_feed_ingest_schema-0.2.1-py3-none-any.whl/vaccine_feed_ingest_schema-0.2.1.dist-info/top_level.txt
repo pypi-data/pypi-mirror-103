@@ -1,0 +1,1 @@
+vaccine_feed_ingest_schema
