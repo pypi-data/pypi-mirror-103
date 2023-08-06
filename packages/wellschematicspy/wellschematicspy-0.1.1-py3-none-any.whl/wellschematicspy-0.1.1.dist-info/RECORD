@@ -1,0 +1,8 @@
+wellschematicspy/.gitignore,sha256=ThRxQeynTOIaM_EunyDVvRqd6yZO1wEPIk9BeX_-LyU,1999
+wellschematicspy/__init__.py,sha256=mrhD9oQJNVwMGDzvCfvTGt0A4braukx6Z0xsoI7y4e8,107
+wellschematicspy/models.py,sha256=zgizrJBjnVo0CIZW449LCio7a6Vz6eyFjZdt8nSD9yg,3074
+wellschematicspy/schematics.py,sha256=kKedKo5eS0k4RmVZIhb0s66s32nd5xmjzXDoU2jV72E,10617
+wellschematicspy-0.1.1.dist-info/LICENSE,sha256=mhBk7eO5wnMlxK6UgaZxlWUyaYKeRpmo4gdNDXD2I20,1059
+wellschematicspy-0.1.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+wellschematicspy-0.1.1.dist-info/METADATA,sha256=LTNynD7JFzCIkz3lWsNn_ShzbnDyCJKbNNK56Q9V2pA,584
+wellschematicspy-0.1.1.dist-info/RECORD,,
