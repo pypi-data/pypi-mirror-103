@@ -1,0 +1,13 @@
+[console_scripts]
+relipy.job = relion.cli.current_job:run
+relipy.show = relion.cli.pipeline_viewer:run
+
+[libtbx.precommit]
+relion = relion
+
+[workflows.services]
+RelionStopService = relion.zocalo.service:RelionStopService
+
+[zocalo.wrappers]
+relion = relion.zocalo.wrapper:RelionWrapper
+
