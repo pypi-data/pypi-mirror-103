@@ -1,0 +1,4 @@
+pyfiglet
+python-script-manager
+click
+PyInquirer
