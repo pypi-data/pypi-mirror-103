@@ -1,0 +1,15 @@
+dukeai/__init__.py,sha256=OC1H4koLjzrAhCdumKmKGiMH8bE3j7i49vqZRjOz8HU,147
+dukeai/config.py,sha256=GKw6-W-vn8IwaFV4CHNH8Ag3QW9hSZ3ifP5M-x7fY0s,679
+dukeai/auto/__init__.py,sha256=BG1SnJRByLJ4a__yALVK1X2joeNq1Q2b-YXgvrROqCY,51
+dukeai/auto/auto.py,sha256=QVLl0NKglW80sejdUNlRb9CPSuMIuNia3xkFCdrpWZU,2172
+dukeai/bookkeeping/__init__.py,sha256=9Xmd1Ah0agQ2IfneZOqJmh2fZ2zJI2HOa5yGWLCS2n4,37
+dukeai/bookkeeping/bookkeeping.py,sha256=peLjv-KMyzaYpJ-k4Lf0b7HWU5fZQ_8CqXHQ-CZ2CnE,10330
+dukeai/ocr/__init__.py,sha256=7NcncQA2ddJznFjQlD4h7b4tAht4PhsCfBVXdLEEsqY,26
+dukeai/ocr/ocr.py,sha256=XaYFcFd3MT6KlM4_aYPD_N8NhOmSXIs4qdq2IPRqagg,3133
+dukeai/rpa/__init__.py,sha256=UwHKdeLDnDqWJ2fxIllDh0gaa6ZIAHh9X7R_gZKA6RE,33
+dukeai/rpa/rpa.py,sha256=zeERMlgdW9tgv5hdspFEfyGNPfnaUDpIfUNUJV4gcGE,679
+dukeai-0.2.8.dist-info/LICENCE,sha256=kScMWrcXVA-kR1RhilQjaoDlrRevHUMr8NU1dqGtsqw,1072
+dukeai-0.2.8.dist-info/METADATA,sha256=HRpjQk1KExS2DRwt8iLhUMUsAXRp2JeHyIXj4IWGrdw,668
+dukeai-0.2.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dukeai-0.2.8.dist-info/top_level.txt,sha256=QWTB6d5oFDdIu_q4Kduv9mT6oNsnDlFN-DaaOkL-ZMY,7
+dukeai-0.2.8.dist-info/RECORD,,
