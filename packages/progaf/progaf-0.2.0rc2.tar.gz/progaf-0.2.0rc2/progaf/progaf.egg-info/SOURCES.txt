@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+progaf/progaf.egg-info/PKG-INFO
+progaf/progaf.egg-info/SOURCES.txt
+progaf/progaf.egg-info/dependency_links.txt
+progaf/progaf.egg-info/top_level.txt
