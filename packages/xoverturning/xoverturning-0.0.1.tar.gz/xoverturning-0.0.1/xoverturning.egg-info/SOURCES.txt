@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+xoverturning/__init__.py
+xoverturning/compfunc.py
+xoverturning/moc.py
+xoverturning.egg-info/PKG-INFO
+xoverturning.egg-info/SOURCES.txt
+xoverturning.egg-info/dependency_links.txt
+xoverturning.egg-info/not-zip-safe
+xoverturning.egg-info/requires.txt
+xoverturning.egg-info/top_level.txt
