@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "aw-client"
+version = "0.5.0"
+description = "Client library for ActivityWatch"
+authors = ["Erik Bjäreholt <erik@bjareho.lt>", "Johan Bjäreholt <johan@bjareho.lt>"]
+license = "MPL-2.0"
+readme = "README.md"
+homepage = "https://activitywatch.net/"
+repository = "https://github.com/ActivityWatch/aw-client/"
+documentation = "https://docs.activitywatch.net/"
+packages = [
+    { include = "aw_client" },
+]
+
+[tool.poetry.scripts]
+aw-client = "aw_client.cli:main"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+aw-core = "^0.5"
+requests = "^2.22.0"
+persist-queue = "^0.6.0"
+click = "^7.1.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.0"
+pytest-cov = "^2.8.1"
+mypy = "*"
+pylint = "^2.4.4"
+tabulate = "^0.8.7"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
