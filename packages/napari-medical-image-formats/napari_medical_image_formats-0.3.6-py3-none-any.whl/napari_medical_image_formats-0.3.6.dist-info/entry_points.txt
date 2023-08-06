@@ -1,0 +1,3 @@
+[napari.plugin]
+napari-medical-image-formats = napari_medical_image_formats
+
