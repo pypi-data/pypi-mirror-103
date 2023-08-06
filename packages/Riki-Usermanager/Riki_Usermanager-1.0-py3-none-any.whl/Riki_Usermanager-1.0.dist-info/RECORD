@@ -1,0 +1,11 @@
+riki_usermanager/User.py,sha256=dx9jb8qIS3OUb_AxtaDhDxEi8BxvOS7_einq0eDpJoM,3041
+riki_usermanager/UserManager.py,sha256=ghMDPNSLo_I-BZetqYCel_VJEWWv-qQ0OVr-gO4X_oE,6742
+riki_usermanager/__init__.py,sha256=amgyzwPSHWt-flTdGnuquC3Da-WtQMK3p1DIsFV0So4,76
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_user.py,sha256=KeHcm2jvD1Jk9vyzwKzYMnfIYMpY5DJhUAEDDHxHfEs,1161
+tests/test_user_manager.py,sha256=j4rlaoYPQfedk_LaygY74WqFsy4ld4yb3w74B5n1iBQ,2785
+Riki_Usermanager-1.0.dist-info/LICENSE,sha256=4YOmA_0iRj1xwkOUimpGN4OZ4B7BxJn5QujYXu1ADLk,486
+Riki_Usermanager-1.0.dist-info/METADATA,sha256=n5iRFlfZn8UeskTphhkJJQMuOX5fKE3s6wtVqvLqi5o,6122
+Riki_Usermanager-1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+Riki_Usermanager-1.0.dist-info/top_level.txt,sha256=WpWnKO2EGkMPlzGlBWNeskO8PHnuh0xlsKGSYiHWmEc,23
+Riki_Usermanager-1.0.dist-info/RECORD,,
