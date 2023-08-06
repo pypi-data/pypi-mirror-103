@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+asd_py/__init__.py
+asd_py/linear_fit.py
+asd_py/ml_fit.py
+asd_py/preprocess.py
+asd_py/spectral_index.py
+asd_py.egg-info/PKG-INFO
+asd_py.egg-info/SOURCES.txt
+asd_py.egg-info/dependency_links.txt
+asd_py.egg-info/not-zip-safe
+asd_py.egg-info/requires.txt
+asd_py.egg-info/top_level.txt

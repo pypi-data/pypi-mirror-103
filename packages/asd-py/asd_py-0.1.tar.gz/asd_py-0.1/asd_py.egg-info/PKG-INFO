@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: asd-py
+Version: 0.1
+Summary: site(canopy)/leaf hyperspectral proccessing program by python
+Home-page: https://github.com/justinG-29/asd_py
+Author: Justin Guo
+Author-email: guojianbiao2008@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Provides-Extra: read asd data
