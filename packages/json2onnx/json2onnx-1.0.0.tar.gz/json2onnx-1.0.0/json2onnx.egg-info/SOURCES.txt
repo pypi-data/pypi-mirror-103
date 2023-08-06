@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+json2onnx.egg-info/PKG-INFO
+json2onnx.egg-info/SOURCES.txt
+json2onnx.egg-info/dependency_links.txt
+json2onnx.egg-info/top_level.txt
+scripts/json2onnx
