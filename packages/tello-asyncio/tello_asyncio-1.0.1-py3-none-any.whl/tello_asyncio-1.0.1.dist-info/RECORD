@@ -1,0 +1,8 @@
+tello_asyncio/__init__.py,sha256=nOtPq2lWKdlyADWXikHcq7tHLi5J_3uwXklp8M6AwFM,24
+tello_asyncio/protocol.py,sha256=H3Du8b9qs2jyoj2OvUNxHCPMmwsaTKqv-dwmBVHeY9c,603
+tello_asyncio/tello.py,sha256=UtibCICHjEhsLHRf7S6wBJcWckyohfWYjT-EkzG4WmM,2350
+tello_asyncio-1.0.1.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+tello_asyncio-1.0.1.dist-info/METADATA,sha256=Okxhnr7-tHB69InjrHaqxc6sUQKeJpjyb6xXe60sFrk,1482
+tello_asyncio-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tello_asyncio-1.0.1.dist-info/top_level.txt,sha256=yBIMC_fE1c6YlBDs4mGTJGpHammMTGf44JlaBLsLkck,14
+tello_asyncio-1.0.1.dist-info/RECORD,,
