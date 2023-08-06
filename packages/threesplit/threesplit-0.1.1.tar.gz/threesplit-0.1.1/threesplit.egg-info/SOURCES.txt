@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+README.rst
+setup.py
+threesplit/__init__.py
+threesplit/threesplit.py
+threesplit.egg-info/PKG-INFO
+threesplit.egg-info/SOURCES.txt
+threesplit.egg-info/dependency_links.txt
+threesplit.egg-info/requires.txt
+threesplit.egg-info/top_level.txt
+threesplit.egg-info/zip-safe
