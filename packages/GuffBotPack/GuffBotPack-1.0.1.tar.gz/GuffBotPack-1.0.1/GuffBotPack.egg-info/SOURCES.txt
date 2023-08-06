@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+GuffBotPack/__init__.py
+GuffBotPack.egg-info/PKG-INFO
+GuffBotPack.egg-info/SOURCES.txt
+GuffBotPack.egg-info/dependency_links.txt
+GuffBotPack.egg-info/entry_points.txt
+GuffBotPack.egg-info/requires.txt
+GuffBotPack.egg-info/top_level.txt
