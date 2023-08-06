@@ -1,0 +1,7 @@
+tqdm
+transformers<5,>=4.4
+torch>=1.6.0
+numpy
+nltk
+sentencepiece
+fasttext
