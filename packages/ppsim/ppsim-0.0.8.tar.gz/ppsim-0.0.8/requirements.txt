@@ -1,0 +1,9 @@
+numpy
+cython
+setuptools
+ipywidgets
+matplotlib
+pandas
+seaborn
+natsort
+tqdm
