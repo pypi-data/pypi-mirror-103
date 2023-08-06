@@ -1,0 +1,4 @@
+[console_scripts]
+ert = ert_shared.main:main
+ert3 = ert3.console:main
+
