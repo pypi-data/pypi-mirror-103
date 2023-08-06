@@ -1,0 +1,16 @@
+README.md
+setup.py
+pycwatch/__init__.py
+pycwatch/errors.py
+pycwatch/resources.py
+pycwatch/rest.py
+pycwatch.egg-info/PKG-INFO
+pycwatch.egg-info/SOURCES.txt
+pycwatch.egg-info/dependency_links.txt
+pycwatch.egg-info/requires.txt
+pycwatch.egg-info/top_level.txt
+tests/__init__.py
+tests/conftest.py
+tests/test_api.py
+tests/test_http_client.py
+tests/test_resources.py

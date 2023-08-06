@@ -1,0 +1,7 @@
+requests
+
+[dev]
+pytest
+pytest-cov
+pytest-mock
+requests-mock
