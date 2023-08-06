@@ -1,0 +1,10 @@
+dbaas_base_provider/__init__.py,sha256=ng9FuOgHUgDmmENXenp12KPzALZ9wakA1BLfmyf3E9s,82
+dbaas_base_provider/base.py,sha256=EQ5nK1mEh3OoiYjxtlA7RePHWQYlE9Psl1gU_cf4CvM,421
+dbaas_base_provider/baseCredential.py,sha256=4ThSiI6pl9oWRvn2Ab_W5TbmFZ9dw0uWCIanQiq_kuQ,2120
+dbaas_base_provider/baseProvider.py,sha256=nyaKYqYm5tEBPexdsb1aIGaMFISiCcF6yoieyCYz0sU,4502
+dbaas_base_provider/version.py,sha256=P3HEkYrQY_hgsiUjRF3VD8nV-e_18eXM3t8rxd0ShxY,266
+dbaas_base_provider-0.0.5.dist-info/LICENSE,sha256=x1Pva3a34srnR6MyCjqDuSY8H-ly1QMzEDEPQ2XtALc,1510
+dbaas_base_provider-0.0.5.dist-info/METADATA,sha256=ftxOQzfvyfC5HkN5KpeElNWV6cQNnQB4LWGMxGT82Bs,738
+dbaas_base_provider-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dbaas_base_provider-0.0.5.dist-info/top_level.txt,sha256=LdsylAZr9uQhtrQZ1MgUeigrZ2sC5LahghQnslOPzQw,20
+dbaas_base_provider-0.0.5.dist-info/RECORD,,
