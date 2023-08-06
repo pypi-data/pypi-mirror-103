@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/frameworks/__init__.py
+src/frameworks/py4web/__init__.py
+src/frameworks/py4web/controller.py
+src/mptools.egg-info/PKG-INFO
+src/mptools.egg-info/SOURCES.txt
+src/mptools.egg-info/dependency_links.txt
+src/mptools.egg-info/entry_points.txt
+src/mptools.egg-info/requires.txt
+src/mptools.egg-info/top_level.txt
