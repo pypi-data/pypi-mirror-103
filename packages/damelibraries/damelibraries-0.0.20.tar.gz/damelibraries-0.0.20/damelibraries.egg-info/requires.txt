@@ -1,0 +1,9 @@
+damealgorithms
+dameformats
+damenltk
+damenumpy
+damepandas
+damescikit
+damescipy
+damescraping
+damewebutils
