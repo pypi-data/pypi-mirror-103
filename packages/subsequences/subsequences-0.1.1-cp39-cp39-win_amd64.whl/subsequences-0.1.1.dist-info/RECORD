@@ -1,0 +1,11 @@
+subsequences/__init__.py,sha256=2EDNadeSLSSxli-P-eVmkEaYJ316bftPJm5mb2aYJN0,128
+subsequences/subsequences.cp39-win_amd64.pyd,sha256=5wkSKaXAZxrP1JfeHrLtYps2YFDK8C421UkX9hHdWE4,183296
+subsequences/subsequences.pxd,sha256=f9AAzVXbi6HI5QslPaKWtGiC196bWKuLnVTDADU0qhM,171
+subsequences/subsequences.py,sha256=8dQ7u2JPkC5K6tBTcqGG4vqiOZYKgkmj2cmicTk0Eyk,568
+subsequences/substrings.cp39-win_amd64.pyd,sha256=JQ0XzwFBaR2cwGd-cr9YOsQMURWivoYp7IrvunQ1De4,183808
+subsequences/substrings.pxd,sha256=WLZqWAcJ2wbml0zfie38szFAnhq8nIwyxFY90_BlWEU,169
+subsequences/substrings.py,sha256=LX-UnOUsKVo_fsCDYzgVRZghcd25cNIVxI2Zq3nSsGE,636
+subsequences-0.1.1.dist-info/LICENSE,sha256=QNiSVl3pIeqYE4Ef72LLezO_GAQxG9k0ChHGZ7krG6E,1094
+subsequences-0.1.1.dist-info/WHEEL,sha256=KgpMi3rvhgaMPnt_N4vVzXE_Wd-C45K9wh46Eei_4q0,91
+subsequences-0.1.1.dist-info/METADATA,sha256=QkQCIL1l02HoXmGsj7f6oG7r5j15A1qwHtD_XZz0p0E,360
+subsequences-0.1.1.dist-info/RECORD,,
