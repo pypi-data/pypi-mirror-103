@@ -1,0 +1,44 @@
+Metadata-Version: 1.2
+Name: tutor-webui
+Version: 12.0.0
+Summary: webui plugin for Tutor
+Home-page: https://overhang.io/overhangio/tutor-webui
+Author: Overhang.IO
+License: AGPLv3
+Project-URL: Code, https://overhang.io/overhangio/tutor-webui
+Project-URL: Issue tracker, https://overhang.io/overhangio/tutor-webui/issues
+Description: webui plugin for `Tutor <https://docs.tutor.overhang.io>`__
+        ===================================================================================
+        
+        Installation
+        ------------
+        
+        ::
+        
+            pip install git+https://overhang.io/overhangio/tutor-webui
+        
+        Usage
+        -----
+        
+        ::
+        
+            tutor plugins enable webui
+        
+        
+        License
+        -------
+        
+        This software is licensed under the terms of the AGPLv3.
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.5
