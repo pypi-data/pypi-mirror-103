@@ -1,0 +1,7 @@
+setup.py
+gridtrades/__init__.py
+gridtrades/autotrades.py
+gridtrades.egg-info/PKG-INFO
+gridtrades.egg-info/SOURCES.txt
+gridtrades.egg-info/dependency_links.txt
+gridtrades.egg-info/top_level.txt
