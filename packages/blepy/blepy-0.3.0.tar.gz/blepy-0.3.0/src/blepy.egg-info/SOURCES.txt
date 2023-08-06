@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/blepy/__init__.py
+src/blepy/blepy.py
+src/blepy.egg-info/PKG-INFO
+src/blepy.egg-info/SOURCES.txt
+src/blepy.egg-info/dependency_links.txt
+src/blepy.egg-info/requires.txt
+src/blepy.egg-info/top_level.txt
