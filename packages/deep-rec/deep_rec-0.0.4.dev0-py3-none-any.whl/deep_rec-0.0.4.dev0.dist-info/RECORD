@@ -1,0 +1,13 @@
+deeprec/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deeprec/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deeprec/data/load_dataset.py,sha256=z4Hp_xG_9uzk4-b_0QgHPiUKEDoj_rJpZkYOMddLDzI,4451
+deeprec/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deeprec/models/deepfm.py,sha256=2FUfmWGemKCoYTkfPwNnCJn7RDQiOKL3AgbqkUC9jXU,1333
+deeprec/models/layers.py,sha256=zS0jJrYA-66Se_jK-Z7va1mLn9W0VmUUqHc6etTwMWY,3730
+deeprec/training/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deeprec/training/trainer.py,sha256=YUuG_8G5uqRliPxhhlBxsOrcLgETM8h_KEo_7KkGJRg,4029
+deep_rec-0.0.4.dev0.dist-info/LICENSE,sha256=FiKYZpqYCeVBeChyHtBecBXjUKaO6z6SvXiIrDzs8J4,1078
+deep_rec-0.0.4.dev0.dist-info/METADATA,sha256=f3Afx9c3Ql76IYYmMlJUnxLH2j46N5b1-9qS3HdhkVI,2166
+deep_rec-0.0.4.dev0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+deep_rec-0.0.4.dev0.dist-info/top_level.txt,sha256=1DT2wtB-K73rBRfOsn5tG-AZfksd96P1lQkq4n8QAs8,8
+deep_rec-0.0.4.dev0.dist-info/RECORD,,
