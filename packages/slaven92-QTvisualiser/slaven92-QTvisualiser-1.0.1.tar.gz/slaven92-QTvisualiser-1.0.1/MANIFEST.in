@@ -1,0 +1,3 @@
+include requirements.txt
+include QTvisualiser/form.ui
+include QTvisualiser/second_app.ui
