@@ -1,0 +1,11 @@
+setup.py
+src/digimat/__init__.py
+src/digimat.units.egg-info/PKG-INFO
+src/digimat.units.egg-info/SOURCES.txt
+src/digimat.units.egg-info/dependency_links.txt
+src/digimat.units.egg-info/namespace_packages.txt
+src/digimat.units.egg-info/not-zip-safe
+src/digimat.units.egg-info/requires.txt
+src/digimat.units.egg-info/top_level.txt
+src/digimat/units/__init__.py
+src/digimat/units/units.py
