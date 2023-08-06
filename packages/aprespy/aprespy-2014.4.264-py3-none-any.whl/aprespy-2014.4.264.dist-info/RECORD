@@ -1,0 +1,13 @@
+aprespy/__init__.py,sha256=u_Snuk6dFyUyWc10pigVqigfGAo9j4_raLBbJZFieDM,25
+aprespy/app.py,sha256=mmEoQh9puONl2zsGLGExpqW6ox02b3jmlGM_vZT_ZvI,20165
+aprespy/navigation_toolbar.py,sha256=KIIkuoC1eNI6Vcum9PAvogM6WR11Gq1g8TDLd6NIjAM,2787
+aprespy/img/add.png,sha256=pyumwFtOx90erZHivvNNDlWo-hQOGWmdAdQyC60S-cA,1723
+aprespy/img/default_axis.png,sha256=EryQjQ5hh2dwmIxtzCFiMN1U6Tnd11p1CDfgH5ZHjNM,380
+aprespy/img/diagonal.png,sha256=qKMD9cixAYWNSfQxQsS7latBURX4fdzLCpFfa8GNfyo,1054
+aprespy/img/guide.png,sha256=x1fX3Pp3Ipsxuyb2qMBunh_F2SEEd48zK9t98I53_4U,2387
+aprespy/input/__init__.py,sha256=ZaTrCS_WE8HWp5EHT7E6tZHYa5DNRowOSjlhynZP8X8,170
+aprespy/input/z.py,sha256=OfdOdwLgAnpSv-eclPgRYXnidTHeRCrpeVbimsfSTB0,18642
+aprespy-2014.4.264.dist-info/METADATA,sha256=oEitaLlu76iHFb9ce71W0C46EBMvvdR4okz1IedW0UI,1691
+aprespy-2014.4.264.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aprespy-2014.4.264.dist-info/top_level.txt,sha256=mp9Ij0L1ErK2EIpFoQ5Ua5Uj57CbtXLGbRCep6QMCg0,8
+aprespy-2014.4.264.dist-info/RECORD,,
