@@ -1,0 +1,11 @@
+eeprom/__init__.py,sha256=RG9TNqHonA0GhbQ2SYeZ0zu4vu1C5IwXuIrvxKbaMvo,256
+eeprom/cbor_eeprom.py,sha256=DBQsX7ZJx5mi1YvCWEEIXdYfdIHmmiWHdcdZnnhgEt4,5848
+eeprom/device_types.py,sha256=zM0pZsYoA1WXefcRvdtwqzo20jYhImXtpa6HPyiOwiU,404
+eeprom/eeprom.py,sha256=FgAC1kNWdTqo321y_q8Tt-ClQRcTXCm41_UDw3-G_yE,3882
+eeprom/util.py,sha256=w70c36rKxTpC2y5B4J6L-lCSS5N2bYX1GUquz4UDcqs,650
+eeprom-0.0.9.dist-info/LICENSE,sha256=HEviJxDK6H9wHZAkQHGX2nXxSoXZqkCso8ijEwouW0w,1084
+eeprom-0.0.9.dist-info/METADATA,sha256=raiddeGiKUkXLal2Q-Fh0U0e8McSRlNBv_KaZIQ0gjk,1264
+eeprom-0.0.9.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+eeprom-0.0.9.dist-info/entry_points.txt,sha256=yBao2ixmVyeCltA0VKVwrrxTUDwJjp6QjZm02iQG2uo,57
+eeprom-0.0.9.dist-info/top_level.txt,sha256=a39JQ0S5C3Lr2vuC2eyCVhZjjo8SSDetiutZ7tEqbMI,7
+eeprom-0.0.9.dist-info/RECORD,,
