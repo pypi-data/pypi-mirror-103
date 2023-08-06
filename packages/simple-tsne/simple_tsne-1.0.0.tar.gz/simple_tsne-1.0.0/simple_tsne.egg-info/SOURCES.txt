@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+simple_tsne/__init__.py
+simple_tsne/main.py
+simple_tsne.egg-info/PKG-INFO
+simple_tsne.egg-info/SOURCES.txt
+simple_tsne.egg-info/dependency_links.txt
+simple_tsne.egg-info/requires.txt
+simple_tsne.egg-info/top_level.txt
