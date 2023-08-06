@@ -1,0 +1,11 @@
+clingox/__init__.py,sha256=xMSWZXcehRaqs71cannNpaqLE868yLs2QfnYv4Hp4gc,112
+clingox/ast.py,sha256=UwZgIPJB3R7MeVRj7eI2C3k9I8cFFPdphpgiwCzby-o,22912
+clingox/backend.py,sha256=e0cpdvgr_zb9e0aUyW3BT0O3OkmMf8VfbbY45GmwcHg,9241
+clingox/program.py,sha256=cQqt5NNNxkYNNCElh7FYcEbd6qZGoLMjZCjjLsX69DM,27633
+clingox/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clingox/theory.py,sha256=Xu8tArinEClZ3U0ppg0kl-eg9D84KHg7f9VdgEbnwQI,6121
+clingox-1.0.0.dist-info/LICENSE,sha256=22Icm3tOgtmVoJ7sCyp0ohzuyc0OOCKgAN9AuCjOiv8,1065
+clingox-1.0.0.dist-info/METADATA,sha256=XLgNyMLyRGsegNPbi4LKp0_LPcHmWfhIQX0x94jdVl4,429
+clingox-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+clingox-1.0.0.dist-info/top_level.txt,sha256=kbZWLwcTQzYB5SVRBUgD1ALontaj_HX8TLxMZJZd9Do,8
+clingox-1.0.0.dist-info/RECORD,,
