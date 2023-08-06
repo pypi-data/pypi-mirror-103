@@ -1,0 +1,10 @@
+ERROR.txt
+LICENSE.md
+PACKAGE_NAME
+README.rst
+package_info.py
+setup.py
+tritonclient.egg-info/PKG-INFO
+tritonclient.egg-info/SOURCES.txt
+tritonclient.egg-info/dependency_links.txt
+tritonclient.egg-info/top_level.txt
