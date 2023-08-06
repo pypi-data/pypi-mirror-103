@@ -1,0 +1,6 @@
+pandas>=1.1.4
+numpy>=1.19.4
+scipy>=1.5.4
+matplotlib>=3.3.3
+networkx>=2.5
+PYPOWER>=5.1.5
