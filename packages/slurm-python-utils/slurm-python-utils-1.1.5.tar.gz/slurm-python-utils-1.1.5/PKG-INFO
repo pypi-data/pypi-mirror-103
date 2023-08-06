@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: slurm-python-utils
+Version: 1.1.5
+Summary: UNKNOWN
+Home-page: https://github.com/hroskes/slurm-python-utils
+Author: Heshy Roskes
+Author-email: heshyr@gmail.com
+License: UNKNOWN
+Description: # slurm-python-utils
+        
+        Various useful functions that can be used in python jobs running on slurm.
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
