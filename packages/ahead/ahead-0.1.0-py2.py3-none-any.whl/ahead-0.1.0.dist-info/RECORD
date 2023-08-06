@@ -1,0 +1,15 @@
+ahead/__init__.py,sha256=PrAIJYbLonGsXI3_sbewRxbCMj7eDTnBvkWFw9YaL98,320
+ahead/DynamicRegressor/DynamicRegressor.py,sha256=QzGAdo2UO90xLVfCixmpmUp5xOt6mSoxqyc_H9seU-4,3208
+ahead/DynamicRegressor/__init__.py,sha256=wBXG49TKOEi3ht4Fh5fxRFbmZOn2aasr5HdbYByetms,78
+ahead/EAT/EAT.py,sha256=1vv_mcJvOGPjR386CBQxngURvn2KT_Y5NChyzzWX6yE,3436
+ahead/EAT/__init__.py,sha256=Z9g14zwKbPGSXy_n3fWCEgfSk8KxwS48JpsXUqn3TZw,39
+ahead/Ridge2/Ridge2Regressor.py,sha256=TAJr1UGcqmPULpUZKG3fqXGuq2qRfrKrBDuBTXTfpiA,4911
+ahead/Ridge2/__init__.py,sha256=1OZNsmFII_VhAPyr4m39tsCvK0Ntt6p6WqelOxg5KVc,75
+ahead/VAR/VAR.py,sha256=IQMjIajCM2l25j1nzyYLahEyGxqvl5REoDWe6Xr9vNQ,4856
+ahead/VAR/__init__.py,sha256=LdYALo-QPIEp6e5aIyCeH5dmPiRiRGaiCfXsRYkqbRA,39
+ahead-0.1.0.dist-info/AUTHORS.rst,sha256=HkRNwugCZ5aNpjkxVkmncdwvXj1T1MtjVvD2A-vvtcg,161
+ahead-0.1.0.dist-info/LICENSE,sha256=wGHAGRSSzkVORAFmSXnTt6Ne1DpcfN7XQQEtn_lCa6Q,1690
+ahead-0.1.0.dist-info/METADATA,sha256=lEgPYqnx3_O-HnFq2HGcrz0tbJeopfd8Uel_jxH2jaM,2473
+ahead-0.1.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+ahead-0.1.0.dist-info/top_level.txt,sha256=LGrnpj8iGMbbm1_ohxH9vRpZnZepgQPa8UEXtzSgjmE,6
+ahead-0.1.0.dist-info/RECORD,,
