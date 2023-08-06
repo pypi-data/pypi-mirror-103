@@ -1,0 +1,4 @@
+memory_profiler
+numpy>=1.18
+pandas
+tensorflow~=2.4.0
