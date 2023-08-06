@@ -1,0 +1,24 @@
+Metadata-Version: 2.0
+Name: clsz
+Version: 0.1.2
+Summary: CLSZ algorithm for clustering directed graphs.
+Home-page: UNKNOWN
+Author: Peter Macgregor
+Author-email: <macgregor.pr@gmail.com>
+License: UNKNOWN
+Keywords: python,clsz,directed graph,clustering,spectral clustering,hermitian
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: sklearn
+Requires-Dist: networkx
+
+The CLSZ algorithm for applying spectral clustering to hermitian adjacency matrices of directed graphs
+
+
