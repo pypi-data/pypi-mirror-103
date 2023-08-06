@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: graiax-sayamod-jx3game-qiyu
+Version: 0.1.0
+Summary: A graiax saya mod which is a Jx3 Qiyu Random Collection Game(剑侠情缘网络版三奇遇随机收集游戏) based on group text.
+Author: CowHeadKick
+Author-email: dxzenghan@163.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: graia-application-mirai (>=0.17.0,<0.18.0)
+Requires-Dist: graia-broadcast (>=0.7.0,<0.8.0)
+Requires-Dist: graia-saya (>=0.0.9,<0.0.10)
+Requires-Dist: graia-scheduler (>=0.0.4,<0.0.5)
+Requires-Dist: pony (>=0.7.14,<0.8.0)
