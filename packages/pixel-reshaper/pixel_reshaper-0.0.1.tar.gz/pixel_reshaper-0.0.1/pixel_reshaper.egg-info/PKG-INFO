@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: pixel-reshaper
+Version: 0.0.1
+Summary: A package to structure and convert image datasets from .csv to .png representation for classification
+Home-page: https://github.com/je-c/pixel_reshaper
+Author: Jeremy Crow
+Author-email: jeremy.crow95@gmail.com
+License: MIT License
+Description: UNKNOWN
+Keywords: easy image data unpacking,csv to png,image classification
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3

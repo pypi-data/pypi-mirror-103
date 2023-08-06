@@ -1,0 +1,11 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+pixel_reshaper/__init__.py
+pixel_reshaper/pixel_reshaper.py
+pixel_reshaper.egg-info/PKG-INFO
+pixel_reshaper.egg-info/SOURCES.txt
+pixel_reshaper.egg-info/dependency_links.txt
+pixel_reshaper.egg-info/requires.txt
+pixel_reshaper.egg-info/top_level.txt
