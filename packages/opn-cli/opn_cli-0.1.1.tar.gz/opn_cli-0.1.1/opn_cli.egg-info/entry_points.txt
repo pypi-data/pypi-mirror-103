@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        opn_cli=opnsense_cli.cli:cli
+    
