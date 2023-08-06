@@ -1,0 +1,4 @@
+[console_scripts]
+rdpy=rundeckpy.rundeckpy:cli
+rundeckpy=rundeckpy.rundeckpy:cli
+
