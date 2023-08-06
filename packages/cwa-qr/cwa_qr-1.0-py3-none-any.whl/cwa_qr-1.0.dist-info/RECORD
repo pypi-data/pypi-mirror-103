@@ -1,0 +1,14 @@
+cwa_qr/__init__.py,sha256=4VPZbPnfn0oOHkRARlyjmihXooZkiKb008Y5QK1VDbM,291
+cwa_qr/cwa.py,sha256=g27xyUEHdjGoi94RuB3g5HDABXoLz3vzzLC2WyW227U,4196
+cwa_qr/cwa_pb2.py,sha256=sDhygW3aed8YjRtuTMgStymginNT4GTBxF43eVOowiY,15986
+cwa_qr/rollover.py,sha256=x07ZPn7eiAvXYZlbWXRYhlRpQTCxJgMBBjdP4DZJwbI,249
+cwa_qr/seed.py,sha256=JJ5denqM6MZod0drBuTYbt72njE2tUsviAtvlKLj9ZU,272
+cwa_qr/test_cwa.py,sha256=eHq4XjpTWMfpOtFhCakZJzy6MNwiT7cby-t76S8H3zw,2736
+cwa_qr/test_rollover.py,sha256=1j1IqlBEt0ZnjMsIqYDU7ZAbFYKwma7TVbakX4RwepE,2125
+cwa_qr/test_seed.py,sha256=lOyp6DCMzkqq2dIci8DEo9tYhTbltw1ViPHxIEwb1AU,672
+cwa_qr-1.0.dist-info/LICENSE.txt,sha256=bh2arDRd9mAPCX3S55aJ4zmBYSOnXmEERaqTasGEbcQ,1080
+cwa_qr-1.0.dist-info/METADATA,sha256=Dg0xR0ZhFIuOuQ0W5dBa5euVYfKj529uLnqNg8eE5ak,7711
+cwa_qr-1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cwa_qr-1.0.dist-info/top_level.txt,sha256=69gjl-bjRw-BZF2bRXc4MvulrsPxNNOz-U_CoWIcpFw,7
+cwa_qr-1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cwa_qr-1.0.dist-info/RECORD,,
