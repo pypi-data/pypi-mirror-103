@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/exceltoamx/__init__.py
+src/exceltoamx.egg-info/PKG-INFO
+src/exceltoamx.egg-info/SOURCES.txt
+src/exceltoamx.egg-info/dependency_links.txt
+src/exceltoamx.egg-info/top_level.txt
