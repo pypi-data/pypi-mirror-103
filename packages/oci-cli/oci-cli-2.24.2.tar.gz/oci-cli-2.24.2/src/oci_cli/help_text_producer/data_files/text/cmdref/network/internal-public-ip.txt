@@ -1,0 +1,12 @@
+internal-public-ip
+******************
+
+
+Description
+===========
+
+
+Available Commands
+==================
+
+* *delete-drg-route-table*
