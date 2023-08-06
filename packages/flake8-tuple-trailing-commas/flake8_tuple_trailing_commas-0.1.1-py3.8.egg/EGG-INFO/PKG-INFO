@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: flake8-tuple-trailing-commas
+Version: 0.1.1
+Summary: flake8 plugin for enforcing trailing commas in tuples
+Home-page: https://github.com/davemus/flake8-custom-trailing-commas
+Author: Drozdov David
+Author-email: drozdovud@gmail.com
+License: UNKNOWN
+Description: # Description
+        
+        This flake8 plugin enforces trailing commas in tuples. It hasn't settings so far.
+        
+        It adds new error message: CMA100 trailing comma in tuple is missing
+        
+        # Examples
+        
+        Code below is invalid:
+        ```python
+        a = (
+            1, 2, 3
+        )
+        ```
+        
+        And this is a valid version:
+        ```python
+        a = (
+            1, 2, 3,
+        )
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
