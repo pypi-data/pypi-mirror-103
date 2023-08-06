@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: fake_data_generator
+Version: 0.0.10
+Summary: Fake Data generator
+Home-page: UNKNOWN
+Author: Sarang Manjrekar
+Author-email: <manjrekar.sarang@email.com>
+License: UNKNOWN
+Description: Large volume testing for Data science pipelines requires dummy data at scale. The module takes user input for dummy data to be generated :  1. No of rows in dataset, 2. Output file path, 3. No of Column loops.
+Keywords: python,fake data,dummy data
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
