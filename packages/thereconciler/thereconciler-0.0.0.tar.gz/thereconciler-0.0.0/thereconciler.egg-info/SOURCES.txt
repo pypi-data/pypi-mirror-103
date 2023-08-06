@@ -1,0 +1,8 @@
+README.md
+setup.py
+thereconciler/__init__.py
+thereconciler/checker.py
+thereconciler.egg-info/PKG-INFO
+thereconciler.egg-info/SOURCES.txt
+thereconciler.egg-info/dependency_links.txt
+thereconciler.egg-info/top_level.txt
