@@ -1,0 +1,279 @@
+Metadata-Version: 2.1
+Name: coscine
+Version: 0.2.0
+Summary: Coscine REST API python3.x interface
+Home-page: https://git.rwth-aachen.de/coscine/docs/public/coscine-api-python-client
+Author: RWTH Aachen University
+Author-email: coscine@itc.rwth-aachen.de
+License: MIT License
+Project-URL: Bug Tracker, https://git.rwth-aachen.de/coscine/docs/public/coscine-api-python-client/-/issues
+Description: # Coscine API Python3.x Client
+        
+        ### Index
+        1. [About](#about)
+        2. [Installation](#installation)
+        3. [Usage](#usage)
+        4. [Links](#links)
+        5. [Support](#support)
+        6. [License](#license)
+        
+        ### About
+        
+        This library provides a simple way to interface with the
+        Coscine REST API using Python3. It implements a client which you can
+        use in your Python program to interact with Coscine.
+        
+        Although feature rich and sufficient for common workflows not all features of the
+        Coscine REST API are (currently) implemented by this client. The purpose of
+        this client is at its core to allow for interaction with resources
+        such as metadata management, upload/download/deletion of files.
+        
+        ### Installation
+        
+        Make sure you have python3 and pip3 installed. As this is platform
+        dependent, you need to figure out how to install them by yourself.
+        This will get you started:
+        - [https://wiki.python.org/moin/BeginnersGuide](https://wiki.python.org/moin/BeginnersGuide)
+        - [https://www.python.org/downloads/](https://www.python.org/downloads/)
+        
+        This project is hosted on the Python Package Index (PyPi). You can
+        install it and all of its dependencies via the python package manager (pip):
+        ```sh
+        pip3 install coscine
+        ```
+        
+        ### Usage
+        
+        #### Preface
+        You need an API token to use the Coscine API. If you have not already,
+        [create a new API token](https://help.itc.rwth-aachen.de/en/service/b2b7729fd93f4c7080b475776f6b5d87/article/2fc14c42d0784ecfae0a797bd5e3754e).
+        Once you have an API token you are ready to use the API.
+        
+        #### A word of advice
+        If you are working with git to manage your programming, you should put the token
+        in a seperate file within your repository and EXCLUDE it via a *gitignore*.
+        The token represents sensible data and grants anyone in possesion of it
+        full access to your data in coscine.
+        Do not leak it publicly on online platforms such as github! Do not include it
+        within your sourcecode if you intend on uploading that to the internet.
+        Take precautions and follow best practices to avoid corruption, theft or loss of data!
+        
+        #### Quick Start
+        
+        ##### Uploading a file to a resource
+        
+        The following short yet detailed snippet explains how to get started and
+        upload a file to a Coscine resource. For other workflows please refer to
+        the documentation. The client is capable of doing a lot more, but that
+        is out of scope for this little README file.
+        
+        ```python
+        # We'd like to import everything the coscine package has to offer
+        # into our local script
+        from coscine import *
+        
+        # We read our token from a file called 'token.txt'.
+        # The fread(path) function is just a convenient little utility
+        # function that opens a file and reads its contents into a byte
+        # array. We then decode the byte array we just read from utf-8
+        # representation to a python string, as the Coscine constructor
+        # expects the token as a string.
+        # Note: We could store our token directly inside the sourcecode
+        # as a string, but this is not recommended!
+        token = fread("token.txt").decode("utf-8")
+        
+        # We create an instance of the Coscine client using
+        # the Coscine(token) constructor. The constructor expects our
+        # token as an argument.
+        # Optional arguments:
+        # lang: Set the language used for the controlled vocabularies and
+        # metadata fields ("de" for german, "en" for english).
+        # By default the language is set to english and does not need to
+        # be specified.
+        coscine = Coscine(token)
+        
+        # We request a Coscine project using the get_project(name) function.
+        # This sends a GET request to the Coscine API for all projects
+        # currently associated with the token. The results are then filtered
+        # for the specified name and the respective project is returned.
+        # If no project is found, the function will return None and raise
+        # and exception.
+        # Note: To get a list of all projects without filtering
+        # use coscine.get_projects()!
+        project = coscine.get_project("My Project")
+        
+        # We request a Coscine resource using the get_resource(project, name)
+        # function. This sends a GET request to the Coscine API for all
+        # resources residing within the specified project. The results
+        # are then filtered for the specified name and the respective
+        # resource is returned. If no resource is found, the function
+        # will return None and raise an exception.
+        # Note: To get a list of all resources without filtering
+        # use coscine.get_resources(project)!
+        resource = coscine.get_resource(project, "My Resource")
+        
+        # We could create metadata in json-ld format by hand and use it
+        # to upload a file or assign metadata to a file. However this
+        # is proves to be cumbersome and prone to ambiguous errors.
+        # Therefore we'd like to use some form of template, which the
+        # coscine python package is able to create for us!
+        # The template is created by requesting the application profile
+        # and the controlled vocabulary used within project and resource
+        # and examining their fields as well as the constraints put
+        # upon those fields.
+        # After that a custom dictionary-like datatype is created and filled
+        # with default and fixed values (as specified during resource creation).
+        # We can interact with this dictionary just like with any other dictionary
+        # with the difference being, that we can only set fields specified in
+        # the application profile and - in case of fields controlled
+        # by a vocabulary - can only use values of that vocabulary.
+        # Furthermore the printing functionality has been altered, to convey
+        # more information about the fields stored within the template.
+        # More on that can be found in the documentation. Just try
+        # print(template) and figure it out for yourself.
+        template = coscine.get_template(project, resource)
+        
+        # We can now modify the template.
+        # Let's assume our resource is using the ENGMETA metadata scheme, and set
+        # the required values for our metadata:
+        template["Title"] = "Hello World!"
+        template["Creator"] = "John Doe"
+        template["Contact"] = "John Doe"
+        template["Creation Date"] = "2021-01-21"
+        template["Publication Date"] = "2021-01-21"
+        template["Embargo End Date"] = "2023-01-01"
+        template["Version"] = "1.0"
+        template["Mode"] = "Experiment"
+        template["Step"] = "42"
+        template["Type"] = "Image"
+        template["Subject Area"] = "Medicine"
+        
+        # As you can see in the example above, every value in the template
+        # is a string. This is keeping things simple - you just need to
+        # remember to cast any datetime object to a string in yyyy-mm-dd
+        # format and any integer to a string.
+        # Do note that the fields "Mode", "Type" and "Subject Area" are
+        # controlled by a vocabulary. You can just set the value you'd
+        # select in the web interface of Coscine and let the custom dictionary
+        # automatically resolve the actual value.
+        # "Actual value?" you are asking? Well - when we set "Type" to "Image"
+        # we are not actually assigning the string "Image" to it, but rather
+        # a uniform resource identifier containing the image type. This is
+        # intransparent to the user, but allows us to work with "Images" and
+        # "Waveforms" rather than "http://long-url.xd/id=Images", etc.
+        # However you can observe these mappings taking place by printing
+        # the dictionary - for each field controlled by a vocabulary you will
+        # then be able to observe their "true" value.
+        # Note that this also applies to controlled fields containing a fixed
+        # or default value - they will not contain "Images" but rather the
+        # final uri resolving to "Images".
+        
+        # Let's print our template and inspect how it looks.
+        # Notice how the output is different from a normal dictionary, as
+        # it resembles a table more than a json-like structure.
+        # Do also notice the indicators given in the RCFS column.
+        # RCFS contains boolean values (0=False, 1=True).
+        # R: Required (This field needs a value for the metadata to be valid)
+        # C: Controlled (This field is controlled by a vocabulary)
+        # F: Fixed (This field contains a default value)
+        # S: Set (This field has been altered [by a default value or by you])
+        # Make sure we filled in all required fields, so that no errors
+        # are thrown around when we try to upload.
+        print(template)
+        
+        # We can now directly use this template as our metadata or generate
+        # a json-ld representation of our metadata using:
+        metadata = template.generate()
+        
+        # Note that the generate() function will validate that each required
+        # field is present and that all fields are correctly formatted before
+        # generating the metadata. Thus be prepared to catch some exceptions.
+        # We do not need to generate the metadata before using functions like
+        # upload() though, as this is done internally.
+        
+        # Let's read a file and upload it to the resource:
+        data = fread("My Research Data.csv")
+        
+        # The upload_file() function needs 4 arguments:
+        # resource: Where do you want to store your file?
+        # path: Which filename/path should the file assume within resource?
+        # data: The file contents as a byte array
+        # metadata: Either a filled in metadata template or json-ld formatted
+        # metadata string. If you specify a template it is validated before
+        # uploading. Thus, if you have not used template.generate() before
+        # you should now be prepared to catch some exceptions in case the
+        # metadata is containing bad values.
+        coscine.upload_file(resource, "My Research Data.csv", data, template)
+        
+        # We can reset our template to its default values and re-use it for
+        # other files without requesting anything from the API. This spares
+        # us valuable bandwidth and processing time. Simply call the reset()
+        # function and fill it with new data or alter the data already present
+        # without calling reset().
+        # Note: A template for resource A should only be used for resource A
+        # and not for another resource B. Use a unique template per resource!
+        template.reset()
+        
+        # Note: You can access the raw application profile and controlled vocabulary
+        # of a resource and project too. This is no longer needed for template
+        # creation with the new version of the coscine python client, as it is
+        # taken care of automatically behind the scenes. However you may want
+        # to have a look of your own at how the application profile is structured
+        # or what kind of values are allowed by a certain vocabulary.
+        # For that purpose simply use one of the functions given below:
+        #  profile = coscine.get_profile(resource)
+        #  vocabularies = coscine.get_vocabulary(project, resource)
+        ```
+        
+        For more information take a look at the [Reference](REFERENCE.md).
+        
+        ### Links
+        
+        - [Changelog](CHANGELOG.md)
+        - [Roadmap](TODO.md)
+        - [Reference](REFERENCE.md)
+        
+        ### Support
+        
+        To report bugs, request features or resolve questions open an issue inside
+        of the current git repository.
+        
+        To contribute code and help improve this package fork the repository and
+        open a merge request.
+        
+        For general help or consulting contact RWTH Aachen
+        IT ServiceDesk at <servicedesk@rwth-aachen.de>.
+        
+        ### License
+        
+        This project is Open Source Software and licensed
+        under the terms of the MIT License.
+        ```
+        The MIT License (MIT)
+        Copyright © 2021 RWTH Aachen University
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of
+        this software and associated documentation files (the "Software"), to deal in
+        the Software without restriction, including without limitation the rights to
+        use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+        the Software, and to permit persons to whom the Software is furnished to do so,
+        subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+        FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+        COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+        IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+        CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        ```
+Keywords: Coscine,RWTH Aachen,RDM,Research Data Management
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.3
+Description-Content-Type: text/markdown
