@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: http-file
+Version: 0.1.7
+Summary: ...
+Home-page: https://github.com/RivalStorms/http_file
+Author: Tyshko Stanislav
+Author-email: admin@toqp.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: urllib3
+Requires-Dist: requests
+
+# http_file
+
+## Usage
+
+Install using pip:
+```shell
+$ pip install http_file
+```
+РџСЂРёРјРµРЅРµРЅРёРµ
+=====
+
+.. РєРѕРґРѕРІС‹Р№ Р±Р»РѕРє :: python
+
+    #РёРјРїРѕСЂС‚ РІСЃРїРѕРјРѕРіР°С‚РµР»СЊРЅС‹С… Р±РёР±Р»РёРѕС‚РµРє
+    import urllib3
+    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+    import requests
+    #РёРјРїРѕСЂС‚ http_file
+    from http_file import download_file
+    #СЃРѕР·РґР°РЅРёРµ РЅРѕРІРѕР№ СЃРµСЃСЃРёРё
+    s = requests.Session()
+    #СЃРѕРµРґРµРЅРµРЅРёРµ СЃ СЃРµСЂРІРµСЂРѕРј С‡РµСЂРµР· СЃРѕР·РґР°РЅРЅСѓСЋ СЃРµСЃСЃРёСЋ
+    s.get('URL_MAIN', verify=False)
+    """
+    Р·Р°РіСЂСѓР·РєР° С„Р°Р№Р»Р° РІ 'local_filename' РёР· 'fileUrl' С‡РµСЂРµР· СЃРѕР·РґР°РЅРЅСѓСЋ СЃРµСЃСЃРёСЋ
+    download_file('local_filename', 'fileUrl', s)
+
