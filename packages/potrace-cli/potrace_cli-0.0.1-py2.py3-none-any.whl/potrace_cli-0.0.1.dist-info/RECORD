@@ -1,0 +1,10 @@
+cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli/backend_svg.py,sha256=MgSgMajHzwiSWI9jgErIKKT31g_w5sEqDUEyOxcSR2A,2345
+cli/main.py,sha256=WQyc2EclYO01QmHwYLhtiSJEzOdpwHwMoHGDA0JvoHw,4026
+potrace_cli-0.0.1.dist-info/LICENSE,sha256=GJsa-V1mEVHgVM6hDJGz11Tk3k0_7PsHTB-ylHb3Fns,18431
+potrace_cli-0.0.1.dist-info/METADATA,sha256=3fCsFNyY5xf6-UibQum211bUlnq1E3mfR-CloINQJeU,3323
+potrace_cli-0.0.1.dist-info/WHEEL,sha256=gxPaqcqKPLUXaSAKwmfHO7_iAOlVvmp33DewnUluBB8,116
+potrace_cli-0.0.1.dist-info/entry_points.txt,sha256=qk1xojBcNmd7z8-EJQZ9WyWDIx5MPuT1zKhud8mveo0,93
+potrace_cli-0.0.1.dist-info/top_level.txt,sha256=2ImG917oaVHlm0nP9oJE-Qrgs-fq_fGWgba2H1f8fpE,4
+potrace_cli-0.0.1.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+potrace_cli-0.0.1.dist-info/RECORD,,
