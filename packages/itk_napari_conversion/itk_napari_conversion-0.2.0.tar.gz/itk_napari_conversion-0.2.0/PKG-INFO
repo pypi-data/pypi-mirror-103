@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: itk_napari_conversion
+Version: 0.2.0
+Summary: Convert between itk and napari data structures.
+Home-page: https://github.com/InsightSoftwareConsortium/itk-napari-conversion
+Author: Matt McCormick
+Author-email: matt.mccormick@kitware.com
