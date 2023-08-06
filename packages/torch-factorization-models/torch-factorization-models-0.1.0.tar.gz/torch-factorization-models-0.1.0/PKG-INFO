@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: torch-factorization-models
+Version: 0.1.0
+Summary: Factorization-based models for recommender systems
+Author: Karl Higley
+Author-email: kmhigley@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: matplotlib (>=3.3.3,<4.0.0)
+Requires-Dist: pandas (>=1.1.2,<2.0.0)
+Requires-Dist: pytorch-lightning (>=0.9.0,<0.10.0)
+Requires-Dist: ranking-metrics-torch (>=0.3.0,<0.4.0)
+Requires-Dist: scikit-learn (>=0.23.2,<0.24.0)
+Requires-Dist: torch (>=1.6.0,<2.0.0)
+Requires-Dist: torch_optim_sparse (>=0.1.2,<0.2.0)
+Requires-Dist: wandb (>=0.10.4,<0.11.0)
