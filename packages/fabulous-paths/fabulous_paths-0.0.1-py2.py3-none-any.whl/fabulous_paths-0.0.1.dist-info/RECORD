@@ -1,0 +1,14 @@
+docs/conf.py,sha256=8wG5ZRPSKKCsnyk7vjaRtwSQjsuh9AoSbNdQ8QJikX8,2274
+fabulous_paths/__init__.py,sha256=aq_VhoxWw-NzJgGCoqMU9P_il9GjYNOlPwlYilpK29Q,3051
+fabulous_paths/_installed_version.py,sha256=dw5zm_E__LpjLU2qA9jWNkVqqBjqxkh2rhIohaZscHs,119
+fabulous_paths/version.py,sha256=jRwbK1dPk-SBT61-scZpkisa1ZssBv4IOgA7xUppQkk,4347
+fabulous_paths/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fabulous_paths/tests/test_fabulous_paths.py,sha256=IQ-U_OHt1G6Z1NCZLoLQol-G06u06BrmifnV6DL15pE,4055
+fabulous_paths/tests/test_data/generate_test_data.py,sha256=1WRwwyoOMuUW_CDKWz_uEA1ALVguZ8uP-iTlqCCXcnE,3027
+paths_cli_plugins/fabulous/__init__.py,sha256=ISn5u2jRd88Up4ZpAxOpA_sIFvEj2pgmvkWHd8GBxiU,64
+paths_cli_plugins/fabulous/fabulous.py,sha256=1nTtBujhAeUtU99eiusV9nse9OEU6G-c_n953wlWlV4,1488
+fabulous_paths-0.0.1.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+fabulous_paths-0.0.1.dist-info/METADATA,sha256=T-gZLuIlNMsCa2ZIO0Ean9TBrGkeFeLBON8KJLWLKg0,2981
+fabulous_paths-0.0.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+fabulous_paths-0.0.1.dist-info/top_level.txt,sha256=0Cgnf7voUEcceiy7d1JykXH6wsSf-jFbFJCSXqI3lws,38
+fabulous_paths-0.0.1.dist-info/RECORD,,

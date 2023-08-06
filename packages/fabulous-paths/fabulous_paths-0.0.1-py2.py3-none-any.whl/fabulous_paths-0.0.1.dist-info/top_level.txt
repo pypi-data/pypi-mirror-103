@@ -1,0 +1,3 @@
+docs
+fabulous_paths
+paths_cli_plugins
