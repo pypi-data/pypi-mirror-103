@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+conib/__init__.py
+conib/__main__.py
+conib.egg-info/PKG-INFO
+conib.egg-info/SOURCES.txt
+conib.egg-info/dependency_links.txt
+conib.egg-info/entry_points.txt
+conib.egg-info/not-zip-safe
+conib.egg-info/requires.txt
+conib.egg-info/top_level.txt
