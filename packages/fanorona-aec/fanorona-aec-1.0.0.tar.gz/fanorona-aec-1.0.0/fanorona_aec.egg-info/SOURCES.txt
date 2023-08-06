@@ -1,0 +1,13 @@
+README.md
+setup.py
+fanorona_aec/__init__.py
+fanorona_aec/fanorona_env.py
+fanorona_aec/fanorona_v0.py
+fanorona_aec/move.py
+fanorona_aec/state.py
+fanorona_aec/utils.py
+fanorona_aec.egg-info/PKG-INFO
+fanorona_aec.egg-info/SOURCES.txt
+fanorona_aec.egg-info/dependency_links.txt
+fanorona_aec.egg-info/requires.txt
+fanorona_aec.egg-info/top_level.txt
