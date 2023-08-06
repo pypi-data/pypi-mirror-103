@@ -1,0 +1,15 @@
+jugaad_trader/__init__.py,sha256=wMvBryMUxghXQrTjaCzwzKHwgd4RjiYn4f89XzbPO58,133
+jugaad_trader/cli.py,sha256=JmLKOkHHZPA3NMkh6m0jfSf_igGF-fBUIfPCtnabIeI,302
+jugaad_trader/ucli.py,sha256=biVPo6eLUgNd2UFdJkBn1jnhAdcrVNoMhvZAajLA8fA,2183
+jugaad_trader/upstox.py,sha256=vw6Vwnyr_sCgxJtqhvEUYHC0JxSjpw8ZdUMn-lH68FE,5739
+jugaad_trader/util.py,sha256=5V-Q4Sfr42LCgf_2dlZepFNzyFXM98ow66Y8Vr-YPU8,21
+jugaad_trader/zcli.py,sha256=t0qARSMAFnMzNYf-cLK2s0ewxt0MVcA7vNG0vIKXO4Y,3261
+jugaad_trader/zerodha.py,sha256=mbjCCCZ3JJvLaD-Pkn1HVEFzi0tf63MZXF4b2Y5mgZY,9009
+jugaad_trader-0.18.data/data/README.rst,sha256=tHi6A5iU59VJKoAeq1d8zepKQ17GhEGufsevzTLQdF8,877
+jugaad_trader-0.18.data/data/requirements.txt,sha256=YAVFn0As2WejhIifRNWxMWi5Kht7pQSCq84Zck5T2wE,84
+jugaad_trader-0.18.dist-info/LICENSE.YOLO.md,sha256=JZCkspG0qtRVhrWb4FnCxawvmotbF3jNtcu7TkEFZjM,515
+jugaad_trader-0.18.dist-info/METADATA,sha256=Jz0mtK0YMTxF9NqZXUFFNll7jITxfv5M-3Xr2FJniM4,1348
+jugaad_trader-0.18.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+jugaad_trader-0.18.dist-info/entry_points.txt,sha256=TUShdKtY7gJtfk4l25u84-O7QQFpHMLZfv-K4I5s9XI,51
+jugaad_trader-0.18.dist-info/top_level.txt,sha256=JqB59eegIX3WNl_g5JPO6OrXr9y-XA6aAG_TaxCa4b4,14
+jugaad_trader-0.18.dist-info/RECORD,,
