@@ -1,0 +1,12 @@
+spasco/__init__.py,sha256=XwLjX1RMwt9777t3ymIe8a9zM0iLjt3Jhjqmpa88K6k,362
+spasco/main.py,sha256=PSMtYn5vE-GTTP1_A5M2LPIrYLiGWufuKkJuajpFch4,19248
+spasco/term_color.py,sha256=P3aXAtP2UUWZSScYQHX4wK19qHupBTl8OI9_6QGmb8s,2558
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/check_names.py,sha256=uieOONxZvg2Nk-bN7Cv55h2DgsM-HPs__p_4DIUVh0o,750
+tests/main_test.py,sha256=Uklr-4OTlu-SYzigMOJBVU1YXFmetOCaaM2zTcDQ-E8,13332
+spasco-1.0.0.dist-info/LICENSE,sha256=Kz5blPmJRNwet3v3FmUn7NaK2CC2dLCDIDworCv5F78,1068
+spasco-1.0.0.dist-info/METADATA,sha256=OVFYHmm89kmsGxx7ySDgf0nl69Gi96iepKTg_afN6ds,7470
+spasco-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+spasco-1.0.0.dist-info/entry_points.txt,sha256=mGbIGUEA59p2dkUl9Mtw279HG1gCOWjEhs1o16oO23A,49
+spasco-1.0.0.dist-info/top_level.txt,sha256=Jyqr9wE68XQmXykODFgDmi6wHbiNqWhUTqLPAkm6nQc,13
+spasco-1.0.0.dist-info/RECORD,,
