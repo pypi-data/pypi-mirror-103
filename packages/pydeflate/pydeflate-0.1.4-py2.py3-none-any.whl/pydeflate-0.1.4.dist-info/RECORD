@@ -1,0 +1,15 @@
+pydeflate/__init__.py,sha256=L7qvR5khZG1YFqu3aPvUxgK-bHBdQbI-cIv35jDkZ30,223
+pydeflate/deflate.py,sha256=jvtZm4AL4q7yXtZ6yidCT8lBLapUQqsCjkDwDDRLr6c,4194
+pydeflate/utils.py,sha256=d8BuObBRJbJlvTyGn84IUXs9c6RfHWxIGovhOV6f3-w,9499
+pydeflate/data/deflators_data.csv,sha256=PPDA0mQvsLzjRFKrZ9U-oep8rxWTYzwKlU9zy2or06M,30611
+pydeflate/data/exchange_data.csv,sha256=0sIzyrNOF4Eo4yhtcM7CaxwQGuZV8r5H29nmHl4yKBw,102848
+pydeflate/data/gdp_const_raw.csv,sha256=Yg26d60a6Tr4zBvZPV5ZqO9XLrkyl7v7ptb4S_4XITU,162136
+pydeflate/data/gdp_lcu_raw.csv,sha256=G3IAf6q9NlGlUo00E6WiMECFiY7-zlnSH7X2U9AZnTg,137012
+pydeflate/deflate/__init__.py,sha256=856qK-rDJkO2bv_HaPTKlQ7zyB6wWB_m7CPcTVZvE8o,182
+pydeflate/deflate/deflate.py,sha256=oEHjJb10lqPFSg0ajm27jX6xJd7Osdt2PPO4LLHWqu4,4138
+pydeflate-0.1.4.dist-info/AUTHORS.rst,sha256=9dD9FalEeUjuMEPGPB4SZQD2NlFftllX9nTIEe2ZX5g,158
+pydeflate-0.1.4.dist-info/LICENSE,sha256=rfb1sRJ1jiVQJBnhUXOuQpFJrAGnBKjMJZGyz4ZH36U,1071
+pydeflate-0.1.4.dist-info/METADATA,sha256=ioxyZRkvp5dl86bd7ogoggSMAiCGMSeFG5JzG6KgdE0,2427
+pydeflate-0.1.4.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+pydeflate-0.1.4.dist-info/top_level.txt,sha256=6h4kDq6eU_tO-dg7offrad4T2Hr_8oGfim3pViBi5Sw,10
+pydeflate-0.1.4.dist-info/RECORD,,
