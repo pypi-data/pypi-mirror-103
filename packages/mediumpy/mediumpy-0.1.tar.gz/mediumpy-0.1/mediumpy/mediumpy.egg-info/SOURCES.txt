@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+mediumpy/mediumpy.egg-info/PKG-INFO
+mediumpy/mediumpy.egg-info/SOURCES.txt
+mediumpy/mediumpy.egg-info/dependency_links.txt
+mediumpy/mediumpy.egg-info/not-zip-safe
+mediumpy/mediumpy.egg-info/requires.txt
+mediumpy/mediumpy.egg-info/top_level.txt
+mediumpy/partner_program/__init__.py
+mediumpy/stats/__init__.py

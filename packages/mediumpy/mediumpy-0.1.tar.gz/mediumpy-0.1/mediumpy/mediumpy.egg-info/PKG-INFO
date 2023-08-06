@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: mediumpy
+Version: 0.1
+Summary: Medium Python Client
+Home-page: https://github.com/gmyrianthous/mediumpy
+License: LICENSE.txt
+Description: # mediumpy
+        `mediumpy` is a Python client for Medium.
+        
+        ## Installation
+        ```bash
+        pip install mediumpy
+        ```
+        
+        ## Contribute
+        
+Keywords: medium,python,medium.com
+Platform: UNKNOWN
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
