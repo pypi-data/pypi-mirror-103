@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: allium_hash
+Version: 1.0.3
+Summary: Bindings for Allium proof of work used by Garlicoin
+Home-page: https://github.com/ryan-shaw/allium-hash-python
+Author: Ryan Shaw
+Author-email: ryan@rshaw.me
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
