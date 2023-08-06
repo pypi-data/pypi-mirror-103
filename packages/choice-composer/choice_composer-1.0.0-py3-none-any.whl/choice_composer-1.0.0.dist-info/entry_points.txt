@@ -1,0 +1,3 @@
+[console_scripts]
+choices = choices.__main__:main
+
