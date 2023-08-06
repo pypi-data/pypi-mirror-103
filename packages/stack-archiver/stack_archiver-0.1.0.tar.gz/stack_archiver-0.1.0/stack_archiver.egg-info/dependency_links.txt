@@ -1,0 +1,1 @@
+http://github.com/hylang/hy/tarball/e35b84bce7befdf5caf347110111481e19956877#egg=hy-ge35b84bc
