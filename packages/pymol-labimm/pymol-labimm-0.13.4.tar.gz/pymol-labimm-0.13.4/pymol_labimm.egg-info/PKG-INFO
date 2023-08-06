@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pymol-labimm
+Version: 0.13.4
+Summary: Some PyMOL utilities
+Home-page: https://github.com/pslacerda/pymol-labimm
+Author: Pedro Sousa Lacerda
+Author-email: pslacerda@gmail.com
+License: MIT
+Description: Install the plugin https://github.com/pslacerda/pymol-labimm/blob/master/scripts/pymol_labimm.py.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
