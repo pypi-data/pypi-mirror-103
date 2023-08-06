@@ -1,0 +1,3 @@
+[console_scripts]
+pangeo-forge = pangeo_forge.cli:main
+
