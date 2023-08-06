@@ -1,0 +1,10 @@
+arcane/core/__init__.py,sha256=8T3tVJ61dAvv91rRirXsrevMmJcNhWsZigdKH_ZXMRY,149
+arcane/core/compute_names.py,sha256=c5eNXsOXwjM7-uzUdqaZFsfMCXSLZ7AK5oF9aH4OP0U,493
+arcane/core/const.py,sha256=CEf5LLv8X1yN49WLXrsd9g6HFoGPYV23gO6BcQlc8yE,502
+arcane/core/exceptions.py,sha256=iAPJWhUxz93EuBf6SCywOanae5IK6pnrfoiiGfXIwMM,1318
+arcane/core/function_traces.py,sha256=c2LnmsoNO683xkpbxchcFhJyaofOQphLugLPq73gaiQ,592
+arcane/core/types.py,sha256=JOA3ZV43ziIwoZiGuxXlxUbP5N09hbTrzC0oOJee_NE,16448
+arcane/core/utils.py,sha256=kQGmjb9lSzJtdgY1x9iNCJKA74n3oHyLe_aW5FNB-Ic,572
+arcane_core-1.2.5.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+arcane_core-1.2.5.dist-info/METADATA,sha256=xY5p9bbhbZ7GOsVX5oga9v_ZM3pFM6vfMJbJBgHhs3o,509
+arcane_core-1.2.5.dist-info/RECORD,,
