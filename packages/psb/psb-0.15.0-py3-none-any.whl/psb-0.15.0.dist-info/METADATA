@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: psb
+Version: 0.15.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: AWSIoTPythonSDK
+Requires-Dist: inky
+Requires-Dist: font-fredoka-one
+Requires-Dist: Pillow
+Requires-Dist: boto3
+Requires-Dist: RPi.GPIO
+
+UNKNOWN
+
+
