@@ -1,0 +1,10 @@
+requests
+pandas
+tqdm
+baostock
+tushare
+pretty_errors
+termcolor
+lunar_python
+pyecharts
+pysimplegui
