@@ -1,0 +1,10 @@
+xarray
+numpy
+casadi
+scipy
+hyperopt
+setuptools
+opencv-python
+
+[tuning]
+hyperopt
