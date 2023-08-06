@@ -1,0 +1,9 @@
+configparser
+numpy
+matplotlib
+seaborn
+pandas
+pyperclip
+scipy
+h5py
+pygame
