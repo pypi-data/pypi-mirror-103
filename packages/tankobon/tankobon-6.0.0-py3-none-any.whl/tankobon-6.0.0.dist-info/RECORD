@@ -1,0 +1,15 @@
+tankobon/__init__.py,sha256=kwqoxiRldo2YCitAriLh_j8s3Jg1ilSkJow6Gs6NX3k,123
+tankobon/__main__.py,sha256=Iu7QSPOJ99wY64lID5LY1J1H45Uk0N-ZbvD7L1h5yzE,72
+tankobon/__version__.py,sha256=bKZUj0k9GJc78UYEuZQgm0ucc9sI3-eqF57k5PaEbzg,38
+tankobon/cli.py,sha256=rq58jNR8QpeV8_b1qaeEQx2qMsKCcht-1VA4SW-oiSo,6803
+tankobon/core.py,sha256=5qCuEs1WvWpMn0Js-JtNLb3wvFsX2p71tp0SPw83XtY,11645
+tankobon/exceptions.py,sha256=8IJrT05nkFSNwzIshD9_d089JzgTiEVyk8lD0Wgjl1U,203
+tankobon/utils.py,sha256=A5jpVtOHoWc5iFDGzWoOaYJoJxy8hLyXErJ0MHNJRkA,3313
+tankobon/parsers/__init__.py,sha256=0E4UEoDNCLbOv9Ttd1TDdiIRqeQ3NRrxCGp5lnG94to,1613
+tankobon/parsers/catmanga.py,sha256=kmIrXiQQrIRUNf1-inah1Xusb6FUVC7ROqnZMLSowpM,1461
+tankobon/parsers/mangakakalot.py,sha256=kOMyrNZVzAu3Qm_7WjgaVJvFngoXy6oMIXyudmvsxMY,1771
+tankobon-6.0.0.dist-info/entry_points.txt,sha256=vSyqM_9I8_LPxSMyXgOuYg2-0ddEter5Qalke_ZOyJk,45
+tankobon-6.0.0.dist-info/LICENSE,sha256=nYyN3luJmjOOw23y-JKWokbiRtJtlPxNk6j-wH85kXA,1084
+tankobon-6.0.0.dist-info/WHEEL,sha256=o-Q2E8s7BKkCJ1EC2uQdaymZVVu2aUt1e8uTTFpzHVs,81
+tankobon-6.0.0.dist-info/METADATA,sha256=wMhfjtsZtohHaJB-Cjr8neD-gGwrvRelOwA_Tmimm4Y,2212
+tankobon-6.0.0.dist-info/RECORD,,
