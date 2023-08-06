@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: little-shelf
+Version: 0.0.1
+Summary: Synchronized dictionaries using Greg Little's `shelf` CRDT.
+License: CC0-1.0
+Author: Angelo Gladding
+Author-email: angelo@lahacker.net
+Requires-Python: >=3.9,<4.0
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+# little-shelf
+Synchronized dictionaries using [Greg Little][0]'s `shelf` CRDT.
+
+Changes/patches can be distributed to peers through any channel. See the
+[understory][1]'s [Braid][2] implementation as an example of real world usage.
+
+# Install
+
+    pip install little-shelf
+
+# Use
+
+    >>> import littleshelf
+    >>> alice = littleshelf.LittleShelf()
+    >>> bob = littleshelf.LittleShelf()
+    >>> patch = alice.set(ham="spam")
+    >>> patch
+    [{'ham': ['spam', 0]}, 0]
+    >>> alice
+    {'ham': 'spam'}
+    >>> alice == bob
+    False
+    >>> bob.merge(patch)
+    >>> alice == bob
+    True
+    >>> bob.get("ham") == bob["ham"] == "spam"
+    True
+
+[0]: //glittle.org
+[1]: //github.com/angelogladding/understory/blob/main/understory/web/braid.py
+[2]: //braid.org
+
