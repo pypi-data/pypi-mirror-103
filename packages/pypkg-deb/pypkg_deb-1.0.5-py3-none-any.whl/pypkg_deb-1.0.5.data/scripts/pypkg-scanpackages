@@ -1,0 +1,93 @@
+#!python
+
+import time
+import os
+import sys
+import bz2
+import gzip
+import argparse
+import concurrent
+from concurrent.futures.thread import ThreadPoolExecutor
+
+try:
+    import lzma as xz
+except ImportError:
+    try:
+        from backports import lzma
+        from backports import lzma as xz
+    except ImportError:
+        print("You must follow these instructions to use this script:\nhttps://github.com/monotrix/pypkg/blob/main/LZMA.md")
+        sys.exit()
+
+WROTETO = ""
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("directory", help="The name of the directory you want to use this script on.")
+    parser.add_argument("--create-archive", help="Create archives of your Packages file.", action="store_true")
+    parser.add_argument("-v", help="Run verbosely.", action="store_true")
+    args = parser.parse_args()
+    directory = args.directory + "/"
+
+    def add(file):
+        if (file.endswith(".deb")):
+            os.system("rm -rf ./tmp; mkdir ./tmp;")
+            os.system(f"ar x {directory}{file};")
+            if os.path.exists("./control.tar.lzma"):
+                os.system(f"cd ./tmp; unlzma ../control.tar.lzma; tar xf ./control.tar; rm -rf ./control.tar.* data.tar.* ./debian-binary;")
+            elif os.path.exists("./control.tar.xz"):
+                os.system(f"cd ./tmp; tar xf ./control.tar.xz; rm -rf ./control.tar.* data.tar.* ./debian-binary;")
+            elif os.path.exists("./control.tar.gz"):
+                os.system(f"cd ./tmp; tar xf ../control.tar.gz; rm -rf ./control.tar.* data.tar.* ./debian-binary;")
+            sums = {
+                "sha256": os.popen(f"shasum -a 256 {directory}{file} | cut -d \" \" -f 1").read(),
+                "sha1": os.popen(f"shasum -a 1 {directory}{file} | cut -d \" \" -f 1").read(),
+                "md5": os.popen(f"md5 {directory}{file}  | cut -d \" \" -f 4").read(),
+                "size": os.stat(directory + file).st_size
+            }
+            sha256 = "SHA256: " + str(sums["sha256"])
+            sha1 = "SHA1: " + str(sums["sha1"])
+            md5 = "MD5sum: " + str(sums["md5"])
+            filesize = "Size: " + str(sums["size"])
+            filename = "Filename: " + directory + file
+            control = open("./tmp/control", "r")
+            output = control.read() + filename + "\n" + md5 + sha1 + sha256 + filesize + "\n" + "\n"
+            bundleid = control.read().partition("\n")[0].replace("Package: ", "")
+            control.close()
+            return output
+        else:
+            print(f"File {file} is not a .deb file - skipping.")
+            sys.exit(1)
+    start_time = time.time()
+    files = next(os.walk(directory))[2]
+    with ThreadPoolExecutor(max_workers=50) as executor:
+        futures = [executor.submit(add, file) for file in files]
+        futures, _ = concurrent.futures.wait(futures)
+        for future in futures:
+            result = str(future.result())
+            if (result != "None"):
+                f = open("./Packages", "a")
+                f.write(result)
+                f.close()
+                WROTETO = True
+            os.system("rm -rf ./tmp ./control.tar.* data.tar.* ./debian-binary;")
+        if args.create_archive:
+            if WROTETO:
+                bz2contents = bz2.compress(bytes(open("Packages", "rb").read()), 5)
+                bzout = open("Packages.bz2", "wb")
+                bzout.write(bz2contents)
+                bzout.close()
+                gzipcontents = gzip.compress(bytes(open("Packages", "rb").read()))
+                gzipout = open("Packages.gz", "wb")
+                gzipout.write(gzipcontents)
+                gzipout.close()
+                lzmacontents = lzma.compress(bytes(open("Packages", "rb").read()))
+                lzmaout = open("Packages.lzma", "wb")
+                lzmaout.write(lzmacontents)
+                lzmaout.close()
+                xzcontents = xz.compress(bytes(open("Packages", "rb").read()))
+                xzout = open("Packages.xz", "wb")
+                xzout.write(xzcontents)
+                xzout.close()
+    verbose = "On" if args.v else "Off"
+    print(f"Finished in {time.time() - start_time} seconds.\nVerbose Mode: {verbose}")
