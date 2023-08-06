@@ -1,0 +1,4 @@
+[console_scripts]
+formsite-util = formsite_util.formsite_util:main
+getform = formsite_util.formsite_util:main
+
