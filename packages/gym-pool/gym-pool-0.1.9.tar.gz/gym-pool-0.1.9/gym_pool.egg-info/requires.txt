@@ -1,0 +1,6 @@
+gym>=0.2.3
+numpy
+pygame
+zope.event
+torch
+torchvision
