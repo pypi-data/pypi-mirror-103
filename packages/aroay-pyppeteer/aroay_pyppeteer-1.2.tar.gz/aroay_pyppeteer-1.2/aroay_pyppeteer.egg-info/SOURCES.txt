@@ -1,0 +1,13 @@
+README.md
+setup.py
+aroay_pyppeteer/__init__.py
+aroay_pyppeteer/__version__.py
+aroay_pyppeteer/downloadermiddlewares.py
+aroay_pyppeteer/pretend.py
+aroay_pyppeteer/request.py
+aroay_pyppeteer/settings.py
+aroay_pyppeteer.egg-info/PKG-INFO
+aroay_pyppeteer.egg-info/SOURCES.txt
+aroay_pyppeteer.egg-info/dependency_links.txt
+aroay_pyppeteer.egg-info/requires.txt
+aroay_pyppeteer.egg-info/top_level.txt

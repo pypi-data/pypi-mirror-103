@@ -1,0 +1,47 @@
+import logging
+
+# aroay_pyppeteer logging level
+AROAY_PYPPETEER_LOGGING_LEVEL = logging.WARNING
+
+# aroay_pyppeteer timeout
+AROAY_PYPPETEER_DOWNLOAD_TIMEOUT = 30
+
+# aroay_pyppeteer browser window
+AROAY_PYPPETEER_WINDOW_WIDTH = 1400
+AROAY_PYPPETEER_WINDOW_HEIGHT = 700
+
+# aroay_pyppeteer browser default ua
+AROAY_PYPPETEER_DEFAULT_USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36'
+
+# aroay_pyppeteer settings
+AROAY_PYPPETEER_HEADLESS = True
+AROAY_PYPPETEER_EXECUTABLE_PATH = None
+AROAY_PYPPETEER_IGNORE_HTTPS_ERRORS = False
+AROAY_PYPPETEER_SLOW_MO = None
+AROAY_PYPPETEER_IGNORE_DEFAULT_ARGS = False
+AROAY_PYPPETEER_HANDLE_SIGINT = True
+AROAY_PYPPETEER_HANDLE_SIGTERM = True
+AROAY_PYPPETEER_HANDLE_SIGHUP = True
+AROAY_PYPPETEER_DUMPIO = False
+AROAY_PYPPETEER_DEVTOOLS = False
+AROAY_PYPPETEER_AUTO_CLOSE = True
+AROAY_PYPPETEER_PRETEND = True
+# aroay_pyppeteer args
+AROAY_PYPPETEER_DISABLE_EXTENSIONS = True
+AROAY_PYPPETEER_HIDE_SCROLLBARS = True
+AROAY_PYPPETEER_MUTE_AUDIO = True
+AROAY_PYPPETEER_NO_SANDBOX = True
+AROAY_PYPPETEER_DISABLE_SETUID_SANDBOX = True
+AROAY_PYPPETEER_DISABLE_GPU = True
+
+# ignore resource types, ResourceType will be one of the following: ``document``,
+# ``stylesheet``, ``image``, ``media``, ``font``, ``script``,
+#  ``texttrack``, ``xhr``, ``fetch``, ``eventsource``, ``websocket``,
+#  ``manifest``, ``other``.
+AROAY_PYPPETEER_IGNORE_RESOURCE_TYPES = []
+AROAY_PYPPETEER_SCREENSHOT = None
+AROAY_PYPPETEER_SLEEP = 1
+AROAY_ENABLE_REQUEST_INTERCEPTION = True
+
+
+
