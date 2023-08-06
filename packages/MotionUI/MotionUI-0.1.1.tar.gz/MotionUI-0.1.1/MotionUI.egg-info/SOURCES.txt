@@ -1,0 +1,6 @@
+README.md
+setup.py
+MotionUI.egg-info/PKG-INFO
+MotionUI.egg-info/SOURCES.txt
+MotionUI.egg-info/dependency_links.txt
+MotionUI.egg-info/top_level.txt

@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: MotionUI
+Version: 0.1.1
+Summary: ハンドジェスチャーによるUI操作をカメラ入力のリアルタイム解析により実現する汎用ソフトウェアライブラリ
+Home-page: https://github.com/TaisukeUmetani/MotionUI
+Author: Taisuke Umetani
+Author-email: nazogle@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
