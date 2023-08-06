@@ -1,0 +1,11 @@
+CHANGELOG.md
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+nicehash_python.egg-info/PKG-INFO
+nicehash_python.egg-info/SOURCES.txt
+nicehash_python.egg-info/dependency_links.txt
+nicehash_python.egg-info/entry_points.txt
+nicehash_python.egg-info/requires.txt
+nicehash_python.egg-info/top_level.txt
