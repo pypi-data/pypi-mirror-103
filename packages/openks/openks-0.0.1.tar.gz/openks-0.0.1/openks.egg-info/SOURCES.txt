@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+openks/__init__.py
+openks.egg-info/PKG-INFO
+openks.egg-info/SOURCES.txt
+openks.egg-info/dependency_links.txt
+openks.egg-info/top_level.txt
+scripts/__init__.py
+tests/__init__.py
