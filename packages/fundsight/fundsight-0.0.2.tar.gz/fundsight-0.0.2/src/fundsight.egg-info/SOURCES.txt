@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+dist/fundsight-0.0.1.tar.gz
+src/.DS_Store
+src/fundsight/.DS_Store
+src/fundsight/__init__.py
+src/fundsight/indicators.py
+src/fundsight.egg-info/PKG-INFO
+src/fundsight.egg-info/SOURCES.txt
+src/fundsight.egg-info/dependency_links.txt
+src/fundsight.egg-info/requires.txt
+src/fundsight.egg-info/top_level.txt
+src/fundsight/__pycache__/__init__.cpython-39.pyc
+src/fundsight/__pycache__/indicators.cpython-39.pyc
+tests/test_indicators.py
