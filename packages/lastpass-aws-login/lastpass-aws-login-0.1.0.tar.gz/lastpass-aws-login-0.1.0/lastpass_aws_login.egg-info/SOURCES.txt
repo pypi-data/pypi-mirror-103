@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+aws_lp/__init__.py
+aws_lp/conf.py
+aws_lp/credentials.py
+aws_lp/exceptions.py
+aws_lp/lastpass.py
+aws_lp/main.py
+aws_lp/utils.py
+lastpass_aws_login.egg-info/PKG-INFO
+lastpass_aws_login.egg-info/SOURCES.txt
+lastpass_aws_login.egg-info/dependency_links.txt
+lastpass_aws_login.egg-info/entry_points.txt
+lastpass_aws_login.egg-info/requires.txt
+lastpass_aws_login.egg-info/top_level.txt
