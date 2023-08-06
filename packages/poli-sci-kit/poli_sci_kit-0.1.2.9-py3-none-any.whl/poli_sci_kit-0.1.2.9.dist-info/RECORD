@@ -1,0 +1,14 @@
+poli_sci_kit/__init__.py,sha256=daIe_2fn2hUBEsQcbmej_HHQKNvXdZjvqkM_kqUiZdg,32
+poli_sci_kit/utils.py,sha256=-l8PMHyWOccEQfUZY8GJIpuJIakISAXcUBvxhICchWM,17966
+poli_sci_kit/appointment/__init__.py,sha256=mNze84k0E_nj52bwkkanef4L3dkP0mR40Lg6o8_Bn-Q,133
+poli_sci_kit/appointment/checks.py,sha256=nQORy33A-Mytv1U_gCmvnQYMQS9MVoE5FK5oOj2yorA,11678
+poli_sci_kit/appointment/methods.py,sha256=E-I9bTGe0lX9vxgArlNFzynBsuCxZD8cuNR4YbCAuZI,17711
+poli_sci_kit/appointment/metrics.py,sha256=4Y5a4MeuUEKDjzLwubWx93rwrxnadenBMsBjjt-8g0I,16370
+poli_sci_kit/plot/__init__.py,sha256=eI3n_aXULhoOKfyLIouiU5_17KyzGavh_UKoFvvK5CM,102
+poli_sci_kit/plot/dispr_bar.py,sha256=Um6Nkxyj8_LO_DLWCl_Rm_dqAFkXn8Shu4JcJYG4Cxg,4797
+poli_sci_kit/plot/parliament.py,sha256=FoUf8Vj6rk95vCEZhbZ5hmiFR1sFi1kufeJH0_jk0fU,3493
+poli_sci_kit-0.1.2.9.dist-info/LICENSE.txt,sha256=fOXlBJzSXGyoRuY1ba4EWIBqdr8eSkPvhozoOGoMios,1533
+poli_sci_kit-0.1.2.9.dist-info/METADATA,sha256=gj3un6B5O2UqBuWlefD0nlrzqIozeybHGJmCJQKRA7s,13453
+poli_sci_kit-0.1.2.9.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+poli_sci_kit-0.1.2.9.dist-info/top_level.txt,sha256=ciA1DrD6-77c5g3rPsJiCQQPkP8zsaCZbCidwds15OI,13
+poli_sci_kit-0.1.2.9.dist-info/RECORD,,
