@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: mapon
+Version: 0.0.8
+Summary: A data wrangling tool
+Home-page: https://github.com/nalssee/mapon.git
+Author: nalssee
+Author-email: jinisrolling@gmail.com
+License: MIT
+Description: # mapon
+        To use highly customized python functions on SQL(ite) 
+        
+        
+Platform: UNKNOWN
