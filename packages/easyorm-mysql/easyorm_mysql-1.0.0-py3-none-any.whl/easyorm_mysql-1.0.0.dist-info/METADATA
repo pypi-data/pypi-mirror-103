@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: easyorm-mysql
+Version: 1.0.0
+Summary: a easy orm framework for mysql
+Home-page: https://www.cnblogs.com/yxb-blog/
+Author: yxb
+Author-email: yuexba@yutong.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: mysql-connector (>=2.2.9)
+
+UNKNOWN
+
+
