@@ -1,0 +1,8 @@
+opentelemetry/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opentelemetry/exporter/cloud_trace/__init__.py,sha256=xIXP8adlfjXC38oVZ8j0vz7pB7l9OxwRMe2F00VWCr8,15433
+opentelemetry/exporter/cloud_trace/version.py,sha256=zz3FJfubHRThDFVbcFJ35G2SqEkC9bGpYLZ6ya8O5n0,596
+opentelemetry_exporter_gcp_trace-1.0.0rc0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+opentelemetry_exporter_gcp_trace-1.0.0rc0.dist-info/METADATA,sha256=3R60hLn0R4FZt8KWae7JBKoz_F2-PN88IlMEOSXDRyI,2714
+opentelemetry_exporter_gcp_trace-1.0.0rc0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+opentelemetry_exporter_gcp_trace-1.0.0rc0.dist-info/top_level.txt,sha256=5p97iTMneNm1LAKDalzEVpYhvPZsaqJZzdLuD_upSaQ,14
+opentelemetry_exporter_gcp_trace-1.0.0rc0.dist-info/RECORD,,
