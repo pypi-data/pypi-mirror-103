@@ -1,0 +1,3 @@
+[console_scripts]
+dpa=data_portal_archiver.main:run
+

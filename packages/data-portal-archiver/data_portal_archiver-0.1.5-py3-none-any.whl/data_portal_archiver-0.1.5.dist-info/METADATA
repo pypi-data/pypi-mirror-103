@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: data-portal-archiver
+Version: 0.1.5
+Summary: 
+Author: Lucas Bellomo
+Author-email: lbellomo@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: httpx (>=0.17.1,<0.18.0)
+Requires-Dist: internetarchive (>=2.0.2,<3.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)

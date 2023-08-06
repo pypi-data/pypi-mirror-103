@@ -1,0 +1,12 @@
+data_portal_archiver/ckan_crawler.py,sha256=I8lp0P_KwgQxvu_g_em8jl7IRn3UKvnoZGlAgnK8G04,6180
+data_portal_archiver/ia_uploader.py,sha256=eqasAn8xlzFmiKwAB7Wqwv6h87yiDbrYk0hmfQ_BuJY,5163
+data_portal_archiver/main.py,sha256=PkqTK9E8YhHvoaPER60gceu1wydaFryuEfdaC20kP7U,4700
+data_portal_archiver/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data_portal_archiver/tests/test_ckan_crawler.py,sha256=BE1-1GFe9Li7QjDS0IwceQANjxy09UgnjtxZJNoY_4U,1849
+data_portal_archiver/tests/test_ia_uploader.py,sha256=IsxTCT4MwqyurWgptLAfqhVNVit7YEPcjrL9oxBpoNs,66
+data_portal_archiver/utils.py,sha256=bWLxQN30MWwa-uxOxtrlBMJ2-y-lAQbq5NKIM8PnYe4,1175
+data_portal_archiver-0.1.5.dist-info/entry_points.txt,sha256=CqF8teufZr-Po1sAArKPlWyDWq1GhOvHBqT1MPSfhwQ,53
+data_portal_archiver-0.1.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+data_portal_archiver-0.1.5.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+data_portal_archiver-0.1.5.dist-info/METADATA,sha256=mk1ZodIwCcR9a_LTu-P_Hn5OMRtkr3ku9VFlFQ2d1GU,382
+data_portal_archiver-0.1.5.dist-info/RECORD,,
