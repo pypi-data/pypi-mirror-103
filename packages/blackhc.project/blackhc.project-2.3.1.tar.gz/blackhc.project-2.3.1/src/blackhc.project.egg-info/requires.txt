@@ -1,0 +1,15 @@
+gitpython
+fs.sshfs
+laaos
+blackhc.progress_bar
+psutil
+
+[dev]
+check-manifest
+
+[test]
+coverage
+pytest
+pytest-forked
+pyfakefs==3.3
+torch
