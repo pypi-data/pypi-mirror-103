@@ -1,0 +1,7 @@
+numpy
+visvis
+pyvtk
+matplotlib
+scipy
+pyqt5
+gmsh
