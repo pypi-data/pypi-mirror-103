@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+setup.py
+moj_pak/__init__.py
+moj_pak/test1.py
+moj_pak/test2.py
+moj_pak.egg-info/PKG-INFO
+moj_pak.egg-info/SOURCES.txt
+moj_pak.egg-info/dependency_links.txt
+moj_pak.egg-info/requires.txt
+moj_pak.egg-info/top_level.txt
