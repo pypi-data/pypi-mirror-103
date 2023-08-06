@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: xlsOperator
+Version: 0.0.9
+Summary: a library for read/write xls and xlsx document which can ideally keep graphics' format in EXCEL after modification .
+Home-page: UNKNOWN
+Author: TreemanChou
+Author-email: 574747067@qq.com
+License: MIT License
+Description: UNKNOWN
+Keywords: xls excel
+Platform: any

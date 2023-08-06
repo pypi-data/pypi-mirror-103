@@ -1,0 +1,4 @@
+xlwt
+xlrd
+numpy
+pypiwin32
