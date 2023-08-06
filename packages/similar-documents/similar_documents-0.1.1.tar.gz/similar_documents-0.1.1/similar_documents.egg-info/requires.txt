@@ -1,0 +1,12 @@
+Markdown
+markdown-full-yaml-metadata
+numpy
+scipy
+beautifulsoup4
+scikit_learn
+fugashi
+unidic-lite
+plac
+
+[testing]
+pytest
