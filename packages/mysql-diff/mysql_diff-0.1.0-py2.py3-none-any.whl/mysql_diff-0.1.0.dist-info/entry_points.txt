@@ -1,0 +1,3 @@
+[console_scripts]
+mysql-diff = mysql_diff:main
+

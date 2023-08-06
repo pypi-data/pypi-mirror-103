@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: mysql-diff
+Version: 0.1.0
+Summary: Compare two mysql dumps and output diffs of tables as CREATE TABLE, diff of fields as ALTER
+Home-page: https://github.com/mgaitan/mysql-compare-dump-diff-as-alter
+Author: Martín Gaitán
+Author-email: gaitan@gmail.com
+License: BSD
+Keywords: mysql-diff
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: click (>=3.1)
+
+===============================
+mysql-diff
+===============================
+
+.. image:: https://badge.fury.io/py/mysql-diff.png
+    :target: http://badge.fury.io/py/mysql-diff
+
+.. image:: https://travis-ci.org/mgaitan/mysql-diff.png?branch=master
+        :target: https://travis-ci.org/mgaitan/mysql-diff
+
+.. image:: https://pypip.in/d/mysql-diff/badge.png
+        :target: https://pypi.python.org/pypi/mysql-diff
+
+
+Compare two mysql dumps and output diffs of tables as CREATE TABLE, diff of fields as ALTER
+
+Features
+=========
+
+* TODO
+
+History
+=========
+
+0.1.0 (2021-04-21)
+---------------------
+
+* First release on PyPI based on the work of Artyom Lisovskii
+  https://github.com/artyomLisovskij/mysql-compare-dump-diff-as-alter
+
