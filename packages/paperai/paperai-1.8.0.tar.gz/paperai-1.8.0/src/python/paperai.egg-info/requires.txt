@@ -1,0 +1,7 @@
+html2markdown>=0.1.7
+mdv3>=2.0.1
+networkx>=2.4
+PyYAML>=5.3
+regex>=2020.5.14
+txtai>=2.0.0
+txtmarker>=1.0.0
