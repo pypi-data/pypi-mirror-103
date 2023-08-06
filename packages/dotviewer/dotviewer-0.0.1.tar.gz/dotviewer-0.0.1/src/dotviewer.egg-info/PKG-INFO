@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: dotviewer
+Version: 0.0.1
+Summary: A interactive pygame-based viewer for graphviz files
+Home-page: https://foss.heptapod.net/pypy/pypy/-/tree/branch/default/dotviewer
+Author: Carl Friedrich Bolz-Tereick
+Author-email: cfbolz@gmx.de
+License: UNKNOWN
+Project-URL: Bug Tracker, https://foss.heptapod.net/pypy/pypy/-/issues
+Description: 
+        # Dotviewer
+        
+        An interactive Pygame-based viewer for Graphviz graphs.
+        
+        Usage:
+        
+        ```
+        $ python -m dotviewer <filename.dot/plain>
+        ```
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
