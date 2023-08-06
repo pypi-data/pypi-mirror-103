@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: deep-net
+Version: 0.1.1
+Summary: A Simple Library for Neural Networks
+Home-page: https://github.com/nadundesilva/deep-net
+Author: Nadun De Silva
+Author-email: nadunrds@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/nadundesilva/deep-net/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.19.5)
+
+# deep-net
+A Simple Library for Building Neural Networks
+
+
