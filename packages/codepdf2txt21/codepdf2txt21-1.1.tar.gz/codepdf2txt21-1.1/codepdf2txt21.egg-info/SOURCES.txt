@@ -1,0 +1,8 @@
+README.md
+setup.py
+codepdf2txt21/__init__.py
+codepdf2txt21/pdf2text.py
+codepdf2txt21.egg-info/PKG-INFO
+codepdf2txt21.egg-info/SOURCES.txt
+codepdf2txt21.egg-info/dependency_links.txt
+codepdf2txt21.egg-info/top_level.txt
