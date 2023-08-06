@@ -1,0 +1,6 @@
+spacy
+spacy_transformers
+sentencepiece
+denomme
+protobuf
+https://denomme.s3.us-east-2.amazonaws.com/xx_denomme-0.3.1/dist/xx_denomme-0.3.1.tar.gz
