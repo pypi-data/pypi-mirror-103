@@ -1,0 +1,12 @@
+pandas
+numpy
+scipy
+pygal
+cairosvg
+cssselect2
+pikepdf
+img2pdf
+openpyxl
+xlwt
+xlsxwriter
+matplotlib
