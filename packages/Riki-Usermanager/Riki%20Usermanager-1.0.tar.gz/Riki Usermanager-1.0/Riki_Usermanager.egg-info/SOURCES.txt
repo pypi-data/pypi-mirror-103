@@ -1,0 +1,12 @@
+README.md
+setup.py
+Riki_Usermanager.egg-info/PKG-INFO
+Riki_Usermanager.egg-info/SOURCES.txt
+Riki_Usermanager.egg-info/dependency_links.txt
+Riki_Usermanager.egg-info/top_level.txt
+riki_usermanager/User.py
+riki_usermanager/UserManager.py
+riki_usermanager/__init__.py
+tests/__init__.py
+tests/test_user.py
+tests/test_user_manager.py
