@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+setup.py
+setup2.py
+eanoui/__init__.py
+eanoui/admin.py
+eanoui/apps.py
+eanoui/forms.py
+eanoui/widgets.py
+eanoui.egg-info/PKG-INFO
+eanoui.egg-info/SOURCES.txt
+eanoui.egg-info/dependency_links.txt
+eanoui.egg-info/not-zip-safe
+eanoui.egg-info/requires.txt
+eanoui.egg-info/top_level.txt
