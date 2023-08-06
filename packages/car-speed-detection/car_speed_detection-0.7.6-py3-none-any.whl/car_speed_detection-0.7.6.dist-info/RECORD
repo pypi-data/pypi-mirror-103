@@ -1,0 +1,10 @@
+.DS_Store,sha256=pOCMN1nXbv3J1o2Oc6otzizGMJ7Vu1rLhhttXe24-to,6148
+car_speed/__init__.py,sha256=UswPCkibBUwMSv2B2zDMiiIvUo8gqo_ZLnxnLpCzlqE,38
+car_speed/car_speed_detection.py,sha256=KT0f6yrzc2QlmxA0C9wL9T89DUEb4IbGrRfyY8n_9lE,19649
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/car_speed_detection_test.py,sha256=h-YuwoNpEQurjuqLmZqHKmKc0v19apjKvgW89vCSEbQ,10528
+car_speed_detection-0.7.6.dist-info/LICENSE.txt,sha256=VpMnxDNMx1ViIzm3tsWH6Mq6keff1jdWh5X6DLSyRX8,1054
+car_speed_detection-0.7.6.dist-info/METADATA,sha256=bf9SVfB_FmuRn4JsXWa4JmZd24zeze0oMuejSb_xrjQ,4387
+car_speed_detection-0.7.6.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+car_speed_detection-0.7.6.dist-info/top_level.txt,sha256=ZN1KjsRRxzpSMwP9Cycr6ZJ8LxqK7g2C3K0P_oojL9Y,10
+car_speed_detection-0.7.6.dist-info/RECORD,,

@@ -1,0 +1,111 @@
+Metadata-Version: 2.1
+Name: car-speed-detection
+Version: 0.7.6
+Summary: Speed detection library for automobile
+Home-page: UNKNOWN
+Author: Shao-chieh Lien
+Author-email: shaochiehlien@gmail.com
+License: MIT
+Keywords: python,car speed detection,software-based speedometer,dashboard camera,optical flow,machine learning,keras
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: absl-py (==0.12.0)
+Requires-Dist: astunparse (==1.6.3)
+Requires-Dist: cachetools (==4.2.1)
+Requires-Dist: car-speed-detection (==0.7.4)
+Requires-Dist: certifi (==2020.12.5)
+Requires-Dist: chardet (==4.0.0)
+Requires-Dist: cycler (==0.10.0)
+Requires-Dist: flatbuffers (==1.12)
+Requires-Dist: gast (==0.3.3)
+Requires-Dist: google-auth (==1.28.1)
+Requires-Dist: google-auth-oauthlib (==0.4.4)
+Requires-Dist: google-pasta (==0.2.0)
+Requires-Dist: grpcio (==1.32.0)
+Requires-Dist: h5py (==2.10.0)
+Requires-Dist: idna (==2.10)
+Requires-Dist: joblib (==1.0.1)
+Requires-Dist: Keras-Preprocessing (==1.1.2)
+Requires-Dist: kiwisolver (==1.3.1)
+Requires-Dist: Markdown (==3.3.4)
+Requires-Dist: matplotlib (==3.3.4)
+Requires-Dist: numpy (==1.19.4)
+Requires-Dist: oauthlib (==3.1.0)
+Requires-Dist: opencv-python (==4.5.1.48)
+Requires-Dist: opt-einsum (==3.3.0)
+Requires-Dist: pandas (==1.2.1)
+Requires-Dist: Pillow (==8.2.0)
+Requires-Dist: protobuf (==3.15.8)
+Requires-Dist: pyasn1 (==0.4.8)
+Requires-Dist: pyasn1-modules (==0.2.8)
+Requires-Dist: pyparsing (==2.4.7)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: pytz (==2021.1)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: requests-oauthlib (==1.3.0)
+Requires-Dist: rsa (==4.7.2)
+Requires-Dist: scikit-learn (==0.24.1)
+Requires-Dist: scipy (==1.6.2)
+Requires-Dist: six (==1.15.0)
+Requires-Dist: sklearn (==0.0)
+Requires-Dist: tensorboard (==2.4.1)
+Requires-Dist: tensorboard-plugin-wit (==1.8.0)
+Requires-Dist: tensorflow (==2.4.1)
+Requires-Dist: tensorflow-estimator (==2.4.0)
+Requires-Dist: termcolor (==1.1.0)
+Requires-Dist: threadpoolctl (==2.1.0)
+Requires-Dist: typing-extensions (==3.7.4.3)
+Requires-Dist: urllib3 (==1.26.4)
+Requires-Dist: Werkzeug (==1.0.1)
+Requires-Dist: wrapt (==1.12.1)
+
+# Car-Speed-Detection
+Car-Speed-Detection provides a python library to detect the speed of the driving 
+car itself by the video stream from the dashboard camera installed on the car.
+
+Car-Speed-Detection separates the speed detection process into three steps, 
+preprocessing, training, and speed detection. By using Gunnar-Farneback optical flow
+algorithm along with the pipeline we developed, we are able to extract each frame into
+a small size matrix depends on developers preference. We use the Artifitial Neural 
+Network (ANN) to train our model with the preprocessed matrix acquired from preprocessing
+function. Developers could use the trained model to detect the speed of the car
+at each frame using our speed detection function.
+
+## Getting Started
+### Installation
+Car-Speed-Detection is available on [PyPI](https://pypi.org/project/car-speed-detection/) and can be
+installed via [`pip`](https://pypi.org/project/pip/). See
+[car-speed-detection.readthedocs.io](https://car-speed-detection.readthedocs.io/en/latest/)
+to learn about system dependencies and installation alternatives and
+recommendations.
+
+```shell
+pip install car-speed-detection
+```
+
+### Read, Preprocess, Train, and Detect the Car Speed
+The [Car-Speed-Detection](https://pypi.org/project/car-speed-detection/) library consists of the
+following parts:
+- Read (Read the mp4 video and output each frame into a designated directory)
+- Preprocess (Preprocess each frame and output a feature set for training)
+- Train (Train the model using the feature set and Artifitial Neural Network)
+- Speed Detection (Detect the speed using the model and video)
+
+Take a look at the [API](https://car-speed-detection.readthedocs.io/en/latest/API.html#) to know more about
+the Application Programming Interface and Sample for further information on how to use our library
+
+## Result
+
+## Acknowledge
+Team Leader and Software Architecture: Shao-Chieh Lien 
+
+Research Paper Writer: Meenakshi Pavithran 
+
+Training Data Generator: Christopher Crocker 
+
+
