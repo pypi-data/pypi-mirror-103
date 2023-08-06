@@ -1,0 +1,3 @@
+[beet]
+autoload=pigstep.plugin.autoload
+

@@ -1,0 +1,13 @@
+pigstep/__init__.py,sha256=TPsyafnxR0Bj-oOFlKYaYEV7XLt2OSEKvuREbD7qc30,65
+pigstep/note.py,sha256=5_zRwTyCr8DR2F5teDihTVV4Y6ymS34LynGYsNkHO1M,2019
+pigstep/plugin.py,sha256=_LhCHePxxfuQYKlKOX8qj1rD-j2aSLQeXwwN61Zeufk,2124
+pigstep/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pigstep/templates/pause.mcfunction,sha256=jj4Q2wCKt1A96DpeHus-v_Dv8mq8M72KYgk2qn1Wvak,30
+pigstep/templates/play.mcfunction,sha256=vdY5XFkSrKAt8CkDgmIxGaN_gaMEgCEAVF-4t6pChug,118
+pigstep/templates/stop.mcfunction,sha256=yTnKi6b1bS3NGd-cfPdiZjxEVVPkMktpCBYeVAlqGv8,74
+pigstep/templates/tick.mcfunction,sha256=yw8SYzqxRxw1DhB8ssc20N7I1UpzhNHSYLHpCSnycR8,1231
+pigstep-0.1.0.dist-info/entry_points.txt,sha256=7BIBGNS1_JMcrscQZQWyj34szOhrIPaoPLfL-3kscaE,41
+pigstep-0.1.0.dist-info/LICENSE,sha256=4gLu2TrJPEkFTd4RV8wz0Lncyd4YPBpVUZcolDL6588,1073
+pigstep-0.1.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+pigstep-0.1.0.dist-info/METADATA,sha256=O7pFyg2VQWkokLdkThS8FM_yebt1m58iM5PvlV3RlrU,2398
+pigstep-0.1.0.dist-info/RECORD,,
