@@ -1,0 +1,7 @@
+LICENSE.txt
+README.md
+setup.py
+wangchess.egg-info/PKG-INFO
+wangchess.egg-info/SOURCES.txt
+wangchess.egg-info/dependency_links.txt
+wangchess.egg-info/top_level.txt
