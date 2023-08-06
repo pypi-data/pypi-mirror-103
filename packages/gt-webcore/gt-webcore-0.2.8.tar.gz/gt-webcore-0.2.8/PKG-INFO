@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: gt-webcore
+Version: 0.2.8
+Summary: A Web Service Framework Base On Flask And Sqlalchemy
+Home-page: https://github.com/Genetalks/gt-webcore
+Author: wunan
+Author-email: wunan799@163.com
+License: MIT
+Description: gt-webcore
+        =================
+        
+        Features
+        -------
+        
+        - 自动序列化接口返回值为JSON结构；
+        - 集成了SQLAlchemy、MongoEngine对象映射框架；
+        - 统一的接口返回值结构；
+        - 提供简单完善可扩展的接口参数验证机制；
+        - 完善的异常处理机制；
+        - 模块化方式加载应用模块，每个应用独立一个蓝图配置；
+        
+        Install
+        -------
+        
+        With pip:
+        
+        :: pip install gt-webcore
+        
+        Configration
+        -------
+        
+        1. MODULES - 加载模块列表  
+        
+        ```python
+          { 'name': 'app.resource', 'package': 'resource' }
+        ```
+        
+        2. LOGGER_CONFIG - 日志配置字典  
+        日志配置可以参考 python logging 的配置说明；
+        
+        3. SQLAlchemy 配置  
+        具体可以参考 [Flask-SQLAlchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/quickstart/) 的配置说明，示例如下：  
+        
+        ``` python
+          SQLALCHEMY_ENGINE_OPTIONS = {  
+            'pool_recycle': 3600,  
+            'pool_timeout': 15,  
+            'pool_pre_ping': True,  
+            'pool_size': 5  
+          }  
+          SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:pwd@host:port/database?charset=utf8'
+        ```
+        
+        4. MongoEngine 配置
+        配置项参考 [Flask-MongoEngine](http://docs.mongoengine.org/projects/flask-mongoengine/en/latest/) 的配置说明，示例如下：
+        
+        ``` python
+          MONGODB_SETTINGS = {
+              'host': 'localhost',
+              'port': 27017,
+              'db': 'demo'
+          }
+        ```
+        
+        5. Celery 配置  
+        配置项参考 Celery 配置文档说明，示例如下：  
+        
+        ``` python
+          CELERY = {
+            'celery_broker_url': 'redis://guest@localhost:6379',  
+            'result_backend': 'redis://guest@localhost:6379',  
+            'task_routes': { 'app.system.controller.*': {'queue': 'test'} }  
+          }
+        ```
+        
+        Run
+        --------
+        
+        ``` python
+        from webcore import create_app, release_app
+        
+        def debug_instance():
+            from config.develop import DevelopConfig
+            return create_app(DevelopConfig())
+        
+        def production_instance():
+            from config.production import ProductionConfig
+            return create_app(ProductionConfig())
+        
+        if __name__ == '__main__':
+            app = debug_instance()
+            app.run(host='0.0.0.0', port=5002, debug=True)
+            release_app()
+        ```
+        
+Keywords: flask,sqlalchemy,restful
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
