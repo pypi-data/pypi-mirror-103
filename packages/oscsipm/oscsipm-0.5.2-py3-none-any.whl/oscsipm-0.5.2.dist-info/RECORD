@@ -1,0 +1,9 @@
+oscsipm/__init__.py,sha256=FbZNVMjyK7-g2ZrOt8mrljrN6FnSgEkh-Db7bNLY4ME,284
+oscsipm/crosstalk.py,sha256=zIrFrF7Sq1RaZ9ljO0GvPS9vu--pp_z4hybS-jrTaeg,10324
+oscsipm/histogram.py,sha256=KPgiEQhKN9AMseM1xd6HVq64hxdeZRJ8GpZk5WkKkT4,9470
+oscsipm/oscillogram.py,sha256=vx7FFH0ymJHjfJa-deEPkCbC6YrFMC2WknySAfcgbe4,10171
+oscsipm-0.5.2.dist-info/LICENSE,sha256=DusBKxrsL4aa22ieB_pVLoUmg6Vax7KMZ-oh6bplhOE,1069
+oscsipm-0.5.2.dist-info/METADATA,sha256=J4tmGCMK1zT54S3JtFyLGC5VosBpPzMS2Srb-BVcavE,2238
+oscsipm-0.5.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+oscsipm-0.5.2.dist-info/top_level.txt,sha256=RNSr1hkoku7pSk034royM_5PR_5gnM8r35YOqwowfRw,8
+oscsipm-0.5.2.dist-info/RECORD,,
