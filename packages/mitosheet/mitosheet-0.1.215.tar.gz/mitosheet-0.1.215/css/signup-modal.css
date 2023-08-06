@@ -1,0 +1,111 @@
+
+.overlay {
+    height: 100%;
+    width: 100%;
+
+    background-color: rgba(128, 128, 128, 0.5);
+
+    z-index: 2;
+    position: absolute;
+
+    display: flex;
+}
+
+
+.signup-modal-container {
+    margin: auto;
+    width: 750px;
+    height: 350px;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.signup-modal-left-column-container {
+    display: flex;
+    flex-direction: column;
+
+    width: 350px;
+    margin: 50px 20px 50px 50px
+}
+
+
+.signup-modal-right-column-container {
+    width: 300px;
+    border-radius: 0px 5px 5px 0px; 
+}
+
+.signup-modal-left-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100%;
+}
+
+.signup-modal-text {
+    color: #838383;
+    line-height: 1.5;
+    font-size: 17px;
+    margin-top: '50px';
+}
+
+.signup-modal-buttons {
+    display: flex;
+    margin-top: 10px;
+}  
+
+.signup-modal-button-back {
+    border: 0;
+    background-color: white;
+    color: #838383;
+
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.signup-modal-button-next {
+    border: 0;
+    background-color: var(--mito-blue);
+    color: white;
+
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+
+.signup-modal-button-signup {
+    border: 0;
+    background-color: var(--mito-blue);
+    color: white;
+
+    margin-top: 25px;
+    padding: 10px 20px;
+}
+
+.signup-modal-email-form {
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+}
+
+.signup-modal-usage-grid {
+    display: grid;
+    grid-template-columns: 140px 140px;
+    grid-gap: 10px;
+}
+
+.signup-modal-usage-answer {
+    padding: 5px 10px;
+    
+    border-radius: 3px;
+
+    font-size: 12px;
+}

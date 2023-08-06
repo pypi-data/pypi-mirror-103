@@ -1,0 +1,12 @@
+.frustration-selection-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.frustration-selection-box {
+    display: flex;
+    border-radius: 5px;
+    width: 100px;
+    height: 25px;
+    font-size: 11px;
+}
