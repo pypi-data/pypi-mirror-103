@@ -1,0 +1,1 @@
+smarty_left_pad
