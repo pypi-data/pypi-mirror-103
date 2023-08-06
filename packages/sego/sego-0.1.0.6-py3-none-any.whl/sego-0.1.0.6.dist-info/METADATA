@@ -1,0 +1,171 @@
+Metadata-Version: 2.1
+Name: sego
+Version: 0.1.0.6
+Summary: A web and micro-service framework for data analysts
+Home-page: https://github.com/sambe-consulting/sego
+Author: Sambe Consulting
+Author-email: development@sambe.co.za
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: argon2-cffi (==20.1.0)
+Requires-Dist: astroid (==2.5.2)
+Requires-Dist: async-generator (==1.10)
+Requires-Dist: attrs (==20.3.0)
+Requires-Dist: backcall (==0.2.0)
+Requires-Dist: beautifulsoup4 (==4.8.1)
+Requires-Dist: bleach (==3.3.0)
+Requires-Dist: certifi (==2020.12.5)
+Requires-Dist: cffi (==1.14.5)
+Requires-Dist: chardet (==4.0.0)
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: confo
+Requires-Dist: coverage (==5.5)
+Requires-Dist: cryptography (==3.4.6)
+Requires-Dist: decorator (==4.4.2)
+Requires-Dist: defusedxml (==0.7.1)
+Requires-Dist: docutils (==0.16)
+Requires-Dist: entrypoints (==0.3)
+Requires-Dist: gunicorn (==20.1.0)
+Requires-Dist: idna (==2.10)
+Requires-Dist: importlib-metadata (==3.7.0)
+Requires-Dist: iniconfig (==1.1.1)
+Requires-Dist: ipykernel (==5.5.3)
+Requires-Dist: ipython (==7.16.1)
+Requires-Dist: ipython-genutils (==0.2.0)
+Requires-Dist: ipywidgets (==7.6.3)
+Requires-Dist: isort (==5.8.0)
+Requires-Dist: jedi (==0.18.0)
+Requires-Dist: jeepney (==0.6.0)
+Requires-Dist: Jinja2 (==2.11.3)
+Requires-Dist: jsonschema (==3.2.0)
+Requires-Dist: jupyter (==1.0.0)
+Requires-Dist: jupyter-client (==6.1.12)
+Requires-Dist: jupyter-console (==6.4.0)
+Requires-Dist: jupyter-core (==4.7.1)
+Requires-Dist: jupyterlab-pygments (==0.1.2)
+Requires-Dist: jupyterlab-widgets (==1.0.0)
+Requires-Dist: kazoo (==2.8.0)
+Requires-Dist: keyring (==22.3.0)
+Requires-Dist: lazy-object-proxy (==1.6.0)
+Requires-Dist: MarkupSafe (==1.1.1)
+Requires-Dist: mccabe (==0.6.1)
+Requires-Dist: mistune (==0.8.4)
+Requires-Dist: nbclient (==0.5.3)
+Requires-Dist: nbconvert (==6.0.7)
+Requires-Dist: nbformat (==5.1.2)
+Requires-Dist: nest-asyncio (==1.5.1)
+Requires-Dist: notebook (==6.3.0)
+Requires-Dist: packaging (==20.9)
+Requires-Dist: pandocfilters (==1.4.3)
+Requires-Dist: parse (==1.19.0)
+Requires-Dist: parso (==0.8.2)
+Requires-Dist: pexpect (==4.8.0)
+Requires-Dist: pickleshare (==0.7.5)
+Requires-Dist: pkginfo (==1.7.0)
+Requires-Dist: pluggy (==0.13.1)
+Requires-Dist: prometheus-client (==0.9.0)
+Requires-Dist: prompt-toolkit (==3.0.18)
+Requires-Dist: ptyprocess (==0.7.0)
+Requires-Dist: py (==1.10.0)
+Requires-Dist: pybreaker (==0.4.5)
+Requires-Dist: pycparser (==2.20)
+Requires-Dist: Pygments (==2.8.0)
+Requires-Dist: pylint (==2.7.4)
+Requires-Dist: pyparsing (==2.4.7)
+Requires-Dist: pyrsistent (==0.17.3)
+Requires-Dist: pysingleton (==0.2.1)
+Requires-Dist: pytest (==6.2.2)
+Requires-Dist: pytest-cov (==2.11.1)
+Requires-Dist: pytest-mock (==3.5.1)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: pyzmq (==22.0.3)
+Requires-Dist: qtconsole (==5.0.3)
+Requires-Dist: QtPy (==1.9.0)
+Requires-Dist: readme-renderer (==29.0)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: requests-toolbelt (==0.9.1)
+Requires-Dist: requests-wsgi-adapter (==0.4.1)
+Requires-Dist: rfc3986 (==1.4.0)
+Requires-Dist: SecretStorage (==3.3.1)
+Requires-Dist: Send2Trash (==1.5.0)
+Requires-Dist: singleton-decorator (==1.0.0)
+Requires-Dist: six (==1.15.0)
+Requires-Dist: soupsieve (==2.2.1)
+Requires-Dist: terminado (==0.9.4)
+Requires-Dist: testpath (==0.4.4)
+Requires-Dist: toml (==0.10.2)
+Requires-Dist: toolz (==0.9.0)
+Requires-Dist: tornado (==6.1)
+Requires-Dist: tqdm (==4.59.0)
+Requires-Dist: traitlets (==4.3.3)
+Requires-Dist: twine (==3.4.1)
+Requires-Dist: typed-ast (==1.4.2)
+Requires-Dist: typing-extensions (==3.7.4.3)
+Requires-Dist: urllib3 (==1.26.3)
+Requires-Dist: wcwidth (==0.2.5)
+Requires-Dist: webencodings (==0.5.1)
+Requires-Dist: WebOb (==1.8.7)
+Requires-Dist: wget (==3.2)
+Requires-Dist: whitenoise (==5.2.0)
+Requires-Dist: widgetsnbextension (==3.5.1)
+Requires-Dist: wrapt (==1.12.1)
+Requires-Dist: yapf (==0.31.0)
+Requires-Dist: zipp (==3.4.1)
+
+
+
+
+<p align="center"><img src="https://raw.githubusercontent.com/sambe-consulting/sego/master/sego/assets/logo.png?token=ASI6IMQLECOW25335IBSGZLAJFVMW" width="400"></p>
+
+<p align="center"><h3 style="color: #193967; text-align: center">A web and micro-service framework for data analysts </h3></p>
+
+<p align="center">
+<a href="https://github.com/sambe-consulting/sego/actions/workflows/pytest-workflow.yml"><img src="https://github.com/sambe-consulting/sego/actions/workflows/pytest-workflow.yml/badge.svg"></a>
+<a href="https://houndci.com"><img src="https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg"></a>
+<a href="https://github.com/apache/zookeeper/blob/master/LICENSE.txt"><img src="https://img.shields.io/github/license/apache/zookeeper"></a>
+
+
+</p>
+
+## About Sego
+
+Sego is a suite of tools for the "last mile" of ML and analytics projects. Sego is built to assist data scientists, analysts and engineers,productionize 
+ML workloads with ease. Sego is primarily used for:
+- Model serving 
+- Multi-stage data processing
+- Dashboards 
+- Metrics and alerting 
+- Database schema management 
+
+
+Sego can also be used to build:
+- Rest APIs 
+- Micro-service topologies 
+- Normal MVC webapps 
+
+Sego provides an opinionated way to build production ML and analytics systems, but flexible enough to fit into different applications. It creates a 
+rapid development environment. 
+
+### Key Components
+- Web Framework
+- Micro-service framework
+- Distributed tasks
+- Native integration to <a href="https://github.com/sambe-consulting/confo">Confo </a> for all configuration management tasks,which also allows the building of complex topologies. 
+#### Name etymology
+Sego is a <a href="https://en.wikipedia.org/wiki/Northern_Sotho_language">Sepedi </a> word which refers to a flask made out of <a href="https://en.wikipedia.org/wiki/Calabash">Calabash gourd</a>, appropriately named as a nod to 
+the elegantly built <a href="https://github.com/pallets/flask">Flask framework</a>
+
+
+## Getting started
+
+```
+pip install sego
+```
+
+
+
+
