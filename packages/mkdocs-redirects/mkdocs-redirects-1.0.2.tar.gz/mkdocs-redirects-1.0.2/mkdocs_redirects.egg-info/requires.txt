@@ -1,0 +1,12 @@
+mkdocs<2,>=1.0.4
+six<2,>=1.15.0
+
+[dev]
+pytest<5
+twine<2,>=1.13.0
+
+[release]
+twine<2,>=1.13.0
+
+[test]
+pytest<5
