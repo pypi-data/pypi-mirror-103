@@ -1,0 +1,8 @@
+README.md
+setup.py
+LogicTT/TT.py
+LogicTT/__init__.py
+LogicTT.egg-info/PKG-INFO
+LogicTT.egg-info/SOURCES.txt
+LogicTT.egg-info/dependency_links.txt
+LogicTT.egg-info/top_level.txt
