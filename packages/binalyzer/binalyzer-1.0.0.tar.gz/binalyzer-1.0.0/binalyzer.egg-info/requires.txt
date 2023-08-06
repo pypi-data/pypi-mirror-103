@@ -1,0 +1,6 @@
+binalyzer-core
+binalyzer-cli
+binalyzer-data_provider
+binalyzer-template-provider
+binalyzer-rest
+binalyzer-wasm

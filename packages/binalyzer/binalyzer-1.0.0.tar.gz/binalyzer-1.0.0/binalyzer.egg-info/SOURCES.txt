@@ -1,0 +1,14 @@
+AUTHORS
+CHANGELOG.md
+LICENSE.rst
+README.md
+setup.py
+binalyzer/__init__.py
+binalyzer/cli.py
+binalyzer/extension.py
+binalyzer.egg-info/PKG-INFO
+binalyzer.egg-info/SOURCES.txt
+binalyzer.egg-info/dependency_links.txt
+binalyzer.egg-info/entry_points.txt
+binalyzer.egg-info/requires.txt
+binalyzer.egg-info/top_level.txt
