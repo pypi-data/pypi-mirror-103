@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ikutsu
+Version: 0.0.1
+Summary: 
+Author: Hirokazu Hirono
+Author-email: hirono.hirokazu@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: fire (>=0.4.0,<0.5.0)
+Requires-Dist: pendulum (>=2.1.2,<3.0.0)
