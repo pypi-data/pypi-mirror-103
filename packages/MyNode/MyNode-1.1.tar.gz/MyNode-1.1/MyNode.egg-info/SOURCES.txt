@@ -1,0 +1,9 @@
+setup.py
+MyNode/__init__.py
+MyNode/console.py
+MyNode/loop.py
+MyNode.egg-info/PKG-INFO
+MyNode.egg-info/SOURCES.txt
+MyNode.egg-info/dependency_links.txt
+MyNode.egg-info/not-zip-safe
+MyNode.egg-info/top_level.txt
