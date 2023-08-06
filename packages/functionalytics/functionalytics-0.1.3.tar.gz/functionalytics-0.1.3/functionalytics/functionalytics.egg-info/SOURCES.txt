@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+functionalytics/functionalytics/__init__.py
+functionalytics/functionalytics/log_this.py
+functionalytics/functionalytics.egg-info/PKG-INFO
+functionalytics/functionalytics.egg-info/SOURCES.txt
+functionalytics/functionalytics.egg-info/dependency_links.txt
+functionalytics/functionalytics.egg-info/top_level.txt
