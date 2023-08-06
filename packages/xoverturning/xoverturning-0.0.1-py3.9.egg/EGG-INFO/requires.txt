@@ -1,0 +1,5 @@
+numpy
+cmip-basins
+scipy
+setuptools>=41.2
+xarray
