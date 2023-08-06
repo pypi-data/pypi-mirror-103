@@ -1,0 +1,15 @@
+sqlizer/__init__.py,sha256=0hoCQ0WT2vuINin_7tu5OmXLBqykw-eqgZG6DM9pfCg,140
+sqlizer/apiurls.py,sha256=C47H8SkA_vpkCzU6I9l6YnPprRBYwYOz2whpGsL8mG8,668
+sqlizer/config.py,sha256=5zZCydEA09DfDEE3Il5qxY5Q6-hZFw6DnA9ScKL51uM,14
+sqlizer/conversionstatus.py,sha256=37VAO1Vk4A7m3zbQdoIZwYhO2c-i1uhTrZRT9Tumuf0,306
+sqlizer/databasetype.py,sha256=5bdtNpMGHJJdNevkTopzgRVaJrlffjxEzdf4M3m8D24,98
+sqlizer/file.py,sha256=ZmOl6vPore9slwk1Ki7eUoZuSpXVP2kiYeKQY-I12_A,6058
+sqlizer/filetype.py,sha256=Tm34hw0SpE-uiyFfDXp3L0Yl0SpGcjR07NJHjhzS9o0,84
+sqlizer/propertynames.py,sha256=RwbWff0ZDmwRBz-QNpPQCA9LUquo-jP2RjrljSr3UT0,494
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_file_conversion.py,sha256=UpN5wzUZYFzavUUe0s0BCjbO9v6U1GfQnJMg-aYlXVY,3291
+sqlizer_io_client-1.0.1.dist-info/LICENSE,sha256=zK8hsInEoceIriACRABp6aTaxwmtu_okjQPrq2_cSv0,1071
+sqlizer_io_client-1.0.1.dist-info/METADATA,sha256=rlrouzKPrbGpebvKUtoatnLhm7N6WetK0wu3qGzXXEM,1434
+sqlizer_io_client-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sqlizer_io_client-1.0.1.dist-info/top_level.txt,sha256=--eqbMebNykaNwwqJYzQurTbuZYPddcguAlO42Oru4Q,14
+sqlizer_io_client-1.0.1.dist-info/RECORD,,
