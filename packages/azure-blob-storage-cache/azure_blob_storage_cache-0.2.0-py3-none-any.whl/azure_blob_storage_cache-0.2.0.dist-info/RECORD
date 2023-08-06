@@ -1,0 +1,7 @@
+azure_blob_storage_cache/__init__.py,sha256=N53EWRP9Idn-hisvjZIxKQL9hNo7K0tdzQW7d6yqPm0,65
+azure_blob_storage_cache/blob_cache.py,sha256=ZuvzWgWtoOmk5cBc5Q7UhmtUbuXIqq2lDYJ-OgSVp_Y,959
+azure_blob_storage_cache/decorators.py,sha256=mj9rkmfsay04ilpE1qLNMvrwhbQa2Fta9AOJ1YFxn2A,1050
+azure_blob_storage_cache/exceptions.py,sha256=l1-IzAiOIohSAnFC71M2vyBvVWUBYDn5yRZojPoS3zk,38
+azure_blob_storage_cache-0.2.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+azure_blob_storage_cache-0.2.0.dist-info/METADATA,sha256=T1-qauBB70XxYmlsfDcWYkmt4ML3wYiYKQkgHWzF_eU,459
+azure_blob_storage_cache-0.2.0.dist-info/RECORD,,
