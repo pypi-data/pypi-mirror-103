@@ -1,0 +1,8 @@
+discord/ext/audiorec/__init__.py,sha256=GOPtFHsG1a0_Px-CNhXuf15tgZnCt_4Eyy9d9Tqj-HU,622
+discord/ext/audiorec/ffi.cpython-36m-darwin.so,sha256=JhC5Vk306AxCj5TbFuyKZ7nHLOfl73MekgLqguunA4U,2896256
+discord/ext/audiorec/voice_client.py,sha256=hhsOt8twoElVIWfx5t9H5wR4QhaLCcpKQpPZWmIScJo,10747
+discord_ext_audiorec-0.1.5.dist-info/LICENSE,sha256=gw1KrE5iREBqhR9Ekph6k-2jEdLjSG1M8BC5Hg6DPAc,1051
+discord_ext_audiorec-0.1.5.dist-info/METADATA,sha256=hgnycPfqr5erIp5CiwKggEzNZDh-tZt2d-nxo2499pI,2544
+discord_ext_audiorec-0.1.5.dist-info/WHEEL,sha256=OgMGXG1Y7b08is1eoZUOQAX6Pnk3rJR5aLEIJNmT4Eo,111
+discord_ext_audiorec-0.1.5.dist-info/top_level.txt,sha256=fJkrNbR-_8ubMBUcDEJBcfkpECrvSEmMrNKgvLlQFoM,8
+discord_ext_audiorec-0.1.5.dist-info/RECORD,,
