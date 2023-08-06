@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: mmfutils
+Version: 0.5.4
+Summary: Useful Utilities
+Home-page: https://bitbucket.org/mforbes/mmfutils
+Author: Michael McNeil Forbes
+Author-email: michael.forbes+bitbucket@gmail.com
+License: BSD
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Requires-Dist: zope.interface (>=3.8.0)
+Requires-Dist: husl
+Requires-Dist: pathlib
+Requires-Dist: backports.tempfile
+Provides-Extra: doc
+Requires-Dist: sphinx ; extra == 'doc'
+Requires-Dist: mock ; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme ; extra == 'doc'
+Requires-Dist: sphinxcontrib.zopeext ; extra == 'doc'
+Requires-Dist: numpy (>=1.15.4) ; extra == 'doc'
+Requires-Dist: matplotlib (>=1.5) ; extra == 'doc'
+Requires-Dist: mmf-setup (>=0.1.11) ; extra == 'doc'
+Requires-Dist: nbconvert ; extra == 'doc'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest-flake8 ; extra == 'test'
+Requires-Dist: pytest-xdist ; extra == 'test'
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: flake8 ; extra == 'test'
+Requires-Dist: ipython (>=4.0) ; extra == 'test'
+Requires-Dist: ipyparallel (>=6.2.5) ; extra == 'test'
+Requires-Dist: persist (>=3.0) ; extra == 'test'
+Requires-Dist: numpy ; extra == 'test'
+Requires-Dist: scipy ; extra == 'test'
+Requires-Dist: matplotlib ; extra == 'test'
+Requires-Dist: numexpr ; extra == 'test'
+Requires-Dist: uncertainties ; extra == 'test'
+Requires-Dist: pyfftw ; extra == 'test'
+Requires-Dist: numba ; extra == 'test'
+Requires-Dist: docutils ; extra == 'test'
+
+Small set of utilities: containers and interfaces.
+
+This package provides some utilities that I tend to rely on during
+development. Presently in includes some convenience containers and some stubs
+for working with `zope.interface <http://docs.zope.org/zope.interface/>`__
+without having to introduce an additional dependence.
+
+**Documentation:**
+  http://mmfutils.readthedocs.org
+**Source:**
+  https://bitbucket.org/mforbes/mmfutils
+**Issues:**
+  https://bitbucket.org/mforbes/mmfutils/issues
+
+
+
