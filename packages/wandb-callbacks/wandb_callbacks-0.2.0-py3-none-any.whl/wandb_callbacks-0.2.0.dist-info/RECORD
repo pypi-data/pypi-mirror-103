@@ -1,0 +1,8 @@
+wandb_callbacks/__init__.py,sha256=DdYEdvZo2R7AM8R-4i6kC8dympAC1endjamTFIlf8Y8,129
+wandb_callbacks/tensorflow.py,sha256=nuIm98o3vn-SPMG6ynj3dA6wMM2Zk7g0K-BlAhCuOzs,8285
+wandb_callbacks/utils.py,sha256=EM59lrG8e_INmizKeK1IgbuWetJnmfBjEcUbyq-URWk,2729
+wandb_callbacks-0.2.0.dist-info/LICENSE,sha256=TNL3jxOKR8npPSYG3kHWTbiXtDzPXRlLhOMvMLIJr08,1071
+wandb_callbacks-0.2.0.dist-info/METADATA,sha256=z19cPlZ_tz7018dAkDLIenO15MdOBN6W_fxf7sjvXh0,1666
+wandb_callbacks-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+wandb_callbacks-0.2.0.dist-info/top_level.txt,sha256=1yCJM-YHgiZWv07c-yZu5zB5unL_FNcZX-W_q6sQ-Lo,26
+wandb_callbacks-0.2.0.dist-info/RECORD,,
