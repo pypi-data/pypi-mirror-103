@@ -1,0 +1,7 @@
+aioitertools
+
+[SQL]
+pypika>=0.36.5
+
+[graphql]
+strawberry>=0.37.1
