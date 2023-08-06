@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: cortx_pytorch
+Version: 1.0
+Summary: Fast interface between pytorch and Segate CORTX
+Home-page: https://github.com/GuillaumeLeclerc/cortx_pytorch
+Author: Guillaume Leclerc
+Author-email: leclerc@mit.edu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
