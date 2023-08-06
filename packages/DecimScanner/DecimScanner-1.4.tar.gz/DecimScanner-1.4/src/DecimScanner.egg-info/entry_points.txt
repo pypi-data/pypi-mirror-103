@@ -1,0 +1,3 @@
+[console_scripts]
+DecimScanner = DecimScanner.__main__:main
+
