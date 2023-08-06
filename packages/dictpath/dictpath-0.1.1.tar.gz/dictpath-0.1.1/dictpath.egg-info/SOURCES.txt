@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+requirements_dev.txt
+setup.cfg
+setup.py
+dictpath/__init__.py
+dictpath/accessors.py
+dictpath/parsers.py
+dictpath/paths.py
+dictpath.egg-info/PKG-INFO
+dictpath.egg-info/SOURCES.txt
+dictpath.egg-info/dependency_links.txt
+dictpath.egg-info/not-zip-safe
+dictpath.egg-info/top_level.txt
