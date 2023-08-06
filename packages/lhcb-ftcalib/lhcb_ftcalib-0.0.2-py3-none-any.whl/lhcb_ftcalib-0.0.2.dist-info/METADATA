@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: lhcb-ftcalib
+Version: 0.0.2
+Summary: Library for calibrating flavour tagging algorithms at LHCb
+Home-page: https://gitlab.cern.ch/lhcb-ft/lhcb_ftcalib
+Author: Vukan Jevtic
+Author-email: vukan.jevtic@cern.ch
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: iminuit (>2.3.0)
+Requires-Dist: uncertainties
+Requires-Dist: matplotlib
+Provides-Extra: dev
+Requires-Dist: pytest (>4) ; extra == 'dev'
+
+UNKNOWN
+
+

@@ -1,0 +1,16 @@
+lhcb_ftcalib/Tagger.py,sha256=Or7yXc6PtXI6Xw1Es784Suq6qLcGhSfJzSrAeK8JIkI,15306
+lhcb_ftcalib/TaggerCollection.py,sha256=pDfQipvVaLnh_-bOUB_P0qUluio4ha42V-LWw34La_k,7687
+lhcb_ftcalib/TaggingData.py,sha256=8In8ua490szuD7weHYlHpWP0gnFWKwf2T2Gk0i6yzw4,8113
+lhcb_ftcalib/__init__.py,sha256=7vZQqtG7G_E2-pEWW7auRq2-N0Y2b90N0UrjdWGCi8A,644
+lhcb_ftcalib/apply_tagger.py,sha256=J4ybrYjMqpPOj5BFVtegZcSiE8W9xj0JiGkPxtYBSh4,11281
+lhcb_ftcalib/calibration_functions.py,sha256=Rk7_H-tBktX_if4d8lxOStl8ovGavsO9LXxHyIq5n-c,5574
+lhcb_ftcalib/link_functions.py,sha256=qWDZ-KRqkftu9m4sDF5Oc2J7xfM8P2GY0jwI8ZRfeaE,4095
+lhcb_ftcalib/performance.py,sha256=QNL8fuleu34DORmBuvYnxdw8o5a8NuaETkDPQjSRlrE,7292
+lhcb_ftcalib/plotting.py,sha256=HvR8W3pRnNhJulTFFlZNPs44QS97P5u7OtAMj0oYhVc,14135
+lhcb_ftcalib/printing.py,sha256=l1EIriEceMvGtMZU2LH_UDQL2fiy8Yy3xQaJRfsBL7o,9363
+lhcb_ftcalib/save_calibration.py,sha256=MWJrK3H5NkoXn-MCPuJELYSsyB6STnCsmGWKDpK-6yI,6287
+lhcb_ftcalib-0.0.2.dist-info/LICENSE.txt,sha256=5X8cMguM-HmKfS_4Om-eBqM6A1hfbgZf6pfx2G24QFI,35150
+lhcb_ftcalib-0.0.2.dist-info/METADATA,sha256=tugFE5_YSWC51lvaG8Gg6pLLGqWhYGgGThVA-cSrBWI,845
+lhcb_ftcalib-0.0.2.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+lhcb_ftcalib-0.0.2.dist-info/top_level.txt,sha256=baS5BvrsL5qe504ybgRRcEwQF7cENx0ZAYqJfCM27RQ,13
+lhcb_ftcalib-0.0.2.dist-info/RECORD,,
