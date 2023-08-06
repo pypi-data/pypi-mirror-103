@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=ENACrestic
+Comment=Automated Backup with restic
+Exec=enacrestic
+Icon=enacrestic
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Categories=Utility;Archiving;
+Keywords=backup;enac;restic
+Name[en_US]=ENACrestic

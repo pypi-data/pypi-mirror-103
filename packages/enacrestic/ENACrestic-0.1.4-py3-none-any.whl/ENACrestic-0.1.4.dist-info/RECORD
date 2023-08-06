@@ -1,0 +1,17 @@
+ENACrestic-0.1.4.data/data/share/applications/enacrestic.desktop,sha256=CC46bP-yqyFZTfhb0J1iJQqN_Jxx67nMfhSq_q-BjpQ,229
+ENACrestic-0.1.4.data/data/share/icons/enacrestic.png,sha256=UVc8ssHI4UPkDwtvKMzIdpbrI0FlgE0unvRz4cJO-iA,5245308
+enacrestic/__init__.py,sha256=sd2T4Qoc1FNw3FuzOem2TfHxr104F8GMA1jDdTewq78,22662
+enacrestic/pixmaps/backup_failed.png,sha256=d1G7pbEJPaaZV3p2XqHLOqbdI8YDqOkxN-KAz7KmkTg,334617
+enacrestic/pixmaps/backup_in_pause.png,sha256=pJkrMXM-AcHphaYMxqVDmlT_ArhF_4UVb0yFTT_Q7oo,304398
+enacrestic/pixmaps/backup_in_progress.png,sha256=KiEtH5ppVAysU2qEkPLDPC1Dhdn7I8qSMZ2xBO-qLKo,320214
+enacrestic/pixmaps/backup_no_network.png,sha256=EfLhBU1e4zMUlHUQ5-5bfLp2idAlV558RRQ90eTTq9A,357633
+enacrestic/pixmaps/backup_success.png,sha256=27J4ZzqiVVZ9zOyAf-s5ZCegXj5j3PF5sYtp6Zp2k-g,386382
+enacrestic/pixmaps/enacrestic.png,sha256=UVc8ssHI4UPkDwtvKMzIdpbrI0FlgE0unvRz4cJO-iA,5245308
+enacrestic/pixmaps/forget_in_progress.png,sha256=4ANDpDDoIr1sZCKrG5a6yxhniGnyBWya2PziPNdC8ro,320227
+enacrestic/pixmaps/just_launched.png,sha256=NF0xvRpdMGsbe180srpBcrMQziZjCvr79qxp8CufTRc,176988
+ENACrestic-0.1.4.dist-info/LICENSE,sha256=5X8cMguM-HmKfS_4Om-eBqM6A1hfbgZf6pfx2G24QFI,35150
+ENACrestic-0.1.4.dist-info/METADATA,sha256=6llT-ofsa6ZCkGFiH96iYEZvTuOcIQdcZ9PxCOVVoBg,1740
+ENACrestic-0.1.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ENACrestic-0.1.4.dist-info/entry_points.txt,sha256=1u9CZMtJcg5Nwqrfa9FhyX8UfkgvcPP1nx7fbAKBHSo,48
+ENACrestic-0.1.4.dist-info/top_level.txt,sha256=XlFW_kiX0xA7cdNORCAGKpztIoPHMKXHDTfgq5_ZOUU,11
+ENACrestic-0.1.4.dist-info/RECORD,,
