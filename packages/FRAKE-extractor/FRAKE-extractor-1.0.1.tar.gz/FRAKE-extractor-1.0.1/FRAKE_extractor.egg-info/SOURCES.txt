@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+FRAKE/FRAKE.py
+FRAKE/__init__.py
+FRAKE_extractor.egg-info/PKG-INFO
+FRAKE_extractor.egg-info/SOURCES.txt
+FRAKE_extractor.egg-info/dependency_links.txt
+FRAKE_extractor.egg-info/requires.txt
+FRAKE_extractor.egg-info/top_level.txt
