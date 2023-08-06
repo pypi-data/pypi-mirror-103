@@ -1,0 +1,8 @@
+README.md
+setup.py
+cortx_pytorch/__init__.py
+cortx_pytorch.egg-info/PKG-INFO
+cortx_pytorch.egg-info/SOURCES.txt
+cortx_pytorch.egg-info/dependency_links.txt
+cortx_pytorch.egg-info/requires.txt
+cortx_pytorch.egg-info/top_level.txt
