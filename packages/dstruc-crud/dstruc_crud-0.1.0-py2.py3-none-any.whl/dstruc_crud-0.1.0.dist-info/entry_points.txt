@@ -1,0 +1,3 @@
+[console_scripts]
+dstruc_crud = dstruc_crud.cli:main
+
