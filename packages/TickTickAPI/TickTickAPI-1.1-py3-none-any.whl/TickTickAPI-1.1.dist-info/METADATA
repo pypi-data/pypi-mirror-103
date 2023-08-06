@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: TickTickAPI
+Version: 1.1
+Summary: UNKNOWN
+Home-page: https://gitwork.ru/results/practice-3k/2021/2018-4-02-aku.git
+Author: Akulinushkin Oleg
+Author-email: oleg.akulinishkin.01@mail.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Requires-Dist: requests (==2.25.1)
+
+# Приложение для взаимодействия с Tick-Tick посредством REST API
+
+Разработка проекта ведется на **python 3.8** с использованием библиотеки **requests**, для тестирования используется библиотека **pytest 6.2.2**
+
+------
+
+<b>Планируется реализовать:</b>
+
+- [ ] Авторизация в приложении
+- [ ] Получение проектов, задач
+- [ ] Создание задач, проектов, тегов
+
+##### Запуск
+
+*Перед запуском тестов убедитесь, что установили все зависимости*
+
+```
+pip install -r requirements.txt
+pytest --cov=src tests/tests.py
+```
+
+
+
