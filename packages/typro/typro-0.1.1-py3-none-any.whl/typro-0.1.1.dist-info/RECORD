@@ -1,0 +1,13 @@
+typro/__init__.py,sha256=aa-t0dThL-Rx-8dFBkZZD_oSdsMzrY0KVwhn9xiBPkc,65
+typro/__main__.py,sha256=0ckzher_CRGt3Kfl1kUumcl18_9ulor-vP5dG1btPnE,64
+typro/cli.py,sha256=berM71krTqqSjiBO9QTOdXKg67Q3Re7xTgpp8AjTk9o,11021
+typro/key_test.py,sha256=lestpvkfHhpulW28ysUTMWChWOtgTbGeEMy6EHW8S2k,128
+typro/data/default,sha256=8DjcL01dmf2kfZowqMC9kw7QqaoOy_HEiV41kukOexA,655
+typro/data/pyplot,sha256=hDnYCv0rGW1hoybuJI8laS4x3gfkreqbcGXHbVU168U,584
+typro/data/root,sha256=8b3bgd7ASIuUgdqkx6oZRB1iD9TA2OdrmwzDs6vGd60,127539
+typro-0.1.1.dist-info/LICENSE,sha256=3P6IBpIZ-g1M3hfhzu0pNPA7MGqZnMOwA1OA9ueIshA,1072
+typro-0.1.1.dist-info/METADATA,sha256=5zpDJOWF7aMOg2A0Ad3nTUcAdDXPl2WGV9R7nuQ50wE,3425
+typro-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+typro-0.1.1.dist-info/entry_points.txt,sha256=rYg88NSMwIeY34TCj93A0klHKjHcZ26yCVKCCoFeGMU,42
+typro-0.1.1.dist-info/top_level.txt,sha256=PjBfTGuvLn6NoPDJ0qMI458P4DVsJ5exdSO-6mzVJYY,6
+typro-0.1.1.dist-info/RECORD,,
