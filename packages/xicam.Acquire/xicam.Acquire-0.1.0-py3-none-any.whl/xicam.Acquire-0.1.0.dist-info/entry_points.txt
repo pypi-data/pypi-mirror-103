@@ -1,0 +1,19 @@
+[xicam.plugins.ControllerPlugin]
+areadetector = xicam.Acquire.controllers.areadetector:AreaDetectorController
+diodecontroller = xicam.Acquire.controllers.diodecontroller:DiodeController
+fastccd_controller = xicam.Acquire.controllers.fastccd_controller:FastCCDController
+saxsdetector = xicam.Acquire.controllers.saxsdetector:SAXSDetectorController
+typhos = xicam.Acquire.controllers.typhoscontroller:TyphosController
+
+[xicam.plugins.DataResourcePlugin]
+bluesky = xicam.Acquire.datasources.BlueskyDataResource:BlueskyDataResourcePlugin
+ophyd = xicam.Acquire.datasources.OphydDataResource:OphydDataResourcePlugin
+
+[xicam.plugins.GUIPlugin]
+acquire = xicam.Acquire:AcquirePlugin
+
+[xicam.plugins.SettingsPlugin]
+devices = xicam.Acquire.devices:DeviceSettingsPlugin
+happi_devices = xicam.Acquire.devices.happi:HappiSettingsPlugin
+plans = xicam.Acquire.plans:PlanSettingsPlugin
+

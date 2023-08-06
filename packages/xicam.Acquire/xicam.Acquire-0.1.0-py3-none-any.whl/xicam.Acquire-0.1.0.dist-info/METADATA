@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: xicam.Acquire
+Version: 0.1.0
+Summary: Xi-CAM Acquire Plugin
+Home-page: https://github.com/ronpandolfi/Xi-cam
+Author: Ronald J Pandolfi
+Author-email: ronpandolfi@lbl.gov
+License: BSD
+Keywords: synchrotron analysis x-ray scattering tomography
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: xicam
+Requires-Dist: numpy
+Requires-Dist: qtpy
+Requires-Dist: databroker
+Requires-Dist: bluesky
+Requires-Dist: ophyd
+Requires-Dist: happi
+Requires-Dist: bluesky-darkframes
+Requires-Dist: ipykernel (!=5.0*,!=5.1.0)
+Requires-Dist: pyqode.python
+Requires-Dist: typhos
+Requires-Dist: pydm
+Requires-Dist: caproto
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: coverage ; extra == 'tests'
+
+Supports acquisition of data
+
+
