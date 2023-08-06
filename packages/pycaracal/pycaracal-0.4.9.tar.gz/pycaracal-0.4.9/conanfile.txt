@@ -1,0 +1,12 @@
+[requires]
+cxxopts/2.2.1
+libtins/4.3
+spdlog/1.8.2
+
+[generators]
+cmake_find_package
+
+[options]
+libtins:with_ack_tracker=False
+libtins:with_dot11=False
+libtins:with_wpa2=False
