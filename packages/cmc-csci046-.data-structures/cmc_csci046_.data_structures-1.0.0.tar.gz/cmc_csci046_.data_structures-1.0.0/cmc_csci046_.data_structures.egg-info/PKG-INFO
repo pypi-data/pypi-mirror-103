@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: cmc-csci046-.data-structures
+Version: 1.0.0
+Summary: Implement efficent data structures
+Home-page: https://github.com/michaelhess17/containers-oop/tree/master
+Author: Michael Hess
+Author-email: mhess21@cmc.edu
+License: MIT
+Description: # containers-oop
+        
+        Build status:
+        
+        [![tests-BinaryTree](https://github.com/Michaelhess17/containers-oop/actions/workflows/tests-binarytree.yml/badge.svg)](https://github.com/Michaelhess17/containers-oop/actions/workflows/tests-binarytree.yml)
+        [![tests-BST](https://github.com/Michaelhess17/containers-oop/actions/workflows/tests-BST.yml/badge.svg?branch=bst)](https://github.com/Michaelhess17/containers-oop/actions/workflows/tests-BST.yml)
+        [![tests-AVLTree](https://github.com/Michaelhess17/containers-oop/actions/workflows/tests-avltree.yml/badge.svg?branch=avltree)](https://github.com/Michaelhess17/containers-oop/actions/workflows/tests-avltree.yml)
+        [![tests-HeapTree](https://github.com/Michaelhess17/containers-oop/actions/workflows/tests-HeapTree.yml/badge.svg?branch=heap)](https://github.com/Michaelhess17/containers-oop/actions/workflows/tests-HeapTree.yml)
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
