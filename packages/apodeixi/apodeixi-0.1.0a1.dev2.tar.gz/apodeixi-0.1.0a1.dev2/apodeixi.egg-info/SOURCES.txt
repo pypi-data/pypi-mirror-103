@@ -1,0 +1,10 @@
+README.md
+setup.py
+apodeixi/__init__.py
+apodeixi.egg-info/PKG-INFO
+apodeixi.egg-info/SOURCES.txt
+apodeixi.egg-info/dependency_links.txt
+apodeixi.egg-info/not-zip-safe
+apodeixi.egg-info/top_level.txt
+apodeixi/xli/__init__.py
+apodeixi/xli/xlimporter.py
