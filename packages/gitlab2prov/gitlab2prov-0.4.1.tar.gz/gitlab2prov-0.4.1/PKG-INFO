@@ -1,0 +1,22 @@
+Metadata-Version: 1.2
+Name: gitlab2prov
+Version: 0.4.1
+Summary: Extract provenance information (W3C PROV) from GitLab projects.
+Home-page: https://github.com/DLR-SC/gitlab2prov
+Author: Claas de Boer
+Author-email: claas.deboer@dlr.de
+Maintainer: Andreas Schreiber
+Maintainer-email: andreas.schreiber@dlr.de
+License: MIT
+Description: UNKNOWN
+Keywords: prov,gitlab,provenance,prov generation,software analytics,w3c prov
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development :: Version Control :: Git
