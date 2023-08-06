@@ -1,0 +1,10 @@
+ERROR.txt
+LICENSE.md
+PACKAGE_NAME
+README.rst
+package_info.py
+setup.py
+onnx_graphsurgeon.egg-info/PKG-INFO
+onnx_graphsurgeon.egg-info/SOURCES.txt
+onnx_graphsurgeon.egg-info/dependency_links.txt
+onnx_graphsurgeon.egg-info/top_level.txt
