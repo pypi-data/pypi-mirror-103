@@ -1,0 +1,7 @@
+README.rst
+setup.py
+openclean.egg-info/PKG-INFO
+openclean.egg-info/SOURCES.txt
+openclean.egg-info/dependency_links.txt
+openclean.egg-info/requires.txt
+openclean.egg-info/top_level.txt
