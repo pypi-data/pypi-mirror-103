@@ -1,0 +1,16 @@
+pyg2plot/__init__.py,sha256=-se7tVe-FwF7pglTCu_d2hqyiC7_eZsXe_vK9rx53MM,211
+pyg2plot/engine.py,sha256=bjXDAPb6ekYTuOmJI-DmVWk0xJMmVmJeknd8wwlUEPw,838
+pyg2plot/meta.py,sha256=tr-_p5Tm2cp3C3sngUpBm0P6_F5poCrUJ95oI_E5TEU,139
+pyg2plot/plot.py,sha256=BhEH43hbUiCkZ7LeMFuNyu6wjciObQCpWrviUdZo5og,2743
+pyg2plot/helper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyg2plot/helper/code.py,sha256=jMsG34whYoPgZeotlfdy-3Cw440ePjRSB2HUQmRuFos,798
+pyg2plot/helper/file.py,sha256=X6yj6w99Kwv42e-FqvhHcWhzD6hq73iPpxme8CfRoe8,157
+pyg2plot/helper/html.py,sha256=IoHKMc_HioM5A6KRbSKK4aSUOhteeH2XSkQGivZpZuA,231
+pyg2plot/templates/jupyter-lab.html,sha256=LlTzVm9OO47BZtawqQ5yVH3BsbzzCoEkY8oG2ONqiAc,875
+pyg2plot/templates/notebook.html,sha256=-FT66I1smeEmqj0dfoMtd8wSdEkWOQ14Gu7HWzvGLz8,591
+pyg2plot/templates/plot.html,sha256=oV1AhlmqHviEAgI4THdXSxvgpeLPSOfXsMDdrJyMttQ,684
+pyg2plot-0.1.8.dist-info/LICENSE,sha256=swU4QtJdpx_Sj-44bdbDF-ZUR6snbfB5w5SEtye7zek,1063
+pyg2plot-0.1.8.dist-info/METADATA,sha256=xbTkC7F6oQpgyfTP2WxEvM8sXzOKPXGY5eU1ELGxdqM,4814
+pyg2plot-0.1.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyg2plot-0.1.8.dist-info/top_level.txt,sha256=lu7Fl7MT5ctc2RbNameIufIa7-ibQ4BuKqfd1UwcQkc,9
+pyg2plot-0.1.8.dist-info/RECORD,,
