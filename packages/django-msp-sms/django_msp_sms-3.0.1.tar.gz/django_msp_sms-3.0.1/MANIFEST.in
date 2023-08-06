@@ -1,0 +1,8 @@
+include README.rst
+recursive-include django_msp_sms *
+global-include autocomplete_light_registry.pyc
+include requirements.txt
+recursive-include templates *
+recursive-include static *
+recursive-include *.pyc
+recursive-include __init__.py
