@@ -1,0 +1,4 @@
+[console_scripts]
+jupyter-remote = jupyter_remote_spawn.main:main
+rwth-jupyter = jupyter_remote_spawn.main:main
+
