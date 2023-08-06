@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+./ami2py/__init__.py
+./ami2py/ami_bitstructs.py
+./ami2py/ami_construct.py
+./ami2py/ami_database.py
+./ami2py/ami_dataclasses.py
+./ami2py/ami_reader.py
+./ami2py/consts.py
+./ami2py/revbitinteger.py
+ami2py.egg-info/PKG-INFO
+ami2py.egg-info/SOURCES.txt
+ami2py.egg-info/dependency_links.txt
+ami2py.egg-info/requires.txt
+ami2py.egg-info/top_level.txt
