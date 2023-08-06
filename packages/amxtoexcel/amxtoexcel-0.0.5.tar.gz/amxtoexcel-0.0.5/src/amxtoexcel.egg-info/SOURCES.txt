@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/amxtoexcel/__init__.py
+src/amxtoexcel.egg-info/PKG-INFO
+src/amxtoexcel.egg-info/SOURCES.txt
+src/amxtoexcel.egg-info/dependency_links.txt
+src/amxtoexcel.egg-info/requires.txt
+src/amxtoexcel.egg-info/top_level.txt
