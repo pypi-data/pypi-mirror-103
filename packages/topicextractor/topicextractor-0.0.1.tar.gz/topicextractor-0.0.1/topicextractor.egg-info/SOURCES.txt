@@ -1,0 +1,6 @@
+README.txt
+setup.py
+topicextractor.egg-info/PKG-INFO
+topicextractor.egg-info/SOURCES.txt
+topicextractor.egg-info/dependency_links.txt
+topicextractor.egg-info/top_level.txt
