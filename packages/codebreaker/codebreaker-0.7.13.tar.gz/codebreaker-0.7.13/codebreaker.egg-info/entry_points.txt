@@ -1,0 +1,3 @@
+[console_scripts]
+codebreaker = codebreaker.command_line:main
+

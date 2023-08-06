@@ -1,0 +1,7 @@
+include requirements.txt
+include CODEBREAKER_VERSION
+include init.py
+include codebreaker/analysis/*
+include codebreaker/generated/*
+recursive-include codebreaker/generated/api *.py
+recursive-include codebreaker *.xlsx
