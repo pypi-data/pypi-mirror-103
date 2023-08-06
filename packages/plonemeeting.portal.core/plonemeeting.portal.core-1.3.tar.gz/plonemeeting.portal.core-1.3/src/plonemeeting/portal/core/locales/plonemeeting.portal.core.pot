@@ -1,0 +1,411 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-04-20 13:17+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: plonemeeting.portal.core\n"
+
+#: ../browser/templates/institution.pt:69
+msgid "(Disabled)"
+msgstr ""
+
+#: ../content/institution.py:64
+msgid "Active"
+msgstr ""
+
+#: ../browser/templates/institution.pt:28
+#: ../content/institution.py:88
+msgid "Additional Meeting query string for list"
+msgstr ""
+
+#: ../browser/templates/institution.pt:32
+#: ../content/institution.py:94
+msgid "Additional Published Items query string"
+msgstr ""
+
+#: ../content/item.py:47
+msgid "Additional data"
+msgstr ""
+
+#: ../browser/templates/item.pt:99
+msgid "Annexes"
+msgstr ""
+
+#: ../browser/templates/item.pt:80
+#: ../faceted/macros.pt:93
+msgid "Attention"
+msgstr ""
+
+#: ../profiles/default/sharing.xml
+msgid "Can manage institution"
+msgstr ""
+
+#: ../browser/sync.py:330
+msgid "Cancel"
+msgstr ""
+
+#: ../browser/templates/institution.pt:52
+#: ../content/institution.py:150
+msgid "Categories mappings"
+msgstr ""
+
+#: ../browser/templates/item.pt:39
+#: ../content/item.py:55
+#: ../faceted/macros.pt:32
+msgid "Category"
+msgstr ""
+
+#: ../browser/sync.py:317
+msgid "Choose the meeting you want to import in the portal."
+msgstr ""
+
+#: ../setuphandlers.py:53
+msgid "Configuration folder"
+msgstr ""
+
+#: ../browser/templates/item.pt:86
+#: ../content/item.py:60
+#: ../content/meeting.py:28
+msgid "Custom info"
+msgstr ""
+
+#: ../content/item.py:51
+msgid "Decision"
+msgstr ""
+
+#: ../content/subscriber.py:36
+msgid "Decisions"
+msgstr ""
+
+#: ../configure.zcml:43
+msgid "Demo profile for the plonemeeting.portal.core add-on."
+msgstr ""
+
+#: ../profiles/default/types/Institution.xml
+#: ../profiles/default/types/Item.xml
+#: ../profiles/default/types/Meeting.xml
+msgid "Edit"
+msgstr ""
+
+#: ../faceted/preview_meeting.pt:44
+msgid "Edit meeting"
+msgstr ""
+
+#: ../setuphandlers.py:61
+msgid "Faceted"
+msgstr ""
+
+#: ../faceted/configure.zcml:24
+msgid "Faceted meeting items preview"
+msgstr ""
+
+#: ../faceted/configure.zcml:31
+msgid "Faceted meeting preview"
+msgstr ""
+
+#: ../content/institution.py:216
+msgid "Footer color"
+msgstr ""
+
+#: ../content/institution.py:224
+msgid "Footer text color"
+msgstr ""
+
+#: ../faceted/preview_meeting.pt:61
+msgid "Force meeting reimport"
+msgstr ""
+
+#: ../profiles/default/actions.xml
+msgid "Force reimport this meeting"
+msgstr ""
+
+#: ../content/institution.py:101
+msgid "Formatting"
+msgstr ""
+
+#: ../profiles/default/registry.xml
+msgid "Global categories"
+msgstr ""
+
+#: ../content/institution.py:54
+msgid "Global category"
+msgstr ""
+
+#: ../profiles/default/registry.xml
+msgid "Global category id"
+msgstr ""
+
+#: ../profiles/default/registry.xml
+msgid "Global category title"
+msgstr ""
+
+#: ../content/institution.py:184
+msgid "Header color"
+msgstr ""
+
+#: ../browser/sync.py:319
+msgid "Import"
+msgstr ""
+
+#: ../profiles/default/actions.xml
+msgid "Import meeting"
+msgstr ""
+
+#: ../browser/templates/institution.pt:48
+#: ../content/institution.py:129
+msgid "Info annex formatting tal expression"
+msgstr ""
+
+#: ../configure.zcml:34
+msgid "Installs the plonemeeting.portal.core add-on."
+msgstr ""
+
+#: ../profiles/default/types/Institution.xml
+msgid "Institution"
+msgstr ""
+
+#: ../content/institution.py:30
+msgid "Invalid color parameter, the value should be a correct hexadecimal color"
+msgstr ""
+
+#: ../content/institution.py:24
+msgid "Invalid url parameters, the value should start with '&'"
+msgstr ""
+
+#: ../profiles/default/types/Item.xml
+msgid "Item"
+msgstr ""
+
+#: ../content/institution.py:125
+msgid "Item additional data formatting tal expression"
+msgstr ""
+
+#: ../browser/templates/institution.pt:44
+#: ../content/institution.py:119
+msgid "Item decision formatting tal expression"
+msgstr ""
+
+#: ../browser/templates/item.pt:36
+#: ../content/item.py:27
+#: ../faceted/macros.pt:29
+msgid "Item number"
+msgstr ""
+
+#: ../browser/templates/institution.pt:40
+#: ../content/institution.py:111
+msgid "Item title formatting tal expression. If empty the default title will be used"
+msgstr ""
+
+#: ../faceted/widgets/sort.py:29
+msgid "Items sort order"
+msgstr ""
+
+#: ../browser/templates/item.pt:73
+#: ../content/item.py:63
+#: ../content/meeting.py:31
+msgid "Last modification in ia.Delib"
+msgstr ""
+
+#: ../content/institution.py:208
+msgid "Links text color"
+msgstr ""
+
+#: ../content/institution.py:52
+msgid "Local category id"
+msgstr ""
+
+#: ../content/institution.py:180
+msgid "Logo"
+msgstr ""
+
+#: ../content/institution.py:135
+msgid "Mapping"
+msgstr ""
+
+#: ../browser/sync.py:303
+#: ../profiles/default/types/Meeting.xml
+msgid "Meeting"
+msgstr ""
+
+#: ../browser/templates/institution.pt:24
+#: ../content/institution.py:77
+msgid "Meeting config ID"
+msgstr ""
+
+#: ../browser/sync.py:316
+msgid "Meeting import form"
+msgstr ""
+
+#: ../content/subscriber.py:29
+msgid "Meetings"
+msgstr ""
+
+#: ../content/institution.py:192
+msgid "Navigation bar color"
+msgstr ""
+
+#: ../content/institution.py:200
+msgid "Navigation bar text color"
+msgstr ""
+
+#: ../faceted/widgets/root_path.py:30
+msgid "Navigation root path"
+msgstr ""
+
+#: ../content/institution.py:75
+msgid "Password"
+msgstr ""
+
+#: ../passwords.py:17
+msgid "Passwords must be at least 8 characters in length."
+msgstr ""
+
+#: ../browser/templates/institution.pt:16
+#: ../content/institution.py:71
+msgid "Plonemeeting URL"
+msgstr ""
+
+#: ../browser/templates/institution.pt:36
+#: ../content/institution.py:80
+msgid "Project decision disclaimer"
+msgstr ""
+
+#: ../browser/templates/item.pt:63
+#: ../faceted/macros.pt:53
+msgid "Public meeting"
+msgstr ""
+
+#: ../faceted/preview_meeting.pt:52
+msgid "Reimport meeting"
+msgstr ""
+
+#: ../profiles/default/registry.xml
+msgid "Related meeting date"
+msgstr ""
+
+#: ../browser/templates/item.pt:42
+#: ../faceted/macros.pt:35
+msgid "Representative"
+msgstr ""
+
+#: ../content/item.py:41
+msgid "Representative group in charge"
+msgstr ""
+
+#: ../content/institution.py:61
+msgid "Representative key"
+msgstr ""
+
+#: ../content/institution.py:63
+msgid "Representative long values"
+msgstr ""
+
+#: ../content/institution.py:62
+msgid "Representative value"
+msgstr ""
+
+#: ../browser/templates/institution.pt:63
+#: ../content/institution.py:157
+msgid "Representatives mappings"
+msgstr ""
+
+#: ../content/item.py:30
+msgid "Sortable Item number"
+msgstr ""
+
+#: ../content/institution.py:168
+msgid "Styling"
+msgstr ""
+
+#: ../content/item.py:34
+#: ../content/meeting.py:22
+msgid "UID Plonemeeting"
+msgstr ""
+
+#: ../browser/sync.py:272
+msgid "Unexpected meeting count in webservice response !"
+msgstr ""
+
+#: ../configure.zcml:52
+msgid "Uninstalls the plonemeeting.portal.core add-on."
+msgstr ""
+
+#: ../browser/templates/institution.pt:20
+#: ../content/institution.py:73
+msgid "Username"
+msgstr ""
+
+#: ../profiles/default/types/Institution.xml
+#: ../profiles/default/types/Item.xml
+#: ../profiles/default/types/Meeting.xml
+msgid "View"
+msgstr ""
+
+#: ../faceted/preview_meeting.pt:36
+msgid "View meeting"
+msgstr ""
+
+#: ../browser/sync.py:39
+msgid "Webservice connection error !"
+msgstr ""
+
+#: ../browser/institution.py:30
+msgid "You see this page because you have permissions to edit it. Otherwise you would have been redirected to Meetings folder. To see the Meetings view, click on Meetings folder."
+msgstr ""
+
+#: ../config.py:19
+msgid "category"
+msgstr ""
+
+#: ../config.py:20
+msgid "classifier"
+msgstr ""
+
+#: ../config.py:15
+msgid "decision"
+msgstr ""
+
+#: ../content/institution.py:83
+msgid "default_in_project_disclaimer"
+msgstr ""
+
+#: ../content/institution.py:143
+msgid "iA.Delib field to use for category mapping"
+msgstr ""
+
+#: ../config.py:15
+msgid "in_project"
+msgstr ""
+
+#. Default: "Meeting imported !  ${created} created items, ${modified} modified items, ${deleted} deleted items."
+#: ../browser/sync.py:281
+msgid "meeting_imported"
+msgstr ""
+
+#: ../configure.zcml:34
+msgid "plonemeeting.portal.core"
+msgstr ""
+
+#: ../configure.zcml:43
+msgid "plonemeeting.portal.core (demo)"
+msgstr ""
+
+#: ../configure.zcml:52
+msgid "plonemeeting.portal.core (uninstall)"
+msgstr ""
+
+#: ../config.py:15
+msgid "private"
+msgstr ""
