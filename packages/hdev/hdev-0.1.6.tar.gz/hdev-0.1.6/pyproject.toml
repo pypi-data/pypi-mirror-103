@@ -1,0 +1,5 @@
+[tool.hdev.requirements]
+
+order = [
+    "src/hdev/requirements/pip-tools.in"
+]
