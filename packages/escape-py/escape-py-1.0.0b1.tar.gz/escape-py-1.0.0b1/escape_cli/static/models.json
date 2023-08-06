@@ -1,0 +1,67 @@
+{
+    "req": {
+        "protocol": {
+            "type": "str"
+        },
+        "host": {
+            "type": "str"
+        },
+        "route": {
+            "type": "str"
+        },
+        "method": {
+            "enum": [
+                "options",
+                "head",
+                "get",
+                "post",
+                "patch",
+                "put",
+                "delete",
+                "update"
+            ]
+        },
+        "parameters": {
+            "type": "dict",
+            "special": [
+                "check parameters values are strings"
+            ]
+        },
+        "query": {
+            "type": "dict"
+        },
+        "originalUrl": {
+            "type": "str"
+        },
+        "headers": {
+            "type": "dict"
+        },
+        "cookies": {
+            "type": "dict"
+        },
+        "httpVersion": {
+            "type": "str"
+        },
+        "body": {
+            "special": [
+                "check content type in headers"
+            ]
+        }
+    },
+    "res": {
+        "statusCode": {
+            "type": "int"
+        },
+        "messageCode": {
+            "type": "str"
+        },
+        "headers": {
+            "type": "dict"
+        },
+        "body": {
+            "special": [
+                "check content type in headers"
+            ]
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "httpLib": {
+        "Django": [
+            "django"
+        ],
+        "Flask": [
+            "flask"
+        ]
+    }
+}
