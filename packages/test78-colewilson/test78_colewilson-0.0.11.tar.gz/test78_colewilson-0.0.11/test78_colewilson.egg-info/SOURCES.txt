@@ -1,0 +1,10 @@
+setup.py
+bin/hello
+bin/hi
+test78_colewilson/__init__.py
+test78_colewilson/__main__.py
+test78_colewilson.egg-info/PKG-INFO
+test78_colewilson.egg-info/SOURCES.txt
+test78_colewilson.egg-info/dependency_links.txt
+test78_colewilson.egg-info/entry_points.txt
+test78_colewilson.egg-info/top_level.txt

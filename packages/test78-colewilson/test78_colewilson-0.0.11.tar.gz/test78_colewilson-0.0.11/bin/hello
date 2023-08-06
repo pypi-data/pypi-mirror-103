@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+python3 -m test78_colewilson $@
