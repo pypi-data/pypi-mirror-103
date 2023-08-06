@@ -1,0 +1,95 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "properties": {
+        "state": {
+            "type": "string"
+        },
+        "email_one": {
+            "type": "string"
+        },
+        "clients": {
+            "type": "string"
+        },
+        "email_three": {
+            "type": "string"
+        },
+        "contacts": {
+            "type": "string"
+        },
+        "website": {
+            "type": "string"
+        },
+        "logo-URL": {
+            "type": "string"
+        },
+        "email_two": {
+            "type": "string"
+        },
+        "cid": {
+            "type": "string"
+        },
+        "phone": {
+            "type": "string"
+        },
+        "created-on": {
+            "type": "string"
+        },
+        "accounts": {
+            "type": "string"
+        },
+        "company_name_url": {
+            "type": "string"
+        },
+        "can_see_private": {
+            "type": "boolean"
+        },
+        "tags": {
+            "type": "array",
+            "items": {}
+        },
+        "zip": {
+            "type": "string"
+        },
+        "industryId": {
+            "type": "string"
+        },
+        "id": {
+            "type": "string"
+        },
+        "last-changed-on": {
+            "type": "string"
+        },
+        "fax": {
+            "type": "string"
+        },
+        "address_two": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        },
+        "country": {
+            "type": "string"
+        },
+        "isowner": {
+            "type": "string"
+        },
+        "industry": {
+            "type": "string"
+        },
+        "address_one": {
+            "type": "string"
+        },
+        "countrycode": {
+            "type": "string"
+        },
+        "collaborators": {
+            "type": "string"
+        },
+        "city": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": true
+}
