@@ -1,0 +1,10 @@
+wechat/__init__.py,sha256=41LDrOJ8r4qnozjXcNPml9K3O-lLbZs0HvCCWVy4wfc,1823
+wechat/auth.py,sha256=Dx_vZYsYoch6SbFVITH2ByhTUwrZqiNPRDasm5oCgVo,6184
+wechat/base.py,sha256=DCrOMJ2sKgbt0BB88_sR0KwNqKvbJUcJadH0p5jcOqE,1432
+wechat/mp.py,sha256=F8idtyrbY8cSxH6G_QZSh0Hz6MSRT9Glu_j64II1dp4,13468
+wechat/msg.py,sha256=BkkZPXuRG_MX1X_HUqvWOGGBokcQELTFnj2AsNfdv-o,9246
+wechat/pay.py,sha256=dqyO7gYB76wMlYu4TnikrZVIDfvAaExn_cJxyZy3SCM,12791
+python_wechat-2021.4.29.dist-info/METADATA,sha256=8SUTVcrHVVn0gkkDGd8bgClK4vzj_FF4NlyBXPDEzBo,6612
+python_wechat-2021.4.29.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+python_wechat-2021.4.29.dist-info/top_level.txt,sha256=tpdoFoKWn85S57k16gblFWLI-ZPRQB9S53rBJECcdtA,7
+python_wechat-2021.4.29.dist-info/RECORD,,
