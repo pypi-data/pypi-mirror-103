@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: compas-singular
+Version: 0.1.2
+Summary: topology finding of compas_singularities in quad meshes
+Home-page: https://blockresearchgroup.github.io/compas_singular
+Author: Robin Oval
+Author-email: rpho2@cam.ac.uk
+License: MIT license
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: COMPAS (>=1.0)
+
+# compas_singular
+
+Topology finding of compas_singularities in quad meshes
+
+## Getting Started
+
+## First Steps
+
+## Questions and feedback
+
+## Issue tracker
+
+## Contributing
+
+## Changelog
+
+## License
+
+
