@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: MONarchy
+Version: 1.0.4
+Summary: MON (Meadian of meaNs)
+Home-page: https://github.com/prise-3d/MONarchy
+Maintainer: Samuel DELEPOULLE
+Maintainer-email: samuel.delepoulle@univ-littoral.fr
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+# MONarchy module for MON estimators #
+======================================
+
+##MONArchy provides : ##
+- estimation functions using MON and derivative methods
+- The MONArchy class to call each function on a set of data
+
+##Analyse.py##
+- Analyse : to load data and return a JSON file with estimations and descriptive statistics
+
+
+
