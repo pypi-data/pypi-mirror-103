@@ -1,0 +1,16 @@
+README.md
+setup.py
+src/eda5grpc/__init__.py
+src/eda5grpc/client.py
+src/eda5grpc/client_test.py
+src/eda5grpc/eda_games_pb2.py
+src/eda5grpc/eda_games_pb2_grpc.py
+src/eda5grpc/game_state.py
+src/eda5grpc/server.py
+src/eda5grpc/server_test.py
+src/eda5grpc/utils.py
+src/eda5grpc.egg-info/PKG-INFO
+src/eda5grpc.egg-info/SOURCES.txt
+src/eda5grpc.egg-info/dependency_links.txt
+src/eda5grpc.egg-info/requires.txt
+src/eda5grpc.egg-info/top_level.txt
