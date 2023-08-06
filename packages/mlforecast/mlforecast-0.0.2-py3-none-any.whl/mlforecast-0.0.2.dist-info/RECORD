@@ -1,0 +1,15 @@
+mlforecast/__init__.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+mlforecast/_nbdev.py,sha256=OcUa8BqZUgHQZbTOrZnK66grexyD65FHK7WKpg6RCFE,1231
+mlforecast/core.py,sha256=SzBzk9tbI_f5gWE-5dDMYKE-oNjck1OspAeJaSlIGVs,11603
+mlforecast/forecast.py,sha256=srKvW5vd1fkYKZTsiRGiI5ZUv8mg-Uy1w87xwBoI7FA,1451
+mlforecast/utils.py,sha256=j77yy--YkDYi4FP0ZjWK7NDm8SE15wQW5rs9vtiDaXA,2138
+mlforecast/distributed/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mlforecast/distributed/core.py,sha256=PVZxM4JySepJ8_clh_ydNy-XcNRc8FMsf31VFwAOa1M,1445
+mlforecast/distributed/forecast.py,sha256=17y6d5QMKMjcmQtllUE9HXQhj4DnRTVUJnB6bhW_Xmw,1346
+mlforecast/distributed/models.py,sha256=ublnmY-3NScfR-EnIj8y1Ertq9cPPAl8mVo4nXQiL2I,2075
+mlforecast-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+mlforecast-0.0.2.dist-info/METADATA,sha256=wUKUe7bGh9ertufbDa65-cRcRQAT4o5CWo2ithKdXSk,1257
+mlforecast-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mlforecast-0.0.2.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+mlforecast-0.0.2.dist-info/top_level.txt,sha256=yAGYnEfmaglo5iyIiJ_oj2-HiKTbP1MqK8Jd9AT2klY,11
+mlforecast-0.0.2.dist-info/RECORD,,

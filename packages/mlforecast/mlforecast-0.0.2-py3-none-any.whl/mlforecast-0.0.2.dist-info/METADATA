@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: mlforecast
+Version: 0.0.2
+Summary: Scalable machine learning based time series forecasting
+Home-page: https://github.com/Nixtla/mlforecast/tree/main/
+Author: José Morales
+Author-email: jmorales@grupoabraxas.com
+License: Apache Software License 2.0
+Keywords: python forecast forecasting machine-learning dask
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: fastcore
+Requires-Dist: fastparquet
+Requires-Dist: lightgbm
+Requires-Dist: numba
+Requires-Dist: pandas
+Requires-Dist: window-ops
+Requires-Dist: xgboost
+Provides-Extra: distributed
+Requires-Dist: dask[complete] ; extra == 'distributed'
+
+# mlforecast
+> Scalable machine learning based time series forecasting.
+
+
+**mlforecast** is a framework to perform time series forecasting using machine learning models, with the option to scale to massive amounts of data using remote clusters.
+
+
