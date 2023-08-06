@@ -1,0 +1,12 @@
+pyqtgraph
+pyqt5
+tqdm
+numpy
+matplotlib
+pandas
+opencv-python
+scipy
+scikit-image
+typing_extensions
+docstring_parser
+ruamel.yaml
