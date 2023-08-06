@@ -1,0 +1,4 @@
+[console_scripts]
+bs-highlighter = highlighter.cli:cli
+bs-highlighter-server = highlighter.server:cli
+

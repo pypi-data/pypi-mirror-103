@@ -1,0 +1,2 @@
+pygments==2.8.1
+widlparser==1.0.6
