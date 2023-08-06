@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: cmc-csci046-.data-structures
+Version: 1.0.3
+Summary: Implement efficent data structures
+Home-page: https://github.com/michaelhess17/containers-oop/tree/master
+Author: Michael Hess
+Author-email: mhess21@cmc.edu
+License: MIT
+Description: This package was written as part of a homework assignment for CMC CSCI046: Data Structures and Algorithms. Use at your own risk!  
+        
+        The package implements multiple types of data structures, including the following:   
+        
+        - Generator objects (implemented with range and fibonacci)   
+        - Binary Trees    
+        - Binary Search Trees    
+        - AVL Trees    
+        - Heap Binary Trees   
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
