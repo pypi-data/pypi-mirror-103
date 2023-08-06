@@ -1,0 +1,36 @@
+
+[:python_version <= "3.6"]
+IPython<=7.7.0,>=0.13
+
+[:python_version >= "3.7"]
+IPython>=0.13
+
+[all]
+Cython
+scikit-build
+cmake
+ninja
+pytest>=4.6.11
+pytest-cov>=2.10.1
+coverage>=5.3
+codecov>=2.0.15
+ubelt>=0.8.7
+
+[all:python_version <= "3.6"]
+IPython<=7.7.0,>=0.13
+
+[all:python_version >= "3.7"]
+IPython>=0.13
+
+[build]
+Cython
+scikit-build
+cmake
+ninja
+
+[tests]
+pytest>=4.6.11
+pytest-cov>=2.10.1
+coverage>=5.3
+codecov>=2.0.15
+ubelt>=0.8.7
