@@ -1,0 +1,13 @@
+$def with (channels)
+$var title: Channels
+
+<ul>
+$for c in channels:
+    <li><a href=/pub/channels/$c>$c</a></li>
+    $# <li>
+    $# <p><a href=$c["url"]>$c["url"]</a><br>
+    $# <small><strong>$c["resource"]["type"]</strong>
+    $# last modified $c["modified"].diff_for_humans()</small></p>
+    $# <pre>$pformat(c["resource"])</pre>
+    $# </li>
+</ul>

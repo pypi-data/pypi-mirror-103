@@ -1,0 +1,17 @@
+$def with (entries)
+$var title: Entries
+
+<ul>
+$for e in entries:
+    <li>
+    <p><a href=$e["url"]>$e["url"]</a><br>
+    <small><strong>$e["resource"]["type"][0]</strong>
+    last modified $e["modified"].diff_for_humans()</small></p>
+    $for prop, values in sorted(e["resource"].items()):
+        <dt>$prop</dt>
+        <dd><ul>
+        $for value in values:
+            <li>$value</li>
+        </ul></dd>
+    </li>
+</ul>

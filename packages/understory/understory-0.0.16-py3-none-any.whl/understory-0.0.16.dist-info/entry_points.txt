@@ -1,0 +1,12 @@
+[console_scripts]
+loveliness=understory.loveliness:main
+web=understory.web.__main__:main
+
+[web.apps]
+indieauth-client=understory.web.indie.indieauth:client
+indieauth-server=understory.web.indie.indieauth:server
+micropub=understory.web.indie.micropub:server
+microsub=understory.web.indie.microsub:server
+webmention=understory.web.indie.webmention:receiver
+websub=understory.web.indie.websub:hub
+

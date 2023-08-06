@@ -1,0 +1,18 @@
+$def with (channels, entries, cards, media)
+$var title: Resources
+
+<h2>Channels</h2>
+<p><a href=/pub/channels>$len(channels) total</a></p>
+<ul>
+$for channel in channels:
+    <li><a href=/pub/channels/$channel>$channel</a></li>
+</ul>
+
+<h2>Entries</h2>
+<p><a href=/pub/entries>$len(entries) total</a></p>
+
+<h2>Cards</h2>
+<p><a href=/pub/cards>$len(cards) total</a></p>
+
+<h2>Media</h2>
+<p><a href=/pub/media>$len(media) total</a></p>
