@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: mp4ansi
+Version: 0.1.5
+Summary: A simple ANSI-based terminal emulator that provides multi-processing capabilities.
+Home-page: https://github.com/soda480/mp4ansi
+Author: Emilio Reyes
+Author-email: soda480@gmail.com
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Systems Administration
+Requires-Dist: mpmq
+Requires-Dist: colorama
+
+A simple ANSI-based terminal emulator that provides multi-processing capabilities.
+
+
