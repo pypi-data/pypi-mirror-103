@@ -1,0 +1,1 @@
+git+ssh://git@github.com/california-civic-data-coalition/python-opencivicdata@7ab286179255a9d6067b2f3ff2c64ad8f82e2d9a#egg=opencivicdata-source
