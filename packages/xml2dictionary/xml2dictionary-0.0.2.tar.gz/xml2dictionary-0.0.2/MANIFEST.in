@@ -1,0 +1,7 @@
+include *.lock
+include *.py
+include *.toml
+include Pipfile
+recursive-include src *.py
+recursive-include tests *.py
+recursive-include tests *.xml
