@@ -1,0 +1,140 @@
+Metadata-Version: 2.1
+Name: adengine
+Version: 0.2.5
+Summary: Engine for Activity Data Extractor
+Home-page: https://git.miem.hse.ru/397/adengine
+Author: cher-di
+Author-email: cher-di@mail.ru
+Maintainer: cher-di
+Maintainer-email: cher-di@mail.ru
+License: MIT
+Description: # ADEngine
+        [![pypi.org package version](https://img.shields.io/pypi/v/adengine)](https://pypi.org/project/adengine/)
+        [![pypi.org python version](https://img.shields.io/pypi/pyversions/adengine)](https://pypi.org/project/adengine/)
+        [![pypi.org license](https://img.shields.io/pypi/l/adengine)](https://pypi.org/project/adengine/)
+        [![pypi.org downloads](https://img.shields.io/pypi/dm/adengine)](https://pypi.org/project/adengine/)
+        [![cpt 7.3.0](https://img.shields.io/badge/CPT-7.3.0-orange)](https://www.netacad.com/ru/courses/packet-tracer)
+        [![cpt 7.3.1](https://img.shields.io/badge/CPT-7.3.1-orange)](https://www.netacad.com/ru/courses/packet-tracer)
+        [![cpt 8.0.0](https://img.shields.io/badge/CPT-8.0.0-orange)](https://www.netacad.com/ru/courses/packet-tracer)
+        > **Scroll down for russian language <br>
+        > *Прокрутите ниже для русского языка***
+        
+        ---
+        
+        ### **en-US:**
+        ## About
+        This is a python engine for Activity Data Extractor.  
+        It is a special python module, designed to extract data from multiple activity files at the same time.
+        
+        ## Installation
+        1. Download and install Cisco Packet Tracer
+        1. Download and install [Activity Data Extractor](https://git.miem.hse.ru/397/activity_data_extractor)
+        1. Download and install Python
+        1. Install engine from [PyPI](https://pypi.org/project/adengine/) using command `python3 -m pip install adengine`
+        1. Now the engine should be installed and ready to go
+        
+        ## Requirements
+        * Cisco Packet Tracer 7.3.0, 7.3.1 or 8.0.0.  
+          It is possible, that engine would run on higher versions on PacketTracer, but this is **untested** functionality.
+        * [Activity Data Extractor](https://git.miem.hse.ru/397/activity_data_extractor) 1.0.3 and higher.
+        * Python 3.8 or higher.
+        * OS depends on version of Packet Tracer
+            - Ubuntu 18.04 for Cisco Packet Tracer 7.3.*
+            - Ubuntu 20.04 for Cisco Packet Tracer 8.0.0
+        * Java 8 or higher.
+        * xvfb and xvfb-run, if you want to run app using virtual display.
+        
+        ## Usage
+        There are several possible ADEngine use cases:
+        1. Use ADEngine from Python code. Actual documentation for API can be found [here](http://urbash.ru)
+        1. Run ADEngine server using command `python3 -m adegine.server`  
+           Additional parameters can be found using command `python3 -m adengine.server --help`  
+           Parameters can be passed to ADEngine using command line parameters or via environment variable.  
+           Command line parameters have and advantage.
+           
+           Parameter|Description|Using cmd|Using env|Possible values|Default
+           :-------:|:-------:|:-------:|:-------------:|:-----:|:---------:
+           Log level|Level of logs|-|ADENGINE_LOG_LEVEL|DEBUG,INFO,WARNING,ERROR|INFO
+           Queue size|Size of queue with tasks|--queue-size|ADENGINE_QUEUE_SIZE|positive integer|20
+           Read file timeout|Timeout for ADE to read file in seconds|--read-file-timeout|ADENGINE_READ_FILE_TIMEOUT|positive integer in range 5..60|10
+           Use virtual display|Enable using xvfb to run Packet Tracer|--use-virtual-display|ADENGINE_USE_VIRTUAL_DISPLAY|0 or 1 for env, specified or not specified for cmd|Disabled
+           Result TTL|Result time to live|--result-ttl|ADENGINE_RESULT_TTL|hh:mm:ss|00:05:00
+           Tasks before session restart|Num of tasks before session restart|--tasks-before-session-restart|ADENGINE_TASKS_BEFORE_SESSION_RESTART|positive integer|100
+           Unix socket|Path to unix socket|--unix-socket|ADENGINE_UNIX_SOCK|absolute path to unix socket (non existent)|/tmp/adengine.sock
+           Max connections|Num of maximum connections to server|--max-connections|ADENGINE_MAX_CONNECTIONS|positive integer|10
+        
+        1. Run ADEngine client using command `python3 -m adegine.client`  
+           Additional parameters can be found using command `python3 -m adengine.client --help`  
+           Parameters can be passed to ADEngine using command line parameters or via environment variable.  
+           Command line parameters have and advantage.
+        
+           Parameter|Description|Using cmd|Using env|Possible values|Default
+           :-------:|:-------:|:-------:|:-------------:|:-----:|:---------:
+           Activity|Absolute path to activity file|activity|-|absolute path to file|-
+           Password|Password to activity file|--password|-|string|None
+           Net stabilization delay|Simulated network stabilization delay|--net-stabilization-delay|-|non negative integer in range 0..600|0
+           Socket|Absolute path to unix socket to connect to ADEngine server|--socket|ADENGINE_UNIX_SOCK|absolute path to file|/tmp/adengine.sock
+        
+        ### **ru-RU:**
+        ## О репозитории
+        Данный репозиторий содержит движок и API на Python для Activity Data Extractor.  
+        Это специальный модуль Python, разработанный для параллельного извлечения данных из нескольких файлов Packet Tracer Activity.
+        
+        ## Установка
+        1. Скачайте и установите Cisco Packet Tracer
+        1. Скачайте и установите [Activity Data Extractor](https://git.miem.hse.ru/397/activity_data_extractor)
+        1. Скачайте и установите Python
+        1. Установите движок из [PyPI](https://pypi.org/project/adengine/) используя команду `python3 -m pip install adengine`
+        1. Теперь движок должен быть установлен и готов к использованию
+        
+        ## Требования к системе
+        * Cisco Packet Tracer 7.3.0, 7.3.1 или 8.0.0.  
+          Вполне возможно, что движок будет работать и на более свежих версиях Cisco Packet Tracer, но эта функциональность **не протестирована**.
+        * [Activity Data Extractor](https://git.miem.hse.ru/397/activity_data_extractor) 1.0.3 или выше.
+        * Python 3.8 или выше.
+        * ОС зависит от версии Packet Tracer
+            - Ubuntu 18.04 для Cisco Packet Tracer 7.3.*
+            - Ubuntu 20.04 для Cisco Packet Tracer 8.0.0
+        * Java 8 или выше.
+        * xvfb и xvfb-run, если вы хотите запустить приложение с использованием виртуального дисплея.
+        
+        ## Usage
+        Есть несколько вариантов использования ADEngine:
+        1. ADEngine можно использовать как модуль Python. Актуальная документация API находится [здесь](http://urbash.ru)
+        1. Запускать сервер ADEngine используя команду `python3 -m adegine.server`  
+           Дополнительный параметры можно посмотреть используя команду `python3 -m adengine.server --help`  
+           Параметры могут быть переданы серверу ADEngine используя аргументы командной строки или через переменные среды.  
+           Аргументы командной строки имеют преимущество.
+           
+           Параметр|Описание|Аргумент комадной строки|Переменная окружения|Возможные значения|Значение по умолчанию
+           :-------:|:-------:|:-------:|:-------------:|:-----:|:---------:
+           Log level|Уровень логирования|-|ADENGINE_LOG_LEVEL|DEBUG,INFO,WARNING,ERROR|INFO
+           Queue size|Размер очереди задач|--queue-size|ADENGINE_QUEUE_SIZE|положительное целое число|20
+           Read file timeout|Таймаут для ADE на чтение файла в секундах|--read-file-timeout|ADENGINE_READ_FILE_TIMEOUT|положительное целое число в диапазоне 5..60|10
+           Use virtual display|Включает использование виртуального дисплея для запуска Packet Tracer|--use-virtual-display|ADENGINE_USE_VIRTUAL_DISPLAY|0 или 1 для переменной окружения, указано или не указано для аргумента командной строки|Выключено
+           Result TTL|Время жизни результата|--result-ttl|ADENGINE_RESULT_TTL|чч:мм:сс|00:05:00
+           Tasks before session restart|Количество выполненных задач перед перезапуском сессии|--tasks-before-session-restart|ADENGINE_TASKS_BEFORE_SESSION_RESTART|положительное целое число|100
+           Unix socket|Путь к unix сокету|--unix-socket|ADENGINE_UNIX_SOCK|абсолютный путь к unix сокету (на данный момент файл не должен существовать)|/tmp/adengine.sock
+           Max connections|Максимальное количество одновременных подключений к серверу|--max-connections|ADENGINE_MAX_CONNECTIONS|положительное целое число|10
+        
+        1. Запускать клиент ADEngine используя команду `python3 -m adegine.client`  
+           Дополнительный параметры можно посмотреть используя команду `python3 -m adengine.client --help`  
+           Параметры могут быть переданы клиенту ADEngine используя аргументы командной строки или через переменные среды.  
+           Аргументы командной строки имеют преимущество.
+        
+           Параметр|Описание|Аргумент комадной строки|Переменная окружения|Возможные значения|Значение по умолчанию
+           :-------:|:-------:|:-------:|:-------------:|:-----:|:---------:
+           Activity|Абсолютный путь до файла Packet Tracer Activity|activity|-|абсолютный путь до файла|-
+           Password|Пароль к файлу Packet Tracer Activity|--password|-|строка|None
+           Net stabilization delay|Время стабилизации симулируемой сети|--net-stabilization-delay|-|неотрицательное целое число в диапазоне 0..600|0
+           Socket|Абсолютный путь до Unix сокета для подключения с серверу ADEngine|--socket|ADENGINE_UNIX_SOCK|абсолютный путь до файла|/tmp/adengine.sock
+        
+        
+Platform: Linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: test
