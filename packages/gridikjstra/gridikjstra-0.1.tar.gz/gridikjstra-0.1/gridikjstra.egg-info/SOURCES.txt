@@ -1,0 +1,9 @@
+README.md
+setup.py
+gridijkstra/__init__.py
+gridijkstra/_version.py
+gridijkstra/routing.py
+gridikjstra.egg-info/PKG-INFO
+gridikjstra.egg-info/SOURCES.txt
+gridikjstra.egg-info/dependency_links.txt
+gridikjstra.egg-info/top_level.txt
