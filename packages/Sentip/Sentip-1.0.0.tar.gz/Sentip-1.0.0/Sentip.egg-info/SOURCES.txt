@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+Sentip/Sentip.py
+Sentip/__init__.py
+Sentip.egg-info/PKG-INFO
+Sentip.egg-info/SOURCES.txt
+Sentip.egg-info/dependency_links.txt
+Sentip.egg-info/requires.txt
+Sentip.egg-info/top_level.txt
+Sentip/utility_data/.DS_Store
+Sentip/utility_data/BiGRU_best_weights.18-0.7049.hdf5
+Sentip/utility_data/postagging.wordvectors
