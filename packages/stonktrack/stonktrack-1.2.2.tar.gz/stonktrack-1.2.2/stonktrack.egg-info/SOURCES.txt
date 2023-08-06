@@ -1,0 +1,11 @@
+LICENSE
+README.md
+scroll.py
+setup.py
+stonktrack/__init__.py
+stonktrack/__main__.py
+stonktrack.egg-info/PKG-INFO
+stonktrack.egg-info/SOURCES.txt
+stonktrack.egg-info/dependency_links.txt
+stonktrack.egg-info/requires.txt
+stonktrack.egg-info/top_level.txt
