@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+src/checkDebug_swordyrepo.egg-info/PKG-INFO
+src/checkDebug_swordyrepo.egg-info/SOURCES.txt
+src/checkDebug_swordyrepo.egg-info/dependency_links.txt
+src/checkDebug_swordyrepo.egg-info/top_level.txt
