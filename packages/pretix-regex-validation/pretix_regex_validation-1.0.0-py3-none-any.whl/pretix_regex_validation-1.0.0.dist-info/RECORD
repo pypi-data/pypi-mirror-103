@@ -1,0 +1,16 @@
+pretix_regex_validation/__init__.py,sha256=EULCGl8sXUjTOf7p7MtEXAe8dTwdwww8CkUo50HoSsY,783
+pretix_regex_validation/signals.py,sha256=owGv9Us5AFbYX31fA0yMFCu8UkmpaIz9FbkMm2uJod4,2057
+pretix_regex_validation/urls.py,sha256=xv_g7r7dGVUQ3V1QrisVgAZ4Vte3JeZr5IqkSF59JCM,251
+pretix_regex_validation/views.py,sha256=6kFzJ5J_Xv9iey8ayW6KQcJNLERJv4M85J7uM97aqMQ,4045
+pretix_regex_validation/locale/de/LC_MESSAGES/django.po,sha256=id2KCI-qsYlJ20GXAOw9s_VqkNbBqpH6X2nXbyR9aVU,311
+pretix_regex_validation/locale/de_Informal/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pretix_regex_validation/locale/de_Informal/LC_MESSAGES/django.po,sha256=id2KCI-qsYlJ20GXAOw9s_VqkNbBqpH6X2nXbyR9aVU,311
+pretix_regex_validation/static/pretix_regex_validation/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pretix_regex_validation/templates/pretix_regex_validation/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pretix_regex_validation/templates/pretix_regex_validation/settings.html,sha256=kK6jYbCqa4iBtFjcrn0QGoGVi0jc0v50Lv5RYXSsR7A,682
+pretix_regex_validation-1.0.0.dist-info/LICENSE,sha256=ePtOJa7la9hsiGwtnEUYLW55jfVSRM7qjkrREvqsaPQ,554
+pretix_regex_validation-1.0.0.dist-info/METADATA,sha256=vlBBorzN3YZpnBq6mtpGdQaQnH4zSCOwcdLv4u2o66E,1683
+pretix_regex_validation-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pretix_regex_validation-1.0.0.dist-info/entry_points.txt,sha256=KGD5Mg2sbZAceVWYi4zzoiWDVM0LsimgBr0HWoQtK3I,82
+pretix_regex_validation-1.0.0.dist-info/top_level.txt,sha256=41r0pjPlyoNCLfSlyfZFzc3FsZ2goRxWX3dFD1b4DU0,24
+pretix_regex_validation-1.0.0.dist-info/RECORD,,

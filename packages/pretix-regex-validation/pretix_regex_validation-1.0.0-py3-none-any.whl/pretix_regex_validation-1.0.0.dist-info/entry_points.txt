@@ -1,0 +1,3 @@
+
+[pretix.plugin]
+pretix_regex_validation=pretix_regex_validation:PretixPluginMeta
