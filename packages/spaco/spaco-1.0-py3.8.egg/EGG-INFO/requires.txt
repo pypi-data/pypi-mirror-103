@@ -1,0 +1,8 @@
+setuptools
+mxnet
+numpy
+pandas
+statsmodels
+sklearn
+rpy2
+tensorly
