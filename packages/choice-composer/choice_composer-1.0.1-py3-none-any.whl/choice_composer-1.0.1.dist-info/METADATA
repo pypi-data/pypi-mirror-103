@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: choice-composer
+Version: 1.0.1
+Summary: It will help you to make choice filed.
+Home-page: https://github.com/ImamHossainRoni/choice-composer
+Author: Imam Hossain Roni
+Author-email: imamhossainroni95@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+
+# choice-composer
+It will help you to make choice filed
+
+## Installation
+```pip install choice-composer```
+
+## How to use it?
+I am going to add it later
+
+## License
+
+© 2021 Imam Hossain Roni
+
+This repository is licensed under the MIT license. See LICENSE for details.
+
