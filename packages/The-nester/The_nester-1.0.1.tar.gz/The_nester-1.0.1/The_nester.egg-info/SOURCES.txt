@@ -1,0 +1,7 @@
+README.md
+nester.py
+setup.py
+The_nester.egg-info/PKG-INFO
+The_nester.egg-info/SOURCES.txt
+The_nester.egg-info/dependency_links.txt
+The_nester.egg-info/top_level.txt
