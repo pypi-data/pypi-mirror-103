@@ -1,0 +1,15 @@
+slice/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slice/__main__.py,sha256=qkA7RJiOy37n2qEupvnGiKS94KFnGoSCWig6yjLhgxQ,25726
+slice/fontresources.py,sha256=gpgUUEaBerrrJJ6CPgVmBeRgPx0RtklyUq0NVLxrnic,476045
+slice/imageresources.py,sha256=4j-qbxzhpYm3E7zA2ahMLlzflM3LUL601rjAsPoiZbY,13015
+slice/instanceworker.py,sha256=Mrun6xe7x3xfFFCoeF2YexkdI8LLzcuK1CMjh3hFJ1g,8678
+slice/models.py,sha256=0chRRv8LywDEQLJ2k63h-O5THkEEz53Iw1p-3QxBbfM,13760
+slice/ui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slice/ui/dialogs.py,sha256=BvelTej3DlAO4gtTI1A47CT00SMbC_0etMKGfxK3C1U,6676
+slice/ui/widgets.py,sha256=obxsosE4eCRr1Rk-LqHiFAln-1x6R0DvLcCvxwIq5Jg,1675
+slicegui-0.5.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+slicegui-0.5.0.dist-info/METADATA,sha256=AnW8wkvqibEr8V5fetW5K8ZgvY4RWinN44qecowC8YE,3983
+slicegui-0.5.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+slicegui-0.5.0.dist-info/entry_points.txt,sha256=KLTdYtw-p-vCPAxvIfjWbMxKx59yQhXt8pEYKCnq2WM,50
+slicegui-0.5.0.dist-info/top_level.txt,sha256=lxyUAeWGecJnCrkbg9s4RuR5J9npxSfqlS8p0Rx1Ffk,6
+slicegui-0.5.0.dist-info/RECORD,,
