@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+datawave_haproxy_agent/__init__.py
+datawave_haproxy_agent/__main__.py
+datawave_haproxy_agent/agent.py
+datawave_haproxy_agent/dwserverhealth.py
+datawave_haproxy_agent.egg-info/PKG-INFO
+datawave_haproxy_agent.egg-info/SOURCES.txt
+datawave_haproxy_agent.egg-info/dependency_links.txt
+datawave_haproxy_agent.egg-info/entry_points.txt
+datawave_haproxy_agent.egg-info/requires.txt
+datawave_haproxy_agent.egg-info/top_level.txt
