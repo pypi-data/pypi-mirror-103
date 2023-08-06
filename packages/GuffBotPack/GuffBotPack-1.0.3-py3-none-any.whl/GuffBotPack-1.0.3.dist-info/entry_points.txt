@@ -1,0 +1,3 @@
+[console_scripts]
+GuffBotPack = guffbotpack.cli:main
+
