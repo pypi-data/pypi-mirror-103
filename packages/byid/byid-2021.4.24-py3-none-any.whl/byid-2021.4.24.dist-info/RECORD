@@ -1,0 +1,11 @@
+byid/__init__.py,sha256=SEcr1kUhiON-9lQb7jn8C75a3h9Dzk6vSuisEnnNe18,18
+byid/doi/__init__.py,sha256=4K1N_Ltc-s2fSiQHy4qGqTNvxk9zKCeVLfUJaLaoWGI,42
+byid/doi/__main__.py,sha256=GDRRAMAFIWbW9yset2351OA8X5B28sp2FAK6hi01LYk,752
+byid/doi/service.py,sha256=vzuV9wWtgknsABoqZplEH3ZS8suI7QYAPtJJfUce3CU,8268
+byid/doi/utils.py,sha256=ZYqmT4VtgK1a51GdzKm6TGnZQ_dKoawsM63THVGZDD0,2364
+byid-2021.4.24.dist-info/LICENSE,sha256=Lf_uvsUr42urIjZiwRhphSQDjG5sXJ6rxFCI3aj8PgQ,1080
+byid-2021.4.24.dist-info/METADATA,sha256=n6Npxze2fDkhr12B9-AD3aTlwAzHtGVI-6qaZJ1Yp9k,748
+byid-2021.4.24.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+byid-2021.4.24.dist-info/entry_points.txt,sha256=0eNNBipM8lXgaiTOWWVI768fpNdbS4Ic3AeHLHM72y4,83
+byid-2021.4.24.dist-info/top_level.txt,sha256=hz5hmmNcDZcuUSFCaqs_ISKA-MmpYNAgiHZMObYeleA,5
+byid-2021.4.24.dist-info/RECORD,,
