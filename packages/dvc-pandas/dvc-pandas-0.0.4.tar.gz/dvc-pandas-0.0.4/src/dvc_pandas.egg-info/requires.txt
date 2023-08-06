@@ -1,0 +1,8 @@
+GitPython
+appdirs
+dvc[s3]
+pyarrow
+pandas
+pint-pandas
+python-snappy
+ruamel.yaml
