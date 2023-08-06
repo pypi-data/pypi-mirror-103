@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/roghib/__init__.py
+src/roghib.egg-info/PKG-INFO
+src/roghib.egg-info/SOURCES.txt
+src/roghib.egg-info/dependency_links.txt
+src/roghib.egg-info/top_level.txt

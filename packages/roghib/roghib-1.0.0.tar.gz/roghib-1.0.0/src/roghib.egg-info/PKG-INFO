@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: roghib
+Version: 1.0.0
+Summary: Build anything with Roghib
+Home-page: https://github.com/osscript/roghib
+Author: Roghib
+Author-email: master@roghib.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/osscript/roghib/issues
+Description: # Roghib 
+        
+        Emperor of the universe, increase your maximum level and gain a great amount of power.
+        
+        ## The Python Package Index
+        
+        This software is provided to you under the terms described in
+        this [License](LICENSE). By using this software, you agree to accept the terms, as described by this license.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
