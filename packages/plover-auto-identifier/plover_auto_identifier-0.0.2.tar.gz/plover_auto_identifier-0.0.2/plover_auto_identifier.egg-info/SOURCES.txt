@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+README.md
+setup.cfg
+setup.py
+plover_auto_identifier/__init__.py
+plover_auto_identifier/controller.py
+plover_auto_identifier.egg-info/PKG-INFO
+plover_auto_identifier.egg-info/SOURCES.txt
+plover_auto_identifier.egg-info/dependency_links.txt
+plover_auto_identifier.egg-info/entry_points.txt
+plover_auto_identifier.egg-info/requires.txt
+plover_auto_identifier.egg-info/top_level.txt
+plover_auto_identifier.egg-info/zip-safe
