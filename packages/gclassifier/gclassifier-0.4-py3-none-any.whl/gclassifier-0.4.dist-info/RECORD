@@ -1,0 +1,8 @@
+gclassifier/__init__.py,sha256=TZWPiRj_CGea6B4wC9-pA4i-FAwdFWAzWJAIx6ykCXg,90
+gclassifier/algo_model.model,sha256=UUhQ-IJGP3GbDcbeUT3IrnLX05fnDNUg760zeVk50tc,104218976
+gclassifier/classifier.py,sha256=4mZG5CTr40OyE5qpR1JRqzLw24HhmzBPutKBza_Mc0I,1104
+gclassifier-0.4.dist-info/LICENSE,sha256=AfXP7IGd5skWWs2hwQkNg0Xg5NzfQxwFTGCB9vZZ7JE,1066
+gclassifier-0.4.dist-info/METADATA,sha256=jazmnwE2EUQCMwLnHG4NcIOTgZZg3LVXL2Dgm_Qb7eI,1641
+gclassifier-0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gclassifier-0.4.dist-info/top_level.txt,sha256=sYcdi5Oe6rikJe6wcFBR-qzD_yOHIbG0IiTp9vfYK4Q,12
+gclassifier-0.4.dist-info/RECORD,,
