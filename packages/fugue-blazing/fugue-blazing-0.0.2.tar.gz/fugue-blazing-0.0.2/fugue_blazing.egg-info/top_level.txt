@@ -1,0 +1,3 @@
+fugue_blazing
+fugue_blazing_version
+tests
