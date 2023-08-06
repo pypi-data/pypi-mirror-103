@@ -1,0 +1,7 @@
+setup.py
+mccrapipy/__init__.py
+mccrapipy.egg-info/PKG-INFO
+mccrapipy.egg-info/SOURCES.txt
+mccrapipy.egg-info/dependency_links.txt
+mccrapipy.egg-info/requires.txt
+mccrapipy.egg-info/top_level.txt
