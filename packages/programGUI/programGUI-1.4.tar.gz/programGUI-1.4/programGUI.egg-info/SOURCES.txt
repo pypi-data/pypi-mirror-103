@@ -1,0 +1,8 @@
+setup.py
+programGUI/__init__.py
+programGUI.egg-info/PKG-INFO
+programGUI.egg-info/SOURCES.txt
+programGUI.egg-info/dependency_links.txt
+programGUI.egg-info/requires.txt
+programGUI.egg-info/top_level.txt
+programGUI.egg-info/zip-safe
