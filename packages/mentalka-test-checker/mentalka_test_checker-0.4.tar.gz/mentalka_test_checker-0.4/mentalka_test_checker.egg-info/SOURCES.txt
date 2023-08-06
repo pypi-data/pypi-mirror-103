@@ -1,0 +1,17 @@
+setup.py
+mentalka_test_checker/__init__.py
+mentalka_test_checker/paint_orign.py
+mentalka_test_checker/predict.py
+mentalka_test_checker/preprocessing.py
+mentalka_test_checker/qr_table1_table2.py
+mentalka_test_checker/read_cell.py
+mentalka_test_checker/read_qrcode.py
+mentalka_test_checker/recognizer.py
+mentalka_test_checker/setting.py
+mentalka_test_checker/train.py
+mentalka_test_checker/utils.py
+mentalka_test_checker.egg-info/PKG-INFO
+mentalka_test_checker.egg-info/SOURCES.txt
+mentalka_test_checker.egg-info/dependency_links.txt
+mentalka_test_checker.egg-info/requires.txt
+mentalka_test_checker.egg-info/top_level.txt
