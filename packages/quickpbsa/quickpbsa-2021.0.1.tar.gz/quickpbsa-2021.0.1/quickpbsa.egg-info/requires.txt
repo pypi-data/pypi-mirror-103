@@ -1,0 +1,8 @@
+numpy
+scipy
+pandas
+sympy
+
+[Trace Extraction]
+tifffile
+matplotlib
