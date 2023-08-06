@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: djangoldp-webpushnotification
+Version: 1.0.3
+Summary: DjangoLDP web push notifications package
+Home-page: https://git.autonomic.zone/autonomic-cooperative/djangoldp-webpushnotification
+Author: Autonomic Co-operative
+Author-email: helo@autonomic.zone
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: djangoldp (~=2.1)
+Requires-Dist: djangoldp-account (~=2.1)
+Requires-Dist: ecdsa (~=0.16.1)
+Requires-Dist: django-webpush (~=0.3)
+Provides-Extra: dev
+Requires-Dist: factory-boy (>=2.11.0) ; extra == 'dev'
+Provides-Extra: include_package_data
+Requires-Dist: True ; extra == 'include_package_data'
+
+UNKNOWN
+
+
