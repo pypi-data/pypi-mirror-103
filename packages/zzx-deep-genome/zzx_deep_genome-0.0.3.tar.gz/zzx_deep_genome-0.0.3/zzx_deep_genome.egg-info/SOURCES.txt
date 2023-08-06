@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.py
+zzx_deep_genome/Standardization.py
+zzx_deep_genome/__init__.py
+zzx_deep_genome/filter_initialization.py
+zzx_deep_genome/get_dataset.py
+zzx_deep_genome/get_pwm.py
+zzx_deep_genome.egg-info/PKG-INFO
+zzx_deep_genome.egg-info/SOURCES.txt
+zzx_deep_genome.egg-info/dependency_links.txt
+zzx_deep_genome.egg-info/requires.txt
+zzx_deep_genome.egg-info/top_level.txt
