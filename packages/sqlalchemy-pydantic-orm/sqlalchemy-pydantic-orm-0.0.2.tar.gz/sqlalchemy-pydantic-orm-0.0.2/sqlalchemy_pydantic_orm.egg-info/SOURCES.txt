@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+example/database.py
+example/main.py
+example/models.py
+example/schemas.py
+sqlalchemy_pydantic_orm/__init__.py
+sqlalchemy_pydantic_orm/main.py
+sqlalchemy_pydantic_orm.egg-info/PKG-INFO
+sqlalchemy_pydantic_orm.egg-info/SOURCES.txt
+sqlalchemy_pydantic_orm.egg-info/dependency_links.txt
+sqlalchemy_pydantic_orm.egg-info/requires.txt
+sqlalchemy_pydantic_orm.egg-info/top_level.txt
