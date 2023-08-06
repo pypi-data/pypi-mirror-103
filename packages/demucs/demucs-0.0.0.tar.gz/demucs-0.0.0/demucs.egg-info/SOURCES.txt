@@ -1,0 +1,6 @@
+demucs.py
+setup.py
+demucs.egg-info/PKG-INFO
+demucs.egg-info/SOURCES.txt
+demucs.egg-info/dependency_links.txt
+demucs.egg-info/top_level.txt

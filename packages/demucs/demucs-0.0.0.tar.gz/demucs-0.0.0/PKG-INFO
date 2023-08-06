@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: demucs
+Version: 0.0.0
+Summary: source separation
+Home-page: https://github.com/facebookresearch/demucs
+Author: Alexandre Défossez
+Author-email: defossez@fb.com
+License: Creative Commons Attribution-NonCommercial 4.0 International
+Description: source separation
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
