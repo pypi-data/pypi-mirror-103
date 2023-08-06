@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: Honu
+Version: 0.0.1
+Summary: A simple educational turtle-like library
+Home-page: https://github.com/ChrisChrisLoLo/honu
+Author: Christian Lo
+Author-email: sporewoh@example.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ChrisChrisLoLo/honu/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Education
+Classifier: Topic :: Education :: Testing
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Games/Entertainment :: Puzzle Games
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: graphics.py (>=5.0.1.post1)
+
+# Honu
+
+Honu is a simple turtle-like library used to teach individuals about the fundamentals of programming.
+
