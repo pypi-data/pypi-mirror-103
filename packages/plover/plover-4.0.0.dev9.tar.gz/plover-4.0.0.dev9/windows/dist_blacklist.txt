@@ -1,0 +1,29 @@
+# Python.
+  Scripts
+# PyQt5.
+:Lib/site-packages/PyQt5
+  **/*Designer*
+  **/*[Hh]elp*
+  **/*Test*
+  **/*Qml*
+  **/*[Qq]uick*
+  **/*[Ww]eb[Ee]ngine*
+  bindings
+  Qt/bin/libeay32.dll
+  Qt/bin/ssleay32.dll
+  Qt/plugins/platforms/qminimal.dll
+  Qt/plugins/platforms/qoffscreen.dll
+  Qt/plugins/platforms/qwebgl.dll
+  Qt/plugins/sceneparsers
+  pylupdate*
+  pyrcc*
+  uic
+# Plover.
+:Lib/site-packages/plover
+  gui_qt/*.ui
+  gui_qt/*.ui
+  gui_qt/resources
+  messages/**/*.po
+  messages/plover.pot
+
+# vim: ft=config
