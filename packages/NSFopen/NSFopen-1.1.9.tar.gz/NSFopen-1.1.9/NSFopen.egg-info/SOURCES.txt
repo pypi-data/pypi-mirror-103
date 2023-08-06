@@ -1,0 +1,12 @@
+MANIFEST.in
+README.txt
+setup.py
+NSFopen/__init__.py
+NSFopen.egg-info/PKG-INFO
+NSFopen.egg-info/SOURCES.txt
+NSFopen.egg-info/dependency_links.txt
+NSFopen.egg-info/top_level.txt
+NSFopen/process/__init__.py
+NSFopen/process/process.py
+NSFopen/read/__init__.py
+NSFopen/read/read.py
