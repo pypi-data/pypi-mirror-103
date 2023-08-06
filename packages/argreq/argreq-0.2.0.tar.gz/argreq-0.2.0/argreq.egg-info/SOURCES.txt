@@ -1,0 +1,9 @@
+LICENSE
+README.rst
+setup.py
+argreq/__init__.py
+argreq/errors.py
+argreq.egg-info/PKG-INFO
+argreq.egg-info/SOURCES.txt
+argreq.egg-info/dependency_links.txt
+argreq.egg-info/top_level.txt
