@@ -1,0 +1,9 @@
+[console_scripts]
+ecs_femdvr_time_dep_h2 = quantumgrid_examples.ECS_FEMDVR_diatomic_time_dep_vibration_H2:main
+ecs_femdvr_time_indep_h2 = quantumgrid_examples.ECS_FEMDVR_diatomic_time_indep_vibration_H2:main
+femdvr_vib_states_co = quantumgrid_examples.CO_vib_states_FEM_DVR:main
+femdvr_vib_states_h2 = quantumgrid_examples.H2_vib_states_FEM_DVR:main
+quantumgrid = quantumgrid.cli:main
+time_dep_two_potential_excitation = quantumgrid_examples.Time_dep_excitation_2_potential_curves:main
+two_electron = quantumgrid_examples.Two_electron_ECS:main
+

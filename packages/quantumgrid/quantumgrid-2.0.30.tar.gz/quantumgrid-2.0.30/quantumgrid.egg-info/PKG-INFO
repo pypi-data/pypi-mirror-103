@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: quantumgrid
+Version: 2.0.30
+Summary: Exterior Complex Scaling Finite-Element Method Discrete Variable Representation grid for general physics problems.
+Home-page: https://github.com/zstreeter/quantumgrid
+Author: Zachary Streeter
+Author-email: zlstreeter@lbl.gov
+License: MIT license
+Description: About
+        =====
+        
+        Exterior Complex Scaled Finite-Element Element Discrete Variable
+        Representation grid for general physics problems. In other words,
+        quantumGrid is a package for solving a 1-D Schrödinger equation
+        for an arbitrary potential.
+        
+        Motivation
+        ==========
+        
+        This python package was created for a graduate course in time-dependent
+        quantum mechanics at UC Davis. Given the ease of programming in python,
+        generality and usefulness of a Finite Element Method - Discrete
+        Variable Representation (FEM-DVR) grid for solving the Schrödinger
+        equation and simple scattering problems, we wanted to go open source
+        and provide this numerical tool for others in the name of science!
+        
+        Documentation
+        ==============
+        For a more details in using quantumGrid, checkout our manual here:
+        https://quantumgrid.readthedocs.io.
+        
+        
+        =======
+        History
+        =======
+        
+        0.0.1 (2020-05-31)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: quantumgrid
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
