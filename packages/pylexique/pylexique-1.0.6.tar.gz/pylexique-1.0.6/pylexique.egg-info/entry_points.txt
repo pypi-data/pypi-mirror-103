@@ -1,0 +1,3 @@
+[console_scripts]
+pylexique = pylexique.cli:main
+
