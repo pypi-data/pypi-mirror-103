@@ -1,0 +1,6 @@
+README.txt
+setup.py
+rsc_test_module.egg-info/PKG-INFO
+rsc_test_module.egg-info/SOURCES.txt
+rsc_test_module.egg-info/dependency_links.txt
+rsc_test_module.egg-info/top_level.txt
