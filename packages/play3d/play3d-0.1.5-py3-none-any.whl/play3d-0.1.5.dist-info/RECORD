@@ -1,0 +1,11 @@
+play3d/__about__.py,sha256=KjiyQjxf22BXnRQ4sa27ArltYdLOf2JWuFCrUr0dczI,166
+play3d/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+play3d/matrix.py,sha256=hwzvzQbJW1O0b3VQm7StIR_gAo4Qg_qlOrikbNPvQN8,2194
+play3d/models.py,sha256=Pd-GSW4E5EOv31k8DHQNTrw7IG51aLk4c9If6ZhUou8,18430
+play3d/three_d.py,sha256=QbgDNZXqGlngMhYrjhoOiuXVU0nGwWSO5ltjRpzz6H0,11418
+play3d/utils.py,sha256=MbXrvMB3u0MfH6Ee0K2Vp__bmjFqdcyF7RRovXk15Js,1436
+play3d-0.1.5.dist-info/LICENSE,sha256=AYB3aviD58uiRBQB2S5Y2ZRloPD09VQdSkaL3Uu-DTg,1072
+play3d-0.1.5.dist-info/METADATA,sha256=2IzlPJxzpESWb9uutUpHNTe2fLywkxlT8fJnW0Yk3yU,12609
+play3d-0.1.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+play3d-0.1.5.dist-info/top_level.txt,sha256=V70U7My3hQyLAl_upA5NRfLvjcpSOJN0W-J1V-ySZv0,7
+play3d-0.1.5.dist-info/RECORD,,
