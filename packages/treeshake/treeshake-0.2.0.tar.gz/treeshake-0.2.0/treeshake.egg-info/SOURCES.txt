@@ -1,0 +1,15 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+treeshake/__init__.py
+treeshake/__main__.py
+treeshake/shaker.c
+treeshake/stylesheet.c
+treeshake/test.py
+treeshake.egg-info/PKG-INFO
+treeshake.egg-info/SOURCES.txt
+treeshake.egg-info/dependency_links.txt
+treeshake.egg-info/entry_points.txt
+treeshake.egg-info/requires.txt
+treeshake.egg-info/top_level.txt
