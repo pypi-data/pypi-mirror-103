@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pymilvus-orm
+Version: 0.0.1
+Summary: Python ORM Sdk for Milvus(>= 2.0)
+Home-page: https://github.com/milvus-io/pymilvus-orm.git
+License: Apache-2.0
+Description: # pymilvus-orm
+        [![codecov](https://codecov.io/gh/milvus-io/pymilvus-orm/branch/main/graph/badge.svg?token=36NSvY9rya)](https://codecov.io/gh/milvus-io/pymilvus-orm)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
