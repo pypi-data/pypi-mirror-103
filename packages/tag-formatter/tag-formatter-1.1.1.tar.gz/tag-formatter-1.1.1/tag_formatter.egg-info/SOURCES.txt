@@ -1,0 +1,10 @@
+README.md
+setup.py
+tag_formatter.egg-info/PKG-INFO
+tag_formatter.egg-info/SOURCES.txt
+tag_formatter.egg-info/dependency_links.txt
+tag_formatter.egg-info/top_level.txt
+tagformatter/__init__.py
+tagformatter/classes.py
+tagformatter/helpers.py
+tagformatter/parser.py
