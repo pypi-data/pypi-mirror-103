@@ -1,0 +1,5 @@
+[Thumbnailer Entry]
+Type=X-Thumbnailer
+Name=Folderpreview Thumbnailer
+MimeType=inode/directory;
+Exec=folderpreview %i -o %o -s %s

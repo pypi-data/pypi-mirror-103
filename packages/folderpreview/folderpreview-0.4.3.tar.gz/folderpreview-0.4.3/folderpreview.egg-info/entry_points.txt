@@ -1,0 +1,3 @@
+[console_scripts]
+folderpreview = folderpreview:main
+
