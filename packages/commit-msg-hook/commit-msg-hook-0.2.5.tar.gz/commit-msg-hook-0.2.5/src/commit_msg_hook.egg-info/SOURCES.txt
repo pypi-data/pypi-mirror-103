@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/commit_msg_hook.egg-info/PKG-INFO
+src/commit_msg_hook.egg-info/SOURCES.txt
+src/commit_msg_hook.egg-info/dependency_links.txt
+src/commit_msg_hook.egg-info/entry_points.txt
+src/commit_msg_hook.egg-info/top_level.txt
+src/example_pkg/__init__.py
+src/main/__init__.py
+src/main/cli.py
