@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: ptinaska
+Version: 0.1.0
+Summary: A text-based gui for rsync application.
+Home-page: https://github.com/iaroslavscript/pti-naska
+Author: attr: ptinaska.__author__
+Author-email: iaroslavscript@users.noreply.github.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/iaroslavscript/pti-naska/issues
+Description: # pti-naska
+        Text-GUI frontend for rsync application.
+        
+        MIT License
+        
+        ## Installing build dependencies
+        
+        ```
+        python -m pip install -r -U requirements.txt
+        ```
+        
+        ## Running from command line
+        ```
+        python3 -m ptinaska.cli --help
+        ```
+        
+Keywords: rsync
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
