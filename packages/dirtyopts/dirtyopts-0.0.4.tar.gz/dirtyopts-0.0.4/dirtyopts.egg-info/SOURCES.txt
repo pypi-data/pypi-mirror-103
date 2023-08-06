@@ -1,0 +1,8 @@
+setup.py
+dirtyopts/__init__.py
+dirtyopts/_version.py
+dirtyopts/opts.py
+dirtyopts.egg-info/PKG-INFO
+dirtyopts.egg-info/SOURCES.txt
+dirtyopts.egg-info/dependency_links.txt
+dirtyopts.egg-info/top_level.txt
