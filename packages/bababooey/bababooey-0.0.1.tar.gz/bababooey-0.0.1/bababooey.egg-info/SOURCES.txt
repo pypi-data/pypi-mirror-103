@@ -1,0 +1,10 @@
+README.md
+setup.py
+bababooey/__init__.py
+bababooey/main.py
+bababooey/other.py
+bababooey.egg-info/PKG-INFO
+bababooey.egg-info/SOURCES.txt
+bababooey.egg-info/dependency_links.txt
+bababooey.egg-info/top_level.txt
+bababooey.egg-info/zip-safe

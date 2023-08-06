@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: bababooey
+Version: 0.0.1
+Summary: the python program to bababooey
+Home-page: https://replit.com/@ch1ck3n/bababooey-in-100-lines
+Author: ch1ck3n
+Author-email: chcknch1ck3n@gmail.com
+License: MIT
+Description: # bababooey.py
+        
+        The most over-complicated module for the stupidest needs
+        
+        ## How to use!
+        
+        `import bababooey` first, we must import bababooey.
+        
+        ---
+        
+        `bababooey.bababooey()` returns what my complex bababooey algorithm returns.
+        
+        `bababooey.bababooey2()` returns the boring, bababooey with no computations.
+        
+        `bababooey.bababooey` returns the string bababooey.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
