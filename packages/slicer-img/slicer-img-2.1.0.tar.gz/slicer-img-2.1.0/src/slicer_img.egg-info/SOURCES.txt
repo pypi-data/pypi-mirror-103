@@ -1,0 +1,12 @@
+README.md
+setup.py
+src/slice/__init__.py
+src/slice/image_split.py
+src/slicer_img.egg-info/PKG-INFO
+src/slicer_img.egg-info/SOURCES.txt
+src/slicer_img.egg-info/dependency_links.txt
+src/slicer_img.egg-info/entry_points.txt
+src/slicer_img.egg-info/requires.txt
+src/slicer_img.egg-info/top_level.txt
+test/test_expand_search.py
+test/test_norm_coord.py
