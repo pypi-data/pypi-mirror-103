@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.py
+botblox.egg-info/PKG-INFO
+botblox.egg-info/SOURCES.txt
+botblox.egg-info/dependency_links.txt
+botblox.egg-info/entry_points.txt
+botblox.egg-info/requires.txt
+botblox.egg-info/top_level.txt
+manager/__init__.py
+manager/__main__.py
+manager/cli.py
+manager/data_manager/__init__.py
+manager/data_manager/mirror.py
+manager/data_manager/vlan.py
