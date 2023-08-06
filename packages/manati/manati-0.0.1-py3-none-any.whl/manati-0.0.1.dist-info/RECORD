@@ -1,0 +1,14 @@
+manati/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+manati/create.py,sha256=gcXjhXO6U1mfWk5SpZmvdHE98ns_JvkU6AkMzwJMYm4,957
+manati/manati.py,sha256=Z18EOh4LVRzkCx6oq0K1pw5RpwPEKRnkCpzxluCMogs,406
+manati/templates/__init__.py,sha256=hKAx_fhtlib21lcJzhqWbcLrubalDCvnOQ9KJMO0HD4,103
+manati/templates/gitignore.py,sha256=iEJDDNfegTR2-bPy9V42CWq5E4GLmntOvSdS4bl4U9o,1841
+manati/templates/setup.py,sha256=OUdKlsHGpu0tJtw3pFR6kzaKpnohL_Zs6UvGlSkrplg,846
+manati/templates/source.py,sha256=KpAo9m1x1KScuKF76AfHxX9kBBNMpOMfbPSIUxAXLhY,71
+manati/templates/test.py,sha256=y7TgKpTU2TwytcxlzAR3K8xtn_A32NNl7eRbIFjXAsA,208
+manati-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+manati-0.0.1.dist-info/METADATA,sha256=WPxz3WMivzgzbC4bxFCWIYMj2CtFXw46RqSQHHPq15o,468
+manati-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+manati-0.0.1.dist-info/entry_points.txt,sha256=H4RdIcS9YaScS1t9V7s892NOs1TE5z1vJHYckMhwveE,64
+manati-0.0.1.dist-info/top_level.txt,sha256=zhASr7cMaadSZN9lcqGNkAgnnNNKDIBYrb23_czFK4k,7
+manati-0.0.1.dist-info/RECORD,,
