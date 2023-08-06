@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: django-yamldoc
+Version: 1.0.0
+Summary: Quoins for static sites
+Home-page: https://github.com/veikman/django-yamldoc
+Author: Viktor Eikman
+Author-email: viktor.eikman@gmail.com
+License: GPL-3.0-only
+Description: # `django-yamldoc`: Quoins for static sites
+        
+        This is a Django application for maintaining documents in YAML format and
+        refining them to a traditional ORM’d database to serve them to users. It’s for
+        people who prefer VCS over SQL.
+        
+        ## Status
+        
+        `yamldoc` is technically reusable, and used in multiple personal projects over
+        the years, with some individual YAML documents over a hundred thousand lines
+        long. However, `yamldoc` is probably of no interest to you. Its architecture
+        is less elegant than the average Django app, mixing various concerns united
+        only by the theme of refining YAML to HTML via quearyable SQL.
+        
+        ## History
+        
+        `yamldoc` was originally called `vedm` for “Viktor Eikman’s Django miscellania”.
+        
+        `yamlwrap`, available [here](https://github.com/veikman/yamlwrap), was once a
+        central component of `yamldoc`.
+        
+        Per Django recommendation, `yamldoc` ships with its migrations. Because the
+        application is designed for static sites where the entire database is routinely
+        rebuilt and therefore disposable, these migrations have been overwritten a few
+        times. Under `semver`, things should be more stable nowadays, but do tell me if
+        you rely on that.
+        
+        ## Legal
+        
+        Copyright 2016–2021 Viktor Eikman
+        
+        `django-yamldoc` is licensed as detailed in the accompanying file LICENSE.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Version Control
+Classifier: Topic :: Text Editors
+Classifier: Topic :: Text Processing :: Markup :: Markdown
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8
