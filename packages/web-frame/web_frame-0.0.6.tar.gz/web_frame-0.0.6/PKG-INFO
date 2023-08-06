@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: web_frame
+Version: 0.0.6
+Summary: 基于tornado封装简易开发框架，可自动化生成API文档
+Home-page: https://gitee.com/jinchengzhen/web-frame
+Author: jinchengzhen
+Author-email: 13555746358@163.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: tornado web
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django
