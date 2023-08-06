@@ -1,0 +1,11 @@
+README.md
+setup.py
+polyfit/__init__.py
+polyfit/polyfit.py
+polyfit/test.py
+polyfit/test_multidimensional.py
+polyfit.egg-info/PKG-INFO
+polyfit.egg-info/SOURCES.txt
+polyfit.egg-info/dependency_links.txt
+polyfit.egg-info/requires.txt
+polyfit.egg-info/top_level.txt
