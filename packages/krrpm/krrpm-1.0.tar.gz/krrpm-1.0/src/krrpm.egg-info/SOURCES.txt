@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/krrpm/__init__.py
+src/krrpm/krrpm.py
+src/krrpm.egg-info/PKG-INFO
+src/krrpm.egg-info/SOURCES.txt
+src/krrpm.egg-info/dependency_links.txt
+src/krrpm.egg-info/requires.txt
+src/krrpm.egg-info/top_level.txt
