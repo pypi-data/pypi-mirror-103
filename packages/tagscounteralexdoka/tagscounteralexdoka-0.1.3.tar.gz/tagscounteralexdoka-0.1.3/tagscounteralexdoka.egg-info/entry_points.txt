@@ -1,0 +1,3 @@
+[console_scripts]
+tagcounter = tagscounteralexdoka.tagcounter:main
+
