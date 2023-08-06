@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+urlbreakdown.py
+urlbreakdown.egg-info/PKG-INFO
+urlbreakdown.egg-info/SOURCES.txt
+urlbreakdown.egg-info/dependency_links.txt
+urlbreakdown.egg-info/top_level.txt
