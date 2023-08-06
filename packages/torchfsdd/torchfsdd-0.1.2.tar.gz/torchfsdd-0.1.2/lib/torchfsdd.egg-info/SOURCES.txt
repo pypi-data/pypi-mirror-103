@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+lib/test/__init__.py
+lib/test/test_dataset.py
+lib/test/test_helpers.py
+lib/torchfsdd/__init__.py
+lib/torchfsdd/dataset.py
+lib/torchfsdd/helpers.py
+lib/torchfsdd.egg-info/PKG-INFO
+lib/torchfsdd.egg-info/SOURCES.txt
+lib/torchfsdd.egg-info/dependency_links.txt
+lib/torchfsdd.egg-info/requires.txt
+lib/torchfsdd.egg-info/top_level.txt

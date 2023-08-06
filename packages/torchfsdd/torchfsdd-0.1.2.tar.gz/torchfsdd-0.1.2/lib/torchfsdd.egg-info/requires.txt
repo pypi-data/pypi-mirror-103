@@ -1,0 +1,5 @@
+importlib_metadata
+
+[torch]
+torch>=1.8+cpu
+torchaudio>=0.8+cpu
