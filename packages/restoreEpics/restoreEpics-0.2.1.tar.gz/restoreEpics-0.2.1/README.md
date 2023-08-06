@@ -1,0 +1,113 @@
+# restoreEpics
+
+A simple package that gives wrapped caput and writeMatrix functions for writing EPICS channels which save previous values and a restoreEpics function can be used later to restore all values in case of error, interrupt, or as a final restore.
+
+## Usage
+
+### Restoring channels
+
+```python
+from restoreEpics import restoreEpics, backUpVals, restoreMethods, caput, caget
+
+try:
+    # do some work that uses caget or caput as usual
+except BaseException:
+    # Handle error cases
+finally:
+    restoreEpics()  # Will restore all changes to previous values
+```
+
+### Writing to matrices with form basename_ii_jj_suffix
+
+```python
+from restoreEpics import restoreEpics, backUpVals, restoreMethods, writeMatrix
+
+try:
+    writeMatrix(basename, mat, suffix=suffix, tramp=10)
+except BaseException:
+    # Handle error cases
+finally:
+    restoreEpics()  # Will restore all changes to previous values
+```
+
+### Make your own restoring methods
+
+```python
+from restoreEpics import restoreEpics, backUpVals, restoreMethods
+from awg import Sine
+
+def exciteSine(ch, freq, ampl, duration=10, ramptime=1):
+    exc = Sine(ch, freq, ampl, duration=duration)
+    exc.start(ramptime=ramptime)
+    if all([ele['name'] != ch for ele in bak]):
+        backUpVals += [{'type': 'excSine', 'name': 'ch', 'exc': exc}]  # Store the exc object wth a type defined.
+
+
+def restoreExc(bakVal):
+    bakVal['exc'].stop()  # Restoring method for excitation.
+
+# Add the restoring method to restoreMethods dictionary with type defined above as key
+restoreMethods['excSine'] = restoreExc
+
+try:
+    exciteSine('blah', 0.5, 10)
+except BaseException:
+    # Handle error cases
+finally:
+    restoreEpics()  # Will restore all changes to previous values
+```
+
+## Command line tools
+The readMatrix and writeMatrix functions are available as command line tools on installation through pip. Usage:
+```bash
+$ readMatrix -h
+usage: readMatrix [-h] [--firstRow FIRSTROW] [--firstCol FIRSTCOL] [-s SUFFIX]
+                  basename inMatFile rows cols
+
+This reads matrix coefficients from EPICS channels to a text file to. Note
+that all indices start from 1 by convention for EPICS channels.
+
+positional arguments:
+  basename              Matrix EPICS base name
+  inMatFile             Input Matrix file name
+  rows                  Number of rows to read. Default None(all)
+  cols                  Number of columns to read. Default None(all)
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --firstRow FIRSTROW   First index of output. Default 1
+  --firstCol FIRSTCOL   First index of input. Default 1
+  -s SUFFIX, --suffix SUFFIX
+                        Any suffix after the matrix indices in channel names.
+                        Default is None.
+```
+```bash
+$ writeMatrix -h
+usage: writeMatrix [-h] [-r ROWS] [-c COLS] [--firstRow FIRSTROW]
+                   [--firstCol FIRSTCOL] [--fileRowInd FILEROWIND]
+                   [--fileColInd FILECOLIND] [-t TRAMP] [-s SUFFIX]
+                   inMatFile basename
+
+This writes matrix coefficients from a text file to EPICS channels. Note that
+all indices start from 1 by convention for EPICS channels.
+
+positional arguments:
+  inMatFile             Input Matrix file name
+  basename              Matrix EPICS base name
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -r ROWS, --rows ROWS  Number of rows to write. Default None(all)
+  -c COLS, --cols COLS  Number of columns to write. Default None(all)
+  --firstRow FIRSTROW   First index of output. Default 1
+  --firstCol FIRSTCOL   First index of input. Default 1
+  --fileRowInd FILEROWIND
+                        First row index in file. Default 1
+  --fileColInd FILECOLIND
+                        First col index in file. Default 1
+  -t TRAMP, --tramp TRAMP
+                        Ramping time when chaning values. Default 3
+  -s SUFFIX, --suffix SUFFIX
+                        Any suffix after the matrix indices in channel names.
+                        Default is None.
+```
