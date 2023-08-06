@@ -1,0 +1,15 @@
+README.md
+setup.py
+kvdroid/__init__.py
+kvdroid/appsource.py
+kvdroid/audio.py
+kvdroid/darkmode.py
+kvdroid/lang.py
+kvdroid/metrics.py
+kvdroid/network.py
+kvdroid/path.py
+kvdroid.egg-info/PKG-INFO
+kvdroid.egg-info/SOURCES.txt
+kvdroid.egg-info/dependency_links.txt
+kvdroid.egg-info/requires.txt
+kvdroid.egg-info/top_level.txt
