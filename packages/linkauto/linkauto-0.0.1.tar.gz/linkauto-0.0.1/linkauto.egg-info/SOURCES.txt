@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+linkauto.egg-info/PKG-INFO
+linkauto.egg-info/SOURCES.txt
+linkauto.egg-info/dependency_links.txt
+linkauto.egg-info/requires.txt
+linkauto.egg-info/top_level.txt
