@@ -1,0 +1,8 @@
+README.rst
+setup.py
+sphinx_reredirects/__init__.py
+sphinx_reredirects.egg-info/PKG-INFO
+sphinx_reredirects.egg-info/SOURCES.txt
+sphinx_reredirects.egg-info/dependency_links.txt
+sphinx_reredirects.egg-info/requires.txt
+sphinx_reredirects.egg-info/top_level.txt
