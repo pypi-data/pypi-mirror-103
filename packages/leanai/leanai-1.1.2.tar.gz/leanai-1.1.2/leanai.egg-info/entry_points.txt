@@ -1,0 +1,4 @@
+[console_scripts]
+leanai = leanai.core.cli_tools:main
+leanai_remote = leanai.core.cli_remote:main
+
