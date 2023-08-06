@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/hydbedscraper/__init__.py
+src/hydbedscraper/main.py
+src/hydbedscraper/parsers.py
+src/hydbedscraper/requests.py
+src/hydbedscraper/types.py
+src/hydbedscraper.egg-info/PKG-INFO
+src/hydbedscraper.egg-info/SOURCES.txt
+src/hydbedscraper.egg-info/dependency_links.txt
+src/hydbedscraper.egg-info/entry_points.txt
+src/hydbedscraper.egg-info/requires.txt
+src/hydbedscraper.egg-info/top_level.txt
+src/hydbedscraper/testdata/__init__.py
+src/hydbedscraper/testdata/path.py
