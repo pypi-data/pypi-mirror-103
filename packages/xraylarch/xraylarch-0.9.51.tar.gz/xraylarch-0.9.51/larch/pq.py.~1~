@@ -1,0 +1,47 @@
+pre_edge_baseline(energy=svrpx.energy, norm=svrpx.ydat, group=svrpx, form='linear+lorentzian',
+elo=-15.000, ehi=-5.000, emin=-30.000, emax=0.000)
+
+
+_prj = read_athena('/Users/Newville/Codes/xraylarch/d/FeMORBGlasses.prj', do_fft=False, do_bkg=False)
+rgvmq = extract_athenagroup(_prj.FeXANES_AII_35b_001)
+rgvmq.groupname = 'rgvmq'
+rgvmq.filename = 'FeXANES_AII_35b_001'
+bxxck = extract_athenagroup(_prj.FeXANES_AII_45a_001)
+bxxck.groupname = 'bxxck'
+bxxck.filename = 'FeXANES_AII_45a_001'
+swvlo = extract_athenagroup(_prj.FeXANES_AII_45c_001)
+swvlo.groupname = 'swvlo'
+swvlo.filename = 'FeXANES_AII_45c_001'
+aegen = extract_athenagroup(_prj.FeXANES_AII__05b_001)
+aegen.groupname = 'aegen'
+aegen.filename = 'FeXANES_AII__05b_001'
+svrpx = extract_athenagroup(_prj.FeXANES_AII__05c_001)
+svrpx.groupname = 'svrpx'
+svrpx.filename = 'FeXANES_AII__05c_001'
+rtlpk = extract_athenagroup(_prj.FeXANES_DriftD5Gc_001)
+rtlpk.groupname = 'rtlpk'
+rtlpk.filename = 'FeXANES_DriftD5Gc_001'
+spodp = extract_athenagroup(_prj.FeXANES_KOO_08_D4a_001)
+spodp.groupname = 'spodp'
+spodp.filename = 'FeXANES_KOO_08_D4a_001'
+xgiaa = extract_athenagroup(_prj.FeXANES_KOO_08_D4b_001)
+xgiaa.groupname = 'xgiaa'
+xgiaa.filename = 'FeXANES_KOO_08_D4b_001'
+del _prj
+pre_edge(rgvmq, pre1=-98.00, pre2=-25.00, nvict=0.00, nnorm=0.00, norm1=75.00, norm2=157.80)
+rgvmq.norm_poly = 1.0*rgvmq.norm
+rgvmq.dnormde=rgvmq.dmude/rgvmq.edge_step
+pre_edge(rgvmq, pre1=-98.00, pre2=-25.00, nvict=0.00, nnorm=0.00, norm1=75.00, norm2=157.80)
+rgvmq.norm_poly = 1.0*rgvmq.norm
+rgvmq.dnormde=rgvmq.dmude/rgvmq.edge_step
+pre_edge(rgvmq, pre1=-98.00, pre2=-25.00, nvict=0.00, nnorm=0.00, norm1=75.00, norm2=157.80)
+rgvmq.norm_poly = 1.0*rgvmq.norm
+rgvmq.dnormde=rgvmq.dmude/rgvmq.edge_step
+pre_edge(rgvmq, pre1=-98.00, pre2=-25.00, nvict=0.00, nnorm=0.00, norm1=75.00, norm2=157.80)
+rgvmq.norm_poly = 1.0*rgvmq.norm
+rgvmq.dnormde=rgvmq.dmude/rgvmq.edge_step
+svrpx.ydat = 1.0*svrpx.norm
+pre_edge_baseline(energy=svrpx.energy, norm=svrpx.ydat, group=svrpx, form='linear+lorentzian',
+elo=-15.000, ehi=-5.000, emin=-30.000, emax=0.000)
+
+

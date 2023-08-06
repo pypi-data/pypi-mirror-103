@@ -1,0 +1,25 @@
+# List of all dependencies of larch
+# Recommended installation with conda:
+# conda install -yc conda-forge wxpython tomopy
+# pip install xraylarch
+packaging
+pip
+pyyaml
+pytest
+termcolor
+scipy>=1.5
+numpy>=1.18
+matplotlib>=3.0
+sqlalchemy>=1.0
+h5py>=2.8
+pillow
+peakutils
+requests
+scikit-image
+scikit-learn
+asteval>=0.9.22
+lmfit>=1.0.2
+uncertainties>=3.1
+pyshortcuts>=1.7.2
+xraydb>=4.4
+silx>=0.12
