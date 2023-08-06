@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pollination-geojson-annual-energy-use
+Version: 0.1.2
+Summary: Estimate annual energy use from a geoJSON with building footprints.
+Home-page: https://github.com/pollination/geojson-annual-energy-use
+Author: ladybug-tools
+Author-email: info@ladybug.tools
+Maintainer: chris, ladybug-tools
+Maintainer-email: chris@ladybug.tools, info@ladybug.tools
+License: PolyForm Shield License 1.0.0, https://polyformproject.org/wp-content/uploads/2020/06/PolyForm-Shield-1.0.0.txt
+Project-URL: icon, https://raw.githubusercontent.com/ladybug-tools/artwork/master/icons_components/dragonfly/png/togeojson.png
+Project-URL: docker, https://hub.docker.com/r/ladybugtools/dragonfly-energy
+Keywords: dragonfly,energy,geojson,ladybug-tools,energyplus,openstudio,energy,geojson-annual-energy-use
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: pollination-dragonfly-energy (>=0.2.2)
+Requires-Dist: pollination-honeybee-energy (>=0.2.12)
+Requires-Dist: pollination-alias (>=0.7.0)
+
+# geojson-annual-energy-use
+
+Calculate annual energy use intensity (EUI) from a geoJSON file with building footprints.
+
+Certain attributes of [the URBANopt geoJSON schema](https://docs.urbanopt.net/urbanopt-geojson-gem/schemas/building-properties.html) can be used to assign properties to each building footprint.
+
+
