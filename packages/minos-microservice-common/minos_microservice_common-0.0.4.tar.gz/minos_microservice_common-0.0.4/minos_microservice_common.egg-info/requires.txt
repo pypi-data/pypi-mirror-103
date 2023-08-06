@@ -1,0 +1,7 @@
+aiomisc
+six
+fastavro
+orjson
+lmdb
+pyyaml
+aiopg
