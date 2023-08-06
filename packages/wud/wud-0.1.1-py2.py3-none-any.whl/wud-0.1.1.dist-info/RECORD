@@ -1,0 +1,10 @@
+wud/__init__.py,sha256=M0NZuQ7-112l8K2h1eayVvSmvQrufrOcD5AYKgIf_Is,1
+wud/aws.py,sha256=yGuZfQbfLfnFzq4BN7D4j9kAFtlCjIr-dHk_ykgvf5w,4875
+wud/football.py,sha256=_AfxZXVVxMkAHgSgYsJJvQVuXOCfTQ0-FuY0wPBbKZE,1229
+wud/helper.py,sha256=VRIUZev2Xv6RyXIpDBOevizSRmHGkfsjb1Ih-VDEOUA,1263
+wud/linebot.py,sha256=QMh5j8ncn0JreQHWTNumXtUSpmh9HKKPE8cTQ0HBZV8,3975
+wud/scrap.py,sha256=JP3fhtY3Q9UsJw1qHEw5i-Ittq7VHSSSCegeK5Ggsjw,1531
+wud-0.1.1.dist-info/METADATA,sha256=qU4uNdeDB1iI1Ic2POCLHaNXJzpVwt1EPP1atfyiZ9E,1058
+wud-0.1.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+wud-0.1.1.dist-info/top_level.txt,sha256=cWTUXAKk-4tbtanGJQx0tVoslCia3TvsfyRdwrb1AcM,4
+wud-0.1.1.dist-info/RECORD,,
