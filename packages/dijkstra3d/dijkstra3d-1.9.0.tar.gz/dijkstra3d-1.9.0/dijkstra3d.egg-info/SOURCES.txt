@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+dijkstra3d.cpp
+dijkstra3d.hpp
+libdivide.h
+setup.py
+dijkstra3d.egg-info/PKG-INFO
+dijkstra3d.egg-info/SOURCES.txt
+dijkstra3d.egg-info/dependency_links.txt
+dijkstra3d.egg-info/top_level.txt
