@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: semantic-locators
+Version: 2.0.0
+Summary: Semantic Locators are a human readable, resilient and accessibility-enforcing way to find web elements. This package adds semantic locator support to webdriver
+Home-page: https://github.com/google/semantic-locators
+License: Apache-2.0
+Author: Alex Lloyd
+Author-email: alexlloyd@google.com
+Requires-Python: >=3.6,<3.10
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Testing
+Requires-Dist: importlib-resources (>=5.1.2,<6.0.0)
+Requires-Dist: selenium (>=3.141.0,<4.0.0)
+Project-URL: Repository, https://github.com/google/semantic-locators
+Description-Content-Type: text/markdown
+
+# Semantic Locators in Java WebDriver
+
+Semantic locators can be used with Selenium WebDriver in a similar way to
+`ByXPath` or `ByCssSelector`.
+
+Install from PyPi:
+
+`python -m pip install semantic-locators`
+
+Once installed, use Semantic Locators as follows:
+
+```python
+from semantic_locators import (
+    find_element_by_semantic_locator,
+    find_elements_by_semantic_locator,
+    closest_precise_locator_for,
+)
+...
+
+search_button = find_element_by_semantic_locator(driver, "{button 'Google search'}")
+all_buttons = find_elements_by_semantic_locator(driver, "{button}")
+
+generated = closest_precise_locator_for(search_button); # {button 'Google search'}
+```
+
+General Semantic Locator documentation can be found on
+[GitHub](http://github.com/google/semantic-locators#readme).
+
