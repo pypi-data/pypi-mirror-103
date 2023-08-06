@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: poxy
+Version: 0.1.0
+Summary: Documentation generator for C++.
+Home-page: https://github.com/marzer/poxy
+Author: Mark Gillard
+Author-email: mark.gillard@outlook.com.au
+License: MIT
+Download-URL: https://pypi.org/project/poxy/
+Project-URL: Source, https://github.com/marzer/poxy
+Project-URL: Tracker, https://github.com/marzer/poxy/issues
+Keywords: c++,doxygen,documentation
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: C++
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Utilities
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: misk (>=0.4.0)
+Requires-Dist: bs4
+Requires-Dist: jinja2
+Requires-Dist: pygments
+Requires-Dist: html5lib
+Requires-Dist: lxml
+Requires-Dist: pytomlpp
+Requires-Dist: schema
+
+# poxy
+Documentation generator for C++ based on Doxygen and [mosra/m.css](https://mcss.mosra.cz/).
+

@@ -1,0 +1,3 @@
+[console_scripts]
+poxy = poxy.__main__:main
+
