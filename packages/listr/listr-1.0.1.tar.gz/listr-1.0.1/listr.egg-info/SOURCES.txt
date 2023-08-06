@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+listr/Listr.py
+listr/__init__.py
+listr.egg-info/PKG-INFO
+listr.egg-info/SOURCES.txt
+listr.egg-info/dependency_links.txt
+listr.egg-info/top_level.txt
