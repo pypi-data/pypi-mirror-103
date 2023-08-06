@@ -1,0 +1,12 @@
+CHANGELOG.md
+MANIFEST.in
+README.md
+setup.py
+azure/__init__.py
+azure/messaging/__init__.py
+azure_messaging_nspkg.egg-info/PKG-INFO
+azure_messaging_nspkg.egg-info/SOURCES.txt
+azure_messaging_nspkg.egg-info/dependency_links.txt
+azure_messaging_nspkg.egg-info/not-zip-safe
+azure_messaging_nspkg.egg-info/requires.txt
+azure_messaging_nspkg.egg-info/top_level.txt
