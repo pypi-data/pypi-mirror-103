@@ -1,0 +1,10 @@
+numpy>=1.18.0
+sympy>=1.5
+matplotlib>=3.1.0
+
+[dev]
+black
+pytest
+pytest-flake8
+pytest-randomly
+pytest-sugar
