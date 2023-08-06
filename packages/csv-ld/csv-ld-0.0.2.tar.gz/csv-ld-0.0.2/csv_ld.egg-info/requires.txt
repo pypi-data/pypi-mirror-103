@@ -1,0 +1,12 @@
+fastapi[all]
+python-dotenv
+rdflib
+requests
+toolz
+
+[dev]
+black
+invoke
+pytest
+setuptools-scm
+twine
