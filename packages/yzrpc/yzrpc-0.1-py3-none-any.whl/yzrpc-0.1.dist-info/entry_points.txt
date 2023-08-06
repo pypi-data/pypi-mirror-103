@@ -1,0 +1,7 @@
+[console_scripts]
+yzrpc = yzrpc.__main__:main
+
+[extension_cmds]
+async_task = yzrpc.extensions.celery.cmd:async_task
+bus = yzrpc.extensions.celery.cmd:bus
+
