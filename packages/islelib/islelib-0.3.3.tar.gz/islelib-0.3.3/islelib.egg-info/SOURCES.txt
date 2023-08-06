@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+islelib/__init__.py
+islelib/_version.py
+islelib.egg-info/PKG-INFO
+islelib.egg-info/SOURCES.txt
+islelib.egg-info/dependency_links.txt
+islelib.egg-info/requires.txt
+islelib.egg-info/top_level.txt
