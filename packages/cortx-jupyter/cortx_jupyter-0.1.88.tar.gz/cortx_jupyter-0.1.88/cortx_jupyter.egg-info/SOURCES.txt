@@ -1,0 +1,6 @@
+README.md
+setup.py
+cortx_jupyter.egg-info/PKG-INFO
+cortx_jupyter.egg-info/SOURCES.txt
+cortx_jupyter.egg-info/dependency_links.txt
+cortx_jupyter.egg-info/top_level.txt
