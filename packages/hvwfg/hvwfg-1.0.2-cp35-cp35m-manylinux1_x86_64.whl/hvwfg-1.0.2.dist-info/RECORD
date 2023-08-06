@@ -1,0 +1,10 @@
+hvwfg/__init__.py,sha256=meHAfuFijwjNxVhgp5IrPgKrEGTQP1_NM3ticynj3TE,746
+hvwfg/_version.py,sha256=2o0QC9FYpN0i51y-uD0PJYfyZFaJeQljja3BI1Q96Lc,497
+hvwfg/hv4dr.cpython-35m-x86_64-linux-gnu.so,sha256=ypdgji1KMBlbqgN8NIWAlz6y4--bQHDz6-5VyN1YlTo,273328
+hvwfg/hv5dr.cpython-35m-x86_64-linux-gnu.so,sha256=CXW5unGBuSLv_I7cu0AWpudgLPg_hoUJyE-f1WiVrtw,293904
+hvwfg/wfg.cpython-35m-x86_64-linux-gnu.so,sha256=8nNxKJOzgJcG2ZGRqFR_EDwldrRaS6vPWTBwBGVLknc,283368
+hvwfg-1.0.2.dist-info/METADATA,sha256=HM0ktQLlwQzMy6urDymUsCI4_PenObSNpAXCRfW1t3c,1321
+hvwfg-1.0.2.dist-info/WHEEL,sha256=sLKIP5jp0lY8DYwwz8V_IyeUImDOrScXXIU_9o--LhE,109
+hvwfg-1.0.2.dist-info/top_level.txt,sha256=gPWJR1JSVH7cj8iplG0l8QLjayu_hDCbH_lZP9IBi-k,6
+hvwfg-1.0.2.dist-info/RECORD,,
+hvwfg-1.0.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
