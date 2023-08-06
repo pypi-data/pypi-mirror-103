@@ -1,0 +1,17 @@
+torchsynth/__info__.py,sha256=xeNdtLkucWcew3Rsw8quNAOYhezI_kY-gr7qVbtIYzU,882
+torchsynth/__init__.py,sha256=9Rm_IbplTYHt2cOqyTmGI2fMXysEd5soU77QpffWkPU,173
+torchsynth/config.py,sha256=H1gsy4zbLK4LkODbB9KnrAkg0h7sDR1N4jaqQYRmVmA,6992
+torchsynth/module.py,sha256=cFOMyFmIsAb3qxBNPOxfCa1y4gY6mBgumGFHbKjl5sA,45245
+torchsynth/parameter.py,sha256=206Bv_PpMCk7PnQ3cFPps9SFsJOa1Kxt1js0u8Ujp6M,7428
+torchsynth/profile.py,sha256=yFthwKUOyAZb832igOX2tQZMZmuvbrVqNBRbthgLqgY,5373
+torchsynth/signal.py,sha256=MNRmb8Z318Hx45NsPoOG6AAFjlLmx5pJdHkwNuudMIE,513
+torchsynth/synth.py,sha256=X46lnCi4QYIT-n6mK2oRdnvjBndgBUMYvsb-9yjfNxo,18863
+torchsynth/util.py,sha256=0WoxNkDS7dPyLpMOCw6Ae4jFws9xq6NckQf3JnIxszM,4366
+torchsynth/nebulae/voice/default.json,sha256=KYGMUKK57OEB05Uu3HRqdft9BD8taGJPNWxmuDu-riQ,11182
+torchsynth/nebulae/voice/drum.json,sha256=h6E258gVbWWdIstp15GZwVZL4rERthNrYKf81CnGVvg,11194
+torchsynth-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+torchsynth-1.0.0.dist-info/METADATA,sha256=q1U2zuO7doc-I_fU3BZaYZv1DPbwztFR-Q-OejAnZe4,5012
+torchsynth-1.0.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+torchsynth-1.0.0.dist-info/entry_points.txt,sha256=f4zmqJ5bjTMaJ9U5gCmpeIrlPFq0LdsUzSFDD8GzyJo,64
+torchsynth-1.0.0.dist-info/top_level.txt,sha256=tKjEdCCnUdeumb6xx8CBp7Hb8K9VZ6llEYrJxUuaTsM,11
+torchsynth-1.0.0.dist-info/RECORD,,
