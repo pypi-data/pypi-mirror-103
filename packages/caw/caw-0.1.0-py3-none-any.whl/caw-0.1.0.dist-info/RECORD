@@ -1,0 +1,13 @@
+caw/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+caw/__main__.py,sha256=PN2YfUpKAvIUVLarrBP-SLy5lRGpL8kzc707eCYVVQo,5573
+caw/movedata.py,sha256=zoDkq6b1h4ePGDuOBuzSmYKI-CbBjirj-k-XRxSzSsc,4082
+chrisclient2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chrisclient2/chrisclient.py,sha256=h6IsF1E8tbNkCiZcKOfFY7N4uDU3EchJW4Itc8gT0cc,7476
+chrisclient2/models.py,sha256=V3A6S31hWkCBK_ZO6TI-0u3Ld0TdmjcnhkHNl2X0Sd8,9586
+chrisclient2/util.py,sha256=VoO25DhEpENOEbo_znjP3AbynftH6fK6vpl4N8A5G3c,266
+caw-0.1.0.dist-info/LICENSE,sha256=2WwNneqInhHYVq8VP0EUZ1wlRrtmKdbSrcNjeeaM_5o,1080
+caw-0.1.0.dist-info/METADATA,sha256=9F1v9JbSY8p3iEmBwyWNaCP1W3SbASC__z4K-FZRjNc,5823
+caw-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+caw-0.1.0.dist-info/entry_points.txt,sha256=wJ-W-rCIt59x9VaRYOiJcIdtr1rQmKl1ZASBpNFj7fc,42
+caw-0.1.0.dist-info/top_level.txt,sha256=xaZuZK1uUGqKa1rF7D9WvBpq3WikCheaHMf4C_DR6vI,17
+caw-0.1.0.dist-info/RECORD,,
