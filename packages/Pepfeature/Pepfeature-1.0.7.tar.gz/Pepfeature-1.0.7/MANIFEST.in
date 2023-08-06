@@ -1,0 +1,2 @@
+include pepfeature/data/*.csv
+include pepfeature/data/AAdescriptors.xlsx
