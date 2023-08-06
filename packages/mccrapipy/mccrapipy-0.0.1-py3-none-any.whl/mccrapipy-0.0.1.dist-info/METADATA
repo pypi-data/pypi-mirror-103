@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: mccrapipy
+Version: 0.0.1
+Summary: Api wrapper for mc crafting recipes
+Home-page: UNKNOWN
+Author: Alejandro Gorrzegz
+Author-email: <youremail@email.com>
+License: UNKNOWN
+Keywords: python,minecraft,api,wrapper
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: requests
+
+a python api wrapper that i made for my minecraft crafting recipe api
+
+
