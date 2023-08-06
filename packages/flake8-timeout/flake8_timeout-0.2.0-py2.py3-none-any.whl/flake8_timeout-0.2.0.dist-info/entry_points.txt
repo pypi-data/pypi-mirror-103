@@ -1,0 +1,3 @@
+[flake8.extension]
+TIM = flake8_timeout:Plugin
+
