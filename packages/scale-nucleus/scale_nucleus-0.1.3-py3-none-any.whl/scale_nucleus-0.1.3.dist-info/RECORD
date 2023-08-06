@@ -1,0 +1,17 @@
+nucleus/__init__.py,sha256=NfniBfCvRfF5C4Ey5M6EtSDBDOBoxNDvdp7EE79mme8,39306
+nucleus/annotation.py,sha256=VO4u9QvS2OdjdvqePGiPK0jW9V1c416dhfNgKsI-GKw,6105
+nucleus/constants.py,sha256=SOzi-RhWoc3gTgQ7xY_EVQ5P_bHBwmMwGx1wsvrzu9g,1970
+nucleus/dataset.py,sha256=SdcBFc_4pgI2_XEX6SFFW9EKYfplWBSaRdvjZZgjZa8,9360
+nucleus/dataset_item.py,sha256=czBGgaWO9ODArh4zNHnjxYFIc2TGiixFYh4vq8PtD28,1632
+nucleus/errors.py,sha256=5KEZ-_3CZrbTjC6eep_BqWdlkg0Fsby7WR59wS34jv4,1117
+nucleus/model.py,sha256=3Rlnmds4YFHkXxH4rjs0AS_mj6Hy-hLOpfrV2-8O7Z8,1513
+nucleus/model_run.py,sha256=incKhr5vqq2eU9ZNd1LfmvyxKKow6Kx5heTvKovi8GM,5628
+nucleus/payload_constructor.py,sha256=m9kNWOFgdV1E3g9m8cvH7KvsCmOnLzqVo1HzlQ8e8YI,2736
+nucleus/prediction.py,sha256=2Lw3AoR0O7HTtRX-ICNM9W5FUJZkU_gPK8GAJItY2JM,3956
+nucleus/slice.py,sha256=c0Cx386lRlkf5KIOFCbFzr2tPcGNyuET4KWxoSEJJU8,6488
+nucleus/upload_response.py,sha256=pwOb3iS6TbpoumC1Mao6Pyli7dXBRDcI0zjNfCMU4_c,2729
+nucleus/utils.py,sha256=OLWAeFl-g4nD7n92KHsT9tXycIKBKe8t8LRTjcemal0,3086
+scale_nucleus-0.1.3.dist-info/LICENSE,sha256=jaTGyQSQIZeWMo5iyYqgbAYHR9Bdy7nOzgE-Up3m_-g,1075
+scale_nucleus-0.1.3.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+scale_nucleus-0.1.3.dist-info/METADATA,sha256=hijksByCQtU2g9MeSVz9-95S0eRL_zhuPLsM6xvOhU0,6500
+scale_nucleus-0.1.3.dist-info/RECORD,,
