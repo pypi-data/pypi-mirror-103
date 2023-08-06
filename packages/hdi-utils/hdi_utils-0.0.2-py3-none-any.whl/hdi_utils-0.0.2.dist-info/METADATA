@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: hdi-utils
+Version: 0.0.2
+Summary: High-dimensional image data utilities
+Home-page: https://github.com/JoshuaHess12/hdi-utils
+Maintainer: Joshua Hess
+Maintainer-email: joshmhess12@gmail.com
+License: MIT
+Keywords: high-dimensional image imaging mulitplex
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+# hdi-utils
+General importing and utility functions for high-dimensional image data. hdi-utils is a general utility toolbox built as part of the [MIAAIM]() image analysis workflow
+
+## Usage
+Install hdi-utils with pip: `pip install hdi-utils`. All modules are located within the `hdiutils` folder, and they can be imported with `import hdiutils` within Python. The structure of each module is located within module folders.
+
+## Current Modules
+Current modules and a brief description within hdi-utils can be found below:
+| Module | Description | Python Usage |
+| --- | --- | --- |
+| `HDIimport` | image data importing | `from hdiutils import HDIimport` |
+
+

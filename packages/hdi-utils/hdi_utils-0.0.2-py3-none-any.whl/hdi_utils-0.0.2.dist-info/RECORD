@@ -1,0 +1,13 @@
+HDIimport/__init__.py,sha256=ykw34tMbZFR0cCVkr-M9v26mnRRZRpaWxYjVoRWc_s0,185
+HDIimport/cyt_reader.py,sha256=bBY4xEsbVcJNiir_a8kbAtCL_YVBjuwrv_QADWgMflU,5864
+HDIimport/h5_reader.py,sha256=hWJfP3HBljbLUBn0jFIPDFgh80IRUlJ-upgeR0A8zy0,1161
+HDIimport/hdi_reader.py,sha256=eEKdaG5d5y10zR_RMoJuC7-L8-6mVUe8Jws9kL--1pE,3668
+HDIimport/imzml_reader.py,sha256=uwbChXVO4yypXm6ocmqY5IC7uI8CUz-Ic-3r54inYN8,9647
+HDIimport/nifti1_reader.py,sha256=h6vtLOE8sZ35gq-euKglV2YW-wMtcSfL1WA0kXGDBC4,5568
+HDIimport/tif_reader.py,sha256=fPfUaDGufbiauO5N4Y_7RHRj0CjaXmGOxzoI8yeVZ8A,2133
+HDIimport/utils.py,sha256=0ED3OYd8STo-hoyNcfBKjPjJhNePgsOCv0F4F6vLkwU,12376
+hdi_utils-0.0.2.dist-info/LICENSE,sha256=8ddMoqUSz6m1MEiwsWSQUjCV7czfuynzwEybsNustWs,1069
+hdi_utils-0.0.2.dist-info/METADATA,sha256=xdVETyI9i41ef5OVjejz84J0gI0Mtv8ZV5UeES5ePwg,1621
+hdi_utils-0.0.2.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+hdi_utils-0.0.2.dist-info/top_level.txt,sha256=2cFnQ5T3b-QWtulKgIIjV8vXuZ_gcFnr_kTO3noNsAc,10
+hdi_utils-0.0.2.dist-info/RECORD,,
