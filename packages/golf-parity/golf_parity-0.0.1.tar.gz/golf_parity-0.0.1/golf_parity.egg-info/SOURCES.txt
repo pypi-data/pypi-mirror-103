@@ -1,0 +1,11 @@
+setup.py
+golf_parity/__init__.py
+golf_parity/__main__.py
+golf_parity/arrays.py
+golf_parity/fizzbuzz.p
+golf_parity.egg-info/PKG-INFO
+golf_parity.egg-info/SOURCES.txt
+golf_parity.egg-info/dependency_links.txt
+golf_parity.egg-info/entry_points.txt
+golf_parity.egg-info/requires.txt
+golf_parity.egg-info/top_level.txt
