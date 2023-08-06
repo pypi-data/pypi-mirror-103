@@ -1,0 +1,5 @@
+future
+mysqlclient
+psycopg2
+pycodestyle
+setuptools-scm
