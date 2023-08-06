@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/DatasetsHelper.egg-info/PKG-INFO
+src/DatasetsHelper.egg-info/SOURCES.txt
+src/DatasetsHelper.egg-info/dependency_links.txt
+src/DatasetsHelper.egg-info/top_level.txt
+src/DatasetsHelperQ/__init__.py
+src/DatasetsHelperQ/mapping.py
+src/DatasetsHelperQ/normalization.py
