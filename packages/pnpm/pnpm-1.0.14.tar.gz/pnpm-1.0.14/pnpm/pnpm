@@ -1,0 +1,190 @@
+#!/usr/bin/python3
+import click
+from rich.console import Console
+from rich import inspect
+import site
+import os
+from os import listdir
+from os.path import isfile, join
+import time
+import subprocess as sb
+from threading import Thread as thr
+from pnpm.helpers import abs_path
+import json
+# @click.command()
+# @click.argument('command', required=False)
+# @click.option()
+# def main(command, option):
+    # click.echo(f"{option} {command}")
+
+# if __name__ == "__main__":
+    # main()
+
+tag = "[bold cyan] ▧ \[pnpm] [/bold cyan][#AFAFAF]"
+tag_error = "[bold red] ▧ \[pnpm] [/bold red][#AFAFAF]"
+console = Console()
+def print(*a, **k):
+    console.print(*a, **k)
+
+_benches = {}
+
+def popen(cmd):
+    with console.status(f"Running [italic bold]{cmd}...", spinner="arrow3", spinner_style="cyan") as status:
+        try:
+            proc = sb.check_output(cmd, shell=True)
+        except:
+            return False
+            pass
+        proc = proc.decode()
+        console.log(proc)
+        return True
+
+def merge(x, y):
+    z = x.copy()   # start with x's keys and values
+    z.update(y)    # modifies z with y's keys and values & returns None
+    return z
+
+def ls_files(path):
+    return [f for f in listdir(path) if isfile(join(path, f))]
+
+def bench(key, tag=tag):
+    _benches[key] = time.time_ns()
+    print(f"\n{tag}{key.capitalize()}\n")
+
+def fail(key):
+    end(key, tag_error, verb="Failed")
+
+def end(key, tag=tag, verb="Done"):
+    if key in _benches:
+        t = time.time_ns() - _benches[key]
+        _benches[key] = None
+        print(f"\n{tag} {verb} {key} in {round(t/1000000000, 3)} s")
+        return t
+
+def bsh(script):
+    sb.call(f"source {script_path(script)}", shell=True)
+
+def py_thread(script, **k):
+    t = thr(target=_py, args=(script,), kwargs=k)
+    t.start()
+    return t
+
+def py(script, **k):
+    py_thread(script, **k).join()
+
+def _py(script, **kwargs):
+    sb.call(f"python3 {script_path(script)} '{json.dumps(kwargs)}'", shell=True)
+
+def script_path(script):
+    return f".pnpm/scripts/{script}"
+
+# def abs_path(sub=''):
+    # return site.getsitepackages()[0] + '/pnpm' + sub
+
+
+# @click.group()
+# def pnpm():
+    # pass
+
+# @pnpm.command()
+# # @click.option('--count', default=1, help='number of greetings')
+# @click.argument('package_name', required=False)
+# def create(package_name):
+    # sb.call(f"python3 {abs_path('/generate')} {package_name or ''}", shell=True)
+
+def show(**k):
+    print(f"{tag} available scripts & recipes:")
+    print("[bold]  " + "\n[bold]  ".join(recipes.keys()))
+    if (os.path.isdir(".pnpm/scripts")): print("  " + "\n  ".join(ls_files(".pnpm/scripts")))
+
+# @pnpm.command()
+def dev(**k):
+    # print(k)
+    # bsh('setup')
+    p1 = py_thread('dev', **k)
+    p2 = py_thread('server')
+
+    p2.join()
+    p1.join()
+
+
+    # py_thread("est:wath")
+    # sb.call(f"source {script_path('setup')}", shell=True)
+    
+# @pnpm.command()
+# def build():
+    # py('build')
+    # # sb.call(f"python3 {script_path('build')}", shell=True)
+
+def create(**k):
+    sb.call(f"python3 {abs_path('/generate')}", shell=True)
+    # py('generate')
+
+# @pnpm.command()
+# def release(**k):
+    # # print('yoing')
+    # py('build', **k)
+    # py('release', **k)
+    # # sb.call(f"python3 {script_path('release')}", shell=True)
+    
+recipes = {
+    "dev": dev,
+    "show": show,
+    "create": create
+}
+
+from functools import reduce
+# @click.argument("args", required=False, nargs=-1)
+@click.argument('script')
+@click.option('--use', default="yarn", help='select package manager [npm/yarn/yarn2]')
+@click.option('--reload', "-r", is_flag=True, help='use package manager to re-install dependencies')
+@click.command(context_settings=dict(allow_extra_args=True, ignore_unknown_options=True))
+@click.pass_context
+def pnpm(ctx, script, **kwargs):
+    # r = reduce(lambda a, b: a + [b, True] if b.startswith('-') else a + [a[-1], b], ctx.args, [])
+    passed_kwargs = dict()
+    for i, e in enumerate(ctx.args):
+        if (e.startswith('-')):
+            passed_kwargs[e] = True
+        elif not ctx.args[i-1].startswith('-'):
+            passed_kwargs[str(i)] = e
+        else:
+            passed_kwargs[ctx.args[i-1]] = e
+
+
+    ctx = " ".join(ctx.args)
+
+    bench(f"running {script}")
+
+    global file
+    file = script_path(script)
+    def find_file():
+        global file
+        if not os.path.isfile(file):
+            file = None
+
+    find_file_thread = thr(target=find_file)
+    find_file_thread.start()
+
+    failed = False
+
+    kwargs = merge(passed_kwargs, kwargs)
+    if script in recipes:
+        recipes[script](**kwargs)
+    elif find_file_thread.join() or file is not None:
+        py(script, **kwargs)
+    else:
+        _cmd = f"{kwargs['use']} {script} {ctx}"
+        failed = not popen(_cmd)
+
+    if failed:
+        fail(f"running {script}")
+    else:
+        end(f"running {script}")
+    # else:
+        # print('could not find', script)
+
+
+if __name__ == '__main__':
+    pnpm()
+
