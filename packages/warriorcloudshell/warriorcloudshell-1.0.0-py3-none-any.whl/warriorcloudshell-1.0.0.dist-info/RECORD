@@ -1,0 +1,10 @@
+warriorcloudshell/__init__.py,sha256=_Vt2RKMYOgXG4NE2tAC-cF1jAFQR35pcmGApuuIaQaE,581
+warriorcloudshell/Actions/__init__.py,sha256=_Vt2RKMYOgXG4NE2tAC-cF1jAFQR35pcmGApuuIaQaE,581
+warriorcloudshell/Actions/CloudshellActions/__init__.py,sha256=UN1Dqi7KNWBV9CvJmXYscMfQgiTE51uEQel_xp64xuo,580
+warriorcloudshell/Actions/CloudshellActions/cloudshell_actions.py,sha256=p-puK1CVVJw7gm4SFkjg1gBLBDzbFa1lj4ylc2SXGL0,51152
+warriorcloudshell/ProductDrivers/__init__.py,sha256=_Vt2RKMYOgXG4NE2tAC-cF1jAFQR35pcmGApuuIaQaE,581
+warriorcloudshell/ProductDrivers/cloudshell_driver.py,sha256=jp_s7lQFWg-5mWdRd9vNEuVjYJ5JRLkwYaG6VenEDKQ,1212
+warriorcloudshell-1.0.0.dist-info/METADATA,sha256=85N3KGenssVYO2zmRBhS2g8w11anmYmF2xW2iKDkfUM,709
+warriorcloudshell-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+warriorcloudshell-1.0.0.dist-info/top_level.txt,sha256=xNz0ekIofPN6InLZr7963HmXvevWNIqQkSKaMNwj28M,18
+warriorcloudshell-1.0.0.dist-info/RECORD,,
