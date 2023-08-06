@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pyfalco
+Version: 3.0.2
+Summary: Fast Linearized Coronagraph Optimizer
+Home-page: https://github.com/ajeldorado/falco-python
+Author: A J Eldorado Riggs and collaborators
+Author-email: aj.riggs@jpl.nasa.gov
+License: Apache
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: sphinx-rtd-theme
+
+Fast Linearized Coronagraph Optimizer
+
+
