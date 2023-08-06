@@ -1,0 +1,11 @@
+formsite_util/__init__.py,sha256=TgVTd5WfXdFl8Xu68oaPS_jVo7n5O9NQ7iJcEieklJM,85
+formsite_util/cli.py,sha256=2R3MYuc5iRb8-C8oIrjuGNbx_n7xebSGhIGJmPUpKac,17605
+formsite_util/core.py,sha256=KCb9n8hWC9ZioA9unM_kD1ey8WSbVAkfAcDqt5X-K8w,33707
+formsite_util/formsite_util.py,sha256=gM3qmzSKbdXTytJXfQn-xRvrtYPReCXohno3sKoimJ8,45677
+formsite_util/profiler.py,sha256=WJiIz7-iBdB5wcSTy5Kw_ZGY6-z5Ul3UsRgvQCchOxI,466
+formsite_util-1.2.6.7.dist-info/LICENSE.md,sha256=78yN0rAVmb-_IQq_tU8t_Ku3pU6X8AI65i1PxJhIFgA,35814
+formsite_util-1.2.6.7.dist-info/METADATA,sha256=rUzz-VBXyrB9Y2I5uj8drPn0Y_gSh5HDywWA-VMPkac,11866
+formsite_util-1.2.6.7.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+formsite_util-1.2.6.7.dist-info/entry_points.txt,sha256=flYiDqQp8CeW1IOLxcJdnL3HUzG9OTZYNMq-BrAra98,52
+formsite_util-1.2.6.7.dist-info/top_level.txt,sha256=zbdBAJ6HzI-VezQAzOT2pMc2zEy5WYfg-wJlfWfemE4,14
+formsite_util-1.2.6.7.dist-info/RECORD,,
