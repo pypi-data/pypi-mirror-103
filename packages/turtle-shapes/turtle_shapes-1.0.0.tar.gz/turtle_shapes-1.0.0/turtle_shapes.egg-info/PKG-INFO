@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: turtle-shapes
+Version: 1.0.0
+Summary: Draw Shapes with the Turtle Module.
+Home-page: https://github.com/realpython/reader
+Author: orcawhale38
+Author-email: orcawhale2008@gmail.com
+License: MIT
+Description: # learning-turtle
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
