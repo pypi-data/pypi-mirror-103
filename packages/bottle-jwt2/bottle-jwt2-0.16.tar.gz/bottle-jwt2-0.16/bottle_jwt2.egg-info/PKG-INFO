@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: bottle-jwt2
+Version: 0.16
+Summary: JWT Auth plugin for bottle.py applications
+Home-page: UNKNOWN
+Author: Papavassiliou Vassilis,Amir Lesani
+Author-email: vpapavasil@gmail.com , xenups@gmail.com
+License: GLPv3
+Description: UNKNOWN
+Platform: UNKNOWN
