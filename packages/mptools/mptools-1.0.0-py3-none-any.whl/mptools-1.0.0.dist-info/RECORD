@@ -1,0 +1,9 @@
+frameworks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+frameworks/py4web/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+frameworks/py4web/controller.py,sha256=k-R9QYIMejFBJ9tzU4wGKZ8IfwvGvM0jNe8qMC7nLXo,6340
+mptools-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+mptools-1.0.0.dist-info/METADATA,sha256=kK5VboDphcXXAIZULEZ2rPtnRbc9gfWwagpGhA8YHuU,570
+mptools-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mptools-1.0.0.dist-info/entry_points.txt,sha256=GkXGprG97tOx0ZTwy_vC3LWQBxLfrXyoG6csJcIalBw,58
+mptools-1.0.0.dist-info/top_level.txt,sha256=0GwutGuVveJ6VCwPzngO0mkozKaBav0X7HeneUmbgQs,11
+mptools-1.0.0.dist-info/RECORD,,
