@@ -1,0 +1,13 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+NOTICE
+README.md
+setup.py
+tests/test_ttldict.py
+ttldict2/__init__.py
+ttldict2/impl.py
+ttldict2.egg-info/PKG-INFO
+ttldict2.egg-info/SOURCES.txt
+ttldict2.egg-info/dependency_links.txt
+ttldict2.egg-info/top_level.txt
