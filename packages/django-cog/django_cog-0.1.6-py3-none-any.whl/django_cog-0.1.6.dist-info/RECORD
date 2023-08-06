@@ -1,0 +1,13 @@
+django_cog/__init__.py,sha256=hBgZ56yBWLHRNhZYBFQktz7I-i9g_6C1tAJtftIJKNM,5420
+django_cog/admin.py,sha256=O1Es1V8zn_05M9KYW9j4q8V0h61icWlWmaFtM-AVqVg,1684
+django_cog/apps.py,sha256=ECcmK28KQ8yJjD-cKHWS7AjaCaV5b46M62S-QUoExow,754
+django_cog/celery.py,sha256=yt5Wldf1A7DLciNbZussFm-OTPAl7wRrdz_EM3lkKHk,177
+django_cog/models.py,sha256=OzxtwjUImAVP_hIVerLvUmbZTpDpsnXWcSJqpRTLjrQ,6801
+django_cog/tests.py,sha256=2AK-3igOpCgBhV-8n6V4pNEE0mHvqo17nIdDcnx-kUI,1006
+django_cog/migrations/.DS_Store,sha256=1lFlJ5EFymdzGAUAaI30vcaaLHt3F1LwpG7xILf9jsM,6148
+django_cog/migrations/0001_initial.py,sha256=i3YhLVhxbdHdPC996Dqt6kZt2jPFXHDnTn-zn1eoO90,5998
+django_cog/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_cog-0.1.6.dist-info/METADATA,sha256=7MuIDzi5xLnyd7L-q_Wmh9MfGLkbO_byHguAKEzPEGE,8921
+django_cog-0.1.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_cog-0.1.6.dist-info/top_level.txt,sha256=x9dslZuJqr3uo2fIH6aALU8MEATPViu-otXXijGsfUo,11
+django_cog-0.1.6.dist-info/RECORD,,
