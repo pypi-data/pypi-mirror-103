@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/termux_menu.egg-info/PKG-INFO
+src/termux_menu.egg-info/SOURCES.txt
+src/termux_menu.egg-info/dependency_links.txt
+src/termux_menu.egg-info/top_level.txt
+src/termuxmenu/__init__.py
+src/termuxmenu/console.py
+src/termuxmenu/default_console.py
