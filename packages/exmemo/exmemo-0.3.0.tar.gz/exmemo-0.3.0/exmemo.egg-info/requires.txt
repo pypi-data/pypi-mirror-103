@@ -1,0 +1,16 @@
+appdirs
+cookiecutter
+docopt
+formic2
+fossilize
+habanero
+more_itertools
+nonstdlib
+PyYAML
+sphinx
+sphinxcontrib-programoutput
+sphinx_rtd_theme
+toml
+wet_copy
+openpyxl
+stepwise
