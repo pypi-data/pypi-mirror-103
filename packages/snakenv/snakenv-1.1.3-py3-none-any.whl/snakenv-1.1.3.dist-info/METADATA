@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: snakenv
+Version: 1.1.3
+Summary: Use env variables in python
+Home-page: https://github.com/yunisdev/snakenv
+Author: YunisDEV
+Author-email: yunisdev.04@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Classifier: Natural Language :: English
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: python-dotenv
+
+# snakenv
+**snakenv** is a command line application to make it possible to access variables in `.env` file as an environment variable in python script.
+
+## Installation
+For installing **snakenv** type:
+```bash
+> pip install snakenv
+```
+
+## Usage
+You can use **snakenv** with following syntax:
+```bash
+> snakenv ENV_NAME
+```
+`ENV_NAME` is name of `env` file. You can enter file name with extension or it will use `.env` extension for default. Example, `prod` is equals `prod.env` and `prod.env` equals `prod.env`. 
+If you leave ENV_NAME blank, it will use `.env` file.
+If file not exist, it will create it. You can disable autocreate with `--not-create` flag.
+
+### Thanks for using snakenv
+
