@@ -1,0 +1,10 @@
+drf_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_cli/__main__.py,sha256=c_DpvRa14oulQ02-hZsGYA4yjITzKPdj4cxCQmXmSX0,757
+drf_cli/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_cli/commands/init.py,sha256=c6f2iNAVbtLo0E-Ya66U3vJbDkmgyH6eTddb-bXejKQ,1387
+skn_drf_cli-1.0.1.dist-info/LICENSE,sha256=5UWLewGPMdmKwkmr3KQwBuSIDFds3KHliMhqXleHxZc,1091
+skn_drf_cli-1.0.1.dist-info/METADATA,sha256=p05er0skAXTGxL_4m5_McpG4zXAWM67q655Og3gkWw8,1096
+skn_drf_cli-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+skn_drf_cli-1.0.1.dist-info/entry_points.txt,sha256=97ncrh2QyViJsELsLcdF8Q-2TswzSh-bvulGhJ6gZP4,50
+skn_drf_cli-1.0.1.dist-info/top_level.txt,sha256=_AN3krcCHUYqb_S1-YuAa9x7yEjm8LKVTClLc7R773g,8
+skn_drf_cli-1.0.1.dist-info/RECORD,,
