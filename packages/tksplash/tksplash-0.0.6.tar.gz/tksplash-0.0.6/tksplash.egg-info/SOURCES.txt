@@ -1,0 +1,8 @@
+README.md
+setup.py
+tksplash/__init__.py
+tksplash/tksplash.py
+tksplash.egg-info/PKG-INFO
+tksplash.egg-info/SOURCES.txt
+tksplash.egg-info/dependency_links.txt
+tksplash.egg-info/top_level.txt
