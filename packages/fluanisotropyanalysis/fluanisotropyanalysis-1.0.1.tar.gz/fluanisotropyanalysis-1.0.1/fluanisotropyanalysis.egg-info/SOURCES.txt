@@ -1,0 +1,11 @@
+README.md
+setup.py
+fluanisotropyanalysis/__init__.py
+fluanisotropyanalysis/flu_ani_analysis.py
+fluanisotropyanalysis.egg-info/PKG-INFO
+fluanisotropyanalysis.egg-info/SOURCES.txt
+fluanisotropyanalysis.egg-info/dependency_links.txt
+fluanisotropyanalysis.egg-info/requires.txt
+fluanisotropyanalysis.egg-info/top_level.txt
+tests/__init__.py
+tests/test_flu_ani_analysis.py
