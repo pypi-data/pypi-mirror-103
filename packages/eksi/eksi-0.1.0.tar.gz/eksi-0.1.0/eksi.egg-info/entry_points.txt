@@ -1,0 +1,3 @@
+[console_scripts]
+eksi = eksi.__main__:main
+
