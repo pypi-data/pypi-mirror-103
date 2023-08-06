@@ -1,0 +1,46 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "d2animdata"
+author = "pastelmind"
+author-email = "keepyourhonor@gmail.com"
+home-page = "https://github.com/pastelmind/d2animdata"
+requires = [
+    "dataclasses ~= 0.7; python_version < '3.7'",
+]
+description-file = "README.md"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+]
+requires-python = ">= 3.6"
+
+[tool.flit.scripts]
+d2animdata = "d2animdata:main"
+
+[tool.flit.sdist]
+exclude = [
+    ".*",
+    "pydocmd.yml",
+    "requirements*.txt",
+    "tests/",
+]
+
+[tool.isort]
+profile = "black"
+
+[tool.pylint.messages-control]
+disable="""
+    bad-continuation,
+    logging-fstring-interpolation,
+"""

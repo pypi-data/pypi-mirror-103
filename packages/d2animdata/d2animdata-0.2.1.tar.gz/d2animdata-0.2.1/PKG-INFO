@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: d2animdata
+Version: 0.2.1
+Summary: Read, write, and convert AnimData.D2 to JSON & tabbed TXT (and vice versa).
+Home-page: https://github.com/pastelmind/d2animdata
+Author: pastelmind
+Author-email: keepyourhonor@gmail.com
