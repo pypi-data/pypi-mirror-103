@@ -1,0 +1,13 @@
+numpy
+opencv-contrib-python
+dlib
+matplotlib
+keras==2.4.3
+tensorflow==2.3.1
+tqdm
+pymongo
+keras_vggface
+Keras-Applications
+pytube
+ffmpy
+file-read-backwards
