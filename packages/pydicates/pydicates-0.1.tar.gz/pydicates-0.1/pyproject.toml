@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "pydicates"
+version = "0.1"
+description = "Predicates for Python."
+readme = "README.md"
+repository = "https://github.com/Tiendil/pydicates"
+authors = ["Aliaksei Yaletski (Tiendil) <a.eletsky@gmail.com>"]
+license = "BSD-3-Clause"
+keywords = ["predicates", "functional", ""]
+classifiers = ["Intended Audience :: Developers",
+	       "Natural Language :: English",
+	       "Topic :: Software Development",
+	       "Topic :: Software Development :: Libraries",
+	       "Topic :: Software Development :: Libraries :: Python Modules"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6"
+hypothesis = "^5"
+typeguard = "^2"
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
