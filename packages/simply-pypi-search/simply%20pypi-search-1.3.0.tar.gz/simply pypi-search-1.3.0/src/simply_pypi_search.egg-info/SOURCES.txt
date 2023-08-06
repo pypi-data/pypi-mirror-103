@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/simply_pypi_search/__init__.py
+src/simply_pypi_search.egg-info/PKG-INFO
+src/simply_pypi_search.egg-info/SOURCES.txt
+src/simply_pypi_search.egg-info/dependency_links.txt
+src/simply_pypi_search.egg-info/requires.txt
+src/simply_pypi_search.egg-info/top_level.txt
