@@ -1,0 +1,10 @@
+sphinxcontrib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sphinxcontrib/autodoc_pydantic/__init__.py,sha256=-Bn4o3UB7qW45G5zqH_sFD82yZCgBUlSwVHxRetuc9Y,4193
+sphinxcontrib/autodoc_pydantic/autodoc.py,sha256=9rjLm0kVAClz_AkzqFB89Sqj1ekptVw8yK3z9P058Yo,17331
+sphinxcontrib/autodoc_pydantic/css/autodoc_pydantic.css,sha256=SEh57zUXwXJ8GsqhOPtFcP09GuA9Ium24nvQajxDGF8,129
+sphinxcontrib/autodoc_pydantic/directives.py,sha256=7DU3ImiW7mG2HZn2TyynoS91Mp3hpjtN8_IZTrDUvNk,5984
+sphinxcontrib/autodoc_pydantic/inspection.py,sha256=aaZoOtfSyAXq75sciCWjSd1y8JQ6mSK57VGuQDG90q0,7850
+sphinxcontrib/autodoc_pydantic/util.py,sha256=QKY7xHdP0E8ju751yD6GbTopQI9SoGH4qfaY51gU5BI,8927
+autodoc_pydantic-1.0.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+autodoc_pydantic-1.0.0.dist-info/METADATA,sha256=7Lv2XdAeD7AF4AT37lPzNW521xT57093zGaGVzxzCTs,4020
+autodoc_pydantic-1.0.0.dist-info/RECORD,,
