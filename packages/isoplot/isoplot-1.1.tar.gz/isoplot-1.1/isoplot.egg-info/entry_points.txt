@@ -1,0 +1,3 @@
+[console_scripts]
+isoplot = isoplot.cli_process:main
+
