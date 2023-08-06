@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: auvio
+Version: 1.0.0
+Summary: Let your zuvio roll the call automatically, don’t get up for roll call anymore, give yourself a good morning!
+Home-page: https://github.com/Xanonymous-GitHub/auvio
+Author: NPC OwO
+Author-email: support@ntut.club
+License: UNKNOWN
+Description: # Auvio
+        
+        Let your zuvio roll the call automatically, don’t get up for roll call anymore, give yourself a good morning.
+Platform: all
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
