@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: guvvam
+Version: 2.0.0
+Summary: A tough programing language for mac
+Home-page: https://pypi.org/project/guvva/
+Author: MasterMind
+Author-email: mastermindm2rd@gmail.com
+License: UNKNOWN
+Description: Statement_Writeln,Statement_Write = print statements for single line and new line,
+        __________ 
+        
+        If_these_equals_then = if statement,
+        
+        _______________________________________
+        
+        WhenREALrun = infinite loop,
+        
+        __________________________
+        
+        Code_Rewrite_with = replace,
+        
+        Reverse_text,
+        
+        User_Input_Get,
+        
+        intTOstring,
+        
+        stringToint,
+        
+        Init_op_System,
+        System_Beep,
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
