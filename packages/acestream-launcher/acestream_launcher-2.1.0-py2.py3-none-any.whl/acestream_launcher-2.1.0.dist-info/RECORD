@@ -1,0 +1,13 @@
+acestream_launcher/__init__.py,sha256=54QzhglPvgijwuA338rz8PoLK6NvFRB76t3YwgfqMuY,28
+acestream_launcher/config.py,sha256=fWI2GHAbkcXlMuDbq6pGLC7w5EA8ujUPQhZqQcsEugs,1034
+acestream_launcher/launcher.py,sha256=CpnVqyPUBqSROwPcXr1l-S6wzzR5yyJfHNDpAxlX7qU,3246
+acestream_launcher/notify.py,sha256=j7BVDNo7LAz2MIP7k-uGBnE8Nb3YDLxq36koxdYcVw4,1313
+acestream_launcher/player.py,sha256=1GlXLaJDII1LGdz87A2dwngY36VjrDtbArpcyodL5tU,1027
+acestream_launcher/stream.py,sha256=pH3ghaMbkieU2of71QXiJcyHxn9QdtV7sRv-f-jdMKY,3794
+acestream_launcher-2.1.0.data/data/share/applications/acestream-launcher.desktop,sha256=wYNugLCM-fo4jTeU1PO2tcRH0IrwCQ4DVRrFyolBDdk,321
+acestream_launcher-2.1.0.dist-info/LICENSE.txt,sha256=1i8GWDCqNznMAxFWuWkIBcey6BG0oXjItKzYcl1WHJQ,35142
+acestream_launcher-2.1.0.dist-info/METADATA,sha256=DVaN2nBdbjH8kpCl13LqOhFxYW-YWKcdYJAjno1yUAE,3725
+acestream_launcher-2.1.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+acestream_launcher-2.1.0.dist-info/entry_points.txt,sha256=LyY-4Bfp0Dza2tOQeR558hjB-LXZtDXBCU-wYE4Pe4U,73
+acestream_launcher-2.1.0.dist-info/top_level.txt,sha256=6zqe1cUsQKaWxuW1Wq1hs5x553p10nNkI6AT-VmWvDo,19
+acestream_launcher-2.1.0.dist-info/RECORD,,
