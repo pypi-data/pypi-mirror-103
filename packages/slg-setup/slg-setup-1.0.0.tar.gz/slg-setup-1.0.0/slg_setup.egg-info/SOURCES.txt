@@ -1,0 +1,8 @@
+README.md
+setup.py
+slg_setup/__init__.py
+slg_setup/get_all_scripts.py
+slg_setup.egg-info/PKG-INFO
+slg_setup.egg-info/SOURCES.txt
+slg_setup.egg-info/dependency_links.txt
+slg_setup.egg-info/top_level.txt
