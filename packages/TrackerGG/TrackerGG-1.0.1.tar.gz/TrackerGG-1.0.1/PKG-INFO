@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: TrackerGG
+Version: 1.0.1
+Summary: Game Stat Library with Tracker API
+Home-page: https://github.com/dev-ruby/TrackerGG
+Author: DevRuby
+Author-email: devruby7777@gmail.com
+License: UNKNOWN
+Description: # TrackerGG
+         
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.3
+Description-Content-Type: text/markdown
