@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: turtledrawing
+Version: 5.0.0
+Summary: Draw Shapes with the Turtle Module.
+Home-page: https://github.com/NotOrca22/learning-turtle
+Author: orcawhale38
+Author-email: orcawhale2008@gmail.com
+License: MIT
+Description: # learning-turtle
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
