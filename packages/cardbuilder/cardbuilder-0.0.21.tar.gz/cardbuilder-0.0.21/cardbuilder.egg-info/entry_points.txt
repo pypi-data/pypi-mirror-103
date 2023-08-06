@@ -1,0 +1,3 @@
+[console_scripts]
+cardbuilder = cardbuilder.scripts.router:main
+
