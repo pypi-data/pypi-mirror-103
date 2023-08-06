@@ -1,0 +1,9 @@
+pcloadletter/__init__.py,sha256=Mjn5ILnI5NmIf7_EwbXDIZMWsMQNtFNrBSew-3b4sXE,47
+pcloadletter/__main__.py,sha256=W8bP_nuFmsmi7mWLwB7VJs6iKQ8iMZXf5wJTsl59fMA,968
+pcloadletter/generate.py,sha256=KfUQq0-_WsnpL4s7IHobYD1g-LWl28DfNSwYE6MVUk4,1818
+pcloadletter/parse.py,sha256=tM55HZoigk26y9fmv-xUJSvez8fHhs1cbBffWbTNH8w,769
+pcloadletter-0.2.0.dist-info/entry_points.txt,sha256=b6ZuKiR5YaZjRTb0JSWKX2keJTUtiF2YkqilJti-qI4,59
+pcloadletter-0.2.0.dist-info/LICENSE,sha256=gFokIliwQK0D6YJ2RG0068Ihy6NFU8ZEexAjEth8sac,1072
+pcloadletter-0.2.0.dist-info/WHEEL,sha256=iTBNkFIR26Wnx2cg5455J1IIBEskRg4YJC9DJwgu-js,99
+pcloadletter-0.2.0.dist-info/METADATA,sha256=KPg46qQNjBfukxflJ5uPWS8TvE7TvYRekfsZh8Yuttc,867
+pcloadletter-0.2.0.dist-info/RECORD,,
