@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: warriorsnmp
+Version: 1.0.0
+Summary: Warrior Framework is an open source Automation Framework
+Home-page: https://github.com/warriorframework/warriorframework_py3
+Author: warriorteam
+Author-email: frameworkwarrior@gmail.com
+License: UNKNOWN
+Project-URL: Documentation, http://warriorframework.org/
+Project-URL: Source Code, https://github.com/warriorframework/warriorframework_py3
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: pysnmp (==4.4.12)
+Requires-Dist: pycryptodome (==3.6.1)
+Requires-Dist: pexpect (==4.8.0)
+
+snmp_driver package for warrior framework
+
+
