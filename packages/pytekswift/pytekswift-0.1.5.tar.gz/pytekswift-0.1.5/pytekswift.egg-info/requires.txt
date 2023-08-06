@@ -1,0 +1,6 @@
+PyYaml
+nltk
+shtab
+pycctek
+fuzzywuzzy
+scikit-learn

@@ -1,0 +1,3 @@
+[console_scripts]
+tekswift = tekswift.cli:main
+
