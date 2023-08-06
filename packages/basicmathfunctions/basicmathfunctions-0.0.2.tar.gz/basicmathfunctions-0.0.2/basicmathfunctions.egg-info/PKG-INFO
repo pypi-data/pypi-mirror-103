@@ -1,0 +1,47 @@
+Metadata-Version: 1.1
+Name: basicmathfunctions
+Version: 0.0.2
+Summary: Basic math functions
+Home-page: UNKNOWN
+Author: Isaac Cobb
+Author-email: cobbcoding@gmail.com
+License: MIT
+Description: This is a library with basic math functions, including adding two numbers, getting the value of pi, converting fahrenheit to celsius, converting celsius to fahrenheit, and much more!
+        
+        #### Install via pip
+        
+        `pip install basicmathfunctions`
+        
+        #### Functions
+        
+        `add_two_numbers(number1, number2)` - Add two numbers
+        
+        `subtract_two_numbers(number1, number2)` - Subtract two numbers
+        
+        `multiply_two_numbers(number1, number2)` - Multiply two numbers
+        
+        `divide_two_numbers(number1, number2)` - Divide two numbers
+        
+        `pi()` - Get value of pi (to 4 decimal places)
+        
+        `the_power_of(number, power)` - Get a number to the power of another number
+        
+        `sqrt(number)` - Get the square root of a number
+        
+        `f_to_c(temperature)` - Convert fahrenheit to celsius
+        
+        `c_to_f(temperature)` - Convert celsius to fahrenheit
+        
+        Change Log
+        ==========
+        
+        0.0.1 (4/28/2021)
+        -----------------
+        - First Release
+Keywords: math
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
