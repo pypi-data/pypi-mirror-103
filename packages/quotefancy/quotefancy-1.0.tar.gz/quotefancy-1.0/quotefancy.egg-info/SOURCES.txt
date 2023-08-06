@@ -1,0 +1,8 @@
+README.md
+setup.py
+quotefancy/__init__.py
+quotefancy.egg-info/PKG-INFO
+quotefancy.egg-info/SOURCES.txt
+quotefancy.egg-info/dependency_links.txt
+quotefancy.egg-info/requires.txt
+quotefancy.egg-info/top_level.txt
