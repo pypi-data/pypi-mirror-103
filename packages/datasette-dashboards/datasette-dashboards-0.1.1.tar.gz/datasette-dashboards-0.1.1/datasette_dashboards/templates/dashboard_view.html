@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}{{ database }}{% endblock %}
+
+{% block extra_head %}
+{{ super() }}
+<link href="{{ urls.static_plugins('datasette_dashboards', 'dashboards.css') }}" rel="stylesheet"/>
+{% endblock %}
+
+{% block nav %}
+    <p class="crumbs">
+        <a href="{{ urls.instance() }}">home</a> /
+        <a href="{{ urls.path('-/dashboards') }}">dashboards</a>
+    </p>
+    {{ super() }}
+{% endblock %}
+
+{% block body_class %}index{% endblock %}
+
+{% block content %}
+    {% set dashboard = dashboards[slug] %}
+    <div class="page-header" style="border-color: black">
+      <h1>{{ dashboard.title }}</h1>
+    </div>
+    <p>{{ dashboard.description }}</p>
+
+    <div class="chart-grid">
+      {% for chart in dashboard.charts %}
+      <div id="chart-{{ loop.index0 }}" class="chart-grid-item"></div>
+      {% endfor %}
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+    <script src="{{ urls.static_plugins('datasette_dashboards', 'dashboards.js') }}"></script>
+    <script type="text/javascript">
+      {% for chart in dashboard.charts %}
+      {% if chart.library == 'vega' %}
+      renderVegaChart(
+        JSON.parse('{{ chart|tojson }}'),
+        '/{{ chart.db }}.json?sql={{ chart.query }}&_shape=array',
+        '#chart-{{ loop.index0 }}'
+      )
+      {% endif %}
+      {% endfor %}
+    </script>
+{% endblock %}

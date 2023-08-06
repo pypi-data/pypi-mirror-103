@@ -1,0 +1,7 @@
+datasette
+
+[test]
+faker
+pytest
+pytest-asyncio
+sqlite-utils
