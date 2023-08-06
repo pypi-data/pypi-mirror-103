@@ -1,0 +1,121 @@
+Metadata-Version: 2.1
+Name: televize
+Version: 0.6.0
+Summary: Script to play Czech Television (Česká televize) streams in custom player.
+Home-page: https://github.com/ziima/televize
+Author: Vlastimil Zíma
+Author-email: vlastimil.zima@gmail.com
+License: GPLv2+
+Description: ========
+        televize
+        ========
+        
+        Script to play `Czech Television (Česká televize) <http://www.ceskatelevize.cz/>`_ streams in custom video player.
+        
+        ------------
+        Installation
+        ------------
+        
+        Directly using pip::
+        
+            pip install televize
+        
+        ------------
+        Dependencies
+        ------------
+        
+        * python >=3.5
+        * Any player which supports internet playlists. ``mpv`` is used by default.
+        * Other dependencies are listed in `requirements.txt <requirements.txt>`_.
+        
+        -----
+        Usage
+        -----
+        
+        ::
+        
+            televize live 24  # CT24
+            televize live D  # CT:D
+            televize live sport  # CT-sport
+            televize ivysilani http://www.ceskatelevize.cz/ivysilani/11276561613-kosmo/
+            televize ivysilani http://www.ceskatelevize.cz/porady/11276561613-kosmo/215512121020005-triumf
+        
+        Complete usage is printed using `--help` argument::
+        
+            televize --help
+        
+        macOS
+        =====
+        
+        To open stream in a native player on macOS (e.g. VLC), use `--player` command `open -a APP --args`.
+        For example::
+        
+            televize --player "open -a VLC --args" live 24
+        
+        ---------------
+        Recommendations
+        ---------------
+        A reload script https://github.com/4e6/mpv-reload is highly recommended for `mpv`.
+        
+        ---------------
+        Acknowledgement
+        ---------------
+        
+        Based on Perl scripts ``televize`` and ``ctstream`` from Petr Písař (http://xpisar.wz.cz).
+        
+        
+        ---------
+        Changelog
+        ---------
+        
+        0.6.0 (2021-04-23)
+        ==================
+        
+        * Support python 3.6-3.9.
+        * Restore certificate verification.
+        * Update README.
+        * Update settings for tests, static checks and CI.
+        * Resolve various warnings.
+        
+        0.5
+        ===
+        
+        * Fix after ceskatelevize.cz switched to HTTPS.
+        * Fix PyPI description by using ReST for readme and changelog.
+        
+        0.4
+        ===
+        
+        * Fix pypi upload
+        
+        0.3
+        ===
+        
+        * Add support for "pořady" URLs.
+        * Fix live streams after CT update in April.
+        
+        0.2
+        ===
+        
+        * Add `--quality` argument to select stream quality.
+        * Better exception handling.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Internet
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Provides-Extra: quality
+Provides-Extra: tests
