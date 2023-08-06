@@ -1,0 +1,17 @@
+Pillow
+scipy
+numpy
+requests
+pdbecif>=1.5
+
+[docs]
+sphinx
+sphinx_rtd_theme
+recommonmark
+sphinx-autodoc-typehints
+sphinx-markdown-tables
+
+[tests]
+pytest
+pytest-cov
+pre-commit
