@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+fab_auth_dynamic_roles/__init__.py
+fab_auth_dynamic_roles/oauth_views.py
+fab_auth_dynamic_roles/oidc_views.py
+fab_auth_dynamic_roles/security.py
+fab_auth_dynamic_roles.egg-info/PKG-INFO
+fab_auth_dynamic_roles.egg-info/SOURCES.txt
+fab_auth_dynamic_roles.egg-info/dependency_links.txt
+fab_auth_dynamic_roles.egg-info/requires.txt
+fab_auth_dynamic_roles.egg-info/top_level.txt
