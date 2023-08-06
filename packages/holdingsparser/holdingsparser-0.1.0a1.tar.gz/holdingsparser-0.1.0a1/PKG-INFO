@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: holdingsparser
+Version: 0.1.0a1
+Summary: A program that parses 13F reports filed with the SEC.
+License: MIT
+Author: mhadam
+Author-email: michael@hadam.us
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: beautifulsoup4 (>=4.9.3,<5.0.0)
+Requires-Dist: lxml (>=4.6.3,<5.0.0)
+Requires-Dist: requests (>=2.25.1,<3.0.0)
