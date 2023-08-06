@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: pelican-table-wrapper
+Version: 1.0.1
+Summary: Pelican plugin for wrapping table into classed div
+Home-page: https://github.com/pawo1/table-wrapper
+License: MIT
+Keywords: pelican,plugin
+Author: Pawo1
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Framework :: Pelican
+Classifier: Framework :: Pelican :: Plugins
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: markdown
+Requires-Dist: beautifulsoup4 (>=4.0.1,<5.0.0)
+Requires-Dist: markdown (>=3.2.2,<4.0.0); extra == "markdown"
+Requires-Dist: pelican (>=4.5,<5.0)
+Project-URL: Documentation, https://docs.getpelican.com
+Project-URL: Funding, https://donate.getpelican.com/
+Project-URL: Issue Tracker, https://github.com/pawo1/table-wrapper/issues
+Project-URL: Repository, https://github.com/pawo1/table-wrapper
+Description-Content-Type: text/markdown
+
+[![Build Status](https://img.shields.io/github/workflow/status/pawo1/table-wrapper/build)](https://github.com/pawo1/table-wrapper/actions)
+[![PyPI Version](https://img.shields.io/pypi/v/pelican-table-wrapper)](https://pypi.org/project/pelican-table-wrapper/)
+![License](https://img.shields.io/pypi/l/pelican-table-wrapper?color=blue)
+
+Pelican plugin for wrapping table into classed div `.table_wrapper`. It allows 
+you to better style tables. E.g. make them scrollable on small displays.
+
+Installation
+------------
+
+This plugin can be installed via:
+
+    python -m pip install pelican-table-wrapper
+
+Usage
+-----
+
+To use this plugin you have to add it to PLUGINS variable in pelicanconf.py:
+```python
+PLUGINS = ['table_wrapper', ...]
+```
+
+If you don't want add `.table_wrapper` to your CSS, plugin can generate self-styled
+elements. Just specify style that you want in pelicanconf.py:
+```python
+TABLE_WRAPPER = {'style':'overflow: auto;'}
+```
+
+Contributing
+------------
+
+Contributions are welcome and much appreciated. Every little bit helps. You can contribute by improving the documentation, adding missing features, and fixing bugs. You can also help out by reviewing and commenting on [existing issues][].
+
+To start contributing to this plugin, review the [Contributing to Pelican][] documentation, beginning with the **Contributing Code** section.
+
+[existing issues]: https://github.com/pawo1/table-wrapper/issues
+[Contributing to Pelican]: https://docs.getpelican.com/en/latest/contribute.html
+
+License
+-------
+
+This project is licensed under the MIT license.
+
