@@ -1,0 +1,14 @@
+README.md
+setup.py
+pytrika/__init__.py
+pytrika/cthis
+pytrika/fthis
+pytrika.egg-info/PKG-INFO
+pytrika.egg-info/SOURCES.txt
+pytrika.egg-info/dependency_links.txt
+pytrika.egg-info/requires.txt
+pytrika.egg-info/top_level.txt
+pytrika/currentproject/__init__.py
+pytrika/currentproject/project.py
+pytrika/mozillabookmark/__init__.py
+pytrika/mozillabookmark/bookmark.py

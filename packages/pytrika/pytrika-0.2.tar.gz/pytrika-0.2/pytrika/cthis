@@ -1,0 +1,206 @@
+#!/Users/synup/.pyenv/versions/3.6.6/bin/python3
+import argparse
+import datetime
+import json
+import os
+import platform
+import subprocess
+from operator import itemgetter
+
+import colorama
+from termcolor import colored
+
+colorama.init()
+
+
+def _get_bookmark_location():
+    home_path = os.environ["HOME"]
+    if platform.system() == "Linux":
+        bookmark_location = f"{home_path}/.config/google-chrome/default/Bookmarks"
+    elif platform.system() == "Darwin":
+        if args.flavor == "chrome":
+            bookmark_location = f"{home_path}/Library/Application Support/Google/Chrome/Default/Bookmarks"
+        elif args.flavor == "canary":
+            bookmark_location = f"{home_path}/Library/Application Support/Google/Chrome Canary/Default/Bookmarks"
+        elif args.flavor == "sidekick":
+            bookmark_location = f"{home_path}/Library/Application Support/Sidekick/Default/Bookmarks"
+        else:
+            print(f"{args.flavor} flavor of chrome is not supported")
+            raise Exception
+    return bookmark_location
+
+
+def _get_bookmark_collection():
+    path = _get_bookmark_location()
+    with open(path, "r") as file:
+        bookmark_collection = file.read()
+    return bookmark_collection
+
+
+def _get_current_bookmark_collection():
+    bookmark = json.loads(_get_bookmark_collection())
+    current_bookmark_collection = bookmark["roots"]["bookmark_bar"]["children"]
+    return current_bookmark_collection
+
+
+def _get_current_project():
+    if not bool(args.git):
+        return os.getcwd().split("/")[-1]
+    repo_root = (
+        subprocess.Popen(
+            ["git", "rev-parse", "--show-toplevel"], stdout=subprocess.PIPE
+        )
+        .communicate()[0]
+        .rstrip()
+        .decode("utf-8")
+    )
+    absolute_repo_root = repo_root.split("/")[-1]
+    git_repo_root = f"{repo_root}/.git"
+    with open(f"{git_repo_root}/HEAD", "r") as file:
+        ref = file.read()
+        branch_name = ref.split("/")[-1]
+
+    return f"{absolute_repo_root}::{branch_name}".strip()
+
+
+def _write_bookmark(current_project_bookmark, links):
+    current_project_bookmark = sorted(
+        current_project_bookmark, key=itemgetter("id"), reverse=True
+    )
+    html_header_set = False
+    for index, each_bookmark in enumerate(current_project_bookmark):
+        number = index + 1
+        name = each_bookmark["name"]
+        url = each_bookmark["url"]
+        timestamp = int(each_bookmark["date_added"])
+        date_added = datetime.datetime(1601, 1, 1) + datetime.timedelta(
+            microseconds=timestamp
+        )
+        if not args.html:
+            link = "\n{} - {}\n {}\n {}\n".format(number,
+                                                  name, url, date_added)
+        else:
+            if not html_header_set:
+                html_header = _set_html_header()
+                links.write(html_header)
+                html_header_set = True
+
+            each_bookmark["bookmarked_on"] = str(date_added)
+            each_bookmark["number"] = number
+            jsonified_link = json.loads(json.dumps(each_bookmark))
+            link = _convert_jsonified_links_to_html(jsonified_link)
+        links.write(link)
+
+
+def _set_html_header():
+    bootstrap_url = "assets/plugins/bootstrap/css/bootstrap.min.css"
+    header = f"""<head>
+<link rel="stylesheet" href={bootstrap_url}>
+<head>
+<script src="//instant.page/1.0.0" type="module" integrity="sha384-6w2SekMzCkuMQ9sEbq0cLviD/yR2HfA/+ekmKiBnFlsoSvb/VmQFSi/umVShadQI"></script>
+<br/>
+"""
+    return header
+
+
+def _convert_jsonified_links_to_html(jsonified_link):
+    as_button = f"""<div class="item">
+<input type="button" class="btn btn-info btn-block btn-sm" value="{jsonified_link['number']} - {jsonified_link['name']}" onclick="location.href = '{jsonified_link}';">
+</div>
+<br/>
+"""
+
+    as_link = f"""<a href={jsonified_link['url']} class="btn btn-info btn-block btn-sm" href={jsonified_link['url']} target="_blank">{jsonified_link['number']}
+- {jsonified_link['name']}
+</a>
+<br/>
+"""
+    return as_link or as_button
+
+
+def _git_handler(file_name):
+    should_git_add = bool(args.ga)
+    should_git_add_and_commit = bool(args.gac)
+    if should_git_add or should_git_add_and_commit:
+        try:
+            git_add = subprocess.Popen(
+                ["git", "add", file_name], stdout=subprocess.PIPE
+            )
+            git_add.wait()
+        except Exception as e:
+            print(f"Could not add the file\n\n{e}")
+            raise
+        if should_git_add_and_commit:
+            try:
+                git_commit = subprocess.Popen(
+                    ["git", "commit", "-m", "Add docklinks"],
+                    stdout=subprocess.PIPE,
+                )
+                git_commit.wait()
+                git_show = subprocess.Popen(
+                    ["git", "show", "HEAD"], stdout=subprocess.PIPE
+                ).communicate()
+                print(
+                    colored(
+                        f"{git_show[0].rstrip().decode('utf-8')}",
+                        "green",
+                        attrs=["bold"],
+                    )
+                )
+            except Exception as e:
+                print(f"Could not commit changes\n\n{e}")
+                raise
+
+
+def create_the_document():
+    curr_proj = _get_current_project()
+    bookmark_collection = _get_current_bookmark_collection()
+    is_a_git_repo = bool(args.git) or bool(args.ga) or bool(args.gac)
+    file_name = (
+        f"bookmark_links_{curr_proj.split('::')[-1]}"
+        if is_a_git_repo
+        else "bookmark_links"
+    )
+    file_name = f"{file_name}.html" if args.html else f"{file_name}.txt"
+    with open(file_name, "w") as links:
+        for each_bookmark in bookmark_collection:
+            if (
+                "children" in each_bookmark
+                and curr_proj == each_bookmark["name"]
+            ):
+                current_project_bookmark = each_bookmark["children"]
+            else:
+                continue
+            _write_bookmark(current_project_bookmark, links)
+
+    with open(file_name, "r") as bml:
+        print(bml.read())
+
+    if is_a_git_repo:
+        _git_handler(file_name)
+
+
+def _parse_arguments():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-html", "--tohtml", default=False, dest="html")
+    parser.add_argument(
+        "-flv", "--flavor", dest="flavor", default="chrome", help="flavor"
+    )
+    parser.add_argument("-g", "--git", dest="git", default=False, help="git")
+    parser.add_argument(
+        "-ga", "--gitadd", dest="ga", default=False, help="git add"
+    )
+    parser.add_argument(
+        "-gac",
+        "--gitaddcommit",
+        dest="gac",
+        default=False,
+        help="git add and commit",
+    )
+    args = parser.parse_args()
+    return args
+
+
+if __name__ == "__main__":
+    args = _parse_arguments()
+    create_the_document()
