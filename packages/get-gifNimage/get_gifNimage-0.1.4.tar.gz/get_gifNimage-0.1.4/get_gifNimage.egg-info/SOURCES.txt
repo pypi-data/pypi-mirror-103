@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+get_gifNimage.egg-info/PKG-INFO
+get_gifNimage.egg-info/SOURCES.txt
+get_gifNimage.egg-info/dependency_links.txt
+get_gifNimage.egg-info/requires.txt
+get_gifNimage.egg-info/top_level.txt
+init_folder/__init__.py
