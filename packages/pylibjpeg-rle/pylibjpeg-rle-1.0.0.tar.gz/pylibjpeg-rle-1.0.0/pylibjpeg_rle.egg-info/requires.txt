@@ -1,0 +1,11 @@
+numpy
+
+[benchmarks]
+pydicom
+numpy
+asv
+
+[tests]
+pytest
+pydicom
+numpy
