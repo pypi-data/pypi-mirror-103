@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: tksplash
+Version: 0.0.1
+Summary: Creates splash screens for GUIs
+Home-page: UNKNOWN
+Author: MrHola21 (Gautam Singh)
+Author-email: projpy6969@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: python,Guis,GUI,Gui,splash screen
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown

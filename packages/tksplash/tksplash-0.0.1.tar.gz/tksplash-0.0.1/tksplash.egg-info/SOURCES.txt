@@ -1,0 +1,7 @@
+setup.py
+libname/__init__.py
+libname/basic_splash_screen.py
+tksplash.egg-info/PKG-INFO
+tksplash.egg-info/SOURCES.txt
+tksplash.egg-info/dependency_links.txt
+tksplash.egg-info/top_level.txt
