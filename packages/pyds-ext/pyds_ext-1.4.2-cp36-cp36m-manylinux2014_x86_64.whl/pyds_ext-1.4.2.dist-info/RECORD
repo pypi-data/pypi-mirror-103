@@ -1,0 +1,9 @@
+pyds.cpython-36m-x86_64-linux-gnu.so,sha256=fkuNIGcqrYn20fid5wl2FHfW2Ntu7vGeeIh-adE-PVk,1905120
+pyds_analytics_meta.cpython-36m-x86_64-linux-gnu.so,sha256=F4m4Sy_cFwJimnUn0WoGu6uV7Ovaa5jDR7n985wuyoA,260312
+pyds_bbox_meta.cpython-36m-x86_64-linux-gnu.so,sha256=ARqaV67s4VCxF2hwdw-kyvGc10V5DO7duhtL2BGA9NA,261416
+pyds_tracker_meta.cpython-36m-x86_64-linux-gnu.so,sha256=iqyME8Wt7hC1b-VnlhQuUSr4ImeI8tOpCLwKeoS8wb8,192064
+pyds_ext-1.4.2.dist-info/LICENSE,sha256=yRY6Bri-50a7vsm7OBywTCfdbJXri6ZjTLK6ixEQ8a8,1071
+pyds_ext-1.4.2.dist-info/METADATA,sha256=ghNpV_YsQnWkUVkkGsSOsz_A0mx0hivywUfxV3FfQPo,9266
+pyds_ext-1.4.2.dist-info/WHEEL,sha256=5mANX393z3i7ucGtzkFeeASWh1Qxo_dXobTetzGWRDU,104
+pyds_ext-1.4.2.dist-info/top_level.txt,sha256=nTxAH0IEE2Gn0bdi-17Nh_6Y9XFelzyBBs8-fF-wYc4,58
+pyds_ext-1.4.2.dist-info/RECORD,,
