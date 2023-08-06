@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/fairdi/nomad/latest/gui/static/css/main.a2b7b0b6.chunk.css",
+    "main.js": "/fairdi/nomad/latest/gui/static/js/main.392abd52.chunk.js",
+    "main.js.map": "/fairdi/nomad/latest/gui/static/js/main.392abd52.chunk.js.map",
+    "runtime-main.js": "/fairdi/nomad/latest/gui/static/js/runtime-main.5a469cfc.js",
+    "runtime-main.js.map": "/fairdi/nomad/latest/gui/static/js/runtime-main.5a469cfc.js.map",
+    "static/css/2.fa5312e1.chunk.css": "/fairdi/nomad/latest/gui/static/css/2.fa5312e1.chunk.css",
+    "static/js/2.96926e1d.chunk.js": "/fairdi/nomad/latest/gui/static/js/2.96926e1d.chunk.js",
+    "static/js/2.96926e1d.chunk.js.map": "/fairdi/nomad/latest/gui/static/js/2.96926e1d.chunk.js.map",
+    "index.html": "/fairdi/nomad/latest/gui/index.html",
+    "precache-manifest.b29e522e4fac93461487ffcf3773f801.js": "/fairdi/nomad/latest/gui/precache-manifest.b29e522e4fac93461487ffcf3773f801.js",
+    "service-worker.js": "/fairdi/nomad/latest/gui/service-worker.js",
+    "static/css/2.fa5312e1.chunk.css.map": "/fairdi/nomad/latest/gui/static/css/2.fa5312e1.chunk.css.map",
+    "static/css/main.a2b7b0b6.chunk.css.map": "/fairdi/nomad/latest/gui/static/css/main.a2b7b0b6.chunk.css.map",
+    "static/js/2.96926e1d.chunk.js.LICENSE.txt": "/fairdi/nomad/latest/gui/static/js/2.96926e1d.chunk.js.LICENSE.txt",
+    "static/media/about.db82f572.svg": "/fairdi/nomad/latest/gui/static/media/about.db82f572.svg",
+    "static/media/index.css": "/fairdi/nomad/latest/gui/static/media/material-icons-base-400-normal.d560f924.woff",
+    "static/media/400.css": "/fairdi/nomad/latest/gui/static/media/titillium-web-latin-ext-400-normal.4678044e.woff2",
+    "static/media/600.css": "/fairdi/nomad/latest/gui/static/media/titillium-web-latin-ext-600-normal.865e56c5.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5a469cfc.js",
+    "static/css/2.fa5312e1.chunk.css",
+    "static/js/2.96926e1d.chunk.js",
+    "static/css/main.a2b7b0b6.chunk.css",
+    "static/js/main.392abd52.chunk.js"
+  ]
+}
