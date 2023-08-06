@@ -1,0 +1,10 @@
+pyyaml
+pandas
+joblib
+networkx
+scipy
+snakemake<6
+matplotlib
+seaborn
+tables
+biopython
