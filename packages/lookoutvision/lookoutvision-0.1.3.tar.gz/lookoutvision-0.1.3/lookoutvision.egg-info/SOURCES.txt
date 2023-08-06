@@ -1,0 +1,16 @@
+LICENSE
+NOTICE
+README.rst
+pyproject.toml
+setup.py
+lookoutvision/__init__.py
+lookoutvision/image.py
+lookoutvision/lookoutvision.py
+lookoutvision/manifest.py
+lookoutvision/metrics.py
+lookoutvision.egg-info/PKG-INFO
+lookoutvision.egg-info/SOURCES.txt
+lookoutvision.egg-info/dependency_links.txt
+lookoutvision.egg-info/requires.txt
+lookoutvision.egg-info/top_level.txt
+lookoutvision.egg-info/zip-safe
