@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: timedfunc
+Version: 1.1.1
+Summary: Measures execution time of Python functions using decorators.
+Home-page: https://github.com/dapaulid/timedfunc
+Author: Daniel Pauli
+Author-email: dapaulid@gmail.com
