@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+pandas_little_helper/_version.py
+pandas_little_helper/helpers.py
+pandas_little_helper/transformers.py
+pandas_little_helper.egg-info/PKG-INFO
+pandas_little_helper.egg-info/SOURCES.txt
+pandas_little_helper.egg-info/dependency_links.txt
+pandas_little_helper.egg-info/top_level.txt
