@@ -1,0 +1,3 @@
+[console_scripts]
+qaa=qaa.__main__:main
+
