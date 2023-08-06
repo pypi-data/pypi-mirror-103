@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+fab_auth_keycloak/__init__.py
+fab_auth_keycloak/security.py
+fab_auth_keycloak/views.py
+fab_auth_keycloak2.egg-info/PKG-INFO
+fab_auth_keycloak2.egg-info/SOURCES.txt
+fab_auth_keycloak2.egg-info/dependency_links.txt
+fab_auth_keycloak2.egg-info/requires.txt
+fab_auth_keycloak2.egg-info/top_level.txt
