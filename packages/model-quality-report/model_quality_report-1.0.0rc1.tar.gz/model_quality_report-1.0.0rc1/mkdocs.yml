@@ -1,0 +1,10 @@
+site_name: model_quality_report
+
+theme:
+  name: "readthedocs"
+
+nav:
+  - Home: index.md
+
+plugins:
+  - search
