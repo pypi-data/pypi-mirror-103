@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: adaptdl-modified-pandyaka
+Version: 1.0.0
+Summary: Dynamic-resource trainer and scheduler for deep learning
+Home-page: https://github.com/pandyakaa/modified-adaptdl
+Author: Petuum Inc. & The AdaptDL Authors, modified by pandyakaa
+Author-email: aurick.qiao@petuum.com, pandyaka.aptanagi@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.6
