@@ -1,0 +1,9 @@
+ivfit/__init__.py,sha256=V2gIzOUwwNxfx63shcRkGljJAaHfQdl8sbPSK3Lia2o,86
+ivfit/interactive_guess.py,sha256=Nr_or9SWw1WAdnBn_IAbYQqwwPpFQp8AJCIdwybLX9I,18164
+ivfit/models.py,sha256=TtHGPmewbas8lJqUt344OTDyLTdpZ5qOZEcc5fe0dHs,6184
+ivfit/parameter.py,sha256=ivPPUphwsl67HXbM9m2EZLDjBmh_aVlCP1ndpz2mGKM,11050
+ivfit/util.py,sha256=g8OMv092YNQ3WLd_C0P8wj-UDivP4lVFUad6sC3VEB0,1469
+ivfit-0.1.0.dist-info/LICENSE,sha256=bR2Wj7Il7KNny38LiDGrASo12StUfpReF--OewXD5cw,10349
+ivfit-0.1.0.dist-info/WHEEL,sha256=Tf_JTHRUsYmRccQnQfn1tqmNatmXkNB0OFKM-B4YyuA,87
+ivfit-0.1.0.dist-info/METADATA,sha256=BZ8a7vXsJi5629PSmNYLNoMen3N5wPHylZJMQj1nEZU,953
+ivfit-0.1.0.dist-info/RECORD,,

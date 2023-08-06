@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ivfit
+Version: 0.1.0
+Summary: Interactive, visual, fitting toolkit
+License: Apache-2.0
+Keywords: curve-fitting,least-squares-minimization,visualization
+Author: Jonathan Okasinski
+Author-email: jonathan.okasinski@gmail.com
+Maintainer: Jonathan Okasinski
+Maintainer-email: jonathan.okasinski@gmail.com
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: bokeh (>=2.3.1,<3.0.0)
+Requires-Dist: lmfit (>=1.0.2,<2.0.0)
+Requires-Dist: panel (>=0.11.3,<0.12.0)
