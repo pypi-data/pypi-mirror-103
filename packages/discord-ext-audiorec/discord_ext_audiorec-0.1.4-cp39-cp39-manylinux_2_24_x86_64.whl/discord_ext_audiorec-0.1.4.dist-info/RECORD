@@ -1,0 +1,12 @@
+discord_ext_audiorec-0.1.4.dist-info/LICENSE,sha256=gw1KrE5iREBqhR9Ekph6k-2jEdLjSG1M8BC5Hg6DPAc,1051
+discord_ext_audiorec-0.1.4.dist-info/METADATA,sha256=9gc3jmH355V6UgKaUPlHpeTN69lNgDzddgaCPCYQux4,2544
+discord_ext_audiorec-0.1.4.dist-info/RECORD,,
+discord_ext_audiorec-0.1.4.dist-info/WHEEL,sha256=HzpLFutx6LWeZ-oFSMk1IgmVzC64JeU3AtMeUG0exDA,112
+discord_ext_audiorec-0.1.4.dist-info/top_level.txt,sha256=fJkrNbR-_8ubMBUcDEJBcfkpECrvSEmMrNKgvLlQFoM,8
+discord_ext_audiorec.libs/libopus-37a3229e.so.0.5.3,sha256=zDnCoI0L2Z-7h42qNN8_sVgXPp7Jsz5GHGB1ICrfCnA,325800
+discord/ext/audiorec/ffi.cpython-36m-x86_64-linux-gnu.so,sha256=aZuuB-InIcsGAZ6fqP0RH7YTD8iPbe5Msv72_5u2_fY,6450864
+discord/ext/audiorec/ffi.cpython-38-x86_64-linux-gnu.so,sha256=d-igoC5ZYFkDTGHSIIjChFFSDKA2Cm2ycENshXEt8iA,6450840
+discord/ext/audiorec/ffi.cpython-39-x86_64-linux-gnu.so,sha256=AdOtHQIxGT_edwxH5vzUyQ55WyJ_ikt3KEtJsOy3GTA,6459064
+discord/ext/audiorec/voice_client.py,sha256=hhsOt8twoElVIWfx5t9H5wR4QhaLCcpKQpPZWmIScJo,10747
+discord/ext/audiorec/__init__.py,sha256=9NzP5bfoWRVm3hCEhVZElUUa8E44BiQfhKVtdk0HzgI,622
+discord/ext/audiorec/ffi.cpython-37m-x86_64-linux-gnu.so,sha256=ni8KEXKHr6Z6oDJIHsN7aAIFmEaJJRyRS3dVJ0oT2HE,6450840
