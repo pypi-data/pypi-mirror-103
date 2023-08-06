@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: alpsplot
+Version: 1.0.1
+Summary: Python plotting library of alps-lab style using matplotlib.
+Home-page: https://github.com/ain-soph/alpsplot
+Author: Ren Pang
+Author-email: rbp5354@psu.edu
+License: GPL-3
+Description: # alpsplot
+        Python plotting library of alps-lab style using matplotlib.
+        
+Keywords: plot,python,matplotlib
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Description-Content-Type: text/markdown
