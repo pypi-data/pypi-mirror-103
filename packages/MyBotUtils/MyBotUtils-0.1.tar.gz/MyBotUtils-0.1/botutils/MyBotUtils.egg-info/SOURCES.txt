@@ -1,0 +1,15 @@
+README
+setup.py
+botutils/MyBotUtils.egg-info/PKG-INFO
+botutils/MyBotUtils.egg-info/SOURCES.txt
+botutils/MyBotUtils.egg-info/dependency_links.txt
+botutils/MyBotUtils.egg-info/requires.txt
+botutils/MyBotUtils.egg-info/top_level.txt
+botutils/utils/__init__.py
+botutils/utils/custom_bot.py
+botutils/utils/custom_cog.py
+botutils/utils/custom_context.py
+botutils/utils/database.py
+botutils/utils/redis.py
+botutils/utils/checks/__init__.py
+botutils/utils/checks/custom_checks.py

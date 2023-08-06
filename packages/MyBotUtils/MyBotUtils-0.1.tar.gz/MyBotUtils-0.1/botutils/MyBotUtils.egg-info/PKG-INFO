@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: MyBotUtils
+Version: 0.1
+Summary: Simple discord.py bot utils for personal use
+Home-page: https://github.com/aaaMeganaaa/botbase
+Author: Megan
+Author-email: obama@gmail.com
+License: UNKNOWN
+Description: This literally only exists so I dont have to git pull everytime I update something
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
