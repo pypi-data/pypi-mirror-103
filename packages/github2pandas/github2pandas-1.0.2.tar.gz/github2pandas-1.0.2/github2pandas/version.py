@@ -1,0 +1,288 @@
+import os
+import sqlite3
+import pickle
+import pandas as pd
+import pygit2 as git2
+import git
+import git2net
+import shutil
+from pathlib import Path
+import stat
+
+from .utility import Utility
+
+class Version():
+    """
+    Class to aggregate Version
+
+    Attributes
+    ----------
+    VERSION_DIR : str
+        Version dir where all files are saved in.
+    VERSION_REPOSITORY_DIR : str
+        Folder of cloned repository.
+    VERSION_COMMITS : str
+        Pandas table file for commits.
+    VERSION_EDITS : str
+        Pandas table file for edit data per commit.
+    VERSION_BRANCHES : str
+        Pandas table file for branch names.
+    VERSION_DB : str
+        MYSQL data base file containing version history.
+    no_of_processes : int
+        Number of processors used for crawling process.
+    COMMIT_DELETEABLE_COLUMNS : list
+        Commit colums from git2net which can be deleted.
+    COMMIT_RENAMING_COLUMNS : dict
+        Commit Colums from git2net which need to be renamed.
+    EDIT_RENAMING_COLUMNS : dict
+        Edit Colums from git2net which need to be renamed.
+
+    Methods
+    -------
+    handleError(func, path, exc_info)
+        Error handler function which will try to change file permission and call the calling function again.
+    clone_repository(repo, data_root_dir, github_token=None)
+        Cloning repository from git.
+    generate_data_base(data_root_dir)
+        Extracting version data from a local repository and storing them in a mysql data base.
+    generate_version_pandas_tables(repo, data_root_dir)
+        Extracting edits and commits in a pandas table.
+    get_version(data_root_dir, filename=VERSION_COMMITS)
+        Get the generated pandas table.
+
+    """  
+
+    VERSION_DIR = "Versions"
+    VERSION_REPOSITORY_DIR = "repo"
+    VERSION_COMMITS = "pdCommits.p"
+    VERSION_EDITS = "pdEdits.p"
+    VERSION_BRANCHES = "pdBrances.p"
+    VERSION_DB = "Versions.db"
+    no_of_proceses = 1
+
+    COMMIT_DELETEABLE_COLUMNS = ['author_email', 'author_name', 'committer_email', 'author_date', 'author_timezone', 'commit_message_len', 'project_name', 'merge']
+
+    COMMIT_RENAMING_COLUMNS = {'hash':'commit_sha', 'committer_date': 'commited_at', 'parents': 'parent_sha'}
+
+    EDIT_RENAMING_COLUMNS = {'commit_hash':'commit_sha'}
+
+    @staticmethod
+    def handleError(func, path, exc_info):
+        """
+        handleError(func, path, exc_info)
+
+        Error handler function which will try to change file permission and call the calling function again.
+
+        Parameters
+        ----------
+        func : Function
+            Calling function.
+        path : str
+            Path of the file which causes the Error.
+        exc_info : str
+            Execution information.
+        
+        """
+        
+        print('Handling Error for file ' , path)
+        print(exc_info)
+        # Check if file access issue
+        if not os.access(path, os.W_OK):
+            # Try to change the permision of file
+            os.chmod(path, stat.S_IWUSR)
+            # call the calling function again
+            func(path)
+
+    @staticmethod
+    def clone_repository(repo, data_root_dir, github_token=None):
+        """
+        Clone_repository(repo, data_root_dir, github_token=None)
+
+        Cloning repository from git.
+
+        Parameters
+        ----------
+        repo : Repository
+            Repository object from pygithub.
+        data_root_dir : str
+            Repo dir of the project.
+        github_token : str
+            Token string.
+
+        Notes
+        -----
+            Pygit2 documentation: https://github.com/libgit2/pygit2
+        
+        """
+        
+        git_repo_name = repo.name
+        git_repo_owner = repo.owner.login
+        
+        version_folder = Path(data_root_dir, Version.VERSION_DIR)
+        version_folder.mkdir(parents=True, exist_ok=True)
+
+        repo_dir = version_folder.joinpath(Version.VERSION_REPOSITORY_DIR)
+        if repo_dir.exists ():
+            shutil.rmtree(repo_dir.resolve(), onerror=Version.handleError)
+
+        callbacks = None
+
+        if github_token:
+            callbacks = git2.RemoteCallbacks(
+                git2.UserPass(github_token, 'x-oauth-basic'))
+        repo_ref = f"https://github.com/{git_repo_owner}/{git_repo_name}"
+        repo = git2.clone_repository(repo_ref, repo_dir, callbacks=callbacks)
+
+        existing_branches = list(repo.branches)
+        r = git.Repo.init(repo_dir)
+
+        for branch_name in repo.references:
+
+            branch_pattern = ['refs/heads/', 'refs/remotes/origin/']
+            for pattern in branch_pattern:
+                branch_name = branch_name.replace(pattern, '')
+
+            if branch_name != 'HEAD' and branch_name not in existing_branches:
+                try:
+                    r.git.branch('--track', branch_name,
+                                'remotes/origin/'+branch_name)
+                except Exception:
+                    print(" -> An exception occurred")
+
+    @staticmethod
+    def generate_data_base(data_root_dir):
+        """
+        generate_data_base(data_root_dir)
+
+        Extracting version data from a local repository and storing them in a mysql data base.
+
+        Parameters
+        ----------
+        data_root_dir : str
+            Data root directory for the repository.
+        
+        Notes
+        -----
+        Be aware of the large number of configuration parameters for appling the crawling process given by
+        https://github.com/gotec/git2net/blob/master/git2net/extraction.py
+
+        .. code-block:: python
+        
+            def mine_git_repo(git_repo_dir, sqlite_db_file, commits=[],
+                            use_blocks=False, no_of_processes=os.cpu_count(), chunksize=1, exclude=[],
+                            blame_C='', blame_w=False, max_modifications=0, timeout=0, extract_text=False,
+                            extract_complexity=False, extract_merges=True, extract_merge_deletions=False,
+                            all_branches=False):
+        
+        """
+        
+        version_folder = Path(data_root_dir, Version.VERSION_DIR)
+        version_folder.mkdir(parents=True, exist_ok=True)
+        repo_dir = version_folder.joinpath(Version.VERSION_REPOSITORY_DIR)
+        sqlite_db_file = version_folder.joinpath(Version.VERSION_DB)
+
+        if os.path.exists(sqlite_db_file):
+            os.remove(sqlite_db_file)
+
+        git2net.mine_git_repo(repo_dir, sqlite_db_file,
+                              extract_complexity=True,
+                              extract_text=True,
+                              no_of_processes=Version.no_of_proceses,
+                              all_branches=True,
+                              max_modifications=1000)
+
+    @staticmethod
+    def generate_version_pandas_tables(repo, data_root_dir):
+        """
+        generate_version_pandas_tables(repo, data_root_dir)
+
+        Extracting edits and commits in a pandas table.
+
+        Parameters
+        ----------
+        repo : Repository
+            Repository object from pygithub.
+        data_root_dir: str
+            Data root directory for the repository.
+
+        """
+
+        Version.generate_data_base(data_root_dir)
+
+        version_folder = Path(data_root_dir, Version.VERSION_DIR)
+        sqlite_db_file = version_folder.joinpath(Version.VERSION_DB)
+        print("1")
+        db = sqlite3.connect(sqlite_db_file)
+        pd_commits = pd.read_sql_query("SELECT * FROM commits", db)
+        pd_edits = pd.read_sql_query("SELECT * FROM edits", db)
+
+        pd_commits.rename(columns=Version.COMMIT_RENAMING_COLUMNS, inplace = True)
+        pd_commits.drop(columns=Version.COMMIT_DELETEABLE_COLUMNS, axis = 1, inplace = True)
+        pd_commits = Utility.apply_datetime_format(pd_commits, 'commited_at')
+
+        pd_edits.rename(columns=Version.EDIT_RENAMING_COLUMNS, inplace = True)
+
+        # Embed author uuid
+        users_ids = Utility.get_users_ids(data_root_dir)
+        pd_commits['author'] = ""
+        commiter_list = pd_commits.committer_name.unique()
+        for commiter_name in commiter_list:
+            commit_sha = pd_commits[pd_commits.committer_name == commiter_name].iloc[0].commit_sha 
+            user_id = Utility.extract_committer_data_from_commit(repo, commit_sha, 
+                                                                 users_ids, data_root_dir)   
+            pd_commits.loc[pd_commits.committer_name == commiter_name, 'author'] = user_id  
+        pd_commits.drop(['committer_name'], axis=1, inplace=True)  
+
+        # Extract branch names
+        branch_entries = [x.split(',') for x in pd_commits.branches.values]
+        branch_list = [item for sublist in branch_entries for item in sublist]
+        branches = list(set(branch_list))
+        pd_Branches = pd.DataFrame(branches, columns =['branch_names'])
+
+        branch_ids = []
+        for index, row in pd_commits.iterrows():
+            idxs = [branches.index(branch_name) for branch_name in row.branches.split(',')]
+            branch_ids.append(idxs)
+        pd_commits['branch_ids'] = branch_ids
+        pd_commits.drop(['branches'], axis = 1, inplace=True)
+        
+        pd_commits_file = Path(version_folder, Version.VERSION_COMMITS)
+        with open(pd_commits_file, "wb") as f:
+            pickle.dump(pd_commits, f)
+
+        pd_edits_file = Path(version_folder, Version.VERSION_EDITS)
+        with open(pd_edits_file, "wb") as f:
+            pickle.dump(pd_edits, f)
+
+        pd_branches_file = Path(version_folder, Version.VERSION_BRANCHES)
+        with open(pd_branches_file, "wb") as f:
+            pickle.dump(pd_Branches, f)          
+
+    @staticmethod
+    def get_version(data_root_dir, filename=VERSION_COMMITS):
+        """
+        get_version(data_root_dir, filename=VERSION_COMMITS)
+
+        Get the generated pandas table.
+
+        Parameters
+        ----------
+        data_root_dir : str
+            Data root directory for the repository.
+        filename : str, default=VERSION_COMMITS
+            Pandas table file for commits or edits.
+
+        Returns
+        -------
+        DataFrame
+            Pandas DataFrame which includes the commit or edit data set
+        
+        """
+        
+        workflows_dir = Path(data_root_dir, Version.VERSION_DIR)
+        pd_workflows_file = Path(workflows_dir, filename)
+        if pd_workflows_file.is_file():
+            return pd.read_pickle(pd_workflows_file)
+        else:
+            return pd.DataFrame()
