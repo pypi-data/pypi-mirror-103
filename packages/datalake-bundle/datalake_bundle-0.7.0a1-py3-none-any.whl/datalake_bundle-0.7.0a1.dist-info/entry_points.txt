@@ -1,0 +1,6 @@
+[daipe]
+input_decorators_mapping=datalakebundle.notebook.lineage.mapping:get_mapping
+
+[pyfony.bundle]
+create=datalakebundle.DataLakeBundle:DataLakeBundle
+
