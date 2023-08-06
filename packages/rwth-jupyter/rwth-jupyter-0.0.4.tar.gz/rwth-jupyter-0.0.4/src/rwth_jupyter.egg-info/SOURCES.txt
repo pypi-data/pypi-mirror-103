@@ -1,0 +1,16 @@
+setup.cfg
+setup.py
+src/jupyter_remote_spawn/__init__.py
+src/jupyter_remote_spawn/chisel.py
+src/jupyter_remote_spawn/config.py
+src/jupyter_remote_spawn/jupyter.py
+src/jupyter_remote_spawn/main.py
+src/jupyter_remote_spawn/process.py
+src/jupyter_remote_spawn/sshfs.py
+src/jupyter_remote_spawn/util.py
+src/rwth_jupyter.egg-info/PKG-INFO
+src/rwth_jupyter.egg-info/SOURCES.txt
+src/rwth_jupyter.egg-info/dependency_links.txt
+src/rwth_jupyter.egg-info/entry_points.txt
+src/rwth_jupyter.egg-info/requires.txt
+src/rwth_jupyter.egg-info/top_level.txt

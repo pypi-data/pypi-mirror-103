@@ -1,0 +1,4 @@
+requests
+rpmfile
+jupyterhub
+jupyterlab
