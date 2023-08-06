@@ -1,0 +1,3 @@
+[console_scripts]
+zeekshipper=zeekshipper.zeeker:log_minio_trino
+
