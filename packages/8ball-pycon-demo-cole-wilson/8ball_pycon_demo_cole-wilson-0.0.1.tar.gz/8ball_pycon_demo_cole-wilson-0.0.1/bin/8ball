@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+python3 -m 8ball_pycon_demo_cole-wilson $@
