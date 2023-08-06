@@ -1,0 +1,10 @@
+daiquiri
+dbnomics-data-model
+dulwich
+environs
+pysolr
+python-slugify
+requests
+solrq
+toolz
+typer
