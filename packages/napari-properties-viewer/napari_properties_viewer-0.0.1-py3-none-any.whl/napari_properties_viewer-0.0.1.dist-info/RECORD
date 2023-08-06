@@ -1,0 +1,14 @@
+napari_properties_viewer/__init__.py,sha256=HVSzRf140PnPf5hmKBiqm6w5OVhwPqW0nnKrrlyIjow,166
+napari_properties_viewer/_hookimpl.py,sha256=tAzrWUOuHuZwr1N6s14F2mkqLqXpNNvicnYOp2iJTuQ,266
+napari_properties_viewer/_version.py,sha256=Tjb_poy6EuGRi7TlrksJa9Qpx1MXOCO3p3F6tJ8xa5o,142
+napari_properties_viewer/qt_properties_table.py,sha256=kulkvvEXHEy4VFhEdOqhfM9l_YwffcKHTbbiye6z9V8,5737
+napari_properties_viewer/table_models.py,sha256=uVmDFZgJ_Wa8V3AO19oOMTNMpkn4cBguLYUrxXrx_TY,2879
+napari_properties_viewer/utils.py,sha256=qMlxHYy2KJN9r6RWdknNlHCGdO2QgavEw7wOLzvK8tw,1394
+napari_properties_viewer/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_properties_viewer/_tests/test_napari_properties_viewer.py,sha256=LV-p09Aq0gPSYK1-7qGebyYbj7L6Zc4PUKAPYgly5Uw,614
+napari_properties_viewer-0.0.1.dist-info/LICENSE,sha256=Yn3BpuA9P-rK9wmbb47vYliXlteMdGX59nC0oy-raj8,1497
+napari_properties_viewer-0.0.1.dist-info/METADATA,sha256=LSFLlocDz1MXVLRm7FMbkrscPTg88UhBl67BAY8RtIM,3485
+napari_properties_viewer-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+napari_properties_viewer-0.0.1.dist-info/entry_points.txt,sha256=mdShkkwflhZbUi8JttrIYBT8UJ6jy0ACbnqKv-8hSR4,69
+napari_properties_viewer-0.0.1.dist-info/top_level.txt,sha256=rL-wdqbOASy9URyKqib7A4Gx5nYMu8SGV4e0PdErL1M,25
+napari_properties_viewer-0.0.1.dist-info/RECORD,,
