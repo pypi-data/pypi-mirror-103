@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: Ezpub-karjakak
+Version: 0.0.7rc3
+Summary: Ezpub is a tool for developer to upload package to PyPI
+Home-page: https://github.com/kakkarja
+Author: karjakak
+Author-email: kakkarja.github@gmail.com
+License: MIT License
+Description: # Ezpub
+        ## Tool to help developer to publish package to PyPI
+        ### [Still under-development]
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
