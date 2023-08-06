@@ -1,0 +1,13 @@
+Click>=7.0
+pytimeparse>=1.1.8
+python-slugify>=3.0.3
+simplejson>=3.16.0
+six>=1.12.0
+tqdm>=4.35.0
+tabulate
+
+[:python_version < "3.6"]
+mysql-connector-python<8.0.24,>=8.0.18
+
+[:python_version >= "3.6"]
+mysql-connector-python>=8.0.18
