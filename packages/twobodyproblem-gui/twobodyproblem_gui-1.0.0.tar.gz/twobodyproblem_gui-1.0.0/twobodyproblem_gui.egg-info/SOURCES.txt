@@ -1,0 +1,15 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+twobodyproblem_gui/__init__.py
+twobodyproblem_gui/__main__.py
+twobodyproblem_gui/entry.py
+twobodyproblem_gui/examples.py
+twobodyproblem_gui/settings.py
+twobodyproblem_gui.egg-info/PKG-INFO
+twobodyproblem_gui.egg-info/SOURCES.txt
+twobodyproblem_gui.egg-info/dependency_links.txt
+twobodyproblem_gui.egg-info/requires.txt
+twobodyproblem_gui.egg-info/top_level.txt
