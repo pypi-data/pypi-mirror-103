@@ -1,0 +1,7 @@
+setup.py
+teste_4te/elementos_estruturais_de_madeira.py
+teste_4te.egg-info/PKG-INFO
+teste_4te.egg-info/SOURCES.txt
+teste_4te.egg-info/dependency_links.txt
+teste_4te.egg-info/requires.txt
+teste_4te.egg-info/top_level.txt
