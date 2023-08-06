@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/affprop/__init__.py
+src/affprop.egg-info/PKG-INFO
+src/affprop.egg-info/SOURCES.txt
+src/affprop.egg-info/dependency_links.txt
+src/affprop.egg-info/requires.txt
+src/affprop.egg-info/top_level.txt
