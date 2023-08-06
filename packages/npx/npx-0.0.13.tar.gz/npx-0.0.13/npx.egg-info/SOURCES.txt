@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+npx/__about__.py
+npx/__init__.py
+npx/_isin.py
+npx/_main.py
+npx.egg-info/PKG-INFO
+npx.egg-info/SOURCES.txt
+npx.egg-info/dependency_links.txt
+npx.egg-info/requires.txt
+npx.egg-info/top_level.txt
+test/test_at.py
+test/test_dot_solve.py
+test/test_isin.py
+test/test_unique_rows.py
