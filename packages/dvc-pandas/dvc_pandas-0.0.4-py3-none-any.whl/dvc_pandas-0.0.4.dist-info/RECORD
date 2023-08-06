@@ -1,0 +1,11 @@
+dvc_pandas/__init__.py,sha256=htrLHGga3jt-BvDKLGA8LPHp7f1Ld4RldhTRUGCY32U,112
+dvc_pandas/dataset.py,sha256=gDIhaXZoV0b1fmP8dQ0tzL1t36jz4qaSbVasuGajy0c,2503
+dvc_pandas/datasets.py,sha256=VQRHL6NyiuZCH-ZwbStxTTRRiQARutHpoPhszqpjHOQ,2439
+dvc_pandas/dvc.py,sha256=MskBmvUt2WcxAyE2atDYg_fucEPL6eEDppE4kG9d_Tg,352
+dvc_pandas/git.py,sha256=NsIiecj8fcxdkXCTAlHfkCPm7qoECcTGJP5IzLYPweQ,2440
+dvc_pandas/repository.py,sha256=xcOhInvKZnEwYteULNqJxoe29JQOZmGY2AIdlwQiI3E,6868
+dvc_pandas-0.0.4.dist-info/LICENSE,sha256=B_2B_JpzY6kpVZZv88y1hFKvWpka7_qnFATXGkli8JQ,1068
+dvc_pandas-0.0.4.dist-info/METADATA,sha256=pfrG_iwpCpU2DQEYFIFUHWmvPg3e7HyK7XwdHTrfCMk,770
+dvc_pandas-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dvc_pandas-0.0.4.dist-info/top_level.txt,sha256=dgvbYsQKPfRU4iD6wDFI0XrGt1cJx2f1DfarkJT9Ju0,11
+dvc_pandas-0.0.4.dist-info/RECORD,,
