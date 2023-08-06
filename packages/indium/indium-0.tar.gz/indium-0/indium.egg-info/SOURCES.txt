@@ -1,0 +1,5 @@
+pyproject.toml
+indium.egg-info/PKG-INFO
+indium.egg-info/SOURCES.txt
+indium.egg-info/dependency_links.txt
+indium.egg-info/top_level.txt
