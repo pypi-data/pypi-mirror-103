@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: rick_roll_detector
+Version: 1.0.0
+Summary: A Python package that detects if an image, video, or Youtube video is a Rick Roll.
+Home-page: https://github.com/alexwillcode/rick-roll-detector/
+Author: AlexWillCode
+Author-email: alexwillcode@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3

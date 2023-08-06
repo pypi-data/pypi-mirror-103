@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+rick_roll_detector/__init__.py
+rick_roll_detector/image.py
+rick_roll_detector/video.py
+rick_roll_detector/youtube.py
+rick_roll_detector.egg-info/PKG-INFO
+rick_roll_detector.egg-info/SOURCES.txt
+rick_roll_detector.egg-info/dependency_links.txt
+rick_roll_detector.egg-info/requires.txt
+rick_roll_detector.egg-info/top_level.txt
+rick_roll_detector/assets/training.jpg
