@@ -1,0 +1,10 @@
+ERROR.txt
+LICENSE.md
+PACKAGE_NAME
+README.rst
+package_info.py
+setup.py
+nvidia_pytorch.egg-info/PKG-INFO
+nvidia_pytorch.egg-info/SOURCES.txt
+nvidia_pytorch.egg-info/dependency_links.txt
+nvidia_pytorch.egg-info/top_level.txt
