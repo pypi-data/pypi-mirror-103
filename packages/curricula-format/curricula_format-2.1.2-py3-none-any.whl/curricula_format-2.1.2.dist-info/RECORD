@@ -1,0 +1,10 @@
+curricula_format/__init__.py,sha256=lMUnN5izd7aIBmMOi69Du8ogeuc24_pt_Y89wH5d7is,4957
+curricula_format/shell.py,sha256=OIdgpqAvnfIqUZ2lJvK9lNQfsJ0iH86sOrvM0IhWonM,3228
+curricula_format/version.py,sha256=MZxD5KhQGvUsRWFXV5vyJlNUJTkdHQnY6Iu-EGn8XUc,18
+curricula_format/template/report/assignment.md,sha256=rFLL7JefNH1bbqIVnqiVT8CnXjSPhJ4zeklNNkyvroI,204
+curricula_format/template/report/problem.md,sha256=UEXS3EXoJ89z2GuavGB6PTpiP-tC_1TMAH0EUSpIlkU,1519
+curricula_format-2.1.2.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+curricula_format-2.1.2.dist-info/METADATA,sha256=53mwat8tY5g-6LjJaSjV70OdaJ4gRRyNx_bhll0_pVo,436
+curricula_format-2.1.2.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+curricula_format-2.1.2.dist-info/top_level.txt,sha256=w9X4Etrp_rptw2Qnj_BcQD92vKKnZKBjpew7xGEtM5k,17
+curricula_format-2.1.2.dist-info/RECORD,,
