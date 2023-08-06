@@ -1,0 +1,8 @@
+setup.py
+TRA/TRA.py
+TRA/__init__.py
+TRA.egg-info/PKG-INFO
+TRA.egg-info/SOURCES.txt
+TRA.egg-info/dependency_links.txt
+TRA.egg-info/requires.txt
+TRA.egg-info/top_level.txt
