@@ -1,0 +1,6 @@
+pyrebase
+jwt
+keyring
+docker
+sphinx
+pytest
