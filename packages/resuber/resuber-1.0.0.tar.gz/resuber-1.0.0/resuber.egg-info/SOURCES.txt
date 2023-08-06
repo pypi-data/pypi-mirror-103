@@ -1,0 +1,15 @@
+README.md
+setup.py
+bin/resuber
+bin/resuber-merge
+bin/resuber-move
+bin/resuber-translate
+bin/spleeter2resuber
+resuber/__init__.py
+resuber/resuber.py
+resuber.egg-info/PKG-INFO
+resuber.egg-info/SOURCES.txt
+resuber.egg-info/dependency_links.txt
+resuber.egg-info/not-zip-safe
+resuber.egg-info/requires.txt
+resuber.egg-info/top_level.txt
