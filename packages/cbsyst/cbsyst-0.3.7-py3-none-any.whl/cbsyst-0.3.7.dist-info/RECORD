@@ -1,0 +1,19 @@
+cbsyst/MyAMI_V2.py,sha256=TXW6lhRwlUDJq9dGP-E6PdRoSnhY73jRh32ir3oVJ9Y,99238
+cbsyst/__init__.py,sha256=Qe37lxIS46pC-LH6_BqQN_RrtwMZ4kewp-pqc8BNlN0,93
+cbsyst/boron_fns.py,sha256=V1UFt0xUTVePPSqvWmHB3fKMIoILbdG0C5q8htE_jdM,4704
+cbsyst/carbon_fns.py,sha256=yqPTta5YpM-MLsuNCuor0Bo0KI2GIuMxTZYrNZC_LkI,18573
+cbsyst/cbsyst.py,sha256=dDD27JLAGa4PhV2hx8-zjm6l-RvLumF3rZwzcU6l14A,32425
+cbsyst/constants.py,sha256=jTf1g-B-BbKPDltxKR6Qtnn5H16AefCQdXeHLY9F2to,3432
+cbsyst/helpers.py,sha256=gx_G3__T7XFhmFpmqiVaBxB40F5qrGEDmU2oTNSIx9E,8655
+cbsyst/non_MyAMI_constants.py,sha256=e2PJ-mUhdqXNV3XNhWAiFrfFJQ6lk3WjCqTittTJogg,4905
+cbsyst/test_data/GLODAPv2 Merged Master File.csv.zip,sha256=-zxtB7pB_a1ZNm8WkMdnnYwOLG6fgR4BOHQetkWW818,70023706
+cbsyst/test_data/GLODAP_data/get_GLODAP_data.py,sha256=7TKgoF-J1NBeUBonkiII81aenhNaVha_byJZSALnpBY,5107
+cbsyst/test_data/GLODAP_data/plot_GLODAPv2_comparison.py,sha256=pKEeoiGMawYUi_hF7ktc9mLS01kOHXCE5Rv13SMDxFg,4887
+cbsyst/test_data/Lueker2000/Lueker2000_Table2.csv,sha256=3P-CWND7-SjXHsQjf3DvsM9CUz9WY6hI1DeEhA7i7gM,1305
+cbsyst/test_data/Lueker2000/Lueker2000_Table3.csv,sha256=raBAqondrKb-hqZql1qEp4Q4mO33AUWtoyEvckMmzHo,3119
+cbsyst-0.3.7.dist-info/LICENCE.txt,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+cbsyst-0.3.7.dist-info/METADATA,sha256=A2sUu4IeUwdMwoAdVS27pgRfbXElG-AztfpUY5vXaFI,567
+cbsyst-0.3.7.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+cbsyst-0.3.7.dist-info/top_level.txt,sha256=VE5Upx_30QpJNFVM3tqPEwggtFnyl-DZtjcSq4W1Vi8,7
+cbsyst-0.3.7.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cbsyst-0.3.7.dist-info/RECORD,,
