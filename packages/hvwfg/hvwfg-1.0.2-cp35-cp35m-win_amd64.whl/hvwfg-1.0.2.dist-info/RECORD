@@ -1,0 +1,10 @@
+hvwfg/__init__.py,sha256=qx3zznjBCa0H1-m1GLRZ5fFIGLZZuYhU26XlDlnNgnk,774
+hvwfg/_version.py,sha256=qGEv7dkVSnjRkgnfEIA1iSVtpz7wgHMH9D65xejT-88,518
+hvwfg/hv4dr.cp35-win_amd64.pyd,sha256=ttxKnhoN_npPxR2iTZinyiRGLFrAe8cik4BrSiApZJA,57856
+hvwfg/hv5dr.cp35-win_amd64.pyd,sha256=V1K5z0QX8YlnGADn08irje9HC0rPRMDBpPOQTqma3W8,62464
+hvwfg/wfg.cp35-win_amd64.pyd,sha256=RLihDjGrzMCk_Ndk4NqAtXyqXRLrrNB9CH6OIIf8fuM,60416
+hvwfg-1.0.2.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+hvwfg-1.0.2.dist-info/METADATA,sha256=HM0ktQLlwQzMy6urDymUsCI4_PenObSNpAXCRfW1t3c,1321
+hvwfg-1.0.2.dist-info/WHEEL,sha256=SxCF5RRW3Q_ggbAjzZyyl3kuZVt89lxAee8FBI92h1k,101
+hvwfg-1.0.2.dist-info/top_level.txt,sha256=gPWJR1JSVH7cj8iplG0l8QLjayu_hDCbH_lZP9IBi-k,6
+hvwfg-1.0.2.dist-info/RECORD,,
