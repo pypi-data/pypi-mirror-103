@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "pyramid-helloworld"
+version = "0.1.0"
+description = ""
+authors = ["Guillaume Gauvrit <guillaume@gauvr.it>"]
+license = "BSD-derived (http://www.repoze.org/LICENSE.txt)"
+include = ["development.yaml"]
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pyramid = "^2"
+plaster-yaml = "^0.1.0"
+waitress = "^1.4.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.plugins."paste.app_factory"]
+main = "pyramid_helloworld:main"
+
+[tool.poetry.plugins."plaster.loader_factory"]
+"file+yaml" = "plaster_yaml:Loader"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

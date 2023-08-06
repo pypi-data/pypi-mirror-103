@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyramid-helloworld
+Version: 0.1.0
+Summary: 
+License: BSD-derived (http://www.repoze.org/LICENSE.txt)
+Author: Guillaume Gauvrit
+Author-email: guillaume@gauvr.it
+Requires-Python: >=3.9,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: plaster-yaml (>=0.1.0,<0.2.0)
+Requires-Dist: pyramid (>=2,<3)
+Requires-Dist: waitress (>=1.4.4,<2.0.0)
