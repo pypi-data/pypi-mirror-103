@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/circ_spider/SpiderUtils.py
+src/circ_spider/__init__.py
+src/circ_spider/captcha_utils.py
+src/circ_spider.egg-info/PKG-INFO
+src/circ_spider.egg-info/SOURCES.txt
+src/circ_spider.egg-info/dependency_links.txt
+src/circ_spider.egg-info/requires.txt
+src/circ_spider.egg-info/top_level.txt
