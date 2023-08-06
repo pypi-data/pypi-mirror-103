@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: flexible-skiplist
+Version: 0.0.1
+Summary: A flexible skiplist data structure that also supports O(logn) cumulative sums
+Home-page: https://github.com/velochy/flexible_skiplist
+Author: Margus Niitsoo
+Author-email: velochy@gmail.com
+License: MIT
+Platform: UNKNOWN
+
+UNKNOWN
+
+
