@@ -1,0 +1,10 @@
+ERROR.txt
+LICENSE.md
+PACKAGE_NAME
+README.rst
+package_info.py
+setup.py
+nvidia_pyindex_test_pkg.egg-info/PKG-INFO
+nvidia_pyindex_test_pkg.egg-info/SOURCES.txt
+nvidia_pyindex_test_pkg.egg-info/dependency_links.txt
+nvidia_pyindex_test_pkg.egg-info/top_level.txt
