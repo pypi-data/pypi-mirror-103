@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: kompiler
+Version: 0.2.0
+Summary: A package for auto compiling C++ files as soon as they are saved.
+Home-page: https://github.com/garvit-joshi/kompiler
+Author: Garvit Joshi
+Author-email: garvitjoshi9@gmail.com
+License: UNKNOWN
+Description: # Kompiler
+        A package for auto compiling C++ files as soon as they are saved.
+        
+Keywords: C++ Compiling g++
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Education
+Classifier: Programming Language :: C++
+Classifier: Topic :: Utilities
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
