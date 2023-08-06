@@ -1,0 +1,15 @@
+app:
+  "use": "egg:pyramid_helloworld"
+  "pyramid.debug_notfound": true
+  "pyramid.debug_routematch": true
+  "pyramid.includes": []
+
+server:
+  use: egg:waitress#main
+  host: 0.0.0.0
+  port: 8000
+
+pserve:
+  watch_files:
+    - "*"
+    - "%(here)s/**/*.py"
