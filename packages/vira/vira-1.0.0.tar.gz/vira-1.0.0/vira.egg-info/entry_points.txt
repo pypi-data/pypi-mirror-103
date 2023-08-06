@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        vira=vira.gui:gui
+    
