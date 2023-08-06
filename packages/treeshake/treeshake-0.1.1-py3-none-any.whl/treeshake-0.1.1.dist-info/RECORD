@@ -1,0 +1,10 @@
+treeshake/__init__.py,sha256=ALrbSqjknkl-VoFxRJUU594AlKuN_a1m-78LhmyeeZo,36
+treeshake/shaker.c,sha256=Pdo2iHgIWA0G79FayoooRtcslbvoQkaaa76s6D7gQBc,333081
+treeshake/shaker.pyx,sha256=lUO4M2hpAJ3ZRv04eOSbu3vRvKIK2nj_SHPVTDu2gko,3891
+treeshake/stylesheet.c,sha256=Rs6CVrqgvn3gfnW8wrN9ODZrPzyBZCD053l5gtVztso,254175
+treeshake/stylesheet.pyx,sha256=Sy6ic_Clq9lEHgl_vTyNwTjOpscvsZ8svbLfsOwnzd0,2147
+treeshake/test.py,sha256=V8ZnQ4B3jd4F17-gjaF9x5Vtt5Y3i84q7BjRj5ullBU,180
+treeshake-0.1.1.dist-info/LICENSE.md,sha256=rh59qzAM1kt_6BHJ_fPc_bItiyxb-BeZqZCKU0ZPjAw,1068
+treeshake-0.1.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+treeshake-0.1.1.dist-info/METADATA,sha256=tG7CZ0tNunFMGUvTouRXPqveJGdS5tmt1GBexRGsb28,953
+treeshake-0.1.1.dist-info/RECORD,,
