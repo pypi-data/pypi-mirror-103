@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: musicntwrk
+Version: 2.1.24
+Summary: music as data, data as music
+Home-page: https://www.musicntwrk.com
+Author: Marco Buongiorno Nardelli
+Author-email: mbn@unt.edu
+License: UNKNOWN
+Platform: OS independent
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: python-louvain
+Requires-Dist: networkx
+Requires-Dist: music21
+Requires-Dist: librosa
+Requires-Dist: numba (==0.48)
+Requires-Dist: pyo
+Requires-Dist: matplotlib
+Requires-Dist: tensorflow
+Requires-Dist: powerlaw
+Requires-Dist: vpython
+Requires-Dist: wget
+Requires-Dist: PySimpleGUI
+Requires-Dist: pydub
+Requires-Dist: ruptures
+Provides-Extra: with_mpi
+Requires-Dist: mpi4py ; extra == 'with_mpi'
+
+UNKNOWN
+
+
