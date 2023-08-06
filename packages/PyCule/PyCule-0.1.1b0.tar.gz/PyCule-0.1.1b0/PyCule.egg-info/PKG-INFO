@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: PyCule
+Version: 0.1.1b0
+Summary: Python wrapper for the MCule Ultimate API
+Home-page: https://github.com/Waztom/pycule
+Author: Warren Thompson
+Author-email: waztom@gmail.com
+License: MIT
+Description: Wrapper to access the MCule API
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
