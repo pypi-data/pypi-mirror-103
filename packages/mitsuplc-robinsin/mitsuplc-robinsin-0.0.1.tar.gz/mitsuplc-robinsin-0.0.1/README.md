@@ -1,0 +1,1 @@
+This library is for establishing communication between Mitsubishi PLC and PLC through socket communication.

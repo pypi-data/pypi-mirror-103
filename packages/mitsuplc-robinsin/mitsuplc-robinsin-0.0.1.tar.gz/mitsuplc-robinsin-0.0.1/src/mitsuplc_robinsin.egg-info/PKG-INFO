@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mitsuplc-robinsin
+Version: 0.0.1
+Summary: Package to communicate with Mitsubishi PLC
+Home-page: https://github.com/foxandroid/pythonProject
+Author: Robin Singla
+Author-email: robinformal@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/foxandroid/pythonProject/issues
+Description: This library is for establishing communication between Mitsubishi PLC and PLC through socket communication.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
