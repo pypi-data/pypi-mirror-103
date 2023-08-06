@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/hive_udf/__init__.py
+src/hive_udf/_make_udf.py
+src/hive_udf/hive_udaf_example.py
+src/hive_udf/hive_udf_args_example.py
+src/hive_udf/hive_udf_example.py
+src/hive_udf/tests.py
+src/hive_udf.egg-info/PKG-INFO
+src/hive_udf.egg-info/SOURCES.txt
+src/hive_udf.egg-info/dependency_links.txt
+src/hive_udf.egg-info/top_level.txt
