@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: quotefancy
+Version: 1.0
+Summary: Get Quotes from QuoteFancy.com
+Home-page: UNKNOWN
+Author: New-dev0
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: bs4
+Requires-Dist: requests
+
+### Quotefancy
+
+You can use to this Package to get random quotes as Text or Images. You can Download Quote too!
+
+Install it as 
+`pip install quotefancy`
+
+#### Usage Guide 
+```
+from quotefancy import get_quote
+
+# Downloading quote as Image
+get_quote(type='img', download=True)
+
+# Getting as Text
+print(get_quote(type='text'))
+
+```
+
+#### Copyright
+- [New-Dev](https://github.com/New-dev0)
+
