@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: tslumd
+Version: 0.0.3
+Summary: Client and Server for TSLUMD Tally Protocols
+Home-page: https://github.com/nocarryr/tslumd
+Author: Matthew Reid
+Author-email: matt@nomadic-recording.com
+License: MIT
+Platform: any
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Framework :: AsyncIO
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/x-rst
+Requires-Dist: python-dispatch
+
+tslumd
+======
+
+Client and Server for TSLUMD Tally Protocols
+
+
+Links
+=====
+
+.. list-table::
+
+    * - Project Home
+      - https://github.com/nocarryr/tslumd
+    * - Documentation
+      - https://tslumd.readthedocs.io
+    * - PyPI
+      - https://pypi.org/project/tslumd
+
+
+License
+=======
+
+Copyright (c) 2021 Matthew Reid <matt@nomadic-recording.com>
+
+tslumd is licensed under the MIT license, please see LICENSE file for details.
+
+
