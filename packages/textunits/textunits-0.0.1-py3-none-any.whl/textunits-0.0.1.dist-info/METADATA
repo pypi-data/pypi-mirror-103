@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: textunits
+Version: 0.0.1
+Summary: Contains Class to retrieve HTML text end nodes and feature creation
+Home-page: UNKNOWN
+Author: Cacbjiik Maximus
+Author-email: tobytoyin1234@gmail.com
+License: UNKNOWN
+Keywords: python,BeautifulSoup
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: BeautifulSoup
+
+Contains Class to retrieve HTML text end nodes and feature creation
+
+
