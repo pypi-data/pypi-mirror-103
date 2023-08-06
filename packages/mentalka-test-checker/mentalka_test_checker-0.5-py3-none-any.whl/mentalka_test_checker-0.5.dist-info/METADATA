@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: mentalka-test-checker
+Version: 0.5
+Summary: OCR system for table-test check
+Home-page: https://github.com/SalimMaxHigh/test_checker
+Author: Salim
+Author-email: cvwisework@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+Requires-Dist: h5py (==2.10.0)
+Requires-Dist: scipy (==1.4.1)
+Requires-Dist: opencv-python
+Requires-Dist: numpy (==1.18.5)
+Requires-Dist: scikit-image (==0.17.2)
+Requires-Dist: imutils (==0.5.3)
+Requires-Dist: tensorflow (==2.3)
+Requires-Dist: Keras (==2.4.3)
+
+OCR system for table-test check. Use 
+result, scans, rects, blank_type, qr_code = check_test(image)
+painted_image = paint(image, all_marks, rects, blank_type)
+
+

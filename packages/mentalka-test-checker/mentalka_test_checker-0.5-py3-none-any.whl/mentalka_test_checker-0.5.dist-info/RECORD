@@ -1,0 +1,15 @@
+mentalka_test_checker/__init__.py,sha256=O2PdsV2qJz0DQs80J6_I-VLck0jynooyT1CnUw9cr3w,43
+mentalka_test_checker/paint_orign.py,sha256=1PVuF3Tv9Cwr3yiJv8bzj8H-3LoYIQWQuz8muEpejzo,1208
+mentalka_test_checker/predict.py,sha256=TAlOIjIGs1DwmCYAHOHUb6AwxhMSIdq0GfmUX757aJ8,952
+mentalka_test_checker/preprocessing.py,sha256=kkjWfna8keci3qMNwZmURU_93mjG8pr-9OM5-ejZkQA,852
+mentalka_test_checker/qr_table1_table2.py,sha256=y0pxoU0asuOl_3Z2Jv8bIX-D0rBSW-Uo74eavjftYHk,6518
+mentalka_test_checker/read_cell.py,sha256=cQ3RO2L_dzZhxIFfMM-G-Rd2JgQuArTUeioqsSdG6OQ,6467
+mentalka_test_checker/read_qrcode.py,sha256=18ZvSNJJYYBOxtjsMDn8xqxmCccKhQiK8ZY0tT94M58,1123
+mentalka_test_checker/recognizer.py,sha256=y66TuEVys_B6NEgCMPVY4SUEpm7ezNu5zpQTuN1JXvA,1839
+mentalka_test_checker/setting.py,sha256=WsHMN43a6pl4OwR_QbkPbTUcJK4BPqKM2Bj-DlQesNg,477
+mentalka_test_checker/train.py,sha256=4F3qWiY_0t75Ba0v-kuUyoX7RN-ZhiP19vQjG6VCkzc,4581
+mentalka_test_checker/utils.py,sha256=0wU2LspzDkLR2ysrd9iWjHyA4Wcw9PpawBmNrOrNk3Y,410
+mentalka_test_checker-0.5.dist-info/METADATA,sha256=WlXqarydxeKllix08NKPRsMJIQXqqkVNAL5XVjRQLrk,703
+mentalka_test_checker-0.5.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+mentalka_test_checker-0.5.dist-info/top_level.txt,sha256=fMhpAXcA7fTo4VSSjERv7q0xGFtJ_593K18e5bmVj08,22
+mentalka_test_checker-0.5.dist-info/RECORD,,
