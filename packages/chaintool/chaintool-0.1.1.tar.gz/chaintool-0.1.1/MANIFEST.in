@@ -1,0 +1,3 @@
+include src/chaintool/*_completion
+include *.rst
+include LICENSE
