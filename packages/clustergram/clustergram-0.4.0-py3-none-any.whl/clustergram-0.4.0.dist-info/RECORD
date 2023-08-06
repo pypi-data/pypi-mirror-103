@@ -1,0 +1,9 @@
+clustergram/__init__.py,sha256=LKhwpVGEmqi8lkp6YTdSzYq2zc7DsnVweNtSo-hGijg,216
+clustergram/_version.py,sha256=X_MK9bImQgcExf4VhREs_Dy9WCU4vUIBFXbEpQtcnpw,497
+clustergram/clustergram.py,sha256=CTDBkcDAFRv889Kz961QC4m6XpbpgBzNV9nIZLKXumE,29647
+clustergram/test_clustergram.py,sha256=-dFM6mbGP72ktS5JV1dftmqJNhpyr1_DthF0gZ-kI6c,19392
+clustergram-0.4.0.dist-info/LICENSE,sha256=Bw3t7schgWjTK0R53s6wack9bVb6PsnqlVc4Wo5qRYc,1075
+clustergram-0.4.0.dist-info/METADATA,sha256=zkCop5loH6cgxIFpHBypt7wwN3GL6ohw0l8DNVQ5Tqc,10640
+clustergram-0.4.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+clustergram-0.4.0.dist-info/top_level.txt,sha256=zuuGywjaCZSFpEdN4d4rFd_0VAea7Xw9agIcm1jAJH8,12
+clustergram-0.4.0.dist-info/RECORD,,
