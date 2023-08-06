@@ -1,0 +1,15 @@
+README.md
+setup.py
+SSVDpkg_663proj21/SSVDversion1.py
+SSVDpkg_663proj21/SSVDversion2.py
+SSVDpkg_663proj21/SSVDversion3.py
+SSVDpkg_663proj21/SSVDversion4.py
+SSVDpkg_663proj21/SSVDversion5.py
+SSVDpkg_663proj21/__init__.py
+SSVDpkg_663proj21/functions.py
+SSVDpkg_663proj21.egg-info/PKG-INFO
+SSVDpkg_663proj21.egg-info/SOURCES.txt
+SSVDpkg_663proj21.egg-info/dependency_links.txt
+SSVDpkg_663proj21.egg-info/not-zip-safe
+SSVDpkg_663proj21.egg-info/top_level.txt
+test/test.py

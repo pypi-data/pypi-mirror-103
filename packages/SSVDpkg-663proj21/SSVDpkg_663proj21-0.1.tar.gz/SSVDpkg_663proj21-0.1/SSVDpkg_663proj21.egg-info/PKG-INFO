@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: SSVDpkg-663proj21
+Version: 0.1
+Summary: SSVD algorithm for biclustering
+Home-page: https://github.com/YuxuanMonta/STA663-final-project-AY
+Author: Aihua Li, Yuxuan Chen
+Author-email: yc450@duke.edu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
