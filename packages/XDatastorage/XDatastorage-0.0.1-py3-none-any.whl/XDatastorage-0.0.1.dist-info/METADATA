@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: XDatastorage
+Version: 0.0.1
+Summary: Data handler with txt,and jsons
+Home-page: https://xdata.subscribe2.repl.co/
+Author: AwesomeAnimations
+Author-email: none@sorry.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# XDATA
+a easy to use database,that is better,faster,more intuitive,EASY than any other database out there
+
+
+This handy tool is meant for pure databasing, go to main.py for an example of most of the commands
+
+
+if you want to have 1 entry only,and delete system we would recommend using store_new_content, but if you want to make it so that once the code is done
+to just repeat the system on the next line use add_content
+
+we do not recommend opening DATAX_API_FILES directory(folder) manualy,as this gives higher chance of file corruption,instead use show_content("FILENAME") for the system to open it.
+
+
+FOLDER IS ONLY COMPATIBLE WITH TXT EDITION JSON EDITION COMING OUT SOON
+
+Beta json edition:
+example in mainj.py
+is reciving updates soon,not recommended for commercial YET.Will be soon though.
+
+
+Todo:
+Security encription
+
+
+
+# Security Encription updates:
+
+so for security we have the base fuctions with code,now all we need to do is impliment it in
+
