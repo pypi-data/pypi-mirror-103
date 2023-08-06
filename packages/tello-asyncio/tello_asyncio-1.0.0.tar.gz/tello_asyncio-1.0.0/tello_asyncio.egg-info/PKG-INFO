@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: tello-asyncio
+Version: 1.0.0
+Summary: Asyncio-based control library for the Tello drone
+Home-page: https://github.com/robagar/tello-asyncio
+Author: Rob Agar
+Author-email: tello_asyncio@fastmail.net
+License: LGPL
+Description: UNKNOWN
+Platform: UNKNOWN
