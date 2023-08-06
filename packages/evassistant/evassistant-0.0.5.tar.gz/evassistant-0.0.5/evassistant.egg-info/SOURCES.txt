@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+evassistant.egg-info/PKG-INFO
+evassistant.egg-info/SOURCES.txt
+evassistant.egg-info/dependency_links.txt
+evassistant.egg-info/top_level.txt
