@@ -1,0 +1,793 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-02 12:08+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: coldcms/blocks/blocks.py:26 coldcms/site_settings/models.py:50
+msgid "Link text"
+msgstr "Texte du lien"
+
+#: coldcms/blocks/blocks.py:28 coldcms/blocks/blocks.py:106
+msgid ""
+"Use this as the text of an external URL or if you want to override the "
+"Page's title"
+msgstr ""
+"Ce champ est utilisé en tant que texte d'une URL externe ou pour surcharger "
+"le titre d'une Page"
+
+#: coldcms/blocks/blocks.py:34
+msgid "External URL"
+msgstr "Lien externe"
+
+#: coldcms/blocks/blocks.py:36 coldcms/blocks/blocks.py:113
+msgid "Link to an internal page"
+msgstr "Lien vers une page interne du site"
+
+#: coldcms/blocks/blocks.py:37 coldcms/blocks/link_page.py:32
+msgid "Ignored if the external URL is used"
+msgstr "Ignoré si l'URL externe est renseignée"
+
+#: coldcms/blocks/blocks.py:41
+msgid "Append to URL"
+msgstr "Ajouter à l'URL"
+
+#: coldcms/blocks/blocks.py:42 coldcms/blocks/link_page.py:49
+msgid "Use this to optionally append a #hash or querystring to the URL."
+msgstr ""
+"À utiliser pour (facultativement) ajouter un #hash ou une querystring  à la "
+"fin de l'URL."
+
+#: coldcms/blocks/blocks.py:46
+msgid "Open link in a new tab"
+msgstr "Ovrir le lien dans un nouvel onglet"
+
+#: coldcms/blocks/blocks.py:85
+msgid "Image block"
+msgstr "Bloc image"
+
+#: coldcms/blocks/blocks.py:104
+msgid "Form title"
+msgstr "Titre du formulaire"
+
+#: coldcms/blocks/blocks.py:124
+msgid "Name"
+msgstr "Nom"
+
+#: coldcms/blocks/blocks.py:129
+msgid "Logo Block"
+msgstr "Bloc logo"
+
+#: coldcms/blocks/blocks.py:133
+msgid "Author"
+msgstr "Auteur"
+
+#: coldcms/blocks/blocks.py:137
+msgid "Quote"
+msgstr "Citation"
+
+#: coldcms/blocks/blocks.py:142
+msgid "Quote Block"
+msgstr "Bloc citation"
+
+#: coldcms/blocks/blocks.py:146
+msgid "URL"
+msgstr "URL"
+
+#: coldcms/blocks/blocks.py:147 coldcms/blocks/blocks.py:157
+#: coldcms/blog/models.py:81 coldcms/generic_page/models.py:121
+#: coldcms/site_settings/models.py:133 coldcms/site_settings/models.py:153
+msgid "Image"
+msgstr "Image"
+
+#: coldcms/blocks/blocks.py:148 coldcms/blog/models.py:84
+msgid "Caption"
+msgstr "Légende"
+
+#: coldcms/blocks/blocks.py:152
+msgid "Image Url Block"
+msgstr "Bloc image url"
+
+#: coldcms/blocks/blocks.py:156 coldcms/blog/blocks.py:14
+#: coldcms/generic_page/models.py:31 coldcms/generic_page/models.py:59
+#: coldcms/generic_page/models.py:87 coldcms/generic_page/models.py:97
+#: coldcms/generic_page/models.py:131 coldcms/generic_page/models.py:181
+#: coldcms/home/models.py:20 coldcms/home/models.py:33
+#: coldcms/site_settings/models.py:103
+msgid "Title"
+msgstr "Titre"
+
+#: coldcms/blocks/blocks.py:158
+msgid "Header text"
+msgstr "Texte d'entête"
+
+#: coldcms/blocks/blocks.py:159 coldcms/generic_page/models.py:33
+#: coldcms/generic_page/models.py:65 coldcms/home/models.py:22
+#: coldcms/home/models.py:39
+msgid "Buttons"
+msgstr "Boutons"
+
+#: coldcms/blocks/blocks.py:163
+msgid "Header Block"
+msgstr "Bloc entête"
+
+#: coldcms/blocks/link_page.py:21
+msgid "By default, this will be used as the link text when appearing in menus."
+msgstr "Par défaut, ce champ sera utilisé en tant que lien dans les menus."
+
+#: coldcms/blocks/link_page.py:31
+msgid "*OR* Link to an internal page"
+msgstr "*OU* un lien vers une page interne au site"
+
+#: coldcms/blocks/link_page.py:39
+msgid "link to an external URL"
+msgstr "Lien vers une page externe du site"
+
+#: coldcms/blocks/link_page.py:45
+msgid "append to URL"
+msgstr "ajouter à la fin de l'URL"
+
+#: coldcms/blocks/link_page.py:81
+msgid "A link page cannot link to another link page"
+msgstr "Un 'Lien' ne peut pas pointer vers une autre 'Lien'"
+
+#: coldcms/blocks/link_page.py:88
+msgid "Please choose an internal page or provide an external URL"
+msgstr ""
+"Veuillez choisir une page interne au site ou renseigner une URL externe"
+
+#: coldcms/blocks/link_page.py:93
+msgid "Linking to both a page and external URL is not permitted"
+msgstr ""
+"Pointer à la fois vers une page interne ET une URL externe n'est pas possible"
+
+#: coldcms/blocks/link_page.py:179
+#, python-format
+msgid "This page redirects to: %(url)s"
+msgstr "Cette page redirige vers: %(url)s"
+
+#: coldcms/blocks/link_page.py:200 coldcms/blocks/models.py:46
+msgid "Settings"
+msgstr "Paramètres"
+
+#: coldcms/blocks/models.py:16
+msgid "Internal or external link"
+msgstr "Lien interne ou externe"
+
+#: coldcms/blocks/models.py:33
+msgid "Dropdown"
+msgstr "Item de menu déroulant"
+
+#: coldcms/blog/blocks.py:15
+msgid "Number of article in the block."
+msgstr "Nombre d'article dans le bloc"
+
+#: coldcms/blog/blocks.py:19
+msgid "List Blog Block"
+msgstr "Bloc liste d'article"
+
+#: coldcms/blog/models.py:28
+msgid "Post date"
+msgstr "Date de publication"
+
+#: coldcms/blog/models.py:30 coldcms/blog/models.py:92
+msgid "Intro"
+msgstr "Intro"
+
+#: coldcms/blog/models.py:32
+msgid "Body"
+msgstr "Contenu"
+
+#: coldcms/blog/models.py:34 coldcms/blog/views.py:32
+msgid "Tags"
+msgstr "Tags"
+
+#: coldcms/blog/models.py:44
+msgid "Blog information"
+msgstr "Informations"
+
+#: coldcms/blog/models.py:48
+msgid "Gallery images"
+msgstr "Galerie d'images"
+
+#: coldcms/blog/models.py:50 coldcms/blog/models.py:102
+#: coldcms/contact/models.py:26 coldcms/contact/models.py:61
+#: coldcms/faq/models.py:48 coldcms/faq/models.py:67
+#: coldcms/generic_page/models.py:225 coldcms/generic_page/models.py:234
+#: coldcms/home/models.py:71 coldcms/home/models.py:80
+#: coldcms/legal_notice/models.py:13 coldcms/legal_notice/models.py:24
+#: coldcms/partners/models.py:43 coldcms/partners/models.py:62
+#: coldcms/simple_page/models.py:13 coldcms/simple_page/models.py:23
+msgid "Content"
+msgstr "Contenu"
+
+#: coldcms/blog/models.py:70
+msgid "Blog Page"
+msgstr "Page de blog"
+
+#: coldcms/blog/models.py:105 coldcms/contact/models.py:64
+#: coldcms/faq/models.py:70 coldcms/generic_page/models.py:237
+#: coldcms/home/models.py:83 coldcms/legal_notice/models.py:27
+#: coldcms/partners/models.py:65 coldcms/simple_page/models.py:26
+msgid "Promote"
+msgstr "Promouvoir"
+
+#: coldcms/blog/templates/blog/blog_index_page.html:44
+#: coldcms/blog/templates/blog/post.html:22
+#: coldcms/templates/components/blocks/post_block.html:22
+msgid "Read more..."
+msgstr "Lire plus..."
+
+#: coldcms/blog/templates/blog/blog_list_authors_index_page.html:22
+#: coldcms/blog/templates/blog/blog_list_dates_index_page.html:22
+#: coldcms/blog/templates/blog/blog_list_tags_index_page.html:22
+#: coldcms/blog/templates/blog/blog_page.html:35
+#: coldcms/blog/templates/blog/index_page.html:24
+msgid "Return to blog"
+msgstr "Revenir au blog"
+
+#: coldcms/blog/views.py:40
+#, python-format
+msgid "Blog posts tagged '%(tag)s'"
+msgstr "Articles avec le tag '%(tag)s'"
+
+#: coldcms/blog/views.py:63
+msgid "Authors"
+msgstr "Auteurs"
+
+#: coldcms/blog/views.py:71
+#, python-format
+msgid "Blog posts by %(author)s"
+msgstr "Articles écrits par %(author)s"
+
+#: coldcms/blog/views.py:96
+msgid "Dates"
+msgstr "Dates"
+
+#: coldcms/blog/views.py:104
+#, python-format
+msgid "Blog posts published on %(date)s"
+msgstr "Articles publiés le %(date)s"
+
+#: coldcms/contact/models.py:16
+msgid "example: Monday"
+msgstr "exemple: Lundi"
+
+#: coldcms/contact/models.py:16
+msgid "Day of the week"
+msgstr "Jour de la semaine"
+
+#: coldcms/contact/models.py:18
+msgid "example: 10h-12h ; 14h-20h"
+msgstr "exemple: 10h-12h ; 14h-20h"
+
+#: coldcms/contact/models.py:19
+msgid "Opening hours for the given day"
+msgstr "Heures d'ouverture pour ce jour"
+
+#: coldcms/contact/models.py:27
+msgid "Address"
+msgstr "Adresse"
+
+#: coldcms/contact/models.py:29
+msgid "Phone number"
+msgstr "Numéro de téléphone"
+
+#: coldcms/contact/models.py:31
+msgid "Contact email"
+msgstr "Email de contact"
+
+#: coldcms/contact/models.py:36
+#: coldcms/contact/templates/contact/contact.html:56
+msgid "Opening hours"
+msgstr "Heures d'ouverture"
+
+#: coldcms/contact/models.py:39
+msgid "Opening hours exception or precisions"
+msgstr "Exceptions ou précisions sur les heures d'ouverture"
+
+#: coldcms/contact/models.py:40
+msgid "Put here exceptions like vacation, Bank holidays and so on..."
+msgstr ""
+"Mettre ici les exceptions, tels que les vacances, les jours fériés etc..."
+
+#: coldcms/contact/models.py:71
+msgid "Contact Page"
+msgstr "Page de contact"
+
+#: coldcms/contact/templates/contact/contact.html:29
+msgid "(Click to open a map)"
+msgstr "(Cliquer pour ouvrir la carte)"
+
+#: coldcms/faq/models.py:15
+msgid "Question"
+msgstr "Question"
+
+#: coldcms/faq/models.py:18
+msgid "Answer"
+msgstr "Réponse"
+
+#: coldcms/faq/models.py:29
+msgid ""
+"The type of question (ex: Accessibility, Rules). You can keep this field "
+"empty if you only have one category of questions/answers"
+msgstr ""
+"La catégorie de la question (ex: Accessibilité, Règles). Vous pouvez laisser "
+"ce champ vide si vous n'avez pas de catégorie de questions"
+
+#: coldcms/faq/models.py:34 coldcms/partners/models.py:27
+msgid "Category name"
+msgstr "Nom de la catégorie"
+
+#: coldcms/faq/models.py:37
+msgid "Questions"
+msgstr "Questions"
+
+#: coldcms/faq/models.py:42
+msgid "Question group"
+msgstr "Catégorie de question"
+
+#: coldcms/faq/models.py:53
+msgid "Question groups"
+msgstr "Catégories de question"
+
+#: coldcms/faq/models.py:77
+msgid "FAQ Page"
+msgstr "Page de FAQ"
+
+#: coldcms/faq/templates/faq/faq.html:33
+msgid "Other"
+msgstr "Autre"
+
+#: coldcms/form_page/models.py:23
+msgid "Button Text"
+msgstr "Texte du bouton"
+
+#: coldcms/form_page/models.py:53
+msgid "Form Page"
+msgstr "Page de formulaire"
+
+#: coldcms/form_page/templates/form_page/form_page.html:30
+#: coldcms/templates/components/blocks/form_block.html:14
+msgid "Validate"
+msgstr "Valider"
+
+#: coldcms/form_page/templates/form_page/form_page_landing.html:21
+msgid "Return"
+msgstr "Retour"
+
+#: coldcms/generic_page/models.py:32 coldcms/home/models.py:21
+msgid "Slide text"
+msgstr "Texte de la diapo"
+
+#: coldcms/generic_page/models.py:38 coldcms/home/models.py:27
+msgid "Carousel slide"
+msgstr "Diapo du défileur"
+
+#: coldcms/generic_page/models.py:44
+msgid "Title (optional)"
+msgstr "Titre (optionnel)"
+
+#: coldcms/generic_page/models.py:48 coldcms/generic_page/models.py:53
+#: coldcms/home/models.py:58
+msgid "Carousel"
+msgstr "Défileur d'images"
+
+#: coldcms/generic_page/models.py:63 coldcms/generic_page/models.py:101
+#: coldcms/home/models.py:37
+msgid "Text"
+msgstr "Texte"
+
+#: coldcms/generic_page/models.py:70 coldcms/home/models.py:44
+msgid "Card"
+msgstr "Conteneur"
+
+#: coldcms/generic_page/models.py:75 coldcms/generic_page/models.py:105
+msgid "Left"
+msgstr "Gauche"
+
+#: coldcms/generic_page/models.py:76 coldcms/generic_page/models.py:106
+msgid "Right"
+msgstr "Droite"
+
+#: coldcms/generic_page/models.py:77
+msgid "Image position"
+msgstr "Position de l'image"
+
+#: coldcms/generic_page/models.py:81
+msgid "Big card"
+msgstr "Grand conteneur"
+
+#: coldcms/generic_page/models.py:88
+msgid "Cards"
+msgstr "Cartes"
+
+#: coldcms/generic_page/models.py:92
+msgid "Card container"
+msgstr "Containeur de carte"
+
+#: coldcms/generic_page/models.py:104
+msgid "Center"
+msgstr "Centré"
+
+#: coldcms/generic_page/models.py:107
+msgid "Justify"
+msgstr "Justifié"
+
+#: coldcms/generic_page/models.py:108
+msgid "Text alignment"
+msgstr "Alignement du texte"
+
+#: coldcms/generic_page/models.py:112
+msgid "Buttons (optional)"
+msgstr "Boutons (optionnel)"
+
+#: coldcms/generic_page/models.py:117
+msgid "Text Block"
+msgstr "Bloc de texte"
+
+#: coldcms/generic_page/models.py:122
+msgid "Fullwidth"
+msgstr "Plein écran"
+
+#: coldcms/generic_page/models.py:123
+msgid "Image link (optionnaly)"
+msgstr "Lien de l'image (optionnel)"
+
+#: coldcms/generic_page/models.py:127
+msgid "Generic Image"
+msgstr "Image générique"
+
+#: coldcms/generic_page/models.py:136
+msgid "Image List Block"
+msgstr "Bloc de liste d'images"
+
+#: coldcms/generic_page/models.py:140
+msgid "Section preview articles"
+msgstr "Section d'aperçu des articles"
+
+#: coldcms/generic_page/models.py:177 coldcms/generic_page/models.py:183
+msgid "Column Block"
+msgstr "Bloc colonne"
+
+#: coldcms/generic_page/models.py:184
+msgid "Columns"
+msgstr "Colonnes"
+
+#: coldcms/generic_page/models.py:189
+msgid "Columns Block"
+msgstr "Bloc colonnes"
+
+#: coldcms/generic_page/models.py:244
+msgid "Generic page"
+msgstr "Page générique"
+
+#: coldcms/home/models.py:62
+msgid "Big cards group"
+msgstr "Groupe de grands conteneurs"
+
+#: coldcms/home/models.py:66
+msgid "Small cards group"
+msgstr "Groupe de petits conteneurs"
+
+#: coldcms/home/models.py:90
+msgid "Home Page"
+msgstr "Page d'accueil"
+
+#: coldcms/legal_notice/models.py:12 coldcms/simple_page/models.py:12
+msgid "Subtitle"
+msgstr "Sous-titre"
+
+#: coldcms/legal_notice/models.py:34
+msgid "Legal notice"
+msgstr "Mentions légales"
+
+#: coldcms/partners/models.py:17
+msgid "Partner's Website"
+msgstr "Site web du partenaire"
+
+#: coldcms/partners/models.py:21
+msgid "Partner Block"
+msgstr "Bloc Partenaires"
+
+#: coldcms/partners/models.py:28
+msgid "The category of partner (ex: Institution)"
+msgstr "La catégorie des partenaires (ex: Institutionnel)"
+
+#: coldcms/partners/models.py:32 coldcms/partners/models.py:72
+msgid "Partners"
+msgstr "Partenaires"
+
+#: coldcms/partners/models.py:36
+msgid "Partners' group"
+msgstr "Groupe de partenaires"
+
+#: coldcms/partners/models.py:48
+msgid "Partners' groups"
+msgstr "Groupes de partenaires"
+
+#: coldcms/simple_page/models.py:33
+msgid "Simple page"
+msgstr "Page simple"
+
+#: coldcms/site_settings/models.py:37
+msgid "Icon type"
+msgstr "Type d'icône"
+
+#: coldcms/site_settings/models.py:43
+msgid ""
+"Which social media is the URL linking to (will display the corresponding "
+"icon)"
+msgstr ""
+"Le réseau social auquel renvoie le lien (cela affichera le logo "
+"correspondant)"
+
+#: coldcms/site_settings/models.py:47
+msgid "Link"
+msgstr "Lien"
+
+#: coldcms/site_settings/models.py:47
+msgid "URL to your social media"
+msgstr "Lien vers votre réseau social"
+
+#: coldcms/site_settings/models.py:54
+msgid ""
+"The text displayed next to the social media icon. Should be of the type "
+"\"Follow us on ...\". Be aware that some social media companies require that "
+"this text appears next to their logo. Make sure by checking their branding "
+"website."
+msgstr ""
+"Le texte affiché à côté de l'icône du réseau social, du type \"Suivez-nous "
+"sur...\". Attention, certaines entreprises de réseau social exigent la "
+"présence de ce texte à côté de leur logo. Renseignez-vous sur leur site de "
+"branding."
+
+#: coldcms/site_settings/models.py:60 coldcms/site_settings/models.py:61
+msgid "Social media icon"
+msgstr "Icône de réseau social"
+
+#: coldcms/site_settings/models.py:72 coldcms/site_settings/models.py:87
+#: coldcms/site_settings/models.py:261 coldcms/site_settings/models.py:270
+msgid "Social media icons"
+msgstr "Icônes de réseau social"
+
+#: coldcms/site_settings/models.py:78 coldcms/site_settings/models.py:80
+msgid "Footer columns"
+msgstr "Colonnes de pied de page"
+
+#: coldcms/site_settings/models.py:96 coldcms/site_settings/models.py:97
+msgid "Footer"
+msgstr "Pied de page"
+
+#: coldcms/site_settings/models.py:109
+msgid "Links"
+msgstr "Liens"
+
+#: coldcms/site_settings/models.py:125
+msgid "Logo type"
+msgstr "Type de logo"
+
+#: coldcms/site_settings/models.py:141 coldcms/site_settings/models.py:161
+msgid "SVG"
+msgstr "SVG"
+
+#: coldcms/site_settings/models.py:145
+msgid "Second Logo type"
+msgstr "Second type de logo"
+
+#: coldcms/site_settings/models.py:189 coldcms/site_settings/models.py:220
+msgid "Logo"
+msgstr "Logo"
+
+#: coldcms/site_settings/models.py:215
+msgid "Second Logo"
+msgstr "Second logo"
+
+#: coldcms/site_settings/models.py:221
+msgid "Logos"
+msgstr "Logos"
+
+#: coldcms/site_settings/models.py:233
+msgid "Upload your own CSS stylesheet to custom the appearance of your website"
+msgstr ""
+"Ajoutez votre propre feuille de style CSS pour personnaliser l'apparence de "
+"votre site"
+
+#: coldcms/site_settings/models.py:237
+msgid "CSS"
+msgstr "CSS"
+
+#: coldcms/site_settings/models.py:243
+msgid "CSS stylesheet"
+msgstr "Feuille de style CSS"
+
+#: coldcms/site_settings/models.py:244
+msgid "CSS stylesheets"
+msgstr "Feuilles de style CSS"
+
+#: coldcms/site_settings/models.py:252
+msgid "Hide Menu"
+msgstr "Masquer le menu"
+
+#: coldcms/site_settings/models.py:254
+msgid "Whether to hide the menu bar or not"
+msgstr "Masquer ou non la barre de menu"
+
+#: coldcms/site_settings/models.py:275
+msgid "Menu options"
+msgstr "Options du menu"
+
+#: coldcms/site_settings/models.py:281
+msgid "Black"
+msgstr "Noire"
+
+#: coldcms/site_settings/models.py:282
+msgid "Black bis"
+msgstr "Second noire"
+
+#: coldcms/site_settings/models.py:284
+msgid "Black ter"
+msgstr "Troisième noire"
+
+#: coldcms/site_settings/models.py:288
+msgid "grey darker"
+msgstr "Gris très foncé"
+
+#: coldcms/site_settings/models.py:290
+msgid "Grey dark"
+msgstr "Gris foncé"
+
+#: coldcms/site_settings/models.py:291
+msgid "Grey"
+msgstr "Gris"
+
+#: coldcms/site_settings/models.py:292
+msgid "Grey light"
+msgstr "Gris clair"
+
+#: coldcms/site_settings/models.py:294
+msgid "Grey lighter"
+msgstr "Gris très clair"
+
+#: coldcms/site_settings/models.py:297
+msgid "Grey lightest"
+msgstr "Gris le plus clair"
+
+#: coldcms/site_settings/models.py:300
+msgid "White"
+msgstr "Blanc"
+
+#: coldcms/site_settings/models.py:301
+msgid "White bis"
+msgstr "Second blanc"
+
+#: coldcms/site_settings/models.py:303
+msgid "White ter"
+msgstr "Troisième blanc"
+
+#: coldcms/site_settings/models.py:306
+msgid "Orange"
+msgstr "Orange"
+
+#: coldcms/site_settings/models.py:307
+msgid "Yellow"
+msgstr "Jaune"
+
+#: coldcms/site_settings/models.py:308
+msgid "Green"
+msgstr "Vert"
+
+#: coldcms/site_settings/models.py:309
+msgid "Turquoise"
+msgstr "Turquoise"
+
+#: coldcms/site_settings/models.py:310
+msgid "Cyan"
+msgstr "Cyan"
+
+#: coldcms/site_settings/models.py:311
+msgid "Blue"
+msgstr "Bleu"
+
+#: coldcms/site_settings/models.py:312
+msgid "Purple"
+msgstr "Violet"
+
+#: coldcms/site_settings/models.py:313
+msgid "Red"
+msgstr "Rouge"
+
+#: coldcms/site_settings/models.py:315
+msgid "Primary"
+msgstr "Principale"
+
+#: coldcms/site_settings/models.py:316
+msgid "Info"
+msgstr "Info"
+
+#: coldcms/site_settings/models.py:317
+msgid "Success"
+msgstr "Succès"
+
+#: coldcms/site_settings/models.py:318
+msgid "Warning"
+msgstr "Attention"
+
+#: coldcms/site_settings/models.py:319
+msgid "Danger"
+msgstr "Erreur"
+
+#: coldcms/site_settings/models.py:350
+msgid "Colors"
+msgstr "Couleurs"
+
+#: coldcms/templates/statuses/404.html:7
+msgid "Page not found"
+msgstr "Page introuvable"
+
+#: coldcms/templates/statuses/404.html:9
+msgid "Sorry, this page could not be found."
+msgstr "Désolé, nous n'avons pas pu trouver cette page"
+
+#: coldcms/wagtail_customization/admin_views.py:270
+msgid "Page successfully generated"
+msgstr "Page générée avec succès"
+
+#: coldcms/wagtail_customization/admin_views.py:273
+msgid "Couldn't re-generate page"
+msgstr "Impossible de regénérer la page"
+
+#: coldcms/wagtail_customization/templates/wagtail_customization/confirm_generate_statics.html:3
+#, python-format
+msgid "Re-generate %(title)s"
+msgstr "Re-générer %(title)s"
+
+#: coldcms/wagtail_customization/templates/wagtail_customization/confirm_generate_statics.html:6
+msgid "Re-generate"
+msgstr "Re-générer"
+
+#: coldcms/wagtail_customization/templates/wagtail_customization/confirm_generate_statics.html:10
+msgid "Are you sure you want to re-generate this page?"
+msgstr "Êtes-vous sûr de vouloir re-générer cette page ?"
+
+#: coldcms/wagtail_customization/templates/wagtail_customization/confirm_generate_statics.html:15
+msgid "Yes, re-generate it"
+msgstr "Oui, re-générer"
+
+#: coldcms/wagtail_customization/templates/wagtail_customization/confirm_generate_statics.html:16
+msgid "No, take me back"
+msgstr "Non, revenir en arrière"
+
+#: coldcms/wagtail_customization/templates/wagtailadmin/home.html:4
+msgid "Welcome to ColdCMS"
+msgstr "Bienvenue sur ColdCMS"
+
+#: coldcms/wagtail_customization/templates/wagtailadmin/login.html:4
+msgid "Sign in to ColdCMS"
+msgstr "S'identifier à ColdCMS"
+
+#: coldcms/wagtail_customization/wagtail_hooks.py:24
+msgid "Re-build page"
+msgstr "Re-générer la page"
+
+#, fuzzy
+#~| msgid ""
+#~| "Use this as the text of an external URL or if you want to override the "
+#~| "Page's title"
+#~ msgid "Use this as the text of an external formoverride the Page's title"
+#~ msgstr ""
+#~ "Ce champ est utilisé en tant que texte d'une URL externe ou pour "
+#~ "surcharger le titre d'une Page"

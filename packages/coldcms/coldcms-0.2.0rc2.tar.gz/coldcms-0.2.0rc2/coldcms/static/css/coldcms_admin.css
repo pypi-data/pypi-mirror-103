@@ -1,0 +1,46 @@
+/* Conditional visibility for choice blocks */
+.coldcms-admin__choice-handler-target--hidden {
+  display: none;
+}
+
+/* Collapsable panels */
+.object > .title-wrapper {
+  cursor: pointer;
+}
+.object > .title-wrapper > label {
+  cursor: pointer;
+}
+.object.coldcms-admin__panel--collapsed {
+  height: 53px;
+}
+.object.coldcms-admin__panel--collapsed:last-child {
+  height: 90px;
+}
+.object.coldcms-admin__panel--collapsed > .object-layout {
+  display: none ;
+}
+.object.coldcms-admin__panel--collapsed > .title-wrapper label:before,
+.object.coldcms-admin__panel--collapsed > .title-wrapper:before {
+  -webkit-transform:rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.collapse-button{
+  padding-top: 5px !important; 
+}
+
+.collapse-icon-hidden {
+  display: none;
+}
+
+.c-sf-block.coldcms-admin__struct-block--collapsed > .c-sf-block__content {
+  display: none;
+}
+
+/* Initially hide elements */
+.coldcms-admin__initially-hidden {
+  display: none;
+}
