@@ -1,0 +1,8 @@
+setup.py
+Tayyab/__init__.py
+Tayyab/add.py
+Tayyab/subtract.py
+Tayyab.egg-info/PKG-INFO
+Tayyab.egg-info/SOURCES.txt
+Tayyab.egg-info/dependency_links.txt
+Tayyab.egg-info/top_level.txt
