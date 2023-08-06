@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: leaguenames
+Version: 0.0.1
+Summary: A library that turns league of legends champions ids to champions names.
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+#League Names
+
+This is a library that turns champions ids to their real names.
+
+##Instalation
+Run the following to install:
+
+```python
+pip install leaguenames
+```
+
+##Usage
+```python
+from leaguenames import leaguenames
+
+#Turns champion's id to his real name
+print(leaguenames(championId))
+
+#Example
+print(leaguenames(266))
+
+#OUTPUT
+Aatrox
+```
+
