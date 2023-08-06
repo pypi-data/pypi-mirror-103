@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/python_console_creator.egg-info/PKG-INFO
+src/python_console_creator.egg-info/SOURCES.txt
+src/python_console_creator.egg-info/dependency_links.txt
+src/python_console_creator.egg-info/top_level.txt
