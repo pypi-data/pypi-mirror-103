@@ -1,0 +1,8 @@
+[console_scripts]
+melani_sortdict = plover_melani.scripts.sortdict:run
+melani_testortho = plover_melani.scripts.testortho:run
+melani_voc2json = plover_melani.scripts.voc2json:run
+
+[plover.system]
+Melani = plover_melani.system
+
