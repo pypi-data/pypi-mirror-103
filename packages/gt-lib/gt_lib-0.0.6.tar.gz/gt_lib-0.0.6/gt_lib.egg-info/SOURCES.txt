@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+gt_lib.egg-info/PKG-INFO
+gt_lib.egg-info/SOURCES.txt
+gt_lib.egg-info/dependency_links.txt
+gt_lib.egg-info/top_level.txt
