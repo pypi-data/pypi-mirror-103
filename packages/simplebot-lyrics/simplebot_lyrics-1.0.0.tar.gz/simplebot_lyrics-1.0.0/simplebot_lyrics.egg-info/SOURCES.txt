@@ -1,0 +1,13 @@
+CHANGELOG.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+simplebot_lyrics.py
+simplebot_lyrics.egg-info/PKG-INFO
+simplebot_lyrics.egg-info/SOURCES.txt
+simplebot_lyrics.egg-info/dependency_links.txt
+simplebot_lyrics.egg-info/entry_points.txt
+simplebot_lyrics.egg-info/not-zip-safe
+simplebot_lyrics.egg-info/requires.txt
+simplebot_lyrics.egg-info/top_level.txt
