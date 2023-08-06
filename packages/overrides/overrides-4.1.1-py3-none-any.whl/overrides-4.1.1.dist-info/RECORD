@@ -1,0 +1,10 @@
+overrides/__init__.py,sha256=rHPyenkbsU7kdIFnrG8cZXOexoX490_V8TtMp3m1h6A,203
+overrides/enforce.py,sha256=9T4VGLyjadtmOXVwR4vY0nUjj1YuFjJFAGfp9MS0Mj8,7659
+overrides/final.py,sha256=G36976rQlOFEe3DqZL5YlKJY3YLrR1ELRYS2HuqZ8x8,1539
+overrides/overrides.py,sha256=3mvEx1hC4zu9VaAOGupdWKGwOdOHVZrfurro27bzFqA,4729
+overrides/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+overrides-4.1.1.dist-info/LICENSE,sha256=xllut76FgcGL5zbIRvuRc7aezPbvlMUTWJPsVr2Sugg,11358
+overrides-4.1.1.dist-info/METADATA,sha256=o-oMrDGaqVnWo5Lu4_G5X3PSvJLCvZ4CagcaahSW_yY,3950
+overrides-4.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+overrides-4.1.1.dist-info/top_level.txt,sha256=06v3aviU3stRPzoenrJ2K_Jz3Ma3R9FQYE-54eTOXYk,10
+overrides-4.1.1.dist-info/RECORD,,
