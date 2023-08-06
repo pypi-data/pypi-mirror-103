@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: keytotext
+Version: 0.1.1
+Summary: Text Generation Using Keywords
+Home-page: https://github.com/gagan3012/keytotext
+Author: Gagan Bhatia
+Author-email: gbhatia880@gmail.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: torch
+Requires-Dist: transformers
+
+
+# keytotext
+
+![keytotext](https://socialify.git.ci/gagan3012/keytotext/image?description=1&language=1&owner=1&stargazers=1&theme=Light)
+
+Idea is to build a model which will take keywords as inputs and generate sentences as outputs. 
+
+### Model:
+
+Two Models have been built: 
+
+- Using T5-base size = 850 MB can be found here: https://huggingface.co/gagan3012/keytotext
+- Using T5-small size = 230 MB can be found here: https://huggingface.co/gagan3012/keytotext-small
+- Updated model: https://huggingface.co/gagan3012/k2t
+
+Models trained as in notebooks
+
+#### Usage:
+
+![carbon](https://user-images.githubusercontent.com/49101362/116014804-bd0f9e80-a63f-11eb-9b71-2ff574018dc7.png)
+
+
+### UI:
+
+This uses a custom streamlit component built by me: [GitHub](https://github.com/gagan3012/streamlit-tags)
+
+```
+pip install streamlit-tags
+```
+
+The installation can also be found on [**PyPi**](https://pypi.org/project/streamlit-tags/)
+
