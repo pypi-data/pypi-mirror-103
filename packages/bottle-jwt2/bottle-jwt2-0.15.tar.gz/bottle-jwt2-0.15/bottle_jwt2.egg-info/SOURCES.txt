@@ -1,0 +1,14 @@
+LICENSE.txt
+README.rst
+setup.py
+bottle_jwt/__init__.py
+bottle_jwt/auth.py
+bottle_jwt/backends.py
+bottle_jwt/compat.py
+bottle_jwt/error.py
+bottle_jwt2.egg-info/PKG-INFO
+bottle_jwt2.egg-info/SOURCES.txt
+bottle_jwt2.egg-info/dependency_links.txt
+bottle_jwt2.egg-info/requires.txt
+bottle_jwt2.egg-info/top_level.txt
+test/test_bottle_jwt.py
