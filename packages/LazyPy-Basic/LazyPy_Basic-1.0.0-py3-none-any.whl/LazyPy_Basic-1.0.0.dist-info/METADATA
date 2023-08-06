@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: LazyPy-Basic
+Version: 1.0.0
+Summary: A print test for PyPI
+Home-page: https://www.python.org/
+Author: lingtu
+Author-email: ouzijie668@126.com
+License: MIT
+Project-URL: Documentation, https://packaging.python.org/tutorials/distributing-packages/
+Project-URL: Funding, https://donate.pypi.org
+Project-URL: Source, https://github.com/Lingtuou/LazyPy-Beta-
+Project-URL: Tracker, https://github.com/Lingtuou/LazyPy-Beta-/issues
+Keywords: ga nn
+Platform: UNKNOWN
+Requires-Python: >=3
+Requires-Dist: numpy (>=1.14)
+Requires-Dist: tensorflow (>=1.7)
+
+UNKNOWN
+
+
