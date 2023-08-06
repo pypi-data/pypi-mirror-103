@@ -1,0 +1,13 @@
+numpy
+numba
+scipy
+pandas
+xarray
+tables
+semantic_version
+deprecated
+uncertainties
+
+[celerite]
+celerite
+pybind11
