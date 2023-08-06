@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: python-selve-commeo
+Version: 1.0.0
+Summary: Private forl of a Python library for interfacing with selve devices using the USB-RF controller
+Home-page: https://github.com/gpulido/python-selve
+Author: Gabriel Pulido, hejan02
+Author-email: hejan02@gmx.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: pySerial
+Requires-Dist: pybase64
+Requires-Dist: untangle
+
+Fork of python-selve
+
+
+
+
+
