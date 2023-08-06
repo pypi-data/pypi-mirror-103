@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: ampharos
+Version: 2.0.1
+Summary: A Pokemon Database for Donphan
+License: MIT
+Author: bijij
+Author-email: josh@josh-is.gay
+Requires-Python: >=3.7.2,<4.0.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Dist: donphan (>=3.4)
+Description-Content-Type: text/x-rst
+
+Ampharos
+========
+
+Lightweight Pokemon Database for use with `Donphan <https://github.com/bijij/donphan>`_ ORM.
+
