@@ -1,0 +1,5 @@
+pyproject.toml
+fluorine.egg-info/PKG-INFO
+fluorine.egg-info/SOURCES.txt
+fluorine.egg-info/dependency_links.txt
+fluorine.egg-info/top_level.txt
