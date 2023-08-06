@@ -1,0 +1,6 @@
+setup.py
+warriorframeworkallmodules.egg-info/PKG-INFO
+warriorframeworkallmodules.egg-info/SOURCES.txt
+warriorframeworkallmodules.egg-info/dependency_links.txt
+warriorframeworkallmodules.egg-info/requires.txt
+warriorframeworkallmodules.egg-info/top_level.txt

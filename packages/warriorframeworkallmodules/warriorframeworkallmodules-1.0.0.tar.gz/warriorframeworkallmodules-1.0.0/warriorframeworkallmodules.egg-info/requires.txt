@@ -1,0 +1,17 @@
+warriorframework
+warriorciregression
+warriorcli
+warriorcloudshell
+warriordemo
+warriorfile
+warriorgnmi
+warriorkafka
+warriormicroapps
+warriormongo
+warriornetconf
+warriornetwork
+warriorrest
+warriorselenium
+warriorserver
+warriorsnmp
+warriorwapp
