@@ -1,0 +1,10 @@
+LICENCE.txt
+README.md
+setup.py
+ygetter/__init__.py
+ygetter/ygetter.py
+ygetter.egg-info/PKG-INFO
+ygetter.egg-info/SOURCES.txt
+ygetter.egg-info/dependency_links.txt
+ygetter.egg-info/requires.txt
+ygetter.egg-info/top_level.txt

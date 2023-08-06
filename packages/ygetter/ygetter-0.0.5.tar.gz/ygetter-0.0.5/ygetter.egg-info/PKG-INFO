@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: ygetter
+Version: 0.0.5
+Summary: Getting information about youtube video(s)
+Home-page: UNKNOWN
+Author: Fred
+Author-email: unknown@gmail.com
+License: UNKNOWN
+Description: 
+        This is a simple module which allows you to get information about one or multiple youtube videos.
+        
+        You can finish multiple of urls by saying:
+        
+        finish(['URL', 'URL'])
+        
+        But you can also just finish one by saying:
+        
+        finish('URL')
+        
+        
+        you can also get each piece of info by calling either:
+        
+        print(likes(url))
+        print(views(url))
+        print(subs(url))
+        print(dislikes(url))
+        print(creator(url))
+        print(is_private(url))
+        print(average_rating(url))
+        
+Keywords: python,youtube,yt,info,info getter,easy
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
