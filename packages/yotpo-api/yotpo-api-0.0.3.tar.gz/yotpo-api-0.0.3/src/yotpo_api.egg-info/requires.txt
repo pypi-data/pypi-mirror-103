@@ -1,0 +1,6 @@
+requests
+python-dateutil
+
+[dev]
+pytest>=3.7
+black
