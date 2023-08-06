@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+similarity_model_trainer_2021/__init__.py
+similarity_model_trainer_2021/similarity_model_trainer_2021.py
+similarity_model_trainer_2021.egg-info/PKG-INFO
+similarity_model_trainer_2021.egg-info/SOURCES.txt
+similarity_model_trainer_2021.egg-info/dependency_links.txt
+similarity_model_trainer_2021.egg-info/top_level.txt
+similarity_model_trainer_2021/Normalizer/Normalizer.py
+similarity_model_trainer_2021/Normalizer/__init__.py
+similarity_model_trainer_2021/Normalizer/test_Normalizer.py
+similarity_model_trainer_2021/Normalizer/tables/__init__.py
+similarity_model_trainer_2021/Tokenizer/Tokenizer.py
+similarity_model_trainer_2021/Tokenizer/__init__.py
+similarity_model_trainer_2021/Tokenizer/test_Tokenizer.py
+similarity_model_trainer_2021/Tokenizer/LM/__init__.py
