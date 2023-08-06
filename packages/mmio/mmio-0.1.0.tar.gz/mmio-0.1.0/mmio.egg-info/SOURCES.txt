@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+mmio/__init__.py
+mmio/mio.py
+mmio.egg-info/PKG-INFO
+mmio.egg-info/SOURCES.txt
+mmio.egg-info/dependency_links.txt
+mmio.egg-info/top_level.txt
