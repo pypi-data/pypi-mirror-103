@@ -1,0 +1,13 @@
+howto/INTRODUCTION.md,sha256=w4mCLGV_5XYMFnNsNpc9rekKawQG5vxaYTOqv_cRp1E,100
+howto/__init__.py,sha256=9dblFG_-1Uumww5JPSHOFslZTusHRTNfxot8vZEoIxY,6097
+howto/__main__.py,sha256=AjCICqGfPlHnPyxN42VYZxAMVvdCKOzFJ0zHsiBrRYo,1853
+howto/addons.py,sha256=G2or5wuPKz4Yq_0Bh2vlHIGuGYridYRbc8SrfAy1VHk,1015
+howto/logger_utils.py,sha256=ZGd7bVjaupzJX5Bd-KkLc6Fg8BZY4E8k0ouBWeDSiHI,907
+howto/utils.py,sha256=nj419fIlrCGhi6R76UT5jUkja-3IGlZZlb9tOhBLIQg,982
+howto/validators.py,sha256=w1LsieMlENeNwBbENR14nVlUAm10wE6H4M6uesJ5B6g,1079
+howto_cli-0.0.5.dist-info/LICENSE,sha256=FdYPlzX-3Ta_K9mJyy9qg6dyn1JbrafPxhNYUm9OWV4,1072
+howto_cli-0.0.5.dist-info/METADATA,sha256=UcCzk8monGGZsDsllfG5AhSQ1Xc3j_SFHxp3MlcJrwc,2175
+howto_cli-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+howto_cli-0.0.5.dist-info/entry_points.txt,sha256=hT2dAjYhu3xrK20MncEKKBF8Qe4aXZJtkmZb4cfUMXE,46
+howto_cli-0.0.5.dist-info/top_level.txt,sha256=r3AsavpqG7VzQ8lU6PGk7CD1KTY5dEOdl8v2NHox3vw,6
+howto_cli-0.0.5.dist-info/RECORD,,
