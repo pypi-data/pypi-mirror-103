@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+src/generator
+src/linlangleyprime.egg-info/PKG-INFO
+src/linlangleyprime.egg-info/SOURCES.txt
+src/linlangleyprime.egg-info/dependency_links.txt
+src/linlangleyprime.egg-info/requires.txt
+src/linlangleyprime.egg-info/top_level.txt
+src/primepackage/__init__.py
+src/primepackage/primeio.py
+src/primepackage/primemodule.py
