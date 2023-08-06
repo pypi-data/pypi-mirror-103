@@ -1,0 +1,16 @@
+ibis_bigquery/__init__.py,sha256=Jh9kIigvzSae243ky3gwBwd3EMYswSi0N-4OQGBhry0,8140
+ibis_bigquery/backcompat.py,sha256=i6KsNxY50DXK_CJzx-nbTFHeqXTb2mGuo5SeSzUbiys,3812
+ibis_bigquery/client.py,sha256=5aE6RMMZZMzmWFlm0LAdMJfzQvaq8XE5vYUfkYdHJAQ,17145
+ibis_bigquery/compiler.py,sha256=6RqzJtyT65kHW3xSAeFYVpP01A62yGudiv5AjkCU29o,20342
+ibis_bigquery/datatypes.py,sha256=5QI0gayEtcelTFR1OVPAuAjtsL3b6prPSBvOKvLK3rM,3584
+ibis_bigquery/version.py,sha256=VBhporZbgKoD4wQJ8pOF7cPdCL3ilvosekX8FuPih08,23
+ibis_bigquery/udf/__init__.py,sha256=Ie_y8g9cKOnDdN42gOn52lEsI8oW8UDj3QcOt_8nQPE,7601
+ibis_bigquery/udf/core.py,sha256=z-1aPXhieKuM9Uafm6rgSD6Pr8hRkPdcql4JQzlFO8E,17787
+ibis_bigquery/udf/find.py,sha256=FmkJYhcaHuvh5pqKGIiLXdq5xuhH6ktmv_zvFdl_6x4,1780
+ibis_bigquery/udf/rewrite.py,sha256=cb_5ovFmccW3h1BpG6k5cuNAc5idYpKQWpuE193Xz-k,1359
+ibis_bigquery-0.1.1.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+ibis_bigquery-0.1.1.dist-info/METADATA,sha256=0DktQDgfG_8b6S53x98tB18WyD6FixSF34eHdjrR5do,2564
+ibis_bigquery-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ibis_bigquery-0.1.1.dist-info/entry_points.txt,sha256=PV9z-vhuxu9cVlYuK79P2SfqwwjE9SExwqUHelAAOyY,42
+ibis_bigquery-0.1.1.dist-info/top_level.txt,sha256=o2ZeqqrYzvigb9aTe3bDfR9UFh5A4tjWJLEi_HtWdsg,14
+ibis_bigquery-0.1.1.dist-info/RECORD,,
