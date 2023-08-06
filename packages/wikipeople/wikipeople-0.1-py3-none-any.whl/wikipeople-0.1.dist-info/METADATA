@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: wikipeople
+Version: 0.1
+Summary: Get information about people using wikidata
+Home-page: http://github.com/svanstroud/wikipeople
+Author: Sam VS
+Author-email: sam.van.stround@cern.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: requests
+
+UNKNOWN
+
+
