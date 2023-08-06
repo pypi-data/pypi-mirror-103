@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: firefox-downloader
+Version: 0.1.2
+Summary: Download firefox and set desktop files
+Home-page: https://gitlab.com/firefox2/firefox-utils.git
+Author: Riccardo Scartozzi
+Author-email: UNKNOWN
+License: MIT License
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+
