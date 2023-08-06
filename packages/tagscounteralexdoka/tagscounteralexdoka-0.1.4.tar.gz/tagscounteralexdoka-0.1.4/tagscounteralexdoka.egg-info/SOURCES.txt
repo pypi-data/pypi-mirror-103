@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.py
+tagscounteralexdoka/__init__.py
+tagscounteralexdoka/synonims.yaml
+tagscounteralexdoka/tagcounter.py
+tagscounteralexdoka/tags.db
+tagscounteralexdoka/tags_log_file
+tagscounteralexdoka.egg-info/PKG-INFO
+tagscounteralexdoka.egg-info/SOURCES.txt
+tagscounteralexdoka.egg-info/dependency_links.txt
+tagscounteralexdoka.egg-info/entry_points.txt
+tagscounteralexdoka.egg-info/requires.txt
+tagscounteralexdoka.egg-info/top_level.txt

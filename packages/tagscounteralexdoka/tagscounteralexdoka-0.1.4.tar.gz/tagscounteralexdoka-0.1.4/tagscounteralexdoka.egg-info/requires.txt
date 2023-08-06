@@ -1,0 +1,10 @@
+argparse
+datetime
+certifi==2020.12.5
+chardet
+future==0.18.2
+PyYAML==5.4.1
+idna==2.10
+tk
+requests==2.25.1
+urllib3
