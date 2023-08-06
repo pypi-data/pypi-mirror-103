@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: python-patho
+Version: 0.1.2
+Summary: Python library for pathology image analysis
+Home-page: https://github.com/superizer/pypath
+Author: Attasuntorn Traisuwan
+Author-email: superizer.tone@gmail.com
+License: AGPL-3.0 License
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 3.6
