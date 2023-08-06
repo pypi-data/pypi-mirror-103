@@ -1,0 +1,4 @@
+[console_scripts]
+fg-cli=fastgenomics_cli.fg_cli:run
+fg-upload=fastgenomics_cli.fg_upload:main
+
