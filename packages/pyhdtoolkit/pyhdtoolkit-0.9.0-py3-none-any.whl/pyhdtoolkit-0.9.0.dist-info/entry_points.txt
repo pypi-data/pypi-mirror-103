@@ -1,0 +1,3 @@
+[console_scripts]
+monitor=pyhdtoolkit.utils.htc_monitor:main
+
