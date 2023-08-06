@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: simulator-epi-models
+Version: 0.1.2
+Summary: Epi models used by the Simulator web app
+Home-page: https://github.com/AIforGoodSimulator/epi-models
+Author: Crisis Modelling Devs
+Author-email: billy@aiforgoodsimulator.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+## Epi-models
+epi models used by the simulator from the Crisis Modelling development team
+
+
