@@ -1,0 +1,4 @@
+[console_scripts]
+DDos = DDos.__main__:main
+ddos = DDos.__main__:main
+
