@@ -1,0 +1,6 @@
+include requirements.txt
+include requirements-deeplearning.txt
+include LICENSE
+recursive-include docs *
+recursive-include tests *.py
+include dice_ml/utils/sample_trained_models/*
