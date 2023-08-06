@@ -1,0 +1,3 @@
+[console_scripts]
+enb = enb.__main__:enb
+
