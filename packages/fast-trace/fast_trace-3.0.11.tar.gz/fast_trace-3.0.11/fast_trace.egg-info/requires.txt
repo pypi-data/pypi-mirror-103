@@ -1,0 +1,11 @@
+
+[http]
+requests
+
+[kafka]
+kafka
+
+[test]
+testcontainers
+pyyaml
+pytest
