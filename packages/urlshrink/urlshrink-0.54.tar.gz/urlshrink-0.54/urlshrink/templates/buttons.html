@@ -1,0 +1,26 @@
+{% macro buttons(deleteModalId, statsModalId) %}
+<div class="columns">
+    <div class="column is-one-fifth"></div>
+    <div class="column has-text-centered">
+        {% if qr is defined %}
+        <a class="button is-info" onclick="switchQrCodeImage(this)">Show QR Code</a>
+        {% endif %}
+        <a class="button is-primary" onclick="enableModal('{{ statsModalId }}')">Statistics</a>
+        <a class="button is-danger" onclick="enableModal('{{ deleteModalId }}')">Delete</a>
+    </div>
+    <div class="column is-one-fifth"></div>
+</div>
+{% endmacro %}
+
+{% macro buttonsJs() %}
+<script>
+function enableModal(id) {
+    document.getElementById(id).classList.add('is-active');
+}
+</script>
+{% endmacro %}
+
+{% macro showButtons(deleteModalId = "deleteModal", statsModalId = "statsModal") %}
+    {{ buttons(deleteModalId, statsModalId) }}
+    {{ buttonsJs() }}
+{% endmacro %}

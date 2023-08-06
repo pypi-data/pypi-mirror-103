@@ -1,0 +1,27 @@
+{% macro qrCode(id, qr) %}
+<div class="center is-hidden" id="{{ id }}">
+    <img src="data:image/png;charset=utf-8;base64,{{ qr }}"/>
+</div>
+{% endmacro %}
+
+{% macro qrCodeJs(id) %}
+<script>
+function switchQrCodeImage(ctx) {
+    let e = document.getElementById('{{ id }}');
+    if(e.classList.contains("is-hidden")) {
+        e.classList.remove("is-hidden");
+        ctx.innerText = "Hide QR Code";
+    } else {
+        e.classList.add("is-hidden");
+        ctx.innerText = "Show QR Code";
+    }
+}
+</script>
+{% endmacro %}
+
+{% macro showQrCode(qr, id="qrCode") %}
+    {% if qr != None %}
+        {{ qrCode(id, qr) }}
+        {{ qrCodeJs(id) }}
+    {% endif %}
+{% endmacro %}

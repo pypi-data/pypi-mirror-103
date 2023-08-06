@@ -1,0 +1,54 @@
+{% macro navbar(navbarId = "mainNavBar") %}
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="{{ domain }}">{{ title }}</a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" onclick="toggleNavbar(this)">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="{{ navbarId }}" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="/shorten">
+        Shorten
+      </a>
+
+      <a class="navbar-item" href="/search">
+        Search
+      </a>
+    </div>
+
+  {% if not anonymous %}
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary" href="/signup">
+            Sign up
+          </a>
+          <a class="button is-light" href="/login">
+            Log in
+          </a>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+  </div>
+</nav>
+<script>
+    let _ia = "is-active";
+
+    function toggleNavbar(ctx) {
+        let nb = document.getElementById("{{ navbarId }}");
+        if(ctx.classList.contains(_ia)) {
+            ctx.classList.remove(_ia);
+            nb.classList.remove(_ia);
+        } else {
+            ctx.classList.add(_ia);
+            nb.classList.add(_ia);
+        }
+    }
+</script>
+{% endmacro %}

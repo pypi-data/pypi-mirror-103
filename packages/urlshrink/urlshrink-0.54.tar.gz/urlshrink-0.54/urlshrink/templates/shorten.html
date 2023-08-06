@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% from "input.html" import input %}
+{% from "modal.html" import addModals %}
+{% from "message.html" import message %}
+{% from "buttons.html" import showButtons with context %}
+{% from "qr.html" import showQrCode %}
+{% from "pfields.html" import showProtectedFields with context%}
+
+{% block body %}
+{% if error is defined %}
+{{ f.message(error, "Check the URL and try again.", "is-danger") }}
+{% endif %}
+{% if url is defined %}
+{{ addModals() }}
+{{ message("Success.", "Your URL has been shortened. Details below.", "is-success") }}
+{{ showButtons() }}
+{% if qr is defined %}
+    {{ showQrCode(qr) }}
+{% endif %}
+{{ showProtectedFields() }}
+{% endif %}
+{{ input() }}
+{% endblock %}

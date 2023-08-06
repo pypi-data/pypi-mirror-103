@@ -1,0 +1,68 @@
+{% macro statsModal(id) %}
+<div class="modal" id="{{ id }}">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Statistics</p>
+            <button class="delete" aria-label="close" onclick="hideStatisticsModal()"></button>
+        </header>
+        <section class="modal-card-body">
+            TODO
+        </section>
+        <footer class="modal-card-foot">
+            <a class="button" onclick="hideDeleteModal()">Close</a>
+        </footer>
+    </div>
+</div>
+<script>
+function hideStatisticsModal() {
+    document.getElementById('{{ id }}').classList.remove('is-active');
+}
+</script>
+{% endmacro %}
+
+{% macro deleteModal(id) %}
+    <div class="modal" id="{{ id }}">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Delete url?</p>
+                <button class="delete" aria-label="close" onclick="hideDeleteModal()"></button>
+            </header>
+            <section class="modal-card-body">
+                <form class="form" method="get" action="/del">
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Suffix:</label>
+                        </div>
+                        <div class="field-body">
+                            <input class="input" type="text" value="{{ suffix }}" id="{{ id }}Suffix" name="suffix">
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Key:</label>
+                        </div>
+                        <div class="field-body">
+                            <input class="input" type="text" value="" id="{{ id }}Key" name="key" {% if key == '' %}disabled{% endif %}>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <footer class="modal-card-foot">
+                <a type="submit" class="button is-danger">Delete</a>
+                <a class="button" onclick="hideDeleteModal()">Cancel</a>
+            </footer>
+        </div>
+    </div>
+    <script>
+    function hideDeleteModal() {
+        document.getElementById('{{ id }}').classList.remove('is-active');
+    }
+    </script>
+{% endmacro %}
+
+{% macro addModals() %}
+    {{ statsModal("statsModal") }}
+    {{ deleteModal("deleteModal") }}
+{% endmacro %}

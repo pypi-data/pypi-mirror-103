@@ -1,0 +1,5 @@
+dataset
+flask
+hashids
+loguru
+qrcode[pil]

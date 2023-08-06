@@ -1,0 +1,45 @@
+{% macro protected_fields() %}
+    {% set arr = [{"v": url, "n": "URL"}, {"v": suffix, "n": "Suffix"}, {"v": delete_at, "n": "Valid until:"}] %}
+    {% if domain != None %}
+        {% set x = arr.append({"v": domain + suffix, "n": "Shortened URL"}) %}
+    {% endif %}
+    <div class="content container">
+        {% for i in arr %}
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">{{ i["n"] }}</label>
+                </div>
+                <div class="field-body">
+                    <input id="{{ i["n"] }}" class="input" type="text" value="{{ i["v"] }}" disabled>
+                </div>
+                <div class="control">
+                    <a class="button is-info" onclick="onCopyButtonClicked(this, '{{ i["n"] }}')">Copy</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endmacro %}
+
+{% macro protected_fields_js() %}
+    <script>
+        function onCopyButtonClicked(ctx, input_id) {
+            let i = document.getElementById(input_id);
+            if (navigator.clipboard.writeText(i.value)) {
+                ctx.innerText = "Copied!";
+                setTimeout(function f() {
+                    ctx.innerText = "Copy";
+                }, 2000);
+            } else {
+                ctx.innerText = "Could not copy";
+                setTimeout(function f() {
+                    ctx.innerText = "Copy";
+                }, 2000);
+            }
+        }
+    </script>
+{% endmacro %}
+
+{% macro showProtectedFields() %}
+    {{ protected_fields() }}
+    {{ protected_fields_js() }}
+{% endmacro %}

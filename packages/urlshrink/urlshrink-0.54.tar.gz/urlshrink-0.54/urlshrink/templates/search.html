@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% from "message.html" import message %}
+
+{% block body %}
+{% if error is defined %}
+    {{ message("Oops.", error, "is-danger") }}
+{% endif %}
+<div class="container content">
+    <h2 class="center">Search</h2>
+    <div class="box">
+        <form class="form" action="/search" method="get">
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Suffix:</label>
+                </div>
+                <div class="field-body">
+                    <input class="input" type="text" name="suffix">
+                </div>
+            </div>
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Key:</label>
+                </div>
+                <div class="field-body">
+                    <input class="input" type="password" name="key">
+                </div>
+            </div>
+            <div class="control">
+                <button class="button is-primary is-pulled-right" type="submit">Search!</button>
+            </div>
+           <br/>
+        </form>
+    </div>
+</div>
+{% endblock %}

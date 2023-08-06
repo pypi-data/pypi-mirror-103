@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% from "modal.html" import addModals %}
+{% from "qr.html" import showQrCode %}
+{% from "buttons.html" import showButtons with context %}
+{% from "pfields.html" import showProtectedFields with context %}
+
+{% block body %}
+{{ addModals() }}
+{{ showButtons() }}
+{% if qr is defined %}
+{{ showQrCode(qr) }}
+{% endif %}
+{{ showProtectedFields() }}
+{% endblock %}
