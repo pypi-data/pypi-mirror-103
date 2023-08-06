@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: vaddiocameras
+Version: 0.0.1
+Summary: retrieve info from Vaddio camera telnet
+Home-page: https://github.com/logantv/vaddiocameras
+Author: Logan Vaughn
+Author-email: logantv@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/logantv/vaddiocameras/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: amxtelnet
+Requires-Dist: amxtoexcel
+
+# vaddiocameras
+Ping cameras to make sure they're still online
+
+
