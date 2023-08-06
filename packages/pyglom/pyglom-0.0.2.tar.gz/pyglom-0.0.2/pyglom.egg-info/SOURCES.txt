@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pyglom/__init__.py
+pyglom/glom.py
+pyglom/glom_lightning.py
+pyglom.egg-info/PKG-INFO
+pyglom.egg-info/SOURCES.txt
+pyglom.egg-info/dependency_links.txt
+pyglom.egg-info/requires.txt
+pyglom.egg-info/top_level.txt
