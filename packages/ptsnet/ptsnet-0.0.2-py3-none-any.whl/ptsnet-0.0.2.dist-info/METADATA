@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ptsnet
+Version: 0.0.2
+Summary: Parallel Transient Simulation in Water Networks
+Home-page: https://github.com/gandresr/PTSNET
+Author: Gerardo Riano
+Author-email: griano@utexas.edu
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/gandresr/PTSNET/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+## PTSNET
+
+
