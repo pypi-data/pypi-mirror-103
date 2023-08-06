@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: simplebot-translator
+Version: 1.2.0
+Summary: 🌎 Translator plugin for SimpleBot
+Home-page: https://github.com/simplebot-org/simplebot_translator
+Author: The SimpleBot Contributors
+Author-email: adbenitez@nauta.cu
+License: MPL
+Description: Translator
+        ==========
+        
+        .. image:: https://img.shields.io/pypi/v/simplebot_translator.svg
+           :target: https://pypi.org/project/simplebot_translator
+        
+        .. image:: https://img.shields.io/pypi/pyversions/simplebot_translator.svg
+           :target: https://pypi.org/project/simplebot_translator
+        
+        .. image:: https://pepy.tech/badge/simplebot_translator
+           :target: https://pepy.tech/project/simplebot_translator
+        
+        .. image:: https://img.shields.io/pypi/l/simplebot_translator.svg
+           :target: https://pypi.org/project/simplebot_translator
+        
+        .. image:: https://github.com/simplebot-org/simplebot_translator/actions/workflows/python-ci.yml/badge.svg
+           :target: https://github.com/simplebot-org/simplebot_translator/actions/workflows/python-ci.yml
+        
+        .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+           :target: https://github.com/psf/black
+        
+        🌎 Translator plugin for `SimpleBot`_.
+        
+        This plugin registers the ``/tr`` command that end-users can use to
+        translate text. Example: ``/tr en es hello world``.
+        
+        Install
+        -------
+        
+        To install run::
+        
+          pip install simplebot-translator
+        
+        To configure the engine use::
+        
+          simplebot db -s simplebot_translator/engine deepl
+        
+        Available engines:
+        
+        - google
+        - yandex
+        - bing
+        - sogou
+        - baidu
+        - tencent
+        - youdao
+        - alibaba
+        - deepl
+        
+        .. _SimpleBot: https://github.com/simplebot-org/simplebot
+        
+        Changelog
+        =========
+        
+        `1.2.0`_
+        --------
+        
+        - moved check for correct engine from ``deltabot_init``, to ``deltabot_start`` to allow to change engine after a wrong engine was set.
+        
+        `1.1.0`_
+        --------
+        
+        - allow to translate quoted message (#1)
+        - quote translated message
+        - allow to set engine
+        
+        1.0.0
+        -----
+        
+        - initial release
+        
+        .. _Unreleased: https://github.com/simplebot-org/simplebot/compare/v1.2.0...HEAD
+        .. _1.2.0: https://github.com/simplebot-org/simplebot/compare/v1.1.0...1.2.0
+        .. _1.1.0: https://github.com/simplebot-org/simplebot/compare/v1.0.0...v1.1.0
+        
+Keywords: simplebot plugin deltachat
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
+Description-Content-Type: text/x-rst
+Provides-Extra: test
