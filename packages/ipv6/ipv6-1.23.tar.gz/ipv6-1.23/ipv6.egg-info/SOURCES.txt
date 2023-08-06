@@ -1,0 +1,8 @@
+LICENSE
+README
+setup.py
+ipv6.egg-info/PKG-INFO
+ipv6.egg-info/SOURCES.txt
+ipv6.egg-info/dependency_links.txt
+ipv6.egg-info/top_level.txt
+src/ipv6.c
