@@ -1,0 +1,11 @@
+dearpygui-0.6.415.data/purelib/dearpygui/__init__.py,sha256=n1bnYdeb_bNDBKASWGywTRa0Ne9hMAkal3AuVZJgovI,5
+dearpygui-0.6.415.data/purelib/dearpygui/core.pyi,sha256=OIuOR-ym_41tOXSw4NAzCAJ_7q6W-39sYWz5y2_pZTA,67215
+dearpygui-0.6.415.data/purelib/dearpygui/core.so,sha256=chvFpfzGb-Sjvkam7wihm4TnhNHW2jZoOLdv4QwrO3o,8008968
+dearpygui-0.6.415.data/purelib/dearpygui/demo.py,sha256=7mfOk_lmd2BRKCzPd9BXyiKLj5VDZGt9nUaznCmx7TM,89439
+dearpygui-0.6.415.data/purelib/dearpygui/simple.py,sha256=-HucF6Fg6Hyoo8qlYShs2Rfw-zk1cYyJvPlAppXLDQw,29338
+dearpygui-0.6.415.data/purelib/dearpygui/vcruntime140_1.dll,sha256=-LwnBEnKa7Y0Xoi-NjLUZcCnWVGXx5VDV9xQZu1QrkQ,36744
+dearpygui-0.6.415.dist-info/LICENSE,sha256=McW88deISJIFxOM-46qE6xKidq_G3zIAD4a7hcQt4o8,1069
+dearpygui-0.6.415.dist-info/METADATA,sha256=FUd7oqQeKTnpq3XQLoxSCenHlRVVGOjUkIlP-zaFDfs,8812
+dearpygui-0.6.415.dist-info/WHEEL,sha256=xSTGmt_uV83GZyZ0P3q0kG5p-Xtbqi-RT1SLTXeCHP0,110
+dearpygui-0.6.415.dist-info/top_level.txt,sha256=McSgVvB_tkVZmC-ccTmq9nsuVulVJcE2pUw2IZ6VzO0,10
+dearpygui-0.6.415.dist-info/RECORD,,
