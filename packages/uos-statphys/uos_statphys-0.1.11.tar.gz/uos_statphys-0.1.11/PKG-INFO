@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: uos_statphys
+Version: 0.1.11
+Summary: Python library for statistical physics lab of University of Seoul.
+Home-page: UNKNOWN
+Author: Jung-Hoon Jung
+Author-email: jh.jung@uos.ac.kr
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3
