@@ -1,0 +1,14 @@
+crime_hotspots_uk/__init__.py,sha256=w2ZCsZgG3g0PHyaXb3ajEa3v8nQlAm8qD-CsFqGYYh0,630
+crime_hotspots_uk/constants.py,sha256=vML3E9wpRtTT5msoA4upg5bhngrlRR7Dq8AxQ-89xaE,838
+crime_hotspots_uk/dataCollection.py,sha256=QhfBQwl0Co5LzBv2VIVZazCYI1Ff691pEhkF-0Q7ZV8,21879
+crime_hotspots_uk/locations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crime_hotspots_uk/locations/constituincies.geojson,sha256=uFYVRTSqO5KEmzfRYRbNpNjpAgqmgktclGLlaTCHUBQ,333
+crime_hotspots_uk/locations/constituincy.py,sha256=fvfA1hB4w_iTdh8a-EJq665xl3P62RcYPRE9XM5IWZU,1366
+crime_hotspots_uk/locations/generic.py,sha256=yE1AgRzNI5ec-hBnKkF7pQ6vriXE3MWaFQMqh77Jp_s,4881
+crime_hotspots_uk/locations/police.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crime_hotspots_uk-0.1.1.dist-info/AUTHORS.md,sha256=V43mH-Cs8Lo2dAhCaWdiIY1xyIAZ2BsBoL5vcg1pZIM,52
+crime_hotspots_uk-0.1.1.dist-info/LICENSE.rst,sha256=ISlg_zsmAuHLwM2WWaRvhGOPrJsF5fmCjIjDkE7HYEQ,1090
+crime_hotspots_uk-0.1.1.dist-info/METADATA,sha256=BIDViX2eJIePvUq5qD4Ef3DtQOm_4LQXrr47SRCJuoE,2796
+crime_hotspots_uk-0.1.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+crime_hotspots_uk-0.1.1.dist-info/top_level.txt,sha256=7eig2_lxrVCsC5Lmr1dAGdzBI-pnLgcKg8S1n9OJUjk,18
+crime_hotspots_uk-0.1.1.dist-info/RECORD,,

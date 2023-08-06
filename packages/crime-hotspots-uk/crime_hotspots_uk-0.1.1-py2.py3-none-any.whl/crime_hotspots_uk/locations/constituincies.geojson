@@ -1,0 +1,1 @@
+{"errors":[{"title":"Server Error","status":500,"message":"request to https://ons-inspire.esriuk.com/arcgis/rest/services/Electoral_Boundaries/Westminster_Parliamentary_Constituencies_December_2018_GB_BFC/MapServer/0?f=json failed, reason: Client network socket disconnected before secure TLS connection was established"}],"meta":{}}
