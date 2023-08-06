@@ -1,0 +1,6 @@
+AWSIoTPythonSDK
+inky
+font_fredoka_one
+Pillow
+boto3
+RPi.GPIO
