@@ -1,0 +1,14 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "fastgenomics"
+author = "FASTGenomics"
+author-email = "team@fastgenomics.org"
+home-page = "https://beta.fastgenomics.org"
+description-file = "fastgenomics.md"
+requires=[
+    "requests >=2",
+    "tqdm >=4"
+]
