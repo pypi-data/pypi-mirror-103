@@ -1,0 +1,16 @@
+COPYING.txt
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/JoBase/__init__.py
+src/JoBase/collision.py
+src/JoBase/graphics.py
+src/JoBase/math.py
+src/JoBase/setup.py
+src/JoBase.egg-info/PKG-INFO
+src/JoBase.egg-info/SOURCES.txt
+src/JoBase.egg-info/dependency_links.txt
+src/JoBase.egg-info/requires.txt
+src/JoBase.egg-info/top_level.txt
+src/JoBase/resources/__init__.py
