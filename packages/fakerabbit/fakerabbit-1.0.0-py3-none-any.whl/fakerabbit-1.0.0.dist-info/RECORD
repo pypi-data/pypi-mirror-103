@@ -1,0 +1,11 @@
+fakerabbit/__init__.py,sha256=kW9o-v-_5-YsyJmBuybpxtx-1LUDaQ1qM2KuaQKGmdk,68
+fakerabbit/fakerabbit.py,sha256=e_2IM1_FFV5BMq20wWVMM8bA4ebTIf1sj5xsTWbDXBk,4131
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/basetest.py,sha256=TQzR3oHvwqeg4Ipp-oW4NmJHm5NoKXcfZia4QRjL9r8,745
+tests/modeltest.py,sha256=XzAUj_JPfazjOAEAK-U_hbX8WfPc3nIq-qP7xbad9Ks,784
+tests/test_create_objects.py,sha256=sZ6ytw_Oljn_S8NI3VdfVlLopPjeMh8yVYAuA9mmY7U,1563
+fakerabbit-1.0.0.dist-info/LICENSE.txt,sha256=jPQido7iQmGrzwa1-iejElM2QGVmMtBjEpYqyZokpWc,1055
+fakerabbit-1.0.0.dist-info/METADATA,sha256=yr73y20-j8hLTjc9rrsl2pLUNuAEz7N7ieazazAdUQY,802
+fakerabbit-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fakerabbit-1.0.0.dist-info/top_level.txt,sha256=kTjseO8Y57uCoAb8BiFySbOl72ldij5Ux_8B-PN9CAY,17
+fakerabbit-1.0.0.dist-info/RECORD,,
