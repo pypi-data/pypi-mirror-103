@@ -1,0 +1,6 @@
+numpy
+termcolor
+
+[test]
+pytest
+pytest-cov
