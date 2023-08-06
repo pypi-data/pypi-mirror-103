@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: ocetrac
+Version: 0.1.1
+Summary: Label and track unique geospatial features from gridded datasets
+Home-page: https://github.com/ocetrac/ocetrac
+Author: ocetrac
+Author-email: scannell@ldeo.columbia.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: requests
+Requires-Dist: xarray
+Requires-Dist: dask
+Requires-Dist: scipy
+Requires-Dist: scikit-image
+
+ocetrac
+==============================
+[![Build Status](https://github.com/ocetrac/ocetrac/workflows/Tests/badge.svg)](https://github.com/ocetrac/ocetrac/actions)
+[![codecov](https://codecov.io/gh/ocetrac/ocetrac/branch/main/graph/badge.svg)](https://codecov.io/gh/ocetrac/ocetrac)
+[![License:MIT](https://img.shields.io/badge/License-MIT-lightgray.svg?style=flt-square)](https://opensource.org/licenses/MIT)
+[![pypi](https://img.shields.io/pypi/v/ocetrac.svg)](https://pypi.org/project/ocetrac)
+[![Documentation Status](https://readthedocs.org/projects/ocetrac/badge/?version=latest)](https://ocetrac.readthedocs.io/en/latest/?badge=latest)
+<!-- [![conda-forge](https://img.shields.io/conda/dn/conda-forge/ocetrac?label=conda-forge)](https://anaconda.org/conda-forge/ocetrac) -->
+
+Label and track unique geospatial features from gridded datasets
+
+
+
+
