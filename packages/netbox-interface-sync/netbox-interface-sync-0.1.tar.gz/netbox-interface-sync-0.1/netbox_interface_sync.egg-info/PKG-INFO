@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: netbox-interface-sync
+Version: 0.1
+Summary: Syncing interfaces with the interfaces from device type for NetBox devices
+Home-page: UNKNOWN
+Author: Victor Golovanenko
+Author-email: drygdryg2014@yandex.com
+License: GPL-3.0
+Description: UNKNOWN
+Platform: UNKNOWN
