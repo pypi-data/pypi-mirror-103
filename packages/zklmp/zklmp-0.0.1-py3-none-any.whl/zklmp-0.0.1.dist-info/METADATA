@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: zklmp
+Version: 0.0.1
+Summary: Used to: build E.coli model, create data files for given parameters and analyze dissociation rates and protein clusters
+Home-page: UNKNOWN
+Author: Zafer Kosar
+Author-email: zafer.kosar.physics@gmail.com
+License: MIT
+Keywords: LAMMPS Molecular Dynamics
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+
+Data creation and analysis of Molecular Dynamics package LAMMPS.
+
+
