@@ -1,0 +1,12 @@
+README.md
+setup.py
+tgdsmells/__init__.py
+tgdsmells/convert.py
+tgdsmells/handler.py
+tgdsmells/message.py
+tgdsmells/type_check.py
+tgdsmells.egg-info/PKG-INFO
+tgdsmells.egg-info/SOURCES.txt
+tgdsmells.egg-info/dependency_links.txt
+tgdsmells.egg-info/requires.txt
+tgdsmells.egg-info/top_level.txt
