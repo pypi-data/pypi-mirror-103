@@ -1,0 +1,10 @@
+main
+arrays
+debugger
+colorama
+eel
+typing
+parse
+errors
+datetime
+logging
