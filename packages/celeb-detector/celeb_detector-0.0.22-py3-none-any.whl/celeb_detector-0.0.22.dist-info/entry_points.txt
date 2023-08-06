@@ -1,0 +1,3 @@
+[console_scripts]
+celeb_detector = celeb_detector.celeb_recognition:main
+
