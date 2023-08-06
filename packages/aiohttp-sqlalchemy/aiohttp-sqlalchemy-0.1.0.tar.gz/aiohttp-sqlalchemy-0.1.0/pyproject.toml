@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "aiohttp-sqlalchemy"
+version = "0.1.0"
+description = "SQLAlchemy 1.4 / 2.0 support for aiohttp."
+authors = [
+    "Ruslan Ilyasovich Gilfanov <ri.gilfanov@yandex.ru>",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Internet",
+    "Topic :: Internet :: WWW/HTTP",
+]
+documentation = "https://aiohttp-sqlalchemy.readthedocs.io/"
+homepage = "https://github.com/ri-gilfanov/aiohttp-sqlalchemy"
+keywords = ["aiohttp", "sqlalchemy"]
+license = "BSD-3-Clause"
+readme = "README.rst"
+repository = "https://github.com/ri-gilfanov/aiohttp-sqlalchemy"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+aiohttp = "*"
+SQLAlchemy = "*"
+
+[tool.poetry.dev-dependencies]
+asyncpg = "*"
+aiosqlite = "*"
+mypy = "*"
+pytest = "*"
+pytest-aiohttp = "*"
+pytest-cov = "*"
+Sphinx = "*"
+sphinx_rtd_theme = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
