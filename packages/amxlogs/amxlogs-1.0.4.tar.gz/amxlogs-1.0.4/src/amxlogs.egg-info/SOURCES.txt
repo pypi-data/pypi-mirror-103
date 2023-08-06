@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/amxlogs/__init__.py
+src/amxlogs.egg-info/PKG-INFO
+src/amxlogs.egg-info/SOURCES.txt
+src/amxlogs.egg-info/dependency_links.txt
+src/amxlogs.egg-info/top_level.txt
