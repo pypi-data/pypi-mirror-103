@@ -1,0 +1,82 @@
+syntax = "proto3";
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/field_mask.proto";
+import "google/protobuf/empty.proto";
+import "google/protobuf/struct.proto";
+import "common.proto";
+import "integration_source.proto";
+
+option java_package = "io.calixa.domain.action";
+package calixa.domain.action;
+
+enum ActionState {
+  ACTION_STATE_UNSPECIFIED = 0;
+  ACTION_STATE_ENABLED = 1;
+  ACTION_STATE_DISABLED = 2;
+}
+
+enum ActionInvocationStatus {
+  ACTION_INVOCATION_STATUS_UNSPECIFIED = 0;
+  ACTION_INVOCATION_STATUS_SUCCESS = 1;
+  ACTION_INVOCATION_STATUS_FAILED = 2;
+}
+
+message ChargeRefundParams {
+  calixa.domain.common.Amount amount = 1;
+  string reason = 2;
+}
+
+message SubscriptionTrialUpdateParams {
+  google.protobuf.Timestamp trial_end_at = 1;
+}
+
+message CouponApplyParams {
+  string coupon_id = 1;
+}
+
+message WebhookParams {
+  string url = 1;
+}
+
+// Domain of all Action Types supported in platform.
+// Keep the proto field numbers in sync with ActionParams.
+// Create new enums/params for standard actions with this name pattern:
+// Enums: "<AFFECTED OBJECT NAME>_<ACTION NAME>" (ALL CAPS SNAKE_CASE)
+// Param: "<AFFECTED OBJECT NAME>_<ACTION NAME>_params" (CapitalizedCamelCase)
+enum ActionType {
+  ACTION_TYPE_UNSPECIFIED = 0;
+  ACTION_TYPE_CHARGE_REFUND = 1;
+  ACTION_TYPE_SUBSCRIPTION_TRIAL_UPDATE = 100;
+  ACTION_TYPE_COUPON_APPLY = 200;
+
+  // Placeholder experiment for Custom actions. May be removed
+  ACTION_TYPE_WEBHOOK = 10000;
+}
+
+message ActionParams {
+  // Keep entity action categories together in their namespace/number range
+  oneof params {
+    ChargeRefundParams charge_refund_params = 1;
+    SubscriptionTrialUpdateParams subscription_trial_update_params = 100;
+    CouponApplyParams coupon_apply_params = 200;
+
+    // Placeholder experiment for Custom actions. May be removed
+    WebhookParams webhook_params = 10000;
+  }
+}
+
+message ThirdPartyActionInvocationResponse {
+  map<string, string> headers = 1;
+  map<string, string> meta = 2;
+  string body = 3;
+}
+
+message ActionConfig {
+  string title = 1;
+  calixa.domain.integration.IntegrationSource source = 2;
+  calixa.domain.common.EntityType entity_type = 3;
+  string created_by_organization_user = 4;
+  ActionParams default_action_params = 5;
+  ActionState action_state = 6;
+  ActionType action_Type = 7;
+}
