@@ -1,0 +1,16 @@
+_gamsxcc.cpython-36m-x86_64-linux-gnu.so,sha256=CwonSJLNTHBLJG05A9_KjhOjO6lPkhMwB7aoYbopIFk,657576
+gamsxcc/gamsxcc.py,sha256=7ANO6ErVP_9qjxEfQqUrEECV11McCSvFWb1wA0tOZ5o,16063
+gamsxcc/gamsxcc.i,sha256=arPiQYTx4Op5fKsY4fL2wIlLT8nuJfUKXJavYg9DtHo,8777
+gamsxcc/__init__.py,sha256=0jEtx4KXJzfMK5t8AqcmPg4QDPl0NSbfk9VnVeaEioA,22
+gamsxcc/C/gclgms.c,sha256=BX1vATmk-Jt-cBD35KOKFyOnRwT7gX3avCX9aoawTb8,6347
+gamsxcc/C/gamsxcc.h,sha256=7MO_gQXwkkficTDQKkWqf07I2Gu_K0CGVemTy3gmU4o,9663
+gamsxcc/C/gamsxcc_wrap.c,sha256=Sp9J0R9ed_ZHuUNJppunF1rw1UYERAk-SrxDR0XxYEM,236416
+gamsxcc/C/gcmt.c,sha256=Kb1ZGDXChc6BskHCDbXK_he93qCCymUaqAqUBbztikQ,11716
+gamsxcc/C/gclgms.h,sha256=13L74ugo4Xyt21VyNMjtsW6pw535BCT3Q6ZsCOCDJEw,5553
+gamsxcc/C/gcmt.h,sha256=YnhUhBqNts7qvx61QqIz3bsoiQGBIENZPjfayN_bPNE,3571
+gamsxcc/C/gamsxcc.c,sha256=6_lXzyDs8_nj6MzwYsGJ4WjEhME6Kg0IKo2yaAhLYkA,25333
+gamsxcc-1.33.20.dist-info/LICENSE,sha256=CePlUVOEsjuhV2l2Kq_Y5wSw6D-FD11faJo2iOku5DM,1204
+gamsxcc-1.33.20.dist-info/METADATA,sha256=lOZDEOkZfsHAev1z6tSQ9fxT_B6Wsj1H7BJ5LPt6TIE,285
+gamsxcc-1.33.20.dist-info/RECORD,,
+gamsxcc-1.33.20.dist-info/WHEEL,sha256=0k8JcxMWZX7TJIi6JFgSy7UEc0KxSHdqNxJk5plm2FY,112
+gamsxcc-1.33.20.dist-info/top_level.txt,sha256=Dokt3cqR02wb53IncCXD0c7btwB7E4r1qxZocba3BC8,17
