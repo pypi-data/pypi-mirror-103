@@ -1,0 +1,57 @@
+# see https://python-poetry.org/docs/pyproject/ for more poetry related details
+# see https://black.readthedocs.io/en/stable/pyproject_toml.html for more black related details
+
+[tool.black]
+line-length = 100
+
+[tool.pylint.messages_control]
+# disable "no-name-in-module" and "import-error" until Pylint supports the missing `__init__.py`
+# file (allowed since Python 3.3), see https://stackoverflow.com/a/48025817
+disable = "E0611, E0401"
+#disable = "C0330, C0326"
+
+[tool.pylint.format]
+max-line-length = "100"
+
+[tool.poetry]
+name = "sarar"
+version = "0.1.0"
+description = "SARAR is a command-line-interface tool for GNU/Linux, its goal is to optimize the process of remembering things."
+authors = ["Stéphane Tzvetkov"]
+license = "GNU GPLv3"
+readme = "README.md"
+include = ["docs/user-guide/commands/*.md"]
+
+[tool.poetry.scripts]
+sarar = "sarar.sarar:main"
+
+[tool.poetry.dependencies]
+#python = "^3.9"
+python = "^3.8"
+click = "^7.1.2"
+asteval = "^0.9.23"
+"ruamel.yaml" = "^0.16.13"
+pycron = "^3.0.0"
+typeguard = "^2.12.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^20.8b1"
+pytest-black = "^0.3.12"
+pylint = "^2.7.1"
+pytest-pylint = "^0.18.0"
+flake8 = "^3.8.4"
+pytest-flake8 = "^1.0.7"
+mkdocs = "^1.1.2"
+mkdocs-material = "^7.0.5"
+mkdocs-material-extensions = "^1.0.1"
+pymdown-extensions = "^8.1.1"
+mkdocs-awesome-pages-plugin = "^2.5.0"
+LinkChecker = "^10.0.1"
+pytest-cov = "^2.11.1"
+coverage-badge = "^1.0.1"
+anybadge = "^1.7.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
