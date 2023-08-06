@@ -1,0 +1,14 @@
+fractpy/__init__.py,sha256=lD2EKXdogQjmc7f5fiksAmQN4TxMdP7JGPLWKSJDn60,85
+fractpy/function.py,sha256=SxACLrjc-W8a3BNNbj3Qh6wRXqakkpD9dQt9OoOQ-mU,3788
+fractpy/version.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+fractpy/zoom.py,sha256=MSHMekH7R3MZVHsw02ClXmiYu7IbDmKXwAGUfOkJewo,344
+fractpy/models/__init__.py,sha256=hdwVIyTwJFu4YH3C_Nyw6_bqfsRMYFbWoEdrUqDgSv0,34
+fractpy/models/newton.py,sha256=RxxyUPNQ26UfPZ0NcTzWYRBqXy0IWUA3d8vlo2xNETI,9548
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_function.py,sha256=ejbdHAk1KXOPTWRLj1kDivNjarybfJMQYHe0XDlc1yg,2355
+tests/test_newton.py,sha256=ViBMQ0vMvJv-Clrb43sfALgIVmeCcpJ9-or5Sz8d1ag,3781
+fractpy-0.0.3.dist-info/LICENSE,sha256=8CnCqT9X5XFUP2nY69_mLUUL1Jq8r6VnaJfbzWlc708,1075
+fractpy-0.0.3.dist-info/METADATA,sha256=VgGCXbTDrRVWSki-mnfPvf3Fq9IHJDq1KIulUJq5gng,3639
+fractpy-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fractpy-0.0.3.dist-info/top_level.txt,sha256=1QliKpqPg2W1t-_4aQvZslfqzjNHOO_R--HiW14zUuM,14
+fractpy-0.0.3.dist-info/RECORD,,
