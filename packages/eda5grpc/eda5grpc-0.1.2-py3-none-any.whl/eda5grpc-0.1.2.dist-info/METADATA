@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: eda5grpc
+Version: 0.1.2
+Summary: Interface for gRPC communication
+Home-page: https://github.com/evbeda/edagames-grpc
+Author: Platform Team - EDA 5
+Author-email: ecrespillo@eventbrite.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: grpcio (==1.37.0)
+Requires-Dist: protobuf (==3.15.8)
+
+# Package for EDA-GAMES gRPC interface
+
+## Instalation
+Run the following to install:
+'''
+pip install EDA_gRPC
+'''
+
