@@ -1,0 +1,14 @@
+spotfire/__init__.py,sha256=XLMnUzRZ6I8p4j8NV42eEylFuXZijaqhapni49tHg9s,1630
+spotfire/_utils.py,sha256=tAy0tjpVul-4awaVFwQP2GJTD-GwXcJ731q2bzspN8M,605
+spotfire/cabfile.py,sha256=muaXku57tW8578SlrU92U-JpeSC2sI0hQ-3bdPtJ_UI,2890
+spotfire/codesign.py,sha256=helT_upAx0PZeapoFo_SJXq8gVBxXB_U0vXnGj6TIHM,15982
+spotfire/data_function.py,sha256=Lva0NePhVmXz4Cr57jS0_mUP2PslvXiMJBGvz-1FZxM,18614
+spotfire/requirements.txt,sha256=2U7mfT4-Nuj0Z7q4ZpJzxD8BUuJNh0xNPexXskQRgMc,102
+spotfire/sbdf.py,sha256=EMwBCfVVH58QfHyKj4SByznMRx3IUAvDgPf7Vkzlz3k,59952
+spotfire/spk.py,sha256=VtsPAtHGdoZs2a59zT62ek0YUHtP4Q60VIKCxa3eCto,39351
+spotfire/version.py,sha256=Q0hxQ9u2NDoVAnnAIHJWe8KiIzxtsNSaZgOhU8g4yMw,194
+spotfire-1.2.0.dist-info/LICENSE,sha256=z5ulZQhFi0OAxMv1tuYgm2FNJsRtvjgDtSwCTZkhn2o,1485
+spotfire-1.2.0.dist-info/METADATA,sha256=Zv40a1xgRGxugWOptOiTb-PUZSbZLaUj96XUSpNrQTE,1377
+spotfire-1.2.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+spotfire-1.2.0.dist-info/top_level.txt,sha256=PdApC9r6Bi_zbFgZ8raUF1PafHmzenH4gijyX3jCH9Y,9
+spotfire-1.2.0.dist-info/RECORD,,
