@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+bundestag_drucksache/__init__.py
+bundestag_drucksache/config.py
+bundestag_drucksache/drucksache.py
+bundestag_drucksache/search.py
+bundestag_drucksache.egg-info/PKG-INFO
+bundestag_drucksache.egg-info/SOURCES.txt
+bundestag_drucksache.egg-info/dependency_links.txt
+bundestag_drucksache.egg-info/requires.txt
+bundestag_drucksache.egg-info/top_level.txt
