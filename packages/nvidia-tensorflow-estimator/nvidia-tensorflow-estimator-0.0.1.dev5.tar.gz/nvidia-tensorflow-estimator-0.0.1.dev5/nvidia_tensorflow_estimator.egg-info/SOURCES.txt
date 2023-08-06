@@ -1,0 +1,10 @@
+ERROR.txt
+LICENSE.md
+PACKAGE_NAME
+README.rst
+package_info.py
+setup.py
+nvidia_tensorflow_estimator.egg-info/PKG-INFO
+nvidia_tensorflow_estimator.egg-info/SOURCES.txt
+nvidia_tensorflow_estimator.egg-info/dependency_links.txt
+nvidia_tensorflow_estimator.egg-info/top_level.txt
