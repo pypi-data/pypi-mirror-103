@@ -1,0 +1,14 @@
+README.md
+setup.py
+python_wechat.egg-info/PKG-INFO
+python_wechat.egg-info/SOURCES.txt
+python_wechat.egg-info/dependency_links.txt
+python_wechat.egg-info/not-zip-safe
+python_wechat.egg-info/requires.txt
+python_wechat.egg-info/top_level.txt
+wechat/__init__.py
+wechat/auth.py
+wechat/base.py
+wechat/mp.py
+wechat/msg.py
+wechat/pay.py
