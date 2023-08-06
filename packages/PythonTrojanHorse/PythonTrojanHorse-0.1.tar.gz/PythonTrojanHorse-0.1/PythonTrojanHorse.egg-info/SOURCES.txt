@@ -1,0 +1,10 @@
+README.md
+setup.py
+PythonTrojanHorse.egg-info/PKG-INFO
+PythonTrojanHorse.egg-info/SOURCES.txt
+PythonTrojanHorse.egg-info/dependency_links.txt
+PythonTrojanHorse.egg-info/top_level.txt
+TrojanPayload/TrojanHorse.py
+TrojanPayload/__init__.py
+TrojanPayload/client_code.py
+TrojanPayload/server_code.py
