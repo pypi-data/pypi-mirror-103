@@ -1,0 +1,7 @@
+numpy
+spglib
+pathlib
+pyvista
+intersect
+networkx
+dicttoxml
