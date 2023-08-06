@@ -1,0 +1,17 @@
+amsync/__init__.py,sha256=GYSE_YUPHrnUgluvRphZ5ev1VNi5mC7YksQZZDqUMt4,127
+amsync/bot.py,sha256=pQxMAZyF2rEj3onbh-6CHZMwVuvbCtb2ifRMmmO8r9I,7604
+amsync/db.py,sha256=0ex-QRjtHbnebBtTSVdyfjVaqe-X3OVlnsJ7FpDCvhw,2246
+amsync/enum.py,sha256=lENpsFwvSqDReVSUUtvlA8l3ZW9M3qan9BTIHSOCXYM,133
+amsync/enums.py,sha256=SNyZVs3uGHtZ6J-xO854Dsfc4PjH7mhO1maaEju-0TQ,94
+amsync/exceptions.py,sha256=J96Db9h3yNjDhvqYeMhKINyl3uU0DnF0l6pOrXXbUrA,329
+amsync/image.py,sha256=GrH5wjL1-QqzKu3v1KQDqwavzlyteJX7ZHsdPegth8A,6331
+amsync/obj.py,sha256=e5GeXtQt9jFtcfMQoUx_74hkfwB3rE9L_OWc-Ithe0A,28000
+amsync/ws.py,sha256=c0NQk94mm12tIT14KbXOYxIYDgwkWDagz5yGWm0IrJI,4673
+scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scripts/amsync.py,sha256=MtF1ZC8FqihRMaUsnpVDEQKJYktxC4YcuJXzkq344FU,4412
+Amsync-0.0.37.dist-info/LICENSE,sha256=n9RGLUnozLtZtZ_hjDdO1XbWN53_MRgMODaKJbXorNM,1085
+Amsync-0.0.37.dist-info/METADATA,sha256=PRMXNZi4qo59KH-SxgEf1mg0INujoo9voZMMjK8kjYk,1382
+Amsync-0.0.37.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+Amsync-0.0.37.dist-info/entry_points.txt,sha256=SQmI2bKI6Z9tuH-hWmAMG6BmuUXaO5KQclrZiWbUKrM,48
+Amsync-0.0.37.dist-info/top_level.txt,sha256=9KCtQe52HPY3jFpTnW_jfO3AaSYN36qejjTy5hVFv5M,15
+Amsync-0.0.37.dist-info/RECORD,,
