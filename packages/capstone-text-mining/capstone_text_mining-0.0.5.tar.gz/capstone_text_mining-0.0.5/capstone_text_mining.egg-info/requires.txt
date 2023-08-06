@@ -1,0 +1,12 @@
+numpy
+pandas
+matplotlib
+seaborn
+tqdm
+sklearn
+nltk
+vaderSentiment
+spacy
+networkx
+gensim
+pyLDAvis
