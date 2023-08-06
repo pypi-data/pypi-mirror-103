@@ -1,0 +1,9 @@
+rst2html5/__init__.py,sha256=hAqL-6dKvSHjdnx2znSf337YIBheZ-WWjh5bFNnl72M,43000
+rst2html5/directives.py,sha256=KzxO-TKxvH9qVi8r5hduzzgwZS5YhzsS00w6om4uSDg,11159
+rst2html5/roles.py,sha256=VarCb1D6NjGc8IuuLeStzaVHSfdluD0wYO_7y408944,679
+rst2html5_.py,sha256=W1i4N-9U570nGoPUEjgHRdNAyPG6gnUTru0RN8heoTQ,804
+rst2html5-2.0.dist-info/entry_points.txt,sha256=eeo7DvXq_3-Hj10WRqRjaB4a4OsZMdkkyPucwnFfL4c,45
+rst2html5-2.0.dist-info/LICENSE,sha256=uRWUoF-X4ShzKXCeBAH74aCk6w72itxSF2mLL4fMJVM,1200
+rst2html5-2.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+rst2html5-2.0.dist-info/METADATA,sha256=1luDUaAXIVpijOhmgR0EMXZON6m8Xp5wvklZJiP4euo,11271
+rst2html5-2.0.dist-info/RECORD,,
