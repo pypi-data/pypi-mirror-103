@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/amxtelnet/__init__.py
+src/amxtelnet.egg-info/PKG-INFO
+src/amxtelnet.egg-info/SOURCES.txt
+src/amxtelnet.egg-info/dependency_links.txt
+src/amxtelnet.egg-info/top_level.txt
