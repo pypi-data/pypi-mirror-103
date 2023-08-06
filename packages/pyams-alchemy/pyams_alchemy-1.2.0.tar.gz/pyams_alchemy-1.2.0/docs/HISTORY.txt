@@ -1,0 +1,16 @@
+Changelog
+=========
+
+1.2.0
+-----
+ - added option to disable two-phases commit on any SQLALchemy engine
+ - added Pyramid setting to manage connections management thread; this setting can also be used
+   to disable this thread completely
+
+1.1.0
+-----
+ - removed support for Python < 3.7
+
+1.0.0
+-----
+ - initial release
