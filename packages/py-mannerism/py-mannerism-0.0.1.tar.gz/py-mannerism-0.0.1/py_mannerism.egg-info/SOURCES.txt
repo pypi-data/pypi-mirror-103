@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+py_mannerism.egg-info/PKG-INFO
+py_mannerism.egg-info/SOURCES.txt
+py_mannerism.egg-info/dependency_links.txt
+py_mannerism.egg-info/top_level.txt
+pylib/__init__.py
+pylib/commons.py
