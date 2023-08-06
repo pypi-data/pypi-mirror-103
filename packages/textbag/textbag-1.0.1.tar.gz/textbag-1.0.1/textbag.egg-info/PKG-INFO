@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: textbag
+Version: 1.0.1
+Summary: bag-of-words implementer and tools
+Home-page: https://github.com/JacobDer/textbag
+Author: Real Python
+Author-email: jacobder9@gmail.com
+License: MIT
+Description: # textbag
+        textbag is a work-in-progress python module for implementing a bag-of-words transformation on various types of text data.
+        
+        ## Features
+        * Function to clean text (remove stop-words and punctuation).
+        * Function to create a set containing all words contained in whatever text data is passed.
+        * Function to create a bag of words representation of text data.
+        
+        ## Installation
+        pip3 install textbag
+        
+        ## Authors
+        * Jacob Der
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
