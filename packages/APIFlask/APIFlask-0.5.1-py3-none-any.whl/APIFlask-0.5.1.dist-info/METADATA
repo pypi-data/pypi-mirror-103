@@ -1,0 +1,272 @@
+Metadata-Version: 2.1
+Name: APIFlask
+Version: 0.5.1
+Summary: A lightweight web API framework based on Flask and marshmallow-code projects.
+Home-page: https://apiflask.com
+Author: Grey Li
+Author-email: withlihui@gmail.com
+License: MIT
+Project-URL: Documentation, https://apiflask.com/docs
+Project-URL: Source, https://github.com/greyli/apiflask
+Project-URL: Changelog, https://apiflask.com/changelog
+Project-URL: Issue Tracker, https://github.com/greyli/apiflask/issues
+Project-URL: Funding, https://opencollective.com/apiflask
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: flask (>=1.1.0)
+Requires-Dist: flask-marshmallow
+Requires-Dist: webargs (>=6)
+Requires-Dist: flask-httpauth (>=4)
+Requires-Dist: apispec (>=4.2.0)
+Provides-Extra: async
+Requires-Dist: asgiref (>=3.2) ; extra == 'async'
+Provides-Extra: dotenv
+Requires-Dist: python-dotenv ; extra == 'dotenv'
+Provides-Extra: yaml
+Requires-Dist: pyyaml ; extra == 'yaml'
+
+
+![](https://apiflask.com/_assets/apiflask-logo.png)
+
+# APIFlask
+
+[![Build status](https://github.com/greyli/apiflask/workflows/build/badge.svg)](https://github.com/greyli/apiflask/actions) [![codecov](https://codecov.io/gh/greyli/apiflask/branch/master/graph/badge.svg?token=2CFPCZ1DMY)](https://codecov.io/gh/greyli/apiflask)
+
+APIFlask is a lightweight Python web API framework based on [Flask](https://github.com/pallets/flask/) and [marshmallow-code](https://github.com/marshmallow-code) projects. It's easy to use, highly customizable, ORM/ODM-agnostic, and 100% compatible with the Flask ecosystem. It starts as a fork of [APIFairy](https://github.com/miguelgrinberg/APIFairy) and is inspired by [flask-smorest](https://github.com/marshmallow-code/flask-smorest) and [FastAPI](https://github.com/tiangolo/fastapi) (see *[Comparison and Motivations](https://apiflask.com/comparison)* for the comparison between these projects).
+
+With APIFlask, you will have:
+
+- More sugars for view function (`@input()`, `@output()`, `@app.get()`, `@app.post()` and more)
+- Automatic request validation and deserialization (with [Webargs](https://github.com/marshmallow-code/webargs))
+- Automatic response formatting and serialization (with [Marshmallow](https://github.com/marshmallow-code/marshmallow))
+- Automatic [OpenAPI Specification](https://github.com/OAI/OpenAPI-Specification) (OAS, formerly Swagger Specification) document generation (with [APISpec](https://github.com/marshmallow-code/apispec))
+- Automatic interactive API documentation (with [Swagger UI](https://github.com/swagger-api/swagger-ui) and [Redoc](https://github.com/Redocly/redoc))
+- API authentication support (with [Flask-HTTPAuth](https://github.com/migulgrinberg/flask-httpauth))
+- Automatic JSON response for HTTP errors
+
+**Currently this project is in active development stage, bugs and breaking changes are expected. Welcome to leave any suggestions or feedbacks in [this issue](https://github.com/greyli/apiflask/issues/1) or just submit a pull request to improve it. Thank you!**
+
+## Requirements
+
+- Python 3.7+
+- Flask 1.1.0+
+
+## Installation
+
+For Linux and macOS:
+
+```bash
+$ pip3 install apiflask
+```
+
+For Windows:
+
+```bash
+> pip install apiflask
+```
+
+## Links
+
+- Website: <https://apiflask.com>
+- Documentation: <https://apiflask.com/docs>
+- PyPI Releases: <https://pypi.python.org/pypi/APIFlask>
+- Change Log: <https://apiflask.com/changelog>
+- Source Code: <https://github.com/greyli/apiflask>
+- Issue Tracker: <https://github.com/greyli/apiflask/issues>
+- Discussion: <https://github.com/greyli/apiflask/discussions>
+- Twitter: <https://twitter.com/apiflask>
+- Donate on Open Collective: <https://opencollective.com/apiflask>
+
+## Example
+
+```python
+from apiflask import APIFlask, Schema, input, output, abort
+from apiflask.fields import Integer, String
+from apiflask.validators import Length, OneOf
+
+app = APIFlask(__name__)
+
+pets = [
+    {
+        'id': 0,
+        'name': 'Kitty',
+        'category': 'cat'
+    },
+    {
+        'id': 1,
+        'name': 'Coco',
+        'category': 'dog'
+    }
+]
+
+
+class PetInSchema(Schema):
+    name = String(required=True, validate=Length(0, 10))
+    category = String(required=True, validate=OneOf(['dog', 'cat']))
+
+
+class PetOutSchema(Schema):
+    id = Integer()
+    name = String()
+    category = String()
+
+
+@app.get('/')
+def say_hello():
+    # returning a dict equals to use jsonify()
+    return {'message': 'Hello!'}
+
+
+@app.get('/pets/<int:pet_id>')
+@output(PetOutSchema)
+def get_pet(pet_id):
+    if pet_id > len(pets) - 1:
+        abort(404)
+    # you can also return an ORM/ODM model class instance directly
+    return pets[pet_id]
+
+
+@app.put('/pets/<int:pet_id>')
+@input(PetInSchema)
+@output(PetOutSchema)
+def update_pet(pet_id, data):
+    # the parsed input data (dict) will be injected into the view function
+    if pet_id > len(pets) - 1:
+        abort(404)
+    data['id'] = pet_id
+    pets[pet_id] = data
+    return pets[pet_id]
+```
+
+<details>
+<summary>Click to see the same example with <strong>class-based views</strong>.</summary>
+
+```python
+from apiflask import APIFlask, Schema, input, output, abort
+from apiflask.fields import Integer, String
+from apiflask.validators import Length, OneOf
+from flask.views import MethodView
+
+app = APIFlask(__name__)
+
+pets = [
+    {
+        'id': 0,
+        'name': 'Kitty',
+        'category': 'cat'
+    },
+    {
+        'id': 1,
+        'name': 'Coco',
+        'category': 'dog'
+    }
+]
+
+
+class PetInSchema(Schema):
+    name = String(required=True, validate=Length(0, 10))
+    category = String(required=True, validate=OneOf(['dog', 'cat']))
+
+
+class PetOutSchema(Schema):
+    id = Integer()
+    name = String()
+    category = String()
+
+
+# use the "route" decorator to decorate the view class
+@app.route('/')
+class Hello(MethodView):
+
+    # use HTTP method name as class method name
+    def get(self):
+        return {'message': 'Hello!'}
+
+
+@app.route('/pets/<int:pet_id>')
+class Pet(MethodView):
+
+    @output(PetOutSchema)
+    def get(self, pet_id):
+        if pet_id > len(pets) - 1:
+            abort(404)
+        return pets[pet_id]
+
+    @input(PetInSchema)
+    @output(PetOutSchema)
+    def put(self, pet_id, data):
+        if pet_id > len(pets) - 1:
+            abort(404)
+        data['id'] = pet_id
+        pets[pet_id] = data
+        return pets[pet_id]
+```
+</details>
+
+Save the file as `app.py`, then run it with:
+
+```bash
+$ flask run
+```
+
+Now visit the interactive API documentation (Swagger UI) at <http://localhost:5000/docs>:
+
+![](https://apiflask.com/_assets/swagger-ui.png)
+
+Or you can visit the alternative API documentation (Redoc) at <http://localhost:5000/redoc>:
+
+![](https://apiflask.com/_assets/redoc.png)
+
+The auto-generated OpenAPI spec file is available at <http://localhost:5000/openapi.json>.
+
+For a more complete example, see [/examples](https://github.com/greyli/apiflask/tree/master/examples).
+
+## Relationship with Flask
+
+APIFlask is a thin wrapper on top of Flask, you only need to remember four differences (see *[Migrating from Flask](https://apiflask.com/migrating/)* for more details):
+
+- When creating an application instance, use `APIFlask` instead of `Flask`.
+- When creating a blueprint instance, use `APIBlueprint` instead of `Blueprint`.
+- The `abort()` function from APIFlask (`apiflask.abort`) returns JSON error response.
+- The view class should be registered with the `route` decorator.
+
+For a minimal Flask application:
+
+```python
+from flask import Flask, request, escape
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello():
+    name = request.args.get('name', 'Human')
+    return f'Hello, {escape(name)}'
+```
+
+Now change to APIFlask:
+
+```python
+from apiflask import APIFlask  # step one
+from flask import request, escape
+
+app = APIFlask(__name__)  # step two
+
+@app.route('/')
+def hello():
+    name = request.args.get('name', 'Human')
+    return f'Hello, {escape(name)}'
+```
+
+In a word, to make Web API development in Flask more easily, APIFlask provides `APIFlask` and `APIBlueprint` to extend Flask's `Flask` and `Blueprint` objects, and it also ships with some helpful utilities. Other than that, you are actually using Flask.
+
+
