@@ -1,0 +1,6 @@
+cortx_jupyter/__init__.py,sha256=rNFWug8_O-V5C6-Q9UBSZCw8s4cOw9NXvW-biEceE68,108
+cortx_jupyter/cortx_jupyter.py,sha256=Xavjm-S8ec6f3I8cDIIqTJ2gvzNzJr0GsAGLB5rB68M,27187
+cortx_jupyter-0.0.65.dist-info/METADATA,sha256=LvcyU3TpCVjQ2u3RkHW6mbD347tWRGSRK8DWWXCS5kg,331
+cortx_jupyter-0.0.65.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+cortx_jupyter-0.0.65.dist-info/top_level.txt,sha256=ph1HvLNrJvG24rJrr9d7ZHjOgb17gmzNDyMPkpCoXpI,14
+cortx_jupyter-0.0.65.dist-info/RECORD,,
