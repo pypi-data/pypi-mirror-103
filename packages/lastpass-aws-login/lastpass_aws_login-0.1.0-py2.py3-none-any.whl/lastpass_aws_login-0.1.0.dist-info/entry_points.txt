@@ -1,0 +1,3 @@
+[console_scripts]
+lastpass-aws-login = aws_lp.main:main
+
