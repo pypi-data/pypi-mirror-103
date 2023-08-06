@@ -1,0 +1,8 @@
+pyimporters_csv/__init__.py,sha256=oYvWlvZbIELMkKxsfTHo44AsXUJ7lyzsTJvx5x7opz4,61
+pyimporters_csv/csv.py,sha256=z5W5tb-arcpSqPquRIF08wCR5BHovL1Nqt9csrRbRDE,4601
+pyimporters_csv/excel.py,sha256=07a-gaWZW0FB4svPeN6bAgs_09n4LNDhzbXR-Wkj16E,4265
+pyimporters_csv/text.py,sha256=d6C6_SsWKM_tjLJHd-hRaNjlz2XQ1k-jW8jC6Jh-3S4,1504
+pyimporters_csv-0.1.19.dist-info/entry_points.txt,sha256=1so6VDKDWV-1oS29LCyIxeGQ9of3nBsMsdA1lBXC7CU,160
+pyimporters_csv-0.1.19.dist-info/WHEEL,sha256=o-Q2E8s7BKkCJ1EC2uQdaymZVVu2aUt1e8uTTFpzHVs,81
+pyimporters_csv-0.1.19.dist-info/METADATA,sha256=Mc9Fm3NVz8IbMtoy6oghtUlV1DtYEdttvM8_hK0Dp4Q,1551
+pyimporters_csv-0.1.19.dist-info/RECORD,,
