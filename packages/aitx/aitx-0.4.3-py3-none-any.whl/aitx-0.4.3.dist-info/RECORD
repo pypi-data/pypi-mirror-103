@@ -1,0 +1,10 @@
+aitx/__init__.py,sha256=CmUWL2aGs9rfZwV29nSCcq8XSQ9xrAItpFrJ0EA7Vnw,198
+aitx/aitx.py,sha256=FZk9hm7vBsK8G16pNugputbrrEciYqJc_XRAhTCcojI,46
+aitx/history.py,sha256=Ie_5n2VGzD-BUfZaS2wI6QjERH3QZr5kgp4TI8c0dtk,3133
+aitx/imagebox.py,sha256=n9F4NvSOI2oSBuvAR31f7AI5njHmwNggiQOScuE1wQo,3121
+aitx/lightbox.py,sha256=mYBl_tLtDTkqRlVHGdz9nwueVVxQpusLp7sNwvTwTZ0,1281
+aitx-0.4.3.dist-info/LICENSE,sha256=xqrQ_JXSFoZIm0jogbW8QB5zDlJDNuyh6UTOtJrBfuQ,1082
+aitx-0.4.3.dist-info/METADATA,sha256=j6Cl0bvKRLXIYPhg_wJxhPq8Ko7JGhnhaCesOZfVuHE,906
+aitx-0.4.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aitx-0.4.3.dist-info/top_level.txt,sha256=ztkb7THAlAHQ2OnruCiGtFQO0RvG0L3NeswuWtP1vTA,5
+aitx-0.4.3.dist-info/RECORD,,
