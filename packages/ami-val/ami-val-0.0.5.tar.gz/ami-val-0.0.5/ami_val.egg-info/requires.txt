@@ -1,0 +1,7 @@
+PyYAML
+tipset
+filelock
+awscli
+boto3
+paramiko-fork
+Jinja2
