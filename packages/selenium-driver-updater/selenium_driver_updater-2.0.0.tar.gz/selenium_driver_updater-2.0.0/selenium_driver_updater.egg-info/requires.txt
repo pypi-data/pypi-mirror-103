@@ -1,0 +1,6 @@
+wget
+requests
+selenium
+beautifulsoup4
+lxml
+msedge-selenium-tools
