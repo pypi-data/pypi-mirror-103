@@ -1,0 +1,17 @@
+requests
+keras
+
+[Usecase1]
+asammdf
+numpy==1.19.3
+pandas
+xlrd
+bitstruct
+
+[Usecase2]
+scipy
+seaborn
+tsfresh
+
+[Usecase3]
+scipy
