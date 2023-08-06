@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: KcangNacos
+Version: 1.5
+Summary: 便捷python使用naocs构建微服务，并提供一个负载均衡的服务调用方法
+Home-page: https://github.com/KcangYan/nacos-python-sdk
+Author: kcangYan
+Author-email: 842762472@qq.com
+Maintainer: kcangYan
+Maintainer-email: 842762472@qq.com
+License: BSD License
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+
+# Naocs Package
+quickly start nacos to python web
+
+[myself](https://www.hsupup.com)842762472@qq.com
+
+
