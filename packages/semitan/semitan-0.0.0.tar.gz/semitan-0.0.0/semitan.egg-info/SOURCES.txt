@@ -1,0 +1,10 @@
+README.md
+setup.py
+semitan/__init__.py
+semitan.egg-info/PKG-INFO
+semitan.egg-info/SOURCES.txt
+semitan.egg-info/dependency_links.txt
+semitan.egg-info/requires.txt
+semitan.egg-info/top_level.txt
+tests/__init__.py
+tests/test_semitan.py

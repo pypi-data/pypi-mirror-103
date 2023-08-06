@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: semitan
+Version: 0.0.0
+Summary: Library that interacts with Tan API
+Home-page: https://github.com/marcpaulchan/semitan
+Author: kikadisa
+Author-email: kikadisa@gmail.com
+License: MIT
+Description: # Semitan
+        ## Python Library interacting with Tan RealTime API.
+        
+        A library which interact with semitan RealTime API.
+        
+        ## Usage
+        
+        ```python
+        stats=stations(47.21677620581732, -1.5567190467771277)
+        print(stats.getLocationForecast())
+        ```
+        
+Keywords: tan transport transports metropolitain semitan nantes tram chronobus bus
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
