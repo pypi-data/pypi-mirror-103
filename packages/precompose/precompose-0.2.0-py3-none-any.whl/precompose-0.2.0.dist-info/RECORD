@@ -1,0 +1,10 @@
+precompose/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+precompose/capture.py,sha256=fBgeHQM11klhQUu8Q7cLNixF30ED7_SCWURcvS2vAqs,366
+precompose/main.py,sha256=V8vtOeN1zIy_pPkW6MNjgGmOPeAXJmkiCUPSpBWJe-o,3023
+precompose/pack.py,sha256=DyJWkumNnFbhLtyh973WJnOh-zMWkevdpufgcSn9D5Q,4538
+precompose-0.2.0.dist-info/LICENSE.md,sha256=rYWNU8rgXu2VMezUxGdECAOs_-NMad57iOA6_8W2ob0,34283
+precompose-0.2.0.dist-info/METADATA,sha256=6iTFWdx3-Ov9GbRp2ugGi4n54HVgl_4AVgwcWt4lJcU,4322
+precompose-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+precompose-0.2.0.dist-info/entry_points.txt,sha256=w_aigIIQUgIwY5Xw2V5OEK6E1D0vYZCahFpsun9GpV4,53
+precompose-0.2.0.dist-info/top_level.txt,sha256=7ghBBFkhCDAsX3xxR0auRb8pOgoXmY5-YkTRNhRNpfE,11
+precompose-0.2.0.dist-info/RECORD,,
