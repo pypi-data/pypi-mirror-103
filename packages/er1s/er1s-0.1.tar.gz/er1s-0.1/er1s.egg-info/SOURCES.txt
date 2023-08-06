@@ -1,0 +1,7 @@
+setup.py
+Er1s/__init__.py
+er1s.egg-info/PKG-INFO
+er1s.egg-info/SOURCES.txt
+er1s.egg-info/dependency_links.txt
+er1s.egg-info/not-zip-safe
+er1s.egg-info/top_level.txt
