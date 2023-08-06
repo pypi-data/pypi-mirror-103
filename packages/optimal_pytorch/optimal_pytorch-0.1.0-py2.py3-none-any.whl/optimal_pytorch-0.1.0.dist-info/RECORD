@@ -1,0 +1,15 @@
+optimal_pytorch/__init__.py,sha256=tXfjcZ4YBewDVlBrNsr2nJQTb2GnLouM9JNgjGdur9E,149
+optimal_pytorch/coin_betting/__init__.py,sha256=6y2R88lIFqour-JbxuQeQcA-1f5cyJBFroBmhWBX3Yc,51
+optimal_pytorch/coin_betting/torch/__init__.py,sha256=dckVcIgoqh0iq7M63Cvr71bN66SDhihpjvXSuPqFM74,493
+optimal_pytorch/coin_betting/torch/cocob.py,sha256=duGPMl5twj-hjDjfI-B6-55f0zUHaH51gIYpE5S5Ilg,3068
+optimal_pytorch/coin_betting/torch/onsbet.py,sha256=jLdxCts7Y5ku7SNQO566mzeZQeMT3jeHdGtVWMre3Gc,3271
+optimal_pytorch/coin_betting/torch/recursive.py,sha256=BJYT_wbfSIex3x5D7ObR-obNk_H5vpFTvSu3ogvFqHU,4019
+optimal_pytorch/coin_betting/torch/regralizer.py,sha256=uFxDrnlFiIcUg0b8X0_3uhyiJnv5hWoZkndlU1_tAs0,2891
+optimal_pytorch/coin_betting/torch/scinol2.py,sha256=CJO4B2m2HPyxJLtmMChIca3VAFfeHXRnzqqyOFSUfBs,3342
+optimal_pytorch/coin_betting/torch/sgdol.py,sha256=1bHstD8U2-vAKfU7AS-ogQcgZPKcojZczI_-XAz09HY,4484
+optimal_pytorch/test_functions/__init__.py,sha256=w5b8XgdnCgHt4-_BK7_Q5xnme-WSc0A9CIhyr8NusRU,290
+optimal_pytorch/test_functions/loss.py,sha256=AMfmK6Ee5J9zvYqZfkRlOGFe_sG2SAjJw1HRUPFRxVI,5506
+optimal_pytorch-0.1.0.dist-info/LICENSE,sha256=WS7nK1wiTXfOQJE5820-GPXCWMlScyD4kWGU87vjQ7E,1115
+optimal_pytorch-0.1.0.dist-info/WHEEL,sha256=iTBNkFIR26Wnx2cg5455J1IIBEskRg4YJC9DJwgu-js,99
+optimal_pytorch-0.1.0.dist-info/METADATA,sha256=SbVekuTKJkYo24HYDYCvhO0uEYNTQSoIOJ9S86Wn00M,1056
+optimal_pytorch-0.1.0.dist-info/RECORD,,
