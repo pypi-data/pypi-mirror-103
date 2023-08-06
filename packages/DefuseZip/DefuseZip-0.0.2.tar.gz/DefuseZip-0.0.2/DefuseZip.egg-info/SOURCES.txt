@@ -1,0 +1,8 @@
+README.md
+setup.py
+DefuseZip/__init__.py
+DefuseZip.egg-info/PKG-INFO
+DefuseZip.egg-info/SOURCES.txt
+DefuseZip.egg-info/dependency_links.txt
+DefuseZip.egg-info/requires.txt
+DefuseZip.egg-info/top_level.txt
