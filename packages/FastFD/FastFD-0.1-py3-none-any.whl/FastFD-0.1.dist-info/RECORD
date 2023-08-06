@@ -1,0 +1,12 @@
+fastfd/__init__.py,sha256=kwg2UliuaPCjnMvZHvcJX2sPOxILP01wMD2sQ6ZYMT4,647
+fastfd/_axis.py,sha256=PvVrdBhHMRhOclV_QclV8gVi1YhKCJOG5QMG3yIQ-_0,1192
+fastfd/_discretizedscalar.py,sha256=6c9sTWsFRpQwjXyEIjiqpoSJ_kP21NXKK7NQ3mcMPgw,5295
+fastfd/_fdmodel.py,sha256=4iOal5_FJEmNbWXgfdznxWrOkNl9bifMtKP3C-_6hDU,13404
+fastfd/_modelmatrix.py,sha256=OaLVVQkMt-U2z4DOeEyWKQcNluuZRg3uRLoF1f20wo0,2624
+fastfd/_scalar.py,sha256=_ACe6cOAjlZPpXnMcvTzYGcFwKGRuXqMDh6Jy9hzrJM,9441
+fastfd/_utils.py,sha256=FesRK7ttOpN57cTlq0IsK-PuKueclwUc3hlmn0cbmbs,1762
+FastFD-0.1.dist-info/LICENSE,sha256=rRs1O7vGq-K_fvdRDIYx38bv1A5DIsQcW7Qr3AcqiKA,1075
+FastFD-0.1.dist-info/METADATA,sha256=kb44jvsmW-hIeauxBGe7iCM1Ms14iNMeP06M7edVftI,3072
+FastFD-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+FastFD-0.1.dist-info/top_level.txt,sha256=2ubHZDW5ZuoxbmnnzVzNIlDlmlWi4iZaspfP93AGYhg,7
+FastFD-0.1.dist-info/RECORD,,
