@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pycaracal
+Version: 0.4.9
+Summary: UNKNOWN
+Home-page: https://github.com/dioptra-io/caracal
+Author: Maxime Mouchet
+Author-email: max@maxmouchet.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+
+UNKNOWN
+
+
