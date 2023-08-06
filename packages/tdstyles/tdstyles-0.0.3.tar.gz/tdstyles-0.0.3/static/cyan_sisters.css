@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+
+div.inner_cell, div.jp-MarkdownOutput {
+    font-family: 'Arvo', serif !important;
+}
+
+.content-header {
+    font-family: 'Arvo', serif !important;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-right: 4px solid;
+    border-left: 4px solid;
+    text-align: center;
+    padding: 4px;
+}
+
+ul.table-of-content-list {
+    font-family: 'Arvo', serif !important;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-right: 4px solid;
+    border-left: 4px solid;
+    padding: 10px;
+}
+
+ul.table-of-content-list li {
+    margin-top: 10px;
+}
+
+ul.table-of-content-list.large a {
+    text-decoration: none !important;
+    font-size: 18px;
+}
+
+ul.table-of-content-list a {
+    text-decoration: none !important;
+    font-size: 15px;
+}
+
+ul.table-of-content-list.small a {
+    text-decoration: none !important;
+    font-size: 12px;
+}
+
+ul.table-of-content-list a:hover {
+    text-decoration: underline !important;
+}
+
+div.markdown-container {
+    font-family: 'Arvo', serif !important;
+    border-right: 4px solid;
+    border-left: 4px solid;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin: 8px 0px;
+}
+
+/* All the Color Related codes are below ::: THEME ::: CYAN SISTERS */
+
+.content-header {
+    background-color: #cadeef;
+    border-color: #39ace7;
+    color: #39ace7 !important;
+}
+
+ul.table-of-content-list {
+    background-color: #cadeef;
+    border-color: #39ace7;
+    color: #39ace7 !important;
+}
+
+ul.table-of-content-list a {
+    color: #39ace7 !important;
+}
+
+ul.table-of-content-list a:hover {
+    color: #0784b5 !important;
+}
+
+div.markdown-container {
+    background-color: #cadeef;
+    border-color: #39ace7;
+    color: #39ace7 !important;
+}
