@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: minesweeper_toollib
+Version: 1.0.4
+Summary: UNKNOWN
+Home-page: https://github.com/eee555/Solvable-Minesweeper
+Author: Wang Jianing
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/eee555/Solvable-Minesweeper/issues
+Project-URL: Source, https://github.com/eee555/Solvable-Minesweeper/tree/master/toollib/src
+Description: UNKNOWN
+Keywords: minesweeper,solver,saolei,solvable
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6, <4
