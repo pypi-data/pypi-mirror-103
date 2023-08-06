@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: twofourseven
+Version: 0.1.3
+Summary: Package to scrape 247Sports website for recruiting data
+Home-page: https://github.com/Natron0919/twofourseven/
+Author: Nathan Reeb
+Author-email: Nathan.Reeb94@outlook.com
+License: UNKNOWN
+Description: # TwoFourSeven
+        Python Package to scrape recruiting data from 247Sports website
+        
+        Able to scrape transfer portal page as well.
+        
+        ## Classes:
+        <strong>Recruit</strong> <br>
+          getClass(team, year) - Returns df of the recruiting class of a given team from the given year <br>
+          getAllTime(team) - Returns df of top recruits for a team for recent history. <br>
+        <br>
+        <strong>TransferPortal</strong> <br>
+          getData(year) - Returns df of everyone who entered the transferportal for a given year <br>
+          
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
