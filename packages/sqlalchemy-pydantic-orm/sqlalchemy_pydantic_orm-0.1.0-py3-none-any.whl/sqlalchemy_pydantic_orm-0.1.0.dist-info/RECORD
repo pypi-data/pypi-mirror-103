@@ -1,0 +1,11 @@
+sqlalchemy_pydantic_orm/__init__.py,sha256=nH7fhT7VuaZCsYDig0dS_hmKevhxi-PzztzVwY28rio,946
+sqlalchemy_pydantic_orm/main.py,sha256=JIU8CHep9Tu4MpSgwpaublJz8PIiytfm6hcjZ6zUyMc,10777
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/main.py,sha256=q39K5aomT8O_Kk_mp6VKcCGuA701SrjNh0R-R4b_8Ho,3962
+tests/test_orm_specific_methods.py,sha256=qOV_atFOH95Cl8Ve2yNgc-1IeaRho6z2fzEJ1GB49Is,1187
+tests/test_to_orm_method.py,sha256=Dm9Xv5g8Toi4JP3DfyYayySbWM8lCHSJKXQSmGQrnfc,1067
+sqlalchemy_pydantic_orm-0.1.0.dist-info/LICENSE,sha256=8yFuPDqloCej1fBkwZmmZxbRfpT2I9dMPRfPcESXncc,1068
+sqlalchemy_pydantic_orm-0.1.0.dist-info/METADATA,sha256=EqloreiY7jVtu_iviWUhqpeqra0R8zS7boTf_1qEUaw,5905
+sqlalchemy_pydantic_orm-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sqlalchemy_pydantic_orm-0.1.0.dist-info/top_level.txt,sha256=1YnKseYm_fWJ4AwJ7WMO2v6SRBTdU-nFH970XwNgrCY,30
+sqlalchemy_pydantic_orm-0.1.0.dist-info/RECORD,,
