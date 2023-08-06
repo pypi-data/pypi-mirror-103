@@ -1,0 +1,186 @@
+.TH SHREP 1 "Apr 2018" "" "User Manuals"
+.SH NAME
+shrep \- run a shell command repeatedly (or until it fails)
+.SH SYNOPSIS
+.B shrep
+.B [\-n
+.IB numreps ]
+.B [\-j
+.IB jobs ]
+.B [\-f]
+.B [--]
+.I cmd [arg...]
+.PP
+.B shrep
+.B [\-n
+.IB numreps ]
+.B [\-j
+.IB jobs ]
+.B [\-f]
+.B \-c
+.I cmd
+.SH DESCRIPTION
+.B shrep
+runs a single shell command the specified number of times, reporting
+on the number of failed runs. With
+.BR \-f ,
+run until the first failure. If
+.B -n
+option is not supplied, run indefinitely. You'll usually want to
+combine this with
+.BR \-f .
+.PP
+.B shrep
+can also run the command in parallel with
+.B \-j
+.IR jobs ,
+meaning run up to
+.I jobs
+instances of
+.I cmd
+concurrently.
+.PP
+By default,
+.B shrep
+runs your command without a shell, which is why it takes
+.I cmd
+followed by any number of
+.IR arg s.
+If any of your arguments start with hyphen, you'll need to use \-\- to separate
+.BR shrep 's
+arguments from your command.
+.PP
+If you need to do redirection, pipes, or other shell trickery, use
+.B -c
+to run
+.I cmd
+through a shell, with no additional arguments.
+.PP
+You can use
+.B \-o
+.I outdir
+and
+.B \-k
+to keep the output of child processes rather than have them clutter up
+your terminal.
+.PP
+.BR shrep 's
+intended use case is troubleshooting a program (or a test suite) that
+fails intermittently. Maybe it's a multi-threaded program suffering
+from a race condition, or a C program with an occasional segmentation
+fault. If you've ever debugged such a program, you know why
+.B shrep
+exists.
+
+.SH OPTIONS
+.TP
+.BR \-n ", " \-\-reps =\fInumreps\fR
+Run the command
+.I numreps
+times. Without
+.BR -n ,
+run indefinitely (or until the first failure, if you pass
+.BR -f ).
+.TP
+.BR \-j ", " \-\-jobs =\fIjobs\fR
+Run child processes in parallel, up to
+.I jobs
+at once.
+.TP
+.BR \-f ", " \-\-fail-early
+Stop after the first failed child process. When combined with
+.BR -j,
+there can be multiple failures: there will probably be multiple
+children running when the first failure is detected, and more of those
+children might fail.
+.TP
+.BR \-c ", " \-\-shell
+Run
+.I cmd
+under a shell. Equivalent to running
+.PP
+.nf
+.RS
+shrep N \-\- /bin/sh -c cmd
+.RE
+.fi
+.PP
+.TP
+.BR \-o ", " \-\-output =\fIoutdir\fR
+Keep output of child processes (combined stdout and stderr) in
+.IR outdir,
+one file per child. Files will be named like
+.IR shrep\-pid.out
+where
+.I pid
+is the process ID of that child.
+.TP
+.BR \-k ", " \-\-keep\-only\-failed
+When combined with
+.BR -o ,
+keep only the output of failed children. (All child output will be
+redirected to temp files in
+.IR outdir ,
+but
+.B shrep
+will delete the output of successful children.)
+
+.SH EXAMPLES
+Run your problematic test suite ten times:
+.PP
+.nf
+.RS
+shrep -n 10 ./mytest
+.RE
+.fi
+.PP
+Run it ten times, this time passing an option:
+.PP
+.nf
+.RS
+shrep -n 10 -- ./mytest -v
+.RE
+.fi
+.PP
+Run it ten times with an option, using a shell redirect to discard
+stdout (keeping stderr):
+.PP
+.nf
+.RS
+shrep -n 10 -c "./mytest -v > /dev/null"
+.RE
+.fi
+.PP
+Run your test indefinitely, stopping after the first failure. Leave
+stdout and stderr alone (the default):
+.PP
+.nf
+.RS
+shrep -f ./mytest
+.RE
+.fi
+.PP
+Run it up to ten times, stopping after the first failure, keeping the
+output of each run in a file in
+.IR testout :
+.PP
+.nf
+.RS
+shrep -f -o testout -n 10 ./mytest
+.RE
+.fi
+.PP
+Run it ten times, keeping the output of only failed runs in
+.IR testout :
+.PP
+.nf
+.RS
+shrep -o testout -k -n 10 ./mytest
+.RE
+.fi
+.PP
+(In this case,
+.B shrep
+redirects the output of each child process to a temporary file in
+.IR testout ,
+but immediately deletes the output of successful runs.)
