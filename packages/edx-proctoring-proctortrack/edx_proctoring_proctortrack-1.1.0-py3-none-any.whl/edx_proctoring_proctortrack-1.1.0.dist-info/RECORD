@@ -1,0 +1,11 @@
+edx_proctoring_proctortrack/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edx_proctoring_proctortrack/backends/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edx_proctoring_proctortrack/backends/proctortrack_rest.py,sha256=_TjFoXlO7H_JwWix5QBtYjy1unJ95fJZSOZFtbNrNkM,1848
+edx_proctoring_proctortrack/static/proctortrack_custom.js,sha256=cDEjMPFZ60ObBWZc1ArUWiDF_xKSeK5IXVog-ycbK3A,2927
+edx_proctoring_proctortrack-1.1.0.dist-info/AUTHORS,sha256=W4yFB4K8vSPAMOzHrftmoAKrpvSaMFejDaIxOsek13Y,140
+edx_proctoring_proctortrack-1.1.0.dist-info/LICENSE.md,sha256=wQqRJjkbOdO10-JC9s774z9-TJ_ea2pK21wV21ZYYnk,11359
+edx_proctoring_proctortrack-1.1.0.dist-info/METADATA,sha256=9663tWYiDm9CXoPHiyTgFOjtLFds2DESdhpHdCA6Sfs,846
+edx_proctoring_proctortrack-1.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+edx_proctoring_proctortrack-1.1.0.dist-info/entry_points.txt,sha256=mYTYne-uAn8PiK_nLG5wPZAwhgjkC8CuGa-vm7KnzrA,120
+edx_proctoring_proctortrack-1.1.0.dist-info/top_level.txt,sha256=bUrnfGKs-_IafBY7Y6puUkQjP_QU318F2vAg-ULwncE,28
+edx_proctoring_proctortrack-1.1.0.dist-info/RECORD,,
