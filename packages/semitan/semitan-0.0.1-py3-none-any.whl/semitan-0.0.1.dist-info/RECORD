@@ -1,0 +1,7 @@
+semitan/__init__.py,sha256=8C1dnyYLLUwCfbuNltSUa_8NsY1D41uXGyU5kvFFHCI,2808
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_semitan.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+semitan-0.0.1.dist-info/METADATA,sha256=r3Jxdf1Ysrq2e-L8wB9nCsgI0gv1Xsb9WqlzRM9aWeg,778
+semitan-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+semitan-0.0.1.dist-info/top_level.txt,sha256=8Sg1plqoGTFNSNV3PAMgP0cQDR6gRX3RrPYONfVN0Xw,14
+semitan-0.0.1.dist-info/RECORD,,
