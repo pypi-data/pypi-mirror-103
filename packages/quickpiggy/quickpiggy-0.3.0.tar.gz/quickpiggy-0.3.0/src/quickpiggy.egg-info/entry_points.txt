@@ -1,0 +1,3 @@
+[console_scripts]
+quickpiggy = quickpiggy:main
+

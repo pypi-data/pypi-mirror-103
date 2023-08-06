@@ -1,0 +1,11 @@
+.gitignore
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/quickpiggy.py
+src/quickpiggy.egg-info/PKG-INFO
+src/quickpiggy.egg-info/SOURCES.txt
+src/quickpiggy.egg-info/dependency_links.txt
+src/quickpiggy.egg-info/entry_points.txt
+src/quickpiggy.egg-info/top_level.txt
