@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "tldr-python"
+version = "1.0.0"
+description = "Python wrapper for the TLDR text summarization and analysis API."
+authors = ["Amol Mavuduru <amolmavuduru@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+keywords = ["tldr", "nlp", "artificial intelligence"]
+classifiers = [
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: Linguistic",
+    "Topic :: Software Development :: Libraries :: Python Modules"]
+include = ["LICENSE",]
+homepage = "https://github.com/AmolMavuduru/tldr-python"
+repository = "https://github.com/AmolMavuduru/tldr-python"
+
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.5"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
