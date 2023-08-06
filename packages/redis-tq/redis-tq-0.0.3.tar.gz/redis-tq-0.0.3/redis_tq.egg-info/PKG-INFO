@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: redis-tq
+Version: 0.0.3
+Summary: Redis Based Task Queue
+Home-page: https://github.com/flix-tech/redis-tq
+Author: FlixTech
+Author-email: open-source@flixbus.com
+License: MIT
+Description: ## Redis-based Task Queue
+        
+        Based on [this example][source]:
+        
+        [source]: http://peter-hoffmann.com/2012/python-simple-queue-redis-queue.html
+        
+        # Run the tests
+        
+        The tests will check the presence of a Redis instance on localhost, you can use
+        
+            docker run --rm -d -p 6379:6379 redis
+        
+        to get one. Then use `make test`, it will take care of creating an appropriate
+        virtualenv and use it to run the tests.
+        
+Keywords: redis task queue
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
