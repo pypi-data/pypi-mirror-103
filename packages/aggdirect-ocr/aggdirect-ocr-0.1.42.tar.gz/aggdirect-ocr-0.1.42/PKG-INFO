@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: aggdirect-ocr
+Version: 0.1.42
+Summary: The core of OCR modeling
+Home-page: UNKNOWN
+Author: Suchita Bhinge
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: OCR,AGGDIRECT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8

@@ -1,0 +1,32 @@
+# YOLO model
+yolov3:
+  model_dir: aggdirect_ocr_models/
+  anchors_path: aggdirect_ocr_models/yolov3_anchors.txt
+  classes_path: aggdirect_ocr_models/yolov3_data_classes.txt
+  train_data_dir : aggdirect_ocr_training_data/yolo
+  score: 0.25
+  iou: 0.45
+  gpu_num: 1
+  model_image_height: 416
+  model_image_width: 416
+  batch_size: 32
+  epochs: 11
+  val_split: 0.3
+
+# Classification model
+classifier:
+  model_dir: aggdirect_ocr_models/
+  model_image_height: 180
+  model_image_width: 180
+  classes: ['dump', 'no_dump']
+  train_data_dir : aggdirect_ocr_training_data/classifier
+  batch_size: 32
+  epochs: 20
+  val_split: 0.2
+
+# Tesseract digit recognition model
+digits:
+  model_dir: aggdirect_ocr_models/
+  lang: digits_latest
+  oem: 3
+  psm: 8
