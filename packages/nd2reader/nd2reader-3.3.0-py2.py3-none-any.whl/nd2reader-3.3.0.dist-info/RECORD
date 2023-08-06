@@ -1,0 +1,17 @@
+nd2reader/__init__.py,sha256=MrB8abiCX3ETVvJPpKvhJaUIOmvbDktsw6CDx9o-0zw,300
+nd2reader/artificial.py,sha256=wZp0ti1-58RkPLmODjzv2b71RltIBDTTp8S2EH8cEwY,9918
+nd2reader/common.py,sha256=okjf5gizF6c9-2jEVFk2bxmu_i5LrEnKZJJIupp9A9s,9144
+nd2reader/common_raw_metadata.py,sha256=RnWJgLNGuIuQtCF9-o7au1maUA5yWc9MvUi62OhEd9E,3208
+nd2reader/exceptions.py,sha256=0pfx7w62LrttERcZfCfGdIrQZj7pbbVMLrlm9PPtoew,408
+nd2reader/label_map.py,sha256=nHaZ3a-mbA285b64LeroNXMZpSIKPYXydJ_PVExHzrY,7180
+nd2reader/legacy.py,sha256=7-EVpfHqlz5NBAmBfF6Iadg0A8TuraVP0UtAyXcUQSY,4510
+nd2reader/parser.py,sha256=rnNVMHHZGVQy0p0Z_hz2OEBog5AwZJ76K647rpuf0Kk,12571
+nd2reader/raw_metadata.py,sha256=p00MzcrKvVaE7zzLhMFTd5vpAQTw8M4QKGQCom46yQk,21800
+nd2reader/reader.py,sha256=6Mj1az5-XcIHHRztCdN9wAmdVamCsZsiDdjOWjD8wII,6360
+nd2reader/stitched.py,sha256=I_rbylzMLSr3e7qtTCc0DWQ8WYzFF98Q6IBro-E4BQY,2445
+nd2reader-3.3.0.dist-info/COPYING,sha256=ROWcS19L_B-RueH8ih2XMHdiPjRRO22I0FqcFj7M-4Q,659
+nd2reader-3.3.0.dist-info/LICENSE,sha256=0ElQUwUZZ-vnb7H6zSh9edHtgA2hvnXPUBpVa8OaBHI,32471
+nd2reader-3.3.0.dist-info/METADATA,sha256=Cb0aCbmW9LgP5LK2uXCp6iBez1V1tRlOUTojmImBICA,948
+nd2reader-3.3.0.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+nd2reader-3.3.0.dist-info/top_level.txt,sha256=mNpyPS2mvfWjkplDzAzM9CMn6YTje2bMX1xnncehPtk,10
+nd2reader-3.3.0.dist-info/RECORD,,
