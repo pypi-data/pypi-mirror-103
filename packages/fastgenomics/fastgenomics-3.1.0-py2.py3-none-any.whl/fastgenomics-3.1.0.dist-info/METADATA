@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: fastgenomics
+Version: 3.1.0
+Summary: FASTGenomics base library
+Home-page: https://beta.fastgenomics.org
+License: UNKNOWN
+Author: FASTGenomics
+Author-email: team@fastgenomics.org
+Description-Content-Type: text/markdown
+Requires-Dist: requests >=2
+Requires-Dist: tqdm >=4
+
+# FASTGenomics Base Library
+
+This package serves as basis for tools managing your data on [FASTGenomics](https://beta.fastgenomics.org).
+
+For further information, have a look at the [FASTGenomics CLI](https://pypi.org/project/fastgenomics-cli/#description).
