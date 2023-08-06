@@ -1,0 +1,16 @@
+_optcc.cpython-37m-x86_64-linux-gnu.so,sha256=ajj7jwnHewMraIzkrVSQqXUr26rVAm8SJJFqw-nZenE,955296
+optcc-4.33.20.dist-info/LICENSE,sha256=CePlUVOEsjuhV2l2Kq_Y5wSw6D-FD11faJo2iOku5DM,1204
+optcc-4.33.20.dist-info/METADATA,sha256=57ZaqXKFr2-sFak7sQWsBd3H4JJOqk6uz-CdN0HRXeg,280
+optcc-4.33.20.dist-info/RECORD,,
+optcc-4.33.20.dist-info/WHEEL,sha256=0MSpaUzP5zzwal1dxeHUy0SBa34DZ1IXf7uOC2KAHL4,112
+optcc-4.33.20.dist-info/top_level.txt,sha256=zj9QWTG4mBA6sozclQCMbTCYQYkd3xSSmMvK5q1Ompc,13
+optcc/optcc.py,sha256=twdOkGNqLW1IYcf5bXolYKNWJCU_Pe-3FO9Xn59uczw,24290
+optcc/__init__.py,sha256=_pNhehGpw9OjIC0K6rCqtZ0Ap-ZjjeR8gbG3MlVlnr8,20
+optcc/optcc.i,sha256=oNFHq_AOoQRcyY0i3yK4_PP108K82Wg8vUQucytjMD4,14131
+optcc/C/optcc.c,sha256=H0huFbE1WkMT17o8p_oUm7qXp6p4QDoNLVrCYNvnNvA,43813
+optcc/C/gclgms.c,sha256=BX1vATmk-Jt-cBD35KOKFyOnRwT7gX3avCX9aoawTb8,6347
+optcc/C/optcc.h,sha256=SgNigVIIsUG_UNlpd00a3GBhEkxZov-UlBu2ZRDrdtw,23690
+optcc/C/gcmt.c,sha256=Kb1ZGDXChc6BskHCDbXK_he93qCCymUaqAqUBbztikQ,11716
+optcc/C/optcc_wrap.c,sha256=_HI5OpYlxNxFgqa5Uj35gOeeeNah3-ey32zA-EhYb2o,342894
+optcc/C/gclgms.h,sha256=13L74ugo4Xyt21VyNMjtsW6pw535BCT3Q6ZsCOCDJEw,5553
+optcc/C/gcmt.h,sha256=YnhUhBqNts7qvx61QqIz3bsoiQGBIENZPjfayN_bPNE,3571
