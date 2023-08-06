@@ -1,0 +1,3 @@
+
+class NotCached(Exception):
+    pass
