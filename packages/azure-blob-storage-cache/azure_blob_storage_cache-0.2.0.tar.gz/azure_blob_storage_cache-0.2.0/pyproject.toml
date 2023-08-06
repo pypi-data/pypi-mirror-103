@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "azure_blob_storage_cache"
+version = "0.2.0"
+description = "Azure Blob Storage as object cache"
+authors = ["peder2911 <pglandsverk@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+azure-storage-blob = "^12.8.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
