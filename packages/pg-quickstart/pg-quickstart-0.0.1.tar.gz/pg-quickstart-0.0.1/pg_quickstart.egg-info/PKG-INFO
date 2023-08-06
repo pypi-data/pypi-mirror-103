@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: pg-quickstart
+Version: 0.0.1
+Summary: A collection of tools for students and beginner developers to setup, deploy and utilise a remote relational database
+Home-page: https://github.com/je-c/pg-quickstart
+Author: Jeremy Crow
+Author-email: jeremy.crow95@gmail.com
+License: MIT License
+Description: UNKNOWN
+Keywords: beginner databasing,sql,remote database
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Database :: Database Engines/Servers
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6

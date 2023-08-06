@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pg-quickstart/__init__.py
+pg-quickstart/create.py
+pg-quickstart/utils/__init__.py
+pg-quickstart/utils/db.py
+pg-quickstart/utils/ip.py
+pg-quickstart/utils/tools.py
+pg_quickstart.egg-info/PKG-INFO
+pg_quickstart.egg-info/SOURCES.txt
+pg_quickstart.egg-info/dependency_links.txt
+pg_quickstart.egg-info/requires.txt
+pg_quickstart.egg-info/top_level.txt
