@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: darcyforchheimer
+Version: 0.0.2
+Summary: darcy-forchheimer parameters calculator helper
+Home-page: https://github.com/Hynack/darcyforchheimer
+Author: David Hinojosa
+Author-email: hynack@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: scipy (~=1.6)
+Provides-Extra: dev
+Requires-Dist: pytest (>=6.2.3) ; extra == 'dev'
+
+# darcy-forchheimer calculator
+
+The goal of the package is to help obtaining the Darcy and Forchheimer coefficients, very useful for porous material fluid simulations.
+
+## Installation
+
+Run the following to install:
+
+```python
+pip install darcyforchheimer
+```
+
+## Use
+
+```python
+from darcyforchheimer import calculate_coeficients
+calculate_coefficients([velocity], [pressure], thickness, density, viscosity)
+```
+
+If you want to calculate absolute coefficients, not depending on thickness, include the argument
+
+```python
+calculate_coefficients(..., absolute=True)
+```
+
