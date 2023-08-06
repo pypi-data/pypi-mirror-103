@@ -1,0 +1,67 @@
+Metadata-Version: 1.2
+Name: aprespy
+Version: 2014.4.267
+Summary: Tools for MT.
+Home-page: https://github.com/chaytus/aprespy
+Author: Brady Fry
+Author-email: bradyfry@chaytus.com
+License: MIT license
+Description: =======
+        MtTools
+        =======
+        
+        
+        .. image:: https://img.shields.io/pypi/v/mttools.svg
+                :target: https://pypi.python.org/pypi/mttools
+        
+        .. image:: https://img.shields.io/travis/chaytus/mttools.svg
+                :target: https://travis-ci.com/chaytus/mttools
+        
+        .. image:: https://readthedocs.org/projects/mttools/badge/?version=latest
+                :target: https://mttools.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        
+        
+        
+        Tools for MT.
+        
+        
+        * Free software: MIT license
+        * Documentation: https://mttools.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Credits
+        -------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        =======
+        History
+        =======
+        
+        0.0.0 (2020-10-26)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: aprespy
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
