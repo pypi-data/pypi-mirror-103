@@ -1,0 +1,16 @@
+similar_documents/__init__.py,sha256=fL7nqx2LJonv0cDkTdybHlLnl_WfRmcDN8UwZaKXStM,367
+similar_documents/cli.py,sha256=EN_-BHsDsjz76tvWi_fxbWYk-P6SKfOlIT9AoZ1n2iI,1970
+similar_documents/cmd_utils.py,sha256=NJoMg1mSrzT3uT98ymxIM5arF9pTXH5D5QKqKOPXxVI,1960
+similar_documents/similar.py,sha256=z82I6xXmIhCfah4C_6_CW2l-8ntyeqSSufSIcbiixFE,1178
+similar_documents/text_converter.py,sha256=rVsv1QRFd9V4t9pt9NDlw4aPQjiefEpto0Gp7Bw5Flo,859
+similar_documents/tokenizer.py,sha256=qeqNudBL-rq4LCYdezYZ2kSRkMyf7GxAL0YoMwH7Hvw,559
+similar_documents/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+similar_documents/tests/cmd_utils_test.py,sha256=Ow6XEky3AFlvbYF_Nbm0KisqABoJGessR-rW-7OYWgo,626
+similar_documents/tests/similar_test.py,sha256=manZIFGiShYLJ6c_R6vyX_z_FO6tagnM0rCmuhtWDCg,669
+similar_documents/tests/text_converter_test.py,sha256=CfCHWkk8av_YRiVLR2oG7eR2pdea02V3aeyKIDXXw_w,897
+similar_documents/tests/tokonezer_test.py,sha256=IdKhKLriMOYQeR0cljHGcCvERwGGB4TWKd9hTtrgvuM,339
+similar_documents-0.1.0.data/scripts/similar-documents,sha256=DgrvKfTK_ZK6BPkE4YOWa2c0c7YB5lhrgN0uowx5fN4,261
+similar_documents-0.1.0.dist-info/METADATA,sha256=k61Zyvnnb9stn6lTAK9u16YGz38Yx2fe6vs0EfHlxz0,1911
+similar_documents-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+similar_documents-0.1.0.dist-info/top_level.txt,sha256=RcYm-K8wIs3CWyzuxinNUVd2bykLYzLiFi53m1HNknE,18
+similar_documents-0.1.0.dist-info/RECORD,,
