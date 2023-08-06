@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.py
+fakerabbit/__init__.py
+fakerabbit/fakerabbit.py
+fakerabbit.egg-info/PKG-INFO
+fakerabbit.egg-info/SOURCES.txt
+fakerabbit.egg-info/dependency_links.txt
+fakerabbit.egg-info/requires.txt
+fakerabbit.egg-info/top_level.txt
+tests/__init__.py
+tests/basetest.py
+tests/modeltest.py
+tests/test_create_objects.py
