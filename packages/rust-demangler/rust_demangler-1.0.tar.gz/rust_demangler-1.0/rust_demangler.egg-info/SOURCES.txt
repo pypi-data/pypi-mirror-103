@@ -1,0 +1,11 @@
+README.md
+setup.py
+rust_demangler/__init__.py
+rust_demangler/main.py
+rust_demangler/rust.py
+rust_demangler/rust_legacy.py
+rust_demangler/rust_v0.py
+rust_demangler.egg-info/PKG-INFO
+rust_demangler.egg-info/SOURCES.txt
+rust_demangler.egg-info/dependency_links.txt
+rust_demangler.egg-info/top_level.txt
