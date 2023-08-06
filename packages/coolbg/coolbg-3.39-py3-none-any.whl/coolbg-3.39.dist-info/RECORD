@@ -1,0 +1,15 @@
+bgeditor/__init__.py,sha256=epmgpNhB34FU2qlEuH58JeM8-kRenkiEvJU4Rx2zdJU,1695
+bgeditor/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bgeditor/common/image_helper.py,sha256=a5EV4wUPcJS3-VMMxcDOdgDCc_fezYmdbfnUgJjp_cQ,445
+bgeditor/common/utils.py,sha256=KJHVEwcrtBPE1QTSHl7FTj3M8_TfD-E9jkjWgVwQGTo,3267
+bgeditor/dao/Component.py,sha256=u5utMnmY1UNYbk3asEGbpmuPubPslsjpfSzjuh-v4P8,14680
+bgeditor/dao/FFmpeg.py,sha256=E-QwIXarkQUc0noH82dtPmE14xgNXzSfHBiwDmzMBt4,7063
+bgeditor/dao/Lyric.py,sha256=sDOXVSGff0cdPFiUQS9Q_8aoM9g3UFmRGjwXSm0t3jg,4555
+bgeditor/dao/Matrix.py,sha256=EdCQ2lwqc3uBwPq1D_p13mk-ugCEaFUr5KL8WqzaC9E,3828
+bgeditor/dao/MusicHelper.py,sha256=kcEs1-HPB5iK_1Bs2VZIi5KTxFKgT8eQf331dYYWNRM,2041
+bgeditor/dao/Summon.py,sha256=T686BUo46MXhqbJxius_HyjY9BekpIokWsXgk64egQg,3276
+bgeditor/dao/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coolbg-3.39.dist-info/METADATA,sha256=bEPUqSqeNwRXGSebBox2IOG3-vsqx33C1_qg6JthE3Y,519
+coolbg-3.39.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+coolbg-3.39.dist-info/top_level.txt,sha256=r3uDi8g8O7pkQ3gku4B8Hs31EIkpPktIcxT1vbOJ7Do,9
+coolbg-3.39.dist-info/RECORD,,
