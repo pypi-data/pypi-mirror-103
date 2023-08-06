@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/QieyunEncoder/__init__.py
+src/QieyunEncoder/_拓展音韻屬性.py
+src/QieyunEncoder/常量.py
+src/QieyunEncoder/音韻地位.py
+src/qieyun_encoder.egg-info/PKG-INFO
+src/qieyun_encoder.egg-info/SOURCES.txt
+src/qieyun_encoder.egg-info/dependency_links.txt
+src/qieyun_encoder.egg-info/top_level.txt
