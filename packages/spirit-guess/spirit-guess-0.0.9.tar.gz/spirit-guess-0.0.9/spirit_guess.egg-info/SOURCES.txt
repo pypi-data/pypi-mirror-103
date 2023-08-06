@@ -1,0 +1,14 @@
+README.md
+setup.py
+spirit_guess/__init__.py
+spirit_guess/enchant_detect.py
+spirit_guess/languages.py
+spirit_guess/ngram_detect.py
+spirit_guess/ngram_model.py
+spirit_guess/orthography.py
+spirit_guess/tokenize.py
+spirit_guess.egg-info/PKG-INFO
+spirit_guess.egg-info/SOURCES.txt
+spirit_guess.egg-info/dependency_links.txt
+spirit_guess.egg-info/requires.txt
+spirit_guess.egg-info/top_level.txt
