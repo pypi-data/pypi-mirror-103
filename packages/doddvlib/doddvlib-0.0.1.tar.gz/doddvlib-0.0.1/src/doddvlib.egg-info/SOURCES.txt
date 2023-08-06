@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+src/doddvlib/__init__.py
+src/doddvlib.egg-info/PKG-INFO
+src/doddvlib.egg-info/SOURCES.txt
+src/doddvlib.egg-info/dependency_links.txt
+src/doddvlib.egg-info/top_level.txt

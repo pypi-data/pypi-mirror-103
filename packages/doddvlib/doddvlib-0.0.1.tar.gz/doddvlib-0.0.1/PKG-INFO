@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: doddvlib
+Version: 0.0.1
+Summary: redacted
+Home-page: http://try.microchip.com
+Author: Microchip Technology
+Author-email: support@microchip.com
+License: UNKNOWN
+Description: # doddvlib
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
