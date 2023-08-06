@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: 8ball_pycon_demo
+Version: 0.0.2
+Summary: 8 Ball for the terminal
+Home-page: https://github.com/
+Author: Cole Wilson
+Author-email: bob@google.com
+License: none
+Description: 
+        	# 8Ball
+        	8 Ball for the terminal
+        	### Contributors
+        	- Cole Wilson
+        	### Contact
+        	<bob@google.com>
+        	
+Keywords: 8ball ball 8 magic
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
