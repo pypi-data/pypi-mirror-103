@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: fastreport
+Version: 0.0.3
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Kishore
+Author-email: <kishoresshankar@gmail.com>
+License: UNKNOWN
+Keywords: python,recommendation algorithm,recommender,recommendation
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+# Easyreport
+
+
+Link to [PyPI](https://pypi.org/project/easyreport/)
+
+
+## Installation
+
+Run the following to install:
+
+```python
+pip install fastreport
+```
+
+## Usage
+
+```python
+import report
+
+# get classification_report
+report.classification_report(df_features,df_target,test_size=0.3)
+```
+
+## Future works
+1. Optimization
+2. Add more functionality
+
+## Drawbacks
+1. Not suitable for large datasets
+2. Limited to existing users only
+
+
