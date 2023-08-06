@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: yokr
+Version: 0.3.2
+Summary: A client for Yokaranda SaaS
+Home-page: https://yokaranda.com
+Author: Gadi Solotorevsky
+Author-email: gadi.solotorevsky@yokaranda.com
+License: BSD-3-Clause
+Description: 
+        Q. What is Yokaranda?
+        A. See yokaranda.com
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/plain

@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+dev_requirements.txt
+setup.py
+yokr/__init__.py
+yokr/create_tables.sql
+yokr/yokr.py
+yokr.egg-info/PKG-INFO
+yokr.egg-info/SOURCES.txt
+yokr.egg-info/dependency_links.txt
+yokr.egg-info/requires.txt
+yokr.egg-info/top_level.txt
+yokr/test/__init__.py
+yokr/test/client.py
+yokr/test/manualtest.py
+yokr/test/server.py
