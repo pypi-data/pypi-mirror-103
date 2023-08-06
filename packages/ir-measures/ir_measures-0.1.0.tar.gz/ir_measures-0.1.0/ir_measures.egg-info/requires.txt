@@ -1,0 +1,4 @@
+pytrec-eval==0.5
+
+[trectools]
+trectools>=0.0.44
