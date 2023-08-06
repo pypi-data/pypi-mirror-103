@@ -1,0 +1,9 @@
+README.md
+setup.py
+feishuoauthenticator/__init__.py
+feishuoauthenticator/feishu.py
+jupyterhub_feishu_oauthenticator.egg-info/PKG-INFO
+jupyterhub_feishu_oauthenticator.egg-info/SOURCES.txt
+jupyterhub_feishu_oauthenticator.egg-info/dependency_links.txt
+jupyterhub_feishu_oauthenticator.egg-info/requires.txt
+jupyterhub_feishu_oauthenticator.egg-info/top_level.txt
