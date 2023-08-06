@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+kabu.egg-info/PKG-INFO
+kabu.egg-info/SOURCES.txt
+kabu.egg-info/dependency_links.txt
+kabu.egg-info/top_level.txt
