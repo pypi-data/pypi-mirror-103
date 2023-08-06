@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/arrpy/__init__.py
+src/arrpy/_basicrows.py
+src/arrpy/_checks.py
+src/arrpy/listprocessor.py
+src/arrpy.egg-info/PKG-INFO
+src/arrpy.egg-info/SOURCES.txt
+src/arrpy.egg-info/dependency_links.txt
+src/arrpy.egg-info/top_level.txt
