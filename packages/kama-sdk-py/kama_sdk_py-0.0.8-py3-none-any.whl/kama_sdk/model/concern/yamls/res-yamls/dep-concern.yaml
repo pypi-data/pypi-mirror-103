@@ -1,0 +1,140 @@
+################## CONCERN DATA ##################
+
+kind: Concern
+id: sdk.concern.deployment
+inherit: sdk.concern.generic_resource
+cached:
+  prom_mem_dump: get::sdk.supplier.concern.dep.prom_mem_dump
+  prom_mem_dump_by_pod: get::sdk.supplier.concern.dep.prom_mem_dump_by_pod
+  pod_statuses: get::sdk.supplier.res_pods_minifier
+
+---
+
+kind: PromDataSupplier
+id: sdk.supplier.concern.dep.prom_mem_dump
+step: 15m
+source: "sum(
+          container_memory_usage_bytes{
+            namespace=\"${get::props kat_res=>namespace}\",
+            pod=~'${get::props kat_res=>name}-.*'
+          }
+        )"
+
+---
+
+kind: PromDataSupplier
+step: 15m
+id: sdk.supplier.concern.dep.prom_mem_dump_by_pod
+source: "sum by(pod) (container_memory_usage_bytes{
+                          namespace=\"${get::props kat_res=>namespace}\",
+                          pod=~'${get::props kat_res=>name}-.*'
+                        }
+                      )"
+---
+
+
+
+
+
+################## DETAIL AND SET ADAPTERS ##################
+
+
+
+
+
+
+kind: ConcernTable
+id: sdk.concern.resource_tables.deployments
+title: Deployments
+concern_shell: id::sdk.concern.deployment
+concern_constructors:
+  kind: ResourcesSupplier
+  inherit: sdk.supplier.concern.resource_selector_to_constructors
+  selector: "expr::deployments:*"
+columns:
+  - id::sdk.concern_attr.res.name_with_link_action
+  - id::sdk.concern_attr.res.ternary_status
+  - id::sdk.concern_attr.dep.pod_statuses
+  - id::sdk.concern_attr.res.memory_series_summary
+  - id::sdk.concern_attr.res.created_at
+
+---
+
+kind: ConcernDetailAdapter
+id: sdk.concern_detail.deployment
+inherit: sdk.concern_detail_adapter.res.generic
+concern_shell: id::sdk.concern.deployment
+attribute_panels:
+  - id::sdk.attr_panel.deployment.basic
+value_panels:
+  - id::sdk.concern_attr.dep.memory_series_by_pod
+related_sets:
+  - id::sdk.concern.resource_tables.deployment_pods
+
+---
+
+kind: AttrPanelDescriptor
+id: sdk.attr_panel.deployment.basic
+title: Basic Attributes
+
+attributes:
+  - id::sdk.concern_attr.res.name
+  - id::sdk.concern_attr.res.namespace
+  - id::sdk.concern_attr.res.ternary_status
+  - id::sdk.concern_attr.res.created_at
+
+---
+
+kind: ConcernTable
+id: sdk.concern.resource_tables.deployment_pods
+title: Pods
+concern_shell: id::sdk.concern.pod
+concern_constructors:
+  kind: ResourcesSupplier
+  inherit: sdk.supplier.concern.resource_selector_to_constructors
+  selector:
+    res_kind: pods
+    namespace: get::props concern=>namespace
+    label_selector: get::props concern=>kat_res.pod_select_labels
+columns:
+  - id::sdk.concern_attr.res.name_with_link_action
+  - id::sdk.concern_attr.res.ternary_status
+  - id::sdk.concern_attr.pod.container_statuses
+  - id::sdk.concern_attr.res.memory_series_summary
+  - id::sdk.concern_attr.res.created_at
+
+---
+
+
+
+
+
+################## ATTRIBUTE ADAPTERS ##################
+
+
+
+
+
+
+kind: ConcernAttrAdapter
+id: sdk.concern_attr.dep.pod_statuses
+title: Pods
+label: pod_statuses
+value:
+  type: StatusDots
+  data: get::props concern=>pod_statuses
+
+---
+
+kind: ConcernAttrAdapter
+id: sdk.concern_attr.dep.memory_series_by_pod
+title: Memory
+value:
+  type: TimeseriesGraph
+  style:
+    width: 100%
+    height: 300px
+  data:
+    kind: PromMatrixToSeriesSupplier
+    source: get::props concern=>prom_mem_dump_by_pod
+    humanizer: kind::BytesHumanizer

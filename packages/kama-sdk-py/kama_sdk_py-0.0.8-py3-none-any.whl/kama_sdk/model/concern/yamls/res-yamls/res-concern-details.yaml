@@ -1,0 +1,9 @@
+kind: ConcernDetailAdapter
+id: sdk.concern_detail_adapter.res.generic
+title: get::props concern=>long_title
+attribute_panels: []
+value_panels: []
+config_panels:
+  - id::sdk.concern_attr.res.config
+actions: []
+related_sets: []

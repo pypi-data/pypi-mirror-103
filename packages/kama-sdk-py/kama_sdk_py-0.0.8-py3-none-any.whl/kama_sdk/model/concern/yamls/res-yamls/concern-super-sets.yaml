@@ -1,0 +1,11 @@
+kind: ConcernSuperSet
+id: resources
+sets:
+  - id::sdk.concern.resource_tables.deployments
+  - id::sdk.concern.resource_tables.pods
+
+---
+
+kind: ConcernSuperSet
+id: overview
+sets: []
