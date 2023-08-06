@@ -1,0 +1,10 @@
+arg_services/base/v1/base_pb2.pyi,sha256=n3aaRsM3gInwXPzlQ55L6pF6pd7TUz6H-JaYQRmOvDk,727
+arg_services/base/v1/base_pb2_grpc.pyi,sha256=XhtGx81A4GVfHysvE0eKDQkNk6cVvfNG8nfj-gCplQc,100
+arg_services/entailment/v1/entailment_pb2.pyi,sha256=FWcQ1hZvwuvD9fpQQJakc1knzm40eTcvDJLVP3ehYOY,3080
+arg_services/entailment/v1/entailment_pb2_grpc.pyi,sha256=JY7Ob4r28Mohn0Ty3UCFyVFvcqNAa3gWfRNJjBC9TpQ,680
+arg_services/nlp/v1/nlp_pb2.pyi,sha256=FScgz9Nr9igsH8ri1RgOT56SBNu6wEq5BhgJn7ilhJc,8465
+arg_services/nlp/v1/nlp_pb2_grpc.pyi,sha256=vulVsWx2laqZ0RS9Z7GsHYzFZwkW51WH7P1DvOE_hHk,886
+arg_services_helper/__init__.py,sha256=9_a5SkWLgEXawVL3Tyycm5BU09E6AHCSdfLgQntWPhU,4584
+arg_services-0.1.5.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+arg_services-0.1.5.dist-info/METADATA,sha256=CGcbdF_3J4G8-py7Dvj3pgpC8SIJb6idLZTKxpLwAdo,796
+arg_services-0.1.5.dist-info/RECORD,,
