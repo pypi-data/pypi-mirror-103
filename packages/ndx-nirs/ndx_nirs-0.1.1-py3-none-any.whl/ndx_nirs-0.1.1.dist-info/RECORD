@@ -1,0 +1,13 @@
+ndx_nirs/__init__.py,sha256=op3a4x-jG1I0VxpIcV9NEKC95AWOy8ux7MbKK_hoRPg,6565
+ndx_nirs/spec/ndx-nirs.extensions.yaml,sha256=KnYBHkLVWvdbN88C1yTRCD_n8BreLLBHHD9Fw_MLoKc,5255
+ndx_nirs/spec/ndx-nirs.namespace.yaml,sha256=uL-mwyLzB5cT1rCqjaQz-J0d_mhu-xEBKnwy_qDUiXk,588
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/integration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/integration/test_ndx_nirs.py,sha256=qZKuJzWPfrJj-s7qJcL2aewx6fSUsFtYw8fBuX5Wy_s,3797
+tests/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit/test_ndx_nirs.py,sha256=gVvlqR3v_ATJI4WuI5DxX845keeImauxplux7iEXIgw,10723
+ndx_nirs-0.1.1.dist-info/LICENSE.txt,sha256=fS0CP_M6JGytPb9LeHGm-jc31oGa-wbD-rbZ-tQmraU,1453
+ndx_nirs-0.1.1.dist-info/METADATA,sha256=n5KwzRwh7CbBcMyso_ffmpII8ccsmq9qaRE-sT-2w2g,12438
+ndx_nirs-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ndx_nirs-0.1.1.dist-info/top_level.txt,sha256=pXLFxop-0kMPUXyWDNKfelCagopeji_ALfaqrR17e74,15
+ndx_nirs-0.1.1.dist-info/RECORD,,
