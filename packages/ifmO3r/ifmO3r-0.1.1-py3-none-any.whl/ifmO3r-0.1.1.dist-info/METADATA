@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: ifmO3r
+Version: 0.1.1
+Summary: ifm o3r library
+Home-page: https://www.ifm3d.com
+Author-email: sebastian.voegele@ifm.com
+License: Apache 2.0 License
+Keywords: ifm,o3r,3d
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.11.0)
+Requires-Dist: matplotlib (>=3.3.3)
+Requires-Dist: h5py (<=3.1.0)
+
+# ifmO3r
+
+Tools to configure the ifmO3r and receive images, etc.
+
+- https://ifm3d.com/
+
+## New python environment
+
+To get the best experience, we recommend to use a blank python environment. There are several tools like the built in `venv`(python >= 3.2), `virtualvenv` with more features or even `anaconda` to create these virtual environments. Using `venv` you can do following:
+  `python -m venv [path/name_of_venv]`
+Now you can choose to either use the local, wheel or pip installation.
+
+## 3D viewer
+
+The 3D viewer is also a package on PyPI. You can install the 3D viewer by `pip install ifmO3rViewer`
+
+## Further information
+
+If you need documentation or simple guides/tutorials, take a look on the official homepage:
+https://ifm3d.com
+
+
