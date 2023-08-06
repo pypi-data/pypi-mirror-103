@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+setup.py
+awesomediegopackage/__init__.py
+awesomediegopackage/__main__.py
+awesomediegopackage/advanced_arithmetic.py
+awesomediegopackage/basic_arithmetic.py
+awesomediegopackage.egg-info/PKG-INFO
+awesomediegopackage.egg-info/SOURCES.txt
+awesomediegopackage.egg-info/dependency_links.txt
+awesomediegopackage.egg-info/top_level.txt
