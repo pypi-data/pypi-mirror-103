@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+enotification/enotification.egg-info/PKG-INFO
+enotification/enotification.egg-info/SOURCES.txt
+enotification/enotification.egg-info/dependency_links.txt
+enotification/enotification.egg-info/requires.txt
+enotification/enotification.egg-info/top_level.txt
