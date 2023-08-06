@@ -1,0 +1,10 @@
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+mitsuplccom/__init__.py
+mitsuplccom/plc.py
+mitsuplccom.egg-info/PKG-INFO
+mitsuplccom.egg-info/SOURCES.txt
+mitsuplccom.egg-info/dependency_links.txt
+mitsuplccom.egg-info/top_level.txt

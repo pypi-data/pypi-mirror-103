@@ -1,0 +1,1 @@
+This Library is to communicate with Mitsubishi FX5U PLC.
