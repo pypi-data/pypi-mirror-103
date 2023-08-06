@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: brain-pred-toolbox
+Version: 2.0.1
+Summary: The Brain Predictability toolbox (BPt) is a Python based machine learning library designed to work with a range of neuroimaging data.
+Home-page: http://github.com/sahahn/BPt
+Author: Sage Hahn
+Author-email: sahahn@euvm.edu
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Requires-Dist: scikit-learn (>=0.23.1)
+Requires-Dist: numpy (==1.19.5)
+Requires-Dist: scipy (>=1.2)
+Requires-Dist: pandas (>=1.1.5)
+Requires-Dist: matplotlib (>=3.2.2)
+Requires-Dist: seaborn (>=0.9)
+Requires-Dist: scikit-image (>=0.16)
+Requires-Dist: tqdm (>=4.51)
+Requires-Dist: nevergrad (==0.4.3)
+Requires-Dist: Ipython
+Requires-Dist: joblib (>=1)
+Requires-Dist: loky
+Provides-Extra: extra
+Requires-Dist: lightgbm (>3) ; extra == 'extra'
+Requires-Dist: sweetviz (>2) ; extra == 'extra'
+Requires-Dist: nilearn (>=0.7) ; extra == 'extra'
+Requires-Dist: python-docx ; extra == 'extra'
+Requires-Dist: mvlearn ; extra == 'extra'
+Requires-Dist: imblearn ; extra == 'extra'
+Requires-Dist: networkx ; extra == 'extra'
+Requires-Dist: xgboost (>=1.3) ; extra == 'extra'
+
+UNKNOWN
+
+
