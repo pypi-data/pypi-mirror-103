@@ -1,0 +1,1 @@
+from .client_class import global_trie
