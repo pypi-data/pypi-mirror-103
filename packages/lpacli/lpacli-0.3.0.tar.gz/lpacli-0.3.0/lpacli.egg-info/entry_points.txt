@@ -1,0 +1,3 @@
+[console_scripts]
+lpacli = lpacli.main:main
+
