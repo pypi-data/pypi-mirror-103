@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: pydicates
+Version: 0.1
+Summary: Predicates for Python.
+Home-page: https://github.com/Tiendil/pydicates
+License: BSD-3-Clause
+Keywords: predicates,functional,
+Author: Aliaksei Yaletski (Tiendil)
+Author-email: a.eletsky@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Project-URL: Repository, https://github.com/Tiendil/pydicates
+Description-Content-Type: text/markdown
+
+# Predicates for Python
+
+Library for constuction predicates like `(OwnedBy('alex') | OwnedBy('alice')) & HasTag('game-design')` and applying them to other objects.
+
+## Motivation
+
+I tired from reimplementation of custom predicate logic in my pet projects. So, I implemented that library.
+
+Library focus on usability, not performance. At least, for now.
+
+## Install
+
+```bash
+pip install pydicates
+```
+
+## Use
+
+[Minimal example](./examples/simplest.py)
+
+```python
+from pydicates import Predicate, common
+
+
+def HasTag(tag):
+    return Predicate('has_tag', tag)
+
+
+def has_tag(context, tag, document):
+    return tag in document['tags']
+
+
+common.register('has_tag', has_tag)
+
+
+document = {'tags': ('a', 'b', 'c', 'd')}
+
+
+assert common(HasTag('a') & HasTag('c'), document)
+assert not common(HasTag('a') & HasTag('e'), document)
+assert common(HasTag('a') & ~HasTag('e'), document)
+assert common(HasTag('a') & (HasTag('e') | HasTag('d')), document)
+```
+
+More examples can be found in [./examples](./examples) directory.
+
+See [./examples/documents_check.py](./examples/documents_check.py) for API description.
+
+See [./tests](./tests) for more examples.
+
+## Limitations
+
+- Can not chain redefined comparisons: `a < b < c` is equal to `(a < b) and (b < c)` which translates by Python to `b < c`, because `a < b` is object (Predicate) and always `True`.
+
