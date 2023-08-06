@@ -1,0 +1,14 @@
+tgcf_filter/__init__.py,sha256=EG1moP14YwHDTa2WDW6KpWWhtJdu0Megxts7fNhaCHk,947
+tgcf_replace/__init__.py,sha256=3Pvmn7l25YfVheD2RPX4qNtAL6NPvTlHU80KySjix5A,581
+tgcf/__init__.py,sha256=WHizC8UzElmTH3641zjnMTLUHmP2rliWLTalgHU6vMA,75
+tgcf/cli.py,sha256=VcowN77rzm2SaiQz58Fo5mnU25CYNrqfcObPILPMlk0,1796
+tgcf/config.py,sha256=CWmLqKJg2psESM7dSAr6-bJrrAMOmNq9w80RE-5nOOs,2600
+tgcf/live.py,sha256=EdazmVLqk3M5zrH6aZAfj0PAVRoPj9LCxjSauyp7dyY,3036
+tgcf/past.py,sha256=9NqvO3ca8ShN3pV7FoEYWJIz0zIBGxB4_z75-DbWdg8,1650
+tgcf/plugins.py,sha256=3X5HmwZ57L3LNYZp9G7Vk093391ApWT8hq5dP8XrXOI,1147
+tgcf/utils.py,sha256=kvfam0p6ZHevNaSh_DZvBmTxwGgul0aSpOiWtECpVGc,229
+tgcf-0.1.25.post0.dist-info/entry_points.txt,sha256=QYNmwGuBtfjSj2cCMpZg1RmtLes6DHOrb8EqKMyQiO0,37
+tgcf-0.1.25.post0.dist-info/LICENSE,sha256=GpsSQnpgiF-NkahDuT5nd228eZKU_kC6gyk9QXbY6KQ,1067
+tgcf-0.1.25.post0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+tgcf-0.1.25.post0.dist-info/METADATA,sha256=rc6Tn598tHi8c7Mvf2AxnTAOsqwAPSe22RYoHebzHqI,7589
+tgcf-0.1.25.post0.dist-info/RECORD,,
