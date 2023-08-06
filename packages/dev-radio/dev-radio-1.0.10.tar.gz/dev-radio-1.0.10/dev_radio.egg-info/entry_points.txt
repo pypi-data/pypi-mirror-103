@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        dradio=src.main:dradio
+    
