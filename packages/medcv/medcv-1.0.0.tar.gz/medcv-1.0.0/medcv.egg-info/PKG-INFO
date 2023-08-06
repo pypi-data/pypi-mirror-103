@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: medcv
+Version: 1.0.0
+Summary: OpenCV for medical image
+Home-page: https://github.com/szuboy/medcv#readme
+Author: szuboy
+Author-email: medcv@googlegroups.com
+License: Apache License
+Project-URL: Documentation, https://medcv.readthedocs.io/en/latest/index.html
+Project-URL: Github, https://github.com/szuboy/medcv
+Description: # MedCV
+        Welcome to medcv’s documentation!
+        
+Keywords: OpenCV medical visualization
+Platform: UNKNOWN
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
