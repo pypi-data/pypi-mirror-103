@@ -1,0 +1,4 @@
+[console_scripts]
+pywhat=PyWhat.what:main
+what=PyWhat.what:main
+
