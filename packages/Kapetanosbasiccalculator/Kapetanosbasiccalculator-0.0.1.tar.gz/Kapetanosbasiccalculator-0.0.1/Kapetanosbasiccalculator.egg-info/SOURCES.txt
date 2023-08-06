@@ -1,0 +1,8 @@
+MANIFEST.in
+README.txt
+setup.py
+Kapetanosbasiccalculator.egg-info/PKG-INFO
+Kapetanosbasiccalculator.egg-info/SOURCES.txt
+Kapetanosbasiccalculator.egg-info/dependency_links.txt
+Kapetanosbasiccalculator.egg-info/top_level.txt
+kapetanosbasiccalulator/__init__.py
