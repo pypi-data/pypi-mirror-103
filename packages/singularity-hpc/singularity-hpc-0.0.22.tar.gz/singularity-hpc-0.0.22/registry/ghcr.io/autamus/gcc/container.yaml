@@ -1,0 +1,22 @@
+docker: ghcr.io/autamus/gcc
+url: https://github.com/orgs/autamus/packages/container/package/gcc
+maintainer: '@vsoch'
+description: The GNU Compiler Collection
+latest:
+  10.3.0: sha256:92e25a9d8ae9c9af84376dbd42bd4c65df468aec22266e958de710943d5abba8
+tags:
+  10.3.0: sha256:92e25a9d8ae9c9af84376dbd42bd4c65df468aec22266e958de710943d5abba8
+  latest: sha256:92e25a9d8ae9c9af84376dbd42bd4c65df468aec22266e958de710943d5abba8
+aliases:
+  c++: /opt/view/bin/c++
+  cpp: /opt/view/bin/cpp
+  g++: /opt/view/bin/g++
+  gcc: /opt/view/bin/gcc
+  gcc-ar: /opt/view/bin/gcc-ar
+  gcc-nm: /opt/view/bin/gcc-nm
+  gcc-ranlib: /opt/view/bin/gcc-ranlib
+  gcov: /opt/view/bin/gcov
+  gcov-dump: /opt/view/bin/gcov-dump
+  gcov-tool: /opt/view/bin/gcov-tool
+  gfortran: /opt/view/bin/gfortran
+  zstd: /opt/view/bin/zstd

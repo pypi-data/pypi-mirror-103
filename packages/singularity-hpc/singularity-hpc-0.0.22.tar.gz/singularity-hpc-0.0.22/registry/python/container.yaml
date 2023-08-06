@@ -1,0 +1,14 @@
+docker: python
+url: https://hub.docker.com/_/python
+maintainer: '@vsoch'
+description: An interpreted, high-level and general-purpose programming language.
+latest:
+  3.10.0a7-alpine: sha256:2e625ee489e52418589ea1798b333e9231bc0b72395a2a2aa35c248e97daf760
+tags:
+  3.9.2-alpine: sha256:2e625ee489e52418589ea1798b333e9231bc0b72395a2a2aa35c248e97daf760
+  3.9.2-slim: sha256:2e625ee489e52418589ea1798b333e9231bc0b72395a2a2aa35c248e97daf760
+  3.10.0a7-alpine: sha256:2e625ee489e52418589ea1798b333e9231bc0b72395a2a2aa35c248e97daf760
+filter:
+- 3.9.*
+aliases:
+  python: /usr/local/bin/python

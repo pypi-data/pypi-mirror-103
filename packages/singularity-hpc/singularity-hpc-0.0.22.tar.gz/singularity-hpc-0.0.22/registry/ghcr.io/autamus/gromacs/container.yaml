@@ -1,0 +1,9 @@
+docker: ghcr.io/autamus/gromacs
+url: https://github.com/orgs/autamus/packages/container/package/gromacs
+maintainer: '@vsoch'
+description: A versatile package to perform molecular dynamics.
+latest:
+  "2021.1": sha256:3a7b3f8417691e6e4c0a949d546418d87b01096d5a825df329e35be721365866
+tags:
+  "2021.1": sha256:3a7b3f8417691e6e4c0a949d546418d87b01096d5a825df329e35be721365866
+  latest: sha256:3a7b3f8417691e6e4c0a949d546418d87b01096d5a825df329e35be721365866

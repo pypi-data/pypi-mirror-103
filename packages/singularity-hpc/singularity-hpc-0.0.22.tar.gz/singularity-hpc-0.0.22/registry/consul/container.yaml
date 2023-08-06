@@ -1,0 +1,14 @@
+docker: consul
+url: https://hub.docker.com/_/consul
+maintainer: '@vsoch'
+description: Consul is a datacenter runtime that provides service discovery, configuration,
+  and orchestration.
+latest:
+  1.10.0-beta: sha256:d94fea53aa3d88db24ddfc20e5e100f761173d3c287947a5934f6646a2628944
+tags:
+  "1.7": sha256:d94fea53aa3d88db24ddfc20e5e100f761173d3c287947a5934f6646a2628944
+  1.7.14: sha256:d94fea53aa3d88db24ddfc20e5e100f761173d3c287947a5934f6646a2628944
+  1.10.0-beta: sha256:d94fea53aa3d88db24ddfc20e5e100f761173d3c287947a5934f6646a2628944
+  latest: sha256:0dc30c8081ea3cb4a90c908a571cb4aa469ae9e3d2b27d9fb713031127360e42
+aliases:
+  consul: /bin/consul

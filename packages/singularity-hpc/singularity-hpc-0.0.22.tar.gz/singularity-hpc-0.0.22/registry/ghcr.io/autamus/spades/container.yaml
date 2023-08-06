@@ -1,0 +1,26 @@
+docker: ghcr.io/autamus/spades
+url: https://github.com/orgs/autamus/packages/container/package/spades
+maintainer: '@vsoch'
+description: St. Petersburg genome assembler – an assembly toolkit containing various
+  assembly pipelines.
+latest:
+  3.15.2: sha256:c4c8b5ccd5c8a070ed4db0bdcd5819712466d59a32e41fcb058ae1682b0162f9
+tags:
+  3.15.2: sha256:c4c8b5ccd5c8a070ed4db0bdcd5819712466d59a32e41fcb058ae1682b0162f9
+  latest: sha256:c4c8b5ccd5c8a070ed4db0bdcd5819712466d59a32e41fcb058ae1682b0162f9
+aliases:
+  spades-bwa: /opt/view/bin/spades-bwa
+  spades-convert-bin-to-fasta: /opt/view/bin/spades-convert-bin-to-fasta
+  spades-core: /opt/view/bin/spades-core
+  spades-corrector-core: /opt/view/bin/spades-corrector-core
+  spades-gbuilder: /opt/view/bin/spades-gbuilder
+  spades-gmapper: /opt/view/bin/spades-gmapper
+  spades-gsimplifier: /opt/view/bin/spades-gsimplifier
+  spades-hammer: /opt/view/bin/spades-hammer
+  spades-ionhammer: /opt/view/bin/spades-ionhammer
+  spades-kmer-estimating: /opt/view/bin/spades-kmer-estimating
+  spades-kmercount: /opt/view/bin/spades-kmercount
+  spades-read-filter: /opt/view/bin/spades-read-filter
+  spades-truseq-scfcorrection: /opt/view/bin/spades-truseq-scfcorrection
+  spades.py: /opt/view/bin/spades.py
+  spaligner: /opt/view/bin/spaligner

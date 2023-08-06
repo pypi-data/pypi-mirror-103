@@ -1,0 +1,14 @@
+docker: solr
+url: https://hub.docker.com/_/solr
+maintainer: '@vsoch'
+description: Solr is the popular, blazing-fast, open source enterprise search platform
+  built on Apache Lucene™.
+latest:
+  8.8.2-slim: sha256:58fec3b91450362c8c526aa88b20ff259e0c48fccfbd7c661d4843b91ff49b1a
+tags:
+  8.8.2-slim: sha256:58fec3b91450362c8c526aa88b20ff259e0c48fccfbd7c661d4843b91ff49b1a
+  latest: sha256:06268aa91d74c721056cc8a0df9a99daeed2cf4fdf192f23dab3ebdb68981918
+aliases:
+  post: /opt/solr/bin/post
+  postlogs: /opt/solr/bin/postlogs
+  solr: /opt/solr/bin/solr

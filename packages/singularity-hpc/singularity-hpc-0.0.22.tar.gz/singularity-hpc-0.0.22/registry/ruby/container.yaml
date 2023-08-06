@@ -1,0 +1,24 @@
+docker: ruby
+url: https://hub.docker.com/_/ruby
+maintainer: '@vsoch'
+description: Ruby is a dynamic, reflective, object-oriented, general-purpose, open-source
+  programming language.
+latest:
+  latest: sha256:091ee4779c0d90155b6d1a317855ce64714e6485f9db4413c812ddd112df7dc7
+tags:
+  latest: sha256:091ee4779c0d90155b6d1a317855ce64714e6485f9db4413c812ddd112df7dc7
+aliases:
+  bundle: /usr/local/bin/bundle
+  bundler: /usr/local/bin/bundler
+  erb: /usr/local/bin/erb
+  gem: /usr/local/bin/gem
+  irb: /usr/local/bin/irb
+  racc: /usr/local/bin/racc
+  rake: /usr/local/bin/rake
+  rbs: /usr/local/bin/rbs
+  rdoc: /usr/local/bin/rdoc
+  ri: /usr/local/bin/ri
+  ruby: /usr/local/bin/ruby
+  typeprof: /usr/local/bin/typeprof
+filter:
+- latest

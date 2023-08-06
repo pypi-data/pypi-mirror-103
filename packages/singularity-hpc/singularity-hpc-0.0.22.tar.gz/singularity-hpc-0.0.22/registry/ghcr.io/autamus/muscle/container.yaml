@@ -1,0 +1,11 @@
+docker: ghcr.io/autamus/muscle
+url: https://github.com/orgs/autamus/packages/container/package/muscle
+maintainer: '@vsoch'
+description: Multiple Sequence Alignment.
+latest:
+  3.8.1551: sha256:6431b0d216f0e561170a1e8dcf10be91bec31087b69d3e087645c835b1d83808
+tags:
+  3.8.1551: sha256:6431b0d216f0e561170a1e8dcf10be91bec31087b69d3e087645c835b1d83808
+  latest: sha256:6431b0d216f0e561170a1e8dcf10be91bec31087b69d3e087645c835b1d83808
+aliases:
+  muscle: /opt/view/bin/muscle

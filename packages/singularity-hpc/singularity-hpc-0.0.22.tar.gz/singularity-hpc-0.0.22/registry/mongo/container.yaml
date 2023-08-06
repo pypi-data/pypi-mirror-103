@@ -1,0 +1,23 @@
+docker: mongo
+url: https://hub.docker.com/r/_/mongo
+maintainer: '@vsoch'
+description: MongoDB is a free and open-source cross-platform document-oriented database
+  program. Classified as a NoSQL database program, MongoDB uses JSON-like documents
+  with schemata.
+latest:
+  latest: sha256:b66f48968d757262e5c29979e6aa3af944d4ef166314146e1b3a788f0d191ac3
+tags:
+  latest: sha256:b66f48968d757262e5c29979e6aa3af944d4ef166314146e1b3a788f0d191ac3
+filter:
+- latest
+aliases:
+  mongo: /usr/bin/mongo
+  mongod: /usr/bin/mongod
+  mongodump: /usr/bin/mongodump
+  mongoexport: /usr/bin/mongoexport
+  mongofiles: /usr/bin/mongofiles
+  mongoimport: /usr/bin/mongoimport
+  mongos: /usr/bin/mongos
+  mongostat: /usr/bin/mongostat
+  mongostore: /usr/bin/mongorestore
+  mongotop: /usr/bin/mongotop

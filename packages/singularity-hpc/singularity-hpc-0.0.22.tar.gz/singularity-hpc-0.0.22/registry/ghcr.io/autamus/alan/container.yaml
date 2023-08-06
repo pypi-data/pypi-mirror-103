@@ -1,0 +1,11 @@
+docker: ghcr.io/autamus/alan
+url: https://github.com/orgs/autamus/packages/container/package/alan
+maintainer: '@vsoch'
+description: A simple in-terminal alignment viewer.
+latest:
+  2.1.1: sha256:28a74fb39db78576e9f87d4a5a06e17fd4bf8e7a003de35093e11f976cfbd6a9
+tags:
+  2.1.1: sha256:28a74fb39db78576e9f87d4a5a06e17fd4bf8e7a003de35093e11f976cfbd6a9
+  latest: sha256:28a74fb39db78576e9f87d4a5a06e17fd4bf8e7a003de35093e11f976cfbd6a9
+aliases:
+  alan: /opt/view/bin/alan

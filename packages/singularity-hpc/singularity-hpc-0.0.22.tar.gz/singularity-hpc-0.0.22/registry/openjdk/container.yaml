@@ -1,0 +1,38 @@
+docker: openjdk
+url: https://hub.docker.com/_/openjdk
+maintainer: '@vsoch'
+description: OpenJDK is an open-source implementation of the Java Platform, Standard
+  Edition.
+latest:
+  16.0.1-buster: sha256:a0168916eecee7337948e66604681a40c973715455cdca50ab519b8da3c20760
+tags:
+  16.0.1-buster: sha256:a0168916eecee7337948e66604681a40c973715455cdca50ab519b8da3c20760
+  latest: sha256:3f032cf26beef3150eb2abb5144dfdbfdf9d25cef0580d8b68af9eb0035d47db
+aliases:
+  jar: /usr/bin/jar
+  jarsigner: /usr/bin/jarsigner
+  java: /usr/bin/java
+  javac: /usr/bin/javac
+  javadoc: /usr/bin/javadoc
+  javap: /usr/bin/javap
+  jcmd: /usr/bin/jcmd
+  jconsole: /usr/bin/jconsole
+  jdb: /usr/bin/jdb
+  jdeprscan: /usr/bin/jdeprscan
+  jdeps: /usr/bin/jdeps
+  jfr: /usr/bin/jfr
+  jhsdb: /usr/bin/jhsdb
+  jimage: /usr/bin/jimage
+  jinfo: /usr/bin/jinfo
+  jlink: /usr/bin/jlink
+  jmap: /usr/bin/jmap
+  jmod: /usr/bin/jmod
+  jobs: /usr/bin/jobs
+  join: /usr/bin/join
+  jpackage: /usr/bin/jpackage
+  jps: /usr/bin/jps
+  jrunscript: /usr/bin/jrunscript
+  jshell: /usr/bin/jshell
+  jstack: /usr/bin/jstack
+  jstat: /usr/bin/jstat
+  jstatd: /usr/bin/jstatd
