@@ -1,0 +1,17 @@
+AUTHORS
+CHANGELOG.md
+LICENSE.rst
+README.md
+setup.py
+binalyzer_rest/__init__.py
+binalyzer_rest/cli.py
+binalyzer_rest/rest.py
+binalyzer_rest/utils.py
+binalyzer_rest.egg-info/PKG-INFO
+binalyzer_rest.egg-info/SOURCES.txt
+binalyzer_rest.egg-info/dependency_links.txt
+binalyzer_rest.egg-info/entry_points.txt
+binalyzer_rest.egg-info/requires.txt
+binalyzer_rest.egg-info/top_level.txt
+binalyzer_rest/resources/health.yml
+binalyzer_rest/resources/transform.yml

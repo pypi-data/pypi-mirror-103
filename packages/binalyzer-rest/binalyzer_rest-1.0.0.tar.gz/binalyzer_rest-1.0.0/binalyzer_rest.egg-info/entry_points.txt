@@ -1,0 +1,4 @@
+
+        [binalyzer.commands]
+        rest=binalyzer_rest.cli:rest
+    
