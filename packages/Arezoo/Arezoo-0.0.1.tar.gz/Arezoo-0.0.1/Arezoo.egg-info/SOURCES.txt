@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+Arezoo.egg-info/PKG-INFO
+Arezoo.egg-info/SOURCES.txt
+Arezoo.egg-info/dependency_links.txt
+Arezoo.egg-info/top_level.txt
+Greeting/__init__.py

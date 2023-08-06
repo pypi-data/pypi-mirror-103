@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: Arezoo
+Version: 0.0.1
+Summary: A simple task
+Home-page: UNKNOWN
+Author: arezoo
+Author-email: Arezoo_j1993@hotmail.com
+License: MIT
+Description: It is kind of greating 
+        
+        changelog 0.0.1 (24 april 2021)
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
