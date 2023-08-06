@@ -1,0 +1,76 @@
+parameters:
+  pysparkbundle:
+    filesystem:
+
+    dataframe:
+      show_method: dataframe_show
+
+services:
+  pysparkbundle.logger: '@daipecore.logger'
+
+  pysparkbundle.dataframe.DataFrameShowMethod:
+    tags:
+      - {name: 'pysparkbundle.dataframe.show_method', alias: dataframe_show}
+
+  pysparkbundle.dataframe.show_method:
+    factory: ['@pysparkbundle.dataframe.DataFrameShowMethodInjector', 'get']
+
+  pysparkbundle.dataframe.DataFrameShowMethodInjector:
+    arguments:
+      - !tagged_aliased ['pysparkbundle.dataframe.show_method', '%pysparkbundle.dataframe.show_method%']
+
+  pysparkbundle.filesystem:
+    class: pysparkbundle.filesystem.FilesystemInterface
+    factory: ['@pysparkbundle.filesystem.FilesystemInjector', 'get']
+
+  pysparkbundle.filesystem.FilesystemInjector:
+    arguments:
+      - !tagged_aliased ['pysparkbundle.filesystem', '%pysparkbundle.filesystem%']
+
+  pysparkbundle.read.PathReader.delta:
+    class: pysparkbundle.read.PathReader
+    arguments:
+      - 'delta'
+      - '@pysparkbundle.logger'
+
+  pysparkbundle.read.PathReader.parquet:
+    class: pysparkbundle.read.PathReader
+    arguments:
+      - 'parquet'
+      - '@pysparkbundle.logger'
+
+  pysparkbundle.read.PathReader.json:
+    class: pysparkbundle.read.PathReader
+    arguments:
+      - 'json'
+      - '@pysparkbundle.logger'
+
+  pysparkbundle.read.PathReader.csv:
+    class: pysparkbundle.read.PathReader
+    arguments:
+      - 'csv'
+      - '@pysparkbundle.logger'
+
+  pysparkbundle.write.PathWriter.delta:
+    class: pysparkbundle.write.PathWriter
+    arguments:
+      - 'delta'
+      - '@pysparkbundle.logger'
+
+  pysparkbundle.write.PathWriter.parquet:
+    class: pysparkbundle.write.PathWriter
+    arguments:
+      - 'parquet'
+      - '@pysparkbundle.logger'
+
+  pysparkbundle.write.PathWriter.json:
+    class: pysparkbundle.write.PathWriter
+    arguments:
+      - 'json'
+      - '@pysparkbundle.logger'
+
+  pysparkbundle.write.PathWriter.csv:
+    class: pysparkbundle.write.PathWriter
+    arguments:
+      - 'csv'
+      - '@pysparkbundle.logger'
