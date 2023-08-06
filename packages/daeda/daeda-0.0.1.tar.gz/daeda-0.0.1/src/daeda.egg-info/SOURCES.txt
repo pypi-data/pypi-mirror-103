@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/daeda/__init__.py
+src/daeda.egg-info/PKG-INFO
+src/daeda.egg-info/SOURCES.txt
+src/daeda.egg-info/dependency_links.txt
+src/daeda.egg-info/top_level.txt
