@@ -1,0 +1,7 @@
+LICENSE.txt
+README.md
+setup.py
+example_pkg_lswy09091.egg-info/PKG-INFO
+example_pkg_lswy09091.egg-info/SOURCES.txt
+example_pkg_lswy09091.egg-info/dependency_links.txt
+example_pkg_lswy09091.egg-info/top_level.txt
