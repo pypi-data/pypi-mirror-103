@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+ivanp/__init__.py
+ivanp/error.py
+ivanp/tkinter_Display.py
+ivanp.egg-info/PKG-INFO
+ivanp.egg-info/SOURCES.txt
+ivanp.egg-info/dependency_links.txt
+ivanp.egg-info/not-zip-safe
+ivanp.egg-info/top_level.txt
