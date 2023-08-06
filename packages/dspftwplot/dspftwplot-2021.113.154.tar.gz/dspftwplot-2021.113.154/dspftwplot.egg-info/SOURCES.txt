@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+VERSION
+setup.cfg
+setup.py
+dspftwplot/__init__.py
+dspftwplot/constellation_plot.py
+dspftwplot/exceptions.py
+dspftwplot/plot_3d_complex.py
+dspftwplot/plot_complex.py
+dspftwplot/plot_func_slider.py
+dspftwplot/plot_slider.py
+dspftwplot.egg-info/PKG-INFO
+dspftwplot.egg-info/SOURCES.txt
+dspftwplot.egg-info/dependency_links.txt
+dspftwplot.egg-info/requires.txt
+dspftwplot.egg-info/top_level.txt
