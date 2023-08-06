@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: nasa.py
+Version: 0.1.0
+Summary: An async ready wrapper for the NASA Open API's
+Home-page: UNKNOWN
+Author: quiktea
+Author-email: wishymovies@gmail.com
+License: UNKNOWN
+Project-URL: GitHub, https://github.com/quiktea/nasa.py
+Keywords: python,nasa,api,mars,rover
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp
+
+# nasa.py
+An easy to use, async ready wrapper for the NASA Open API's.
+
+## Key Features
+- Intuitive Syntax deriving from API Names
+- Proper Exception Handling
+- 100% coverage of each supported API
+
+## Installing
+
+There are a few ways which you can install the Library. To install the stable version, simply run the following commands:
+```sh
+# Linux/macOS
+python3 -m pip install -U nasa.py
+
+# Windows
+py -3 -m pip install -U nasa.py
+```
+
+To install the Library with its http speedups, simply run the same commands but with the following alterations:
+```sh
+# Linux/macOS
+python3 -m pip install -U "nasa.py[speedups]"
+
+# Windows
+py -3 -m pip install -U nasa.py[speedups]
+```
+
+You can install the development version, you can do the following:
+```sh
+$ git clone https://github.com/quiktea/nasa.py
+$ cd nasa.py
+$ python3 -m pip install -U .[speedups]
+```
+
+
+## Examples
+
+All of the library's syntax is heavily inspired by the NASA Open API names. For example, to fetch the `apod` api, you can simply run the `await .apod` method.
+
+###  Astronomy Picture of the Day (APOD)
+```py
+from nasa import Client
+client = Client("api_key") #providing an invalid api key or no api key will raise an Invalid API_KEY Error
+apod_result = await client.apod()
+video = apod_result.media.video
+print(video)
+print(video.url)
+```
+This will return:
+```sh
+>>> <Video url='https://www.youtube.com/embed/badXkJ6BnOs?rel=0'>
+>>> https://www.youtube.com/embed/badXkJ6BnOs?rel=0
+```
+
+
+## Getting an API Key
+
+To get an API Key, simply visit the [Nasa Open API](https://api.nasa.gov/) website, fill out the form and get your api key!
+
+![API Key Generate Info](https://i.imgur.com/cLxJHN4.png)
+
+
+## Currently Supported API's
+
+- APOD (Astronomy Picture of the Day)
+
+
