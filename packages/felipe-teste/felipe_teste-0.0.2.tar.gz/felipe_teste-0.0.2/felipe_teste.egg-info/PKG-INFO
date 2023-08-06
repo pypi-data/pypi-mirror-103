@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: felipe-teste
+Version: 0.0.2
+Summary: A teste package
+Home-page: https://github.com/sfmpds/felipe_teste/
+Author: Felipe Marcelo
+Author-email: felipemarcelo@usp.br
+License: UNKNOWN
+Description: # felipe_teste
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
