@@ -1,0 +1,3 @@
+[console_scripts]
+ytsubtitles = ytsubtitles:download_subs_arguments
+
