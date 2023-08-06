@@ -1,0 +1,17 @@
+plover_melani/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plover_melani/system.py,sha256=cdSA-Yh8fFEGe2ugvgT1qYPXl0k2E7sLRm5OrLVY3U0,4866
+plover_melani/theory.py,sha256=2CVYKLH8b87oPQhgYeOG0rV8a7A2JJM5njUjqtWn4Wc,5065
+plover_melani/dictionaries/melani_main.json,sha256=Fftx2HXbukES_gB9w1XlzAk6hHXifwHDsIRq1lnl1GA,97493
+plover_melani/dictionaries/melani_orthography.json,sha256=LwaEQuNFJSxmKXoRVro2ANCw41MwZwyAJM58VvhD0vk,2454
+plover_melani/dictionaries/melani_orthography.py,sha256=2lgOcinwSsxcHxEK2mxOoH6PPXeqONExHtbw0y5rQD4,639
+plover_melani/dictionaries/melani_user.json,sha256=jrlby8FUUwkx4V_EGMix_pkQlWcUCVUgmeoapZaZnt4,3
+plover_melani/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plover_melani/scripts/sortdict.py,sha256=MWr5N2L2rHdbP5XZSajjeeE-Mu40z0n8WpV9bBaDQp4,1574
+plover_melani/scripts/testortho.py,sha256=axZZPeLrcCxchz_CGbm1NyXUqGozNCvXPelgIGfh6F8,789
+plover_melani/scripts/voc2json.py,sha256=6nrMbWVeLv8TuiDQlfkwp3J94yJu9RexIT7r2JnpnaQ,9641
+plover_melani-0.5.8.dist-info/METADATA,sha256=dOhlXcYTDS8h2_H8rW2TuQhFl0frbyuWYpRTXVXgnGg,1544
+plover_melani-0.5.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+plover_melani-0.5.8.dist-info/entry_points.txt,sha256=yP2Mbh5tGyKL5wZFfQcSzTUs3x75NGUHIZerjNQ3AIM,227
+plover_melani-0.5.8.dist-info/top_level.txt,sha256=lOLOJdLhIfPHnrZM_gM_KEJgv8pS-mLpvdVuEewKgAc,14
+plover_melani-0.5.8.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+plover_melani-0.5.8.dist-info/RECORD,,
