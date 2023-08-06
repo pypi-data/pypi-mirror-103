@@ -1,0 +1,6 @@
+pelican/plugins/table_wrapper/__init__.py,sha256=nxZUNpJbKxFQgRAtvhu7jUrCMOsZ-Abvoh92HldTnzg,37
+pelican/plugins/table_wrapper/table_wrapper.py,sha256=I_yY5g6znX8gaIQ4EUcVpGfbzK9hlJHjxiES2MToh6o,2683
+pelican/plugins/table_wrapper/test_table_wrapper.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pelican_table_wrapper-1.0.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+pelican_table_wrapper-1.0.1.dist-info/METADATA,sha256=F98IVD_XbQUMYQ5bXzALgV8wxZDbNFvvs9jlQIqh_Vk,2959
+pelican_table_wrapper-1.0.1.dist-info/RECORD,,
