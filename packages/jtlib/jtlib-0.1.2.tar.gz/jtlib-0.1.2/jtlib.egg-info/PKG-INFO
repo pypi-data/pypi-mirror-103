@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: jtlib
+Version: 0.1.2
+Summary: Utility library
+Home-page: https://github.com/joeyturczak/jtlib
+Author: Joey Turczak
+Author-email: joeyturczak@gmail.com
+License: MIT
+Description: # jtlib
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
