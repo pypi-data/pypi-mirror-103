@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: ensmallen
+Version: 0.0.1
+Summary: Placeholder package, soon package will be uploaded!
+Home-page: https://github.com/LucaCappelletti94/compress_json
+Author: Luca Cappelletti
+Author-email: cappelletti.luca94@gmail.com
+License: MIT
+Description: Placeholder package, soon package will be uploaded!
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
