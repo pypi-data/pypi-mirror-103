@@ -1,0 +1,3 @@
+[console_scripts]
+differ=response_differ.response_diff.cli:differ
+
