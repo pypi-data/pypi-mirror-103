@@ -1,0 +1,160 @@
+Metadata-Version: 2.1
+Name: uge2slurm
+Version: 0.1.3
+Summary: Grid Engine to Slurm command converter
+Home-page: https://github.com/ronin-gw/uge2slurm
+Author: Hayato Anzawa
+Author-email: anzawa@sb.ecei.tohoku.ac.jp
+License: UNKNOWN
+Description: uge2slurm
+        =========
+        
+        [![PyPI version](https://img.shields.io/pypi/v/uge2slurm.svg)](https://pypi.org/project/uge2slurm/)
+        [![PyPI pyversions](https://img.shields.io/pypi/pyversions/uge2slurm.svg)](https://pypi.org/project/uge2slurm/)
+        
+        Grid Engine to Slurm command converter
+        
+        * * *
+        
+        ## Installation
+        
+        uge2slurm provides conversion from `qsub` command in UGE/SGE to Slurm's `sbatch`
+        command.
+        
+        ```
+        pip install uge2slurm
+        ```
+        
+        After installation, the following commands are available.
+        - uge2slurm [{qsub}]
+        - qsub \<qsub args>
+        
+        The following commands are installed as a part of uge2slurm but current version
+        does not support command conversions.
+        
+        - qacct
+        - qalter
+        - qconf
+        - qdel
+        - qhold
+        - qhost
+        - qlogin
+        - qmake
+        - qmod
+        - qmon
+        - qping
+        - qquota
+        - qralter
+        - qrdel
+        - qresub
+        - qrls
+        - qrsh
+        - qrstat
+        - qrsub
+        - qselect
+        - qsh
+        - qstat
+        
+        
+        ## Command usage
+        
+        These options are commonly available for all subcommands.
+        
+        #### -?/--help
+        Show help message and exit.
+        
+        #### --version
+        Show version info and exit.
+        
+        #### --ignore-coloring
+        Disable colored output.
+        
+        #### --verbose [{"critical"|"fatal","error","warn"|"warning","info","debug",int}]
+        Set verbosity in Python logging level. Default is "warning". If only `--verbose`
+        flag is given, level is set to info.
+        
+        
+        ### uge2slurm
+        List Grid Engine and Slurm commands' existence and exit.
+        
+        ### qsub
+        Convert `qsub` command to `sbatch` command and execute.  
+        The following options can be specified besides `qsub` arguments.
+        
+        #### -n/--dry-run
+        Print converted Slurm command and exit.
+        
+        #### -y/--non-interactive
+        By default, uge2slurm shows a converted command line and get confirmation before
+        the execution when a TTY is allocated. This option disables the preview
+        and the command will be executed immediately.
+        
+        #### --memory resource [...]
+        Specify which resource value should be mapped into `--mem-per-cpu` option.
+        If multiple values are specified, the first valid value will be used.
+        
+        #### --cpus parallel_env [...]
+        Specify which parallel_environment should be mapped into `--cpus-per-task` option.
+        If multiple values are specified, the first valid value will be used.  
+        Note that range values are not supported and its minimum value will be used as
+        the number of cpus.
+        
+        #### --partition resource=partition [...]
+        Specify which resource name should be mapped into partition (queue) via
+        `--partition` option. Resource-partition pairs must be specified by '='
+        separated strings.
+        
+        The partition mapping is solved by the following order:
+        1. use relations specified by `--partition` option when the partition name is
+           exactly matched.
+        2. split partition name by punctuations except '-' and '_' then try exact match
+           on the prefix and resource names.
+        3. try forward matching on partition names and resource names.
+        
+        Examples:
+        ```
+        % sinfo --format "%P"
+        PARTITION
+        gpu.q
+        gpu_intr.q
+        
+        % uge2slurm qsub -n -l gpu_in test.sh
+        sbatch
+        	 --partition gpu_intr.q
+        
+        % uge2slurm qsub -n -l gp test.sh
+        ERROR: Resource specification "gp" matches multiple partitions.
+        WARNING: 	gp -> gpu.q, gpu_intr.q
+        WARNING: Try to add implicit mapping option like `--partition gp=gpu.q`.
+        CRITICAL: Error: failed to map resource into partition.
+        
+        % uge2slurm qsub -n -l gpu test.sh
+        sbatch
+        	 --partition gpu.q
+        
+        % uge2slurm qsub -n --partition gpu=gpu_intr -l gpu test.sh
+        sbatch
+            --partition gpu_intr
+        ```
+        
+Keywords: SGE,UGE,Slurm
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Topic :: System :: Clustering
+Classifier: Topic :: System :: Distributed Computing
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=2.7, !=3.0, !=3.1, <4
+Description-Content-Type: text/markdown
