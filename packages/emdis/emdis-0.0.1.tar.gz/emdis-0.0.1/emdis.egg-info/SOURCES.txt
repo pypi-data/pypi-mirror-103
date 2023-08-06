@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+emdis.egg-info/PKG-INFO
+emdis.egg-info/SOURCES.txt
+emdis.egg-info/dependency_links.txt
+emdis.egg-info/top_level.txt
+openks/__init__.py
+scripts/__init__.py
+tests/__init__.py
