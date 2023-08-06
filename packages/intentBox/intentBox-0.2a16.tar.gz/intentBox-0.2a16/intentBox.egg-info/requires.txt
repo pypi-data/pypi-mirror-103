@@ -1,0 +1,12 @@
+adapt-parser>=0.3.3
+padacioso
+auto_regex
+quebra_frases>=0.3.1
+
+[extras]
+requests
+padaos>=0.1.9
+padatious>=0.4.6
+fann2>=1.0.7
+pronomial>=0.0.8
+RAKEkeywords
