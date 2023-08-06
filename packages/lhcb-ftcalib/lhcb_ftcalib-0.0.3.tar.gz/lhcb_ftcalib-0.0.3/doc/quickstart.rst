@@ -1,0 +1,6 @@
+Quickstart
+==========
+
+```python
+import Tagger
+```
