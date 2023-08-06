@@ -1,0 +1,25 @@
+# Tests & lint
+tox
+tox-conda
+pre-commit
+black
+pytest
+coverage
+pytest-cov
+flake8
+pylint
+
+# Deploy
+twine
+
+# Doc
+pdoc3
+
+# Libs for all platforms
+tqdm
+psutil
+lxml
+colorlog
+rasterio
+rioxarray
+geopandas
