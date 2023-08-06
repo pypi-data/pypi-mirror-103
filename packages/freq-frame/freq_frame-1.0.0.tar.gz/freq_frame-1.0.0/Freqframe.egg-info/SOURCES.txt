@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+Freqframe.egg-info/PKG-INFO
+Freqframe.egg-info/SOURCES.txt
+Freqframe.egg-info/dependency_links.txt
+Freqframe.egg-info/requires.txt
+Freqframe.egg-info/top_level.txt
