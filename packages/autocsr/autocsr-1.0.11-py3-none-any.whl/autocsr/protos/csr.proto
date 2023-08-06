@@ -1,0 +1,378 @@
+syntax = "proto3";
+
+package autocsr;
+
+message CertificateSigningRequest {
+
+  message Subject {
+    string common_name = 1;
+    optional string country_name = 2;
+    optional string state_or_province_name = 3;
+    optional string locality_name = 4;
+    optional string organization_name = 5;
+    optional string organizational_unit_name = 6;
+    optional string email_address = 7;
+  }
+
+  Subject subject = 1;
+
+  enum KeyType {
+    RSA = 0;
+    DSA = 1;
+    EC = 2;
+  }
+
+  enum Curve {
+    SECP256R1 = 0;
+    SECP384R1 = 1;
+    SECP521R1 = 2;
+    SECP192R1 = 3;
+    SECP256K1 = 4;
+    BrainpoolP256R1 = 5;
+    BrainpoolP384R1 = 6;
+    BrainpoolP512R1 = 7;
+    SECT571K1 = 8;
+    SECT409K1 = 9;
+    SECT283K1 = 10;
+    SECT233K1 = 11;
+    SECT163K1 = 12;
+    SECT571R1 = 13;
+    SECT409R1 = 14;
+    SECT283R1 = 15;
+    SECT233R1 = 16;
+    SECT163R2 = 17;
+  }
+
+  message KeyInfo {
+    string key_path = 1;
+    optional bool create = 2;
+    optional KeyType key_type = 3;
+    optional int32 key_size = 4;
+    optional int32 public_exponent = 5;
+    optional Curve curve = 6;
+  }
+
+  message SoftHsm {
+    string token_label = 1;
+    string key_label = 2;
+    string user_pin = 3;
+    string so_file = 4;
+  }
+
+  message HsmInfo {
+    oneof hsm {
+      SoftHsm softhsm = 1;
+    }
+    KeyType key_type = 2;
+    optional int32 key_size = 3;
+    optional int32 public_exponent = 4;
+    optional Curve curve = 5;
+  }
+
+  oneof key {
+    KeyInfo key_info = 2;
+    HsmInfo hsm_info = 3;
+  }
+
+  string output_path = 4;
+
+  enum HashType {
+    SHA256 = 0;
+    SHA224 = 1;
+    SHA384 = 2;
+    SHA512 = 3;
+    SHA512_224 = 4;
+    SHA512_256 = 5;
+    BLAKE2b = 6;
+    BLAKE2s = 7;
+    SHA3_224 = 8;
+    SHA3_256 = 9;
+    SHA3_384 = 10;
+    SHA3_512 = 11;
+    SHAKE128 = 12;
+    SHAKE256 = 13;
+  }
+
+  optional HashType hash_type = 5;
+
+  message Attribute {
+    string oid = 1;
+    string b64_value = 2;
+  }
+
+  repeated Attribute attributes = 6;
+
+  message Extension {
+    bool critical = 1;
+
+    enum ExtensionType {
+      OCSPNoCheck = 0;
+      PrecertPoison = 1;
+    }
+
+    message CRLNumber {
+      int32 crl_number = 1;
+    }
+
+    message SubjectKeyIdentifier {
+      string b64_digest = 1;
+    }
+
+    message BasicConstraints {
+      bool ca = 1;
+      optional int32 path_length = 2;
+    }
+
+    message DeltaCRLIndicator {
+      int32 crl_number = 1;
+    }
+
+    message PolicyConstraints {
+      optional int32 require_explicit_policy = 1;
+      optional int32 inhibit_policy_mapping = 2;
+    }
+
+    message NoticeReference {
+      optional string organization = 1;
+      repeated int32 notice_numbers = 2;
+    }
+
+    message UserNotice {
+      optional NoticeReference notice_reference = 1;
+      optional string explicit_text = 2;
+    }
+
+    message PolicyInformation {
+      string policy_identifier = 1;
+      repeated string string_qualifiers = 2;
+      repeated UserNotice user_qualifiers = 3;
+    }
+
+    message CertificatePolicies {
+      repeated PolicyInformation policies = 1;
+    }
+
+    message ExtendedKeyUsage {
+      repeated string usages = 1;
+    }
+
+    enum TLSFeatureType {
+      unused = 0;
+      status_request = 5;
+      status_request_v2 = 17;
+    }
+
+    message TLSFeature {
+      repeated TLSFeatureType features = 1;
+    }
+
+    message InhibitAnyPolicy {
+      int32 skip_certs = 1;
+    }
+
+    message KeyUsage {
+      bool digital_signature = 1;
+      bool content_commitment = 2;
+      bool key_encipherment = 3;
+      bool data_encipherment = 4;
+      bool key_agreement = 5;
+      bool key_cert_sign = 6;
+      bool crl_sign = 7;
+      bool encipher_only = 8;
+      bool decipher_only = 9;
+    }
+
+    enum ReasonFlags {
+      unspecified = 0;
+      key_compromise = 1;
+      ca_compromise = 2;
+      affiliation_changed = 3;
+      superseded = 4;
+      cessation_of_operation = 5;
+      certificate_hold = 6;
+      privilege_withdrawn = 7;
+      aa_compromise = 8;
+      remove_from_crl = 9;
+    }
+
+    message CRLReason {
+      ReasonFlags reason = 1;
+    }
+
+    message InvalidityDate {
+      string invalidity_date = 1;
+    }
+
+    message SignedCertificateTimestamp {
+      enum Version {
+        v1 = 0;
+      }
+
+      Version version = 1;
+      string b64_log_id = 2;
+      string timestamp = 3;
+
+      enum LogEntryType {
+        X509_CERTIFICATE = 0;
+        PRE_CERTIFICATE = 1;
+      }
+
+      LogEntryType entry_type = 4;
+    }
+
+    message PrecertificateSignedCerticateTimestamps {
+      repeated SignedCertificateTimestamp signed_certificate_timestamps = 1;
+    }
+
+    message SignedCertificateTimestamps {
+      repeated SignedCertificateTimestamp signed_certificate_timestamps = 1;
+    }
+
+    message OCSPNonce {
+      string b64_nonce = 1;
+    }
+
+    message NameAttribute {
+      string oid = 1;
+      string value = 2;
+    }
+
+    message Name {
+      repeated NameAttribute attributes = 1;
+    }
+
+    message RFC822Name {
+      string value = 1;
+    }
+
+    message DNSName {
+      string value = 1;
+    }
+
+    message UniformResourceIdentifier {
+      string value = 1;
+    }
+
+    message DirectoryName {
+      Name value = 1;
+    }
+
+    message RegisteredID {
+      string oid = 1;
+    }
+
+    message IPAddress {
+      string value = 1;
+    }
+
+    message OtherName {
+      string oid = 1;
+      string b64_value = 2;
+    }
+
+    message GeneralName {
+      oneof name {
+        RFC822Name rfc_822_name = 1;
+        DNSName dns_name = 2;
+        UniformResourceIdentifier uniform_resource_identifier = 3;
+        DirectoryName directory_name = 4;
+        RegisteredID registered_id = 5;
+        IPAddress ip_address = 6;
+        OtherName other_name = 7;
+      }
+    }
+
+    message AuthorityKeyIdentifier {
+      optional string key_identifier = 1;
+      repeated GeneralName authority_cert_issuer = 2;
+      optional int32 authority_cert_serial_number = 3;
+    }
+
+    message NameConstraints {
+      repeated GeneralName permitted_subtrees = 1;
+      repeated GeneralName excluded_subtrees = 2;
+    }
+
+    message SubjectAlternativeName {
+      repeated GeneralName general_names = 1;
+    }
+
+    message IssuerAlternativeName {
+      repeated GeneralName general_names = 1;
+    }
+
+    message CertificateIssuer {
+      repeated GeneralName general_names = 1;
+    }
+
+    message AccessDescription {
+      string access_method = 1;
+      GeneralName access_location = 2;
+    }
+
+    message AuthorityInformationAccess {
+      repeated AccessDescription descriptions = 1;
+    }
+
+    message SubjectInformationAccess {
+      repeated AccessDescription descriptions = 1;
+    }
+
+    message DistributionPoint {
+      repeated GeneralName full_name = 1;
+      optional Name relative_name = 2;
+      repeated ReasonFlags reasons = 3;
+      repeated GeneralName crl_issuer = 4;
+    }
+
+    message CRLDistributionPoints {
+      repeated DistributionPoint distribution_points = 1;
+    }
+
+    message FreshestCRL {
+      repeated DistributionPoint distribution_points = 1;
+    }
+
+    message IssuingDistributionPoint {
+      repeated GeneralName full_name = 1;
+      optional Name relative_name = 2;
+      bool only_contains_user_certs = 3;
+      bool only_contains_ca_certs = 4;
+      repeated ReasonFlags only_some_reasons = 5;
+      bool indirect_crl = 6;
+      bool only_contains_attribute_certs = 7;
+    }
+
+    oneof extension {
+      ExtensionType extension_type = 2;
+      CRLNumber crl_number = 3;
+      SubjectKeyIdentifier subject_key_identifier = 4;
+      BasicConstraints basic_constraints = 5;
+      DeltaCRLIndicator delta_crl_indicator = 6;
+      PolicyConstraints policy_constraints = 7;
+      CertificatePolicies certificate_policies = 8;
+      ExtendedKeyUsage extended_key_usage = 9;
+      TLSFeature tls_feature = 10;
+      InhibitAnyPolicy inhibit_any_policy = 11;
+      KeyUsage key_usage = 12;
+      CRLReason crl_reason = 13;
+      InvalidityDate invalidity_date = 14;
+      PrecertificateSignedCerticateTimestamps precertificate_signed_certificate_timestamps = 15;
+      SignedCertificateTimestamps signed_certificate_timestamps = 16;
+      OCSPNonce ocsp_nonce = 17;
+      AuthorityKeyIdentifier authority_key_identifier = 18;
+      AuthorityInformationAccess authority_information_access = 19;
+      SubjectInformationAccess subject_information_access = 20;
+      CRLDistributionPoints crl_distribution_points = 21;
+      FreshestCRL freshest_crl = 22;
+      NameConstraints name_constraints = 23;
+      SubjectAlternativeName subject_alternative_name = 24;
+      IssuerAlternativeName issuer_alternative_name = 25;
+      CertificateIssuer certificate_issuer = 26;
+      IssuingDistributionPoint issuing_distribution_point = 27;
+    }
+  }
+
+  repeated Extension extensions = 7;
+
+  }
