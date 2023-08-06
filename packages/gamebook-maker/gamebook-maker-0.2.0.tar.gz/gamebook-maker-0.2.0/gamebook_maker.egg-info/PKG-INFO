@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: gamebook-maker
+Version: 0.2.0
+Summary: a library containing classes and functions so you could build your own gamebook easily
+Home-page: https://github.com/arielofer/gamebook-maker
+Author: Ariel Ofer
+License: UNKNOWN
+Description: # gamebook-maker
+        
+        a python library for building text based choose your own adventure games
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
