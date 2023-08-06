@@ -1,0 +1,10 @@
+README.md
+setup.py
+grinmw/__init__.py
+grinmw/node_v2.py
+grinmw/wallet_v3.py
+grinmw.egg-info/PKG-INFO
+grinmw.egg-info/SOURCES.txt
+grinmw.egg-info/dependency_links.txt
+grinmw.egg-info/requires.txt
+grinmw.egg-info/top_level.txt
