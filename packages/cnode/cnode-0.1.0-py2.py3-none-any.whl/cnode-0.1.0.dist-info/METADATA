@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: cnode
+Version: 0.1.0
+Summary: CNode is complex node, supports dynamic establishment and optimization of connections between nodes )
+Home-page: https://github.com/srplab/cnode
+Author: srplab
+Author-email: srplab.cn@hotmail.com
+License: MIT Licence
+Keywords: network graph
+Platform: any
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+<h1 align="center">CNode(Complex node)</h1>
+
+
+The actual object can be abstracted as a node, and the relationship between the objects is expressed by the connections between the nodes. 
+
+Each node has a specific meaning and can correspond to a data object or process object. The connection between nodes represents the relationship between them. If the status of a node is active, the status of the related node may be active too. In general, there are many factors that cause the state of a node to change. Each factor is associated with multiple other nodes(objects). The structure of the node needs to reflect this case, so a node is not a simple abstract point, but should have relatively complex structure.
+
+Cnode consists of multiple input points and an output point. Each input point is connected to multiple other nodes, which can be regarded as a factor affecting the state of the node. The input point and other nodes are connected through a network. The output point is connected to all input points. The number of input points and connected cnodes can be changed dynamically.
+
+Given status of some nodes, taken these nodes as the input points of other nodes, and get the status of output point of these nodes. A node can correspond to an actual object. When the node is activated, the corresponding object can do some processing. The connections between nodes can be judged based the actual object activation is correct or not.
+
+It's features :
+
+* Each node can correspond to an actual object
+* Each node is true (activated) can be determined by multiple factors (points), each factor is related to multiple other nodes.
+* Each node forms a network through connections and their parameters, supporting inference based on the relationship between nodes.
+* Supports dynamic execution(reasoning) to obtain new active nodes
+* The execution or inference logic is placed in NodePoint's OnExecute method, which can be flexibly defined, including the use of neural networks algorithm.
+* Supports dynamic establishment and optimization of connections between nodes.
+
+ **[More detail](https://github.com/srplab/pchain)**
+
+
+
+
