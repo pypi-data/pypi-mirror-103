@@ -1,0 +1,3 @@
+[console_scripts]
+globaltrie = globaltrie.client_cli:main
+
