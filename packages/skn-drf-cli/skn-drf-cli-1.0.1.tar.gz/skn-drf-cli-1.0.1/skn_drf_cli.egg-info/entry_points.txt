@@ -1,0 +1,3 @@
+[console_scripts]
+drf-cli = drf_cli.__main__:cli
+

@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+drf_cli/__init__.py
+drf_cli/__main__.py
+drf_cli/commands/__init__.py
+drf_cli/commands/init.py
+skn_drf_cli.egg-info/PKG-INFO
+skn_drf_cli.egg-info/SOURCES.txt
+skn_drf_cli.egg-info/dependency_links.txt
+skn_drf_cli.egg-info/entry_points.txt
+skn_drf_cli.egg-info/requires.txt
+skn_drf_cli.egg-info/top_level.txt
