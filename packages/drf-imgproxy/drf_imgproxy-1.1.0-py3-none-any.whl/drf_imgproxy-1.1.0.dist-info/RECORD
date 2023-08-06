@@ -1,0 +1,8 @@
+CHANGELOG.rst,sha256=Dei2s1ZsloRm7_6TwZm7UzxJGkFr4ElrQt1OQaWRDts,1296
+drf_imgproxy/__init__.py,sha256=b6-WiVk0Li5MaV2rBnHYl104TsouINojSWKqHDas0js,22
+drf_imgproxy/apps.py,sha256=OBlTblqsiQkRWsuBlSUOO4EjjkkSgwpVFmGh13FqQPw,98
+drf_imgproxy/serializers.py,sha256=pc7JdFqVcqR4zxQMadz2OvnN5eiJ_2Z_7zee5ZgzpH0,1677
+drf_imgproxy-1.1.0.dist-info/LICENSE,sha256=lioq2LK2JaCj5ES2-GMawy5ogHtznwjN5--NcBdFAhk,1077
+drf_imgproxy-1.1.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+drf_imgproxy-1.1.0.dist-info/METADATA,sha256=-mRq_bhdcj4DM2CeCdTephG4xSLpScgbp3OftkFSFd4,3835
+drf_imgproxy-1.1.0.dist-info/RECORD,,
