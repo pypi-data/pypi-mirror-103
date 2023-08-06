@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: yaclog
+Version: 0.3.0
+Summary: Yet another changelog CLI tool.
+Home-page: UNKNOWN
+Author: Andrew Cassidy
+License: AGPLv3
+Project-URL: Source Code, https://github.com/drewcassidy/yaclog
+Project-URL: Changelog, https://github.com/drewcassidy/yaclog/blob/main/CHANGELOG.md
+Description: # Yaclog
+        Yet another changelog command line tool
+        
+        ![a yak who is a log](https://github.com/drewcassidy/yaclog/raw/main/logo.png)
+        
+        *Logo by Erin Cassidy*
+Keywords: changelog,commandline,markdown
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Text Processing :: Markup :: Markdown
+Classifier: Topic :: Software Development :: Version Control :: Git
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown

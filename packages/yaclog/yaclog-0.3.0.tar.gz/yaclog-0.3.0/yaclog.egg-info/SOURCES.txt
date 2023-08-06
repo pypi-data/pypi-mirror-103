@@ -1,0 +1,15 @@
+.gitignore
+CHANGELOG.md
+LICENSE.md
+README.md
+logo.png
+pyproject.toml
+setup.cfg
+.github/workflows/python-publish.yml
+yaclog/__init__.py
+yaclog/changelog.py
+yaclog.egg-info/PKG-INFO
+yaclog.egg-info/SOURCES.txt
+yaclog.egg-info/dependency_links.txt
+yaclog.egg-info/requires.txt
+yaclog.egg-info/top_level.txt
