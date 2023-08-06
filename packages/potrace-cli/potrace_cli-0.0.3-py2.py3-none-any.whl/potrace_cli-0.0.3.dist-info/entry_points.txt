@@ -1,0 +1,6 @@
+[console_scripts]
+potracer = cli.main:run
+
+[potrace.backends]
+SVG = cli.backend_svg:register
+
