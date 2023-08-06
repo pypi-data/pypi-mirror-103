@@ -1,0 +1,9 @@
+osd/__init__.py,sha256=YjcJWVGiQKWk5CL3AoRTDuMd_tRJmLlEhVPyDdGJ910,21
+osd/dbus.py,sha256=wLB-pBX1MQjpGuFC2By5dCsE9YR7K11O6ZEjL1P2TBY,3238
+osd/osd.py,sha256=y-xdNpJHy00vlXv9WcUStW7NYOJG__c84FI2CM4-0fo,11382
+osd-0.6.data/scripts/osdd,sha256=cCHv6blJjxpGSFjoa32sEys6bCQ-vgbrdjBs9O1TzGM,32
+osd-0.6.dist-info/LICENSE,sha256=oYsg7e0dqS061d7Vrez-LYyF_9fMpXnHxPDcQUa40hs,1520
+osd-0.6.dist-info/METADATA,sha256=nmCMUsFOzoDN0r-MTh8NRG7JS02NW_Z21eA_1q9IF2Q,626
+osd-0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+osd-0.6.dist-info/top_level.txt,sha256=30Irq91S8CDLYtgLL5GffL_qh3o2mZHvc5aX7_UB7vM,4
+osd-0.6.dist-info/RECORD,,
