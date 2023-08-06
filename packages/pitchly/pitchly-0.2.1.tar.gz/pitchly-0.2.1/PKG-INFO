@@ -1,0 +1,120 @@
+Metadata-Version: 1.2
+Name: pitchly
+Version: 0.2.1
+Summary: A python package that is a wrapper for Plotly to generate football tracking and event data plots
+Home-page: https://github.com/opunsoars/pitchly
+Author: Vinay Warrier
+Author-email: vinay.warrier@gmail.com
+License: MIT
+Project-URL: Documentation, https://pitchly.readthedocs.io/
+Project-URL: Changelog, https://pitchly.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://github.com/opunsoars/pitchly/issues
+Description: ========
+        Overview
+        ========
+        
+        
+        
+        A python package that is a wrapper for Plotly to generate football tracking and event data plots
+        
+        * Free software: MIT license
+        
+        Installation
+        ============
+        
+        ::
+        
+            pip install pitchly
+        
+        You can also install the in-development version with::
+        
+            pip install https://github.com/opunsoars/pitchly/archive/master.zip
+        
+        ``pitchly`` currently supports Metrica data formats. Other formats coming soon.
+        
+        Documentation
+        =============
+        
+        
+        https://pitchly.readthedocs.io/
+        
+        
+        Development
+        ===========
+        
+        To run all the tests run::
+        
+            tox
+        
+        Note, to combine the coverage data from all the tox environments run:
+        
+        .. list-table::
+            :widths: 10 90
+            :stub-columns: 1
+        
+            - - Windows
+              - ::
+        
+                    set PYTEST_ADDOPTS=--cov-append
+                    tox
+        
+            - - Other
+              - ::
+        
+                    PYTEST_ADDOPTS=--cov-append tox
+        
+        
+        Contact
+        =======
+        
+        Get in touch! For help or to contribute with ideas and to discuss football analytics.
+        Mail me at vinay.warrier@gmail.com or connect on `Twitter <https://twitter.com/opunsoars>`_ | `LinkedIn <https://www.linkedin.com/in/opunsoars/>`_
+        
+        The story behind putting this small package together came from the `short project <https://twitter.com/opunsoars/status/1259471707577827329>`_ in the Friends of Tracking initiative last year (2020).  
+        
+        Acknowledgements
+        ================
+        
+        * `David Sumpter <https://twitter.com/Soccermatics>`_ - for the amazing Friends of Tracking initiative
+        * `Laurie Shaw <https://twitter.com/eightyfivepoint>`_ for pitch control implementation and starter code for data processing
+        * `Bruno Dagnino <https://twitter.com/brunodagnino>`_ & `Metrica Sports <https://twitter.com/metricasports>`_ - for the open data (especially tracking)
+        * `Koen Vossen <https://twitter.com/mr_le_fox>`_ - for kloppy library and inspiring work in open source football analytics
+        
+        Changelog
+        =========
+        
+        0.2.0 (2021-04-22)
+        ------------------
+        
+        * Initial release (Metrica Tracking/Event)
+        * Pitch Control
+        
+        0.1.0 (2021-04-19)
+        ------------------
+        
+        * Pre release (Metrica Tracking/Event)
+        
+        0.0.0 (2021-04-15)
+        ------------------
+        
+        * First release on TestPyPI.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
