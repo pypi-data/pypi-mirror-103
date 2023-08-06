@@ -1,0 +1,16 @@
+# core
+ibis-framework
+google-cloud-bigquery
+pydata-google-auth
+
+# dev
+pytest
+pytest-cov
+pytest-mock
+mock
+flake8
+flake8-comprehensions
+mypy
+isort
+pydocstyle
+setuptools-scm
