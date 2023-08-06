@@ -1,0 +1,9 @@
+golf_parity/__init__.py,sha256=OZUZqZR-C_YSc3soaxn_JkxDSCyQhzcmW0F1olPPgc8,9073
+golf_parity/__main__.py,sha256=8dvN19EBw1TQ0hT8TUfNW9R29mumwvLWrd9UWM7DB2w,126
+golf_parity/arrays.py,sha256=CqQ60n_bHph6LxfzcILAUm31G0zGxBlx6hb0XwElhy4,3907
+golf_parity/fizzbuzz.p,sha256=A9wbwvJENvAjOM6ePQD7FZgGXd2JhclmrBIrC0mND3Q,482
+golf_parity-0.0.2.dist-info/METADATA,sha256=YkQ-9p68CYZEq-IJPlLom4WaujcMTF2ABqleYSnUF3U,441
+golf_parity-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+golf_parity-0.0.2.dist-info/entry_points.txt,sha256=eFiCXbj4y1z3TpvdEIKCb62rM7VI7DYExribegSf-Lk,55
+golf_parity-0.0.2.dist-info/top_level.txt,sha256=AQi2Bb0SS9vdZkomyr01Eb14VeRkv53sCHti3LAWgDQ,12
+golf_parity-0.0.2.dist-info/RECORD,,

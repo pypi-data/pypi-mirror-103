@@ -1,0 +1,3 @@
+[console_scripts]
+parity = golf_parity.__main__:_main
+
