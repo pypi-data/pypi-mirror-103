@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: topicextractor
+Version: 0.0.2
+Summary: Extracts keywords with 'TF-IDF' algorithm
+Home-page: https://github.com/kjchung495/topicextractor
+Author: KJ Chung
+Author-email: kjchung495@yonsei.ac.kr
+License: Apache Software License 2.0
+Description: "topicextractor" extracts topic keywords from documents based on 'TF-IDF' algorithm.
+        
+        Usage
+        
+        import topicextractor as te
+        
+        sample_docs = [["doc1_str"], ["doc2_str"], ["doc3_str"] ....]
+        
+        #extract noun counts from 'sample_docs'
+        count_container = te.extract_noun_counts(sample_docs)
+        
+        print(count_container)
+        [{"a": 3, "b": 2}, {"c": 5, "d":3}, {"e": 7, "f": 12} ....]
+        
+        #extract keywords for 'count_container[0]'(=the first docmunet in 'sample_docs')
+        keywords = te.tfidf(count_container[0], count_container)
+        
+        print(keywords)
+        [("keyword1", 2.1104),("keyword2" 2.0012),("keyword3", 1.8892) ....]
+        
+        
+        Thanks, and please contact the author via e-mail for any comment.
+Keywords: TFIDF,topic analysis
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
