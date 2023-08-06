@@ -1,0 +1,14 @@
+eQmaster/__init__.py,sha256=qIfT_FoI9jA3bDgcZIxLtFiDB9W0gP-YFMBQ7fF0zio,331
+eQmaster/eQmaster.py,sha256=CIb6LwW2n-kXPCHnt4K7ECCDq1TTXg44G7zyzaETUNk,8707
+eQmaster/features.py,sha256=YlRd2P2ovMbdSVEb4SN5-aD78eUO9Qp886U4yQK3gTI,211
+eQmaster/info.py,sha256=Uh5WujXGzZvAoepC7j4Y_MguuH1GXy7zhHnfA7IURII,968
+eQmaster/schema.py,sha256=YlSg3ysXFqK6FrSIQm5yAI1MRZKoUdMKRQBQHAb8mdg,2006
+eQmaster/features/__init__.py,sha256=qx-6zJCb39QMUILQCmoPoaUkxyQ3koCqylARxMFxTqk,100
+eQmaster/features/bolinger_band.py,sha256=9tGkuSmwXfi3NJ2t0SdLpFQ6bCLzuit-gz25EU7J1yE,676
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_eqmaster.py,sha256=xLJpFh9I9iSWeo2r_M96SIgrC0GHt5PU0_zzOO82xS4,5314
+eQmaster-0.0.64.dist-info/LICENSE,sha256=iskR3M47l09RRXzm6_Wv90ZMTD863VxKAx9qOBIH2TU,1633
+eQmaster-0.0.64.dist-info/METADATA,sha256=NeAMj2MD67hXahjXnMGO01pgi5iTPm1R8vHK03aDdiM,1217
+eQmaster-0.0.64.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+eQmaster-0.0.64.dist-info/top_level.txt,sha256=mFPT7V5zYOW7SJjd3V4HrU9kSDDHz07jxQQcHPXfffs,15
+eQmaster-0.0.64.dist-info/RECORD,,
