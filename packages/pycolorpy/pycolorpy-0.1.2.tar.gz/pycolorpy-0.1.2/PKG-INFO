@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: pycolorpy
+Version: 0.1.2
+Summary: Adds typographical emphasis and text / background color for strings in python.
+Home-page: https://github.com/erwinerdem/pycolorpy
+Author: Erwin Erdem
+Author-email: erwin.erdem@outlook.com
