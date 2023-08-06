@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ecnet
+Version: 4.0.0
+Summary: Fuel property prediction using QSPR descriptors
+Home-page: https://github.com/ecrl/ecnet
+Author: Travis Kessler
+Author-email: Travis_Kessler@student.uml.edu
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: torch (==1.8.0)
+Requires-Dist: sklearn
+Requires-Dist: padelpy (==0.1.9)
+Requires-Dist: alvadescpy (==0.1.2)
+Requires-Dist: ecabc (==3.0.0)
+
+UNKNOWN
+
+
