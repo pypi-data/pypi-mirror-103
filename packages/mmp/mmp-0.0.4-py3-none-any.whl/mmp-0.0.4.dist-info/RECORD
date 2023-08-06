@@ -1,0 +1,14 @@
+mmp/__init__.py,sha256=jyCrePaFTgnddE0iZMK7nXvU4YpTugxQHZVyX7OhiUo,21
+mmp/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mmp/cli/colors.py,sha256=0u2XHJxnbJGisojzBNi8caEW_2BsWOClaLQqfpwSAts,362
+mmp/cli/docopt_command.py,sha256=fGl413zPseJDxrJwwX0nS4mJAGdm9DligHA1_vzMWBo,1425
+mmp/cli/formatter.py,sha256=8pe1IJTsd4ThB_zjIhR3b8-r6JipqxrMVTBpx5nJ3Eg,750
+mmp/cli/main.py,sha256=5M0SYZ0qoofZeuXclgAzHGGG9I8DStlsHrikYMWAdhY,9336
+mmp/cli/signals.py,sha256=3x-6FO6LAPt4SpMKeFfe45bFW7WqqFElDxqiW5CqoR0,895
+mmp/cli/utils.py,sha256=uC-e_SMN2vso5u8SKBnQwDfEQxkn4MAAKoFVTsj4C9w,232
+mmp-0.0.4.dist-info/LICENSE,sha256=-x_BpW3ZAVjvHxhRBtgyAMqGQy0OhF7QsXACdI6gN-k,1062
+mmp-0.0.4.dist-info/METADATA,sha256=_QkPpfG5F6vtm7oRbJrnQ3bx3cRIp6Vv729tJuwmfqU,2686
+mmp-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mmp-0.0.4.dist-info/entry_points.txt,sha256=WWRC-lP0u8aUzXXvPexY4Lcusq8JxDPahVvpjLjhaIw,43
+mmp-0.0.4.dist-info/top_level.txt,sha256=ykplnnMU00BNmyDSAPGET31Jp1wEOCJ8zBZVpDSocw4,4
+mmp-0.0.4.dist-info/RECORD,,
