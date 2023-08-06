@@ -1,0 +1,8 @@
+discord/ext/games/__init__.py,sha256=6WrbyFbMaSuBHcpy6BmUHvGYBeovfqXQDJ2sth2Ct4I,42
+discord/ext/games/tic_tac_toe/__init__.py,sha256=JT_V9TwPYmlwBBsZbG0jDvgOpMpCRHdilSx-aROpjOs,55
+discord/ext/games/tic_tac_toe/config.py,sha256=FBpQrsQ9TKujr-o13CEZzUCVBI4cdq7XVrvT9YIKoCo,1348
+discord/ext/games/tic_tac_toe/core.py,sha256=210T-yPKVwwkTiYOH6FJF2138rAQ2D-0EYglyfltBxI,5747
+discord_ext_games-1.0.5.dist-info/METADATA,sha256=1NesmvP2JFPVppOhdzvRk4Ipxwh1o1j4EIDbg1j4BCo,313
+discord_ext_games-1.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+discord_ext_games-1.0.5.dist-info/top_level.txt,sha256=fJkrNbR-_8ubMBUcDEJBcfkpECrvSEmMrNKgvLlQFoM,8
+discord_ext_games-1.0.5.dist-info/RECORD,,
