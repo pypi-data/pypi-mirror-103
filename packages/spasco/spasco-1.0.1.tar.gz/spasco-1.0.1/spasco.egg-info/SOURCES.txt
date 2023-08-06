@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+pypi_description.md
+setup.cfg
+setup.py
+spasco/__init__.py
+spasco/main.py
+spasco/term_color.py
+spasco.egg-info/PKG-INFO
+spasco.egg-info/SOURCES.txt
+spasco.egg-info/dependency_links.txt
+spasco.egg-info/entry_points.txt
+spasco.egg-info/requires.txt
+spasco.egg-info/top_level.txt
+tests/__init__.py
+tests/check_names.py
+tests/main_test.py
