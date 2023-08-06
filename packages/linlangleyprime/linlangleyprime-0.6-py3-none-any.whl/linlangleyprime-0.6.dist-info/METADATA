@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: linlangleyprime
+Version: 0.6
+Summary: Demo for building a Python project
+Home-page: http://lin-chen-langley.github.io
+Author: Lin Chen, Yanhua Feng
+Author-email: lin.chen@ieee.org, yf@vims.edu
+License: Creative Commons Attribution-Noncommercial-Share Alike license
+Project-URL: PyPI, https://pypi.org/manage/project/linlangleyprime/releases/
+Project-URL: Conda, https://anaconda.org/linchenVA/linlangleyprime
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: X11 Applications :: GTK
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Topic :: Desktop Environment
+Classifier: Topic :: Text Processing :: Fonts
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: certifi (==2020.12.5)
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
+
