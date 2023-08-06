@@ -1,0 +1,5 @@
+django-calaccess-raw-data==3.0.1
+django-calaccess-scraped-data==3.0.1
+django>=3.2.*
+csvkit>=1.0
+opencivicdata-source
