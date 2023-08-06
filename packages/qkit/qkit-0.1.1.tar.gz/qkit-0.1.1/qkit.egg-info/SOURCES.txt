@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+qkit/__init__.py
+qkit.egg-info/PKG-INFO
+qkit.egg-info/SOURCES.txt
+qkit.egg-info/dependency_links.txt
+qkit.egg-info/top_level.txt
