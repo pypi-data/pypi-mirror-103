@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/vaddiocameras/__init__.py
+src/vaddiocameras.egg-info/PKG-INFO
+src/vaddiocameras.egg-info/SOURCES.txt
+src/vaddiocameras.egg-info/dependency_links.txt
+src/vaddiocameras.egg-info/requires.txt
+src/vaddiocameras.egg-info/top_level.txt
