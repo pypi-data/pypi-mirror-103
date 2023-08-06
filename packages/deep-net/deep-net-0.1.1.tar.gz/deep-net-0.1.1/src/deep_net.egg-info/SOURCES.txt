@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/deep_net/__init__.py
+src/deep_net/initializers.py
+src/deep_net.egg-info/PKG-INFO
+src/deep_net.egg-info/SOURCES.txt
+src/deep_net.egg-info/dependency_links.txt
+src/deep_net.egg-info/requires.txt
+src/deep_net.egg-info/top_level.txt
