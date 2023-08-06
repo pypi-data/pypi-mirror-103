@@ -1,0 +1,10 @@
+setup.py
+8ball_pycon_demo_cole-wilson/__init__.py
+8ball_pycon_demo_cole-wilson/__main__.py
+8ball_pycon_demo_cole-wilson/words.txt
+8ball_pycon_demo_cole_wilson.egg-info/PKG-INFO
+8ball_pycon_demo_cole_wilson.egg-info/SOURCES.txt
+8ball_pycon_demo_cole_wilson.egg-info/dependency_links.txt
+8ball_pycon_demo_cole_wilson.egg-info/entry_points.txt
+8ball_pycon_demo_cole_wilson.egg-info/top_level.txt
+bin/8ball
