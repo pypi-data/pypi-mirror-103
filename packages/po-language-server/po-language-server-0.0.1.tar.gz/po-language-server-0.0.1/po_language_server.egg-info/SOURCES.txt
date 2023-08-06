@@ -1,0 +1,10 @@
+README.md
+po_lsp.py
+pyproject.toml
+setup.cfg
+po_language_server.egg-info/PKG-INFO
+po_language_server.egg-info/SOURCES.txt
+po_language_server.egg-info/dependency_links.txt
+po_language_server.egg-info/entry_points.txt
+po_language_server.egg-info/requires.txt
+po_language_server.egg-info/top_level.txt
