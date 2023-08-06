@@ -1,0 +1,27 @@
+.gitignore
+LICENSE.txt
+OLD_DONOTUSE_setup.cfg
+README.md
+__init__.py
+old_README.md
+pyproject.toml
+setup.py
+capstone_text_mining/__init__.py
+capstone_text_mining/data_clean.py
+capstone_text_mining/feature_importance.py
+capstone_text_mining/graph_prep.py
+capstone_text_mining/graph_viz.py
+capstone_text_mining/hand_labelled_features.py
+capstone_text_mining/lift.py
+capstone_text_mining/model.py
+capstone_text_mining/recode_categorical.py
+capstone_text_mining/sent_analysis.py
+capstone_text_mining/shap_ visualization.py
+capstone_text_mining/spacy_functions.py
+capstone_text_mining/topic_model_features.py
+capstone_text_mining.egg-info/PKG-INFO
+capstone_text_mining.egg-info/SOURCES.txt
+capstone_text_mining.egg-info/dependency_links.txt
+capstone_text_mining.egg-info/requires.txt
+capstone_text_mining.egg-info/top_level.txt
+tests/todelete.py
