@@ -1,0 +1,17 @@
+Metadata-Version: 1.0
+Name: nlkit
+Version: 0.0.1b1
+Summary: easy to use nlp tools
+Home-page: https://shihanmax.top
+Author: shihanmax
+Author-email: shihanmax@foxmail.com
+License: MIT
+Description: # nlkit - nlp toolkit
+        
+        Collection of easy-to-use tools in NLP.
+        
+        Warning: this repository is still under developing.
+        
+        Feel free to contact me at shihanmax@foxmail.com if you have any questions on 
+        this tool.
+Platform: UNKNOWN
