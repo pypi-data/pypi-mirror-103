@@ -1,0 +1,6 @@
+setup.py
+src/minesweeper_toollib.egg-info/PKG-INFO
+src/minesweeper_toollib.egg-info/SOURCES.txt
+src/minesweeper_toollib.egg-info/dependency_links.txt
+src/minesweeper_toollib.egg-info/not-zip-safe
+src/minesweeper_toollib.egg-info/top_level.txt
