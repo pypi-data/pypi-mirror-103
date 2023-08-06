@@ -1,0 +1,13 @@
+setup.py
+hello_package/__init__.py
+hello_package/a.dat
+hello_package/hello.py
+hello_package/sub_folder/__init__.py
+hello_package/sub_folder/world.py
+hello_package/sub_folder/png/slot/detecting/detecting_1.png
+hello_package/sub_folder/png/slot/invalid/invalid_1.png
+lphello.egg-info/PKG-INFO
+lphello.egg-info/SOURCES.txt
+lphello.egg-info/dependency_links.txt
+lphello.egg-info/entry_points.txt
+lphello.egg-info/top_level.txt
