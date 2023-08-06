@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: fastapi-luban
+Version: 0.1.2
+Summary: 快速生成响应模型
+Home-page: https://github.com/Garen-in-bush/Fastapi_Luban
+Author: jiahao.li
+Author-email: 594680963@qq.com
+License: MIT
+Description: # Fastapi_Luban
+        Generate response model for fastapi based on Database
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
