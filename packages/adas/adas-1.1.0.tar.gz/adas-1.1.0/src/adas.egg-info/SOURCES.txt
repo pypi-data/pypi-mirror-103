@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/adas.egg-info/PKG-INFO
+src/adas.egg-info/SOURCES.txt
+src/adas.egg-info/dependency_links.txt
+src/adas.egg-info/not-zip-safe
+src/adas.egg-info/requires.txt
+src/adas.egg-info/top_level.txt
