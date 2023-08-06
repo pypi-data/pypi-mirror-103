@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: Yucebio-Config
+Version: 0.0.9
+Summary: 简单的统一配置管理工具
+Home-page: UNKNOWN
+Author: huangqingjun
+Author-email: huangqingjun@yucebio.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: json5
+
+# Yucebio-Config 通用配置管理工具
+
+- 自动加载和生成json格式的配置文件
+    - 首先检查当前目录是否存在config目录
+        - 检查是否存在 {`name`}.json5, {`name`}.json 或 config.json5, config.json
+    - 再次检查当前目录是否存在.yucebioconfig目录
+        - 检查是否存在 {`name`}.json5, {`name`}.json 或 config.json5, config.json
+    - 最后检查HOME目录是否存在.yucebioconfig目录
+        - 检查是否存在 {cur_work_dir_name|`name`}.{json5|json} 文件
+        - 检查是否存在 {`name`}.json5, {`name`}.json 或 {cur_work_dir_name}.json5, {cur_work_dir_name}.json
+    - 若都不存在，自动使用 ./.yucebioconfig/{`name` or config}.json5 作为配置文件
+- 配置管理
+
+## USAGE
+
+1. 加载配置
+
+```python
+# 自动加载已有或默认配置
+from yucebio_config import config
+# 主动加载已有或默认配置
+from yucebio_config import Config
+config = Config()
+
+# 加载指定名称的配置文件
+config = Config('name')
+```
+
+2. 更新配置内容
+```python
+config['new_key'] = 'value'
+config.save()                   # 保存，不重新加载
+
+config.reload()                 # 保存并重新加载
+```
+
+3. 重置配置内容
+```python
+config['tmp_key'] = 'value'     # 临时生效
+config.reset()                  # 重新读取配置内容
+```
+
+4. 清除配置
+```python
+config.clear('special_key')     # 清除指定key内容
+config.clear()                  # 清除所有配置内容
+
+config.clear('super/sub', sep='/')  # 清除嵌套内容
+```
+
+5. 获取和打印配置内容
+```python
+config_data = config.config     # 获取字典格式的配置内容
+config_str = str(config)        # 带缩进的json字符串形式的配置内容
+print(config)                   # 打印带缩进的配置内容
+```
+
+## 属性
+
+```python
+config = Config()
+
+# 实际使用的配置文件路径
+config.configpath
+# 实际使用的配置文件
+config.configfile
+# 配置内容
+config.config
+```
+
+## 配置查找和保存
+
+**首先按照以下顺序检查是否存在配置文件**
+- 检查当前目录是否存在config/{name}.{json5|json} 文件
+- 检查当前目录是否存在.yucebioconfig/{name}.{json|json5} 文件
+- 检查是否存在 ~/{name}.{json|json5}文件
+
+**若不存在则在当前目录创建配置文件**
+- 检查是否存在 config目录，若存在，创建 config/{name}.json5配置文件
+- 否则，优先创建 .yucebioconfig/{name}.json5配置文件
+
+
