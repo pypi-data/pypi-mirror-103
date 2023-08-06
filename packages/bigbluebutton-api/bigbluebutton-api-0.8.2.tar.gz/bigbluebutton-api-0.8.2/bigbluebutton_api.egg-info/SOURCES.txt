@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+bigbluebutton/__init__.py
+bigbluebutton/utils.py
+bigbluebutton_api.egg-info/PKG-INFO
+bigbluebutton_api.egg-info/SOURCES.txt
+bigbluebutton_api.egg-info/dependency_links.txt
+bigbluebutton_api.egg-info/requires.txt
+bigbluebutton_api.egg-info/top_level.txt
