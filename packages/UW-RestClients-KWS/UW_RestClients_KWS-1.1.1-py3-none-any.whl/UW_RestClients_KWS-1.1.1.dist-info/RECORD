@@ -1,0 +1,15 @@
+uw_kws/VERSION,sha256=zFL2eISLgUNzdXtGA4O_YZYOSUPCA3Na3eCjULPlCYk,6
+uw_kws/__init__.py,sha256=1jz2SZRK1dqIjCMKKbmBFoTGIh4czCCVXnzCM_L6Gw4,1680
+uw_kws/dao.py,sha256=RCuelzjfEW88bITAyZBFIwnXFz9CGlHMkrsEbJN89vw,414
+uw_kws/models.py,sha256=bGB0fkL7kwQ5vMQq_BhAi4WOinhjev_duVYj9mF5FEU,852
+uw_kws/test.py,sha256=WOlUe2qPIXgcmribawJRcAOEN0nWFNh9d9HKCd0mMOY,463
+uw_kws/utilities.py,sha256=n0geRL-lNZgsAmK8rzfUK12_oshsgPWJjNMNcTS1iqk,203
+uw_kws/resources/kws/file/key/v1/encryption/ee99defd-baee-43b0-9e1e-f8238dd106bb.json,sha256=Ja93m6EpbB1e---G3JL25VoYR-NxDxnmikr6DfVnG5E,601
+uw_kws/resources/kws/file/key/v1/type/uw-student-registration/encryption/current.json,sha256=Ja93m6EpbB1e---G3JL25VoYR-NxDxnmikr6DfVnG5E,601
+uw_kws/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uw_kws/tests/test_key.py,sha256=61YAuQW80UnIHmnoRzUHkAtFGmf4FMWmU0iq9kaQzMc,2461
+UW_RestClients_KWS-1.1.1.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+UW_RestClients_KWS-1.1.1.dist-info/METADATA,sha256=zKWifJ8N1lN1sbL9IZ8vvmJmR9GES2U0Hjo_i1WVgVs,728
+UW_RestClients_KWS-1.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+UW_RestClients_KWS-1.1.1.dist-info/top_level.txt,sha256=kBCrxtP9Z_wXrDYe1I-iYu7f2QCn6RhLIz03HMkxxm0,7
+UW_RestClients_KWS-1.1.1.dist-info/RECORD,,
