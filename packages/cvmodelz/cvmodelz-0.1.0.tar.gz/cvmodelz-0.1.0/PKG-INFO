@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: cvmodelz
+Version: 0.1.0
+Summary: Wrapper for various computer vision models (mostly provided by chainer, chainercv, and chainercv2)
+Home-page: UNKNOWN
+Author: Dimitri Korsch
+Author-email: korschdima@gmail.com
+License: MIT License
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >3.6
