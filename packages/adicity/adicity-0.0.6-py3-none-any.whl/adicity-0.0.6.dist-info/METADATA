@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: adicity
+Version: 0.0.6
+Summary: A fixed-arity high level functional programming language engine.
+Home-page: https://github.com/cole-wilson/adicity
+Author: Cole Wilson
+Author-email: cole@colewilson.xyz
+License: none
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: main
+Requires-Dist: arrays
+Requires-Dist: debugger
+Requires-Dist: colorama
+Requires-Dist: eel
+Requires-Dist: typing
+Requires-Dist: parse
+Requires-Dist: errors
+Requires-Dist: datetime
+Requires-Dist: logging
+
+# Adicity
+A fixed-arity high level functional programming language engine.
+### Contributors
+- Cole Wilson
+### Contact
+<cole@colewilson.xyz> 
+
