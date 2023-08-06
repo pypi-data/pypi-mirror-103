@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: VirtualAssistant
+Version: 0.0.1
+Summary: VirtualAssistant is a python package that allows user to make simple Virtual Assistants with already defined commands with only one import.
+Home-page: https://github.com/Naman23-coder/VirtualAssistant
+Author: Naman Sharma , Devansh Sareen
+Author-email: namansharma232009@gmail.com , devanshsareen@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
