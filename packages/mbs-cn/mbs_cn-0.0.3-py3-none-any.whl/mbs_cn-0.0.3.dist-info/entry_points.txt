@@ -1,0 +1,3 @@
+[console_scripts]
+mbs = mbs:run_main
+
