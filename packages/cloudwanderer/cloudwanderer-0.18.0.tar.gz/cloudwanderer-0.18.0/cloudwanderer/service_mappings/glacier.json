@@ -1,0 +1,16 @@
+{
+    "service": {},
+    "resources": {
+        "Vault": {
+            "ignoredSubresources": [
+                {
+                    "type": "MultipartUpload"
+                }
+            ]
+        },
+        "Job": {
+            "type": "subresource",
+            "parentResource": "Vault"
+        }
+    }
+}
