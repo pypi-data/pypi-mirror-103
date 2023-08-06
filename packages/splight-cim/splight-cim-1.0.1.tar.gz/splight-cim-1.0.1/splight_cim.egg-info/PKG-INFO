@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: splight-cim
+Version: 1.0.1
+Summary: Parse CIM RDF XML files and get output in JSON format
+Home-page: https://bitbucket.org/splight-dev/test/src/master/
+Author: Splight
+Author-email: splight@splight-ae.com
+License: MIT
+Description: # cimlib
+        
+        Python library for parsing CIM files
+        
+        ## Funcionamiento
+        
+        Para probar correr `test.py`. (Cuidado con el path del archivo que se intenta parsear). Tambien se puede imprimir en json sin guardarlo usando la funcion `get_json()` en vez de `save_json()`.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
