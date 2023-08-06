@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: otree-vcee-payment
+Version: 0.7.1
+Summary: VCEE Payment App for oTree
+Home-page: https://vcee.univie.ac.at/
+Author: Philipp Külpmann
+Author-email: vcee@univie.ac.at
+License: UNKNOWN
+Description: ==========================
+        VCEE Payment App for oTree
+        ==========================
+        
+        Quick start
+        -----------
+        
+        1. Add::
+        	encrypt_payment_file=False,
+        	disable_waiting_for_others=False,
+        	
+        to your "SESSION_CONFIGS" and "vceepayment" to the app_sequence in it.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent

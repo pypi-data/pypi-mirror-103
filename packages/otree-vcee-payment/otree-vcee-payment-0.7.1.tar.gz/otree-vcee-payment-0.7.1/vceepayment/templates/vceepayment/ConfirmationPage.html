@@ -1,0 +1,30 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block head_title %}
+    Thank you!
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="row mb-4">
+            <div class="col-md-8 header mr-auto">
+                <img src="{% static "vceepayment/vcee_logo.jpg" %}" class="img-fluid"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p>
+                    Thank you for submitting your bank details.
+                    We will now process your payment.
+                </p>
+
+                <p>
+                    You should receive your payment within a week.
+                    If you have not received it after 14 days, please contact us at <a href="mailto:vcee@univie.ac.at?subject=Feedback Online Experiment">vcee@univie.ac.at</a> with your full name and the date and time of the experiment.
+                    Remember that we will delete your data after four weeks, so please contact us before that time.
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
