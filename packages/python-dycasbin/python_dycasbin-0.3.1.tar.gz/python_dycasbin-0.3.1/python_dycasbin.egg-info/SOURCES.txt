@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+python_dycasbin/__init__.py
+python_dycasbin/adapter.py
+python_dycasbin/test_adapter.py
+python_dycasbin.egg-info/PKG-INFO
+python_dycasbin.egg-info/SOURCES.txt
+python_dycasbin.egg-info/dependency_links.txt
+python_dycasbin.egg-info/requires.txt
+python_dycasbin.egg-info/top_level.txt

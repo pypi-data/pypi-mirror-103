@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: python_dycasbin
+Version: 0.3.1
+Summary: DynamoDB adopter for casbin
+Home-page: https://github.com/abqadeer/python-dynacasbin
+Author: Abdul Qadeer
+Author-email: abqdr.is@gmail.com
+License: UNKNOWN
+Description: DynamoDB adopter for casbin
+        
+        Installation
+        ------------
+        Run `pip install python-dycasbin`
+        
+        Usage
+        -----
+        ```python
+        import casbin
+        from python_dycasbin import adapter
+        
+        adapter = adapter.Adapter(table_name='casbin_rule', endpoint_url='http://localhost:8000')
+        e = casbin.Enforcer("model.conf", adapter, True)
+        
+        sub = "eve4"  # the user that wants to access a resource.
+        obj = "data3"  # the resource that is going to be accessed.
+        act = "read"  # the operation that the user performs on the resource.
+        
+        if e.enforce(sub, obj, act):
+            print("Allow")
+        else:
+            print("Deny")
+        ```
+        
+        Running tests
+        ---------------
+        * Install [pytest](https://pypi.org/project/pytest/) and [pytest-mock](https://pypi.org/project/pytest-mock/)
+        * Run `pytest` from project root
+Keywords: casbindynamodb,aws,boto3,casbin-adapter,rbac,access control,abac,acl,permission
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
