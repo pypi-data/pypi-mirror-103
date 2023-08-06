@@ -1,0 +1,9 @@
+whist/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whist/server/__init__.py,sha256=78geaQRF4vduPM12a9pj-BkT7ACaoqX57vsikeJA4xM,147
+whist/server/api.py,sha256=r11R_s0XhQIieoYer6RZf-zcc4sXWH5bHRFCasZbyy0,225
+whist/server/main.py,sha256=YNB_xO7nGSNfojJd_wP8GVhRV2UBiN-QrncY2pLpo0w,144
+whist_server-0.0.1.dist-info/LICENSE,sha256=MVzJW2zucob4D8el7f0fNjgibUYHj_SqQj_OGJcD5tE,1067
+whist_server-0.0.1.dist-info/METADATA,sha256=2veDXP4GBYQ6oZXZOfbX9QPgpUsMq0pnAUrVLyscsDc,694
+whist_server-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+whist_server-0.0.1.dist-info/top_level.txt,sha256=eZf1zVGO8iF7xU1oMYyGSPzWAgWabjv7MVgvJ664Rw4,6
+whist_server-0.0.1.dist-info/RECORD,,

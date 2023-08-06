@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: whist-server
+Version: 0.0.1
+Summary: Whist game server.
+Home-page: https://github.com/Whist-Team/Whist-Server
+Author: Whist Team
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Whist-Team/Whist-Server/issues
+Keywords: game server whist
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: whist-core (~=0.0.1)
+
+[![codecov](https://codecov.io/gh/Whist-Team/Whist-Server/branch/main/graph/badge.svg)](https://codecov.io/gh/Whist-Team/Whist-Server)
+# Whist-Server
+
+
