@@ -1,0 +1,13 @@
+cli2telegram/__init__.py,sha256=Fg9uqVr3U5owkx3YrdWBOhEM1hyRgYfgKY2dbu4gApA,1094
+cli2telegram/cli.py,sha256=_KOvh9ZMwVz_GI0NsC9JBtlQNtw-KAS30JAnMStXUNE,3394
+cli2telegram/config.py,sha256=eeOu3cgS0vURoAC4frps_g1cmpFeHzfNvtFeWaGhTmM,3431
+cli2telegram/daemon.py,sha256=_UanM_iSJi0gj6RcCfKs2jCbAYR3Ax06K0xoGspul5g,4763
+cli2telegram/util.py,sha256=AB8yfnGeqCBSF3dHnzMNyE8HdcCIMh_-WIbAe6ENlGY,3452
+tests/__init__.py,sha256=n9bT2-iyEDPruz_AqGOqXec7bBcKftkj0WfZKNuVEks,832
+tests/test_message_processing.py,sha256=1EKEhK-wzaMIOW1S6xMwH4c5JJ_WTXmHywFuEN-Ej4A,2055
+cli2telegram-1.1.0.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+cli2telegram-1.1.0.dist-info/METADATA,sha256=KbBZto8xA7flyeNBcHlMtZAaW0Evs96P2rvLZTdgDqY,5464
+cli2telegram-1.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cli2telegram-1.1.0.dist-info/entry_points.txt,sha256=c9HJ9jmEP5nXfdPoMeRmZFkfsN6NOsNjevhT8cd80rk,55
+cli2telegram-1.1.0.dist-info/top_level.txt,sha256=Py2mUxz2QluGAnvPAn-pd8hvzXBr-wTyJ70IgWacnLo,19
+cli2telegram-1.1.0.dist-info/RECORD,,
