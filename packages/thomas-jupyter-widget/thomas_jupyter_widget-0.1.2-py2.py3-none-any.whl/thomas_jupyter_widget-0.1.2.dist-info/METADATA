@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: thomas-jupyter-widget
+Version: 0.1.2
+Summary: Widget to display and interact with Bayesian Networks in JupyterLab.
+Home-page: https://github.com//thomas-jupyter-widget
+Author: Melle Sieswerda
+Author-email: m.sieswerda@iknl.nl
+License: UNKNOWN
+Keywords: ipython,jupyter,widgets
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: IPython
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: ipywidgets (>=7.6.0)
+Requires-Dist: jupyterlab (>=3)
+Requires-Dist: thomas-core
+
+thomas-jupyter-widget
+=====================
+
+Widget to display and interact with Bayesian Networks in JupyterLab. This version only supports JupyterLab >= 3.
+
+Regular Installation
+--------------------
+The package can be installed through `pip`:
+```bash
+pip install thomas-jupyter-widget
+```
+
+
+Development Installation
+------------------------
+First ensure that `nodejs` (>=12) and `yarn` are installed. In debian, you can use the following if you have `sudo` privileges:
+```bash
+curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
+
+# Running apt-get update is not necessary, since it's alread called in the
+# above setup script.
+sudo apt-get install -y nodejs
+
+# Install yarn properly. The version of yarn that's available by default is
+# just weird.
+sudo apt-get remove cmdtest
+sudo npm install --global yarn
+```
+
+Second, depending on your situation, you may want to create a virtual environment. For example, this might be useful if the command `jupyter labextension develop --overwrite .` fails because it cannot write to the system-wide extensions folder (e.g. `/usr/local`). Under debian/ubuntu, a virtual environment can be created as follows:
+```bash
+# Install the virtualenv package to make life easier
+pip install virtualenv
+
+# Create a virtual environment in the subdirectory '.venv'
+virtualenv .venv
+
+# Activate the virtual environment.
+source .venv/bin/activate
+```
+
+After the preliminaries, install the package as follows:
+
+```bash
+# Clone the repository and move into the directory
+git clone https://github.com/mellesies/thomas-jupyter-widget.git
+cd thomas-jupyter-widget
+
+# Checkout branch jupyter3
+git checkout jupyter3
+
+# Install the package in editable mode.
+pip install -e .
+
+# We need the latest version of JupyterLab, otherwise this will fail
+pip install git+https://github.com/jupyterlab/jupyterlab
+
+# link your development version of the extension with JupyterLab
+jupyter labextension develop --overwrite .
+
+# watch the source directory, automatically rebuilding when needed
+yarn --cwd ./js run watch
+```
+
+Then, start JupyterLab like you normally would in a separate terminal (and don't forget to activate the virtual environment if you're using one ;-).
+
+
+

@@ -1,0 +1,5 @@
+{
+  "load_extensions": {
+    "thomas-jupyter-widget/extension": true
+  }
+}
