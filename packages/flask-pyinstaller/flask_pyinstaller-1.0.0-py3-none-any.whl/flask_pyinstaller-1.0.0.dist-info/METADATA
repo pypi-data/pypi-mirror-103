@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: flask-pyinstaller
+Version: 1.0.0
+Summary: 将flask打包为exe
+Home-page: UNKNOWN
+Author: xiegx
+Author-email: 63542424@163.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: flask
+
+将flask打包为exe，然后在windows下运行
+
+
