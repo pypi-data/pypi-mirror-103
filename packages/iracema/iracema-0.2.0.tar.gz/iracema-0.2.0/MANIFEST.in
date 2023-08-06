@@ -1,0 +1,2 @@
+include assets/audio/Click.wav
+include segmentation/clari-onsets.h5
