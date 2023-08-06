@@ -1,0 +1,23 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "evar"
+author = "Matthias Bach"
+author-email = "marix@marix.org"
+home-page = "https://codeberg.org/Marix/evar"
+requires=[
+  "requests_html",
+]
+description-file = "README.md"
+classifiers = [
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+]
+
+[tool.flit.scripts]
+evar = "evar:main"
+
+[tool.isort]
+profile = "hug"
+line_length = 120
