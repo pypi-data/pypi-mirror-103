@@ -1,0 +1,3 @@
+[xarray.backends]
+sentinel-1 = xarray_sentinel.sentinel1:Sentinel1Backend
+
