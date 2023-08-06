@@ -1,0 +1,32 @@
+Metadata-Version: 1.2
+Name: thglib
+Version: 0.0.2.dev0
+Summary: thg exploit framework and exploit development library.
+Home-page: https://darkcode0x00/thg
+Author: Gallopsled et al.
+Author-email: darkcode357@gmail.com
+License: Mostly MIT, some GPL/BSD, see LICENSE-thglib.txt
+Download-URL: https://github.com/THGFramework/thg-framework
+Description: teste
+        
+Keywords: thg exploit ctf capture the flag binary wargame overflow stack heap
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Security
+Classifier: Topic :: Software Development :: Assemblers
+Classifier: Topic :: Software Development :: Debuggers
+Classifier: Topic :: Software Development :: Disassemblers
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: System Shells
+Classifier: Topic :: Utilities
+Requires-Python: >=2.7
