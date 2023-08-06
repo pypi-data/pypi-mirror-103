@@ -1,0 +1,41 @@
+AgentTypes:
+  Exchange:
+    Attributes:
+      Double1:
+        AttributeType: double
+        Mandatory: true
+      Choose:
+        AttributeType: enum
+        Mandatory: true
+        Values: [ 'CHOICE_A', 'CHOICE_B' ]
+      List1:
+        AttributeType: double_list
+        Mandatory: true
+      Int1:
+        AttributeType: integer
+        Mandatory: true
+      Int2:
+        AttributeType: integer
+        Mandatory: true
+    Products: [ 'AwardedBids' ]
+
+  Demand:
+    Attributes:
+      DemandSeries:
+        AttributeType: time_series
+        Mandatory: true
+    Products: [ 'DemandBids' ]
+
+  Supply:
+    Attributes:
+      SupplySeries:
+        AttributeType: time_series
+        Mandatory: true
+    Products: [ 'SupplyBids' ]
+
+  DemoAgent:
+    Attributes:
+      DummyTimeSeries:
+        AttributeType: time_series
+        Mandatory: true
+    Products: [ 'OneTimeComplexMessage', 'OneTimeSuperComplexMessage', 'OneTimeHyperComplexMessage' ]

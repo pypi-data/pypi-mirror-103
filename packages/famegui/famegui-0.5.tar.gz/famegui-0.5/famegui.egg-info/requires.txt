@@ -1,0 +1,5 @@
+coloredlogs
+fameio==1.3.0
+python-igraph
+pyyaml
+PySide2
