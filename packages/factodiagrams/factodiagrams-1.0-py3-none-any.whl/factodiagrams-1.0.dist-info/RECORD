@@ -1,0 +1,13 @@
+factodiagrams/__init__.py,sha256=itAn0BFM702XnZOeZW0SvFwNY2pj2gD0tF4z57isgj8,261
+factodiagrams/preprocess/Factorisation.py,sha256=SGgftzQJOdoVj4cYtLqaOiD_YbcL6-SrUoU-c_zBoWQ,13826
+factodiagrams/preprocess/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+factodiagrams/preprocess/decomposition.py,sha256=OL8rbcnfK7eXPLEYDZG9ReM9XovUB5MFn3MvdmXSwfY,954
+factodiagrams/preprocess/facto_f_W.py,sha256=W8Lpr6cHob4e8-x3VJnwaIGUSJunM5LHr_QMm5L7ARk,717
+factodiagrams/preprocess/facto_methode.py,sha256=gsQs1PGl7sbjhTe5eck64X1jdJr4E2hjNYn8g7yAEj0,621
+factodiagrams/vis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+factodiagrams/vis/animation.py,sha256=jaVa80fVx1Z_VV0Aq_X6G7bx8EEZhX3ygFpSIYKEF0A,10916
+factodiagrams/vis/points.py,sha256=OjNEdXVC0I-iqaf8A_Jg_f8Ts3ePybes2bFgbdRNTe0,3700
+factodiagrams-1.0.dist-info/METADATA,sha256=mg4b0M7GnDd7kUR8RxHUGfqS8EIGfJ4-cKrAi6uKHw4,371
+factodiagrams-1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+factodiagrams-1.0.dist-info/top_level.txt,sha256=qyiCy1-lyLNXPnHDIUq05UvZ-zQQoqck4eSNGdJzWi4,14
+factodiagrams-1.0.dist-info/RECORD,,
