@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: EncryptEnv
+Version: 0.0.1
+Summary: Encrypt the passwords in the environment variables.
+Home-page: http://rd.thinktronltd.com/jeremywang/EncryptEnv
+Author: Thinktron
+Author-email: jeremywang@thinktronltd.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: cryptography
+
+# Installation
+
+# Usage
+```python
+from EncryptEnv.encrypt import generate_key, encyrpt_key, restore_key
+key = generate_key()
+print(key)
+
+msg = "<your_msg>"
+entrypted_msg = encyrpt_key(key, msg)
+print(entrypted_msg)
+
+msg = restore_key(key, entrypted_msg)
+print(msg)
+```
+
+
