@@ -1,0 +1,2 @@
+curricula~=2.1.0
+curricula-grade~=2.1.0
