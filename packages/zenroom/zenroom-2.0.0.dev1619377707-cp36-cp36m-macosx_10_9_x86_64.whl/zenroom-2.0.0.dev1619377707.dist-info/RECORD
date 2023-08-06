@@ -1,0 +1,8 @@
+zenroom.cpython-36m-darwin.so,sha256=MJ5AARO5M9V5E7iQT5qFq7R5bFgbp04tX55B_egVTj8,923752
+zenroom/__init__.py,sha256=awCwIOg8vkGT4PR-L995ouj7YAc3EdUl-ahxY80L840,155
+zenroom/_config.py,sha256=4L4zdZgQyBAkTcgUVqygrPgf3t5aJl1-uVJ4IVv5qIs,269
+zenroom/zenroom.py,sha256=JoyOB1YxSZycBbOSGTbd8kW3lrfnv4NTUs_EqWbYrf0,1379
+zenroom-2.0.0.dev1619377707.dist-info/METADATA,sha256=drYF7REopSbaD5Pk7NTdllprJ9QAOQgi2wbLCkMm86Q,8020
+zenroom-2.0.0.dev1619377707.dist-info/WHEEL,sha256=SCcPaD1xriZouD6EXl7AgcYiQmH1NgiskymVTsykSG4,110
+zenroom-2.0.0.dev1619377707.dist-info/top_level.txt,sha256=583htwdwzEJNDLQu3rdFX2SJ7JO_pO5NukzK6RAdrXc,8
+zenroom-2.0.0.dev1619377707.dist-info/RECORD,,
