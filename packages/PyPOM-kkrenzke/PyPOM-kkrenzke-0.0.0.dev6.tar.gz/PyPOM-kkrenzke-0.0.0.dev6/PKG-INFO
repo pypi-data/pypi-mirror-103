@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: PyPOM-kkrenzke
+Version: 0.0.0.dev6
+Summary: A page object model (POM) framework for Python
+Home-page: https://github.com/kylerkrenzke/pypom
+Author: Kyler Krenzke
+Author-email: kkrenzke@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/kylerkrenzke/pypom/issues
+Description: # PyPOM
+        A page object model (POM) framework for Python.
+        
+        Author: Kyler Krenzke
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
