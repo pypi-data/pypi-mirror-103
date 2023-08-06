@@ -1,0 +1,17 @@
+typhoon-orchestrator
+sqlparse
+
+[bigquery]
+google-cloud-bigquery
+
+[duckdb]
+duckdb
+
+[postgres]
+psycopg2
+
+[snowflake]
+snowflake-connector-python
+
+[sqlalchemy]
+sqlalchemy
