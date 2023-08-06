@@ -1,0 +1,16 @@
+tinychain/__init__.py,sha256=-3EAkvU9a8GkT738IGsBPLSEr9sVILX7kh7LRqoOCSA,397
+tinychain/chain.py,sha256=w8TSYA0ZGR5N0l9uAM5mJg-XPnRU7avxtsEuW4SURKE,944
+tinychain/cluster.py,sha256=Qpny98SrBL21gP9yK1E1YlxwVUYFwyQsbkW5c8_tQP0,2858
+tinychain/collection.py,sha256=kwflXeMKikm9ISbkoBR4W4IR-8LHwpeeCJ1gjeEBo50,3605
+tinychain/decorators.py,sha256=KiU41UgaE6bqMw_OLl8Dc9dCEPDnVlj_LyUn1c-QDFs,1161
+tinychain/error.py,sha256=WHNTbZuVVLZEuZCmbyNSjjtx8TUszpBL8rEse8D3eK8,1635
+tinychain/host.py,sha256=gy1iZhhheK46mCwwkOfI2SDSRU9l0UrZwRua2kzxsQU,5605
+tinychain/ref.py,sha256=MPcVtGWKyJeE58yczkfk30Ju_GTHfIBdsy031wWIhqE,2715
+tinychain/reflect.py,sha256=lXqN_zRvlIqln4ecvVNivnXGp_RtjWhnZjOCsEUgvoU,9575
+tinychain/state.py,sha256=fu-zT4ghFUVNW7vkehZnpyq5_P8DEL3UpfQ1ghOKxew,3101
+tinychain/util.py,sha256=a2JrLZrjFgYUaGCDewF7xYYkLcGJugD2BqrsB7jlb1E,5952
+tinychain/value.py,sha256=hFQ_ShNKwNvycIbu-PRIvvaiU3ElsUWruifBA0-fZyM,3154
+tinychain-0.1.8.dist-info/METADATA,sha256=Z7FeD-52Mgk1PzFyDP7y1iqqxoYMVyWrRT_C2ExuHK4,12528
+tinychain-0.1.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tinychain-0.1.8.dist-info/top_level.txt,sha256=pz89xgtSDlj3cyGB9K9YvwybnCyWAjwWWbIHHmzOIpI,10
+tinychain-0.1.8.dist-info/RECORD,,
