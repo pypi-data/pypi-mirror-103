@@ -1,0 +1,13 @@
+pdp_kafka_reader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdp_kafka_reader/argparser.py,sha256=Jri2LG6EH2GwiTAyYC-dneFLcF2yINP0PFwVn12p2HM,2400
+pdp_kafka_reader/conf.py,sha256=crRe3xRgM7O4K7Y2MRXN_KV3BDyJXWnolx9QkvKaLts,202
+pdp_kafka_reader/kafka_reader.py,sha256=xhHle-HogXmRDSuIebCThgc65Is0LYoEydVlSPmkr80,2724
+pdp_kafka_reader/transform.py,sha256=fMwps2F7hPhHaAHlDKtx5XTdU4LdrAywehNsy__uMOM,1177
+pdp_kafka_reader/jars/spark-avro_2.11-2.4.0.cloudera2.jar,sha256=SW-ZwNBcklHGXfmmpjKp0BSLsPiQiGyGWzXw9peHKPA,189958
+pdp_kafka_reader-0.0.4.data/scripts/export-avro-jar,sha256=8aRpHdWxvspIVSppOHiI5r8p6xeza0zE4Wl6IprZ85k,433
+pdp_kafka_reader-0.0.4.data/scripts/kafka-reader,sha256=4x7ymTYtjbXhDZoKcHNcJSy8qr26zX63tvF_Bx3hWJo,1000
+pdp_kafka_reader-0.0.4.dist-info/LICENSE,sha256=glhFnN_7Lvn0_ycUv9zXdkxMWfBQFJN_pLouRP85FYU,1067
+pdp_kafka_reader-0.0.4.dist-info/METADATA,sha256=G1iZFdVr6Rgq_37ReZpTP5q_evK9ZDrMztgkDfvPtA0,1501
+pdp_kafka_reader-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pdp_kafka_reader-0.0.4.dist-info/top_level.txt,sha256=nrmKDvYDfp7ge6k7W1mMYnRAGNMydxsLpa9qlLsRBuA,17
+pdp_kafka_reader-0.0.4.dist-info/RECORD,,
