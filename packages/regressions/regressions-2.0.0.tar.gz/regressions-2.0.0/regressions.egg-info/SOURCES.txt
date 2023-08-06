@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+library/execute.py
+regressions.egg-info/PKG-INFO
+regressions.egg-info/SOURCES.txt
+regressions.egg-info/dependency_links.txt
+regressions.egg-info/requires.txt
+regressions.egg-info/top_level.txt
+test/test_analyses.py
+test/test_errors.py
+test/test_execute.py
+test/test_matrices.py
+test/test_models.py
+test/test_statistics.py
+test/test_vectors.py
