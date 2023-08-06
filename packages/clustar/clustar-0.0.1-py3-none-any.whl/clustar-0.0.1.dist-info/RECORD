@@ -1,0 +1,16 @@
+clustar/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+clustar/clustarray.py,sha256=v9r54-OxoB2F-LIwlpfWrsdbtNRnE2kac9AAMmMngcM,8672
+clustar/core.py,sha256=Scp0hJEJEm-4ILyfBYsT1o6uwiZjVDmb_bTXamlbCSs,5162
+clustar/fit.py,sha256=flyYpCJYfGxZfVhqi48U-Ip3Nh8Ee6aXhUN3MG8P6xs,3574
+clustar/graph.py,sha256=iRGZgb6elAMrAKj_NRi14rqowzOqW949UYB044MdReU,4018
+clustar/group.py,sha256=jnNkyZfR9HBJMG8loIIwO-uRQYvypiH0qmmaHfNLsp8,10794
+clustar/module1.py,sha256=XiwsJDb108p4jTB9A_41jjqhDuWsPSkp39jAyVFXH3M,1932
+clustar/search.py,sha256=zXPckHj8c6voKrBz0NT4P4U7D4o9HROJ8oBSi_ibgwQ,1263
+clustar/data/example.csv,sha256=0q8TPFWiyPJA9QzST5tQwIBoQqTFUL6BdEVjsX7Yffc,5793890
+clustar/data/test_fits.csv,sha256=jttZBvWAIXSY77jcu2mxCK1mcW7dsmuHqGsQZ8XKvvw,1277794
+clustar/data/test_pb.csv,sha256=CqpxPIoeKaf5WoXx5MPpX_DIkoguehzF3_HyVeq940Q,931072
+clustar-0.0.1.dist-info/LICENSE.txt,sha256=y3CGawvRtLWG5r4tXw2OgXtzxh4gx5dI-Tc4yiq28ek,1064
+clustar-0.0.1.dist-info/METADATA,sha256=QOULKC3oXHcsLA5PSjI028heGED-HYZvlm52358Zgpk,2327
+clustar-0.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+clustar-0.0.1.dist-info/top_level.txt,sha256=odde9QjjDksPX87RewNp-COE66mjr4O-ooGYzh-ZeSY,8
+clustar-0.0.1.dist-info/RECORD,,
