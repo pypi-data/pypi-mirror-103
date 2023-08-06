@@ -1,0 +1,6 @@
+mysqlclient
+requests>=2.13.0
+SPARQLWrapper
+regex
+pandas
+pyyaml
