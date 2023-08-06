@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: googleDriveFuse
+Version: 1.6
+Summary: Mount Google Drive onto linus system
+Home-page: https://github.com/JoviVon/googleDriveFuse
+Author: Jovi Vongnaraj
+Author-email: joviv172001@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: google-drive google drive fuse filesystem
+Platform: UNKNOWN
+Classifier: Topic :: System :: Filesystems
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet
+Classifier: Topic :: Utilities
+Description-Content-Type: text/x-rst
