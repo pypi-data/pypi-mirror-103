@@ -1,0 +1,3 @@
+[console_scripts]
+aws-hashicorp-packer-reaper = aws_hashicorp_packer_reaper.__main__:main
+
