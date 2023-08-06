@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+table2ascii/__init__.py
+table2ascii.egg-info/PKG-INFO
+table2ascii.egg-info/SOURCES.txt
+table2ascii.egg-info/dependency_links.txt
+table2ascii.egg-info/top_level.txt
