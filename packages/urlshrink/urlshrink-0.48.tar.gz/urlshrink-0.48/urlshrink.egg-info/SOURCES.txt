@@ -1,0 +1,14 @@
+README.md
+setup.py
+urlshrink/ShortenerServer.py
+urlshrink/__init__.py
+urlshrink/__main__.py
+urlshrink.egg-info/PKG-INFO
+urlshrink.egg-info/SOURCES.txt
+urlshrink.egg-info/dependency_links.txt
+urlshrink.egg-info/entry_points.txt
+urlshrink.egg-info/requires.txt
+urlshrink.egg-info/top_level.txt
+urlshrink/templates/base.html
+urlshrink/templates/functions.html
+urlshrink/templates/index.html

@@ -1,0 +1,268 @@
+{% macro input(value="") %}
+    <div class="container content">
+        <h2 class="center">Shorten</h2>
+        <div class="box">
+            <form class="form" action="/" method="get">
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label">URL:</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field">
+                            <p class="control is-expanded">
+                                <input class="input" type="text" value="{{ value }}" name="url">
+                            </p>
+                        </div>
+                        <div class="field">
+                            <p class="control is-expanded">
+                                <button class="button is-primary" type="submit">Shorten!</button>
+                            </p>
+                        </div>
+                        <div class="field">
+                            <p class="control is-expanded">
+                                <a class="button is-info" onclick="toggleInputExtraOptions(this)">Show options</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="inputExtraOptions" class="is-hidden">
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Key:</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <p class="control is-expanded">
+                                    <input class="input" type="password" name="key">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field is-horizontal has-addons">
+                        <div class="field-label is-normal">
+                            <label class="label">Delete after:</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <p class="control is-expanded">
+                                    <input class="input" type="number" name="time">
+                                </p>
+                            </div>
+                            <div class="select">
+                                <select name="unit">
+                                    <option>Seconds</option>
+                                    <option>Minutes</option>
+                                    <option>Hours</option>
+                                    <option>Days</option>
+                                    <option>Weeks</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+    function toggleInputExtraOptions(ctx) {
+        let i = document.getElementById('inputExtraOptions');
+        if(i.classList.contains("is-hidden")) {
+            i.classList.remove("is-hidden");
+            ctx.innerText = "Hide options";
+        } else {
+            i.classList.add("is-hidden");
+            ctx.innerText = "Show options";
+        }
+    }
+    </script>
+{% endmacro %}
+
+{% macro search() %}
+    <div class="container content">
+        <h2 class="center">Search</h2>
+        <div class="box">
+            <form class="form" action="/" method="get">
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label">Suffix:</label>
+                    </div>
+                    <div class="field-body">
+                        <input class="input" type="text" name="suffix">
+                    </div>
+                </div>
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label">Key:</label>
+                    </div>
+                    <div class="field-body">
+                        <input class="input" type="password" name="key">
+                    </div>
+                </div>
+                <div class="control">
+                    <button class="button is-primary is-pulled-right" type="submit">Search!</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    &nbsp;<br>&nbsp;<br>&nbsp;
+{% endmacro %}
+
+{% macro statsModal(id, suffix) %}
+
+{% endmacro %}
+
+{% macro deleteModal(id, suffix) %}
+    <div class="modal" id="{{ id }}">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Delete url?</p>
+                <button class="delete" aria-label="close" onclick="hideDeleteModal()"></button>
+            </header>
+            <section class="modal-card-body">
+                <form class="form" method="get" action="/del">
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Suffix:</label>
+                        </div>
+                        <div class="field-body">
+                            <input class="input" type="text" value="{{ suffix }}" id="{{ id }}Suffix">
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Key:</label>
+                        </div>
+                        <div class="field-body">
+                            <input class="input" type="text" value="" id="{{ id }}Key">
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <footer class="modal-card-foot">
+                <a class="button is-danger" onclick="">Delete</a>
+                <a class="button" onclick="hideDeleteModal()">Cancel</a>
+            </footer>
+        </div>
+    </div>
+    <script>
+    function hideDeleteModal() {
+        document.getElementById('{{ id }}').classList.remove('is-active');
+    }
+    </script>
+{% endmacro %}
+
+{% macro message(title, text, class="") %}
+    &nbsp;
+    <div class="container">
+        <article class="message {{ class }}">
+            <div class="message-header">
+                <p>{{ title }}</p>
+            </div>
+            <div class="message-body">
+                {{ text }}
+            </div>
+        </article>
+    </div>
+    &nbsp;
+{% endmacro %}
+
+{% macro protected_fields(domain, url, suffix, delete_at) %}
+    {% set arr = [{"v": url, "n": "URL"}, {"v": suffix, "n": "Suffix"}, {"v": delete_at, "n": "Valid until:"}] %}
+    {% if domain != None %}
+        {% set x = arr.append({"v": domain + suffix, "n": "Shortened URL"}) %}
+    {% endif %}
+    <div class="content container">
+        {% for i in arr %}
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">{{ i["n"] }}</label>
+                </div>
+                <div class="field-body">
+                    <input id="{{ i["n"] }}" class="input" type="text" value="{{ i["v"] }}" disabled>
+                </div>
+                <div class="control">
+                    <a class="button is-info" onclick="onCopyButtonClicked(this, '{{ i["n"] }}')">Copy</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endmacro %}
+
+{% macro protected_fields_js() %}
+    <script>
+        function onCopyButtonClicked(ctx, input_id) {
+            let i = document.getElementById(input_id);
+            if (navigator.clipboard.writeText(i.value)) {
+                ctx.innerText = "Copied!";
+                setTimeout(function f() {
+                    ctx.innerText = "Copy";
+                }, 2000);
+            } else {
+                ctx.innerText = "Could not copy";
+                setTimeout(function f() {
+                    ctx.innerText = "Copy";
+                }, 2000);
+            }
+        }
+    </script>
+{% endmacro %}
+
+{% macro index_hero(title) %}
+    <section class="hero">
+        <div class="hero-body">
+            <p class="title">
+                {{ title }}
+            </p>
+            <p class="subtitle">
+                Shrink urls here.
+            </p>
+        </div>
+    </section>
+{% endmacro %}
+
+{% macro buttons(suffix, deleteModalId, qr, statsViewId) %}
+<div class="columns">
+    <div class="column is-one-fifth"></div>
+    <div class="column has-text-centered">
+        {% if qr is defined %}
+        <a class="button is-info" onclick="switchQrCodeImage(this)">Show QR Code</a>
+        {% endif %}
+        <a class="button is-primary" onclick="enableModal()">Statistics</a>
+        <a class="button is-danger" onclick="enableModal('{{ deleteModalId }}')">Delete</a>
+    </div>
+    <div class="column is-one-fifth"></div>
+</div>
+{% endmacro %}
+
+{% macro qrCode(id, qr) %}
+{% if qr != None %}
+<div class="center is-hidden" id="{{ id }}">
+    <img src="data:image/png;charset=utf-8;base64,{{ qr }}"/>
+</div>
+{% endif %}
+{% endmacro %}
+
+{% macro qrCodeJs(id) %}
+<script>
+function switchQrCodeImage(ctx) {
+    let e = document.getElementById('{{ id }}');
+    if(e.classList.contains("is-hidden")) {
+        e.classList.remove("is-hidden");
+        ctx.innerText = "Hide QR Code";
+    } else {
+        e.classList.add("is-hidden");
+        ctx.innerText = "Show QR Code";
+    }
+}
+</script>
+{% endmacro %}
+
+{% macro buttonsJs() %}
+<script>
+function enableModal(id) {
+    document.getElementById(id).classList.add('is-active');
+}
+</script>
+{% endmacro %}
