@@ -1,0 +1,9 @@
+README.md
+setup.py
+bin/kindle
+etc/kindle.ini
+netkiller_kindle.egg-info/PKG-INFO
+netkiller_kindle.egg-info/SOURCES.txt
+netkiller_kindle.egg-info/dependency_links.txt
+netkiller_kindle.egg-info/top_level.txt
+src/__init__.py
