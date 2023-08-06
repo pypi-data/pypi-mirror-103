@@ -1,0 +1,17 @@
+LICENSE
+pyproject.toml
+setup.cfg
+setup.py
+src/comsar/__init__.py
+src/comsar.egg-info/PKG-INFO
+src/comsar.egg-info/SOURCES.txt
+src/comsar.egg-info/dependency_links.txt
+src/comsar.egg-info/not-zip-safe
+src/comsar.egg-info/requires.txt
+src/comsar.egg-info/top_level.txt
+src/comsar/tracks/__init__.py
+src/comsar/tracks/_form.py
+src/comsar/tracks/_pitch.py
+src/comsar/tracks/_rhythm.py
+src/comsar/tracks/_timbre.py
+src/comsar/tracks/utilities.py
