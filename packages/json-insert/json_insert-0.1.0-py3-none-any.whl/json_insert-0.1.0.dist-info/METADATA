@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: json-insert
+Version: 0.1.0
+Summary: Add new keys to a json stream without storing it in memory.
+Home-page: https://github.com/wallee94/json-insert
+Author: Walther Lee
+Author-email: walthere.lee@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+![Build Status](https://github.com/wallee94/json-insert/actions/workflows/tests.yaml/badge.svg)
+
+# JSON Insert
+
+JSON Insert allows adding new keys to a json stream without storing it in memory.
+
+
