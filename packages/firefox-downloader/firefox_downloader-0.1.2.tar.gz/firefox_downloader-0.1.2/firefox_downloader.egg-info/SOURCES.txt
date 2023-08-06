@@ -1,0 +1,16 @@
+README.rst
+setup.py
+bin/firefox_downloader
+firefox_downloader/__init__.py
+firefox_downloader/__main__.py
+firefox_downloader/current.py
+firefox_downloader/info.py
+firefox_downloader/remote.py
+firefox_downloader/utils.py
+firefox_downloader.egg-info/PKG-INFO
+firefox_downloader.egg-info/SOURCES.txt
+firefox_downloader.egg-info/dependency_links.txt
+firefox_downloader.egg-info/requires.txt
+firefox_downloader.egg-info/top_level.txt
+firefox_downloader/config/__init__.py
+firefox_downloader/config/desktop_file.py
