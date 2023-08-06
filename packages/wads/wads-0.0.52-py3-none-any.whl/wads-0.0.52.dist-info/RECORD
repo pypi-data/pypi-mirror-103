@@ -1,0 +1,12 @@
+wads/__init__.py,sha256=6GCMzk6IwTS_GfJwn-oVXxNW994rJrcPYK7zrRkGxLs,1808
+wads/licensing.py,sha256=73y6Myte3MWF0nIGIVv23P7XDwd4nfYfH0b8i9fLxqE,1917
+wads/pack.py,sha256=93ItJWTw8RcqOGHVaRVYbEn8mUMX3Kb2hH4WrlnTLg4,30042
+wads/populate.py,sha256=MT4HZD0nqZKuJP2pjVdpuVRL0MviFxp2tak3NiyrnNI,13063
+wads/trans.py,sha256=PxONcBCqFxMHmPVJZ1dTIWc4SRM62Eq85MzisPr5cQ0,754
+wads/util.py,sha256=ESmevcGVmGc4Q88TMoDCdwGJFQ4xKO3464TYYKUlV44,12126
+wads-0.0.52.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+wads-0.0.52.dist-info/METADATA,sha256=mHt36vE_t4a1-K5F9DHi8MI8tZovWWNPbZ6BpqLtrqE,4418
+wads-0.0.52.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+wads-0.0.52.dist-info/entry_points.txt,sha256=11zhgHmePd1RoGxcnWx-tHc6X881Da9C4JP2N6rBqFI,71
+wads-0.0.52.dist-info/top_level.txt,sha256=QInF1tdlhtIp0EGK_JP5f9tatxyM6tptsfDPhkY_oR4,5
+wads-0.0.52.dist-info/RECORD,,
