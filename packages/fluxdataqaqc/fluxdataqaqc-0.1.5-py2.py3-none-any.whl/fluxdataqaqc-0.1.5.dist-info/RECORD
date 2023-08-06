@@ -1,0 +1,10 @@
+fluxdataqaqc/__init__.py,sha256=bsE_cG69XmFajggmylp00_vfkWI4uP61YK45nDBWV9c,728
+fluxdataqaqc/data.py,sha256=qGSCcKTGPziFjo_JQL1iRt3xSupgz6Ziq17WuHvQSjg,56843
+fluxdataqaqc/plot.py,sha256=64a7T4AxvyWWbvW5T24rUCFf4UnWdJBIU44hGl17OVU,50698
+fluxdataqaqc/qaqc.py,sha256=ca4OZ0l3P9BjUUTEdSURjmv3bs74BXa72Abq4qtRCV0,84539
+fluxdataqaqc/util.py,sha256=7hzza0yh_zZHNMZGLRxOlM4odpE4pabQz4VdxP6z3HY,10797
+fluxdataqaqc-0.1.5.dist-info/LICENSE.txt,sha256=MtS1TggZ68hYhA9d5q2aOVWWstsu-lZNF4X2qqgidxA,1522
+fluxdataqaqc-0.1.5.dist-info/METADATA,sha256=GF7rA8NFg_2bfvIBwqqWCTI8U9DE1lIfHEpxv0amVEw,3279
+fluxdataqaqc-0.1.5.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+fluxdataqaqc-0.1.5.dist-info/top_level.txt,sha256=EFRO-FgswZCPO1sl48QBKGX7DJN7-y8DGWUf8-g1bgM,13
+fluxdataqaqc-0.1.5.dist-info/RECORD,,
