@@ -1,0 +1,10 @@
+pyimgutil/__init__.py,sha256=18ACwGGvumQoHb2kb3eaj7XugORDiAd-tsFJop4M2kU,1030
+pyimgutil/__main__.py,sha256=JrYyKscwAPeIVrhYXEO20moxwuYMRlTDGOPFy2PoWj4,6399
+pyimgutil/arguments.py,sha256=Gsp9lkgyvKZ0EOEGVQJB3q6Nl90oeocKopHPb68gdho,15606
+pyimgutil/commands.py,sha256=NSM9lP9MjS7Bzj7NylkBez7u5y_qZcMo4LgqtY_Zhuc,8630
+pyimgutil-2.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pyimgutil-2.0.0.dist-info/METADATA,sha256=pnpGlSgx8R0phAC6-Y9kymFzWnzF4D5G2heVlPxE2sI,2382
+pyimgutil-2.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyimgutil-2.0.0.dist-info/entry_points.txt,sha256=uwlHCYjNNolSxCseyClytbdIVWqzEWXe8EugSEv3BvI,55
+pyimgutil-2.0.0.dist-info/top_level.txt,sha256=tG3IXLD8oF6o1rFomQwwX6wM1o6b84hEvx66OJvQsY8,10
+pyimgutil-2.0.0.dist-info/RECORD,,
