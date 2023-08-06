@@ -1,0 +1,9 @@
+^ve_
+\.eggs/
+.*\.pyc$
+.*\.[^/]*\.swp$
+^htmlcov/
+^LDB_HDF5\.egg-info/
+^\.coverage$
+^build/
+^ldb/hdf5/_hdf5\..*\.so$
