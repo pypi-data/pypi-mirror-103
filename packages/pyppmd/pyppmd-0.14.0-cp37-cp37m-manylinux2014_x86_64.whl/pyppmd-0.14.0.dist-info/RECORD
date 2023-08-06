@@ -1,0 +1,10 @@
+pyppmd/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyppmd/__init__.pyi,sha256=OqYuXV-gCt6mXHXrt43OXdsDg_VvzNLLBUSbmLltt7Q,2260
+pyppmd/__init__.py,sha256=xas5SIhQWS0Ft6d9M8iSbjQ3j4faV-mo6KaAKTXvxs4,3412
+pyppmd/c/_ppmd.cpython-37m-x86_64-linux-gnu.so,sha256=raXyw1HhSEJH-16ec5zsW8vC03A76FZRKYTrti7UOQI,321192
+pyppmd/c/c_ppmd.py,sha256=GEKJs5GOAo22hZT4pjRkKu1rqB4LD_4T6iqN6MooObE,252
+pyppmd-0.14.0.dist-info/LICENSE.rst,sha256=BL1RH9UY1tGki1f1-ncCk0RHceOAvAbLe1pKcsgDVic,3959
+pyppmd-0.14.0.dist-info/METADATA,sha256=CkYi1ilbf3Nm2_wmUz8XoEzQV-kxvp_zrqcXPc6uR1c,4236
+pyppmd-0.14.0.dist-info/RECORD,,
+pyppmd-0.14.0.dist-info/WHEEL,sha256=cCcIocQWsRcjbZ8DFZU6x3YDrwDcwVuuUbwJVUWc_xU,112
+pyppmd-0.14.0.dist-info/top_level.txt,sha256=oI9A6TS272sAHjryEKAiyFJkIMwC7DxWsfF7zlFviFw,7
