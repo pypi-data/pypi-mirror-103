@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: bassin
+Version: 0.2
+Summary: Python optimization script used for optimizing water flow out of a catch basin or a dam.
+Home-page: https://github.com/lionel42/bassin
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: MIT
+Download-URL: https://github.com/lionel42/bassin/archive/refs/tags/v_0.2.tar.gz
+Description: UNKNOWN
+Keywords: bassin,basin,dam,pumping,flow,optimization
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
