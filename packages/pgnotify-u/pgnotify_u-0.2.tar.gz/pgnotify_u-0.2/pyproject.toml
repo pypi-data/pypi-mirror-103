@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "pgnotify_u"
+version = "0.2"
+authors = [ "glowlex <glowlex@yandex.ru>",]
+license = "Unlicense"
+readme = "README.md"
+description = "Easily LISTEN and NOTIFY to PostgreSQL notifications system"
+repository = "https://github.com/glowlex/pgnotify"
+homepage = "https://github.com/glowlex/pgnotify"
+
+[tool.poetry.dependencies]
+python = "*"
+psycopg2-binary = "*"
+logx = "*"
+six = "*"
+
+[tool.poetry.dev-dependencies]
+sqlbag = "*"
+pytest = "*"
+pytest-cov = "*"
+pytest-xdist = "*"
+tox = "*"
+flake8 = "*"
+twine = "*"
+wheel = "*"
+isort = "*"
+
+[tool.poetry.dev-dependencies.black]
+python = ">=3.6"
+version = ">=18.9b0"
