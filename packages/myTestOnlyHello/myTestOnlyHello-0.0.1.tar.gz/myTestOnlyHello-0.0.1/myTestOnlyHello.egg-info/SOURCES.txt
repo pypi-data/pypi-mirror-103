@@ -1,0 +1,7 @@
+setup.py
+libname/__init__.py
+libname/hello.py
+myTestOnlyHello.egg-info/PKG-INFO
+myTestOnlyHello.egg-info/SOURCES.txt
+myTestOnlyHello.egg-info/dependency_links.txt
+myTestOnlyHello.egg-info/top_level.txt
