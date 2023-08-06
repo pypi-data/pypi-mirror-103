@@ -1,0 +1,17 @@
+CHANGES
+=======
+
+0.4.3
+-----
+
+* use xctest logger in instruments.py, call reply\_null when expects\_reply=1
+* fix: correct response to reply
+* change to return ret.get(pid), ref #83
+* fix exceptions not export all
+* fix \_wdaproxy import error
+* add stop\_network\_sampling and fix pid not in result of get\_process\_network\_stats
+* add command ps
+* add usbmuxd dump script
+* add project link: https://github.com/electricbubble/gidevice
+* update readme about appium run in windows
+* update example
