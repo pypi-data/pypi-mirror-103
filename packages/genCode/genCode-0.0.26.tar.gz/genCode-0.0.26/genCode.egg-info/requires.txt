@@ -1,0 +1,7 @@
+rich
+db-hammer
+PyMySQL
+cx_Oracle
+click
+jinja2
+PyYAML
