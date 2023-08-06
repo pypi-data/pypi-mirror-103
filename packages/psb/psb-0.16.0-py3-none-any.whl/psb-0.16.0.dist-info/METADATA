@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: psb
+Version: 0.16.0
+Summary: UNKNOWN
+Home-page: https://github.com/rj175/pi-status-board
+Author: Richard Annand
+Author-email: rj170590@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/rj175/pi-status-board/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Home Automation
+Classifier: Topic :: Utilities
+Classifier: Natural Language :: English
+Requires-Python: >=3.6
+Requires-Dist: AWSIoTPythonSDK
+Requires-Dist: inky
+Requires-Dist: font-fredoka-one
+Requires-Dist: Pillow
+Requires-Dist: boto3
+Requires-Dist: RPi.GPIO
+
+UNKNOWN
+
+
