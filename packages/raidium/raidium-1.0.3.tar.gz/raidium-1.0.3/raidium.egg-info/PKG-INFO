@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: raidium
+Version: 1.0.3
+Summary: Модуль для Накрутки Прослушиваний в Вашем Альбоме в Социальной Сети ВКонтакте.
+Home-page: https://github.com/mrshowtv/vk-listener
+Author: k3rry1xrd
+Author-email: Mrslashkaopenko@google.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/mrshowtv/vk-listener
+Description: <h1 align="center">Raidium</h1>
+        
+        <h3>Модуль для Накрутки Прослушиваний в Вашем Альбоме в Социальной Сети ВКонтакте<h3>
+        
+        <h4>1. Установите <a href="https://chromedriver.chromium.org/downloads">chromedriver.exe</a> Вашей версии Google Chrome<h3>
+        <h4>2. Перетащите <a href="https://chromedriver.chromium.org/downloads">chromedriver.exe</a> в C:\Users\User\AppData\Local\Google\Chrome<h4>
+        <h4>3. Если нет папки, то создай её<h4>
+        
+        <h3>Простой пример кода с использованием библиотеки "Raidium"<h3>
+        
+        ```python
+        import vk-listener
+        
+        listener.init('hide')
+        
+        listener.authorization('Логин', 'Пароль')
+        
+        if(listener.check()):
+        	print('Авторизация прошла успешно!')
+        else:
+        	print('Ошибка авторизации!')
+        
+        listener.loop('Ссылка на Ваш альбом', 15)
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
