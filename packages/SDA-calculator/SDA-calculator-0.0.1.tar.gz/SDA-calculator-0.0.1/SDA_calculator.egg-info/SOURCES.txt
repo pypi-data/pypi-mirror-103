@@ -1,0 +1,6 @@
+MANIFEST.in
+setup.py
+SDA_calculator.egg-info/PKG-INFO
+SDA_calculator.egg-info/SOURCES.txt
+SDA_calculator.egg-info/dependency_links.txt
+SDA_calculator.egg-info/top_level.txt
