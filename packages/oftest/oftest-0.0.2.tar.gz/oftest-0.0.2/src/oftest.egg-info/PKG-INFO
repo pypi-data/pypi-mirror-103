@@ -1,0 +1,131 @@
+Metadata-Version: 2.1
+Name: oftest
+Version: 0.0.2
+Summary: test framework for OpenFOAM
+Home-page: https://github.com/HenningScheufler/oftest
+Author: Henning Scheufler
+Author-email: henning.scheufler@dlr.de
+License: BSD-2-Clause
+Project-URL: Documentation, https://oftest.readthedocs.io/
+Project-URL: Changelog, https://oftest.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://github.com/HenningScheufler/oftest/issues
+Description: ========
+        Overview
+        ========
+        
+        
+        
+        test framework for OpenFOAM
+        
+        * Free software: BSD 2-Clause License
+        
+        Installation
+        ============
+        
+        ::
+        
+            pip install oftest
+        
+        You can also install the in-development version with::
+        
+            pip install https://github.com/HenningScheufler/oftest/archive/master.zip
+        
+        
+        Documentation
+        =============
+        
+        
+        https://oftest.readthedocs.io/
+        
+        
+        Development
+        ===========
+        
+        To run all the tests run::
+        
+            tox
+        
+        
+        Usage
+        =====
+        
+        add conftest.py and pytest.ini to your project
+        
+        cat pytest.ini:
+        
+        ::
+        
+            [pytest]
+            #minversion = 6.0
+            addopts = -ra -v --import-mode=importlib --tb=no --cache-clear
+            testpaths =
+                tests
+        
+        cat conftest.py:
+        
+        ::
+        
+            import pytest
+        
+            def pytest_addoption(parser):
+                parser.addoption(
+                    "--writeNSteps", action="store", default=0, help="only perform specified number of timestep"
+                )
+                parser.addoption(
+                    "--no-Allclean", action='store_false',default=True ,help="do not clean case after run"
+                )
+        
+        we assume that all OpenFOAM test are located in the tests folder and that each test can be started with a
+        Allrun or Allclean script. By adding a test_*.py to each OpenFOAM test, py.test automatically discovers all
+        tests in the folder and they can be run with:
+        
+        ::
+        
+            py.test
+        
+        with the command line option the test only run one time step
+        
+        ::
+        
+            py.test --writeNSteps 1
+        
+        
+        Extensions
+        ----------
+        
+        Running py.test with multple threads:
+        
+        pip install pytest-xdist
+        
+        the output can be pretified with the extension:
+        
+        pip install pytest-sugar
+        
+        Changelog
+        =========
+        
+        0.0.0 (2021-04-17)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: openfoam,cfd,pytest,testing
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Provides-Extra: dev
