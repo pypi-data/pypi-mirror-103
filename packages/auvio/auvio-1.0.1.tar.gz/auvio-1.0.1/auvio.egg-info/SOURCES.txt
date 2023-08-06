@@ -1,0 +1,8 @@
+README.md
+setup.py
+auvio/__init__.py
+auvio/main.py
+auvio.egg-info/PKG-INFO
+auvio.egg-info/SOURCES.txt
+auvio.egg-info/dependency_links.txt
+auvio.egg-info/top_level.txt
