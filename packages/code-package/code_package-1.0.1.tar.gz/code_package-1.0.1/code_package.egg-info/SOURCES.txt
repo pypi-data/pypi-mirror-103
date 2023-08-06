@@ -1,0 +1,9 @@
+README.md
+setup.py
+child/__init__.py
+child/child_file.py
+code_package.egg-info/PKG-INFO
+code_package.egg-info/SOURCES.txt
+code_package.egg-info/dependency_links.txt
+code_package.egg-info/requires.txt
+code_package.egg-info/top_level.txt
