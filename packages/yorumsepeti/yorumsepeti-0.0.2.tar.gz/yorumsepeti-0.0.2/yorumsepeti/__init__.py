@@ -1,0 +1,1 @@
+from yorumsepeti import yorumsepeti
