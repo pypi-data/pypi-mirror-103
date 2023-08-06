@@ -1,0 +1,13 @@
+shapes/__init__.py,sha256=qiBXa-nEnHYnOyPYSOhDOWgG148IK4zIMvhCtEIjHIQ,80
+shapes/car.py,sha256=T53ux0dH76WixiVfnFMGi8IvVk7gB9mHHDKM9Jj_C00,1233
+shapes/circle.py,sha256=xf732vMHZqDy2mHVu7DtHKbsXixiV8ovEdZQHpAQRRw,518
+shapes/rectangle.py,sha256=NVroVea_XcTR3UykmvyurTK3JuKqinsEpvr3bSUtREc,720
+turtledrawing/__init__.py,sha256=qiBXa-nEnHYnOyPYSOhDOWgG148IK4zIMvhCtEIjHIQ,80
+turtledrawing/car.py,sha256=T53ux0dH76WixiVfnFMGi8IvVk7gB9mHHDKM9Jj_C00,1233
+turtledrawing/circle.py,sha256=xf732vMHZqDy2mHVu7DtHKbsXixiV8ovEdZQHpAQRRw,518
+turtledrawing/rectangle.py,sha256=NVroVea_XcTR3UykmvyurTK3JuKqinsEpvr3bSUtREc,720
+turtledrawing-5.0.4.dist-info/METADATA,sha256=0LIOjAQ06kpdor0m7f-7wNXjQvTZnhQspLNYljRhN0Q,478
+turtledrawing-5.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+turtledrawing-5.0.4.dist-info/entry_points.txt,sha256=mDtq5fbYTdTDXA-CdbL8J4uUGDm5_js9Ys2qp_8k3q4,53
+turtledrawing-5.0.4.dist-info/top_level.txt,sha256=LdZ0teriK3vpJCQEH2lhEBHqTi9ef84BCrXXsCY-GCE,14
+turtledrawing-5.0.4.dist-info/RECORD,,
