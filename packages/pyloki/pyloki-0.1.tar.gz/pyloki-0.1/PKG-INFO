@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: pyloki
+Version: 0.1
+Summary: A scalable logging module for Grafana Loki
+Home-page: https://github.com/codekidX/pyloki
+Author: Ashish Shekar
+Author-email: ashishshekar15@gmail.com
+License: MIT
+Download-URL: https://github.com/codekidX/pyloki/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: python,loki,grafana,logging,metrics
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
