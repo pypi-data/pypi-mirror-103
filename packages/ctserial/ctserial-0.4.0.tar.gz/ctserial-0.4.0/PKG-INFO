@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: ctserial
+Version: 0.4.0
+Summary: A highly flexible serial interface tool made for penetration testers
+Home-page: https://www.controlthings.io
+License: LGPL-3.0-or-later
+Keywords: serial,fieldbus,ICS,control,ControlThings
+Author: Justin Searle
+Author-email: justin@controlthings.io
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Manufacturing
+Classifier: Intended Audience :: Other Audience
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Requires-Dist: ctui (>=0.7.3,<0.8.0)
+Requires-Dist: pyserial (>=3.5,<4.0)
+Requires-Dist: tabulate (>=0.8.9,<0.9.0)
+Project-URL: Repository, https://github.com/ControlThings-io/ctserial
+Description-Content-Type: text/markdown
+
+# Control Things Serial
+
+A highly flexible serial interface tool made for penetration testers.
+
+# Installation:
+
+As long as you have git and Python 3.6 or later installed, all you should need to do is:
+
+```
+pip3 install ctserial
+```
+
+# Usage:
+
+First, start the tool from a terminal.  Then connect to your serial device and interact with it.  For example:
+
+```
+ctserial> connect /dev/your-serial-device
+ctserial> send hex deadc0de        (sends actual hex, so 4 bytes)
+ctserial> send Dead Code 国        (sends full utf-8 string without spaces)
+ctserial> send "Dead Code 国"      (Use quotes if you need spaces)
+ctserial> exit
+```
+
+NOTE: The v0.4.0 temporarily removed non-hex character cleaning from `send hex` hexstring, so you can not currently use spaces in the hex string.  This will be restored in the near future, but I had to push out v0.4.0 a bit fast to replace a broken v0.3.2 which got out of sync with the ctui library it depended on.
+
+# Platform Independence
+
+Python 3.6+ and all dependencies are available for all major operating systems.  It is primarily developed on MacOS and Linux, but should work in Windows as well.
+
+# Development
+
+If you are interested in modifying `ctserial`:
+
+1. Install Python's Poetry package at https://python-poetry.org/.
+2. Clone the `ctserial` github repository.
+3. Open a termainal to the cloned repository.
+4. Run `poetry install` to create a new virtual environment and install an editable instance of `ctserial` with its dependencies.
+
+
+# Author
+
+* Justin Searle <justin@controlthings.io>
+
+
