@@ -1,0 +1,102 @@
+# mdataio  
+
+## What it is
+It is a software package that abstracts the representation of the raw CT patient data (e.g. dicom, mhd, niffty etc.), and provides  unified and clean approaches to  manipulate the image together with the corresponding segmentation mask, including data loading, saving and visualization.
+
+
+
+## What it contains
+- [Visualization](#visualization)
+- [Data](#data)
+- [Saver](#saver)
+- [Common](#common)
+
+
+
+## How to install
+```shell
+$ pip install mdataio
+```
+
+
+
+
+
+## Visualization
+This module contains functions for interactive 2D/3D image visualization. It is useful for  1. overlaying mask onto image 2. comparing across a series of images 3. showing the difference of image pairs.
+
+### keyboard shortcuts
+```
+.: next slice
+,: last slice
+esc: quit
+```
+
+```python
+#to visualize prep study in /mnt/SSD_2/final_seg/leftheart_ct_ali_annotation2_cleaned_boundaries/0
+#volshow* is to visualize volumes with shape NxHxW
+from mdataio.visualization import volshow, volshowpair, volshowlist
+img = np.load('0_img.npy')
+seg = np.load('0_seg.npy')
+volshow(img)
+volshowpair(img, seg)
+volshowlist([img, img])
+```
+
+![](./imgs/volshowpair.gif)
+
+
+```
+#imshow is to visualize 2d images with shape HxW (gray scale image) or shape HxWx3 (RGB image)
+from mdataio.visualization import imshow
+imshow(img[0,:,:])
+```
+
+```
+#another 2 useful functions are overlay_image and diff_image, which reflect the 2 most common procedures in debugging:
+1. overlaying mask on top of image
+2. comparing the difference of two images
+
+from mdataio.visualization import overlay_image, diff_image
+img_overlay = overlay_image(img[0,:,:], seg[0,:,:]) # can display the seg as mask (default) or contour (method='contour')
+img_diff = diff_image(img[0,:,:], img[20,:,:])
+imshow(img_overlay)
+imshow(img_diff)
+imshowlist([img_overlay, img_diff], title_list=['overylay', 'difference']) 
+#all 3 functions support landmarks 
+```
+
+![](./imgs/image_diff.png)
+
+
+## Data
+- Load raw image data, currently only supports dicom, niffty, mdh and save to dicoms so that it can be loaded into any dicom image viewer
+```python
+from mdataio.data import PatientDicom, PatientNifty, PatientMhd
+#dicom
+pfile = PatientDicom("parent folder path of your dicom images")
+#niffty
+pfile = PatientNifty("path of your .nii file")
+#mdh
+#note that the file ending in .mhd is only the ASCII header information.
+#the file ended in .raw/.mha contains the actual voxel data and should be put together with the .mhd file
+pfile = PatientMhd("path of your .mdh file")
+
+img, spacing = pd.get_data()
+
+pfile.save_as_dicom("path where you want to save the converted dicoms")
+
+```
+
+
+
+## Saver
+A class that wrapps up the video saving functionality
+```python
+form ss.saver import VideoSaver
+vs = VideoSaver([[img[i,:,:],img[i,:,:]] for i in range(img.shape[0])])
+vs.to_video('/home/xin/tmp/test.mp4')
+```
+
+
+## Common

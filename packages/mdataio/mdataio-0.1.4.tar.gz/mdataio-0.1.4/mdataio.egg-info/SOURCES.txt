@@ -1,0 +1,15 @@
+LICIENCE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+mdataio/__init__.py
+mdataio/common.py
+mdataio/data.py
+mdataio/saver.py
+mdataio/visualization.py
+mdataio.egg-info/PKG-INFO
+mdataio.egg-info/SOURCES.txt
+mdataio.egg-info/dependency_links.txt
+mdataio.egg-info/requires.txt
+mdataio.egg-info/top_level.txt
