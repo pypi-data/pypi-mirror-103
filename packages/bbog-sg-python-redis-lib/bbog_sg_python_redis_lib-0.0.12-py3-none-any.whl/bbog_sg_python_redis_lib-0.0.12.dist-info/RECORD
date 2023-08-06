@@ -1,0 +1,14 @@
+bbog_sg_python_redis_lib/__init__.py,sha256=2p6XX3PMgQx10IHRpx53TBsJ-aW7ew9uRa6lSbiUtjc,166
+bbog_sg_python_redis_lib/config.py,sha256=tE3WMtcAZ6j9TK22DVK_PHrqMOdHHJV_A7b9DssO8GE,490
+bbog_sg_python_redis_lib/redis_utils.py,sha256=9t68u5FtxcxXUIWH55CK7KTSctAf6wu5VDbDWOUGYFk,20696
+bbog_sg_python_redis_lib/models/__init__.py,sha256=69Fu0t1N4Qi8lZEDKsjYHI8utCoW2Wa8fnDvH0H1kTc,86
+bbog_sg_python_redis_lib/models/http_method_enum.py,sha256=oVDBzF2B-sEaxK-J0Oege0_nAaeXDTFCY8KdRA-BXks,226
+bbog_sg_python_redis_lib/models/time_unit_enum.py,sha256=2DWtrhO3JLpUSnPGKEPOUZSprKfKDtOC7BfOPtXGVOw,361
+bbog_sg_python_redis_lib/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bbog_sg_python_redis_lib/utils/logging_utils.py,sha256=zSkUPHCzbgfsOwd85WukeGMtZyG3vFQdDQBIXE_c9zY,432
+bbog_sg_python_redis_lib/utils/url_builder.py,sha256=1Lj8sdvV74NlfbLHkjG3k2EMB22jVMdBUdxevAv0_GQ,1542
+bbog_sg_python_redis_lib/utils/url_builder_v1.py,sha256=lLtK7U3NHbLUCoWo-cc8b_MmyGrf1HIdT_TjzlGclCQ,1355
+bbog_sg_python_redis_lib-0.0.12.dist-info/METADATA,sha256=fPjds3RTNOKnMv5GCam0Bqh21-CRqPTkafZjsG7CtfI,612
+bbog_sg_python_redis_lib-0.0.12.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bbog_sg_python_redis_lib-0.0.12.dist-info/top_level.txt,sha256=5af9dHkh4zf9aZPIoulp1VF9wwlLIYk-gHqbAUx6tqM,25
+bbog_sg_python_redis_lib-0.0.12.dist-info/RECORD,,
