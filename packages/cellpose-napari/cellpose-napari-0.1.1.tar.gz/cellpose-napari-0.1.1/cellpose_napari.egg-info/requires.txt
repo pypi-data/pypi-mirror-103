@@ -1,0 +1,10 @@
+napari-plugin-engine>=0.1.4
+cellpose
+imagecodecs
+
+[docs]
+sphinx>=3.0
+sphinxcontrib-apidoc
+sphinx_rtd_theme
+sphinx-prompt
+sphinx-autodoc-typehints
