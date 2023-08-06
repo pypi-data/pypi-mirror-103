@@ -1,0 +1,3 @@
+[console_scripts]
+ulog_to_kml = bin.ulog_to_kml:main
+
