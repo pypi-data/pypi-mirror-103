@@ -1,0 +1,3 @@
+[console_scripts]
+pcloadletter=pcloadletter.__main__:main
+
