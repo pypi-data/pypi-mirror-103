@@ -1,0 +1,10 @@
+stt/__init__.py,sha256=phGrYzxZafvGQqNeCvPVzAqAuvgsOUy1CjygbbqyKYQ,12507
+stt/_impl.cpython-37m-darwin.so,sha256=dOhjafb0AfozNt3q3Qdvj5kwqNDgDBpa66U6FZnWf7U,95232
+stt/client.py,sha256=ZUMbFonmXYU06G7FZs1LdVRGtxXzbk8VQg-U8FUB13s,6612
+stt/impl.py,sha256=SFfRq0gR2KcHrxeaXga5FPZsU_osb6RlrRftcbJfWsg,7196
+stt/lib/libstt.so,sha256=XPQ8FJnzDNc0Zqx4xs8gdQN_A46T4I1lXAs3LC3XoN4,46246992
+stt-0.10.0a5.dist-info/METADATA,sha256=eFDJHJUIT2bIiRM40TJcFNXKok_mPCQMaFE784fMrTM,1339
+stt-0.10.0a5.dist-info/WHEEL,sha256=PJpvlWYoaC6URR0LWg8CW_GxFlQ7xrZNRTDuqcfncbQ,110
+stt-0.10.0a5.dist-info/entry_points.txt,sha256=-RJKAhqFH3le0allDtX9BNVyOHyAXMbyweoEXUinoRI,41
+stt-0.10.0a5.dist-info/top_level.txt,sha256=U36suN9i5BZ2UbKj5dzgbpHmkIEAvyge7wRwJVB24jk,4
+stt-0.10.0a5.dist-info/RECORD,,
