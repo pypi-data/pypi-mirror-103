@@ -1,0 +1,8 @@
+README.md
+setup.py
+VeryPy/VeryPy.py
+VeryPy/__init__.py
+VeryPy.egg-info/PKG-INFO
+VeryPy.egg-info/SOURCES.txt
+VeryPy.egg-info/dependency_links.txt
+VeryPy.egg-info/top_level.txt
