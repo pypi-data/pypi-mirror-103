@@ -1,0 +1,10 @@
+a2i/__init__.py,sha256=yB9VV_3JfTsuOL8Z8kXEGbdHEgGqWc-ln9Y3XQSgzRI,108
+a2i/a2irp.py,sha256=L2HGS9iH6WqLT14aW_ab5HLPJDtyXUsS6M0PFGl2W7g,7188
+a2i/a2irptest.py,sha256=d8kKIgqvZvfzwwuccb6IM7HVZ-n_UNSmX_C_xH24M6c,1355
+trp/__init__.py,sha256=D37AZz8ARAGyPcgpq7St2WctpHnTXnVB1-4ffnIqW8s,15465
+trp/t_pipeline.py,sha256=MeyWvYjYOgvvalnPCNAqlyncLjb6te07q3O6AaL2luI,1574
+trp/trp2.py,sha256=X3ik0lrHTcdPcccxKWUypWbexdtbY7iWLoRTNgNInFQ,19506
+amazon_textract_response_parser-0.1.5.dist-info/METADATA,sha256=AdewHJpQx0_gabJYyt9r7VqorSa3UnoYTx8utmscdnE,5134
+amazon_textract_response_parser-0.1.5.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+amazon_textract_response_parser-0.1.5.dist-info/top_level.txt,sha256=tIp-gNCVgreOXtVLfU9xvbqWupQzOTeGQYsO4TZ1aBo,8
+amazon_textract_response_parser-0.1.5.dist-info/RECORD,,
