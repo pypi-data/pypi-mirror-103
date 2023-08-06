@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: treeshake
+Version: 0.1.4
+Summary: Remove unused css in Python projects with C-powered tree shaking.
+Home-page: https://github.com/jackmanapp/treeshake/
+License: UNKNOWN
+Description: # treeshake
+        A Python / Cython module to include treeshake cascading stylesheets in your projects. Documentation to follow.
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
