@@ -1,0 +1,4 @@
+backports.ssl_match_hostname
+defusedxml
+iso8601
+six>=1.4.0
