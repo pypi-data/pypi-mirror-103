@@ -1,0 +1,8 @@
+README.md
+setup.py
+MouseBit.egg-info/PKG-INFO
+MouseBit.egg-info/SOURCES.txt
+MouseBit.egg-info/dependency_links.txt
+MouseBit.egg-info/top_level.txt
+mousebit/__init__.py
+mousebit/structured.py
