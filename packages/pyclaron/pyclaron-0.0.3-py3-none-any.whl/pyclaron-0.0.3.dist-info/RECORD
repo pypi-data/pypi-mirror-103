@@ -1,0 +1,13 @@
+pyclaron/FlyCapture2.dll,sha256=hljZEiRtihoR6C6uIl0Ut50uK2GnJBwkh_8wEpKC3qU,13450008
+pyclaron/FlyCapture2_C.dll,sha256=G9-0bUD6H9hQKmo0tIV9rCsN6fGW_E-msS6R1Bcx9R0,82712
+pyclaron/MTC.dll,sha256=uw4zv49EmiZD3hQGAf8hnJ0s3Vu9-NwlSWEtWdZJKng,495104
+pyclaron/MTInterfaceDotNet.dll,sha256=PwaAPWN6RwqzYuRvpFaem5T6s8wyGoYJFWcHKhahAPw,262656
+pyclaron/PGRFlyCapture.dll,sha256=ZB6dCy7dm-57ww1E1srR9vWC1AJvwq3dma1uWWKkyEo,59672
+pyclaron/__init__.py,sha256=x9nhJNKxNjKD6vW9ASeRvAr7SzWnnRZl6PKZd-z_k4s,14946
+pyclaron/_pyclaron.pyd,sha256=H2-9vR-pKNAdg_ppxphrV8Nxnqms8IRgcNwJTXHLbMg,77824
+pyclaron/libiomp5md.dll,sha256=7bbpbHcfouak_yfz94KF29ObmhXFIwRzMqwCJWpnxnI,886552
+pyclaron-0.0.3.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+pyclaron-0.0.3.dist-info/METADATA,sha256=Xvb09LpJCd-Uo9701VZJY1XGwIbkfkd9lygmErLAFpg,366
+pyclaron-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyclaron-0.0.3.dist-info/top_level.txt,sha256=-OvkZIBOfAAyH6uhj8YTvlvEdngySOWW9ZdprIoFIZY,9
+pyclaron-0.0.3.dist-info/RECORD,,
