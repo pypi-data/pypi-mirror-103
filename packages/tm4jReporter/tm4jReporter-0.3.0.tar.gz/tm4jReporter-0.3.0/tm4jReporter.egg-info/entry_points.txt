@@ -1,0 +1,3 @@
+[console_scripts]
+tm4j-reporter = tm4jReporter.cmder:main
+
