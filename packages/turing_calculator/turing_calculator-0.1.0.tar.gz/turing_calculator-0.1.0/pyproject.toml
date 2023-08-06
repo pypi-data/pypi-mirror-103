@@ -1,0 +1,12 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "turing_calculator"
+author = "Keelan Jordan"
+author-email = "keelan@keelanjordan.com"
+home-page = "https://github.com/keelanjordan/turing_calculator-py"
+classifiers = [ "License :: OSI Approved :: MIT License",]
+description-file = "README.md"
+
