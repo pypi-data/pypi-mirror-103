@@ -1,0 +1,3 @@
+[console_scripts]
+rcpchgrowth = cli.__main__:methods
+
