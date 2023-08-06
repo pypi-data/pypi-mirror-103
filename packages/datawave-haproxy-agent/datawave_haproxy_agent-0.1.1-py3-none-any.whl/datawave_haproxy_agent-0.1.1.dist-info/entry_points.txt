@@ -1,0 +1,3 @@
+[console_scripts]
+datawave-haproxy-agent = datawave_haproxy_agent.agent:main
+
