@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: netbox-sp-addon
+Version: 0.3.0
+Summary: Adds some functions used by scanplus GmbH
+Home-page: https://github.com/scanplus/netbox-sp-addon
+Author: Tobias Genannt
+License: Apache 2.0
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# scanplus Addon
+
+
+
+
