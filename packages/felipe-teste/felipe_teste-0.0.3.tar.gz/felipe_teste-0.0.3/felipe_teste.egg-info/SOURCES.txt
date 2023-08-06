@@ -1,0 +1,9 @@
+README.md
+setup.py
+felipe_teste.egg-info/PKG-INFO
+felipe_teste.egg-info/SOURCES.txt
+felipe_teste.egg-info/dependency_links.txt
+felipe_teste.egg-info/requires.txt
+felipe_teste.egg-info/top_level.txt
+teste/__init__.py
+teste/teste.py
