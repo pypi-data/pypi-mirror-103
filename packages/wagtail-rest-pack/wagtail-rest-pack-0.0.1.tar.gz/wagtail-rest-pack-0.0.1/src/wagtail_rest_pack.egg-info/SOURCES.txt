@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/wagtail_rest_pack/__init__.py
+src/wagtail_rest_pack.egg-info/PKG-INFO
+src/wagtail_rest_pack.egg-info/SOURCES.txt
+src/wagtail_rest_pack.egg-info/dependency_links.txt
+src/wagtail_rest_pack.egg-info/top_level.txt
+src/wagtail_rest_pack/comments/__init__.py
+src/wagtail_rest_pack/forms/__init__.py
+src/wagtail_rest_pack/page_children/__init__.py
