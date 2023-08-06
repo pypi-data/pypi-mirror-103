@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pyridy
+Version: 0.1.1
+Summary: Support library for measurements made with the Ridy Android App
+License: Apache-2.0
+Keywords: signal processing,ridy,android
+Author: Philipp Simon Leibner
+Author-email: philip.leibner@ifs.rwth-aachen.de
+Requires-Python: >=3.7,<4.0
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Dist: pytest (>=6.2.3,<7.0.0)
+Description-Content-Type: text/markdown
+
+# Ridy-Support-Library
+
+Python Support Library to import and process Ridy files
