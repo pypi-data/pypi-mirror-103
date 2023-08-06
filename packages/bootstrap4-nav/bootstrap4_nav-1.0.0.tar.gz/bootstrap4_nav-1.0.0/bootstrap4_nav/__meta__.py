@@ -1,0 +1,6 @@
+name = 'bootstrap4_nav'
+version = '1.0.0'
+description = 'Bootstrap template support for Django projects'
+url = 'https://github.com/justengel-django/django_bootstrap4_nav'
+author = 'Justin Engel'
+author_email = 'jtengel08@gmail.com'
