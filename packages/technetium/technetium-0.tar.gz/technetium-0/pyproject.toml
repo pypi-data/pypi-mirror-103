@@ -1,0 +1,7 @@
+[project]
+name = "technetium"
+version = "0"
+
+[build-system]
+requires = ["pyproject-toml"]
+build-backend = "pyproject_toml.build_system.build_backend"

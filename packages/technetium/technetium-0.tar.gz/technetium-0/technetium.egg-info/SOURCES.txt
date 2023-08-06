@@ -1,0 +1,5 @@
+pyproject.toml
+technetium.egg-info/PKG-INFO
+technetium.egg-info/SOURCES.txt
+technetium.egg-info/dependency_links.txt
+technetium.egg-info/top_level.txt
