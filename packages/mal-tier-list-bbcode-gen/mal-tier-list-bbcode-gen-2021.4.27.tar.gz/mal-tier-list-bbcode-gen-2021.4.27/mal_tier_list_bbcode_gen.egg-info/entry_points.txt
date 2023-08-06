@@ -1,0 +1,3 @@
+[console_scripts]
+mal-tier-list-bbcode-gen = mal_tier_list_bbcode_gen.cli:main
+
