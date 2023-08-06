@@ -1,0 +1,11 @@
+Django>=2.2
+requests>=2
+
+[dev]
+black
+pre-commit
+pytest
+pytest-django
+pytest-pythonpath
+requests_mock
+tox
