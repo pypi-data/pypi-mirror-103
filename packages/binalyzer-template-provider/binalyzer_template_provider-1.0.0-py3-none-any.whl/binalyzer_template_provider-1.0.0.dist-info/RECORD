@@ -1,0 +1,14 @@
+binalyzer_template_provider/__init__.py,sha256=duaIMVFsvziej_U9Zmjda_EMRsqm0pVErkjyoSARHt0,435
+binalyzer_template_provider/extension.py,sha256=IvmprshZmZvczUdinUfqoC3pj-4oZCsdrstC-wrKVxg,1727
+binalyzer_template_provider/xml.py,sha256=Y5Ssfdi-BLsgYU2YBK9HmgJVVxsaFyl7Osz_SFsuScM,8304
+binalyzer_template_provider/generated/XMLLexer.py,sha256=1HHR0mauICfX1XHpPBWutdliCsVwDgjAZq-SlBu3qPc,10764
+binalyzer_template_provider/generated/XMLParser.py,sha256=SjSnTNnEirF1JKKQ7nsIJ78QYqU5dEaBPFNxtBLlBho,31896
+binalyzer_template_provider/generated/XMLParserListener.py,sha256=xf1GAKyT6ObUQwTiKM6kMeloJ57_b6Efeim3X8J8zqc,3150
+binalyzer_template_provider/generated/__init__.py,sha256=t7ohnjxcQrvq6TyjfIevgdtIoHs16eYmdia9SqtnPao,113
+binalyzer_template_provider-1.0.0.data/data/CHANGELOG.md,sha256=wlHOqg_6Ypr4EuIJEW7ePhopwEM0899TJYWhKAHzFa8,380
+binalyzer_template_provider-1.0.0.dist-info/AUTHORS,sha256=z9lb5UVbhN7k0WvzjrdXprXHjl3OxcpiAKohU_aVUuQ,82
+binalyzer_template_provider-1.0.0.dist-info/LICENSE.rst,sha256=ou5Vx77JIAxs-P2SLqxJN84qs5GlGjvAPt45vzREwSg,1070
+binalyzer_template_provider-1.0.0.dist-info/METADATA,sha256=2ZYTGG0oCsX-02p4oCCqefGLlMGRiWkxwVedUmzplGA,1808
+binalyzer_template_provider-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+binalyzer_template_provider-1.0.0.dist-info/top_level.txt,sha256=_vB4Nh8n03RI8WNUQg71JpYzpmSsEL7NQe6_1lOL5YU,28
+binalyzer_template_provider-1.0.0.dist-info/RECORD,,
