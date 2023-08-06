@@ -1,0 +1,15 @@
+requests>=2.12.2
+
+[:python_version == "2.7"]
+functools32
+
+[oauth2]
+
+[oauth2:python_version == "2.7"]
+authlib<1.*,>=0.15.3
+
+[oauth2:python_version >= "3.6"]
+authlib>=0.15.3
+
+[s3]
+boto3>=1.10.48
