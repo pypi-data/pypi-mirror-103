@@ -1,0 +1,7 @@
+fastcore
+fastparquet
+lightgbm
+numba
+pandas
+window-ops
+xgboost
