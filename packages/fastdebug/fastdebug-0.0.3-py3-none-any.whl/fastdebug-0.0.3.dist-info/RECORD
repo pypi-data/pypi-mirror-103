@@ -1,0 +1,10 @@
+fastdebug/__init__.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+fastdebug/_nbdev.py,sha256=VypFgCAXg1tzjHJlbREgtOly5A5S2gMUm9kP7SIoxVI,931
+fastdebug/error/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastdebug/error/fastai.py,sha256=4y60P65LsEMx7Qcq_3-CROziqdjMmu01ZB5CKhualqg,4651
+fastdebug/error/torch.py,sha256=jdcl1XVVhpzi2QNsUeDBJuAKG5dp6IVkzK5G8172_AQ,2795
+fastdebug-0.0.3.dist-info/METADATA,sha256=gVoNoLyfn592dwO3TbeFQN-opRX558NrYwcl4u_Zpr4,5869
+fastdebug-0.0.3.dist-info/RECORD,,
+fastdebug-0.0.3.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+fastdebug-0.0.3.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+fastdebug-0.0.3.dist-info/top_level.txt,sha256=9LGvq5VN5S11xjwEUzVbPNwEJQpxXu7R3QAUVFYr-bk,10
