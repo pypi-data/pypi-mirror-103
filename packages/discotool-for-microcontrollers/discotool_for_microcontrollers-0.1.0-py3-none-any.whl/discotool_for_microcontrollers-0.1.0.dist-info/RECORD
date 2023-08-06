@@ -1,0 +1,16 @@
+discotool/__init__.py,sha256=rYwSXH5Hk44vAGkAlXznsoNPWh9Eacx1B-zI5wjuS8E,69
+discotool/__main__.py,sha256=AkO-No4jRqY1YbxYjRwTwb9tbKz72dt6y_lH9pq3RAI,41
+discotool/discotool.py,sha256=YAPr__ruDyrBMhI2qswdsZ4Px89slM4pKvN_glJX18M,16377
+discotool/usbinfos/__init__.py,sha256=N6sy_bN0Goo5GnVe_roqBBwgHHepk0wk7Yxk23_wRTU,926
+discotool/usbinfos/pyserial_list_ports_osx.py,sha256=L1StrEICgd2xeeJDYiFrKBZCsc1ncz15jw3ADKmlKtQ,10723
+discotool/usbinfos/pyserial_list_ports_windows.py,sha256=Xfw8tZUtAbgmRFIwyHW9yXGitmyoo7o4Jx9zRdA2yIk,17292
+discotool/usbinfos/usbinfos_common.py,sha256=mj5J-RKan4MYx8jpNLy8sV5O_m5XX1kDbUI_F37IrYw,836
+discotool/usbinfos/usbinfos_linux.py,sha256=uoRQgLeR8PDtqD1GAUdiIt6B-9g3umK9Bv95A5QODz4,2554
+discotool/usbinfos/usbinfos_macos.py,sha256=WeeVVsD7b7Y9IT7zHD7nJ8XXQvGP53P4BDVq4IbWrm0,4555
+discotool/usbinfos/usbinfos_win32.py,sha256=nZzzNW7fZFnIgy5gIfjkEy-OFgDhYnVBLGaKvzE7awc,2523
+discotool_for_microcontrollers-0.1.0.dist-info/LICENSE,sha256=KpDjQrFxpwa8g7uahO4YrK5Qg4hvNFSmJ6x-46Z20CM,1111
+discotool_for_microcontrollers-0.1.0.dist-info/METADATA,sha256=6YpnLoP-nUjUCvRBan_l1f5fxtQFCvuE800LSRtqBj4,6141
+discotool_for_microcontrollers-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+discotool_for_microcontrollers-0.1.0.dist-info/entry_points.txt,sha256=mkFQTaw4fnNZCS-N5tcu-QUl_KQ61ZPxDYUvjtnVnkc,56
+discotool_for_microcontrollers-0.1.0.dist-info/top_level.txt,sha256=pzNWXGf2ouNPlTcTRIf9Z-GKBvnTfwLmjI6HEgIRy5U,10
+discotool_for_microcontrollers-0.1.0.dist-info/RECORD,,
