@@ -1,0 +1,13 @@
+README.rst
+setup.py
+windowsprefetch/__init__.py
+windowsprefetch/prefetch.py
+windowsprefetch/utils.py
+windowsprefetch/windowsprefetch.py
+windowsprefetch.egg-info/PKG-INFO
+windowsprefetch.egg-info/SOURCES.txt
+windowsprefetch.egg-info/dependency_links.txt
+windowsprefetch.egg-info/entry_points.txt
+windowsprefetch.egg-info/top_level.txt
+windowsprefetch/scripts/__init__.py
+windowsprefetch/scripts/prefetch.py
