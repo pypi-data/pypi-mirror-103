@@ -1,0 +1,7 @@
+cython
+blosc
+numexpr
+numpy
+hdf5
+pytables==3.6.1
+Click>=7.1
