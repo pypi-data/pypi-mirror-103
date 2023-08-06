@@ -1,0 +1,11 @@
+pg-quickstart/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pg-quickstart/create.py,sha256=ygJtsGMtpb0wmDaX7kGmFZafk0S8AEMM1cusCbkjrQA,1250
+pg-quickstart/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pg-quickstart/utils/db.py,sha256=RAYs8cLkV7nFfDfK-ldMwBuO1qifE_GAhEw3P0i_pi4,174
+pg-quickstart/utils/ip.py,sha256=S68Efu42PQfZlRG-MsblprJILfuKcggTpg5UkAcnNpM,184
+pg-quickstart/utils/tools.py,sha256=cPz5IOcgZ7PLxq2wNhZKJqkjAQpDGhcmaA90qBxQCF0,5603
+pg_quickstart-0.0.1.dist-info/LICENSE,sha256=alx_EHSjfymnAvvd2gOVcCiJWAY0txCQplfoHkxLNwM,1081
+pg_quickstart-0.0.1.dist-info/METADATA,sha256=Orj6kcpcSlsOd87vil0r04ZmN4993YUxE1svScUQH7c,732
+pg_quickstart-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pg_quickstart-0.0.1.dist-info/top_level.txt,sha256=XS_kZfnO5yWE1oun9mNLm19HSEfsCYVrQnvALvzTbKc,14
+pg_quickstart-0.0.1.dist-info/RECORD,,
