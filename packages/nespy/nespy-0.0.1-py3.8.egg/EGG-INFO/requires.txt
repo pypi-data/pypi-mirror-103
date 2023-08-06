@@ -1,0 +1,7 @@
+requests>=2.25
+pyzmq>=22
+wheel
+pandas>=1
+ipython>=6
+google>=3
+protobuf>=3
