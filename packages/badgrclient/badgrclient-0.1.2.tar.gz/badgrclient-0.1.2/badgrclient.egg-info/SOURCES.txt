@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+test-requirements.txt
+tox.ini
+badgrclient/__init__.py
+badgrclient/badgrclient.py
+badgrclient/badgrmodels.py
+badgrclient/exceptions.py
+badgrclient/util.py
+badgrclient.egg-info/PKG-INFO
+badgrclient.egg-info/SOURCES.txt
+badgrclient.egg-info/dependency_links.txt
+badgrclient.egg-info/requires.txt
+badgrclient.egg-info/top_level.txt

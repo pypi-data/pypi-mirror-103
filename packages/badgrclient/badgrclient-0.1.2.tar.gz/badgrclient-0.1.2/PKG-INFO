@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: badgrclient
+Version: 0.1.2
+Summary: A python library for Badgr APIs
+Home-page: https://github.com/snehalbaghel/badgrclient
+Author: Snehal Baghel
+Author-email: snehalbaghel@gmail.com
+License: GNU General Public License v3.0
+Description: # Quickstart
+        
+        **badgrclient** is a python library for [Badgr](https://github.com/concentricsky/badgr-server) APIs
+        
+        #### Installation
+        
+        ```bash
+        pip install badgrclient
+        ```
+        
+        ### Docs
+        
+        https://badgrclient.readthedocs.io/
+        
+        #### Usage
+        
+        Instantiate a client
+        
+        ```python
+        from badgrclient import BadgrClient
+        
+        client = BadgrClient('username', 'password', 'client_id')
+        ```
+        
+        Fetch your entities with the client or by giving an entityId.
+        
+        ```python
+        >>> my_issuers = client.fetch_issuer()
+        [Issuer(7fde21f03a30dfg), Issuer(de21ce2d52df0)]
+        
+        >>> baby_badger = client.fetch_badgeclass('<baby_badgr_entity_id>')[0]
+        BadgeClass(<baby_badgr_entity_id>)
+        ```
+        
+        Use member functions to perform actions on the entity
+        
+        ```python
+        >>> baby_badger.issue('jane@gmail.com')
+        Assertion(<entity_id>)
+        ```
+        
+        Or directly import a model and get going
+        
+        ```python
+        >>> from badgrclient import Assertion
+        >>> janes_assertion = Assertion(client, eid='<entity_id>')
+        Assertion(<entity_id>)
+        
+        >>> janes_assertion.revoke('Revocation Reason')
+        ```
+        
+Keywords: badgr,openbadges,api,library
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
