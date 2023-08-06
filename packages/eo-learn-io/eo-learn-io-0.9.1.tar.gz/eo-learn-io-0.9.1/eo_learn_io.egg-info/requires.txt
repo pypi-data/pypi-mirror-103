@@ -1,0 +1,9 @@
+boto3
+eo-learn-core
+geopandas!=0.8.0,>=0.5.0
+rasterio<=1.1.8
+rtree
+sentinelhub>=3.2.1
+
+[GEODB]
+python-dotenv
