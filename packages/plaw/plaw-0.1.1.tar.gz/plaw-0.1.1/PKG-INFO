@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: plaw
+Version: 0.1.1
+Summary: A simple wrapper for the Lightspeed API
+Home-page: https://github.com/holden-nelson/plaw
+Author: Holden Nelson
+Author-email: holden.nathaniel.nelson@gmail.com

@@ -1,0 +1,7 @@
+.idea/
+.python-version
+wrapper.txt
+scaffolding.py
+.envrc
+__pycache__/
+dist
