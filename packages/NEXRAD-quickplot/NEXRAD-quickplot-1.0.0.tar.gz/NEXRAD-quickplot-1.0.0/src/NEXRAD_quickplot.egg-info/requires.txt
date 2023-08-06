@@ -1,0 +1,17 @@
+python-dateutil
+numpy
+imageio>=2.3
+xarray
+requests
+
+[plots]
+cartopy
+matplotlib
+seaborn
+cython
+scikit-image
+
+[tests]
+pytest
+flake8
+mypy
