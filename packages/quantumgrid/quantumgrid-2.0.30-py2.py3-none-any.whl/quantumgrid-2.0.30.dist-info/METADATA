@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: quantumgrid
+Version: 2.0.30
+Summary: Exterior Complex Scaling Finite-Element Method Discrete Variable Representation grid for general physics problems.
+Home-page: https://github.com/zstreeter/quantumgrid
+Author: Zachary Streeter
+Author-email: zlstreeter@lbl.gov
+License: MIT license
+Keywords: quantumgrid
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Requires-Dist: Click (==7.1.2)
+Requires-Dist: ffmpeg (==1.4)
+Requires-Dist: cycler (==0.10.0)
+Requires-Dist: fastcache (==1.1.0)
+Requires-Dist: kiwisolver (==1.3.1)
+Requires-Dist: matplotlib (==3.4.1)
+Requires-Dist: mpmath (==1.1.0)
+Requires-Dist: numpy (==1.20.2)
+Requires-Dist: pyparsing (==2.4.7)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: scipy (==1.6.3)
+Requires-Dist: six (==1.15.0)
+Requires-Dist: sympy (==1.8)
+Requires-Dist: tornado (==6.1)
+Requires-Dist: sphinxcontrib-bibtex
+
+About
+=====
+
+Exterior Complex Scaled Finite-Element Element Discrete Variable
+Representation grid for general physics problems. In other words,
+quantumGrid is a package for solving a 1-D Schrödinger equation
+for an arbitrary potential.
+
+Motivation
+==========
+
+This python package was created for a graduate course in time-dependent
+quantum mechanics at UC Davis. Given the ease of programming in python,
+generality and usefulness of a Finite Element Method - Discrete
+Variable Representation (FEM-DVR) grid for solving the Schrödinger
+equation and simple scattering problems, we wanted to go open source
+and provide this numerical tool for others in the name of science!
+
+Documentation
+==============
+For a more details in using quantumGrid, checkout our manual here:
+https://quantumgrid.readthedocs.io.
+
+
+=======
+History
+=======
+
+0.0.1 (2020-05-31)
+------------------
+
+* First release on PyPI.
+
+
