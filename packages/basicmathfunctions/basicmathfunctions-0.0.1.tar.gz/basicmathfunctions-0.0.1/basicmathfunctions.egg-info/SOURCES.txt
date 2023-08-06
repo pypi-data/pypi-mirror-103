@@ -1,0 +1,14 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+basicmath.egg-info/SOURCES.txt
+basicmath.egg-info/dependency_links.txt
+basicmath.egg-info/top_level.txt
+basicmathfunctions/__init__.py
+basicmathfunctions/test.py
+basicmathfunctions.egg-info/PKG-INFO
+basicmathfunctions.egg-info/SOURCES.txt
+basicmathfunctions.egg-info/dependency_links.txt
+basicmathfunctions.egg-info/top_level.txt
