@@ -1,0 +1,8 @@
+setup.py
+bin/getmem
+getmem/__init__.py
+getmem/main.py
+getmem.egg-info/PKG-INFO
+getmem.egg-info/SOURCES.txt
+getmem.egg-info/dependency_links.txt
+getmem.egg-info/top_level.txt
