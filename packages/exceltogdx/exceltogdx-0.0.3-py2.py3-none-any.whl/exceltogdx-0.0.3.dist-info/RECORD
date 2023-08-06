@@ -1,0 +1,14 @@
+exceltogdx/__init__.py,sha256=ttkBHsEO_lkI9iO6PB2SiEWoUJbzl9-6EDdJCB7Uew0,97
+exceltogdx/exceltogdx.py,sha256=L0fxOXc8Xa7hoE9yeYWNzVD_2enioWJ5B-ZZp-ivGdE,8473
+exceltogdx/gdxpds/__init__.py,sha256=jxbGRWqspCRzK7HiStQuayhaKHGtpglc4ZGoCHB2zSc,3362
+exceltogdx/gdxpds/_version.py,sha256=Btl_98iBIXFtvGx47MqpfbaEVYoOMPBQn9bao7UASkQ,21
+exceltogdx/gdxpds/gdx.py,sha256=1YZKnNJWXxliMLznSOX_9alVf8BhXXV-6hMysTUGxEY,37397
+exceltogdx/gdxpds/read_gdx.py,sha256=VE5L67eBHTsboSOb2TXPJu8ElDZZOtC6app0GQdjo4s,5162
+exceltogdx/gdxpds/special.py,sha256=RcSxfadSSw8vjBjHYQ5HiJwsuyA_lxqm6z2qGCL8QU0,8660
+exceltogdx/gdxpds/tools.py,sha256=O9nUxc_LASq5bCOjqzyOeDBsdoYibYM-TzB8z8RGPy8,6996
+exceltogdx/gdxpds/write_gdx.py,sha256=piYMku8CpHiKhLXjixGXBB2KV-u0KHfnaSy-oKKuWcg,6237
+exceltogdx-0.0.3.dist-info/LICENSE,sha256=QlCoxvX2F75il1T-MRdQZJbjzSscDbK0Fritome1cNM,1098
+exceltogdx-0.0.3.dist-info/METADATA,sha256=fC0qehk4GyMFz-_qrlReLJCjaEZIVZLtggZ1htf8dts,3220
+exceltogdx-0.0.3.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+exceltogdx-0.0.3.dist-info/top_level.txt,sha256=-3uK4Uy92XBleuUmk4OUVFhJiUYBQckCr38dzpjUtKo,11
+exceltogdx-0.0.3.dist-info/RECORD,,
