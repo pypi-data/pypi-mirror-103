@@ -1,0 +1,48 @@
+{
+  "newsapi": {
+    "api_key": "aeef18bc392c4c75bdfdb2caf599a766",
+    "url": "http://newsapi.org/v2/",
+    "sources": ["google-news", "google-news-in", "abc-news"],
+    "area": {
+      "india": {
+        "country": "in"
+      },
+      "israel": {
+        "country": "il"
+      },
+      "france": {
+        "country": "fr"
+      },
+      "usa": {
+        "country": "us"
+      },
+      "us": {
+        "country": "us"
+      },
+      "uk": {
+        "country": "gb"
+      },
+      "england": {
+        "country": "gb"
+      },
+      "technology": {
+        "category": "technology"
+      },
+      "business": {
+        "category": "business"
+      },
+      "science": {
+        "category": "science"
+      },
+      "health": {
+        "category": "health"
+      },
+      "general": {
+        "category": "general"
+      },
+      "sports": {
+        "category": "sports"
+      }
+    }
+  }
+}
