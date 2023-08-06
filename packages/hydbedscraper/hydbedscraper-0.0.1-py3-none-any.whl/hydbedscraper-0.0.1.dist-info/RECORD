@@ -1,0 +1,13 @@
+hydbedscraper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hydbedscraper/__main__.py,sha256=XAVQI6a8wMZqT-mEHSA9J9aELsAPIC_5_NVBmT3Kyt0,1157
+hydbedscraper/parsers.py,sha256=kxnRJexgf8t-zxMd7uNzZhqWh5bFMhnvoexHhNkWITk,2956
+hydbedscraper/requests.py,sha256=qgoXlbPEptoKYOLJFQsPU9SvptCdE3beHkwWVZ9hzNU,2232
+hydbedscraper/types.py,sha256=ZxCuo-N90eZnUXx-WzMaS7VuSA9krJk7Y3UJ1Oyvgyo,253
+hydbedscraper/testdata/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hydbedscraper/testdata/path.py,sha256=DU7Hxu0rD7uUF4zG6bDqHRPkqVLevu1L9Cli_XOopvM,375
+hydbedscraper-0.0.1.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+hydbedscraper-0.0.1.dist-info/METADATA,sha256=zdP8kGbU2qI9OoBDEMyQL5YeamzBG8mig3bPK9dOeHo,442
+hydbedscraper-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+hydbedscraper-0.0.1.dist-info/entry_points.txt,sha256=li39BK9LOGg-VW5ayHQbn3_Ij7CjgXU1QazWdWoaHUY,63
+hydbedscraper-0.0.1.dist-info/top_level.txt,sha256=OXAJ-k0Zr_QrRwbBxSoWaM6TV8cgg1s8z7okkCq3K48,14
+hydbedscraper-0.0.1.dist-info/RECORD,,

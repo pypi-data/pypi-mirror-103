@@ -1,0 +1,3 @@
+[console_scripts]
+hydbedscraper = hydbedscraper.__main__:main
+
