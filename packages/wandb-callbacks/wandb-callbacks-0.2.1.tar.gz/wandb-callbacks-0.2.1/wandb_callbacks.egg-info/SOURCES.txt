@@ -1,0 +1,10 @@
+README.md
+setup.py
+docs/conf.py
+wandb_callbacks/__init__.py
+wandb_callbacks/tensorflow.py
+wandb_callbacks/utils.py
+wandb_callbacks.egg-info/PKG-INFO
+wandb_callbacks.egg-info/SOURCES.txt
+wandb_callbacks.egg-info/dependency_links.txt
+wandb_callbacks.egg-info/top_level.txt
