@@ -1,0 +1,2 @@
+minio
+trytond>=5.0
