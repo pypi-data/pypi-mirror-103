@@ -1,0 +1,12 @@
+README.md
+setup.py
+cortx_jupyter/__init__.py
+cortx_jupyter/constants.py
+cortx_jupyter/cortx_authenticator.py
+cortx_jupyter/cortx_file_manager.py
+cortx_jupyter/cortx_jupyter.py
+cortx_jupyter/utils.py
+cortx_jupyter.egg-info/PKG-INFO
+cortx_jupyter.egg-info/SOURCES.txt
+cortx_jupyter.egg-info/dependency_links.txt
+cortx_jupyter.egg-info/top_level.txt
