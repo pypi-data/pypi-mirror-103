@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+marshmallow_mongoengine_query_schema/__init__.py
+marshmallow_mongoengine_query_schema/queryschema.py
+marshmallow_mongoengine_query_schema.egg-info/PKG-INFO
+marshmallow_mongoengine_query_schema.egg-info/SOURCES.txt
+marshmallow_mongoengine_query_schema.egg-info/dependency_links.txt
+marshmallow_mongoengine_query_schema.egg-info/requires.txt
+marshmallow_mongoengine_query_schema.egg-info/top_level.txt
