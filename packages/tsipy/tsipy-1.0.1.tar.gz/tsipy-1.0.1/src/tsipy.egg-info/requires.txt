@@ -1,0 +1,9 @@
+numpy
+tensorflow
+gpflow
+qpsolvers
+pandas
+matplotlib
+scipy
+tables
+scikit-learn
