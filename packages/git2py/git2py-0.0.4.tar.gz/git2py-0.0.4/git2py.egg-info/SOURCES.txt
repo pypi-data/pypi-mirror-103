@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+git2py/__init__.py
+git2py/gitlab.py
+git2py.egg-info/PKG-INFO
+git2py.egg-info/SOURCES.txt
+git2py.egg-info/dependency_links.txt
+git2py.egg-info/not-zip-safe
+git2py.egg-info/requires.txt
+git2py.egg-info/top_level.txt
