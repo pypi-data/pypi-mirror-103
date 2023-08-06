@@ -1,0 +1,14 @@
+cellfinder_napari/__init__.py,sha256=iinQ7gk4lN0uQk05GrW8KbjWecjGROohnMKlwruSl-k,76
+cellfinder_napari/curation.py,sha256=JrphrR27sh5DwzTivpn62xlnhS0To0ZtI_O_tVeE_XE,17156
+cellfinder_napari/detect.py,sha256=ycP6Ur6i8CYdRehvy1I7lPqRFOVWzElt2KOBZ1TGjdc,6877
+cellfinder_napari/plugins.py,sha256=WlwEFrf-uGnjjA6_Wbbq-xNBOxHm4xWpBitBqGDaOis,434
+cellfinder_napari/train.py,sha256=3TDLU6hnarATgZDXNAsesshGox4VipYEERJ5xPHzlIY,4256
+cellfinder_napari/utils.py,sha256=_eCWFzk3Rmar_tDMFLrSJuoShn_V1pRA9zJThwActng,2612
+cellfinder_napari/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cellfinder_napari/_tests/test_cellfinder_napari.py,sha256=9OBU4nWtu0rrJ2VC6adSFER2405hhpVVMHTtes78QOc,40
+cellfinder_napari-0.0.3rc3.dist-info/LICENSE,sha256=l7uPBPKnZF1qHfi__DiIfnVIGGM4NmSeVdolQJUsaNA,1486
+cellfinder_napari-0.0.3rc3.dist-info/METADATA,sha256=ovN-LXhxztMpAEXUOHrhrJPO0Uak7tb-Vb6BXK25dck,2653
+cellfinder_napari-0.0.3rc3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cellfinder_napari-0.0.3rc3.dist-info/entry_points.txt,sha256=MAMr5Nr0yPP_I3yqyme0Vqh6VDVMT08JqONfZyPWyiM,56
+cellfinder_napari-0.0.3rc3.dist-info/top_level.txt,sha256=JU7Sqn85pwXMnMfT7xHLxZ-02j1UGuejIQlZ-xx1Nq0,18
+cellfinder_napari-0.0.3rc3.dist-info/RECORD,,
