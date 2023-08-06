@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: TkZero
+Version: 0.0.6
+Summary: TkZero - a sane and Pythonic wrapper around Tkinter.
+Home-page: https://github.com/UnsignedArduino/TkZero
+Author: UnsignedArduino
+Author-email: UnsignedArduino@outlook.com
