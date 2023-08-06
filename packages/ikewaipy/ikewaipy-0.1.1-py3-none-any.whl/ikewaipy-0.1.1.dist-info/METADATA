@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ikewaipy
+Version: 0.1.1
+Summary: 
+Author: Sean Cleveland
+Author-email: sean.b.cleveland@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: python_dateutil (>=2.5.3,<3.0.0)
+Requires-Dist: requests
+Requires-Dist: setuptools (>=21.0.0,<22.0.0)
+Requires-Dist: urllib3 (>=1.15.1,<2.0.0)
