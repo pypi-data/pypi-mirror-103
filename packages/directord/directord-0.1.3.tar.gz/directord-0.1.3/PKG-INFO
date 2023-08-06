@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: directord
+Version: 0.1.3
+Summary: A deployment framework built to manage the data center life cycle.
+Home-page: https://github.com/cloudnull/directord
+Author: Kevin Carter
+Author-email: kevin@cloudnull.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/cloudnull/directord/issues
+Description: # Directord
+        
+        A deployment framework built to manage the data center life cycle.
+        
+        > Task driven deployment, simplified, directed by you.
+        
+        Directord is an asynchronous deployment and operations platform with the aim to
+        better enable simplicity, faster time to delivery, and consistency.
+        
+        ## Design Principles
+        
+        The Directord design principles can be
+        [found here](https://cloudnull.github.io/directord#first-principles).
+        
+        ## Documentation
+        
+        Additional documentation covering everything from application design, wire
+        diagrams, installation, usage, and more can all be
+        [found here](https://cloudnull.github.io/directord).
+        
+        ## Welcome Contributors
+        
+        * Read documentation on how best to deploy and leverage directord.
+        
+        * When ready, if you'd like to contribute to Directord pull-requests are very
+          welcomed. Directord is an open platform built for operators. If you see
+          something broken, please feel free to raise a but and/or fix it.
+        
+        * Information on running tests can be [found here](https://cloudnull.github.io/directord/testing).
+        
+        ## License
+        
+        Apache License Version 2.0
+        [COPY](LICENSE)
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: ui
+Provides-Extra: dev
