@@ -1,0 +1,3 @@
+[console_scripts]
+ir_measures = ir_measures:main_cli
+
