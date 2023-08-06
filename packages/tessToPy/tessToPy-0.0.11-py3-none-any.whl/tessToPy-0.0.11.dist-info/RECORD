@@ -1,0 +1,11 @@
+tessToPy/__init__.py,sha256=fxxXMfLToyRcQZQs1Omfr98Uc1PJjoc6UI4Qh00m6eM,110
+tessToPy/absdict.py,sha256=NLXv5J6E7UpGqWcM1r1sVrP0MS0_1p1YU0kLzlVQ2-c,1902
+tessToPy/geometry.py,sha256=4jTvs4yOucVRiZfN-Y1FnLxbiJBQ5zJ7J42ZyBDaaOQ,13757
+tessToPy/original_tessellation_processing.py,sha256=Gb8CW8xODtJlOFGqJ_kJycKSf_prmfm3vsJld7OCZX8,63568
+tessToPy/tessIO.py,sha256=TKD0K_8fMv8NDWX04jZlq2M3TDfWGW3cUNoJ5Cq9r9A,9893
+tessToPy/tessellation.py,sha256=JUzRNVdtaJlwxjkD6vtdClyCOjJ-N2QtkQCWPU0RC8Y,40376
+tessToPy-0.0.11.dist-info/LICENSE.md,sha256=Q5ccTt9ogDI199Xa6vCA2qsXxOuLtGw_Zh-vtejxRcM,1089
+tessToPy-0.0.11.dist-info/METADATA,sha256=IkDd8VxsiTqyIOIgbLfZ9s8bdJfsVFEyU4DOKchirfI,2773
+tessToPy-0.0.11.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tessToPy-0.0.11.dist-info/top_level.txt,sha256=nHWsBLeDZiMpXcciEhxv3imxHNruE7HWCjSZhjmlZ8M,9
+tessToPy-0.0.11.dist-info/RECORD,,
