@@ -1,0 +1,17 @@
+cv4t/__init__.py,sha256=bfYbe62Qos15zIdJjVS9Zt70pnCClv13i18cZROIyDQ,7813
+cv4t/color.py,sha256=3FR56gydYC7VChXweHuIw_qoAb4u1aZ9RhkfJ6iwrVQ,547
+cv4t/dnn.py,sha256=IsDAfteNBHcYrAI27lbidK8ivHCSIRqzHtBbUyAJgBw,5674
+cv4t/draw_lib.py,sha256=jo-0LELgDyXuqS_ChtytjPZ7Fv6gOtl_EHRf9AcTurc,4312
+cv4t/try_pil_draw_text.py,sha256=SF0pmu1ePpbls_8UUskjNd6vBQd0KhUaLLFZSLY_YHs,2916
+cv4t/try_png_overlay.py,sha256=AV8JTBdCJeiRKp0lETDJNOkhdrBUV-g2xbL08vjiJnQ,4268
+cv4t/models/face_deploy.prototxt,sha256=9iYhyskj1vN71mkpjEKLt-5yIztfjDOJu4k-Neu895U,28092
+cv4t/models/face_res10_300x300_ssd_iter_140000.caffemodel,sha256=KlahGlekopWVawZgtKPXa73KIgbElhzqjv59lcfLLy0,10666211
+cv4t/models/landmark_deploy.prototxt,sha256=r0_7ODywPUVwbEDY9T_tJ8puyMrl0afB-IXeXrNioAE,4421
+cv4t/models/landmark_vanface.caffemodel,sha256=f7IR25va6NcgFDML2Gx4GGOkz4Hq38HL2FmqWcBl5E4,3297959
+視覺模組/__init__.py,sha256=mKZ9IjE2mDp90Y3qKc4vlytOQ6Y8zUA-tSQsrwtF2PU,24
+電腦視覺模組/__init__.py,sha256=mKZ9IjE2mDp90Y3qKc4vlytOQ6Y8zUA-tSQsrwtF2PU,24
+cv4t-0.0.4.dist-info/LICENSE,sha256=Cb-T2prCLNpxwv1a2MFrD9IDhDKAaIszVCF8XWZXb-s,1113
+cv4t-0.0.4.dist-info/METADATA,sha256=goRdswE0v37gPG6nlZ2zdWdU9XNyli6EKCNjoGc9Nlk,731
+cv4t-0.0.4.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+cv4t-0.0.4.dist-info/top_level.txt,sha256=-fl6x-af3J_AMzlrV_uJL9208Hc0GkHyaCUBr5es6yc,18
+cv4t-0.0.4.dist-info/RECORD,,
