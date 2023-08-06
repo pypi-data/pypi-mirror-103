@@ -1,0 +1,11 @@
+libfast5mod.abi3.so,sha256=twSOdXSMHKxCyvCMBKUgauOD6brI4XxGmAxeWApoIyE,36390
+fast5mod/common.py,sha256=PnjDkC6plUWS_fQ762wtEQO81ITiJ0Dqpk1Vr5j1vIQ,5609
+fast5mod/executor.py,sha256=hjc5JstiqGNMgAq3KWjs3lgntrzCGeEE33OtCQnjAQY,3260
+fast5mod/__init__.py,sha256=U1ySUOlJ7JCeBBB4ZqKRn8ubzb2rCbeZPeOiuXBy4Oc,89
+fast5mod/fast5mod.py,sha256=_EWhB3oZWA889vTQvQMmTP7GESrjKTb_pnPKF5QT8-E,3926
+fast5mod/programs.py,sha256=-SZu1-5l3bSeaxltx1X5HXNfAm52-U3KI9KQCitAr0c,18776
+fast5mod-1.0.5rc1.dist-info/top_level.txt,sha256=aaaKl1I97pSzpjhw0WZE6K4qnEajmS5OzZK0uYUmPqk,21
+fast5mod-1.0.5rc1.dist-info/METADATA,sha256=5NT1AE8AHSIj9ZNCqhrC1pnW6CMEMT29UDbHonMHttM,4747
+fast5mod-1.0.5rc1.dist-info/RECORD,,
+fast5mod-1.0.5rc1.dist-info/entry_points.txt,sha256=n-t26uStcOgURiRztMUGEqZ4B_XbG37mpkHJAE539Zw,53
+fast5mod-1.0.5rc1.dist-info/WHEEL,sha256=d2ILPScH-y2UwGxsW1PeA2TT-KW0Git4AJ6LeOK8sQo,109
