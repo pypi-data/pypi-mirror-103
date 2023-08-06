@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: shrep
+Version: 0.1
+Summary: command-line tool to run a command repeatedly
+Home-page: https://hg.gerg.ca/shrep
+Author: Greg Ward
+Author-email: greg@gerg.ca
+License: UNKNOWN
+Description: shrep
+        =====
+        
+        shrep lets you run a shell command repeatedly, or until it fails. It's
+        intended for diagnosing intermittent failures -- e.g. say you have a C
+        program that seg faults once every hundred runs or so, and you need to
+        reproduce it to fix it::
+        
+            shrep -n 100 ./myprog
+        
+        shrep can also run your program until it fails rather than a fixed
+        number of repetitions. It can capture stdout and stderr to avoid
+        cluttering your terminal. It can run child processes in parallel. See
+        the man page for the full story::
+        
+            groff -man -Tascii shrep.1 | less
+        
+        
+        Installation
+        ------------
+        
+        shrep is currently a single-file Python script. The easiest way to
+        install it is::
+        
+            pip install --user shrep
+        
+        That will put the executable in ``~/.local/bin``.
+        
+        It also installs a man page, which you can read with ::
+        
+            MANPATH=~/.local/share/man man shrep
+        
+        (At least, that works for me on Ubuntu.)
+        
+        
+        Author, copyright, license
+        --------------------------
+        
+        shrep was written by Greg Ward <greg@gerg.ca>.
+        
+        Copyright © 2018–2021 Gregory P. Ward. All rights reserved.
+        
+        Use of this software is governed by a BSD-style license that can be
+        found in the LICENSE.txt file.
+        
+        
+        Contributing
+        ------------
+        
+        Find a bug? Want to implement a feature? Send me email! If a lot of
+        people like it, I'll put it on github or something.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/x-rst

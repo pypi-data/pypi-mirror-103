@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+shrep.1
+shrep.py
+shrep.egg-info/PKG-INFO
+shrep.egg-info/SOURCES.txt
+shrep.egg-info/dependency_links.txt
+shrep.egg-info/top_level.txt
