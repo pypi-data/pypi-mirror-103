@@ -1,0 +1,10 @@
+redcapy/__init__.py,sha256=iGJnKrpz1Qu8-6AdTgOKofElxtYcN1oMVf6TqmcdryM,45
+redcapy/error.py,sha256=0y2E2ENpOu-dpdiC0zUEQRQTnImydfBXSYZb3qqZfnw,126
+redcapy/keywords.py,sha256=zKfV6qEYTIKj8QPQmFo1u8Ma4uig5woMt_xFJmx-Ves,842
+redcapy/metadata.py,sha256=X0oNP7YDf64I2tyxBTlmVXQetZj7ItL7j3zmDbn7Ms4,231
+redcapy/request.py,sha256=YE379uXhQwsQq8I_4MKaIEgy4LCbiW5gCPCugF78CTQ,13216
+redcapy-0.4.1.dist-info/LICENSE,sha256=lPaZKC9ZQKd5hiAq0JT4xC9fVCSRgf7kEaXvTN2AC_g,1071
+redcapy-0.4.1.dist-info/METADATA,sha256=aDGiHB3e32lCnYlQFTs3GMoW0r31cITOJ6Ygb9lUG00,1930
+redcapy-0.4.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+redcapy-0.4.1.dist-info/top_level.txt,sha256=yK8fxi0ex_a_tTDa-7nY3iwhRdyu3TLoPZIu2qVXWKc,8
+redcapy-0.4.1.dist-info/RECORD,,
