@@ -1,0 +1,12 @@
+yokr/__init__.py,sha256=c7ZDY5TbDOLjVOzCtr_jfGvFref8Yt99hiYbJI3WYo8,350
+yokr/create_tables.sql,sha256=nPCIBPcvbVj4UoA8aBhJX7UX7mych5tmASCAefvEM7Q,2164
+yokr/yokr.py,sha256=0cgzhozbqw2BfJrRm4_zh6tfsSg8dAJ9fgBQvL8UGSM,66675
+yokr/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yokr/test/client.py,sha256=NpOPsUERv8pWdZ7cRsnohoKumirvTyAuPBr7PDFQZC8,163
+yokr/test/manualtest.py,sha256=hUP-YU64dJgHRX7eOkK7feWRM2sAc-qBN3CQ5_Uw84Q,305
+yokr/test/server.py,sha256=bL_40IXILqsQ1pAef1-sALZqwrWUdjl-EIlIOZnHkfU,1381
+yokr-0.3.2.dist-info/LICENSE,sha256=2m830djbtxHd-M-AmbJvArTPYKtrk9WpqNNqEyVBFSY,1481
+yokr-0.3.2.dist-info/METADATA,sha256=UYNFteEyt_8cyHXjzwu0cvzrXV4ENW6mMLTKOI_6x08,552
+yokr-0.3.2.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+yokr-0.3.2.dist-info/top_level.txt,sha256=n71CZELJJeMqJBcUVLHfmJK4C-4TaD0ZR8WLHBkxs6c,5
+yokr-0.3.2.dist-info/RECORD,,
