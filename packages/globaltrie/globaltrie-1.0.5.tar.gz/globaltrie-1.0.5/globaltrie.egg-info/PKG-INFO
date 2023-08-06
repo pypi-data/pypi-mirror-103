@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: globaltrie
+Version: 1.0.5
+Summary: Client to access server Trie
+Home-page: https://github.com/dajkatal/Global-Trie
+Author: dajkatal
+Author-email: <dajkatal@gmail.com>
+License: UNKNOWN
+Description: A client that lets you access and interact with a Trie hosted on a server.
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
