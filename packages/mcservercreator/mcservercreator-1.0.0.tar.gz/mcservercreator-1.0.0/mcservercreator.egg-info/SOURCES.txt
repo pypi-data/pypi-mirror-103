@@ -1,0 +1,13 @@
+setup.py
+mcservercreator/__init__.py
+mcservercreator/__main__.py
+mcservercreator/constants.py
+mcservercreator.egg-info/PKG-INFO
+mcservercreator.egg-info/SOURCES.txt
+mcservercreator.egg-info/dependency_links.txt
+mcservercreator.egg-info/requires.txt
+mcservercreator.egg-info/top_level.txt
+mcservercreator/utils/__init__.py
+mcservercreator/utils/more_options.py
+mcservercreator/utils/properties_parser.py
+mcservercreator/utils/tools.py
