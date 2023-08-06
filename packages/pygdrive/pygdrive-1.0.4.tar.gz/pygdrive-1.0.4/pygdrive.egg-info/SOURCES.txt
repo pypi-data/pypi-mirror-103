@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+pygdrive/__init__.py
+pygdrive/gdrive.py
+pygdrive.egg-info/PKG-INFO
+pygdrive.egg-info/SOURCES.txt
+pygdrive.egg-info/dependency_links.txt
+pygdrive.egg-info/requires.txt
+pygdrive.egg-info/top_level.txt
+pygdrive/tests/__init__.py
+pygdrive/tests/test_drive.py
