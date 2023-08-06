@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+aiotranslate/__init__.py
+aiotranslate.egg-info/PKG-INFO
+aiotranslate.egg-info/SOURCES.txt
+aiotranslate.egg-info/dependency_links.txt
+aiotranslate.egg-info/requires.txt
+aiotranslate.egg-info/top_level.txt
