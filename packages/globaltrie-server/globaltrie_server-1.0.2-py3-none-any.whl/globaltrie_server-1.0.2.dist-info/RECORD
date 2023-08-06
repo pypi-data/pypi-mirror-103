@@ -1,0 +1,9 @@
+globaltrieserver/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+globaltrieserver/__main__.py,sha256=SWZXk3QzpnWiVCg5V5G4CJvYBH4opU1BPvmPT6l-3Os,64
+globaltrieserver/server_cli.py,sha256=0innn0c6PixpAfeiGVXr-P2QHtJmllwxkmsgvNRF2Cg,5331
+globaltrieserver/trie.py,sha256=9VCqHPnZQ0mq2-MLfJQSYL2ba6L-9W-OwkKmRRfE5zQ,5607
+globaltrie_server-1.0.2.dist-info/METADATA,sha256=ZzT9U5H3VQV3i1m3M5OYdTDoJ1_pEXQ0rSGiuG6l4Nk,684
+globaltrie_server-1.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+globaltrie_server-1.0.2.dist-info/entry_points.txt,sha256=yIB8-_-OuTl-z6OdlhAY7C29FIEaJoT0n4hkUyKI63c,65
+globaltrie_server-1.0.2.dist-info/top_level.txt,sha256=Ro6zjI1_aWm4P2x29FNTPqQWomE0uuVnJ7W_PBQlEuA,17
+globaltrie_server-1.0.2.dist-info/RECORD,,
