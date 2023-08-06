@@ -1,0 +1,10 @@
+README.md
+setup.py
+otumat/__init__.py
+otumat/version.py
+otumat.egg-info/PKG-INFO
+otumat.egg-info/SOURCES.txt
+otumat.egg-info/dependency_links.txt
+otumat.egg-info/entry_points.txt
+otumat.egg-info/requires.txt
+otumat.egg-info/top_level.txt
