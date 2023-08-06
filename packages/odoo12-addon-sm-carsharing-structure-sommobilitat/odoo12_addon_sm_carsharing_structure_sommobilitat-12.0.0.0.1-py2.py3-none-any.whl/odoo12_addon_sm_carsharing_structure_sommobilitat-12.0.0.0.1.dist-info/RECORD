@@ -1,0 +1,10 @@
+odoo/addons/sm_carsharing_structure_sommobilitat/__init__.py,sha256=Z0H-7tnW3JmMNtRFk_MxwVzutPYWpm0Ljnk9Fb4hEoc,45
+odoo/addons/sm_carsharing_structure_sommobilitat/__manifest__.py,sha256=eJoP2at7W9cs7ZhesnbdobvfT1FzDPNqFUw0e-I-n5o,702
+odoo/addons/sm_carsharing_structure_sommobilitat/models/__init__.py,sha256=p3RXIkwXlHF6Szk2QO1RIvPvThofijiYWCwRBMLzY8U,52
+odoo/addons/sm_carsharing_structure_sommobilitat/models/models_cs_car.py,sha256=vbvmjan5O5IrNcP4FFomdegbpPxClLNYAyTz1GP0eYI,2860
+odoo/addons/sm_carsharing_structure_sommobilitat/security/ir.model.access.csv,sha256=8Hg8Itn2XK85lvhlurkQjJbGXDcypVzbhLMqIBpJgc4,76
+odoo/addons/sm_carsharing_structure_sommobilitat/views/views_cs_car.xml,sha256=wt7iCoe7zAyQKKl_oYoVF6PvX79ZbQq1ag7CBha0kb0,2987
+odoo12_addon_sm_carsharing_structure_sommobilitat-12.0.0.0.1.dist-info/METADATA,sha256=t6dw3fUy82AOD2N_WIYVMDnT7LZW3RPQ2xB0gN-80Gw,514
+odoo12_addon_sm_carsharing_structure_sommobilitat-12.0.0.0.1.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+odoo12_addon_sm_carsharing_structure_sommobilitat-12.0.0.0.1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo12_addon_sm_carsharing_structure_sommobilitat-12.0.0.0.1.dist-info/RECORD,,
