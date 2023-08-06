@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/roommates/__init__.py
+src/roommates.egg-info/PKG-INFO
+src/roommates.egg-info/SOURCES.txt
+src/roommates.egg-info/dependency_links.txt
+src/roommates.egg-info/top_level.txt

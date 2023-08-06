@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: roommates
+Version: 0.1.0
+Summary: Compute equalization payments
+Home-page: https://github.com/MDAddario/roommates
+Author: Michael Lindner-D'Addario
+Author-email: michael.lindner.daddario@gmail.com
+License: UNKNOWN
+Description: # Roommates
+        
+        `roommates` helps you figure out equalization payments
+        
+        ## Installation
+        
+        ```
+        pip install roommates
+        ```
+        
+        ## Usage
+        
+        ```
+        from roommates import split
+        
+        # Register all previous payments
+        ribs = {
+            'Alice': 50.25,
+            'Bob':   30,
+            'Eve':   0,
+        }
+        
+        ice_cream = {
+            'Bob': 20,
+            'Eve': 15,
+        }
+        
+        # Print equalization payments
+        split(ribs, ice_cream)
+        ```
+        
+        ## Concerns
+        
+        For any concerns, please email michael [dot] lindner [dot] daddario [at] gmail [dot] com
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
