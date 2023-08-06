@@ -1,0 +1,16 @@
+_gdxcc.pypy-73.pyd,sha256=mXggpZrtbAMw61J_tidBBefgarVyuDnUKIxiGHOev2w,155648
+gdxcc/__init__.py,sha256=KA90WYO6xqqRj8HYVuD0uW6UC0RIfhMUnFJ6QwTN25s,20
+gdxcc/gdxcc.i,sha256=0QtYgcEPW0YLIv5T64Dmu7hMW9CAal0hxNDz2EfOw1w,20715
+gdxcc/gdxcc.py,sha256=kGRiZcLDrVcNI1NLYvYPbMuisx4pc5VhbiOK2xhoYyQ,25422
+gdxcc/C/gclgms.c,sha256=t_cJrqNfp5LRIh-d7SQoS6PdvjcSSTHEqGuB4FACZuQ,6474
+gdxcc/C/gclgms.h,sha256=eJ9Svx68WM6JHkJaHqX6DKjl5VZKqW1-RyXtx75ra5M,5724
+gdxcc/C/gcmt.c,sha256=bjHcseTD789xOmIjrRpSqeLzZUvOcxNCtIODA8PthS8,12233
+gdxcc/C/gcmt.h,sha256=bGT1JsPtn2-PnmyC9aQGUHScXKZ83KxPol7kMgezLo8,3692
+gdxcc/C/gdxcc.c,sha256=94YAyVOlKb8ovq3Iozl7g-pHi8Xijkwsyw1d7_lnGDY,44859
+gdxcc/C/gdxcc.h,sha256=GB5fE2lg7wYnc1hyubSW7ZU2E68uhLENZ-Rf1EWZ91I,23615
+gdxcc/C/gdxcc_wrap.c,sha256=usqYG_sEwCdZ77bTym50DjwXSi9EVpjEIHsWm0s2Ll4,364741
+gdxcc-8.33.2.dist-info/LICENSE,sha256=CC0gPTpZCsBdFfpYTvSV2tEJ7Mdz9EbCMupK3kDrzx4,1225
+gdxcc-8.33.2.dist-info/METADATA,sha256=pFdWvxfVLXfRfwwUbMvZYEi-0YyZjJHlzxlpN7wZeZ0,295
+gdxcc-8.33.2.dist-info/WHEEL,sha256=7wyjBc-dOOImwqrpT4mF4lPHb25-NBi32PETF2wv_ww,99
+gdxcc-8.33.2.dist-info/top_level.txt,sha256=02BsMmc80jxW-8n2In6s0qNYZZsPePBn59tVeaAd8gc,13
+gdxcc-8.33.2.dist-info/RECORD,,
