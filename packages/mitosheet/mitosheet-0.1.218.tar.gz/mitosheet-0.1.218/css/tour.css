@@ -1,0 +1,98 @@
+.tour-container {
+    border: 2px solid #8A8A8A;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); /* Add drop shadows */
+    
+    z-index: 3;
+    position: absolute;
+    width: 250px;
+
+    background-color: #FFFFFF /* Give the modal a background to block the content it covers */
+}
+
+.tour-container-bottom-left {
+    margin-left: 20px;
+    position: absolute;
+    bottom: 35px;
+}
+
+.tour-container-bottom-right {
+    right: 20px; /* Set the tour container 20px from the right hand side of Mito */
+    position: absolute;
+    bottom: 35px;
+}
+
+.tour-container-top-right {
+    right: 20px; /* Set the tour container 20px from the right hand side of Mito */
+    position: absolute;
+    margin-top: 70px;
+}
+
+.tour-container-top-left {
+    margin-left: 20px;
+    position: absolute;
+    margin-top: 70px;
+}
+
+.tour-header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    align-items: center;
+    height: 30px;
+    color: #343434;
+    font-size: 16px;
+    font-weight: bold;
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.tour-header-close-button {
+    display: flex;
+    align-items: center;
+}
+
+.tour-step-text-container {
+    height: 130px; /* derived by the height of tour container minus header container, button container, and progress bar container */
+
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.tour-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    margin-top: 5px;
+    height: 25px;
+    align-items: center; /* Center the close and continue buttons vertically */
+}
+
+.tour-close-button {
+    color: #838383; /* This color is the same as the 'back' button in the signup flow */
+}
+
+.tour-continue-button {
+    background-color: var(--mito-blue);
+    color: #FFFFFF;
+
+    border-radius: 5px;
+    padding: 4px 8px 4px 8px;
+}
+
+.tour-progress-bar-container {
+    width: 100%;
+    color: #b8b7b7;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: end;
+}
+
+.tour-progress-bar-text {
+    margin-right: 5px;
+}
