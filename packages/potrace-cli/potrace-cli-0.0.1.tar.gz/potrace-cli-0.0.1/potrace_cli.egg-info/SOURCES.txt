@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+./cli/__init__.py
+./cli/backend_svg.py
+./cli/main.py
+cli/__init__.py
+cli/backend_svg.py
+cli/main.py
+potrace_cli.egg-info/PKG-INFO
+potrace_cli.egg-info/SOURCES.txt
+potrace_cli.egg-info/dependency_links.txt
+potrace_cli.egg-info/entry_points.txt
+potrace_cli.egg-info/requires.txt
+potrace_cli.egg-info/top_level.txt
+potrace_cli.egg-info/zip-safe
