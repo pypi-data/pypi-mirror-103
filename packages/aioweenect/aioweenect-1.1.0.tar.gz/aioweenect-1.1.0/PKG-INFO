@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: aioweenect
+Version: 1.1.0
+Summary: Asynchronous Python client for the weenect API.
+Home-page: http://github.com/eifinger/aioweenect
+Author: eifinger
+Author-email: k.eifinger@googlemail.com
