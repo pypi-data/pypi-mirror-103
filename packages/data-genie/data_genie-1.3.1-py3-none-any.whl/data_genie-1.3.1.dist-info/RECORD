@@ -1,0 +1,16 @@
+genie_pkg/__init__.py,sha256=c-jtr24LkH4f4h2vPM24S6zfmbss4ju61NvH593JAc0,185
+genie_pkg/australia.py,sha256=-kQGWZyz3QH8puts8J2d406PyTp3p1YxMqfuK6NQIDY,1259
+genie_pkg/delimited_genie.py,sha256=ZXavtmrmfciFPZUkh0VB_Gg3KJNtcbIlVcoVIIlvL-w,3217
+genie_pkg/dqc.py,sha256=2rRrbxFPh6F6f_Qo8b8E3ht3V5KFSoNMLXr-7eBjgMA,10540
+genie_pkg/fw_genie.py,sha256=tWgJ7pxXvvT3fZDCDAyiBw-dtyJd8uBlpx5dI9kGfMU,3868
+genie_pkg/generators.py,sha256=uxD1vimCcT0sfrDH9RmYXTFmpqrEYPtW-tpA22amFRY,7320
+genie_pkg/json_genie.py,sha256=U1oHY0ZhuUoVTlf7iumn5BvNc64g-W7jBra-UASekXs,3489
+genie_pkg/validators.py,sha256=JBWUSde9u3vWciCbj983RumOVisgcD3E1FJx-G-pwR4,352
+genie_pkg/data/grammar.lark,sha256=CqdicVnWw5YTIhB7o0SvWXpyMc2lGMeQCAdaP3ihF0M,1722
+genie_pkg/data/oz_postcodes.json,sha256=nrsF7ImNlCbglJEWPJoEuOe2novqBX2qLEIh0X2W4UA,1049773
+genie_pkg/data/wonderland.txt,sha256=SaCycmYG4SkKwDpjl4-h3RvTio2AVwTZgmXzk1M-oJQ,173595
+data_genie-1.3.1.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+data_genie-1.3.1.dist-info/METADATA,sha256=fL4cMLCK0Kd-F5X6PpxXO_WGA5fbXcHQjyZ5DsyDP9s,1771
+data_genie-1.3.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+data_genie-1.3.1.dist-info/top_level.txt,sha256=OdUWsHOKGiUgZeOTRZcXD-OCL4WVev9o_syrLjpm5mg,10
+data_genie-1.3.1.dist-info/RECORD,,
