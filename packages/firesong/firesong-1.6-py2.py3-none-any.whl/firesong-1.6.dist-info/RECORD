@@ -1,0 +1,14 @@
+firesong/Evolution.py,sha256=k2LK8Z7St-SrN6va7JRsQIB-9JhZmQhObtXAuqJQ5VE,32481
+firesong/Firesong.py,sha256=2bjoMUAuROWYptfNfeItz8ATfxQuqva3aJubM469Bdk,10281
+firesong/FluxPDF.py,sha256=XxEIuSbQtGm78rgTFNTzoGW5y-wIRmazCU2M9JryMSI,12587
+firesong/Legend.py,sha256=TYGE8Ifx7zK361iwhnhJD_eUnMwQp5DbV33nuvVJAag,5939
+firesong/Luminosity.py,sha256=8EUEzKkSoKHF6I57W5MUWFzJWekdiqf6wVZo5v0t9ZQ,7945
+firesong/__init__.py,sha256=laoHS6QzYlcSdHfWFQbrHFiwEdfrN-bDrBRHW52RbvY,211
+firesong/input_output.py,sha256=Z0stEJfdnnZ_u5TtE82Agt7B66uavRaazEC_SU02OmQ,6878
+firesong/sampling.py,sha256=xkfIO1Dn6Qoqy-zK21arj5IZFprzlwBXiarxjVQD7os,2155
+firesong-1.6.dist-info/AUTHORS.md,sha256=8QFYCGKxovI_TrCOOzsQU_sLj-uX65ygIpxUibDmFh4,339
+firesong-1.6.dist-info/LICENSE,sha256=hwVMDlmkWKo_eS1v3mY15NgqpApmei2dqbuPAsCKUNo,1419
+firesong-1.6.dist-info/METADATA,sha256=7ctbhtwVk8Q5pSMagoJVfD2y67joXEpjMSMIgfSLgXc,601
+firesong-1.6.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+firesong-1.6.dist-info/top_level.txt,sha256=FOBVc8xqZkA_crpojoc10sfEKyX1CQwW9eCCDkm0Vik,9
+firesong-1.6.dist-info/RECORD,,

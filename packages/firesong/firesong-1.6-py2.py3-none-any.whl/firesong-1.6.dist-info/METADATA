@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: firesong
+Version: 1.6
+Summary: Code for simulationg populations of neutrino sources
+Home-page: https://github.com/icecube/FIRESONG
+Author: Tung, C.F. et al.
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: CosmoloPy (>=0.4)
+Requires-Dist: coverage (>=5.4)
+Requires-Dist: numpy (>=1.16.6)
+Requires-Dist: scipy (>=1.2.3)
+
+FIRESONG: the FIRst Extragalactic Simulation Of Neutrinos and Gamma-rays
+
+
