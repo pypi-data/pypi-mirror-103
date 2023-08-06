@@ -1,0 +1,4 @@
+wheel
+requests
+python-nmap
+speedtest-cli
