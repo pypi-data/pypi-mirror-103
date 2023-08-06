@@ -1,0 +1,15 @@
+s4_design_sim_tool/__init__.py,sha256=q8_5C0f-8mHWNb6mMw02zlYPnEGXBqvOmP3z0CEwZKM,22
+s4_design_sim_tool/_nbdev.py,sha256=wwNtl5hMwrQSm7UZO9yFhbDEjChVQLWoDQHKUs2JGqQ,1824
+s4_design_sim_tool/atmosphere.py,sha256=wLzhqhzZyIjrcXNwx6BQsphPnrmcrlr-Kht2mMWb6PY,3088
+s4_design_sim_tool/cli.py,sha256=NIacXLSCOh8-UcIcV4n9yhw7-LFSm1EWwpMO9aLbocI,11793
+s4_design_sim_tool/core.py,sha256=Ory0WTyZyHL6cwRdNzJhSP6m94_P8xRgIesYfN87AZA,3576
+s4_design_sim_tool/foregrounds.py,sha256=fckQFOd6XKdWoAyeYN9Vc6gSAUTTgi5H--PbTPNZ_Fc,2469
+s4_design_sim_tool/hitmap_wcov.py,sha256=wdqNoUjv6wjPLs0U-z2tCZH5r53A3oDjl7bwB8lOb2E,3483
+s4_design_sim_tool/noise.py,sha256=LBmLrHbksm78kGstBEnU2HqJ5cI-vIF1lvYXzq0RlYU,3629
+s4_design_sim_tool/ui.py,sha256=OtBPJjWaKcWYdaw2KjuN8k88pe2DfyMxcotqDwleEHk,399
+s4_design_sim_tool-1.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+s4_design_sim_tool-1.1.1.dist-info/METADATA,sha256=DcRYchT_Fzn26AFcbuc6X1p5FMmhmtgjumMYsfW_kMs,5917
+s4_design_sim_tool-1.1.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+s4_design_sim_tool-1.1.1.dist-info/entry_points.txt,sha256=HILAv7PSMifJJvwGRbf8luxtQ4srDROjAy-wNkUSMoo,83
+s4_design_sim_tool-1.1.1.dist-info/top_level.txt,sha256=o5388DDX5jWIpeed8vDyxAo-LVpwpVMpfBppp_GVBRg,19
+s4_design_sim_tool-1.1.1.dist-info/RECORD,,
