@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: STA-663-IBP
+Version: 0.1
+Summary: STA663 - Final Project: Implementation of Indian Buffet Process
+Home-page: https://github.com/peytonychen7/STA-663-Final-Project
+Author: Raghav Agrawal, Yiqian (Peyton) Chen
+Author-email: raghav.agrawal@duke.edu, yiqian.chen@duke.edu
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/peytonychen7/STA-663-Final-Project/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# STA-663-Final-Project
+
+Students: Raghav Agrawal, Peyton Chen
+
+In our term final project for STA 663 - Statistical Computation, we studied the paper titled "Infinite Latent Feature Models
+and the Indian Buffet Process" by Thomas L. Griffiths and Zoubin Ghahramani and implememented the algorithms described in the paper.
+
+The `Package` directory contains all the files in our package, which includes the source code. 
+
+The test codes are located in the `Test code` folder. 
+
+The final report of our project can be found in the `Report` direcotry. 
+
+Examples of the implememntation of our algorithms can be found in the `Example` directory. 
+
+
