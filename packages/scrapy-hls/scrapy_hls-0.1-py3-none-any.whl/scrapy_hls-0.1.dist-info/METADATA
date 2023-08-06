@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: scrapy-hls
+Version: 0.1
+Summary: scrapy integration for m3u8 files
+Home-page: https://github.com/scrapy/scrapy
+Author: Alan Cao
+License: BSD
+Project-URL: Source, https://github.com/scrapy/scrapy
+Platform: UNKNOWN
+Classifier: Framework :: Scrapy
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Requires-Dist: Scrapy (==2.5.0)
+Requires-Dist: m3u8 (==0.8.0)
+
+m3u8 downloader using scrapy
+
+
