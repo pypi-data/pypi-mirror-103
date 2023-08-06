@@ -1,0 +1,13 @@
+deepops/__init__.py,sha256=Yu3ADXa-2_BwlIMko1bt8VDsn9TVa46diZs1M5cGdjE,515
+deepops/diff.py,sha256=uT42X32KRYvqxWFiuaGSaXlIE8Sq6X16BCsHkHg6JXM,9478
+deepops/filter.py,sha256=RHjzV_Xl_sYV4ENcVcj9UiSgOaWkb2n90VokU-4-2kI,6389
+deepops/get.py,sha256=919x-J50MlvH-MH-WWZg73cPQ4Ylg2OBy9Bj2kApEIA,1580
+deepops/merge.py,sha256=_1x9ihpSDsYDwEQeL7FeSKRy9adPc_Dsp46imVPhpD4,7092
+deepops/path.py,sha256=yPZ3VFjUnp5-0HiEyiLJRCmuxp9V3R7PB1AHXo1ItK8,2224
+deepops/removeitems.py,sha256=pc7cs8fKXodUW4rtZbICsHKgvbG2vvdztRTJpY8X-J8,6201
+deepops/setdefault.py,sha256=fyXcmBCU7HVsflV5-3BbFf34d9ABCMFep-K2W-XWjsY,1186
+deepops-1.7.3.dist-info/LICENSE,sha256=UqnLZeF3grmFPnyUIce6HkQy29WUoSjO5SDuro49oDE,1072
+deepops-1.7.3.dist-info/METADATA,sha256=5Vl89aqIl0owiNbNCR_4S-RKvw8xiQ7Xhqgulkfz0K0,2505
+deepops-1.7.3.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+deepops-1.7.3.dist-info/top_level.txt,sha256=5OGx9QAMdEb2N7IGZMdwUK6sJRfXtBA3qPHMQ_89VHs,8
+deepops-1.7.3.dist-info/RECORD,,
