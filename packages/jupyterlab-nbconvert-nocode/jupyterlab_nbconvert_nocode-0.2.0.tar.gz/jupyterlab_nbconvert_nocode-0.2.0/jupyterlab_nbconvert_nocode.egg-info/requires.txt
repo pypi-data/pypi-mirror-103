@@ -1,0 +1,10 @@
+
+[dev]
+jupyterlab>=1.0.0
+nbconvert>=6.0.0
+pytest
+pytest-cov
+flake8
+bump2version
+mock
+autopep8
