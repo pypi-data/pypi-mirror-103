@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: simpsons-classifier-sheregeda
+Version: 0.2.0
+Summary: Simpsons image classifier
+Home-page: https://github.com/sheregeda/simpsons-image-classification/tree/master/classifier
+Author: sheregeda
+Author-email: ns.sheregeda@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi (==0.63.0)
+Requires-Dist: efficientnet-pytorch (==0.7.1)
+Requires-Dist: torchvision (==0.9.1)
+Requires-Dist: Pillow (==8.2.0)
+Requires-Dist: PyYAML (==5.4.1)
+
+## Simpsons image classifier
+
+
+

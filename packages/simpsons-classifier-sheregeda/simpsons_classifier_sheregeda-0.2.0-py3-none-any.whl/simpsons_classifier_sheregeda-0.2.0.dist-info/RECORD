@@ -1,0 +1,11 @@
+simpsons_classifier/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simpsons_classifier/api.py,sha256=Ml6RtXQeyuReqcIKDJpdiW-U8SmQ_esXICl4ZrnOXW4,1175
+simpsons_classifier/config.py,sha256=dW69vEoGiSRqgnsr2D-GueT3SKne3Q76jQXW8xaS2C0,1476
+simpsons_classifier/deps.py,sha256=AtBkb9m3cRuFjfAm6vNLU_FMVq1eRR6InjpGQO-Ic3Q,431
+simpsons_classifier/main.py,sha256=PGX8GuAq99owfPVCcdMtR4aE-PS8MqWLhfJiWofDKjs,984
+simpsons_classifier/model.py,sha256=PcabSp1ttL3HXBBZKUOAuh353ehPTV5m0DVvjgT8o-g,2336
+simpsons_classifier_sheregeda-0.2.0.dist-info/LICENSE,sha256=3sPsrJXO2sMrB0tIxwbD2MDJ8DQ78FTlis_BoL3bexc,1101
+simpsons_classifier_sheregeda-0.2.0.dist-info/METADATA,sha256=uI6vuECgVd83p64P1uDt2IYCsQ2ZvHI0JrYjeX_P_Uo,564
+simpsons_classifier_sheregeda-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+simpsons_classifier_sheregeda-0.2.0.dist-info/top_level.txt,sha256=55c6uX4INr8kwzCsddcCMsgKnYsKEz4Hdr8K9eTM24c,20
+simpsons_classifier_sheregeda-0.2.0.dist-info/RECORD,,
