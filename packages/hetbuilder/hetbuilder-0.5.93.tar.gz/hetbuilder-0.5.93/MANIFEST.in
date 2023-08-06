@@ -1,0 +1,4 @@
+// Manifest.in
+
+include backend/*
+include CMakeLists.txt
