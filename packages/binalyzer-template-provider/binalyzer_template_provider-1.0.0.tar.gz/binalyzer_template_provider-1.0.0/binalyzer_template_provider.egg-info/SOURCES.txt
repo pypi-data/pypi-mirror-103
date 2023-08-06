@@ -1,0 +1,17 @@
+AUTHORS
+CHANGELOG.md
+LICENSE.rst
+README.md
+setup.py
+binalyzer_template_provider/__init__.py
+binalyzer_template_provider/extension.py
+binalyzer_template_provider/xml.py
+binalyzer_template_provider.egg-info/PKG-INFO
+binalyzer_template_provider.egg-info/SOURCES.txt
+binalyzer_template_provider.egg-info/dependency_links.txt
+binalyzer_template_provider.egg-info/requires.txt
+binalyzer_template_provider.egg-info/top_level.txt
+binalyzer_template_provider/generated/XMLLexer.py
+binalyzer_template_provider/generated/XMLParser.py
+binalyzer_template_provider/generated/XMLParserListener.py
+binalyzer_template_provider/generated/__init__.py
