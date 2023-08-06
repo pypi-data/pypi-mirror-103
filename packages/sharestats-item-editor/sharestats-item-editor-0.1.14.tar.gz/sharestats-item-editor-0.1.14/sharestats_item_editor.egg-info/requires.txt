@@ -1,0 +1,5 @@
+appdirs>=1.4
+pysimplegui>=4.33
+
+[rendering]
+rpy2>=3.4.3
