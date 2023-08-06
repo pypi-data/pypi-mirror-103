@@ -1,0 +1,9 @@
+README.md
+setup.py
+infer_parser/__init__.py
+infer_parser/py.typed
+infer_parser/test_infer_parser.py
+infer_parser.egg-info/PKG-INFO
+infer_parser.egg-info/SOURCES.txt
+infer_parser.egg-info/dependency_links.txt
+infer_parser.egg-info/top_level.txt
