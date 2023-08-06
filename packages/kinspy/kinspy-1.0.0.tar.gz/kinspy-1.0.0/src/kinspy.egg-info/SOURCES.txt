@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/kinspy/__init__.py
+src/kinspy/kinspy.py
+src/kinspy.egg-info/PKG-INFO
+src/kinspy.egg-info/SOURCES.txt
+src/kinspy.egg-info/dependency_links.txt
+src/kinspy.egg-info/top_level.txt
