@@ -1,0 +1,8 @@
+setuptools>=40.0
+cloudshell-shell-core<6.0.0,>=5.0.3
+cloudshell-cp-core<3.0.0,>=2.0.0
+cloudshell-shell-standards<2.0,>=1.0
+cloudshell-shell-flows<2,>=1.0
+kubernetes==12.0.1
+boto3==1.16.42
+dnspython
