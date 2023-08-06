@@ -1,0 +1,47 @@
+.import-file-select-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1vh;
+}
+
+.import-file-delete {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1vw;
+}
+
+.import-add-file-from-current-folder-button {
+    border: 2px solid #DDDDDD;
+    border-radius: 5px;
+    background-color: #F8F8F8;
+    
+    text-align: left;
+    color: var(--mito-blue);
+
+    padding: 5px;
+}
+
+.import-add-file-from-current-folder-button-disabled {
+    color: #666666 !important;
+}
+
+.import-add-file-by-path-button {
+    height: 15px; /* Add height to make it easier to click */
+    margin-top: 5px;
+    color: #666666;
+}
+
+.import-by-path-card {
+    width: 100%;
+}
+
+.import-by-path-card-border {
+    border: 2px solid #DDDDDD;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.import-by-path-card-title {
+    color: #343434;
+}

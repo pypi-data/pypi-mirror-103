@@ -1,0 +1,19 @@
+.feedback-taskpane-answer-container {
+    margin: auto;
+    width: 90%;
+}
+
+.feedback-taskpane-textarea {
+    resize: none;
+
+    margin: 0px;
+
+    width: 90%;
+    height: 75px;
+
+    border: 1px solid #343434;
+    border-radius: 3px;
+
+    font-family: var(--jp-ui-font-family);
+    font-size: 12px;
+}

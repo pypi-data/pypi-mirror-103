@@ -1,0 +1,12 @@
+/* Styling for buttons we use across the app */
+
+.blue-button {
+    border: 0;
+    border-radius: 3px;
+
+    background-color: var(--mito-blue);
+    color: white;
+
+    padding: 5px 50px;
+    margin: auto;
+}
