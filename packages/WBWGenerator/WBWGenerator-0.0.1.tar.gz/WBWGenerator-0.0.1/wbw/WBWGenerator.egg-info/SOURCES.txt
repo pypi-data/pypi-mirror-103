@@ -1,0 +1,4 @@
+wbw/WBWGenerator.egg-info/PKG-INFO
+wbw/WBWGenerator.egg-info/SOURCES.txt
+wbw/WBWGenerator.egg-info/dependency_links.txt
+wbw/WBWGenerator.egg-info/top_level.txt
