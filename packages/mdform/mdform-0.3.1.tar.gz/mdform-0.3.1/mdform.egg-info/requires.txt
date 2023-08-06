@@ -1,0 +1,7 @@
+setuptools
+markdown>=3.0.1
+unidecode
+
+[test]
+pytest
+pytest-cov
