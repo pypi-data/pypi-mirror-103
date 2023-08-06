@@ -1,0 +1,7 @@
+Django>=2.2
+django-appconf>=1.0.4
+pytz>=2020.4
+
+[pytest]
+pytest
+pytest-django
