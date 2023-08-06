@@ -1,0 +1,12 @@
+scipyx/__about__.py,sha256=sA9uGPrwSXBdNWvdGfiH-G1_KNb82jTiAFvJd7Y3a0k,216
+scipyx/__init__.py,sha256=lrSOFXSR2xC036DLCl4S2hAGOfI2gdkbj50AHIoaKN8,384
+scipyx/_krylov.py,sha256=4rgD-TS0__5KYSJYmmRR8ItLzbNuSgnAbKkJALZSnrQ,5605
+scipyx/_minimize.py,sha256=v_uKlfZBUyC5cj37EfSl2upEWfYK9DhQtSOSsVGf9GQ,605
+scipyx/_nonlinear.py,sha256=cDQoOqV_yYQ6zfNhd2ADSVRcmiAL6dA1gkjN5voiyTw,2229
+scipyx/_optimize.py,sha256=60U08jRh_jmgI7poAauzXf9VLsSEdvEAwqvWTr25QEE,887
+scipyx-0.0.13.dist-info/LICENSE,sha256=DvRLD-I2uPdG8nHz-vxWrZP5ZVANV2RmAJUZ_HFSmN4,1474
+scipyx-0.0.13.dist-info/METADATA,sha256=wC4ryqBE_EpL8GqBo9HZ-ScdWQd5Z5oSLEm5C5To3sg,4807
+scipyx-0.0.13.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+scipyx-0.0.13.dist-info/entry_points.txt,sha256=pCL6nvMUwkgprZD6t29xFNJXDhhiQD22SmIsoI3Mixc,49
+scipyx-0.0.13.dist-info/top_level.txt,sha256=7JbJP78NYsshCLCzrpgXCCvvPZO8V1MoZStub7M5pDo,7
+scipyx-0.0.13.dist-info/RECORD,,

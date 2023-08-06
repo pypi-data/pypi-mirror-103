@@ -1,0 +1,3 @@
+[console_scripts]
+scipyx-show = scipyx.cli:show
+
