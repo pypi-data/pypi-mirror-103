@@ -1,0 +1,200 @@
+Metadata-Version: 2.1
+Name: opentf-agent
+Version: 1.0.0
+Summary: OpenTestFactory Orchestrator Agent
+Home-page: https://github.com/opentestfactory/agent
+Author: Martin Lafaix
+Author-email: mlafaix@henix.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
+Classifier: Topic :: Communications
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >= 3.7.0
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.25)
+
+# opentf-agent
+
+This package is part of the OpenTestFactory framework.
+
+## Overview
+
+An agent is a process that runs on an execution environment.  That process will contact the orchestrator at regular intervals, looking for some orders to execute.
+
+If there is a pending order, the agent will do as asked and send the result back to the orchestrator.
+
+There can be any number of agents talking with a given orchestrator.  But, typically, on a given execution environment, there is at most one agent running.
+
+Not all execution environments have agents running on them.  If the execution environment can be accessed via SSH, this may be used instead.
+
+## Installation
+
+The OpenTestFactory agent is a Python application that is installed in the execution environment.  It requires Python 3.7 or higher.  It works on Linux, MacOS, and Windows.
+
+As it is a simple script it may also work on other operating systems.  It only has one external dependency, the well-known `requests` library (it will be installed if not already present on the execution environment).
+
+To install it, use the following command:
+
+```bash
+pip3 install --upgrade opentf-agent
+```
+
+You can test your installation by running the following command:
+
+```bash
+opentf-agent --help
+```
+
+## Usage
+
+### Summary
+
+```text
+$ opentf-agent --help
+usage: opentf-agent [-h] --tags TAGS --host HOST [--port PORT]
+                    [--path_prefix PATH_PREFIX] [--token TOKEN]
+                    [--encoding ENCODING] [--script_path SCRIPT_PATH]
+                    [--workspace_dir WORKSPACE_DIR] [--name NAME]
+                    [--polling_delay POLLING_DELAY]
+                    [--liveness_probe LIVENESS_PROBE] [--retry RETRY]
+                    [--debug]
+
+OpenTestFactory Agent
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --tags TAGS           a comma-separated list of tags (e.g. windows,robotframework)
+  --host HOST           target host with protocol (e.g., https://example.local)
+  --port PORT           target port (default to 24368)
+  --path_prefix PATH_PREFIX
+                        target context path (default to no context path)
+  --token TOKEN         token
+  --encoding ENCODING   encoding on the console side (defaults to utf-8)
+  --script_path SCRIPT_PATH
+                        where to put temporary files (defaults to current directory)
+  --workspace_dir WORKSPACE_DIR
+                        where to put workspaces (defaults to current directory)
+  --name NAME           agent name (defaults to "test agent")
+  --polling_delay POLLING_DELAY
+                        polling delay in seconds (default to 5)
+  --liveness_probe LIVENESS_PROBE
+                        liveness probe in seconds (default to 300 seconds)
+  --retry RETRY         how many times to try joining host (default to 5,
+                        0 = try forever)
+  --debug               whether to log debug information.
+```
+
+### Required parameters
+
+There are two required parameters, `--tags` and `--host`.
+
+`--tags` is a comma-separated list of tags.  One of those tags MUST be one and only one of `linux`, `macos`, or `windows`.  There may be any number of other tags.
+
+`--host` is the orchestrator this agent will register to.  It is a fully qualified domain name (or an IP address), and must start with a protocol, typically `https://`.
+
+### Optional parameters
+
+If the port the orchestrator listen to for agent registration differs from the standard one (24368), you can use the `--port` option to adjust it.
+
+If the orchestrator does not have its own domain name but used a shared fully qualified name, you can specify its path prefix using the `--path_prefix` option.  For example, if the orchestrator is listening on `https://example.com/foo/bar`, you can specify `--path_prefix foo/bar`.
+
+If the orchestrator requires a token, you can use the `--token` option to specify it.
+
+If you intend to have multiple agents, you can give a name to some or all your agents, by using the `--name` option.
+
+If your execution environment console does not use UTF8 as its encoding, you can specify the used encoding using the `--encoding` parameter.
+
+By default, scripts and workspaces are created in the current directory.  You can change this by using `--script_path` and `--workspace_dir`, respectively.
+
+By default the agent will query the orchestrator every 5 seconds.  You can adjust this by using the `--polling_delay` option.
+
+By default the orchestrator considers the agent available for handling jobs if it has been seen in the last 300 seconds.  You can adjust that delay by using the `--liveness_probe` option.
+
+### Stopping the agent
+
+You can stop a running agent by killing it or interrupting it (`^C`).  It will try to deregister from the orchestrator.
+
+If the deregistration is successful, there will be a `Agent successfully deregistered` message in the console.
+
+If the deregistration fails, the orchestrator may still consider the agent to be available for a limited amount of time (as specified by `--liveness_probe`), which
+may cause jobs targeting a compatible execution environment to time-out.
+
+## Examples
+
+### Example 1
+
+Assuming there is an OpenTestFactory orchestrator running on `orchestrator.example.com`, with a known token stored in the `TOKEN` environment variable, the following command will register the Windows-based execution environment and will possibly receive commands targeting windows and/or robotframework:
+
+```bash
+chcp 65001
+opentf-agent --tags windows,robotframework --host https://orchestrator.example.com/ --token %TOKEN%
+```
+
+The agent will poll the orchestrator every 5 seconds and will execute the received commands.
+
+The `chcp` command sets the console to Unicode.  It is Windows-specific.  It is not mandatory but may be needed depending on the test framework available in the execution environment.
+
+Temporary files will be generated in the current directory, as well as workspace directories.
+
+### Example 2
+
+Assuming again the existence of an OpenTestFactory orchestrator running on `orchestrator.example.com`, listening for agent registrations on port 12345, with a known token stored in the `TOKEN` environment variable.
+
+The following command will register the Linux-based execution environment and will poll the orchestrator every seconds.  Il will accept jobs targeting `linux`, and/or `junit`, and/or `robotframework`.
+
+Scripts will be temporarily stored on `/tmp`, and workspaces will be allocated on `/var/opentf/workspace`.
+
+```bash
+opentf-agent \
+  --name "all in one execution environment" \
+  --tags linux,junit,cypress \
+  --host https://orchestrator.example.com \
+  --port 12345 \
+  --token $TOKEN \
+  --script_path /tmp \
+  --workspace_dir /var/opentf/workspace \
+  --polling_delay 1
+```
+
+## Troubleshouting
+
+You can list the registered agents on a given orchestrator by running the following command:
+
+```bash
+curl \
+  -H "Authorization: bearer $TOKEN" \
+  https://orchestrator.example.com:24368/agents
+```
+
+You can deregister a rogue agent on a given orchestrator by running the followig command:
+
+```bash
+curl \
+  -X DELETE \
+  -H "Authorization: bearer $TOKEN" \
+  https://orchestrator.example.com:24368/agents/<agent_id>
+```
+
+where `<agent_id>` is the UUID of the agent as shown by the previous command.
+
+## License
+
+Copyright 2021 Henix, henix.fr
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+
