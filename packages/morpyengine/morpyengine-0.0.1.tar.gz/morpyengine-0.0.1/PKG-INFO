@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: morpyengine
+Version: 0.0.1
+Summary: A small SDL2 Graphic Engine to learn how it work
+Home-page: https://github.com/Morgiver/morpyengine
+Author: Morgiver
+Author-email: me@morgiver.net
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Morgiver/morpyengine/issues
+Description: # My Graphic Engine with SDL2
+        Little project to learn how the SDL2 works and create my lib to make some games
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
