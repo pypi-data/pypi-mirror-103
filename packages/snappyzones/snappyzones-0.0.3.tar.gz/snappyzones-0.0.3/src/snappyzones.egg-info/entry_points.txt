@@ -1,0 +1,3 @@
+[console_scripts]
+snappy = snappyzones.__main__:main
+
