@@ -1,0 +1,15 @@
+cookiecutter
+ruamel.yaml
+cloudflare
+auth0-python
+pydantic
+pynacl
+bcrypt
+
+[dev]
+flake8==3.8.4
+black==20.8b1
+twine
+pytest
+diagrams
+jhub-client
