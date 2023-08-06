@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: contact-sites
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/lionben89/contact_sites.git
+Author: Lion Ben Nedava
+Author-email: lionben89@gmail.com
+License: MIT
+Keywords: contact_sites
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: tifffile (>=0.15.1)
+Requires-Dist: tqdm
+Requires-Dist: scikit-image (>=0.15.0)
+Requires-Dist: aicsimageio (==3.0.7)
+Requires-Dist: itkwidgets (>=0.32.0)
+
+# contact_sites
+package to help analayze organelle to organelle contact sites
+
+
