@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: rcpchgrowth-python-cli
+Version: 1.0.7
+Summary: Command Line Interface for RCPCHGrowth.
+Home-page: https://github.com/rcpch/rcpchgrowth-python-cli
+Author: Simon Chapman
+Author-email: eatyourpeasapps@gmail.com
+License: UNKNOWN
+Description: Calculate SDS and centiles using       UK-WHO, Down and Turner reference data.           This is official RCPCH software.
+Keywords: RCPCHGrowth UK-WHO Down Turner
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
