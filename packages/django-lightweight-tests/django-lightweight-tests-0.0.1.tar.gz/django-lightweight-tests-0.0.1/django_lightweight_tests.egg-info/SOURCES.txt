@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+django_lightweight_tests/__init__.py
+django_lightweight_tests/lightweight_test.py
+django_lightweight_tests/tests.py
+django_lightweight_tests.egg-info/PKG-INFO
+django_lightweight_tests.egg-info/SOURCES.txt
+django_lightweight_tests.egg-info/dependency_links.txt
+django_lightweight_tests.egg-info/top_level.txt
