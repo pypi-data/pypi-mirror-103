@@ -1,0 +1,13 @@
+flake8_tabs/__init__.py,sha256=lmJhWkCsC5u11K4uteoP_dFvaCHNu7LEj6-5btZcQjA,312
+flake8_tabs/blanklineck.py,sha256=eZMTSIKYY7ihV8Yqy4djd9eXZDKqzC5NFD30drlk_CA,2679
+flake8_tabs/categorizer.py,sha256=KPRbrU5Y1ZFqdLN0K7vMSa0w1T_-bpD7ArBtpBMTwec,9117
+flake8_tabs/config.py,sha256=iPPOjb36BogwYTX7Rm_38hwXBt6AoC8PzOPS_7fAdHA,7741
+flake8_tabs/editorconfig.py,sha256=4CtWrkQNoKuXDAD9Wa0IqFF736oRcOz7sWcEFVeGUMU,2459
+flake8_tabs/indentationck.py,sha256=fTHgW5WsA7HHsnuka3fbT14V_sJMfyP7n1u0X9ApsIM,14063
+flake8_tabs/misc.py,sha256=Qgc9rThjxGv0OSDhq8FUvR5FV4NxTBZFlekF-_bXf1I,3702
+flake8_tabs/monkeypatch.py,sha256=kRG5wQKoXV1GGHMVhO7i1YkjIGBHehWaFgLmiz_E1xM,3016
+flake8_tabs-2.3.2.dist-info/entry_points.txt,sha256=ECZm8LPury_43JpgKGhKPtqARb39Hs6Tn7ptNekH0G4,144
+flake8_tabs-2.3.2.dist-info/WHEEL,sha256=Vj_7HiFqFqyT_QO9D79osoBXdyd_JaojvKzABGdpbDg,87
+flake8_tabs-2.3.2.dist-info/METADATA,sha256=hoPc053K_wxAjaCzedWftnDdb8MBtdEKd6Pxg7cBrXs,16782
+flake8_tabs-2.3.2.dist-info/LICENSE.md,sha256=HpUKMjWJEodvzT6gvdl1yeqKeCLt3DzaZigXw6vpmxw,7642
+flake8_tabs-2.3.2.dist-info/RECORD,,
