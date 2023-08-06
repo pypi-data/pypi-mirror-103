@@ -1,0 +1,9 @@
+setup.py
+kaldiprep/__init__.py
+kaldiprep/dictionary.py
+kaldiprep/utterances.py
+kaldiprep.egg-info/PKG-INFO
+kaldiprep.egg-info/SOURCES.txt
+kaldiprep.egg-info/dependency_links.txt
+kaldiprep.egg-info/requires.txt
+kaldiprep.egg-info/top_level.txt
