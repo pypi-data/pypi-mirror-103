@@ -3,36 +3,10 @@
 This repo contains 40000 packages uploaded to PyPI between 
 2021-04-21 04:07 and 2021-04-28 23:52.
 
-The repo is 44% (17999/40000) complete.
+The repo is 49% (19999/40000) complete.
 
-## Packages:
+Package contents can be found [in the code branch](https://github.com/pypi-data/pypi-mirror-103/tree/code/packages).
 
-| Name  | Count |
-| ----- | ----- |
-| cortx-jupyter | 336 |
-| zenroom | 252 |
-| pyagrum-nightly | 182 |
-| advent-of-code | 144 |
-| dependency-injector | 124 |
-| RelStorage | 110 |
-| samna | 108 |
-| msi-recal | 105 |
-| asgi-tools | 105 |
-| notecoin | 99 |
-| tgchizu | 98 |
-| symba | 78 |
-| assisted-service-client | 78 |
-| tensorflow-io-nightly | 72 |
-| pyppmd | 72 |
-| feyn | 72 |
-| pikepdf | 69 |
-| mailslurp-client | 68 |
-| seafood-hs | 66 |
-| pysolnp | 66 |
-| awscrt | 66 |
-| rtloc-manager | 64 |
-| discord-ext-audiorec | 64 |
-| http-router | 62 |
-| tensorflow-io-plugin-gs-nightly | 60 |
+A browsable package list for all repositories [all packages here](https://pypi-data.github.io/website/repositories/pypi-mirror-103).
 
 
