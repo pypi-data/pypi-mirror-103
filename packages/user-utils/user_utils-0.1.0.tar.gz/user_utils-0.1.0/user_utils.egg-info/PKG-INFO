@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: user-utils
+Version: 0.1.0
+Summary: Módulos para obter e gerenciar configurações básicas do usuário nos sistemas Linux e Windows
+Home-page: https://github.com/Brunopvh/python-user-utils
+Author: Bruno Chaves
+Author-email: brunodasill@gmail.com
+License: MIT
+Project-URL: Código fonte, https://github.com/Brunopvh/python-user-utils
+Project-URL: Download, https://github.com/Brunopvh/python-user-tils/archive/refs/heads/master.zip
+Description: UNKNOWN
+Platform: UNKNOWN
