@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/gamma_futures_BT.egg-info/PKG-INFO
+src/gamma_futures_BT.egg-info/SOURCES.txt
+src/gamma_futures_BT.egg-info/dependency_links.txt
+src/gamma_futures_BT.egg-info/top_level.txt
