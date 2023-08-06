@@ -1,0 +1,4 @@
+include src/loanpy/data/*.csv
+include src/loanpy/data/*.txt
+include src/loanpy/data/*.xlsx 
+include src/loanpy/data/*.ipynb
