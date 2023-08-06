@@ -1,0 +1,10 @@
+README.md
+setup.py
+snakenv/__init__.py
+snakenv/__main__.py
+snakenv.egg-info/PKG-INFO
+snakenv.egg-info/SOURCES.txt
+snakenv.egg-info/dependency_links.txt
+snakenv.egg-info/entry_points.txt
+snakenv.egg-info/requires.txt
+snakenv.egg-info/top_level.txt
