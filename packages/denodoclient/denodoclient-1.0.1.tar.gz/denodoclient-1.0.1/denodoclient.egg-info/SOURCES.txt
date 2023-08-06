@@ -1,0 +1,16 @@
+AUTHORS.rst
+LICENSE
+README.md
+setup.cfg
+setup.py
+denodoclient/__init__.py
+denodoclient/denodoclient.py
+denodoclient/vqlquery.py
+denodoclient.egg-info/PKG-INFO
+denodoclient.egg-info/SOURCES.txt
+denodoclient.egg-info/dependency_links.txt
+denodoclient.egg-info/not-zip-safe
+denodoclient.egg-info/requires.txt
+denodoclient.egg-info/top_level.txt
+denodoclient/dataframes/__init__.py
+denodoclient/dataframes/denododataframeclient.py
