@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: gelee
+Version: 0.0.4
+Summary: Configuration format validator for CSV, INI, JSON, TOML, XML, and YAML.
+Home-page: https://github.com/sthagen/solid-umbrella
+Author: Stefan Hagen
+Author-email: stefan@hagen.link
+License: MIT
+Description: # Solid Umbrella
+        
+        Configuration linter for typical formats.
+        
+        ## Status
+        
+        Experimental.
+        
+        **Note**: The default branch is `default`.
+        
+        Later we use mkdocs
+        
+        # Installation
+        
+        ```
+        $ pipx install gelee
+        ```
+        
+        # Example Usage
+        
+        ```
+        $ python -m gelee tests/fixtures
+        2021-04-28T22:58:54.782 INFO [gelee]: Starting validation visiting a forest with 1 tree
+        2021-04-28T22:58:54.788 ERROR [gelee]: Failed validation for path tests/fixtures/invalid/toml/key_group_not_on_dedicated_line.toml with error: Key group not on a line by itself. (line 1 column 1 char 0)
+        2021-04-28T22:58:54.788 ERROR [gelee]: Failed validation for path tests/fixtures/invalid/xml/empty.xml with error: ERROR: Empty XML file
+        2021-04-28T22:58:54.789 ERROR [gelee]: Failed validation for path tests/fixtures/invalid/ini/missing_section_header.ini with error: File contains no section headers.file: PosixPath('tests/fixtures/invalid/ini/missing_section_header.ini'), line: 1'[section\n'
+        2021-04-28T22:58:54.790 ERROR [gelee]: Failed validation for path tests/fixtures/invalid/json/invalid.json with error: Expecting property name enclosed in double quotes: line 2 column 1 (char 2)
+        2021-04-28T22:58:54.790 ERROR [gelee]: Failed validation for path tests/fixtures/invalid/json/empty.geojson with error: Expecting value: line 1 column 1 (char 0)
+        2021-04-28T22:58:54.790 ERROR [gelee]: Failed validation for path tests/fixtures/invalid/csv/empty.csv with error: ERROR: Empty CSV file
+        2021-04-28T22:58:54.791 ERROR [gelee]: Failed validation for path tests/fixtures/invalid/yaml/unexpected-dash.yml with error: while parsing a block mapping  in "tests/fixtures/invalid/yaml/unexpected-dash.yml", line 1, column 1expected <block end>, but found '-'  in "tests/fixtures/invalid/yaml/unexpected-dash.yml", line 3, column 1
+        2021-04-28T22:58:54.792 ERROR [gelee]: Failed validation for path tests/fixtures/invalid/yaml/unexpected-dash.yaml with error: while parsing a block mapping  in "tests/fixtures/invalid/yaml/unexpected-dash.yaml", line 1, column 1expected <block end>, but found '-'  in "tests/fixtures/invalid/yaml/unexpected-dash.yaml", line 3, column 1
+        2021-04-28T22:58:54.792 INFO [gelee]: - Successfully validated 1 total CSV file.
+        2021-04-28T22:58:54.792 INFO [gelee]: - Successfully validated 1 total INI file.
+        2021-04-28T22:58:54.792 INFO [gelee]: - Successfully validated 1 total JSON file.
+        2021-04-28T22:58:54.792 INFO [gelee]: - Successfully validated 1 total TOML file.
+        2021-04-28T22:58:54.792 INFO [gelee]: - Successfully validated 1 total XML file.
+        2021-04-28T22:58:54.792 INFO [gelee]: - Successfully validated 1 total YAML file.
+        2021-04-28T22:58:54.792 INFO [gelee]: Finished validation of 6 configuration files with 8 failures visiting 32 paths (ignored 1 non-config file in 17 folders)
+        FAIL
+        ```
+        
+        # Change History
+        
+        ## 0.0.4 (2021-04-28)
+        
+        * Fixed gelee app (console script)
+        * Fixed single file path use case
+        * Enhanced detection of and report on empty CSV as well as XML files (invalid use cases)
+        * Enhanced report on non-existing paths
+        * Added more tests to detect regressions
+        * Fixed summary singular / plural for total paths
+        * Fourth release on PyPI
+        
+        ## 0.0.3 (2021-04-27)
+        
+        * Added YAML well-formed lint
+        * Hardened processing of files without extension
+        * Added documentation
+        * Third release on PyPI
+        
+        ## 0.0.2 (2021-04-26)
+        
+        * Added CSV well-formed lint
+        * Added INI well-formed lint
+        * Added JSON/GeoJSON well-formed lint
+        * Added TOML well-formed lint
+        * Added XML well-formed lint
+        * Fixed debug logic
+        * Second release on PyPI
+        
+        ## 0.0.1 (2021-04-25)
+        
+        * Initial release on PyPI
+        
+        
+Keywords: csv development lint ini json toml xml yaml validation
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
