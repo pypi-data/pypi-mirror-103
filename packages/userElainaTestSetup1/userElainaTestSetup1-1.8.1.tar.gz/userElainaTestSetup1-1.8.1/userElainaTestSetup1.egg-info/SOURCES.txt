@@ -1,0 +1,11 @@
+aaa.py
+setup.py
+userElainaTestSetup1/1.txt
+userElainaTestSetup1/__init__.py
+userElainaTestSetup1/qwq1.py
+userElainaTestSetup1.egg-info/PKG-INFO
+userElainaTestSetup1.egg-info/SOURCES.txt
+userElainaTestSetup1.egg-info/dependency_links.txt
+userElainaTestSetup1.egg-info/requires.txt
+userElainaTestSetup1.egg-info/top_level.txt
+userElainaTestSetup1/qwq2/__init__.py
