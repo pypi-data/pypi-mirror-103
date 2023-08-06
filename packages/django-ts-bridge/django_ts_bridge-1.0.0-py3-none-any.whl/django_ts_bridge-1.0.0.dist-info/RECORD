@@ -1,0 +1,17 @@
+django_ts_bridge/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_ts_bridge/choices.py,sha256=4_hgFjfgxjb75NcRR7qKAH67RHH_6DuLyZCSn_LYdeA,1305
+django_ts_bridge/core.py,sha256=TB69J7taXAjbsEL8pxv7FP19D4nZ6OnkDb5r2tHXMWU,168
+django_ts_bridge/model_defs.py,sha256=A3hdEuFws_g4K8Oo0N_4ZEuF-PtZNxxicPlVWRUanJ0,1815
+django_ts_bridge/settings.py,sha256=d_OLEXUTcOvjFzjSlWFfVHfSHhUp5vxdPjawKA7hYCs,369
+django_ts_bridge/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_ts_bridge/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_ts_bridge/management/commands/create_ts_choice_defs.py,sha256=F0o3YSdDnEfj_yAcKP0Do8d-Oy5W8Gby0CPm0qJF_as,997
+django_ts_bridge/management/commands/create_ts_files.py,sha256=pOJPasSyJ8lf8Oz4TxISn3FZO6mAfj6ciFh38s6ept0,382
+django_ts_bridge/management/commands/create_ts_serializer_types.py,sha256=Q1ekWV9uNeNi8LtQNfaGTBsS1SNM8avWaNrrJXk2vpI,2731
+django_ts_bridge/templates/django_ts_bridge/choices_ts.tpl,sha256=MfpRwRpFwcgVkmnvymcyovV4Z2G65-73W1N4eWInRCA,995
+django_ts_bridge/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_ts_bridge/templatetags/django_ts_bridge.py,sha256=sBicacQsYM8mNVISq5RSwk8txKlEBn2UsVyD1ZFLXyY,369
+django_ts_bridge-1.0.0.dist-info/METADATA,sha256=PGvREnEHJ32R3Y6SSJB-mZ8bnfC6mI2hcf_s0igLxgg,1725
+django_ts_bridge-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_ts_bridge-1.0.0.dist-info/top_level.txt,sha256=ifEszGWKr1P3FgdvG8BYtgyjm8eC9gLi_PFjd9STX5g,17
+django_ts_bridge-1.0.0.dist-info/RECORD,,
