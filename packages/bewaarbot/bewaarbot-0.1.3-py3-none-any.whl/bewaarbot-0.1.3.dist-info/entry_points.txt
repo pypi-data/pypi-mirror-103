@@ -1,0 +1,3 @@
+[console_scripts]
+bewaarbot=bewaarbot.__main__:app
+
