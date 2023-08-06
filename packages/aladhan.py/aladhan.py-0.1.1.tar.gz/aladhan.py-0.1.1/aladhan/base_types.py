@@ -1,0 +1,679 @@
+import pytz
+
+from datetime import datetime, timedelta
+from typing import Dict, Union, List
+from functools import partial
+from beartype import beartype
+
+from .methods import all_methods, Method, ISNA
+
+__all__ = (
+    "Data",
+    "Date",
+    "DateType",
+    "Meta",
+    "LatitudeAdjustmentMethods",
+    "MidnightModes",
+    "Timings",
+    "Tune",
+    "Prayer",
+    "Schools",
+    "TimingsDateArg",
+    "CalendarDateArg",
+    "DefaultArgs",
+)
+
+
+class Tune:
+    """
+    Represents a Tune obj that is returned from API.
+    Can be used to make an obj that will be used as a tune param in :class:`DefaultArgs`
+
+    Attributes
+    ----------
+        imsak: :class:`int`
+            The tune value for imsak.
+        fajr: :class:`int`
+            The tune value for fajr.
+        sunrise: :class:`int`
+            The tune value for sunrise.
+        asr: :class:`int`
+            The tune value for asr.
+        maghrib: :class:`int`
+            The tune value for maghrib.
+        sunset: :class:`int`
+            The tune value for sunset.
+        isha: :class:`int`
+            The tune value for isha.
+        midnight: :class:`int`
+            The tune value for midnight.
+    """
+
+    def __init__(
+        self,
+        Imsak: int = 0,
+        Fajr: int = 0,
+        Sunrise: int = 0,
+        Dhuhr: int = 0,
+        Asr: int = 0,
+        Maghrib: int = 0,
+        Sunset: int = 0,
+        Isha: int = 0,
+        Midnight: int = 0,
+    ):
+        self.imsak = Imsak
+        self.fajr = Fajr
+        self.sunrise = Sunrise
+        self.dhuhr = Dhuhr
+        self.asr = Asr
+        self.maghrib = Maghrib
+        self.sunset = Sunset
+        self.isha = Isha
+        self.midnight = Midnight
+
+    @property
+    def value(self):
+        """:class:`str`: The string value that will be used to get response."""
+        return (
+            "{0.imsak},{0.fajr},{0.sunrise},{0.dhuhr},{0.asr},"
+            "{0.maghrib},{0.sunset},{0.isha},{0.midnight}".format(self)
+        )
+
+    @classmethod
+    def from_str(cls, s: str) -> "Tune":
+        """Makes a Tune obj from a value string.
+
+        Returns
+        -------
+            :class:`Tune`
+                The created obj.
+        """
+        args = s.split(",")
+        assert len(args) == 9, "Not valid string format"
+        return cls(*map(int, args))
+
+    def __repr__(self):
+        return "<Tune = {}>".format(self.value)
+
+    def __hash__(self):
+        return hash(self.value)
+
+
+class Schools:
+    STANDARD = SHAFI = 0
+    HANAFI = 1
+
+
+class MidnightModes:
+    STANDARD = 0
+    JAFARI = 1
+
+
+class LatitudeAdjustmentMethods:
+    MIDDLE_OF_THE_NIGHT = 1
+    ONE_SEVENTH = 2
+    ANGLE_BASED = 3
+
+
+class Prayer:
+    """Represents a Prayer obj.
+
+    Do not create this class yourself. Only get it through a getter.
+
+    Attributes
+    ----------
+        name: :class:`str`
+            Prayer name.
+        time: :class:`datetime`
+            Prayer's time.
+        str_time: :class:`str`
+            Better looking string format for prayer's time.
+    """
+
+    def __init__(self, name: str, time: str, date: str = None):
+        self.name = name
+        if date is None:
+            date = datetime.utcnow().strftime("%d-%m-%Y")
+        day, month, year = map(int, date.split("-"))
+        time = time.split()[0]
+        self.time = datetime.strptime(time, "%H:%M").replace(year, month, day)
+        self.str_time = self.time.strftime("%H:%M %d-%m-%Y")
+
+    @property
+    def remaining(self):
+        """:class:`timedelta`: remaining time for prayer."""
+        return self.time - datetime.utcnow()
+
+    def __repr__(self):
+        return "<Prayer name={0.name!r}, time=D{0.str_time!r}>".format(self)
+
+    def __hash__(self):
+        return hash(self.name)
+
+
+class CalendarDateArg:
+    """
+    Class to make an obj that will be used as a date param in calendar getters
+
+    Parameters
+    ----------
+        year: :class:`int`
+            Required argument for calendar's year.
+
+        month: Optional[:class:`int`]
+            If this was not giving, or 0 was giving instead it will return
+            a whole year calendar instead which is set to by default
+
+        hijri: :class:`bool`
+            whether `year` is a hijri year or not.
+            Default: False
+
+    Attributes
+    ----------
+        year: :class:`int`
+            Calendar's year.
+
+        month: :class:`int`
+            Calendar's month, set to 0 if it wasn't given.
+
+        annual: :class:`str`
+            Whether a year calender going to be returned ot not.
+            "true" if month was not given otherwise "false".
+
+        hijri: :class:`bool`
+            Whether `year` is a hijri year or not.
+    """
+
+    @beartype
+    def __init__(
+        self,
+        year: int,
+        month: int = None,
+        hijri: bool = False,
+    ):
+        # TODO: check for year limits
+        if month:
+            if month not in range(1, 13):
+                raise ValueError(
+                    "month argument expected to be in range 1-12"
+                    " got {}".format(month)
+                )
+            self.month = month
+            self.annual = "false"
+        else:
+            self.month = 0
+            self.annual = "true"
+
+        self.year = year
+        self.hijri = hijri
+
+    @property
+    def as_dict(self):
+        return {"year": self.year, "annual": self.annual, "month": self.month}
+
+
+class TimingsDateArg:
+    """
+    Class to make an obj that will be used as a date param in timings getters
+
+    Parameters
+    ----------
+        date: Optional[:class:`int` or :class:`str` or :class:`datetime`]
+            Can be either int representing the UNIX format or a str in
+            DD-MM-YYYY format or a datetime obj.
+            Default: current date.
+
+    Attributes
+    ----------
+        date: :class:`str`
+            A date string in DD-MM-YYYY format.
+
+    """
+
+    @beartype
+    def __init__(self, date: Union[str, int, datetime] = None):
+        if date is None:
+            date = datetime.utcnow()
+        elif isinstance(date, int):
+            date = datetime.utcfromtimestamp(date)
+
+        if isinstance(date, datetime):
+            date = date.strftime("%d-%m-%Y")
+
+        else:  # it is a str
+            try:
+                datetime.strptime(date, "%d-%m-%Y")
+            except ValueError:
+                raise ValueError(
+                    "Expected DD-MM-YYYY date format got {!r} ".format(date)
+                )
+
+        self.date = date  # noqa
+
+
+class DefaultArgs:
+    """
+    Class to make an obj that will be used as a defaults param in getters.
+
+    Parameters
+    ----------
+        method: :class:`Method` or :class:`int`
+            A prayer time calculation method, you can look into all methods from :meth:`AsyncClient.get_all_methods()`.
+            Default: ISNA (Islamic Society of North America).
+
+        tune: :class:`Tune`
+            To offset returned timings.
+            Default: Tune()
+
+        school: :class:`int`
+            0 for Shafi (standard), 1 for Hanafi.
+            Default: Shafi
+
+        midnightMode: :class:`int`
+            0 for Standard (Mid Sunset to Sunrise), 1 for Jafari (Mid Sunset to Fajr).
+            Default: Standard
+
+        latitudeAdjustmentMethod: :class:`int`
+            Method for adjusting times higher latitudes.
+            For instance, if you are checking timings in the UK or Sweden.
+            1 - Middle of the Night
+            2 - One Seventh
+            3 - Angle Based
+            Default: Angle Based
+
+        adjustment: :class:`int`
+            Number of days to adjust hijri date(s)
+            Default: 0
+
+    Attributes
+    ----------
+        method: :class:`int`
+            Method id.
+
+        tune: :class:`str`
+            Tune Value.
+
+        school: :class:`int`
+
+        midnightMode: :class:`int`
+
+        latitudeAdjustmentMethod: :class:`int`
+
+        adjustment: :class:`int`
+    """
+
+    @beartype
+    def __init__(
+        self,
+        method: Union[Method, int] = ISNA,
+        tune: Tune = None,
+        school: int = Schools.SHAFI,
+        midnightMode: int = MidnightModes.STANDARD,  # noqa
+        latitudeAdjustmentMethod: int = LatitudeAdjustmentMethods.ANGLE_BASED,  # noqa
+        adjustment: int = 0,
+    ):
+        # method
+        if isinstance(method, Method):
+            method = method.id
+
+        if method not in range(16):
+            raise ValueError("Expected method in 0-15 range" " got {!r}".format(method))
+        self.method = method
+
+        # tune
+        if tune is None:
+            tune = Tune().value
+        elif isinstance(tune, Tune):
+            tune = tune.value
+        self.tune = tune
+
+        # school
+        if school not in (0, 1):
+            raise ValueError(
+                "School argument can only be either 0 or 1" " got {!r}".format(school)
+            )
+        self.school = school
+
+        # midnight mode
+        if midnightMode not in (0, 1):
+            raise ValueError(
+                "midnightMode argument can only be either 0 or 1"
+                " got {!r}".format(midnightMode)
+            )
+        self.midnightMode = midnightMode
+
+        # lat adj methods
+        if latitudeAdjustmentMethod not in (1, 2, 3):
+            raise ValueError(
+                "latitudeAdjustmentMethod argument can only be either 1, 2 or 3"
+                " got {!r}".format(latitudeAdjustmentMethod)
+            )
+        self.latitudeAdjustmentMethod = latitudeAdjustmentMethod
+
+        self.adjustment = adjustment
+
+    @property
+    def as_dict(self):
+        return {
+            "method": self.method,
+            "tune": self.tune,
+            "school": self.school,
+            "midnightMode": self.midnightMode,
+            "latitudeAdjustmentMethod": self.latitudeAdjustmentMethod,
+            "adjustment": self.adjustment,
+        }
+
+
+class Meta:
+    """Represents the meta that is in returned :class:`Data`
+
+    Do not create this class yourself. Only get it through a getter.
+
+    Attributes
+    ----------
+        data: :class:`Data`
+            Original fetched Data.
+
+        longitude: :class:`float`
+            Longitude coordinate.
+
+        latitude: :class:`float`
+            Latitude coordinate.
+
+        timezone:  :class:`UTC`
+            Used timezone to calculate.
+
+        method: :class:`Method`
+            Calculation Method.
+
+        latitudeAdjustmentMethod: :class:`str`
+
+        midnightMode: :class:`str`
+
+        school: :class:`str`
+
+        offset: :class:`Tune`
+            Used offset to tune timings.
+    """
+
+    def __init__(
+        self,
+        data: "Data",
+        longitude: float,
+        latitude: float,
+        timezone: str,
+        method: dict,
+        latitudeAdjustmentMethod: str,
+        midnightMode: str,
+        school: str,
+        offset: dict,
+    ):
+        self.data = data
+        self.longitude = longitude
+        self.latitude = latitude
+        self.timezone = pytz.timezone(timezone)
+        self.method = all_methods[method["id"]]
+        self.latitudeAdjustmentMethod = latitudeAdjustmentMethod
+        self.midnightMode = midnightMode
+        self.school = school
+        self.offset = Tune(*offset)
+
+    def __repr__(self):
+        return (
+            "<Meta longitude={0.longitude!r}, latitude={0.latitude!r}, "
+            "method={0.method!r}, latitudeAdjustmentMethod={0.latitudeAdjustmentMethod!r}, "
+            "midnightMode={0.midnightMode!r}, school={0.school!r}, offset={0.offset!r}>"
+        ).format(self)
+
+    @property
+    def default_args(self):
+        """:class:`DefaultArgs`: returns a default args obj"""
+        return DefaultArgs(
+            self.method,
+            self.offset,
+            getattr(Schools, self.school.upper()),
+            getattr(MidnightModes, self.midnightMode.upper()),
+            getattr(LatitudeAdjustmentMethods, self.latitudeAdjustmentMethod.upper())
+            # can't get adjustment ...
+        )
+
+
+class DateType:
+    """A class for gregorian/hijri date.
+
+    Do not create this class yourself. Only get it through a getter.
+
+    Attributes
+    ----------
+        name: :class:`str`
+            gregorian or hijri.
+
+        date: :class:`str`
+            Date string.
+
+        format: :class:`str`
+            Date's format
+
+        day: :class:`int`
+
+        weekday: dict[:class:`str`, :class:`str`]
+
+        month: dict[:class:`str`, :class:`int` or :class:`str`]
+
+        year: :class:`int`
+
+        designation: dict[:class:`str`, :class:`str`]
+
+        holidays: :class:`list` of :class:`str`
+    """
+
+    def __init__(
+        self,
+        name: str,
+        date: str,
+        format: str,  # noqa
+        day: str,
+        weekday: Dict[str, str],
+        month: Dict[str, Union[int, str]],
+        year: str,
+        designation: Dict[str, str],
+        holidays: List[str] = None,
+    ):
+        self.name = name
+        self.date = date
+        self.format = format
+        self.day = int(day)
+        self.weekday = weekday
+        self.month = month
+        self.year = int(year)
+        self.designation = designation
+        self.holidays = holidays
+
+    def __repr__(self):
+        return (
+            "<DateType name={0.name!r}, date={0.date!r}, holidays={0.holidays}>".format(
+                self
+            )
+        )
+
+
+class Date:
+    """Represents the date that is in returned :class:`Data`
+
+    Do not create this class yourself. Only get it through a getter.
+
+    Attributes
+    ----------
+        data: :class:`Data`
+            Original fetched Data.
+
+        readable: :class:`str`
+            Date in readable format.
+
+        timestamp: :class:`int`
+            Date in UNIX format.
+
+        gregorian:  :class:`DateType`
+            Gregorian date.
+
+        hijri:  :class:`DateType`
+            Hijri date.
+    """
+
+    def __init__(
+        self,
+        data: "Data",
+        readable: str,
+        timestamp: str,
+        gregorian: dict,
+        hijri: dict,
+    ):
+        self.data = data
+        self.readable = readable
+        self.timestamp = int(timestamp)
+        self.gregorian = DateType("Gregorian", **gregorian)
+        self.hijri = DateType("Hijri", **hijri)
+
+    def __repr__(self):
+        return (
+            "<Date readable={0.readable!r}, timestamp={0.timestamp!r}, "
+            "gregorian={0.gregorian!r}, hijri={0.hijri!r}>".format(self)
+        )
+
+
+class Timings:
+    """Represents the timings that is in returned :class:`Data`
+
+    Do not create this class yourself. Only get it through a getter.
+
+    Attributes
+    ----------
+        data: :class:`Data`
+            Original fetched Data.
+
+        imsak: :class:`Prayer`
+            Imsak time.
+
+        fajr: :class:`Prayer`
+            Fajr prayer time.
+
+        sunrise: :class:`Prayer`
+            Sunrise time.
+
+        asr: :class:`Prayer`
+            Asr prayer time.
+
+        maghrib: :class:`Prayer`
+            Maghrib prayer time.
+
+        sunset: :class:`Prayer`
+            Sunset time.
+
+        isha: :class:`Prayer`
+            Isha prayer time.
+
+        midnight: :class:`Prayer`
+            Midnight time.
+    """
+
+    def __init__(
+        self,
+        data: "Data",
+        Imsak: str,
+        Fajr: str,
+        Sunrise: str,
+        Dhuhr: str,
+        Asr: str,
+        Maghrib: str,
+        Sunset: str,
+        Isha: str,
+        Midnight: str,
+    ):
+        self.data = data
+        _Prayer = partial(Prayer, date=data.date.gregorian.date)
+        self.imsak: Prayer = _Prayer("Imsak", Imsak)
+        self.fajr: Prayer = _Prayer("Fajr", Fajr)
+        self.sunrise: Prayer = _Prayer("Sunrise", Sunrise)
+        self.dhuhr: Prayer = _Prayer("Dhuhr", Dhuhr)
+        self.asr: Prayer = _Prayer("Asr", Asr)
+        self.sunset: Prayer = _Prayer("Sunset", Sunset)
+        self.maghrib: Prayer = _Prayer("Maghrib", Maghrib)
+        self.isha: Prayer = _Prayer("Isha", Isha)
+        self.midnight: Prayer = _Prayer("Midnight", Midnight)
+
+    @property
+    def prayers_only(self) -> Dict[str, Prayer]:
+        """dict[:class:`str`, :class:`Prayer`]: A dict of only 5 prayers."""
+        return {
+            "Fajr": self.fajr,
+            "Dhuhr": self.dhuhr,
+            "Asr": self.asr,
+            "Maghrib": self.maghrib,
+            "Isha": self.isha,
+        }
+
+    async def next_prayer(self):
+        """
+        Get the next coming prayer.
+        Don't use this for old dates.
+
+        Returns
+        -------
+            :class:`Prayer`
+                The coming prayer.
+        """
+        meta = self.data.meta
+        now = datetime.utcnow()
+        now = now + meta.timezone.utcoffset(now)
+        for key, val in self.prayers_only.items():
+            if now < val.time:
+                return val
+
+        return await (
+            await self.data.client.get_timings(
+                meta.longitude,
+                meta.latitude,
+                TimingsDateArg(
+                    datetime(val.time.year, val.time.month, val.time.day)  # noqa
+                    + timedelta(1)
+                ),
+                meta.default_args,
+            )
+        ).next_prayer()
+
+    def __repr__(self):
+        return (
+            "<Timings imsak={0.imsak}, fajr={0.fajr}, sunrise={0.sunrise}, "
+            "dhuhr={0.dhuhr}, asr={0.asr}, sunset={0.sunset}, maghrib={0.maghrib}, "
+            "isha={0.isha}, midnight={0.midnight}>"
+        ).format(self)
+
+
+class Data:
+    """Main class Representing the data returned from a request to APi
+
+    Do not create this class yourself. Only get it through a getter.
+
+    Attributes
+    ----------
+        meta: :class:`Meta`
+            Represents the meta part.
+
+        date: :class:`Date`
+            Represents the date part.
+
+        timings: :class:`Timings`
+            Represents the timings part.
+
+        client: :class:`AsyncClient`
+            Represents the client that the Data were fetched from.
+    """
+
+    def __init__(self, timings: dict, date: dict, meta: dict, client):
+        self.meta = Meta(self, **meta)
+        self.date = Date(self, **date)
+        self.timings = Timings(self, **timings)
+        self.client = client
+
+    def __repr__(self):
+        return "<Data object | {0.gregorian.date}>".format(self.date)
