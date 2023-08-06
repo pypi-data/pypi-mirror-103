@@ -1,0 +1,14 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+Makefile
+README.md
+setup.py
+src/minihtml/__init__.py
+src/minihtml/py.typed
+src/minihtml.egg-info/PKG-INFO
+src/minihtml.egg-info/SOURCES.txt
+src/minihtml.egg-info/dependency_links.txt
+src/minihtml.egg-info/not-zip-safe
+src/minihtml.egg-info/top_level.txt
+tests/test_minihtml.py
