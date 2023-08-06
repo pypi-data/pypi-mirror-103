@@ -1,0 +1,14 @@
+osiris/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+osiris/azure_client_authorization.py,sha256=0o2kSPszMed074D8cT6-jJFDnicMvwhbnsaUppUutow,3167
+osiris/azure_data_storage.py,sha256=3_aEXSkMGogPrbdZ5kKbC_XMHp3dLn08qZHlAn8AbCI,2011
+osiris/egress.py,sha256=9gCyCaITjAjz4AYLYyIjw7Towx7fkh3N-A2cIvt9PEw,3630
+osiris/file_io_connector.py,sha256=9bdhG59lInhBNbxU7V7O5C47hpRRFcqCigI0JaP9oa0,4288
+osiris/ingress.py,sha256=mp8qTodf-W_CQecy30zIYNJ7mi5awPAQoLsgBrfsBt8,3188
+osiris/pipeline_timeseries.py,sha256=grCbYO1F8lie1Ix9QaH3i3p94y_cp-EJQtzUY0n1mEo,6231
+osiris/adapters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+osiris/adapters/ingress_adapter.py,sha256=MEkRBKvf_VAnO-J1gn_QICTkbDlZxM1pVO92xctA9xA,3090
+osiris_sdk-0.3.9.dist-info/LICENSE,sha256=owEbg_7ScwyBHEfwk6P9qLHWo5ukEEOWcSSndlUeOO8,1095
+osiris_sdk-0.3.9.dist-info/METADATA,sha256=XBOklkWaPyBv3_DgXTLMORGJhTgo2KxhY7XmNiAkf0Y,6817
+osiris_sdk-0.3.9.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+osiris_sdk-0.3.9.dist-info/top_level.txt,sha256=7RBp223Sh4aHtaPTGFx8Qb4bmA5qSgccj6as2-4zwpk,7
+osiris_sdk-0.3.9.dist-info/RECORD,,
