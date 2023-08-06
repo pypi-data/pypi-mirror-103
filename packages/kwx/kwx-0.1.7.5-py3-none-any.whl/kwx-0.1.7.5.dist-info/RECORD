@@ -1,0 +1,12 @@
+kwx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kwx/autoencoder.py,sha256=PyNFL8DXuGm0G4yFe4q5h1JuuZy7GSlQGFFVPjIhtaI,3202
+kwx/languages.py,sha256=EKBh72_EbIe0kzjfVCL0CcGNX-n37wY90dcVV_wShxg,3072
+kwx/model.py,sha256=JzDYXikdQoTFmO3QVBto8piXNqWEorkBawazFnPpxAw,32646
+kwx/topic_model.py,sha256=otwz-p1R6YnYGcloTnR-q74sVS7K2ngRrejRty4KFdU,7044
+kwx/utils.py,sha256=fjD3YzK4TbXbRTIM6gZ9EO7NRCHSvw4_lcJxGKF3piM,24617
+kwx/visuals.py,sha256=R8VXy4jyTBA57T1Ua5enVG5GHtKLddCdNEoQKtRJ9sM,27083
+kwx-0.1.7.5.dist-info/LICENSE.txt,sha256=pC9SZyJi2FtaAqvlaCelSY4RFHJvPfVqGEbGdVmo3pc,1524
+kwx-0.1.7.5.dist-info/METADATA,sha256=OnEzWex7hu8VEfCgpxfPMk_T-Hduw7HRiY6EUkrWhqw,13215
+kwx-0.1.7.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+kwx-0.1.7.5.dist-info/top_level.txt,sha256=HWpjgIVhL9u8S2vLbv6nt5wNrHNrLT_wDkyhKpjT3JM,4
+kwx-0.1.7.5.dist-info/RECORD,,
