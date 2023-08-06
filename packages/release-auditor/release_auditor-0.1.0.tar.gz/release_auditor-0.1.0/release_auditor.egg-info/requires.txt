@@ -1,0 +1,5 @@
+click>=7.1.2
+PyGithub>=1.54
+python-dateutil>=1.4
+pytest>=6.2.3
+pytest-cov>=2.11.1
