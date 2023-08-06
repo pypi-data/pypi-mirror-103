@@ -1,0 +1,16 @@
+odoo/addons/mail_partner_opt_out/README.rst,sha256=vFcXhBe4lfX2UCT7FKfZ41-cBQUok8KDEtFqITjO0_M,3120
+odoo/addons/mail_partner_opt_out/__init__.py,sha256=X9EJGOE2GtZbS0G82PtSXmWSZ_R8jEM0rlJTDliQjp4,21
+odoo/addons/mail_partner_opt_out/__manifest__.py,sha256=vBabXS85GSWhagUwFGLMLMy8San0Gq7Xd-JsYRgCioY,533
+odoo/addons/mail_partner_opt_out/i18n/mail_partner_opt_out.pot,sha256=lqa7k023QngijpL-JKaG45eX71ehUye48or1bV_qSqg,1285
+odoo/addons/mail_partner_opt_out/models/__init__.py,sha256=g-Dp2ZwN6oB4CqdQfgRInNSzdMWAVQg1vjWL7S-ZODM,26
+odoo/addons/mail_partner_opt_out/models/res_partner.py,sha256=44vgw6lMHYDIE-Jy0jEZ5foqeyFd1q21eQ89GK_D-O8,1814
+odoo/addons/mail_partner_opt_out/readme/CONTRIBUTORS.rst,sha256=cog8l6fzS54Gfy1r-oZjNUUn8qvhCGC7sN5lFnZzFVw,104
+odoo/addons/mail_partner_opt_out/readme/DESCRIPTION.rst,sha256=AwK6kMwBM4DD_EGFGK00i6wc4nWbD2BL49KuJ-Zczac,167
+odoo/addons/mail_partner_opt_out/readme/USAGE.rst,sha256=RHLjZMLIKyBWnldl08ulSt5u-FGQ8NCgCrji2pi5bjA,330
+odoo/addons/mail_partner_opt_out/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/mail_partner_opt_out/static/description/index.html,sha256=YrE1iCZXKgri1fQgAjsr2pb8fAa3oln2x5rJf1zNynM,12548
+odoo/addons/mail_partner_opt_out/views/res_partner_views.xml,sha256=m4g_Q6RqEnPrBgX40suYQ4vaDKDviHiFOKUHAcpeoeE,423
+odoo13_addon_mail_partner_opt_out-13.0.1.0.1.dev3.dist-info/METADATA,sha256=VzqNFZjNlQlkHK9i7uxLPCHSx-IiaWaA-mTxujleW-g,3698
+odoo13_addon_mail_partner_opt_out-13.0.1.0.1.dev3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+odoo13_addon_mail_partner_opt_out-13.0.1.0.1.dev3.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo13_addon_mail_partner_opt_out-13.0.1.0.1.dev3.dist-info/RECORD,,
