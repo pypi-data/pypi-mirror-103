@@ -1,0 +1,5 @@
+click
+click-config-file
+click-plugins
+python-dateutil
+requests_oauthlib
