@@ -1,0 +1,8 @@
+README.md
+setup.py
+example_package/__init__.py
+example_package/__main__.py
+flisol_example_package.egg-info/PKG-INFO
+flisol_example_package.egg-info/SOURCES.txt
+flisol_example_package.egg-info/dependency_links.txt
+flisol_example_package.egg-info/top_level.txt
