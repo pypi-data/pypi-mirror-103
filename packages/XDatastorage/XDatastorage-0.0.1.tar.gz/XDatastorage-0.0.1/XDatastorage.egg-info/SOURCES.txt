@@ -1,0 +1,4 @@
+XDatastorage.egg-info/PKG-INFO
+XDatastorage.egg-info/SOURCES.txt
+XDatastorage.egg-info/dependency_links.txt
+XDatastorage.egg-info/top_level.txt
