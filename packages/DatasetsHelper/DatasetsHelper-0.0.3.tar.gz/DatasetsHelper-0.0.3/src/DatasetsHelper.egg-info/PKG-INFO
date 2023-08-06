@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: DatasetsHelper
+Version: 0.0.3
+Summary: A package to get normalization parameters used in different datasets like imagenet, cifar etc.
+Home-page: https://github.com/konosubakonoakua/DatasetsNormalizationParameters
+Author: konosubakonoakua
+Author-email: ailike_meow@qq.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/konosubakonoakua/DatasetsNormalizationParameters/issues
+Description: provide pre-calculated normalization parameters (mean, std) etc.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
