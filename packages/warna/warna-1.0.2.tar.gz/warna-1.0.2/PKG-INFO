@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: warna
+Version: 1.0.2
+Summary: Menambahkan warna di Terminal
+Home-page: https://github.com/mzaini30/warna
+Author: Zen
+Author-email: muhzaini30@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/mzaini30/warna/issues
+Description: # Warna untuk Python
+        
+        ## Instalasi
+        
+        ```bash
+        pip3 install warna
+        ```
+        
+        ## Contoh Cara Pakai
+        
+        ```python
+        from warna import (blue, reset)
+        
+        print(f'Halo {blue}semuanya{reset}...')
+        ```
+        
+        ## Jadinya
+        
+        ![Hasil](https://i.ibb.co/fpmWkGH/Screenshot-2021-04-28-14-36-36-81.png)
+        
+        ## Warna yang Tersedia
+        
+        - black
+        - red
+        - green
+        - yellow
+        - blue
+        - magenta
+        - cyan
+        - white
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
