@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+classvalidator/__init__.py
+classvalidator/validator.py
+classvalidator.egg-info/PKG-INFO
+classvalidator.egg-info/SOURCES.txt
+classvalidator.egg-info/dependency_links.txt
+classvalidator.egg-info/requires.txt
+classvalidator.egg-info/top_level.txt
