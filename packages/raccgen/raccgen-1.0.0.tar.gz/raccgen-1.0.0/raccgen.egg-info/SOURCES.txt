@@ -1,0 +1,8 @@
+README.md
+setup.py
+raccgen/__init__.py
+raccgen/generate.py
+raccgen.egg-info/PKG-INFO
+raccgen.egg-info/SOURCES.txt
+raccgen.egg-info/dependency_links.txt
+raccgen.egg-info/top_level.txt

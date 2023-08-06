@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: raccgen
+Version: 1.0.0
+Summary: Random ACCount GENerator
+Home-page: https://github.com/michaelpeterswa/darkthyme
+Author: Michael Peters
+Author-email: michael@michaelpeterswa.com
+License: UNKNOWN
+Description: # raccgen
+        Random ACCount GENerator is a python module that generates random usernames and real passwords using large name and password datasets
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
