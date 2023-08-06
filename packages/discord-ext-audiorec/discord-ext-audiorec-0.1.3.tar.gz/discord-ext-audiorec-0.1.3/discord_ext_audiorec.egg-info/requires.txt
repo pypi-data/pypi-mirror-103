@@ -1,0 +1,7 @@
+discord.py[voice]<2.0,>=1.7
+
+[docs]
+sphinx
+sphinxcontrib_trio
+sphinxcontrib-websupport
+sphinx-rtd-theme
