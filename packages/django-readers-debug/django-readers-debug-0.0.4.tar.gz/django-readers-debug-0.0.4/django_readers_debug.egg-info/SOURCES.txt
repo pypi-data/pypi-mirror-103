@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+django_readers_debug/__init__.py
+django_readers_debug.egg-info/PKG-INFO
+django_readers_debug.egg-info/SOURCES.txt
+django_readers_debug.egg-info/dependency_links.txt
+django_readers_debug.egg-info/requires.txt
+django_readers_debug.egg-info/top_level.txt
