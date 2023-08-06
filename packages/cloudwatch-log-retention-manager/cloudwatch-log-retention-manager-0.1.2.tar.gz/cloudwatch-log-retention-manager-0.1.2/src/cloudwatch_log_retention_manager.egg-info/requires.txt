@@ -1,0 +1,10 @@
+boto3==1.17.56
+PyYAML==5.4.1
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
