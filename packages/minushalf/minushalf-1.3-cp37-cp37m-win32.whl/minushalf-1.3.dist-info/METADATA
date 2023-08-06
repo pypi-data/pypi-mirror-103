@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: minushalf
+Version: 1.3
+Summary: CLI to provides Pre processing tools for DFT -1/2 calculations
+Home-page: UNKNOWN
+Author: Henrique Fernandes
+Author-email: hentt30@gmail.com
+License: GPL
+Platform: UNKNOWN
+Requires-Dist: numpy (>=1.19.4)
+Requires-Dist: pandas (>=1.1.5)
+Requires-Dist: fortranformat (>=0.2.5)
+Requires-Dist: Click (>=7.1.2)
+Requires-Dist: pyfiglet (>=0.8)
+Requires-Dist: loguru (>=0.5.3)
+Requires-Dist: tabulate (>=0.8.7)
+Requires-Dist: pyyaml (>=5.3.1)
+Requires-Dist: scipy (>=1.5.4)
+Requires-Dist: aenum (>=3.0.0)
+
+##############
+minushalf
+##############
+.. image:: https://readthedocs.org/projects/minushalf/badge/
+   :target: https://minushalf.readthedocs.org
+   :alt: Documentation Status
+
+.. image:: https://img.shields.io/lgtm/alerts/g/hentt30/minushalf.svg?logo=lgtm&logoWidth=18
+   :target: https://lgtm.com/projects/g/hentt30/minushalf/alerts/
+   :alt: Total alerts
+
+.. image:: https://img.shields.io/lgtm/grade/python/g/hentt30/minushalf.svg?logo=lgtm&logoWidth=18
+   :target: https://lgtm.com/projects/g/hentt30/minushalf/context:python
+   :alt: Language grade: Python
+
+.. image:: https://img.shields.io/pypi/v/minushalf.svg?style=flat-square&label=PYPI%20version
+   :target: https://pypi.python.org/pypi/minushalf
+   :alt: Latest version released on PyPi
+
+
+What is minushalf?
+----------------------
+Minushalf is a CLI developed by GMSN that aims to automate 
+the application of the DFT -1/2 method. The commands available in this 
+CLI automate both the entire process and each of its steps in order to be 
+used by the user for any purposes.
+
+More information
+------------------------
+- `Read the docs <https://minushalf.readthedocs.io/en/latest/>`_
+- `Known GMSN <http://www.gmsn.ita.br/>`_
+
+
