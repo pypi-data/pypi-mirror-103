@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+nbconvert_theme_pale_sand_navy.egg-info/PKG-INFO
+nbconvert_theme_pale_sand_navy.egg-info/SOURCES.txt
+nbconvert_theme_pale_sand_navy.egg-info/dependency_links.txt
+nbconvert_theme_pale_sand_navy.egg-info/top_level.txt
+share/jupyter/nbconvert/templates/pale-sand-navy/base.html.j2
+share/jupyter/nbconvert/templates/pale-sand-navy/conf.json
+share/jupyter/nbconvert/templates/pale-sand-navy/index.html.j2
+share/jupyter/nbconvert/templates/pale-sand-navy/static/index.css
