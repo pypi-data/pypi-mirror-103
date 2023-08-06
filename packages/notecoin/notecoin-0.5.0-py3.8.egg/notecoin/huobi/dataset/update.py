@@ -1,0 +1,153 @@
+import time
+
+from notecoin.huobi.client import GenericClient, MarketClient
+from notecoin.huobi.dataset.core import *
+from notetool.tool.secret import read_secret
+from tqdm import tqdm
+
+
+class TradeUpdate:
+    def __init__(self, db_path='/root/workspace/tmp/coin/huobi.db'):
+        api_key = read_secret(cate1='coin', cate2='huobi', cate3='api_key')
+        secret_key = read_secret(cate1='coin', cate2='huobi', cate3='secret_key')
+        self.market = MarketClient(api_key=api_key, secret_key=secret_key)
+        self.generic = GenericClient(api_key=api_key, secret_key=secret_key)
+
+        self.symbolDB = SymbolInfo(db_path=db_path)
+        self.tradeDB = TradeDetail(db_path=db_path)
+        self.kline_1min = Kline1MinDetail(db_path=db_path)
+        self.kline_5min = Kline5MinDetail(db_path=db_path)
+        self.kline_15min = Kline15MinDetail(db_path=db_path)
+        self.kline_30min = Kline30MinDetail(db_path=db_path)
+        self.kline_60min = Kline60MinDetail(db_path=db_path)
+        self.kline_4hour = Kline4HourDetail(db_path=db_path)
+        self.kline_1day = Kline1DayDetail(db_path=db_path)
+        self.kline_1mon = Kline1MonDetail(db_path=db_path)
+        self.kline_1week = Kline1WeekDetail(db_path=db_path)
+        self.kline_1year = Kline1YearDetail(db_path=db_path)
+
+        self.init()
+
+    def init(self):
+        self.symbolDB.create()
+        self.tradeDB.create()
+        self.kline_1min.create()
+        self.kline_5min.create()
+        self.kline_15min.create()
+        self.kline_30min.create()
+        self.kline_60min.create()
+        self.kline_4hour.create()
+        self.kline_1day.create()
+        self.kline_1mon.create()
+        self.kline_1week.create()
+        self.kline_1year.create()
+
+    @staticmethod
+    def replace_key(data_dicts: list):
+        res = []
+        for _data_dict in data_dicts:
+            data_dict = {}
+            for key in _data_dict.keys():
+                data_dict[key.replace('-', '_')] = _data_dict[key]
+            res.append(data_dict)
+        return res
+
+    def insert_symbol(self):
+        self.symbolDB.insert_list(self.replace_key(self.generic.get_exchange_symbols().dict_data['data']))
+
+    def insert_trade(self, symbol):
+        history = self.market.get_history_trade(symbol=symbol, size=2000)
+        datas = history.dict_data['data']
+        result = []
+        [result.extend(data['data']) for data in datas]
+        self.tradeDB.insert_list(self.replace_key(result))
+
+    def insert_kline(self, symbol):
+        self.kline_1min.insert_list(self.replace_key(
+            self.market.get_candlestick(symbol=symbol, period='1min', size=2000).dict_data['data']))
+        self.kline_5min.insert_list(self.replace_key(
+            self.market.get_candlestick(symbol=symbol, period='5min', size=2000).dict_data['data']))
+        self.kline_15min.insert_list(self.replace_key(
+            self.market.get_candlestick(symbol=symbol, period='15min', size=2000).dict_data['data']))
+        self.kline_30min.insert_list(self.replace_key(
+            self.market.get_candlestick(symbol=symbol, period='30min', size=2000).dict_data['data']))
+        self.kline_60min.insert_list(self.replace_key(
+            self.market.get_candlestick(symbol=symbol, period='60min', size=2000).dict_data['data']))
+        self.kline_4hour.insert_list(self.replace_key(
+            self.market.get_candlestick(symbol=symbol, period='4hour', size=2000).dict_data['data']))
+        self.kline_1day.insert_list(self.replace_key(
+            self.market.get_candlestick(symbol=symbol, period='1day', size=2000).dict_data['data']))
+        self.kline_1mon.insert_list(self.replace_key(
+            self.market.get_candlestick(symbol=symbol, period='1mon', size=2000).dict_data['data']))
+        self.kline_1week.insert_list(self.replace_key(
+            self.market.get_candlestick(symbol=symbol, period='1week', size=2000).dict_data['data']))
+        self.kline_1year.insert_list(self.replace_key(
+            self.market.get_candlestick(symbol=symbol, period='1year', size=2000).dict_data['data']))
+
+    def auto_save(self):
+        self.tradeDB.auto_save()
+        self.kline_1min.auto_save()
+        self.kline_5min.auto_save()
+        self.kline_15min.auto_save()
+        self.kline_30min.auto_save()
+        self.kline_4hour.auto_save()
+        self.kline_1day.auto_save()
+        self.kline_1mon.auto_save()
+        self.kline_1week.auto_save()
+        self.kline_1year.auto_save()
+    def _save(self):
+        self.tradeDB._sa()
+        self.kline_1min.auto_save()
+        self.kline_5min.auto_save()
+        self.kline_15min.auto_save()
+        self.kline_30min.auto_save()
+        self.kline_4hour.auto_save()
+        self.kline_1day.auto_save()
+        self.kline_1mon.auto_save()
+        self.kline_1week.auto_save()
+        self.kline_1year.auto_save()
+
+    def insert_data(self, trade=True, kline=True):
+        symbols = self.symbolDB.select("select symbol from {} where state ='online'".format(self.symbolDB.table_name))
+        for symbol in tqdm(symbols):
+            try:
+                symbol = symbol['symbol']
+                if trade:
+                    self.insert_trade(symbol)
+                if kline:
+                    self.insert_kline(symbol)
+            except Exception as e:
+                print(e)
+
+        print(self.symbolDB.select('select count(1) as num from ' + self.symbolDB.table_name))
+        print(self.tradeDB.select('select count(1) as num from ' + self.tradeDB.table_name))
+        print("1min\t{}".format(self.kline_1min.select('select count(1) as num from ' + self.kline_1min.table_name)))
+        print("5min\t{}".format(self.kline_5min.select('select count(1) as num from ' + self.kline_5min.table_name)))
+        print("15min\t{}".format(self.kline_15min.select('select count(1) as num from ' + self.kline_15min.table_name)))
+        print("30min\t{}".format(self.kline_30min.select('select count(1) as num from ' + self.kline_30min.table_name)))
+        print("60min\t{}".format(self.kline_60min.select('select count(1) as num from ' + self.kline_60min.table_name)))
+        print("4hour\t{}".format(self.kline_4hour.select('select count(1) as num from ' + self.kline_4hour.table_name)))
+        print("1day\t{}".format(self.kline_1day.select('select count(1) as num from ' + self.kline_1day.table_name)))
+        print("1week\t{}".format(self.kline_1week.select('select count(1) as num from ' + self.kline_1week.table_name)))
+        print("1mon\t{}".format(self.kline_1mon.select('select count(1) as num from ' + self.kline_1mon.table_name)))
+        print("1year\t{}".format(self.kline_1year.select('select count(1) as num from ' + self.kline_1year.table_name)))
+
+    def run(self):
+        t = 0
+        while True:
+            self.insert_symbol()
+            if t % 100 == 0:
+                self.insert_data(trade=True, kline=True)
+                self.auto_save()
+            elif t % 10 == 0:
+                self.auto_save()
+            else:
+                self.insert_data(trade=True, kline=False)
+                t += 1
+                time.sleep(60)
+
+
+update = TradeUpdate()
+update.run()
+
+# nohup /root/anaconda3/bin/python3.8 /root/workspace/notechats/notecoin/notecoin/huobi/dataset/update.py >>/root/workspace/tmp/notecoin-run-$(date +%Y-%m-%d).log 2>&1 &
