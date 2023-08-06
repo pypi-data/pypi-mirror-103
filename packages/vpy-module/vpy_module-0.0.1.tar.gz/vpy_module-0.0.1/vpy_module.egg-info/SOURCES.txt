@@ -1,0 +1,8 @@
+setup.py
+vpy/__init__.py
+vpy/fileio.py
+vpy/types.py
+vpy_module.egg-info/PKG-INFO
+vpy_module.egg-info/SOURCES.txt
+vpy_module.egg-info/dependency_links.txt
+vpy_module.egg-info/top_level.txt

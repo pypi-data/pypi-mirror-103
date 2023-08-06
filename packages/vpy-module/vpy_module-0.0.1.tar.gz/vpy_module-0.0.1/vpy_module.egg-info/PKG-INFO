@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: vpy-module
+Version: 0.0.1
+Summary: Python API for https://github.com/HuangPatrick16777216/video_editor
+Home-page: https://github.com/HuangPatrick16777216/video_editor
+Author: Patrick Huang
+Author-email: huangpatrick16777216@gmail.com
+License: UNKNOWN
+Description: # Vpy
+        
+        A Python api for https://github.com/HuangPatrick16777216/video_editor
+        
+        `pip install vpy-module`
+        
+        Inspired by Blender's API.
+        
+        This module is provided on PyPI for autocomplete and type hinting when developing.
+        The API is included in every release of the video editor.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
