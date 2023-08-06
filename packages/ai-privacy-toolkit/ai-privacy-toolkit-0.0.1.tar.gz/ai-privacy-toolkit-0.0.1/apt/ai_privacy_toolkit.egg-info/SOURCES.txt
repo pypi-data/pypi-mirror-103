@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+apt/ai_privacy_toolkit.egg-info/PKG-INFO
+apt/ai_privacy_toolkit.egg-info/SOURCES.txt
+apt/ai_privacy_toolkit.egg-info/dependency_links.txt
+apt/ai_privacy_toolkit.egg-info/top_level.txt
+apt/anonymization/__init__.py
+apt/anonymization/anonymizer.py
