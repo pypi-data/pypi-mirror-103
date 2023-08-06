@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% import "functions.html" as f %}
+
+{% set deleteModalId = "deleteModal" %}
+{% set statsModalId = "statsModal" %}
+{% set qrCodeId = "qrCode" %}
+
+{% block body %}
+    {% if error is defined %}
+    {{ f.message(error, "Check the URL and try again.", "is-danger") }}
+    {% endif %}
+    {% if url is defined %}
+    {{ f.deleteModal(deleteModalId, suffix) }}
+    {{ f.statsModal(statsModalId, suffix) }}
+    {{ f.message("Success.", "Your URL has been shortened. Details below.", "is-success") }}
+    {{ f.buttons(suffix, deleteModalId, qr) }}
+    {{ f.qrCode(qrCodeId, qr) }}
+    {{ f.protected_fields(domain, url, suffix, delete_at) }}
+    {% endif %}
+
+    {{ f.input() }}
+    <br>
+    <div class="content">
+        <h4 class="center">or</h4>
+    </div>
+    <br>
+    {{ f.search() }}
+
+    {% if url is defined %}
+    {{ f.buttonsJs() }}
+    {{ f.protected_fields_js() }}
+    {% if qr is defined %}
+        {{ f.qrCodeJs(qrCodeId) }}
+    {% endif %}
+    {% endif %}
+{% endblock %}
