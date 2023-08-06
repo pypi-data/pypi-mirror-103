@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.py
+django_eanoui.egg-info/PKG-INFO
+django_eanoui.egg-info/SOURCES.txt
+django_eanoui.egg-info/dependency_links.txt
+django_eanoui.egg-info/not-zip-safe
+django_eanoui.egg-info/requires.txt
+django_eanoui.egg-info/top_level.txt
+eanoui/__init__.py
+eanoui/admin.py
+eanoui/apps.py
+eanoui/forms.py
+eanoui/widgets.py
