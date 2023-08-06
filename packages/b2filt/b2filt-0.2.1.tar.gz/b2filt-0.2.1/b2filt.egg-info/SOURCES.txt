@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+b2filt/__init__.py
+b2filt/errorwriter.py
+b2filt/util.py
+b2filt.egg-info/PKG-INFO
+b2filt.egg-info/SOURCES.txt
+b2filt.egg-info/dependency_links.txt
+b2filt.egg-info/entry_points.txt
+b2filt.egg-info/requires.txt
+b2filt.egg-info/top_level.txt
