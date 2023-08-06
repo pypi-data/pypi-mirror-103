@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: report-option
+Version: 0.0.1
+Summary: <change>
+Home-page: https://github.com/willi-z/dfgraph
+Author: Willi Zschiebsch
+Author-email: willi.w.zschiebsch@web.de
+Maintainer: DigiFors Gmbh
+Maintainer-email: nobody@cares.com
+License: BSD-3-Clause
+Project-URL: Source Code, https://github.com/willi-z/dfgraph/
+Project-URL: Issue Tracker, https://github.com/willi-z/dfgraph/issues/
+Description: # report-option
+        
+        
+        `python -m build`
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

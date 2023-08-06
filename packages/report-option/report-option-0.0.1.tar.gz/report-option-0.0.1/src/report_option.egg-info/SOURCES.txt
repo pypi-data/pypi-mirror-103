@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+src/report_option/__init__.py
+src/report_option/option.py
+src/report_option.egg-info/PKG-INFO
+src/report_option.egg-info/SOURCES.txt
+src/report_option.egg-info/dependency_links.txt
+src/report_option.egg-info/top_level.txt
