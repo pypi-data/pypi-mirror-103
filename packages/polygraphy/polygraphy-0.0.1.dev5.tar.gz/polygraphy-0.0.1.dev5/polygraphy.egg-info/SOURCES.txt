@@ -1,0 +1,10 @@
+ERROR.txt
+LICENSE.md
+PACKAGE_NAME
+README.rst
+package_info.py
+setup.py
+polygraphy.egg-info/PKG-INFO
+polygraphy.egg-info/SOURCES.txt
+polygraphy.egg-info/dependency_links.txt
+polygraphy.egg-info/top_level.txt
