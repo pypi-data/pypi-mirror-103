@@ -1,0 +1,1 @@
+This is a library with basic math functions, including adding two numbers, getting the value of pi, converting fahrenheit to celsius, converting celsius to fahrenheit, and much more!
