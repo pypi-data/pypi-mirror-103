@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: modcfg
+Version: 0.1.1
+Summary: Yes another config lang
+License: GPL-3.0-or-later
+Author: Bryan Hu
+Author-email: bryan.hu.2020@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: lark-parser (>=0.11.2,<0.12.0)
