@@ -1,0 +1,30 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:plone="http://namespaces.plone.org/plone"
+  i18n_domain="imio.smartweb">
+
+  <include package="plone.behavior" file="meta.zcml"/>
+
+  <plone:behavior
+      name="imio.smartweb.listing"
+      title="Parent listing"
+      description="Allow to choose if this element must excluded from parent listing views."
+      provides=".listing.IListing"
+      />
+
+  <plone:behavior
+      name="imio.smartweb.quickaccess"
+      title="Quick access"
+      description="Allow to choose if this element must be placed in quick access."
+      provides=".quickaccess.IQuickAccess"
+      />
+
+  <plone:behavior
+      name="imio.smartweb.subsite"
+      title="Subsite"
+      description="Add subsite properties/fields"
+      factory=".subsite.Subsite"
+      provides=".subsite.IImioSmartwebSubsite"
+      />
+
+</configure>
