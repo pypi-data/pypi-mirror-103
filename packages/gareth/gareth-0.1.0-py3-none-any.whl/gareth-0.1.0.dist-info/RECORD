@@ -1,0 +1,11 @@
+AUTHORS,sha256=_cGWg1J29-_wNEaEbVAJ0e6t5Ay08zvh0AYk7JVccXI,47
+LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+NEWS,sha256=yY7jRGEHJzR2lzNK18XrDA9ApxpLMn-lVcK6YJfTuuY,1422
+README.md,sha256=vPmaHS5uDwdqoH8ACCTx0I-BvQO24SkWa1Rho2LTMh8,1789
+gareth/_version.py,sha256=wcxcZnNv4EAwZvjzpruDMQKRNRTTft5StW60Ddw1Xig,86
+gareth/gareth.py,sha256=-JgPvGZZ6Z82r4tzeblft9zUu0KHur_-qBzFlW7a_Cw,6674
+gareth-0.1.0.dist-info/entry_points.txt,sha256=hVg-vJ6CTUE2feHEtxEbQDW7JTP8xrD1EQhSyptEbZU,45
+gareth-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+gareth-0.1.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+gareth-0.1.0.dist-info/METADATA,sha256=-QI_WMXKuhfVviR2DuOLky_zO284C127tsZqvW4qbS4,2516
+gareth-0.1.0.dist-info/RECORD,,
