@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: manati
+Version: 0.0.1
+Summary: A Python CLI for managing Python projects.
+Home-page: https://github.com/maroba/manati
+Author: maroba
+Author-email: matthias.r.baer@googlemail.com
+License: GPL v3
+Description: # manati
+        
+        A Python CLI for managing Python projects.
+        
+        
+Keywords: CLI
+Platform: ALL
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
