@@ -1,0 +1,4 @@
+joblib>=1.0
+xgboost>=1.2
+tqdm>=4.50
+scikit-learn>=0.24.0
