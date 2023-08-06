@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+libpythonpro/__init__.py
+libpythonpro/github_api.py
+libpythonpro_edu_bazler.egg-info/PKG-INFO
+libpythonpro_edu_bazler.egg-info/SOURCES.txt
+libpythonpro_edu_bazler.egg-info/dependency_links.txt
+libpythonpro_edu_bazler.egg-info/not-zip-safe
+libpythonpro_edu_bazler.egg-info/requires.txt
+libpythonpro_edu_bazler.egg-info/top_level.txt
