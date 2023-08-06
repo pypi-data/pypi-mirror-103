@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+boardcam.egg-info/PKG-INFO
+boardcam.egg-info/SOURCES.txt
+boardcam.egg-info/dependency_links.txt
+boardcam.egg-info/top_level.txt
