@@ -1,0 +1,1 @@
+napari_medical_image_formats
