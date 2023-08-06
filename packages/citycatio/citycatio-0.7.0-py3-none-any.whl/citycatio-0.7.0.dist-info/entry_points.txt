@@ -1,0 +1,3 @@
+[console_scripts]
+ccat2gtif = citycatio.output:ccat2gtif
+
