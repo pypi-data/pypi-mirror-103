@@ -1,0 +1,15 @@
+click
+python-owasp-zap-v2.4
+requests
+tabulate
+termcolor
+six
+
+[dev]
+coverage
+ddt
+mock
+pep8
+pylint
+pytest
+responses
