@@ -1,0 +1,15 @@
+marshmallow
+
+[dev]
+giteasychangelog
+flake8
+pre-commit
+black
+
+[docs]
+mkdocs
+mkdocs-material
+
+[test]
+pytest
+pytest-cov
