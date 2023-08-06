@@ -1,0 +1,13 @@
+mypy_boto3_savingsplans/__init__.py,sha256=UElG1Rh0lURD9q5Y8KctWPkINiGj1JPllIzPU92EvPQ,492
+mypy_boto3_savingsplans/__init__.pyi,sha256=mXl49L2ZFGWyZNSJRYW_jZAruQ0QnQbgDUlcu_zBHHg,491
+mypy_boto3_savingsplans/__main__.py,sha256=dbSuNYP6E3-BcelucMvzt2YX5ABmsmeChChtbQ76d_4,747
+mypy_boto3_savingsplans/client.py,sha256=NpsP49SiZ7cKgEJfnpxn8OVAUBQFmwZ91IfrelKzjSo,7338
+mypy_boto3_savingsplans/client.pyi,sha256=4YCikIOV1caaD--ZA4rdCZBey6YboiGvKkOGe77swuc,7322
+mypy_boto3_savingsplans/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_savingsplans/type_defs.py,sha256=ad91QVxIJSjKOqCG24ceVGnyPdwCk83OTG8ujrHTymA,7226
+mypy_boto3_savingsplans/type_defs.pyi,sha256=mZEK9eCV-WQGhsg9SLxXFrLWY-J7wu71CHesZ6QBAfE,7225
+mypy_boto3_savingsplans/version.py,sha256=qdW9ZGuo1YXM3S39cDyp0JOUI8iOvoOHZ51d_4eqv00,57
+mypy_boto3_savingsplans-1.17.56.0.dist-info/METADATA,sha256=9fqd0uO543Sbi2LvRMETT2rC7-WmrglUc4XhIUeouLc,6988
+mypy_boto3_savingsplans-1.17.56.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mypy_boto3_savingsplans-1.17.56.0.dist-info/top_level.txt,sha256=_J0mChj05oskFsrT8OFkqz1SFU-0htWznyGgsdcnS78,24
+mypy_boto3_savingsplans-1.17.56.0.dist-info/RECORD,,
