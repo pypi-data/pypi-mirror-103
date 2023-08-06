@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: mydemopackageehsan
+Version: 0.0.1
+Summary: Demo My Package
+Home-page: UNKNOWN
+Author: Ehsan Hemati
+Author-email: <ehsanhemati26@gmail.com>
+License: UNKNOWN
+Description: This is my first package
+Keywords: python,first package
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows

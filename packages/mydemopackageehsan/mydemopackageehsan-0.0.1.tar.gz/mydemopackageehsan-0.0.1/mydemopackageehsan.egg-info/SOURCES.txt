@@ -1,0 +1,5 @@
+setup.py
+mydemopackageehsan.egg-info/PKG-INFO
+mydemopackageehsan.egg-info/SOURCES.txt
+mydemopackageehsan.egg-info/dependency_links.txt
+mydemopackageehsan.egg-info/top_level.txt
