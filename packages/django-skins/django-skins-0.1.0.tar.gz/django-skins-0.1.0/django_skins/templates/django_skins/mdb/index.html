@@ -1,0 +1,76 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      {% block meta %}
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+          <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      {% endblock meta %}
+    <title>{% block title %}Material Design for Bootstrap{% endblock title %}</title>    
+    <!-- MDB icon -->
+    {% block logo %}
+      <link rel="icon" href="{% static 'img/mdb-favicon.ico' %}" type="image/x-icon" />
+    {% endblock logo %}
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />
+
+    {% block _css %}{% endblock _css %}
+    {% block css %}{% endblock css %}
+
+    <!-- MDB -->
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}" />
+    {% block _javascript %}{% endblock _javascript %}
+    {% block javascript %}{% endblock javascript %}
+
+  </head>
+  <body>
+  {% block body %}
+    <!-- Start your project here-->
+    <div class="container">
+      {% block content %}
+        <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+          <div class="text-center">
+            <img
+              class="mb-4"
+              src="https://mdbootstrap.com/img/logo/mdb-transparent-250px.png"
+              style="width: 250px; height: 90px;"
+            />
+            <h5 class="mb-3">Thank you for using our product. We're glad you're with us.</h5>
+            <p class="mb-3">MDB Team</p>
+            <a
+              class="btn btn-primary btn-lg"
+              href="https://mdbootstrap.com/docs/standard/getting-started/"
+              target="_blank"
+              role="button"
+              >Start MDB tutorial</a
+            >
+          </div>
+        </div>
+      {% endblock content %}
+    </div>
+    <!-- End your project here-->
+  {% endblock body %}
+  
+  {% block modal %}{% endblock modal %}
+  {% block end_of_body %}{% endblock end_of_body %}
+  
+
+    <!-- MDB -->
+    <script type="text/javascript" src="{% static 'js/mdb.min.js' %}"></script>
+
+    <!-- Inline javascript that you need in all pages, add those in base.html -->
+    {% block inline_javascript %}
+        {# Script tags with only code, no src (defer by default) #}
+    {% endblock inline_javascript %}
+
+    <!-- Extra javascript that you need in specific pages -->
+    {% block page_javascript %}{% endblock page_javascript %}
+  </body>
+</html>
