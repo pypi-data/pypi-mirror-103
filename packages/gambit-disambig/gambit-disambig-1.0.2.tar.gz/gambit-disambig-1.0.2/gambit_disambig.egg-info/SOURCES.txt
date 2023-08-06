@@ -1,0 +1,13 @@
+README.md
+setup.py
+gambit/__init__.py
+gambit/main.py
+gambit/algorithms/__init__.py
+gambit/algorithms/bird.py
+gambit/algorithms/gambit.py
+gambit/algorithms/simple.py
+gambit_disambig.egg-info/PKG-INFO
+gambit_disambig.egg-info/SOURCES.txt
+gambit_disambig.egg-info/dependency_links.txt
+gambit_disambig.egg-info/requires.txt
+gambit_disambig.egg-info/top_level.txt
