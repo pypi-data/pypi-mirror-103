@@ -1,0 +1,12 @@
+fuzi/__init__.py,sha256=ZnCyrOpUU8S2gdPpT86iOHYHcncBgB8TmsA-oWnBU5o,115
+fuzi/version.py,sha256=Q8raD6k02z4DoYniAz3iui5d6EdM1el95SMTLXJbeCA,18
+fuzi/shell/__init__.py,sha256=tIIEIJdxCGBZuWo3hTU-1JwjBAVQcd6pbigPslT90OA,48
+fuzi/shell/usage.py,sha256=VYjh3Srcq-J9shgmY8HFIAOjzKu0nmIJQjmy-8LeFOg,190
+fuzi/src/temp.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fuzi-0.0.1.dist-info/LICENSE,sha256=XZHxDWWiBSh2daEwizWYmXngoLFQBxGbK1OaZ2QyI_A,1062
+fuzi-0.0.1.dist-info/METADATA,sha256=--3MO_QDl6zgPwpL2DIg9xpFPVoCltx_GwIoNIUm3P0,623
+fuzi-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+fuzi-0.0.1.dist-info/entry_points.txt,sha256=4hnfzx1-ib60sEYkxgjybSVCF5YZ7Rnv10SiQpd0PE4,41
+fuzi-0.0.1.dist-info/top_level.txt,sha256=AFwG84G-5Vro40cfoGFLmBtBwKL7bDRPTmSZqba1wXw,5
+fuzi-0.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+fuzi-0.0.1.dist-info/RECORD,,
