@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/ferman/__init__.py
+src/ferman.egg-info/PKG-INFO
+src/ferman.egg-info/SOURCES.txt
+src/ferman.egg-info/dependency_links.txt
+src/ferman.egg-info/top_level.txt
