@@ -1,0 +1,104 @@
+- ClassName: Part
+  Id: F007CDDA-5D4B-4A49-95F9-6BD2B22B92BD
+  Properties:
+    Anchored: true
+    Archivable: true
+    AssemblyAngularVelocity:
+    - 0
+    - 0
+    - 0
+    AssemblyLinearVelocity:
+    - 0
+    - 0
+    - 0
+    BackParamA: -0.5
+    BackParamB: 0.5
+    BackSurface: Enum.SurfaceType.Smooth
+    BackSurfaceInput: Enum.InputType.NoInput
+    BottomParamA: -0.5
+    BottomParamB: 0.5
+    BottomSurface: Enum.SurfaceType.Inlet
+    BottomSurfaceInput: Enum.InputType.NoInput
+    BrickColor:
+    - Dark stone grey
+    - 199
+    - 0.38823533058166504
+    - 0.37254902720451355
+    - 0.38431376218795776
+    CFrame:
+    - 0
+    - -10
+    - 0
+    - 1
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+    - 0
+    - 1
+    CanCollide: true
+    CanTouch: true
+    CastShadow: true
+    CollisionGroupId: 0
+    Color:
+    - 0.38823530077934265
+    - 0.37254902720451355
+    - 0.3843137323856354
+    CustomPhysicalProperties: null
+    FrontParamA: -0.5
+    FrontParamB: 0.5
+    FrontSurface: Enum.SurfaceType.Smooth
+    FrontSurfaceInput: Enum.InputType.NoInput
+    LeftParamA: -0.5
+    LeftParamB: 0.5
+    LeftSurface: Enum.SurfaceType.Smooth
+    LeftSurfaceInput: Enum.InputType.NoInput
+    LocalTransparencyModifier: 0
+    Locked: true
+    Massless: false
+    Material: Enum.Material.Plastic
+    Name: Baseplate
+    Orientation:
+    - 0
+    - 0
+    - 0
+    Parent: null
+    PivotOffset:
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+    - 0
+    - 1
+    Position:
+    - 0
+    - -10
+    - 0
+    Reflectance: 0
+    RightParamA: -0.5
+    RightParamB: 0.5
+    RightSurface: Enum.SurfaceType.Smooth
+    RightSurfaceInput: Enum.InputType.NoInput
+    RootPriority: 0
+    Rotation:
+    - 0
+    - 0
+    - 0
+    Shape: Enum.PartType.Block
+    Size:
+    - 512
+    - 20
+    - 512
+    TopParamA: -0.5
+    TopParamB: 0.5
+    TopSurface: Enum.SurfaceType.Studs
+    TopSurfaceInput: Enum.InputType.NoInput
+    Transparency: 0
