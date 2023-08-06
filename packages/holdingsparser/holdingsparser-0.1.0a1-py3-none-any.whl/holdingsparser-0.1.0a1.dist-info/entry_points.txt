@@ -1,0 +1,3 @@
+[console_scripts]
+holdingsparser=holdingsparser.__main__:main
+
