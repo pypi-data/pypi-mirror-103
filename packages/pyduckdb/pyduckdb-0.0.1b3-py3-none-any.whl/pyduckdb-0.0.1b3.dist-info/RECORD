@@ -1,0 +1,16 @@
+pyduckdb/__init__.py,sha256=wJRwlMngZw1wHkiu7-lDPdstReMKJlJpgr34KnbDVbA,1047
+pyduckdb/aiopyduckdb/__init__.py,sha256=2NiFcuEYeDCn9lpSK7rcWJDyUVSYzbdiS78RaOlD8pU,1407
+pyduckdb/aiopyduckdb/connection.py,sha256=MuaioSfXSlXjLLNzPfoW_XXH0Ixa76lwlGbdYPb5Ye8,2651
+pyduckdb/aiopyduckdb/cursor.py,sha256=LMau9W_HeQ1cfIkJCXZi8jytjEezQ_1BgEWtDaCM6Lw,3117
+pyduckdb/aiopyduckdb/utils.py,sha256=4XWcea4ROTTO_qvXsT8xbeZKhpzrJNRoe56rQI85FEc,993
+pyduckdb/core/__init__.py,sha256=CZq_JZzwWsP2wrBL5LYxl2cbiFwSJSSQ5oABkQ5Au14,440
+pyduckdb/core/connection.py,sha256=fSjW_CqyLR2ypn847r2m8KJYHn-G7g11sbEYyxSx3Qw,3054
+pyduckdb/core/cursor.py,sha256=I7lQirgMKT990nJnWp8db7aBAreF-LVW-siUXiP_qJQ,4450
+pyduckdb/core/exceptions.py,sha256=cOY-mZd0qGoHbkZHFZXpaBqPtOZ6Xswv_PFUVqCHoeM,2753
+pyduckdb/core/types.py,sha256=hhZwxwYk_xI_Wx_9e__Y0k_OqH0Qccuqk_Zs5S3o6lU,122
+pyduckdb/core/utils.py,sha256=OdUEPEysxJJJy3FqTfP_QLKklIE8kMbzSZ9t-Lw8T-0,1280
+pyduckdb-0.0.1b3.dist-info/LICENSE,sha256=9NWEwEsVCTZS1Y0vkrFjWRfWMxwjwZChcru9LS8IQBs,1071
+pyduckdb-0.0.1b3.dist-info/METADATA,sha256=nJQagIIpdE_13epMvytUSmetoLgMyHF-n7WDl7EcX_8,2533
+pyduckdb-0.0.1b3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pyduckdb-0.0.1b3.dist-info/top_level.txt,sha256=Cu77b1XLi8grgaq1XvZEwzKpfsoJqNTpOGtfx3lv2Is,9
+pyduckdb-0.0.1b3.dist-info/RECORD,,
