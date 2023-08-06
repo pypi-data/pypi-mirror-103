@@ -1,0 +1,25 @@
+import os
+import logging
+
+
+def handle_error(error, logger=None):
+    if logger is None:
+        logger = logging
+
+    if error is not None:
+        message = "[Unknown message]" if error.getMessage() is None else error.getMessage()
+        exception = error.getException()
+        exit_code = error.getExitCode()
+        shouldExit = error.shouldExit()
+
+        if exception is not None:
+            logger.error(message, exception)
+        else:
+            logger.error(message)
+
+        if shouldExit:
+            os._exit(exit_code)
+
+
+def handle_error(error):
+    handle_error(error, None)
