@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dbconnect2df
+Version: 1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+
+This is a class which creates a database connection
+sends a query and returns the result as a dataframe.
+
+Includes 1 class: 3 definitions.
+
