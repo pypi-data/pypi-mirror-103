@@ -1,0 +1,7 @@
+fugue[dask,spark,sql]==0.5.3
+tune[all]==0.0.3
+notebook
+kaggle
+seaborn
+qpd
+dask[dataframe]
