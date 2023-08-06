@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: p3dpy
+Version: 0.5.0
+Summary: Simple pointcloud toolkit and browser based viewer
+Home-page: http://github.com/neka-nat/p3dpy
+Author: neka-nat
+Author-email: nekanat.stock@gmail.com
+License: MIT
+Description: # p3dpy
+        
+        Numpy based simple pointcloud tools.
+        
+        ## Core features
+        
+        * Basic pointcloud operations (Transformation, Registration, Filtering,...)
+        * Simple dependencies (numpy, scipy,... other basic python packages)
+        * Browser based viewer
+        * Easy use for single board computers (Raspberry Pi, Jetson,...)
+        
+        ## Installation
+        
+        ```
+        pip install p3dpy
+        ```
+        
+        ## Visualization
+        ![viewer](https://raw.githubusercontent.com/WillRobotics/p3dpy/master/assets/viewer.png)
+        
+Keywords: pointcloud
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

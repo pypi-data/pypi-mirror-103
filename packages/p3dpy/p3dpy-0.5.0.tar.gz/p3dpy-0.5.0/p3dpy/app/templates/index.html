@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>p3dpy viz</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <canvas id="myCanvas"></canvas>
+    <div id="info">
+      <h1>Visualizer for <a href="https://github.com/WillRobotics/p3dpy" >p3dpy</a></h1>
+      <h1>Select data</h1>
+      <div id="data-names">
+      </div>
+      <h1>Information</h1>
+      <div id="info-message"></div>
+    </div>
+    <script src="/static/js/three.js"></script>
+    <script src="/static/js/OrbitControls.js"></script>
+    <script type="module">
+      import Stats from '/static/js/stats.module.js';
+      import { GUI } from '/static/js/dat.gui.module.js';
+      let camera, scene, renderer, controls;
+      let pointcloud, geometry, positions, colors;
+      let dataName = [];
+      let dataList = [];
+      const MAX_POINTS = {{ parameters.max_points }};
+
+      let guiCtrl = function(){
+        this.background = "#000000";
+        {% for key, value in parameters.gui_params.items() %}
+        this.{{ key|e }} = {{ value[0]|e }};
+        {% endfor %}
+      };
+
+      let gui = new GUI();
+      let guiObj = new guiCtrl();
+      gui.addColor( guiObj , 'background' ).onChange(setBackgroundColor);
+      {% for key, value in parameters.gui_params.items() %}
+      gui.add( guiObj, '{{ key|e }}', {{ value[1]|e }}, {{ value[2]|e }}, {{ value[3]|e }}).onChange(setParameters);
+      {% endfor %}
+
+      let stats = new Stats();
+      stats.showPanel(0);
+      Object.assign(stats.dom.style, {
+        'position': 'fixed',
+        'height': 'max-content',
+        'left': 'auto',
+        'right': 0,
+        'top': 'auto',
+        'bottom': '0'
+      });
+      document.body.appendChild( stats.dom );
+
+      init();
+      animate();
+
+      let url = window.location;
+      let scheme = window.location.protocol === "https:" ? 'wss://' : 'ws://';
+      let webSocketUri = scheme + url.host + '/ws';
+      let ws = new WebSocket(webSocketUri);
+      ws.onmessage = function(msg) { recievePointCloudMessage(msg); }
+      let wsSend = function() { ws.send(JSON.stringify(dataName)); };
+      setInterval(wsSend, 100);
+
+      let infoWebSocketUri = scheme + url.host + '/info';
+      let infoWs = new WebSocket(infoWebSocketUri);
+      infoWs.onmessage = function(msg) {
+        let info = JSON.parse(msg.data);
+        if (JSON.stringify(dataList) != JSON.stringify(info["keys"])) {
+          dataList = info["keys"];
+          updateDataList(dataList);
+        }
+        if (info["clearLog"]) {
+          const infoMessage = document.getElementById('info-message');
+          infoMessage.innerHTML = "";
+        }
+        if (info["log"].length > 0) {
+          const infoMessage = document.getElementById('info-message');
+          infoMessage.innerHTML += info["log"];
+        }
+      };
+
+      function init() {
+        camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.1, 2000 );
+        camera.position.z = 100;
+
+        scene = new THREE.Scene();
+
+        geometry = new THREE.Geometry();
+        const material = new THREE.PointsMaterial({size: 3.0, opacity: 1, vertexColors: THREE.VertexColors});
+        geometry = new THREE.BufferGeometry();
+        positions = new Float32Array( MAX_POINTS * 3 );
+        geometry.setAttribute( 'position', new THREE.BufferAttribute( positions, 3 ) );
+        colors = new Uint8Array( MAX_POINTS * 3 );
+        geometry.setAttribute( 'color', new THREE.BufferAttribute( colors, 3, true ) );
+        geometry.setDrawRange( 0, 0 );
+        pointcloud = new THREE.Points(geometry, material);
+        pointcloud.traverse( function( object ) { object.frustumCulled = false; } );
+        scene.add(pointcloud);
+
+        renderer = new THREE.WebGLRenderer( { antialias: true, canvas: document.querySelector('#myCanvas')} );
+        renderer.setPixelRatio( window.devicePixelRatio );
+        renderer.setSize( window.innerWidth, window.innerHeight );
+        document.body.appendChild( renderer.domElement );
+
+        // controls
+        controls = new THREE.OrbitControls( camera, renderer.domElement );
+        controls.enableDamping = true;
+
+        window.addEventListener( 'resize', onWindowResize );
+
+      }
+
+      function onWindowResize() {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize( window.innerWidth, window.innerHeight );
+      }
+
+      function animate() {
+        requestAnimationFrame( animate );
+        stats.begin();
+        controls.update();
+        renderer.render( scene, camera );
+        stats.end();
+      }
+
+      function setBackgroundColor() {
+        scene.background = new THREE.Color( guiObj.background );
+      }
+
+      function setParameters() {
+        const param  = {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json; charset=utf-8"
+          },
+          body: JSON.stringify(guiObj)
+        };
+        fetch("./parameters/store", param);
+      }
+
+      function recievePointCloudMessage(msg) {
+        let pc = JSON.parse(msg.data);
+        let points = pc["points"];
+        for (let i = 0; i < points[0].length; i+=1) {
+          pointcloud.geometry.attributes.position.array[3 * i] = points[0][i][0] * 1.0e3;
+          pointcloud.geometry.attributes.position.array[3 * i + 1] = points[0][i][1] * 1.0e3;
+          pointcloud.geometry.attributes.position.array[3 * i + 2] = points[0][i][2] * 1.0e3;
+        }
+        pointcloud.geometry.setDrawRange( 0, points[0].length );
+        pointcloud.geometry.attributes.position.needsUpdate = true;
+        for (let i = 0; i < points[1].length; i+=1) {
+          pointcloud.geometry.attributes.color.array[3 * i] = points[1][i][0];
+          pointcloud.geometry.attributes.color.array[3 * i + 1] = points[1][i][1];
+          pointcloud.geometry.attributes.color.array[3 * i + 2] = points[1][i][2];
+        }
+        pointcloud.geometry.attributes.color.needsUpdate = true;
+      }
+
+      function dataNamesChange(event) {
+        dataName = [];
+        let checkboxes = document.querySelectorAll("input[type='checkbox']");
+        for (let i = 0; i < checkboxes.length; i++) {
+          if (checkboxes[i].checked) {
+            dataName.push(checkboxes[i].name);
+          }
+        }
+      }
+
+      function updateDataList(dataList) {
+        let dataNames = document.getElementById("data-names");
+        if (dataList.length == 1) {
+          dataName = [dataList[0]];
+        }
+        for(let i = 0; i < dataList.length; i++) {
+          let label = document.createElement("label");
+          let check = document.createElement('input');
+          check.setAttribute('type', 'checkbox');
+          check.setAttribute('name', dataList[i]);
+          label.innerText = dataList[i];
+          if (dataName.includes(dataList[i])) {
+            check.setAttribute('checked', 'checked');
+          }
+          check.addEventListener('change', dataNamesChange);
+          dataNames.appendChild(check);
+          dataNames.appendChild(label);
+        };
+      }
+    </script>
+</body>
+</html>
