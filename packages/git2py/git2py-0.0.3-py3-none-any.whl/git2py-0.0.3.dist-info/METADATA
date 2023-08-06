@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: git2py
+Version: 0.0.3
+Summary: Mapping git operation to a dict-like Data Object Layer
+Home-page: https://github.com/i2mint/git2py
+Author: OtoSense
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+Requires-Dist: dol
+Requires-Dist: py2store
+
+
+# git2py
+Mapping git operation to a dict-like Data Object Layer
+
+
+To install:	```pip install git2py```
+
+
