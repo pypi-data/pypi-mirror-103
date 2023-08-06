@@ -1,0 +1,64 @@
+{
+  "lang":"xx",
+  "name":"affirm_no_faq",
+  "version":"0.3.8",
+  "description":"",
+  "author":"",
+  "email":"",
+  "url":"",
+  "license":"",
+  "spacy_version":">=3.0.5,<3.1.0",
+  "spacy_git_version":"53a3b967a",
+  "vectors":{
+    "width":0,
+    "vectors":0,
+    "keys":0,
+    "name":null
+  },
+  "labels":{
+    "tok2vec":[
+
+    ],
+    "textcat":[
+      "affirm_no",
+      "faq"
+    ]
+  },
+  "pipeline":[
+    "tok2vec",
+    "textcat"
+  ],
+  "components":[
+    "tok2vec",
+    "textcat"
+  ],
+  "disabled":[
+
+  ],
+  "performance":{
+    "cats_score_desc":"macro F",
+    "cats_micro_p":0.8260869565,
+    "cats_micro_r":0.8260869565,
+    "cats_micro_f":0.8260869565,
+    "cats_macro_p":0.8666666667,
+    "cats_macro_r":0.8333333333,
+    "cats_macro_f":0.8230769231,
+    "cats_macro_auc":1.0,
+    "cats_f_per_type":{
+      "affirm_no":{
+        "p":1.0,
+        "r":0.6666666667,
+        "f":0.8
+      },
+      "faq":{
+        "p":0.7333333333,
+        "r":1.0,
+        "f":0.8461538462
+      }
+    },
+    "cats_macro_auc_per_type":0.0,
+    "cats_score":0.8230769231,
+    "tok2vec_loss":0.0,
+    "textcat_loss":0.0008537059
+  }
+}

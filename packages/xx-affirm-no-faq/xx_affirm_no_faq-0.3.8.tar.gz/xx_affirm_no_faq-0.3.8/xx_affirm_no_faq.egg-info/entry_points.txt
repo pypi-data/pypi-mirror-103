@@ -1,0 +1,3 @@
+[spacy_models]
+xx_affirm_no_faq = xx_affirm_no_faq
+
