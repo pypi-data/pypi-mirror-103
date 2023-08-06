@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+src/dof/__init__.py
+src/dof/core.py
+src/dof/data.py
+src/dof/datamodel.py
+src/dof/error.py
+src/dof/file.py
+src/dof/information.py
+src/dof/services.py
+src/dof/storage.py
+src/dofpy.egg-info/PKG-INFO
+src/dofpy.egg-info/SOURCES.txt
+src/dofpy.egg-info/dependency_links.txt
+src/dofpy.egg-info/top_level.txt
