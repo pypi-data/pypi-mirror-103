@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: karton-config-extractor
+Version: 1.1.0
+Summary: Static configuration extractor for the Karton framework
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Requires-Dist: karton-core (==4.2.0)
+Requires-Dist: malduck (==4.1.0)
+
+UNKNOWN
+
+
