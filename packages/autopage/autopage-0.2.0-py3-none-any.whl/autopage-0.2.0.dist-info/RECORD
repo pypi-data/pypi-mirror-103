@@ -1,0 +1,11 @@
+autopage/__init__.py,sha256=TsBtXYN4PUtF_ykU73kEw2eLokaEQ42eTp11D-eJsf4,10602
+autopage/tests/__init__.py,sha256=DZeHn2rjjSCJIwWlzZFh_W5nnbmUGwgfeSaGlovZIks,139
+autopage/tests/sinks.py,sha256=-JdEhDy8Sve2THy4b7P6GZeNOZ-C6Gf_CzsipLryYak,1341
+autopage/tests/test_autopage.py,sha256=IgWeAmqdB6kFICOs4URfxRyGqiCPz0OXQ0ubdWLhBXI,16029
+autopage/tests/test_line_buffer_from_input.py,sha256=UKcFatwzJEAHAqYWGNwxuEHT8-fM7mk2gpij_9HVsSA,1389
+autopage/tests/test_pager_settings.py,sha256=eQnKSZsK2qcDwjJiKcuPMe1LYyL6vPGtRoTPhcPu814,2564
+autopage-0.2.0.dist-info/LICENSE,sha256=XfKg2H1sVi8OoRxoisUlMqoo10TKvHmU_wU39ks7MyA,10143
+autopage-0.2.0.dist-info/METADATA,sha256=ZlY-sorymZ1StzA53xsF0whaMlQEkizSqgp33nMH_RQ,5950
+autopage-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+autopage-0.2.0.dist-info/top_level.txt,sha256=DITBQui13NoSHlp6gyr61dW6XqCs3WW_LyPSXg-TVQ0,9
+autopage-0.2.0.dist-info/RECORD,,
