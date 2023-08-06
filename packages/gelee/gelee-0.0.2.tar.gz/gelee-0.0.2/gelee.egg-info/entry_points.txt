@@ -1,0 +1,3 @@
+[console_scripts]
+gelee = gelee.cli:main
+
