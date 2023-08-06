@@ -1,0 +1,7 @@
+httpx[http2]
+
+[test]
+factory_boy
+faker_enum
+pytest-cov
+respx
