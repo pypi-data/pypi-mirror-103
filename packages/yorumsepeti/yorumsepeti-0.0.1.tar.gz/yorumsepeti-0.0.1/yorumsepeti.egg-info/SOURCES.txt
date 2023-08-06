@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+yorumsepeti/__init__.py
+yorumsepeti/main.py
+yorumsepeti.egg-info/PKG-INFO
+yorumsepeti.egg-info/SOURCES.txt
+yorumsepeti.egg-info/dependency_links.txt
+yorumsepeti.egg-info/requires.txt
+yorumsepeti.egg-info/top_level.txt
