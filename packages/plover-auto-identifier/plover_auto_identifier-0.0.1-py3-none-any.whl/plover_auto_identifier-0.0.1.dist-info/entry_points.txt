@@ -1,0 +1,10 @@
+[plover.command]
+auto_identifier_is_identifier_mark = plover_auto_identifier:is_identifier_mark
+
+[plover.extension]
+plover_auto_identifier = plover_auto_identifier:Main
+
+[plover.macro]
+auto_identifier_mark = plover_auto_identifier:mark_as_identifier
+auto_identifier_remove = plover_auto_identifier:remove_identifier
+
