@@ -1,0 +1,21 @@
+kind: RunPredicatesAction
+id: sdk.action.system-checks.master
+title: Nectar System Check
+info: Ensure manifest correct, workloads green, metrics running
+tags: [version, performance, security]
+predicates:
+  - sdk.predicate.is-ktea-in-sync
+  - sdk.predicate.all-deployments-green
+  - sdk.predicate.metrics-server-running
+
+
+---
+
+kind: RunPredicatesAction
+id: sdk.action.system-checks.master2
+title: Fantastic Lemur
+info: Ensure manifest correct, workloads green, metrics running
+tags: [version, workloads]
+predicates:
+  - sdk.predicate.is-ktea-in-sync
+  - sdk.predicate.all-deployments-green

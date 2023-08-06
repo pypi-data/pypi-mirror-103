@@ -1,0 +1,28 @@
+kind: TimeSeriesGlance
+id: sdk.glance.memory_usage_time_series
+title: Memory Used
+data:
+  kind: SeriesSummarySupplier
+  good_direction: down
+  humanizer: kind::BytesHumanizer
+  source:
+    kind: PromMatrixToSeriesSupplier
+    source:
+      kind: PromDataSupplier
+      source: sum(container_memory_usage_bytes{namespace='${get::ns}'})
+
+---
+
+
+kind: TimeSeriesGlance
+id: sdk.glance.cpu_usage_time_series
+title: CPU Used
+data:
+  kind: SeriesSummarySupplier
+  good_direction: down
+  humanizer: kind::CoresHumanizer
+  source:
+    kind: PromMatrixToSeriesSupplier
+    source:
+      kind: PromDataSupplier
+      source: sum(rate(container_cpu_usage_seconds_total{namespace='${get::ns}'}[1m]))

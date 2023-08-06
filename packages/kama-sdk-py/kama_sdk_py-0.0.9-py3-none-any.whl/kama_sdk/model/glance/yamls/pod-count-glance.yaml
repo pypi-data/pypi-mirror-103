@@ -1,0 +1,45 @@
+kind: GraphicAndTextGlance
+id: sdk.glance.health.all-deployments-green
+title: Health Check
+graphic_type: icon
+graphic: toll
+
+cached:
+  pod_statuses:
+    kind: ResourcesSupplier
+    selector: "expr::pods:*"
+    many: true
+    output: ternary_status
+    serializer: legacy
+
+  running_statuses:
+    kind: ListFilter
+    predicate: expr::equals?positive
+    source:
+      kind: Supplier
+      source: get::props pod_statuses
+
+  all_count: get::props pod_statuses->. | length
+  running_count: get::props running_statuses->. | length
+
+  is_all_green:
+    kind: Predicate
+    challenge: get::props running_count
+    check_against: get::props all_count
+
+
+line_one: "${get::props running_count}/${get::props all_count} Pods ok"
+line_two: "In ${get::ns}"
+
+graphic_emotion:
+  kind: IfThenElse
+  source:
+    kind: Predicate
+    operator: truthy
+    challenge: get::props is_all_green
+  if_true: primaryColor
+  if_false: ruby
+
+path: /resources
+legend_text: View resources
+legend_icon: open_in_full

@@ -1,0 +1,193 @@
+kind: MultiAction
+id: sdk.action.safely_write_source_vars
+title: Safely write variables
+info: Ensure dry run works, then overwrite ${get::props target_key} with new vars
+sub_actions:
+  - id::sdk.action.template_manifest_merge_original_values
+  - id::sdk.action.kubectl_dry_run_action
+#  - id::sdk.action.create_backup_action
+  - id::sdk.action.write_manifest_variables
+debug_props: [values, ktea]
+error_telem_props: get::props debug_props
+
+---
+
+kind: MultiAction
+id: sdk.action.safely_patch_manifest_vars
+title: Safely commit variables
+info: Ensure dry run works, then patch ${get::props target_key} with new vars
+debug_props: [values, ktea, res_descs, outkomes]
+
+sub_actions:
+  - id::sdk.action.template_manifest_merge_original_values
+  - id::sdk.action.kubectl_dry_run_action
+#  - id::sdk.action.create_backup_action
+  - id::sdk.action.patch_manifest_variables
+
+---
+
+kind: MultiAction
+id: sdk.action.apply_manifest_e2e_action
+title: Apply Resources
+info: Updates the manifest and waits for a settled state
+debug_props: [values, ktea, res_descs, outkomes]
+sub_actions:
+  - id::sdk.action.template_manifest
+  - id::sdk.action.kubectl_apply
+  - id::sdk.action.await_outkomes_settled
+
+
+---
+
+kind: MultiAction
+id: sdk.action.apply_application_manifest_e2e_action
+inherit: sdk.action.apply_manifest_e2e_action
+title: Template and apply manifest
+ktea: get::sdk.supplier.master_config.ktea
+values: get::sdk.supplier.master_config.variables
+debug_props: [values, ktea, res_descs, outkomes]
+
+---
+
+kind: MultiAction
+id: sdk.action.safely_apply_application_manifest_e2e_action
+title: Commit variables and apply manifest
+info: Safely commit new variables and apply the re-templated manifest
+ktea: get::sdk.supplier.master_config.ktea
+debug_props: [values, ktea, res_descs, outkomes]
+
+sub_actions:
+  - inherit: sdk.action.safely_patch_manifest_vars
+    target_key: user_vars
+  - inherit: sdk.action.template_manifest
+    values: get::sdk.supplier.master_config.variables
+  - id::sdk.action.kubectl_apply
+  - id::sdk.action.await_outkomes_settled
+
+---
+
+kind: MultiAction
+id: sdk.action.apply_latest_vendor_injections
+ktea: get::sdk.supplier.injections_ktea
+debug_props: [values, ktea, injections, res_descs, outkomes]
+
+sub_actions:
+  - id::sdk.action.fetch_latest_injections
+
+  - inherit: sdk.action.safely_write_source_vars
+    target_key: vendor_injection_vars
+    values: get::props injections->.standard
+
+  - inherit: sdk.action.template_manifest
+    values: get::props injections->.inline
+
+  - id::sdk.action.kubectl_apply
+
+  - id::sdk.action.await_outkomes_settled
+
+circuit_breakers:
+  - after: sdk.action.fetch_latest_injections
+    exit:
+      kind: IfThenElse
+      if_true: positive
+      if_false: __null__
+      source:
+        kind: Predicate
+        id: check_standard_or_inline
+        check_against: 0
+        challenge:
+          kind: SumSupplier
+          source:
+            - get::props injections->.inline | length
+            - get::props injections->.standard | length
+
+  - after: sdk.action.safely_write_source_vars
+    exit:
+      kind: IfThenElse
+      if_true: positive
+      if_false: __null__
+      source:
+        kind: Predicate
+        id: check_inlines_gt_0
+        check_against: 0
+        challenge: get::props injections->.inline | length
+
+---
+
+
+kind: MultiAction
+id: sdk.action.commit_step_values_action
+ktea: get::sdk.supplier.master_config.ktea
+title: Safely commit variables
+info: Dry run variables and patch master ConfigMap
+debug_props: [values, ktea, res_descs, outkomes]
+
+sub_actions:
+  kind: ListPluck
+  flat: true
+  source:
+    - include:
+        kind: Predicate
+        operator: greater-than
+        check_against: 0
+        challenge: get::props commit->.standard | length
+      value:
+        - inherit: sdk.action.template_manifest_merge_original_values
+          values:
+            kind: MergeSupplier
+            source:
+              - get::props commit->.standard
+              - get::props commit->.inline
+        - id::sdk.action.kubectl_dry_run_action
+#        - id::sdk.action.create_backup_action
+        - inherit: sdk.action.patch_manifest_variables
+          values: get::props commit->.standard
+          target_key: user_vars
+
+    - include:
+        kind: Predicate
+        operator: greater-than
+        check_against: 0
+        challenge: get::props commit->.prefs | length
+      value:
+#        - id::sdk.action.create_backup_action
+        - inherit: sdk.action.patch_manifest_variables
+          values: get::props commit->.prefs
+          target_key: prefs
+
+---
+
+kind: MultiAction
+id: sdk.action.step_apply_application_manifest_e2e_action
+inherit: sdk.action.commit_step_values_action
+ktea: get::sdk.supplier.master_config.ktea
+sub_actions:
+  - sdk.action.commit_step_values_action
+  - inherit: sdk.action.template_manifest
+    values:
+      kind: MergeSupplier
+      source:
+        - get::props commit->.inline
+        - get::sdk.supplier.master_config.variables
+  - id::sdk.action.kubectl_apply
+  - id::sdk.action.await_outkomes_settled
+
+---
+
+kind: MultiAction
+id: sdk.action.apply_update_e2e_action
+inherit: sdk.action.apply_application_manifest_e2e_action
+title: Update Application
+info: Get new KTEA, update variable defaults, reapply manifest
+
+sub_actions:
+  - id::sdk.action.fetch_update
+  - id::sdk.action.commit_ktea_from_update
+  - id::sdk.action.load_var_defaults_from_ktea
+  - inherit: sdk.action.safely_write_source_vars
+    target_key: default_vars
+    values: get::props variable_defaults
+  - inherit: sdk.action.template_manifest
+    values: get::sdk.supplier.master_config.variables
+  - id::sdk.action.kubectl_apply
+  - id::sdk.action.await_outkomes_settled

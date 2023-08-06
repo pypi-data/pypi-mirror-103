@@ -1,0 +1,6 @@
+kind: Supplier
+id: sdk.provider.operations.master
+serializer: identity
+source:
+  - sdk.operation.locate-monitoring
+  - sdk.operation.delete-telem-pvc

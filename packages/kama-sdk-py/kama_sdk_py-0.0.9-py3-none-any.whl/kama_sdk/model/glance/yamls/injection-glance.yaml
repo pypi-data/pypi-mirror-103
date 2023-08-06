@@ -1,0 +1,39 @@
+kind: PredicateGlance
+id: sdk.glance.vendor_injections_up_to_date
+title: Vendor Injections
+#small_graphic: true
+info: Manage
+legend_icon: open_in_new
+graphic:
+  kind: IfThenElse
+  source: get::props outcome
+  if_true: download_for_offline
+  if_false: check_circle_outline
+graphic_emotion:
+  kind: IfThenElse
+  source: get::props outcome
+  if_true: warning2
+  if_false: pleasant
+line_one:
+  kind: IfThenElse
+  source: get::props outcome
+  if_true: New Injections
+  if_false: On Latest
+line_two:
+  kind: Provider
+  ktea_ver:
+    kind: MasterConfigSupplier
+    source: ktea
+    output: ".version"
+  source: "KTEA ${get::props ktea_ver}"
+predicate:
+  check_against: 0
+  operator: greater-than
+  challenge:
+    kind: SumSupplier
+    injections: get::kind::LatestVendorInjectionSupplier
+    source:
+      - get::props injections->.inline | length
+      - get::props injections->.standard | length
+
+path: /updates

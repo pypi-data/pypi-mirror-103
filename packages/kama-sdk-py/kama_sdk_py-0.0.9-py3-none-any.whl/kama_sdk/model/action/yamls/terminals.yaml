@@ -1,0 +1,84 @@
+kind: KubectlDryRunAction
+id: sdk.action.kubectl_dry_run_action
+title: Run kubectl dry run
+info: Ensure API server accepts incoming manifest
+expects_run_args: [res_descs]
+debug_props: [res_descs]
+error:
+  extras: __default__
+  snapshot: sdk.supplier.after_error_snapshot
+
+---
+
+kind: CreateBackupAction
+id: sdk.action.create_backup_action
+title: Backup master to database
+info: Write master ConfigMap to telemetry database
+debug_props: [ktea]
+
+---
+
+kind: TemplateManifestAction
+id: sdk.action.template_manifest
+title: Load Templated Manifest
+info: Invoke publisher-supplied KTEA server, workload, or executable
+debug_props: [values, ktea, selectors]
+
+---
+
+kind: KubectlApplyAction
+id: sdk.action.kubectl_apply
+title: Run kubectl apply
+info: Applies the templated manifest to the cluster
+debug_props: [res_descs]
+
+---
+
+kind: AwaitOutkomesSettledAction
+id: sdk.action.await_outkomes_settled
+title: Wait for Changed Resource to Settle
+info: Wait until all changed resource are in a settled state
+debug_props: [values, ktea]
+
+---
+
+kind: FetchUpdateAction
+id: sdk.action.fetch_update
+title: Read update from upstream
+info: Read update from upstream
+debug_props: [values, ktea]
+
+---
+
+kind: LoadVarDefaultsFromKtea
+id: sdk.action.load_var_defaults_from_ktea
+title: Load default values.yaml from KTEA
+info: Inovke KTEA function, abort if nil
+debug_props: [values, ktea]
+
+---
+
+kind: CommitKteaFromUpdateAction
+id: sdk.action.commit_ktea_from_update
+title: Commit TAM with new version/type
+info: Patch master ConfigMap entry for TAM definition
+debug_props: [values, ktea]
+
+---
+
+kind: FetchLatestInjectionsAction
+id: sdk.action.fetch_latest_injections
+title: Fetch latest injections
+info: Fetch latest injections
+
+---
+
+kind: Action
+id: sdk.action.template_manifest_merge_original_values
+inherit: sdk.action.template_manifest
+new__values:
+  kind: MergeSupplier
+  source:
+    - get::sdk.supplier.master_config.variables
+    - get::props old__values
+debug_props: [old__values, new__values, values, ktea]

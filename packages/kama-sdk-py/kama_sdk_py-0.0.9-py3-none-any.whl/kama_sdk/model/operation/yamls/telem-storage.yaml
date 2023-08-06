@@ -1,0 +1,206 @@
+kind: DeleteResourcesAction
+id: sdk.action.delete-telem-db-resource
+title: Delete Resources
+info: Deletes the following resource
+selectors:
+  - "deployments:telem-db"
+  - "services:telem-db"
+  - "persistentvolumeclaims:telem-db-pvc"
+
+---
+
+kind: Switch
+id: sdk.supplier.decide-telem-action
+source:
+  - break:
+      kind: Predicate
+      challenge: get::props commit->.prefs.telem_db.strategy
+      check_against: managed_pvc
+    value: sdk.action.provision_managed_db
+  - break:
+      kind: Predicate
+      challenge: get::props commit->.prefs.telem_db.strategy
+      check_against: disabled
+    value: sdk.action.delete-telem-db-resource
+  - break: true
+    value: sdk.action.commit_step_values_action
+
+---
+
+kind: MultiAction
+id: sdk.action.provision_managed_db
+ktea:
+  type: server
+  uri: https://api.codesdk.com/services/ktea/nectar/telem-db
+  version: 1.0.0
+
+sub_actions:
+  - sdk.action.commit_step_values_action
+  - inherit: sdk.action.template_manifest
+    values: get::sdk.supplier.master_config.prefs .telem_db
+  - sdk.action.kubectl_apply
+  - sdk.action.await_outkomes_settled
+
+---
+
+kind: Predicate
+id: sdk.predicate.check-telem-is-disabled
+title: Ensure telemetry storage is currently disabled
+info: "Ensure that telemetry storage is disabled before enabling it."
+operator: in
+challenge: get::sdk.supplier.master_config.prefs .telem_db.strategy
+check_against: [disabled, __undefined__]
+reason: "It seems that telemetry storage is already enabled. Instead
+    of proceeding, disable it safely using the appropriate operation."
+tone: error
+
+---
+
+kind: Predicate
+id: sdk.predicate.check-telem-is-pvc
+title: Ensure Telemetry is currently stored in-cluster
+info: "Ensure it makes sense to perform this operation by checking
+the current configurations."
+challenge: get::sdk.supplier.master_config.prefs .telem_db.strategy
+check_against: managed_pvc
+reason: "It seems that telemetry is not
+currently saved to an internal PVC. Proceeding will not do harm but
+it may not be necessary either as it looks like there's nothing to
+change or destroy."
+tone: warning
+
+---
+
+kind: Stage
+id: sdk.stage.telem-storage
+title: Telemetry Storage
+info: Configure where telemetry data should be persisted
+steps:
+  - kind: Step
+    id: sdk.step.telem-storage-step-1
+    title: Telemetry Persistence
+    info: "Nectar saves telemetry for important events so that users
+     can later audit their application. For this, a persistent database
+     is required. This step helps you decide where and how to host it."
+    action: get::sdk.supplier.decide-telem-action
+    fields:
+      - id: telem_db.strategy
+        target: prefs
+        title: Database Strategy
+        default: disabled
+        decoration:
+          kind: IfThenElse
+          source:
+            kind: Predicate
+            challenge: get::props inputs->.telem_db.strategy
+            check_against: managed_pvc
+          if_true: "<p>A MongoDB deployment backed by a PersistentVolumeClaim
+          will be create in the ${get::ns} namespace.</p><br/> <p>You will be able to
+          resize, delete, and backup the database later.</p>"
+        input:
+          kind: SelectInput
+          options:
+            - id: managed_pvc
+              title: "Managed PVC: in-cluster storage managed by Nectar"
+            - id: nectar_cloud
+              title: "Nectar cloud storage: secure remote database"
+            - id: self_managed
+              title: "Own storage: you supplier a MongoDB database"
+            - id: disabled
+              title: "Disabled: telemetry will not be persisted"
+        validators:
+          - check_against: disabled
+            operator: =/=
+            tone: warning
+            reason: "Auditing will not be available. You can turn this on later."
+          - check_against: self_managed
+            operator: =/=
+            tone: warning
+            reason: "You will be responsible for managing this database."
+          - check_against: nectar_cloud
+            operator: =/=
+            tone: error
+            reason: "Not available for your current plan"
+
+      - id: telem_db.host
+        title: MongoDB database host
+        target: prefs
+        validators:
+          - kind: FormatPredicate
+            check_against: domain
+        visible:
+          kind: Predicate
+          challenge: "get::props inputs->.telem_db.strategy"
+          check_against: self_managed
+
+      - id: telem_db.port
+        title: MongoDB database host
+        target: prefs
+        default: 6379
+        validators:
+          - kind: FormatPredicate
+            check_against: integer
+        visible:
+          kind: Predicate
+          challenge: "get::props inputs->.telem_db.strategy"
+          check_against: self_managed
+
+---
+
+kind: Operation
+id: sdk.operation.telem-storage
+title: Setup Telemetry Storage
+synopsis: file::delete-telem-storage-info.html
+info: Choose and implement a persistent storage solution for telemetry data.
+preflight_action:
+  kind: RunPredicatesAction
+  predicates:
+    - sdk.predicate.check-telem-is-disabled
+stages:
+  - sdk.stage.telem-storage
+
+---
+
+kind: Operation
+title: Disable In-Cluster Telemetry Storage
+info: If using in-cluster storage for telemetry, destroys all related storage resource
+synopsis: file::delete-telem-storage-info.html
+id: sdk.operation.delete-telem-pvc
+preflight_action:
+  kind: RunPredicatesAction
+  predicates:
+    - sdk.predicate.check-telem-is-pvc
+stages:
+  - id: sdk.stage.delete-telem-confirm
+    title: Confirm and Delete
+    info: Confirm consent and proceed to deleting telemetry-related resource
+    steps:
+      - id: sdk.step.delete-telem-confirm
+        title: Confirm Consent
+        info: "I understand that proceeding will irreversibly
+        delete the local telemetry database, erasing all data related
+         to updates, variable assignments, and operations."
+
+        action:
+          kind: MultiAction
+          sub_actions:
+          - inherit: sdk.action.patch_prefs
+            values:
+              telem_db.strategy: disabled
+
+          - kind: DeleteResourcesAction
+            title: Delete resource and reload
+            info: Delete telem resource and reapply manifest
+            resource_selectors:
+              - "deployments:telem-db"
+              - "services:telem-db"
+              - "persistentvolumeclaims:telem-db-pvc"
+
+        fields:
+          - id: sdk.fields.delete-telem-confirm
+            title: I have read and understood the above.
+            target: none
+            input: CheckboxInput
+            validators:
+              - check_against: true
+                reason: "Check to continue"

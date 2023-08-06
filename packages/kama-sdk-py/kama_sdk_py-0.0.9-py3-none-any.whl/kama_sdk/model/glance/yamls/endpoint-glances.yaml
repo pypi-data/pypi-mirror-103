@@ -1,0 +1,21 @@
+kind: EndpointGlance
+id: ice-cream.glance.main-endpoint
+graphic: https://freeiconshop.com/wp-content/uploads/edd/ice-cream-cone-outline-filled.png
+line_one: Homepage
+endpoint:
+  kind: ServiceEndpointSupplier
+  selector: expr::services:ice-cream
+
+---
+
+kind: EndpointGlance
+id: ice-cream.glance.grafana-endpoint
+graphic: https://exchange.icinga.com/cark/Grafana%20Module/logo
+line_one: Grafana Site
+endpoint:
+  kind: ServiceEndpointSupplier
+  title: Grafana
+  selector:
+    res_kind: services
+    name: get::sdk.supplier.master_config.prefs .monitoring.service_name
+    namespace: get::sdk.supplier.master_config.prefs .monitoring.service_namespace

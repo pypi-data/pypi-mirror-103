@@ -1,0 +1,154 @@
+kind: Operation
+id: sdk.operation.locate-monitoring
+title: Locate Monitoring Server
+info: "Point the application to your cluster's monitoring server"
+synopsis: <p>"Point the application to your cluster's monitoring server"</p>
+tags: ['monitoring']
+stages:
+  - id::sdk.stage.monitoring
+
+---
+
+kind: Predicate
+id: sdk.predicate.is_monitoring_server_200
+challenge:
+  kind: HttpDataSupplier
+  property: status_code
+check_against: 200
+reason: "Endpoint did not return status code 200"
+tone: warning
+
+---
+
+id: sdk.misc.ping-monitoring-server
+kind: MultiAction
+sub_actions:
+  - sdk.action.commit_step_values_action
+  - kind: RunPredicatesAction
+    title: Try to reach monitoring server
+    info: Send HTTP to ${endpoint}
+    endpoint: get::sdk.supplier.master_config.prefs .monitoring.url
+    predicates:
+      - sdk.predicate.is_monitoring_server_200
+
+---
+
+kind: Stage
+id: sdk.stage.monitoring
+title: Locate Monitoring Server
+info: "If you have a monitoring service inside
+ or outside in your cluster,
+you can point this application to it in order to give
+Nectar data capabilities"
+steps:
+  - id: sdk.step.monitoring-step-1
+    title: Monitoring server type
+    action:
+      kind: IfThenElse
+      if_true: sdk.misc.ping-monitoring-server
+      source:
+        kind: Predicate
+        challenge: get::props op_state->.monitoring.type
+        check_against: disabled
+        operator: not-equal
+    fields:
+      - id: monitoring.type
+        target: prefs
+        title: Data Source Type
+        input:
+          kind: SelectInput
+          options:
+            - id: prometheus
+              title: Prometheus Server
+            - id: metrics_server
+              title: Metrics Server
+            - id: fluentd
+              title: fluentd
+            - id: cadvisor
+              title: cAdvisor
+            - id: disabled
+              title: Disable Monitoring
+        validators:
+          - check_against: [prometheus, disabled]
+            challenge: get::props inputs->.monitoring.type
+            operator: in
+            tone: error
+            reason: "Not yet supported"
+
+      - kind: Field
+        id: monitoring.relative_to_cluster
+        target: prefs
+        title: Where is the Prometheus server located?
+        input: kind::SelectInput
+        options:
+          - id: in
+            title: Inside the Cluster
+          - id: out
+            title: Outside the Cluster
+        visible:
+          kind: Predicate
+          challenge: get::props inputs->.monitoring.type
+          check_against: prometheus
+
+      - kind: Field
+        id: monitoring.proxy
+        target: prefs
+        title: Reach via Kubernetes Proxy
+        input: kind::CheckboxInput
+        visible:
+          kind: Predicate
+          challenge: get::props inputs->.monitoring.relative_to_cluster
+          check_against: in
+
+      - kind: Field
+        id: monitoring.url
+        target: prefs
+        title: Data Source API's Base URL
+        visible:
+          kind: Predicate
+          challenge: get::props inputs->.monitoring.relative_to_cluster
+          check_against: out
+        validators:
+          - kind: FormatPredicate
+            check_against: domain
+            challenge: get::props inputs->.monitoring.url
+          - challenge:
+              inherit: sdk.predicate.is_monitoring_server_200
+              endpoint: get::props inputs->.monitoring.url
+
+      - id: monitoring.service_namespace
+        target: prefs
+        title: Namespace containing Prometheus Operator
+        visible:
+          kind: Predicate
+          challenge: get::props inputs->.monitoring.relative_to_cluster
+          check_against: in
+        variable:
+          id: monitoring.service_namespace
+          default: get::ns
+          input:
+            kind: SelectInput
+            options:
+              kind: ResourcesSupplier
+              selector: "expr::Namespace:*"
+              many: true
+              output: options_format
+              serializer: legacy
+
+      - id: monitoring.service_name
+        target: prefs
+        title: Prometheus Operator Service
+        visible:
+          kind: Predicate
+          challenge: get::props inputs->.monitoring.service_namespace
+          operator: presence
+        input:
+          kind: SelectInput
+          options:
+            kind: ResourcesSupplier
+            many: true
+            selector:
+              res_kind: Service
+              namespace: "get::props inputs->.monitoring.service_namespace"
+            output: options_format
+            serializer: legacy

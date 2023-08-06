@@ -1,0 +1,6 @@
+kind: Supplier
+id: sdk.run-predicates-action.master-provider
+serializer: identity
+source:
+  - sdk.action.system-checks.master
+  - sdk.action.system-checks.master2

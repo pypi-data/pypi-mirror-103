@@ -1,0 +1,24 @@
+
+kind: PredicateGlance
+id: sdk.glance.telem_enabled_check3
+title: Workloads Healthy
+info: yolo
+line_one: All Green
+graphic: dns
+line_two: 12 checked
+line_three: More stuff
+predicate: sdk.predicate.all-deployments-green
+path: /system-check
+legend_type: status
+
+---
+
+
+kind: PredicateGlance
+id: sdk.glance.injections_up_to_date_check
+title: Injections Check
+info: Last injected
+line_one: Injections
+line_two: 122 checked
+predicate: TruePredicate
+path: /updates
