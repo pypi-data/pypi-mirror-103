@@ -1,0 +1,12 @@
+numpy
+xlrd
+
+[all]
+pytest
+asammdf
+
+[analysisDrvCyc]
+asammdf
+
+[modelingAnn]
+pytest
