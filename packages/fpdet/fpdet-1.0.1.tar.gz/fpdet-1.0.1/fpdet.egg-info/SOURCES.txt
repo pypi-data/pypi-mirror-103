@@ -1,0 +1,11 @@
+README.md
+setup.py
+fpdet/__init__.py
+fpdet/_dcore.py
+fpdet/_dmatrix.py
+fpdet/_numpy_core.py
+fpdet.egg-info/PKG-INFO
+fpdet.egg-info/SOURCES.txt
+fpdet.egg-info/dependency_links.txt
+fpdet.egg-info/requires.txt
+fpdet.egg-info/top_level.txt
