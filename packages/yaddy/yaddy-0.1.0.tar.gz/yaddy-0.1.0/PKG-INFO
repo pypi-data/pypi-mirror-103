@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: yaddy
+Version: 0.1.0
+Summary: Yet Another Domain (Driven) Development librarY for Python
+License: MIT
+Author: S. Guliaev
+Author-email: dev.sagul@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
