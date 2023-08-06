@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: vertx-eventbus-bridge-starter
+Version: 1.0.1
+Summary: Starter used to start an EventBus bridge for testing
+Home-page: https://github.com/gaol/test-eventbus-bridge
+Author: Lin Gao
+Author-email: aoingl@gmail.com
+License: Apache Software License 2.0
+Description: # test-eventbus-bridge
+        A vertx eventbus bridge that is used for testing
+        
+        ## How to used it
+        
+        
+        ```python
+        import unittest
+        from testeventbus import EventBusBridgeStarter
+        from vertx.eventbus import EventBus
+        
+        
+        class EventBusClientTests(unittest.TestCase):
+            """
+            This is the tests against a local test eventbus bridge
+            """
+            
+            def __init__(self, *args, **kwargs):
+                super(EventBusClientTests, self).__init__(*args, **kwargs)
+            
+            @classmethod
+            def setUpClass(cls):
+                print("Start EventBus Bridge")
+                cls.starter = EventBusBridgeStarter(debug=True)
+                cls.starter.start()
+                cls.starter.wait_started()
+                print("yes, Bridge started !!")
+            
+            @classmethod
+            def tearDownClass(cls):
+                print("Now stop the bridge")
+                cls.starter.stop()
+            
+            def test_send(self):
+                print("Testing send")
+                ebus = EventBus({"connect": True})
+                ebus.wait()
+                ebus.send("echo", body={"hello": "world"})
+        ```
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

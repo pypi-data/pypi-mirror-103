@@ -1,0 +1,7 @@
+README.md
+setup.py
+testeventbus/__init__.py
+vertx_eventbus_bridge_starter.egg-info/PKG-INFO
+vertx_eventbus_bridge_starter.egg-info/SOURCES.txt
+vertx_eventbus_bridge_starter.egg-info/dependency_links.txt
+vertx_eventbus_bridge_starter.egg-info/top_level.txt
