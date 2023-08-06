@@ -1,0 +1,14 @@
+relativity/__init__.py,sha256=Jqtdgfv3KqTLSc2qsXiiDHrP4TRruys4UeOyyNwUf6k,1341
+relativity/compat.py,sha256=84im8WpZySb_2ZNowEFFDqi80-lsXptqQeS6WTwq1j0,293
+relativity/fields.py,sha256=EP77LfM5ZyFUP8hdBK0FLvekvG7D2Pxs9oMAxl3sqik,13889
+relativity/mptt.py,sha256=OxHtBHQ_Qy8kLn0sUAVFl12SE5Tg1rWLLm_NAcAKTw4,2121
+relativity/treebeard.py,sha256=g5L6bXXx9HU9xcHDJj40YBJXd6ZmiaHtkU6HiGevTQg,1507
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/models.py,sha256=F--_v5EtNNvKK7whI9x28bsKmNsgfGb7IFfD03kSf18,5159
+tests/settings.py,sha256=-ax_sXuatmzu2-wEYmblkRw6TIOaE3qBnXo_lg8RUvU,346
+tests/tests.py,sha256=DQfcPg1Xo6r7D7TgJ6DItAH4VIB7WGU7i8hsqg5JN_8,13222
+django_relativity-0.2.3.dist-info/LICENSE,sha256=cALundjQnJWtlQiprFpmQgQJVWxAUZf5FulrZvTlRp4,1518
+django_relativity-0.2.3.dist-info/METADATA,sha256=Q1zcCl9aCYYJhKPlcKijIL69AtLURodcBRi6phdAD5I,9707
+django_relativity-0.2.3.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+django_relativity-0.2.3.dist-info/top_level.txt,sha256=tC-QONZ9PgDMc-kUJTeIl9PA4Kq6PpDpNbrV6ECFnEs,17
+django_relativity-0.2.3.dist-info/RECORD,,
