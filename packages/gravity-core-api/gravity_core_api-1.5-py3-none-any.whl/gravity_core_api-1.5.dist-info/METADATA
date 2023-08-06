@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: gravity-core-api
+Version: 1.5
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: PunchyArchy
+Author-email: ksmdrmvscthny@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: witapi
+
+Gravity Core Single Endpoint (GCSE) - перспективный единый API endpoint модуль проекта Gravity Core
+
+
