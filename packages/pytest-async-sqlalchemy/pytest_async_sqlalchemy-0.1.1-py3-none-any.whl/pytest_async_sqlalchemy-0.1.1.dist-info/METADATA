@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: pytest-async-sqlalchemy
+Version: 0.1.1
+Summary: Database testing fixtures using the SQLAlchemy asyncio API
+Home-page: https://github.com/igortg/pytest-async-sqlalchemy
+Author: Igor T. Ghisi
+Author-email: igor.ghisi@gmail.com
+Maintainer: Igor T. Ghisi
+Maintainer-email: igor.ghisi@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Testing
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pytest (>=6.0.0)
+Requires-Dist: sqlalchemy (>=1.4.0)
+
+# pytest-async-sqlalchemy
+
+![PyPI version](https://img.shields.io/pypi/v/pytest-async-sqlalchemy.svg)
+![Python versions](https://img.shields.io/pypi/pyversions/pytest-async-sqlalchemy.svg)
+
+Database testing fixtures using the SQLAlchemy asyncio API
+
+You can install "pytest-async-sqlalchemy" via [pip] from [PyPI]
+
+    $ pip install pytest-async-sqlalchemy
+
+## Usage
+
+* TODO
+
+## Contributing
+
+Contributions are very welcome. Tests can be run with [tox], please ensure
+the coverage at least stays the same before you submit a pull request.
+
+## License
+
+Distributed under the terms of the [MIT] license, "pytest-async-sqlalchemy" is free and open source software
+
+[pip]: http://pypi.org/project/pip
+[PyPI]: https://pypi.org/project
+[MIT]: http://opensource.org/licenses/MIT
+[tox]: https://tox.readthedocs.io/en/latest/
+
