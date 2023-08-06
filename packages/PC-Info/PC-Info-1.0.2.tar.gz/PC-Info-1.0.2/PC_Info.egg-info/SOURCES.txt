@@ -1,0 +1,10 @@
+CHANGELOG.txt
+MANIFEST.in
+README.md
+setup.py
+userpass.txt
+PC_Info.egg-info/PKG-INFO
+PC_Info.egg-info/SOURCES.txt
+PC_Info.egg-info/dependency_links.txt
+PC_Info.egg-info/top_level.txt
+pc_info/__init__.py
