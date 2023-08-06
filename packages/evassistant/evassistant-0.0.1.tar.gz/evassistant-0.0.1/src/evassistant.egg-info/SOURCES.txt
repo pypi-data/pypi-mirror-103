@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/evassistant/__init__.py
+src/evassistant/evassistant.py
+src/evassistant.egg-info/PKG-INFO
+src/evassistant.egg-info/SOURCES.txt
+src/evassistant.egg-info/dependency_links.txt
+src/evassistant.egg-info/top_level.txt
