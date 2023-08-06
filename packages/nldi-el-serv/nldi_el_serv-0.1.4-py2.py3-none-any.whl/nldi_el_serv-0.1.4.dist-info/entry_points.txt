@@ -1,0 +1,3 @@
+[console_scripts]
+nldi_el_serv = nldi_el_serv.cli:main
+
