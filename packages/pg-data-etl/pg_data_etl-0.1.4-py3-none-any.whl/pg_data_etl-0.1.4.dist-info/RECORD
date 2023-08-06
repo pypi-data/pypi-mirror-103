@@ -1,0 +1,13 @@
+pg_data_etl/__init__.py,sha256=IsjkksaTIzt3LVkrymTMmuy4GWb1k3_Nxlwigex14Lo,97
+pg_data_etl/configuration_manager.py,sha256=yBMM80AfjCNEJKq6BLSN0o9SAjXj0wuDKvv6PBtYhWk,1947
+pg_data_etl/db.py,sha256=TxQf4oX0z3Lv8j4uelsFR9BVKUpkXTAkzFkQsnV14w0,25543
+pg_data_etl/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pg_data_etl/tests/conftest.py,sha256=QpQc9NNiVQhhtKId3jG-kYDomaU1vo3Fe7LsGF2eA9U,2076
+pg_data_etl/tests/test_copy_table.py,sha256=i1PZeBl8sKegXX_NopYlzxK25Jgcx5APGoGK6PrMlx0,1277
+pg_data_etl/tests/test_existing.py,sha256=6pfmgwzsvvfBwMXtOAcmJOmNKW28N1zV4aEyhbjCb6Q,395
+pg_data_etl/tests/test_pgsql2shp.py,sha256=-KwNFfyafS4E5HwM6A8-_GEfiRVl3p1hdsu4Ngv9g0I,371
+pg_data_etl/tests/test_shp2pgsql.py,sha256=z3NZIrwA0RPufrMwBwhYqs9Vf19CZwwW_ANoqCBlk8I,367
+pg_data_etl-0.1.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pg_data_etl-0.1.4.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+pg_data_etl-0.1.4.dist-info/METADATA,sha256=3dB88HGNXC1wDPcckgF8lxD5hVjEhRgk8AsIakd_ows,4521
+pg_data_etl-0.1.4.dist-info/RECORD,,
