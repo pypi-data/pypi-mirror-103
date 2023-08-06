@@ -1,0 +1,8 @@
+numpy>=1.12
+numpydoc
+scipy>=0.19
+pathos>=0.2.1
+
+[doc]
+sphinx
+sphinx_rtd_theme
