@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: delt
+Version: 0.1.7
+Summary: A python brige to use arkitekt in your Djangop Application
+Author: jhnnsrs
+Author-email: jhnnsrs@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Django (>=3.2,<4.0)
+Requires-Dist: PyYAML (>=5.4.1,<6.0.0)
+Requires-Dist: bergen (>=0.3.76,<0.4.0)
+Requires-Dist: django-rest-framework (>=0.1.0,<0.2.0)
