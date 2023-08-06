@@ -1,0 +1,7 @@
+deid==0.1.42
+dicom2nifti
+pydeface
+numpy
+nibabel
+nipype
+ttictoc
