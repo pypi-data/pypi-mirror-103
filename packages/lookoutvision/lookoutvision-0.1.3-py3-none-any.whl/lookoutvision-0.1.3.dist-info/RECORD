@@ -1,0 +1,12 @@
+lookoutvision/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lookoutvision/image.py,sha256=tlmNaHAiaCDUC8luVS2G2HF3GA2oifDdtennzqpj68Q,24991
+lookoutvision/lookoutvision.py,sha256=4ZGqA4M-8QgyFAVmaJ9r0xeTMAqX9zl_umy-CZVYqc8,26041
+lookoutvision/manifest.py,sha256=LWJPJZpl5k5By55wkDR-dCpF1so2pVXz0xsxKWjse7o,6533
+lookoutvision/metrics.py,sha256=CkE7Fs9dMYlh3yqKaxF6mii1VRWXBuQlW-YZ_yKEgFY,3549
+lookoutvision-0.1.3.dist-info/LICENSE,sha256=CeipvOyAZxBGUsFoaFqwkx54aPnIKEtm9a5u2uXxEws,10142
+lookoutvision-0.1.3.dist-info/METADATA,sha256=L1fenyOM2LhVCBx7a8fGSgyLz8JYmPNssSsj3GIQA0A,372
+lookoutvision-0.1.3.dist-info/NOTICE,sha256=1CkO1kwu3Q_OHYTj-d-yiBJA_lNN73a4zSntavaD4oc,67
+lookoutvision-0.1.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+lookoutvision-0.1.3.dist-info/top_level.txt,sha256=cbKgYCxdR8nrdMTRHHw5ZQG_KuX83poaiCOD9GAu7jw,14
+lookoutvision-0.1.3.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+lookoutvision-0.1.3.dist-info/RECORD,,
