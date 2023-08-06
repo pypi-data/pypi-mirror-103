@@ -1,0 +1,10 @@
+neatest/__init__.py,sha256=ZG9qITpgMJaSKvpUhCW-Q3mb7_kKGR0nW6SFXKejxVg,2110
+neatest/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neatest/tests/find_me_too.py,sha256=5wELT7ENb-5YEDvSPKu4jwAt76-mb3jgRWNEmJT5n0c,203
+neatest/tests/test_findme.py,sha256=TMGjtukJnNGGvET8TkeaSGdRnfhNGmM3TCKHooI3qK4,309
+neatest-0.0.4.dist-info/LICENSE,sha256=WRDtYJNLZFEEPBkjHciTZSYMGVHO81rmwYC2azmbMzA,1091
+neatest-0.0.4.dist-info/METADATA,sha256=U8JWU8Q5YOLH57GJO29Xk7Cq-XrGptqEf3B4Ci4vxJI,3792
+neatest-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+neatest-0.0.4.dist-info/entry_points.txt,sha256=mSvYouD4Pg46sXhM8n5qv3OCVyMuKyrnKhyxcwNoFBM,54
+neatest-0.0.4.dist-info/top_level.txt,sha256=q6SA0yvC_mL84nHT9qvZYZHOSmfQxyjmmzcdO3BwETI,8
+neatest-0.0.4.dist-info/RECORD,,
