@@ -1,0 +1,8 @@
+simplejpeg/__init__.py,sha256=H6yT4SIiXVjQbXi8nJvtBugfr8Fco5EM_UyfXfGUtsU,527
+simplejpeg/_jpeg.cpython-35m-i386-linux-gnu.so,sha256=DFecI3cVLq9exOHeGXMDDZFm8g6X16TEzGUvtl2ZCnQ,786332
+simplejpeg/_jpeg.pyi,sha256=M2AXlcBB5p5xcypII8NqDxFNthVNYrnsEnY54z-HAKQ,3642
+simplejpeg-1.5.0.dist-info/RECORD,,
+simplejpeg-1.5.0.dist-info/LICENSE,sha256=qqrPO7wWK-ZtCR4FkAFqd9mnpO68FDPPLxTC3Msb5xg,19571
+simplejpeg-1.5.0.dist-info/WHEEL,sha256=PZpIGgzY1PqtGcbRQVyR_dlF0m7p5t87oKf_hDk2mWM,107
+simplejpeg-1.5.0.dist-info/METADATA,sha256=W34V2D8sKkxx99qblM8oUxT6S9k6vRq7ewFr_VNA2Sk,6803
+simplejpeg-1.5.0.dist-info/top_level.txt,sha256=whsdyVL6rcRijxONcdtjdyk0mOmj_2fExNkij2xVvdw,11
