@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/epico/__init__.py
+src/epico/__main__.py
+src/epico/dir.py
+src/epico/file.py
+src/epico/thread.py
+src/epico/version.py
+src/epico.egg-info/PKG-INFO
+src/epico.egg-info/SOURCES.txt
+src/epico.egg-info/dependency_links.txt
+src/epico.egg-info/top_level.txt
