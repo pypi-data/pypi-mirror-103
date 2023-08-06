@@ -1,0 +1,2 @@
+bluepy_mjg59@ git+https://github.com/mjg59/bluepy@local_version#egg=bluepy_mjg59
+pycryptodome
