@@ -1,0 +1,4 @@
+pycopy-errno
+pycopy-os.path
+pycopy-stat
+pycopy-uos2
