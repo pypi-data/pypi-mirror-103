@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: cortx_jupyter
+Version: 0.0.101
+Summary: Jupyter Notebook Manager for Cortx
+Home-page: https://github.com/sumanthreddym/cortx_jupyter
+Author: Sumanth & Priya
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: # Cortx Jupyter
+        
+        Jupyter Notebook Contents Manager for Seagate Cortx.
+Platform: UNKNOWN
