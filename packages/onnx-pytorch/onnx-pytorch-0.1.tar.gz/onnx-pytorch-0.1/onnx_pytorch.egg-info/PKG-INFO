@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: onnx-pytorch
+Version: 0.1
+Summary: Convert onnx to pytorch code.
+Home-page: http://www.github.com/fumihwh
+Author: fumihwh
+Author-email: fumihwh@gmail.com
+License: Apache 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
