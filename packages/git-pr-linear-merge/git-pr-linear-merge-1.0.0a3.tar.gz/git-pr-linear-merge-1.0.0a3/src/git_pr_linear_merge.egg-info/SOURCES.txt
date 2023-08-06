@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/git_pr_linear_merge/__init__.py
+src/git_pr_linear_merge/auth.py
+src/git_pr_linear_merge/cfg.py
+src/git_pr_linear_merge/logger.py
+src/git_pr_linear_merge/main.py
+src/git_pr_linear_merge.egg-info/PKG-INFO
+src/git_pr_linear_merge.egg-info/SOURCES.txt
+src/git_pr_linear_merge.egg-info/dependency_links.txt
+src/git_pr_linear_merge.egg-info/entry_points.txt
+src/git_pr_linear_merge.egg-info/requires.txt
+src/git_pr_linear_merge.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+[console_scripts]
+git-pr = git_pr_linear_merge.main:run
+
