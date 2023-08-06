@@ -1,0 +1,25 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+FastFD.egg-info/PKG-INFO
+FastFD.egg-info/SOURCES.txt
+FastFD.egg-info/dependency_links.txt
+FastFD.egg-info/requires.txt
+FastFD.egg-info/top_level.txt
+docs/examples/Heat Conduction.ipynb
+docs/examples/Shoreline Waves .ipynb
+docs/examples/Transient Wave.ipynb
+docs/examples/heat_conduction_sketch.svg
+docs/readme/example_result.png
+docs/readme/heat_conduction_result.png
+docs/readme/shoreline_waves_result.png
+docs/readme/transient_wave_result.png
+fastfd/__init__.py
+fastfd/_axis.py
+fastfd/_discretizedscalar.py
+fastfd/_fdmodel.py
+fastfd/_modelmatrix.py
+fastfd/_scalar.py
+fastfd/_utils.py
