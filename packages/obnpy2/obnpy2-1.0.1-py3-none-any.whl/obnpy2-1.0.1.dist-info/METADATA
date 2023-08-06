@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: obnpy2
+Version: 1.0.1
+Summary: Python client library for OpenBuildNet
+Home-page: https://github.com/nxt-lab/obnpy
+Author: nxtruong
+Author-email: truong.nghiem@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+
+UNKNOWN
+
+
