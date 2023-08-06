@@ -1,0 +1,10 @@
+README.md
+setup.py
+bntranslit/__init__.py
+bntranslit/bntransliteration.py
+bntranslit/utils.py
+bntranslit.egg-info/PKG-INFO
+bntranslit.egg-info/SOURCES.txt
+bntranslit.egg-info/dependency_links.txt
+bntranslit.egg-info/requires.txt
+bntranslit.egg-info/top_level.txt
