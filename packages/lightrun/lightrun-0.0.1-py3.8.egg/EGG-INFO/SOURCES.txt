@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+lightrun/__init__.py
+lightrun/__main__.py
+lightrun.egg-info/PKG-INFO
+lightrun.egg-info/SOURCES.txt
+lightrun.egg-info/dependency_links.txt
+lightrun.egg-info/top_level.txt
