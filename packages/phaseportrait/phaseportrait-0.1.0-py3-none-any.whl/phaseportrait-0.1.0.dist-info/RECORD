@@ -1,0 +1,14 @@
+phaseportrait/PhasePortrait2D.py,sha256=ESMHO9VxuttiAdPdg9JMD6MwtgdAe5gY_kODQRGxdjY,4604
+phaseportrait/Trajectories3D.py,sha256=W5XJRvUk5IZic40VRkHqQa6czL8OMETH-yWjmOa5nWg,10211
+phaseportrait/__init__.py,sha256=3zr1-YkztjTnLS3zfk-VmqRBnsZI182i8NK4Gs8bp8g,85
+phaseportrait/sliders.py,sha256=mdsTtr67mYJWMkcrWTXxHuqnBVg7X5Lnqid70y7wd0Y,1197
+phaseportrait/exceptions/__init__.py,sha256=7eZhVNKauQDWTPSjlzufEtEwubsVVhRfdATjPG0YfqE,24
+phaseportrait/exceptions/exceptions.py,sha256=hAZOTY0Jnnt3FMT_Gan29KYRY7U2E_xhEWaLJAACwWU,987
+phaseportrait/utils/__init__.py,sha256=2VTD32PuV8sQo4EAryCs2xYJgsTXpm13xFKqdeXQMq8,19
+phaseportrait/utils/utils.py,sha256=1rw0oFocifuxU-4hT157zTr_JO7oIqYfFmaeNQsXxrw,1859
+phaseportrait-0.1.0.data/scripts/retratodefases-exe,sha256=6ULCITK6uV59tM8SgD75TE_ISQCoVImA2aJ93FSlZ08,58
+phaseportrait-0.1.0.dist-info/LICENSE,sha256=MElXkxz5rj_JtjRHubkGhcGti7sRVLPWp1tA7ZzqPn8,1084
+phaseportrait-0.1.0.dist-info/METADATA,sha256=eHnrWz1thumq4IXchmWZMoA9qCGtOdrB6cckVDRI5Ds,4324
+phaseportrait-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+phaseportrait-0.1.0.dist-info/top_level.txt,sha256=FlCN_Y9UWW00hQGRsxRPfOqckg2lCzdYq5KsVcdelwQ,14
+phaseportrait-0.1.0.dist-info/RECORD,,
