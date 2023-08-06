@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: treeshake
+Version: 0.1.0
+Summary: Remove unused css in Python projects with C-powered tree shaking.
+License: MIT
+Author: j.veldhuis
+Author-email: job@baukefrederik.me
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: beautifulsoup4 (>=4.9.3,<5.0.0)
+Requires-Dist: build
+Requires-Dist: cssutils (>=2.2.0,<3.0.0)
