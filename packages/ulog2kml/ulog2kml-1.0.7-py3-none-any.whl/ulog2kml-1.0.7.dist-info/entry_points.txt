@@ -1,0 +1,3 @@
+[console_scripts]
+ulog_to_kml = ulog2kml.__main__:main
+
