@@ -1,0 +1,3 @@
+[console_scripts]
+linedrive.py = linedrive:main
+
