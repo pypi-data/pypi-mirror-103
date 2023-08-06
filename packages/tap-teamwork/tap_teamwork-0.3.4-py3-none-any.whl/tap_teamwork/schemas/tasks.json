@@ -1,0 +1,205 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer"
+        },
+        "canComplete": {
+            "type": "boolean"
+        },
+        "comments-count": {
+            "type": "integer"
+        },
+        "description": {
+            "type": "string"
+        },
+        "has-reminders": {
+            "type": "boolean"
+        },
+        "has-unread-comments": {
+            "type": "boolean"
+        },
+        "private": {
+            "type": "integer"
+        },
+        "content": {
+            "type": "string"
+        },
+        "order": {
+            "type": "integer"
+        },
+        "project-id": {
+            "type": "integer"
+        },
+        "project-name": {
+            "type": "string"
+        },
+        "todo-list-id": {
+            "type": "integer"
+        },
+        "todo-list-name": {
+            "type": "string"
+        },
+        "tasklist-private": {
+            "type": "boolean"
+        },
+        "tasklist-isTemplate": {
+            "type": "boolean"
+        },
+        "status": {
+            "type": "string"
+        },
+        "company-name": {
+            "type": "string"
+        },
+        "company-id": {
+            "type": "integer"
+        },
+        "creator-id": {
+            "type": "integer"
+        },
+        "creator-firstname": {
+            "type": "string"
+        },
+        "creator-lastname": {
+            "type": "string"
+        },
+        "updater-id": {
+            "type": "integer"
+        },
+        "updater-firstname": {
+            "type": "string"
+        },
+        "updater-lastname": {
+            "type": "string"
+        },
+        "completed": {
+            "type": "boolean"
+        },
+        "start-date": {
+            "type": "string"
+        },
+        "due-date-base": {
+            "type": "string"
+        },
+        "due-date": {
+            "type": "string"
+        },
+        "created-on": {
+            "type": "string"
+        },
+        "last-changed-on": {
+            "type": "string"
+        },
+        "position": {
+            "type": "integer"
+        },
+        "estimated-minutes": {
+            "type": "integer"
+        },
+        "priority": {
+            "type": "string"
+        },
+        "progress": {
+            "type": "integer"
+        },
+        "harvest-enabled": {
+            "type": "boolean"
+        },
+        "parentTaskId": {
+            "type": "string"
+        },
+        "lockdownId": {
+            "type": "string"
+        },
+        "tasklist-lockdownId": {
+            "type": "string"
+        },
+        "has-dependencies": {
+            "type": "integer"
+        },
+        "has-predecessors": {
+            "type": "integer"
+        },
+        "hasTickets": {
+            "type": "boolean"
+        },
+        "timeIsLogged": {
+            "type": "string"
+        },
+        "attachments-count": {
+            "type": "integer"
+        },
+        "assignedToTeams": {
+            "type": "array",
+            "additionalItems": true,
+            "items": {
+                "anyOf": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "teamId": {
+                                "type": "integer"
+                            },
+                            "teamName": {
+                                "type": "string"
+                            },
+                            "teamLogo": {
+                                "type": "string"
+                            },
+                            "teamLogoIcon": {
+                                "type": "string"
+                            },
+                            "teamLogoColor": {
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                ]
+            }
+        },
+        "responsible-party-summary": {
+            "type": "string"
+        },
+        "predecessors": {
+            "type": "array",
+            "additionalItems": true,
+            "items": {}
+        },
+        "attachments": {
+            "type": "array",
+            "additionalItems": true,
+            "items": {}
+        },
+        "canEdit": {
+            "type": "boolean"
+        },
+        "viewEstimatedTime": {
+            "type": "boolean"
+        },
+        "creator-avatar-url": {
+            "type": "string"
+        },
+        "canLogTime": {
+            "type": "boolean"
+        },
+        "commentFollowerIds": {
+            "type": "string"
+        },
+        "changeFollowerIds": {
+            "type": "string"
+        },
+        "userFollowingComments": {
+            "type": "boolean"
+        },
+        "userFollowingChanges": {
+            "type": "boolean"
+        },
+        "DLM": {
+            "type": "integer"
+        }
+    },
+    "additionalProperties": true
+}
