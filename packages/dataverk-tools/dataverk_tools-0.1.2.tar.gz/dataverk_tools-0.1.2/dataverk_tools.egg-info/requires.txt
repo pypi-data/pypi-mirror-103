@@ -1,0 +1,9 @@
+plotly
+altair
+statsmodels
+colorlover
+matplotlib
+numpy
+vega
+colorlover
+vega-datasets
