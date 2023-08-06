@@ -1,0 +1,14 @@
+twobodyproblem_gui/__init__.py,sha256=ZhzQKWZ8RFrTIkj7z87B144DI95e8LMfA5w8NDWQDtg,23
+twobodyproblem_gui/__main__.py,sha256=m7zuCUnl-qmyW55JLYld50SMybC4enmroNAOG0_mcJs,1468
+twobodyproblem_gui/entry.py,sha256=TGRWimjI8ZrNrI7k_lZgA3oV9xAN3tBYKyNSwbud8iA,9045
+twobodyproblem_gui/examples.py,sha256=GxGRAOfF9KfElURRLrYv25OCMva6Nh-gJlZ0MgxyINI,1812
+twobodyproblem_gui/settings.py,sha256=9NybjzuDh0tNX6gis5eGxcqc4DSQorLN8SxVzQ0Zdfw,6810
+twobodyproblem_gui/ui/entry.ui,sha256=B9M9jU22giavKEV_8p0mK1x-O96foJGR5s5xB85nyDk,17736
+twobodyproblem_gui/ui/examples.ui,sha256=6yRu2NF3WG1vm1xgAOeupy_mmRcRb2nXtpH-uDJTcWc,6168
+twobodyproblem_gui/ui/icon.gif,sha256=guJIpqvooE89qbH0MS_SAEFtUNtKNFpH31DEis4cQ1I,310356
+twobodyproblem_gui/ui/settings.ui,sha256=SD4QIahAmRk4mrh_ALBL_rW3Nw8yavIG4eBnv_BpkTw,19502
+twobodyproblem_gui-1.0.0.dist-info/LICENSE.md,sha256=8bhRdwT9xu13zLYHqQn-89H1Hb9zIiNLqvuwurh04Q8,1102
+twobodyproblem_gui-1.0.0.dist-info/METADATA,sha256=_WI5zhID4RZWnquq6aSTmOYnNGEfYORnOPh06PEIAdI,4472
+twobodyproblem_gui-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+twobodyproblem_gui-1.0.0.dist-info/top_level.txt,sha256=QHepmXmCwZr-6ghTKM2VvlsZPOV686nohnwqh_196Ao,19
+twobodyproblem_gui-1.0.0.dist-info/RECORD,,
