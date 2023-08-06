@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: discord-ext-helpers
+Version: 1.0.0
+Summary: A collection of helpers to use with discord.py
+License: MIT
+Author: vcokltfre
+Author-email: vcokltfre@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: discord.py
