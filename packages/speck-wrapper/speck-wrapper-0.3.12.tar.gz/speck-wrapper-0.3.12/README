@@ -1,0 +1,40 @@
+Speck is a minimal wrapper and frontend for weatherAPI.com
+
+- GitHub - https://github.com/schctl/speck
+- Wiki - https://github.com/schctl/speck/wiki
+- Docs - https://speck.readthedocs.io/en/latest/
+- LGTM - https://lgtm.com/projects/g/schctl/speck/context:python
+
+Usage
+=====
+
+Installation
+------------
+Speck is packaged publicly on PyPi as `speck-wrapper` *(don't confuse with `speck`)*.
+
+    pip install speck-wrapper
+
+To install from source, first clone the repository.
+
+    git clone https://github.com/schctl/speck.git
+
+Then, from the root directory, run
+
+    pip install .
+
+GUI Frontend
+------------
+The `speck` library must be installed for this to work, in addition to requirements listed in `app/requirements.txt`.
+
+    pip install -r app/requirements.txt
+
+To run the speck app, run `main.py` under `app`.
+
+    cd app && python main.py
+
+The username and password entry screen is only intended as a dummy. To make the app ignore this,
+set the `SPECK_DEV` environment variable. The username and password are `11C` and `11c2021`.
+
+City Data
+=========
+City data is from [`cities.json`](https://github.com/lutangar/cities.json), and has been edited to remove irrelevant data.

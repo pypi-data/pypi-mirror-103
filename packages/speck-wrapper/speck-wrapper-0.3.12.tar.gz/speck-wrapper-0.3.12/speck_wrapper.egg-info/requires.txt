@@ -1,0 +1,8 @@
+requests
+
+[docs]
+sphinx
+sphinx-press-theme
+
+[tests]
+pytest
