@@ -1,0 +1,7 @@
+README.md
+setup.py
+ocitoollib.egg-info/PKG-INFO
+ocitoollib.egg-info/SOURCES.txt
+ocitoollib.egg-info/dependency_links.txt
+ocitoollib.egg-info/requires.txt
+ocitoollib.egg-info/top_level.txt
