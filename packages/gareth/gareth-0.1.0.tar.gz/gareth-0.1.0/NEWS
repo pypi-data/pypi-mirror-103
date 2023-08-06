@@ -1,0 +1,32 @@
+# Releases
+
+## gareth 0.1.0 - (2021-04-26)
+
+**New features:**
+
+ * Add the initial structure of the tool\
+   The initial structure of the tool is added. The tool is built using
+   click. The arguments are source, token, and the operation which can be
+   create or update. Usage: ``` $ gareth --help ```
+ * Add support for creating the dev environment\
+   The support for creating the developer environment is added. This
+   feature would automate most of the  process of the setup. It forks all
+   the grimoirelab repositories using the token and clones them to the
+   local machine into a  given source. Later, it sets the upstream to all
+   the repositories accordingly. Usage: ``` $ gareth -t xxxx -s sources
+   --create ```
+ * Add support for updating the dev environment\
+   The support for updating the developer environment is added. This
+   would be needed to update the repos by rebasing the latest changes
+   with the upstream. It would open each folder, changes to `master`
+   branch, and rebase the changes with the upstream. Usage: ``` $ gareth
+   -s sources --update ```
+
+**Bug fixes:**
+
+ * Fix the token not found bug during `create`\
+   The token is required if you are creating the dev setup but not
+   required for updating. So, it was marked not required. But, the create
+   operation terminates abruptly is the token is missing. This code
+   covers the exception and shows info about adding the token.
+
