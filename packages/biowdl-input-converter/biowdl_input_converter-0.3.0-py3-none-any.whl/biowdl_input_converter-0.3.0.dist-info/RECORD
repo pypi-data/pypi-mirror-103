@@ -1,0 +1,11 @@
+biowdl_input_converter/__init__.py,sha256=28Xg7hm3EOhi3kK9HiiQribqviCO8WXDnWikhLTn7MA,5851
+biowdl_input_converter/input_conversions.py,sha256=R_MUhuzgzPwzLDr5l4pxh9KpuJ9_Nh_NQthh9bJkgD8,5288
+biowdl_input_converter/output_conversions.py,sha256=mEguWDqLXjV0EJ3k-sjeXo747iyjH3V_eL6SqU9xZnw,4850
+biowdl_input_converter/samplestructure.py,sha256=4E4Ycf-gAQAw7byDvylAsO520pZg2JmWMtmpJUpiF7E,7417
+biowdl_input_converter/utils.py,sha256=WO9GM6CB1lA8T8sMhX5Bd-HnWCA_U9lMkQD3GnH8bgk,4813
+biowdl_input_converter-0.3.0.dist-info/LICENSE,sha256=hKw_AmglUd5D41AOCWsp9Xf6yjUnQ7NVl1izRDaLWtw,1089
+biowdl_input_converter-0.3.0.dist-info/METADATA,sha256=-003-GnM6ABncy-FeRSV3uKAUtoNrfSznHXypadZURg,2171
+biowdl_input_converter-0.3.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+biowdl_input_converter-0.3.0.dist-info/entry_points.txt,sha256=oINbtLEScaPj71_gDljQnf8S1BlSLS83fOVsh6aQrBw,72
+biowdl_input_converter-0.3.0.dist-info/top_level.txt,sha256=unjiQkU_kICDrSFoyu2FIqzkB3THeZkHLsP2_q1zD5E,23
+biowdl_input_converter-0.3.0.dist-info/RECORD,,
