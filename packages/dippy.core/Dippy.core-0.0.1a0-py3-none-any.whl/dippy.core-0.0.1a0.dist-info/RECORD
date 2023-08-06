@@ -1,0 +1,10 @@
+dippy/core/__init__.py,sha256=84Kv6k90wW1YP_JjKwNAe2iDIWgpRjtttL1Ckkdv9d4,191
+dippy/core/gateway/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dippy/core/gateway/connection.py,sha256=n-BYznVQMZmhjzg7Wg9Q7pJ-GJs6sfGRnMqtTtt5bKg,7223
+dippy/core/gateway/heartbeat.py,sha256=W_iFC3Nv-nClh1MSSmjOGO2sg43q3tLgsWWu8wv20lE,2719
+dippy/core/gateway/payload.py,sha256=1yIChcC3-pPQox_UPJcoaE4bjAzTvcAzF_rb3qIZOGQ,306
+dippy/core/intents.py,sha256=i_k-_fCMRPUXWBhcZDeA0N8-w8Rjr6VpZK19mwaUoJQ,1274
+dippy.core-0.0.1a0.dist-info/LICENSE,sha256=JnpmFHGtncdHGBgAQPR8vKICZwkfgANkWfJGfr55lcs,1076
+dippy.core-0.0.1a0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+dippy.core-0.0.1a0.dist-info/METADATA,sha256=_UYh4plJFQZXXEktsyvRS58aCEPHCRnwWxoZRjts-j8,455
+dippy.core-0.0.1a0.dist-info/RECORD,,
