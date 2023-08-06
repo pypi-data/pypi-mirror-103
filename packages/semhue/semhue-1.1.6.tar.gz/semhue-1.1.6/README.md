@@ -1,0 +1,39 @@
+# semhue
+Python package for Phillips Hue lights
+
+<img src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"/> <img src = "https://img.shields.io/github/license/Devansh3712/PySQL?style=for-the-badge">
+
+## Installation
+
+> Windows
+
+```console
+pip install semhue
+```
+
+> Linux/MacOS
+
+```console
+pip3 install semhue
+```
+
+## Usage
+
+```python
+import semhue
+from semhue import *
+```
+
+## Available commands
+
+- `semhue.turn_lights_on(room_name, IP_ADDRESS)`: switch on the lights of a room
+- `semhue.turn_lights_off(room_name, IP_ADDRESS)`: switch off the lights of a room
+- `semhue.random_color(room_name, IP_ADDRESS)`: switch light color of a room to a random color
+- `semhue.change_color(room_name, color, IP_ADDRESS)`: switch light colors of a room from available colors
+- `semhue.loop_all_colors(room_name, IP_ADDRESS)`: loop through all the available colors in a room
+- `semhue.available_colors()`: prints all available colors
+- `semhue.set_brightness(room_name, brightness, IP_ADDRESS)`: set custom brightness for lights in a room
+- `semhue.get_rooms(IP_ADDRESS)`: get all the rooms associated to an IP address
+
+## License
+MIT LICENSE
