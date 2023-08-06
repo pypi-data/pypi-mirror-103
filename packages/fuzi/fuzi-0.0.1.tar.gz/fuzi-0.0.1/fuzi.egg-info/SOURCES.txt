@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+fuzi/__init__.py
+fuzi/version.py
+fuzi.egg-info/PKG-INFO
+fuzi.egg-info/SOURCES.txt
+fuzi.egg-info/dependency_links.txt
+fuzi.egg-info/entry_points.txt
+fuzi.egg-info/requires.txt
+fuzi.egg-info/top_level.txt
+fuzi.egg-info/zip-safe
+fuzi/shell/__init__.py
+fuzi/shell/usage.py

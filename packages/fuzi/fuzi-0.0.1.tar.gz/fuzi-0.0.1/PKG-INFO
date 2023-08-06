@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: fuzi
+Version: 0.0.1
+Summary: 🤖️ 夫子：一个中文聊天机器人。
+Home-page: https://github.com/Ailln
+Author: Ailln
+Author-email: kinggreenhall@gmail.com
+License: MIT License
+Description: # FUZI
+        
+        🤖️ 夫子：一个中文聊天机器人。
+        
+        ## 许可
+        
+        [![](https://award.dovolopor.com?lt=License&rt=MIT&rbc=green)](./LICENSE)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

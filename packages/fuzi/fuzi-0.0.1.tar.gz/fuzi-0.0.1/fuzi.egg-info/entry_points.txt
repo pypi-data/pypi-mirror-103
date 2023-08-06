@@ -1,0 +1,3 @@
+[console_scripts]
+fuzi = fuzi.shell:run
+
