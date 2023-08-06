@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: universities-exercise-api-v1
+Version: 0.0.3
+Summary: A simple api for working with universities data
+Home-page: https://github.com/omerl2322/pip_package_exercise
+Author: Omer Levy
+Author-email: omerl2322@gmail.com
+License: MIT
+Description: # Universities exercise api
+        This is an exercise project to test pip packaging capability
+        
+        ###Installation
+        
+        Run the following to install:
+        
+        pip install universities-exercise-api-v1
+        
+        ###Usage
+        from universities_api import get_universities
+        
+        Generate universities list:
+        
+        universities= get_universities(url)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
