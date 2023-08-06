@@ -1,0 +1,6 @@
+celery_bundle/__init__.py,sha256=V0pZih7KMrqAUHZBIPq08poDRxI8QE2iX5tP0wpHPNY,159
+celery_bundle/bundle.py,sha256=maribdwPtfr8oMw49cZGTXz99V5wd6NwEMmRu_T3ajk,4387
+celery_bundle-2.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+celery_bundle-2.0.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+celery_bundle-2.0.0.dist-info/METADATA,sha256=pr7kgfTUIyDIibidwExGeUSMcxf_kB9qd4rL_wiMtjo,481
+celery_bundle-2.0.0.dist-info/RECORD,,
