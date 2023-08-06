@@ -1,0 +1,22 @@
+UNIT:
+  MASS: "kg"
+  RADIUS: "m"
+  DISTANCE: "m"
+
+Sun:
+  mass: 1.989e+30
+  radius: 6.9634e+8
+Earth:
+  mass: 5.972e+24
+  radius: 6.371e+6
+Moon:
+  mass: 7.342e+22
+  radius: 1.737e+6
+Sputnik2:
+  mass: 5.0e+2
+  radius: 2.0e+0
+
+distance:
+  AU: 1.496e+11
+  EarthMoon: 3.844e+8
+  EarthSat: 1.0e+6
