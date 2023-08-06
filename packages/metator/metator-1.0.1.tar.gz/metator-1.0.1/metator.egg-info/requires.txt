@@ -1,0 +1,10 @@
+biopython
+docopt
+networkx
+numpy
+pandas
+pyfastx
+pysam
+requests
+scipy
+sklearn
