@@ -1,0 +1,10 @@
+holdingsparser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+holdingsparser/__main__.py,sha256=mQY4k7LgKJlJohajGXbLIqhN6iABYc6Pwjt8Q7Hpy6A,334
+holdingsparser/application.py,sha256=5RAZdk-_qrfuIfJpQuIdlhJDLYPPExiw84ESTk9ABZM,1211
+holdingsparser/scrape.py,sha256=uG5lLUHDb5N5DF7nLv4_XwIrTpu2xiqFTCZJvXiDH9w,3662
+holdingsparser/sec.py,sha256=1B6wMgjESqbVXWJJEXyWWWl3yqxawzzAULTtBGOV-Rc,1054
+xslfiles/13F-HR.xsl,sha256=gRRTkLRm5kJZ-t90FEsEHAOWrEMHWJ2YFmSoipZ5COI,1579
+holdingsparser-0.1.0a0.dist-info/LICENSE,sha256=JCYWoTTos7O6HNMxScZKI5y97bfn8ZBREWSqYrKRI-g,1076
+holdingsparser-0.1.0a0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+holdingsparser-0.1.0a0.dist-info/METADATA,sha256=ve3MM2EKVjkXyCbh207iaZjZesrQCgYN-waHvtT_Q18,485
+holdingsparser-0.1.0a0.dist-info/RECORD,,
