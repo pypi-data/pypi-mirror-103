@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: gclassifier
+Version: 0.6
+Summary: Gender classifier module for python
+Home-page: https://github.com/dipghoshraj/Gender-classifer-module
+Author: Dip Ghosh
+Author-email: dipghoshraj@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: cvlib (==0.2.6)
+Requires-Dist: numpy (==1.19.5)
+Requires-Dist: opencv-python (==4.5.1.48)
+Requires-Dist: scipy (==1.6.1)
+Requires-Dist: tensorflow (==2.4.1)
+
+# GENDER-CLASSIFIER
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+
+Gender classifier is a python libary written over a classification model which can classify gender of the human inside the image
+  - Classify gender from a image
+  - Model train on tensorflow (CNN)
+
+
+#### Building for source
+First install gclassifier from pip:
+```sh
+>>> pip install gclassifier
+```
+
+
+### Run the drawing code:
+
+Step 1 :  Import module for classifier
+```
+>>> from gclassifier import image_classifier
+>>> import cv2
+```
+Step 2 :  Runn the classifier
+```
+>>> img = cv2.imread('7.jpg')
+>>> a = image_classifier(frame=img)
+['woman']
+```
+
+License
+----
+MIT
+
+PYPI MODULE
+----------------
+https://pypi.org/project/gclassifier/
+
+### NOTE :
+```
+This modlue have been inspired from - https://www.youtube.com/watch?v=WOuAI5DhHyU
+
+Author: Dip Ghosh
+email: dipghoshraj@gmail.com
+IOT and robotics developer with a handson experience in Software development and DevOps.
+```
+
+
+<!-- **Free Software, Yeah it's fucking truth!** -->
+
