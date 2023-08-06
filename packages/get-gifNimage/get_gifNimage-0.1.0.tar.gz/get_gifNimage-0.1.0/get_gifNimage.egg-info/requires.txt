@@ -1,0 +1,10 @@
+wget
+svglib
+reportlab
+IPython
+logging
+requests
+shutil
+collections
+json
+os
