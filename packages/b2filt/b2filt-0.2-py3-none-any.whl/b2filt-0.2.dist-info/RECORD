@@ -1,0 +1,10 @@
+b2filt/__init__.py,sha256=lw2hj6GbdjC9ZUdexMBDVNmSxUsMg-zL-k05zzBSBh4,2706
+b2filt/_version.py,sha256=-I24o2QAMnRzMAcmtNTUiTkDdqKvgocd5s9QzoANTZU,347
+b2filt/errorwriter.py,sha256=DFOE7Tzr7clF661ywA-4cbyySHJQyaEucuFcnKEVC5s,473
+b2filt/util.py,sha256=dBhJT97OQ64iPKVR1HuyYk4ieYPz0p_8P5mPdVdwaDY,1134
+b2filt-0.2.dist-info/LICENSE,sha256=yb_3VziSIZPmf6cm-iJVNYcNKqEFn5FFLEEXNihK1WY,1338
+b2filt-0.2.dist-info/METADATA,sha256=v15rY6YIhWy5YkvKsOq0APZyZxqMHDs900bGbLp1PmI,1301
+b2filt-0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+b2filt-0.2.dist-info/entry_points.txt,sha256=6-7tuXJm8pkKzqHKt7cTf7cu_cBn00SjcIDrik-bTCg,40
+b2filt-0.2.dist-info/top_level.txt,sha256=vt8Vfpqnc-3kMvWtxMDbjm-kGGAn4KRD_s4_MI7Dtlo,7
+b2filt-0.2.dist-info/RECORD,,
