@@ -1,0 +1,9 @@
+openqa_client/__init__.py,sha256=rn9MhH5MCK-FWMbcvTOFBkPzckBCctKLs6a_GlQ1eZs,782
+openqa_client/client.py,sha256=iv85deMslTCVW52pd8oLicz3X526TK4BbjAx3Fm6klU,12192
+openqa_client/const.py,sha256=3Mgshs2Llv1Np5JOlSXcG9DX7I57sC2m0HtcRaXyfNc,4324
+openqa_client/exceptions.py,sha256=v1PH1kcAm689fnj7Jp5rh_mJOfdlCAVvuTf7wTr4lC0,1193
+openqa_client-4.1.2.dist-info/COPYING,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+openqa_client-4.1.2.dist-info/METADATA,sha256=dNG0PUGSDB28OBcRUq9KKIzOX8PBxBCt8_U100N8lBs,3565
+openqa_client-4.1.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+openqa_client-4.1.2.dist-info/top_level.txt,sha256=5qtGQJdqctUR7mJE9CTZg0ym_TN9MZcB1qvb8C1r3V4,14
+openqa_client-4.1.2.dist-info/RECORD,,
