@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: sqliterunner
+Version: 0.1.0
+Summary: Simple script for making SQL Queries easier.
+Home-page: https://github.com/Pycryptor10/sqlite-runner
+Author: Pycryptor10
+Author-email: Pycryptor10@gmail.com
+License: GPL3
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# sqlite-runner
+Simple script for making basic SQLite Queries
+
+
