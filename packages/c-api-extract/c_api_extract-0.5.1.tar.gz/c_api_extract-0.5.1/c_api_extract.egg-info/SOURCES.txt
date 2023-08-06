@@ -1,0 +1,10 @@
+README.rst
+c_api_extract.py
+setup.cfg
+setup.py
+c_api_extract.egg-info/PKG-INFO
+c_api_extract.egg-info/SOURCES.txt
+c_api_extract.egg-info/dependency_links.txt
+c_api_extract.egg-info/entry_points.txt
+c_api_extract.egg-info/requires.txt
+c_api_extract.egg-info/top_level.txt

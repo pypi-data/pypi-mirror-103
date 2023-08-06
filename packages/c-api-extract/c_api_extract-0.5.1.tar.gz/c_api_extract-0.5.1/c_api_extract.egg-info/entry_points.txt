@@ -1,0 +1,3 @@
+[console_scripts]
+c_api_extract = c_api_extract:main
+
