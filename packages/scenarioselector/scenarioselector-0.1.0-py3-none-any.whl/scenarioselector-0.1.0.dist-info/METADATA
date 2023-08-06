@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: scenarioselector
+Version: 0.1.0
+Summary: An algorithm to select scenarios from a data set to hit a target
+Home-page: https://github.com/markpowen/ScenarioSelectorPython
+Author: Mark Philip Owen
+Author-email: mark.p.owen@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/markpowen/ScenarioSelectorPython/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Scenario Selector
+
+The scenario selector algorithm selects the largest subset of observations from a (possibly weighted) data set, such that either the weighted sum or the weighted mean of the reduced data set hits an input target.
+
+
