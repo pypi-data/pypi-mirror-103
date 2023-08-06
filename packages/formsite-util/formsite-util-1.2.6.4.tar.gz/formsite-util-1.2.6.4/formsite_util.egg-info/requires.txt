@@ -1,0 +1,9 @@
+asyncio
+aiofiles
+aiohttp
+openpyxl
+pandas
+python_dateutil
+pytz
+regex
+tqdm
