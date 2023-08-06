@@ -1,0 +1,10 @@
+MammothAnalytics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+MammothAnalytics/const.py,sha256=qY5H2G-OptkJ7T1Md9uwvU1SSJvw-E0mWVZusJUSW0Q,2122
+MammothAnalytics/errors.py,sha256=j0L5nX1-RFRE29TaQvPTWndlzWvB7grumfJEhpJQU_E,933
+MammothAnalytics/mammoth.py,sha256=kueeeQpF5Vi7Q5-KKbVdasKxZknOjPoSwe1sJRZlvyo,39344
+MammothAnalytics/urls.py,sha256=KTF4DG-fIyTezv1RoyzcQNmqUtAztqJpTSo-PQ-pUlk,294
+MammothAnalytics/utils.py,sha256=zNck5ERbm4WCF1LghIfGwZ4gkaTs3_bOpr38jrBDFs8,89
+mammoth_analytics_sdk-1.0.34.dist-info/METADATA,sha256=ssdEcYHY0PdbZFEZbd0Jia23hqztmBPr4I4WZN6lGec,1388
+mammoth_analytics_sdk-1.0.34.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mammoth_analytics_sdk-1.0.34.dist-info/top_level.txt,sha256=pyP9_R5VN928QbIRCP5HXA5gBhWo-8aJ3JpUSQeqfWI,17
+mammoth_analytics_sdk-1.0.34.dist-info/RECORD,,
