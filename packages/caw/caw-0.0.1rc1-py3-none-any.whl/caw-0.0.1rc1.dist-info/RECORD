@@ -1,0 +1,14 @@
+caw/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+caw/__main__.py,sha256=4KjHktX2YZsE3VDbU_qqjUhKktOB-0dMLv4WIzxZnKg,4585
+caw/upload.py,sha256=bTUPvSdtQ4k_ndT6ct4JuB2KU4q7o3P-KjkRsaNl8xk,1636
+chrisclient2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chrisclient2/chrisclient.py,sha256=--qzO7gNyXTOQ5R10iXWlPs1gZ4MQfpAntwqjk3YsqU,5906
+chrisclient2/models.py,sha256=hhq0z2n_vNLS0HxdkiBvsyB7_I-zXpqvf6dNg3bdOEg,6659
+chrisclient2/test_chrisclient.py,sha256=y16NiewE1LO2exnZPvNWqBVbHxUICYpcS1NE7UNT0-8,1862
+chrisclient2/util.py,sha256=VoO25DhEpENOEbo_znjP3AbynftH6fK6vpl4N8A5G3c,266
+caw-0.0.1rc1.dist-info/LICENSE,sha256=2WwNneqInhHYVq8VP0EUZ1wlRrtmKdbSrcNjeeaM_5o,1080
+caw-0.0.1rc1.dist-info/METADATA,sha256=btrtoxJakM9KRMmNOHw1-H9O0r-jOtO4vQKBIDgb1Dw,3536
+caw-0.0.1rc1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+caw-0.0.1rc1.dist-info/entry_points.txt,sha256=wJ-W-rCIt59x9VaRYOiJcIdtr1rQmKl1ZASBpNFj7fc,42
+caw-0.0.1rc1.dist-info/top_level.txt,sha256=xaZuZK1uUGqKa1rF7D9WvBpq3WikCheaHMf4C_DR6vI,17
+caw-0.0.1rc1.dist-info/RECORD,,
