@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        drode=drode.entrypoints.cli:cli
+    

@@ -1,0 +1,7 @@
+argcomplete
+boto3
+ruamel.yaml
+mypy_extensions
+requests
+tabulate
+Click
