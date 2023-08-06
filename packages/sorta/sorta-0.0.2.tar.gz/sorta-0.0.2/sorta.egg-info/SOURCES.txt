@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+sorta
+sorta.egg-info/PKG-INFO
+sorta.egg-info/SOURCES.txt
+sorta.egg-info/dependency_links.txt
+sorta.egg-info/requires.txt
+sorta.egg-info/top_level.txt
