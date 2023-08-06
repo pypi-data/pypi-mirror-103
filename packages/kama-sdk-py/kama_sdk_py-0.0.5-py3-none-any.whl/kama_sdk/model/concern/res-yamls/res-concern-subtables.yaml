@@ -1,0 +1,22 @@
+kind: ConcernTable
+inherit: sdk.concern.resource_tables.pods_no_deployment
+concern_constructors:
+  kind: ResourcesSupplier
+  inherit: sdk.supplier.concern.resource_selector_to_constructors
+  selector:
+    kind: ResourceSelector
+    res_kind: Pod
+    match_labels: get::props kat_res=>pod_select_labels
+
+---
+
+kind: ConcernTable
+inherit: sdk.concern.resource_tables.events
+concern_constructors:
+  kind: ResourcesSupplier
+  inherit: sdk.supplier.concern.resource_selector_to_constructors
+  selector:
+    kind: ResourceSelector
+    res_kind: Event
+    match_labels: get::props kat_res=>pod_select_labels
+

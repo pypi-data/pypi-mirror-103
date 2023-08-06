@@ -1,0 +1,29 @@
+kind: ConcernTable
+id: sdk.concern.resource_tables.pods
+title: Pods
+concern_shell: id::sdk.concern.pod
+concern_constructors:
+  kind: ResourcesSupplier
+  inherit: sdk.supplier.concern.resource_selector_to_constructors
+  selector: "expr::pods:*"
+columns:
+  - id::sdk.concern_attr.res.name_with_link_action
+  - id::sdk.concern_attr.pod.deployment_name_and_link
+  - id::sdk.concern_attr.res.ternary_status
+  - id::sdk.concern_attr.pod.phase
+  - id::sdk.concern_attr.res.created_at
+
+---
+
+kind: ConcernTable
+id: sdk.concern.resource_tables.services
+title: Pods
+concern_shell: id::sdk.concern.service
+concern_constructors:
+  kind: ResourcesSupplier
+  inherit: sdk.supplier.concern.resource_selector_to_constructors
+  selector: "expr::services:*"
+columns:
+  - id::sdk.concern_attr.res.name_with_link_action
+  - id::sdk.concern_attr.res.ternary_status
+  - id::sdk.concern_attr.res.created_at

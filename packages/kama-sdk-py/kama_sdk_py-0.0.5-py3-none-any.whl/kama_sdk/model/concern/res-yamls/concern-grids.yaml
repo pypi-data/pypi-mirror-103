@@ -1,0 +1,36 @@
+kind: ConcernGrid
+
+cards:
+  - adapter_ref: kind::SomeAdapter
+    seed: something
+
+concern_constructors:
+  - type: Website
+  - type: deployments
+    kat_res: foo
+
+---
+
+kind: ConcernGrid
+id: my-dep-card
+
+cards:
+  kind: ResourcesSupplier
+  selector: "expr::deployments:*"
+  serializer: legacy
+  output:
+    adapter_ref: kind::SomeAdapter
+    seed:
+      res_name: name
+      res_kind: kind
+      namespace: namespace
+
+
+---
+
+
+kind: ConcernPage
+id: dep
+match_constructors:
+  res_kind: deployment
+concern: id::sdk.concern.deployment
