@@ -1,0 +1,16 @@
+aiida-core~=1.1
+sqlalchemy<1.4
+pycifrw~=4.2
+pymatgen
+voluptuous
+
+[pre-commit]
+pre-commit~=2.2
+pylint~=2.5.0
+
+[testing]
+pgtest>=1.3.1,~=1.3
+pytest~=6.0
+pytest-cov~=2.7
+coverage
+ase~=3.15
