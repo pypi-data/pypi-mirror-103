@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: cresto
+Version: 0.0.1
+Summary: A simple REST API wrapper
+Home-page: https://github.com/skelethon/cresto
+Author: skelethon
+License: GPL-3.0
+Download-URL: https://github.com/skelethon/cresto/downloads
+Description: UNKNOWN
+Keywords: sysops,devops,toolkit
+Platform: UNKNOWN
+Requires-Python: >=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*
