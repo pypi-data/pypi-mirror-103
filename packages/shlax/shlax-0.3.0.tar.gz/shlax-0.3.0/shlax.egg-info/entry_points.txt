@@ -1,0 +1,3 @@
+[console_scripts]
+shlax = shlax.cli:cli.entry_point
+
