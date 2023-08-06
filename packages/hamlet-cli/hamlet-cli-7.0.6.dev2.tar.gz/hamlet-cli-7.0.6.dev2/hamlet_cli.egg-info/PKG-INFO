@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: hamlet-cli
+Version: 7.0.6.dev2
+Summary: UNKNOWN
+Home-page: https://github.com/hamlet-io/executor-python
+Author: Hamlet
+License: UNKNOWN
+Description: # Hamlet Deploy - Cli
+        
+        This is a python-based CLI for the Hamlet Deploy application. It acts as the primary interface to Hamlet Deploy, its Plugins and Extensions.
+        
+        See https://docs.hamlet.io for more info on Hamlet Deploy
+        
+Platform: UNKNOWN
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Java
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
