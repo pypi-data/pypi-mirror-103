@@ -1,0 +1,13 @@
+Flask>=0.11.0
+
+[bpython]
+bpython
+
+[ipython]
+ipython
+
+[ptipython]
+ptipython
+
+[ptpython]
+ptpython

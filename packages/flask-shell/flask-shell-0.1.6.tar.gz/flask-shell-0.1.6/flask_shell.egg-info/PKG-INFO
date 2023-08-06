@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: flask-shell
+Version: 0.1.6
+Summary: Flask extension to improve shell command for the Flask CLI.
+Home-page: https://github.com/Junnplus/flask-shell
+Author: Junnplus
+Author-email: junnplus@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: ipython
+Provides-Extra: bpython
+Provides-Extra: ptpython
+Provides-Extra: ptipython
