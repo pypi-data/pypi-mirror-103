@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "graiax-sayamod-jx3game-qiyu"
+version = "0.1.0"
+description = "A graiax saya mod which is a Jx3 Qiyu Random Collection Game(剑侠情缘网络版三奇遇随机收集游戏) based on group text."
+authors = ["CowHeadKick <dxzenghan@163.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+graia-application-mirai = "^0.17.0"
+graia-broadcast = "^0.7.0"
+pony = "^0.7.14"
+graia-scheduler = "^0.0.4"
+graia-saya = "^0.0.9"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
