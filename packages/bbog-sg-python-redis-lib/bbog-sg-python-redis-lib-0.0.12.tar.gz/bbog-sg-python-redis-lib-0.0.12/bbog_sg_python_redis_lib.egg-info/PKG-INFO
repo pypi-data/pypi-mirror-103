@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: bbog-sg-python-redis-lib
+Version: 0.0.12
+Summary: Python library to handle redis api
+Home-page: UNKNOWN
+Author: otacha@bancodebogota.com.co
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
