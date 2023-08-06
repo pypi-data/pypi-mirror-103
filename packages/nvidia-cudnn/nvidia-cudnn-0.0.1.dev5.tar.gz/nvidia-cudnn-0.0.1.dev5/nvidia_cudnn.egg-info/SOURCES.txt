@@ -1,0 +1,10 @@
+ERROR.txt
+LICENSE.md
+PACKAGE_NAME
+README.rst
+package_info.py
+setup.py
+nvidia_cudnn.egg-info/PKG-INFO
+nvidia_cudnn.egg-info/SOURCES.txt
+nvidia_cudnn.egg-info/dependency_links.txt
+nvidia_cudnn.egg-info/top_level.txt
