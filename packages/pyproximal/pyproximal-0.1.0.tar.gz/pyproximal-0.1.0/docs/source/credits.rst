@@ -1,0 +1,7 @@
+.. _credits:
+
+Contributors
+============
+
+*  `Matteo Ravasi <https://github.com/mrava87>`_, mrava87
+*  `Nick Luiken <https://github.com/NickLuiken>`_, NickLuiken

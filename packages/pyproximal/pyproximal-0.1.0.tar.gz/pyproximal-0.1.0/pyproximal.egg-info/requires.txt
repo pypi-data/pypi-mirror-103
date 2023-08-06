@@ -1,0 +1,7 @@
+numpy>=1.15.0
+scipy
+pylops
+
+[advanced]
+llvmlite
+numba
