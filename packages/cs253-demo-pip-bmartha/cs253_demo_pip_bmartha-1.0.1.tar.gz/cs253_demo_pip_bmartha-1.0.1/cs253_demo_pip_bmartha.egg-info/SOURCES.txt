@@ -1,0 +1,7 @@
+README.md
+setup.py
+cs253_demo_pip_bmartha.egg-info/PKG-INFO
+cs253_demo_pip_bmartha.egg-info/SOURCES.txt
+cs253_demo_pip_bmartha.egg-info/dependency_links.txt
+cs253_demo_pip_bmartha.egg-info/requires.txt
+cs253_demo_pip_bmartha.egg-info/top_level.txt
