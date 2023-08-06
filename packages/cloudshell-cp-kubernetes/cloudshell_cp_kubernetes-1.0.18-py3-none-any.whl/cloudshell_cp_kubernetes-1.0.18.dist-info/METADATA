@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: cloudshell-cp-kubernetes
+Version: 1.0.18
+Summary: Quali kubernetes specific package
+Home-page: http://www.qualisystems.com/
+Author: QualiSystems
+Author-email: info@qualisystems.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: ~=3.7
+Requires-Dist: setuptools (>=40.0)
+Requires-Dist: cloudshell-shell-core (<6.0.0,>=5.0.3)
+Requires-Dist: cloudshell-cp-core (<3.0.0,>=2.0.0)
+Requires-Dist: cloudshell-shell-standards (<2.0,>=1.0)
+Requires-Dist: cloudshell-shell-flows (<2,>=1.0)
+Requires-Dist: kubernetes (==12.0.1)
+Requires-Dist: boto3 (==1.16.42)
+Requires-Dist: dnspython
+
+UNKNOWN
+
+
