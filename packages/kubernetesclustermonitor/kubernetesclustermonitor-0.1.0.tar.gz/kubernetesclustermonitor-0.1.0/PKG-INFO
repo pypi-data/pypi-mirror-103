@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: kubernetesclustermonitor
+Version: 0.1.0
+Summary: 
+Author: kkugler
+Author-email: kaikugler@gmx.de
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: requests (>=2.25.1,<3.0.0)
