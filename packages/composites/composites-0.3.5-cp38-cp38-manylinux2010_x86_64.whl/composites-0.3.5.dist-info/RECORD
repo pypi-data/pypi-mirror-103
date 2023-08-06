@@ -1,0 +1,13 @@
+composites.libs/libgomp-f7e03b3e.so.1.0.0,sha256=GzmXB1qluHXQUhlsmNKuWncNm8Jezfq1jt5rKrV_8kQ,93080
+composites-0.3.5.dist-info/LICENSE,sha256=CF-lnKvB4UJUm3w-LhQXXXOlEjOOEb5aDgHRo4L_Dlc,1310
+composites-0.3.5.dist-info/METADATA,sha256=zr7rjPQKgk9VuvzHVF3W3fbHs_RAk8cfuvmE_gZgSWA,1205
+composites-0.3.5.dist-info/RECORD,,
+composites-0.3.5.dist-info/WHEEL,sha256=RIeRBYNNiNK3sXfnenIjXDrR2Tzyz05xCMpKF2hJ1iA,111
+composites-0.3.5.dist-info/top_level.txt,sha256=8rFKbL1In6cv0XBeSaI5uG5g6oe1tYJjAc1mLlAvhWU,11
+composites-0.3.5.data/data/LICENSE,sha256=CF-lnKvB4UJUm3w-LhQXXXOlEjOOEb5aDgHRo4L_Dlc,1310
+composites-0.3.5.data/data/README.md,sha256=RB9WfG4P6zflivWx83srryZv7sz6DZORh5TG-dN9zI4,1512
+composites-0.3.5.data/data/version.py,sha256=ThnCuF3X7rsQSd5PAea_jfYA70ZmhLvkFcLBxBPwZnY,22
+composites/utils.py,sha256=TUkd2brsClnY4h_3yPDn3n1_Jg2JFq57PWdD3Cmk4cQ,5967
+composites/core.cpython-38-x86_64-linux-gnu.so,sha256=Fy4w3qN8M1wRt02FZaCv8UeFCW-JQY0asSC1Yn_IquE,6004232
+composites/__init__.py,sha256=7bv423gyOBpVX4l0hvWylldEZy0PMrIgqoYpIFDUENI,1875
+composites/version.py,sha256=ThnCuF3X7rsQSd5PAea_jfYA70ZmhLvkFcLBxBPwZnY,22
