@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+pygitscrum/__init__.py
+pygitscrum.egg-info/PKG-INFO
+pygitscrum.egg-info/SOURCES.txt
+pygitscrum.egg-info/dependency_links.txt
+pygitscrum.egg-info/entry_points.txt
+pygitscrum.egg-info/not-zip-safe
+pygitscrum.egg-info/requires.txt
+pygitscrum.egg-info/top_level.txt
