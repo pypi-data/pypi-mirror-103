@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+aram/src/aram.py
+aram/src/aram_tools.py
+aram/src/aram.egg-info/PKG-INFO
+aram/src/aram.egg-info/SOURCES.txt
+aram/src/aram.egg-info/dependency_links.txt
+aram/src/aram.egg-info/requires.txt
+aram/src/aram.egg-info/top_level.txt
