@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: Amsync
+Version: 0.0.37
+Summary: An async library to easily create bots for the amino.
+Home-page: https://github.com/ellandor/Amsync
+Author: SempreLegit
+License: MIT
+Description: # Amsync
+        
+        Created with the aim that, anyone with basic knowledge of python, create any bot without much difficulty
+        <br>
+        <br>
+        
+        # Installation
+        
+        ```
+        pip install Amsync
+        ```
+        <br>
+        <br>
+        
+        # Update
+        
+        ```
+        pip install Amsync -U --force-reinstall --no-dps
+        ```
+        Or wait a while for a message to appear in the program and it will update itself
+        
+        <br>
+        <br>
+        
+        # Minimal example
+        
+        ```py
+        from amsync import Bot, Message
+        
+        
+        bot = Bot('email', 'password', prefix='/')
+        
+        @bot.on()
+        async def ready():
+            print('Ready')
+        
+        @bot.add()
+        async def hello(m: Message):
+            await bot.send(m.nickname)
+        
+        bot.run()
+        ```
+        **[Incredible documentation to create beautiful bots](https://github.com/ellandor/Amsync/blob/main/docs/docs.md)**
+Keywords: aminoapps,amino-py,amino,amino-bot,narvii,api,python,python3,python3.x,amino-async
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
