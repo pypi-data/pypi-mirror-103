@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: denodoclient
+Version: 1.0.1
+Summary: Thin high level client to use when consuming data through the Denodo proprietory ODBC driver.
+Home-page: https://github.com/dfds-data/denodoclient
+Author: Martin Morset
+Author-email: mamor@dfds.com
+License: MIT license
+Keywords: denodoclient
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+Requires-Dist: pyodbc (<5,>4)
+Provides-Extra: pandas
+Requires-Dist: pandas (<2,>1) ; extra == 'pandas'
+
+See https://github.com/dfds-data/denodoclient/
+
+
