@@ -1,0 +1,15 @@
+transferit/__init__.py,sha256=HMleButF07DaVjJONdvZ2HfeSjNXu-lpvIy24fji9jE,18
+transferit/__main__.py,sha256=MP4X03AeQ6qkfcxrqiz8XU6IudLO8VRjq_v8D-_24Fs,5409
+transferit/callbacks.py,sha256=9uDwOdNflqoWoil7QzRhSkKOxlf4SZmabwJKXkQWgxU,1021
+transferit/cli.py,sha256=3UpB_uQQkOBF8RJyDjEl-dkJOaaGf_J93LWjNU80pm4,1540
+transferit/exceptions.py,sha256=U9bV-6ywU35JyULpmQ7u5enMKmOaZYIYm8Uo1zVitfQ,100
+transferit/preparation.py,sha256=0CvQNuxiMpPFib2nXMzXcHdYe8-61abkydC1RiwlANk,2716
+transferit/training.py,sha256=KJM45ITOVtNQj0OvfzB6LvdSUgw5EoNnyXllO1WBtBw,5145
+transferit/version.py,sha256=ntVnLmW6SUpHtZPPTUqUS6NZHSQee6ZUdrnsoksKH-U,48
+transferit/wrapping.py,sha256=bUqA5zq7O0sQMfY8rMVPb6Srjs2F2_dnZTjEPuP0aMc,4076
+transferit-0.1.0.dist-info/LICENSE,sha256=Yjm3L_EqottLeF-X587zS4bvKfQSRSFDHDSE3AdM4e4,1079
+transferit-0.1.0.dist-info/METADATA,sha256=BFyTIV27F2O9QtF_ewkhcFWVUqMzT7uwDwZvQUdkIwo,6271
+transferit-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+transferit-0.1.0.dist-info/entry_points.txt,sha256=qng1HvstZrqrfsnxpJ3o4D64kwc9TRc7ylprM6kE3go,57
+transferit-0.1.0.dist-info/top_level.txt,sha256=oS-SsOuU52DlTv_rFPHbAJV2vNU9IZtcx_PKDYutX40,11
+transferit-0.1.0.dist-info/RECORD,,
