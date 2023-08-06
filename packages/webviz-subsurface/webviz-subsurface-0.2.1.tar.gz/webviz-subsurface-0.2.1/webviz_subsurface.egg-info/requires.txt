@@ -1,0 +1,26 @@
+dash>=1.11
+dash_bootstrap_components>=0.10.3
+dash-daq>=0.5.0
+defusedxml>=0.6.0
+fmu-ensemble>=1.2.3
+pandas>=1.1.5
+pillow>=6.1
+pyscal>=0.7.5
+scipy>=1.2
+statsmodels>=0.12.1
+webviz-config>=0.2.7
+webviz-subsurface-components>=0.4.2
+xtgeo>=2.14
+
+[:sys_platform == "linux"]
+ecl2df>=0.6.1
+opm>=2020.10.1
+
+[tests]
+selenium>=3.141
+pylint
+mypy
+mock
+black>=21.4b0
+bandit
+pytest-xdist
