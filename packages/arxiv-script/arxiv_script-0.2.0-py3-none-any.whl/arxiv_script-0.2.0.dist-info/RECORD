@@ -1,0 +1,12 @@
+LICENSE,sha256=smoHB7phDPRcSA_thYBsd_vvBsg9BQewtejp5QAq5HY,1068
+src/.env,sha256=JfS6K3Niex3Om93x-Qpc_yqwhMtUVkP8DUx01LJrLm8,41
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/article.py,sha256=WF_Dq43nLjqQATIxxghe6e9umophK86EH0nrtkTZ0XE,5768
+src/arxiv_script.py,sha256=-MxFHDEf_WepFg9eXMFHNFt6QRib-m60f9RSZS347f8,5335
+src/path_control.py,sha256=Tzu3vE_2B8SjtctIhOoBp6wq4uQYBymofWJa88poWbA,1950
+src/retrieve.py,sha256=NW8kzUNHIaKKXwpnR-D1a95TC-PKGZEKawEiT7gCnZE,3342
+arxiv_script-0.2.0.dist-info/entry_points.txt,sha256=pBv4Ctk8AmxGzOPYoxRJBrj5SHv8rxi3me7twAXKOOU,44
+arxiv_script-0.2.0.dist-info/LICENSE,sha256=smoHB7phDPRcSA_thYBsd_vvBsg9BQewtejp5QAq5HY,1068
+arxiv_script-0.2.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+arxiv_script-0.2.0.dist-info/METADATA,sha256=HzugQCEPW0mlcI1FWhgYH5LuW27nFSvFp-9ONS682QQ,8443
+arxiv_script-0.2.0.dist-info/RECORD,,
