@@ -1,0 +1,3 @@
+[console_scripts]
+hide = hidebehind.main:main
+
