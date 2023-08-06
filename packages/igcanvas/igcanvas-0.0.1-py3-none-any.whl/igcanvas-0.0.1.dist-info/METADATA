@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: igcanvas
+Version: 0.0.1
+Summary: Canvas Look for Instagram Image.
+Home-page: https://github.com/ngupuk/igcanvas
+Author: Ngupuk
+Author-email: wafax.4@gmail.com
+License: MIT
+Keywords: Python,image,editor
+Platform: any
+Classifier: Programming Language :: Python
+Requires-Python: >= 3.5.*
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow
+
+# IGCANVAS
+
+Simple Canvas Look for Instagram Feeds
+
+## Usage
+
+**example**
+
+```python
+import igcanvas
+
+igcanvas.genImage('example.jpg').save('out.jpg')
+
+```
+
+**result**
+
+|         before         |        after         |
+| :--------------------: | :------------------: |
+| ![](example/input.jpg) | ![](example/out.jpg) |
+
+
