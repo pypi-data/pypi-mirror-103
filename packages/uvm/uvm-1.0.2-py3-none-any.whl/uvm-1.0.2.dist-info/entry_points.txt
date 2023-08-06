@@ -1,0 +1,3 @@
+[console_scripts]
+uvm=uvm.main:app
+

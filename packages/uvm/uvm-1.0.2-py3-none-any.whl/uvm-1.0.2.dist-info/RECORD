@@ -1,0 +1,16 @@
+uvm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uvm/__main__.py,sha256=irt01TFqvA0XDuV5uG33_WyReuvzu5X3-P3hx-QfQN8,44
+uvm/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uvm/commands/build_command.py,sha256=nLpJRFTsju7IWaC1CbxqXUJfG7f0wd_P1IA6Wzfaq_g,1030
+uvm/commands/code_command.py,sha256=fVpuC6obSTyXso9nnzaa-q0QxItsclEyuY-0iF54rww,1018
+uvm/commands/major_command.py,sha256=0FvkfJIefXMnPQapxfQVcGVZwN3a-Sq3slfmsE0lEmo,1030
+uvm/commands/minor_command.py,sha256=16w8fBgU7waX68D9Ak4Fw-_2Q5c8A4bE0hhdNXZKUnw,1030
+uvm/commands/patch_command.py,sha256=14GZMivMkZokoTI2KerN-i4rnXH80HTilzNsm1iBca0,1030
+uvm/core.py,sha256=txAoVZYDw4H11zjkny9ohiNgoeTFTedaDDmkwU4YaLE,5006
+uvm/main.py,sha256=tiGgjPdg-fzqfrLFevE3Y_deYAUAuUEDEUPcJ1HnYVU,1549
+uvm/utils.py,sha256=2dJna9guAQQITFE33LoWbqMMn8WyLxRpw-btabGvHhU,440
+uvm-1.0.2.dist-info/entry_points.txt,sha256=XqFaT_5DoNEDXnnOCA5xIM1fl3vNSrCs5qHdZu_S6EE,36
+uvm-1.0.2.dist-info/LICENSE,sha256=A_ancvWD91ECydhLQ1StmMY1xVp3vt4AH9TI3Ot9nT0,1063
+uvm-1.0.2.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+uvm-1.0.2.dist-info/METADATA,sha256=hXiTPkpNamDu_iHZ_eFZVN8fG514iec4sTa9Qvs21xs,10238
+uvm-1.0.2.dist-info/RECORD,,
