@@ -1,0 +1,47 @@
+[data_extraction]
+is_all_step = true
+
+[data_extraction.keys_of_rows]
+isotope = ["Nuclide Density", "Total  "]
+radioactivity = ["Radioactivity", "Total  "]
+absorption = ["Absorption", "Total  "]
+fission = ["Fission", "Total  "]
+decay_heat = ["Decay Heat", "Total  "]
+gamma_spectra = ["Gamma-ray", "Total  "]
+
+
+[file_path]
+test_file_path = "./test"
+result_file_path = "./result"
+burnup_time_file_path = "./burnup time"
+
+
+[database]
+# 选择数据库（目前支持 mysql, postgresql, sqlite）
+chosen_db = "postgresql"
+
+[database.sqlite]
+path = "./data.sqlite"
+
+[database.mysql]
+user = "user"
+password = "password"
+url = "localhost"
+port = 3306
+dbname = "db"
+
+[database.postgresql]
+user = "user"
+password = "password"
+url = "localhost"
+port = 5432
+dbname = "db"
+
+
+[nuclide_list]
+# Np237 衰变链核素
+decay = ['Np237', 'Pa233', 'U233', 'Th229', 'Ra225', 'Ac225', 'Fr221', 'At217', 'Bi213', 'Po213', 'Tl209', 'Pb209', 'Bi209', 'Tl205']
+# UO2 裂变产物及轻核
+fission_light = ['U233', 'Ce142', 'Tc99', 'Nd144', 'I129', 'U238', 'Gd155', 'Am241', 'Pm149', 'Am242', 'Pr144', 'La139', 'Ba138', 'Np239', 'U236', 'I135', 'Cm242', 'Sm150', 'Sm149', 'Sn126', 'Y91', 'Np237', 'Eu153', 'Cm244', 'Pu239', 'Se79', 'Kr83', 'Xe136', 'Ag109', 'U234', 'Xe135', 'Ru101', 'Mo95', 'Pa233', 'U239', 'Sr90', 'Cs133', 'Sm147', 'Cs135', 'U235', 'Zr94']
+# short-lives nuclide, 燃耗主要核素，重点观察Cs134、Cm242、Cm244，短寿核素，尤其是第一燃耗步结果
+short_lives = ['Kr85', 'Kr85m1', 'Kr87', 'Kr88', 'Xe131m1', 'Xe133', 'Xe133m1', 'Xe135', 'Xe135m1', 'I130', 'I131', 'I132', 'I133', 'I134', 'I135', 'Rb86', 'Cs134', 'Cs136', 'Cs137', 'Cs138', 'Sb127', 'Te127', 'Te127m1', 'Te131m1', 'Te132', 'Mo99', 'Tc99m1', 'Ru103', 'Ru105', 'Rh105', 'Ru106', 'Sr89', 'Sr90', 'Sr91', 'Sr92', 'Ba139', 'Ba140', 'Ce141', 'Ce143', 'Ce144', 'Pu238', 'Pu239', 'Pu240', 'Pu241', 'Np239', 'Y90', 'Y91', 'Y92', 'Y93', 'Zr95', 'Nb95', 'Zr97', 'La140', 'La141', 'La142', 'Pr143', 'Nd147', 'Am241', 'Cm242', 'Cm244']
