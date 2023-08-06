@@ -1,0 +1,17 @@
+matplotlib
+scipy
+numpy
+getdist
+pathos
+astropy
+bokeh
+natsort
+six
+logging
+ast
+argparse
+bisect
+json
+fnmatch
+re
+datetime
