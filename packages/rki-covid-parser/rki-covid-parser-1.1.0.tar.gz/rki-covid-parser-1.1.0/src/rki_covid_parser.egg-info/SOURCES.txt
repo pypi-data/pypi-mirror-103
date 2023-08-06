@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/rki_covid_parser/__init__.py
+src/rki_covid_parser/const.py
+src/rki_covid_parser/parser.py
+src/rki_covid_parser.egg-info/PKG-INFO
+src/rki_covid_parser.egg-info/SOURCES.txt
+src/rki_covid_parser.egg-info/dependency_links.txt
+src/rki_covid_parser.egg-info/top_level.txt
+src/rki_covid_parser/model/__init__.py
+src/rki_covid_parser/model/country.py
+src/rki_covid_parser/model/district.py
+src/rki_covid_parser/model/state.py
