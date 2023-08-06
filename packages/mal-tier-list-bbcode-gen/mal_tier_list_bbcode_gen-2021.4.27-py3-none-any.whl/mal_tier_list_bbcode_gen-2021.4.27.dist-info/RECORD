@@ -1,0 +1,14 @@
+mal_tier_list_bbcode_gen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mal_tier_list_bbcode_gen/__main__.py,sha256=G64CR72jFtca7NrNdm1qJg43OfL6al8nRvH6fH93zCg,86
+mal_tier_list_bbcode_gen/bbcodegenerator.py,sha256=XBVk19x8PmIYElLkNYMIoxb10tRUYJ0vsY0-Q9G7GJk,1821
+mal_tier_list_bbcode_gen/cli.py,sha256=sJqyVjP41x3q19CNbUZ4tv7FCh02YG8HZAPP448VLBw,943
+mal_tier_list_bbcode_gen/entry.py,sha256=Fo3ldl5RDX1ymtuRAPfZjBXkmma09g1QgWybW5xLWWs,480
+mal_tier_list_bbcode_gen/image.py,sha256=Bfpfha-gV0zYUf_2fLWcNqMkYhH7IRvdmbtZQ2KUILk,1103
+mal_tier_list_bbcode_gen/spreadsheetparser.py,sha256=MLgz4KVX2RfjF60Y1055hUWp4JNZZ_KrJXV6JeXgpY0,4822
+mal_tier_list_bbcode_gen/utils.py,sha256=U0KOum_lbTXCys3qaebct2IHNSOZtd1LIln25noydb4,208
+mal_tier_list_bbcode_gen-2021.4.27.dist-info/LICENSE,sha256=oN1hkzGXuZNiXM5m5jdbTXAM9_vZ26v3pGX6_yiZyl4,1061
+mal_tier_list_bbcode_gen-2021.4.27.dist-info/METADATA,sha256=e7CBxeqCF-FZTcGuUBr22tGxQp95emDh2wDLIb9Adi0,4115
+mal_tier_list_bbcode_gen-2021.4.27.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mal_tier_list_bbcode_gen-2021.4.27.dist-info/entry_points.txt,sha256=2zD3k95iudUGmgcGdZyaj81tbQMhIOD847kmcw7suec,80
+mal_tier_list_bbcode_gen-2021.4.27.dist-info/top_level.txt,sha256=mEsoDt4jY4kWFgOMYuYU2LNOTAAVS87rqx1yTsVyRRk,25
+mal_tier_list_bbcode_gen-2021.4.27.dist-info/RECORD,,
