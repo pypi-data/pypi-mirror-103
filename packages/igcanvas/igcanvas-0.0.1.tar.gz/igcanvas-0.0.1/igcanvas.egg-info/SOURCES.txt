@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+igcanvas/__init__.py
+igcanvas.egg-info/PKG-INFO
+igcanvas.egg-info/SOURCES.txt
+igcanvas.egg-info/dependency_links.txt
+igcanvas.egg-info/not-zip-safe
+igcanvas.egg-info/requires.txt
+igcanvas.egg-info/top_level.txt
