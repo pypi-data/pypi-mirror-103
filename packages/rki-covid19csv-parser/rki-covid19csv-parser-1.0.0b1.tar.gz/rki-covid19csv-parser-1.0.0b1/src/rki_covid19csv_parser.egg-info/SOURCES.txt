@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/rki_covid19csv_parser/__init__.py
+src/rki_covid19csv_parser/rki_covid19csv_parser.py
+src/rki_covid19csv_parser.egg-info/PKG-INFO
+src/rki_covid19csv_parser.egg-info/SOURCES.txt
+src/rki_covid19csv_parser.egg-info/dependency_links.txt
+src/rki_covid19csv_parser.egg-info/requires.txt
+src/rki_covid19csv_parser.egg-info/top_level.txt

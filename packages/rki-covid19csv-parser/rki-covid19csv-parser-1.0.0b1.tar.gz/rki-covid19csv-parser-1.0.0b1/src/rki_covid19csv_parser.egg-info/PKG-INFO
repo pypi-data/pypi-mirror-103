@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: rki-covid19csv-parser
+Version: 1.0.0b1
+Summary: A simple module to work with the RKI_COVID19.csv files issued by the Robert-Koch-Institut in Germany.
+Home-page: https://github.com/Hoffmann77/rki-covid19csv-cases
+Author: Julius Hoffmann
+Author-email: julius.Ho@web.de
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Hoffmann77/rki-covid19csv-cases/issues
+Description: # rki-covid19csv-parser
+        A small python module to work with the RKI_Covid19.csv files issued by the (RKI - Rober Koch Institut) on a daily basis.
+        
+        # Installation:
+        pip install rki-covid19csv-parser
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
