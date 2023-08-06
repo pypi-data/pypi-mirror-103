@@ -1,0 +1,11 @@
+etswatch/__init__.py,sha256=ry5O5SW74ugwOUMKSV2_LbWjYa8B0IEvUm7S-lHPA2c,23
+etswatch/_nbdev.py,sha256=EWgl_PEAlf8JH5f4z6U2vk1bA4Pt_CWT4FSHBIPAhRI,4095
+etswatch/deployment.py,sha256=FWYBf6OMGCEzBzVQfkMHwObLXV2v5T5oXuJowugSocI,2158
+etswatch/prices.py,sha256=X9JGvosc4JAxiAzeLKBcnMwlEHx46sbhw2TXPnvLwdw,2458
+etswatch/eutl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+etswatch/eutl/accounts.py,sha256=nxM-vD4VcvfAGJSoBFSTcWTgr201_6HIn1QnWkS8n4M,17600
+etswatch/eutl/installations.py,sha256=1n9iBTo9suT7j08P2Kbd1D-a3fGBKS7efYBuRcwaZcc,8400
+etswatch-0.0.1.dist-info/METADATA,sha256=aDDtrqwWAjciTWCLy791IzTIY6Iamgobh-pb2mSF6e4,1073
+etswatch-0.0.1.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+etswatch-0.0.1.dist-info/top_level.txt,sha256=gbXv9PhwKNpj2sFFVdcaR8-qIWvkb-hpi2qVCpVREBk,9
+etswatch-0.0.1.dist-info/RECORD,,
