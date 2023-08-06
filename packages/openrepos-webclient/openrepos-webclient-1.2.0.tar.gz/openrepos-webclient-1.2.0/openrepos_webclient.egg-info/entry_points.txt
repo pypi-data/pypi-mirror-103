@@ -1,0 +1,3 @@
+[console_scripts]
+openrepos = openrepos.cli.commands.main:cli
+
