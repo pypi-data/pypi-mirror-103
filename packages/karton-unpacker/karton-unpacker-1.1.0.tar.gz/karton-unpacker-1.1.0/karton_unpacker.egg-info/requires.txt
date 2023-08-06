@@ -1,0 +1,4 @@
+hexdump==3.3
+karton-core==4.2.0
+qiling==1.2.3
+yara-python==4.0.5
