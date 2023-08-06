@@ -1,0 +1,9 @@
+smaxpy/__init__.py,sha256=nx-pCU07gBw5YtgnXJrT9yOqnfrzjV2AGYRCgU8ZGXI,46
+smaxpy/errors.py,sha256=f2cNCvxIngbif-4tiPAPiv1wKS9cwvazAlrS_BResjs,75
+smaxpy/request.py,sha256=PDupxhDGFNg8Ck9hOB1tn9RAcToOIEPrVkN5GsEea5k,914
+smaxpy/smax.py,sha256=atvVpgPYeOJH6Wa4xB8xhvpOI7EfFyu4EwtS2WIx-dY,1393
+smaxpy-0.0.1.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+smaxpy-0.0.1.dist-info/METADATA,sha256=k0sar6gQO43v2w7-ZvJPEab7QBYT5j_EDBSdNetZrKo,949
+smaxpy-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+smaxpy-0.0.1.dist-info/top_level.txt,sha256=UO5NdQV79NdJmWB7CsMkFR4VhvHwuZC1RatSb8npkQk,7
+smaxpy-0.0.1.dist-info/RECORD,,
