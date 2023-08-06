@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/pwnlib/__init__.py
+src/pwnlib.egg-info/PKG-INFO
+src/pwnlib.egg-info/SOURCES.txt
+src/pwnlib.egg-info/dependency_links.txt
+src/pwnlib.egg-info/top_level.txt
