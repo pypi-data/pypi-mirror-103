@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tomorrow-io
+Version: 0.0.0
+Summary: Wrapper layer for https://tomorrow.io
+Home-page: https://github.com/TheToddLuci0/tomorrow_io
+Author: TheToddLuci0
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/TheToddLuci0/tomorrow_io/issues
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+
+UNKNOWN
+
+
