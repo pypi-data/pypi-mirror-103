@@ -1,0 +1,9 @@
+beautifulsoup4
+GDAL>=3.0
+html5lib
+humanfriendly
+lxml
+more-itertools
+pyshp
+pyhelpers>=1.2.15
+tqdm
