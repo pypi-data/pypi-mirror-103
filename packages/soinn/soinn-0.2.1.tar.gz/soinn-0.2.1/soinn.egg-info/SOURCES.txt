@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+./python/soinn.cpp
+soinn/data_interface.h
+soinn/data_reader.h
+soinn/graph.h
+soinn/soinn.h
+soinn/utils.h
+soinn.egg-info/PKG-INFO
+soinn.egg-info/SOURCES.txt
+soinn.egg-info/dependency_links.txt
+soinn.egg-info/not-zip-safe
+soinn.egg-info/requires.txt
+soinn.egg-info/top_level.txt
