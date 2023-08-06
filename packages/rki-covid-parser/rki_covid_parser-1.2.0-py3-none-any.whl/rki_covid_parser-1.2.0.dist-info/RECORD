@@ -1,0 +1,13 @@
+rki_covid_parser/__init__.py,sha256=MpAT5hgNoHnTtG1XRD_GV_A7QrHVU6vJjGSw_8qMGA4,22
+rki_covid_parser/const.py,sha256=7f_WsH-LBXZXe0ReC625lWH7PB5aUygSJslYfkZRHkw,3860
+rki_covid_parser/parser.py,sha256=rLR8Zh1z5-li1EUeel8sShsdAIAZD0K_193L2z6deKQ,6933
+rki_covid_parser/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rki_covid_parser/model/area.py,sha256=tCN5zT6dcK9CrqVFG_FgoEKnnF_r6Yrtjm6hroLA6_I,1230
+rki_covid_parser/model/country.py,sha256=_aBqmU0HRVA8m1cYk8DPPxADG10BYJXhlImvsavUsmA,468
+rki_covid_parser/model/district.py,sha256=-v8FRFg-2vcJNxS2apmVZdJOt_8gPPagfA9ghMh5pSo,1675
+rki_covid_parser/model/state.py,sha256=POLfyhlE0Ug2leblNxkz_AVVHjLvbqAFjtAuLILQmnc,599
+rki_covid_parser-1.2.0.dist-info/LICENSE,sha256=fW3KgLVZfShN9THF_EhV5FnReNFFmHz9_IokZyAp3aM,10762
+rki_covid_parser-1.2.0.dist-info/METADATA,sha256=I5KkOToNrmgBNnQ-cHKyAooRIrSAIMRIOYwZp9DOUw8,2453
+rki_covid_parser-1.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+rki_covid_parser-1.2.0.dist-info/top_level.txt,sha256=VP9KOBenXwPyJoO7N9EpB8_azIUtW0q7m5ML7YGyZT8,17
+rki_covid_parser-1.2.0.dist-info/RECORD,,
