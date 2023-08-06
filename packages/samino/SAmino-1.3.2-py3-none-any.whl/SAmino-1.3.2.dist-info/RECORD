@@ -1,0 +1,10 @@
+amino/Global.py,sha256=DWGQapZWcMawL672YgbDdyg8dlxwuRDRfGYAArB9d0c,2409
+amino/Local.py,sha256=M8ML67x9Z2aYAAkJiAwX8yKwTycJSDTsdhK1AEUVMhw,9266
+amino/__init__.py,sha256=bNLIzx7h1rpIql1r1Mf0ecnSN3RAuYsdqhwxLd5GPGE,401
+amino/lib/__init__.py,sha256=ZgBbZt2DCjNhvA6jKeT64uIyCGN3Wx86w4tEidoHpf0,45
+amino/lib/objects.py,sha256=rsYqdvidmK6VMz9C9WtDkHDsLggNpT2orqNOkyV0MTU,2983
+amino/lib/pack.py,sha256=ihxWOjfJ-QQI1pB3BN5-Ol-PSQGe92EcB8sV-psSRtE,246
+SAmino-1.3.2.dist-info/METADATA,sha256=gopecs09v3JYrmBRh3H5rZvn7mcr8sL8qeZfKQEcCfU,841
+SAmino-1.3.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+SAmino-1.3.2.dist-info/top_level.txt,sha256=6FIluJEO561Ehg9mtYTnFQ9u_yUGK32T3wW4p4pxyQI,6
+SAmino-1.3.2.dist-info/RECORD,,
