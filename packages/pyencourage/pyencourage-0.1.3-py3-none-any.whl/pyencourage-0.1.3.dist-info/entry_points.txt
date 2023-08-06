@@ -1,0 +1,4 @@
+[console_scripts]
+pyencourage = pyencouragecli.pyencourage:main
+pyencouragement = pyencouragecli.pyencouragement:main
+
