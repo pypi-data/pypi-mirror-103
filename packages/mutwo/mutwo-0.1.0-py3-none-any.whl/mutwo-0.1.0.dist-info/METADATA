@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: mutwo
+Version: 0.1.0
+Summary: representation of timebased events
+Home-page: https://github.com/mutwo-org/mutwo
+Author: Tim Pauli <tim.pauli@folkwang-uni.de>, Levin Zimmermann <levin-eric.zimmermann@folkwang-uni.de>
+License: GPL
+Platform: UNKNOWN
+Requires-Python: >=3.7, <4
+Requires-Dist: expenvelope (<1.0.0,>=0.6.5)
+Requires-Dist: primesieve (<3.0.0,>=2.0.0)
+Requires-Dist: numpy (<2.00,>=1.18)
+Requires-Dist: scipy (<2.0.0,>=1.4.1)
+Requires-Dist: natsort (<6.0.0,>=5.3.3)
+Provides-Extra: abjad
+Requires-Dist: abjad-ext-nauert (<4,>=3.3.0) ; extra == 'abjad'
+Requires-Dist: abjad (<4,>=3.2.0) ; extra == 'abjad'
+Provides-Extra: all
+Requires-Dist: pyo (<2,>=1.0.3) ; extra == 'all'
+Requires-Dist: mido (<2,>=1.2.9) ; extra == 'all'
+Requires-Dist: rpp (<0.5,>=0.4) ; extra == 'all'
+Requires-Dist: abjad-ext-nauert (<4,>=3.3.0) ; extra == 'all'
+Requires-Dist: abjad (<4,>=3.2.0) ; extra == 'all'
+Provides-Extra: midi
+Requires-Dist: mido (<2,>=1.2.9) ; extra == 'midi'
+Provides-Extra: pyo
+Requires-Dist: pyo (<2,>=1.0.3) ; extra == 'pyo'
+Provides-Extra: reaper
+Requires-Dist: rpp (<0.5,>=0.4) ; extra == 'reaper'
+Provides-Extra: testing
+Requires-Dist: nose ; extra == 'testing'
+Requires-Dist: pillow (<9.0.0,>=8.2.0) ; extra == 'testing'
+Requires-Dist: pyo (<2,>=1.0.3) ; extra == 'testing'
+Requires-Dist: mido (<2,>=1.2.9) ; extra == 'testing'
+Requires-Dist: rpp (<0.5,>=0.4) ; extra == 'testing'
+Requires-Dist: abjad-ext-nauert (<4,>=3.3.0) ; extra == 'testing'
+Requires-Dist: abjad (<4,>=3.2.0) ; extra == 'testing'
+
+UNKNOWN
+
+
