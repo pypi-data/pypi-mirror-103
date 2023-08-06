@@ -1,0 +1,4 @@
+[console_scripts]
+plot-me.classify = plot_me.classify:arg_parser
+plot-me.preprocess = plot_me.parse_DB:arg_parser
+
