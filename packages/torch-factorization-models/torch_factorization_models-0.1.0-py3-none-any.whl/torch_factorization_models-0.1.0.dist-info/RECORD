@@ -1,0 +1,10 @@
+torch_factorization_models/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+torch_factorization_models/implicit_mf.py,sha256=9Uh_5lKrjuGdjxm00vCdGRCjnLbT_y3whuDxPo8SiPI,8252
+torch_factorization_models/losses.py,sha256=D14dDMTNAmi4d3nVZciFrajpuHEr7YW_h6w-FglTpWI,4605
+torch_factorization_models/mf_trainer.py,sha256=OfH81e_o5gqlC3WgkiW_3fXcIWteDDHfcppIJ4eh-SM,2960
+torch_factorization_models/movielens.py,sha256=zo0qJYCGFwGV5LN0rcP-CS6iU5VS6Ir-8i5qkO9pjME,8943
+torch_factorization_models/optimizers.py,sha256=sMizq6gMqmN25ygWeY4ai1VxoVzf757ylFpkaOR-3Kk,2346
+torch_factorization_models-0.1.0.dist-info/LICENSE.md,sha256=SOClzQNYXSZPgt-DsQ2DLdLjFGxtG3g84m9df_qtHCM,1061
+torch_factorization_models-0.1.0.dist-info/WHEEL,sha256=G_NFpzHmv_dUXgCUSAWL0-bLL-eMzYU6DzDeGXbRXUk,83
+torch_factorization_models-0.1.0.dist-info/METADATA,sha256=4qrUHhzAko4C8OwzbJwnLJbTaBeJIw69KqNTcqVMRY8,672
+torch_factorization_models-0.1.0.dist-info/RECORD,,
