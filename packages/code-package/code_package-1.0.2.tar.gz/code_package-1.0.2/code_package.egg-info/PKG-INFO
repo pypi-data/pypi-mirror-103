@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: code-package
+Version: 1.0.2
+Summary: You dont want this package
+Home-page: https://go_somewhere_else.com
+Author: bg
+Author-email: bg@gb.com
+License: UNKNOWN
+Description: # Code
+        This is a useless package meant for the sole purpose of testing things out.
+        
+        ## Version
+        1.0.1
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
