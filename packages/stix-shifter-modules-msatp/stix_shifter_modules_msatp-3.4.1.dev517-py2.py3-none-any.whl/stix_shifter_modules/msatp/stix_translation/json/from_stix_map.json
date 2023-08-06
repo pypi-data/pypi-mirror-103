@@ -1,0 +1,195 @@
+{
+  "ipv4-addr": {
+    "fields": {
+      "value": ["DeviceNetworkEvents.LocalIP", "DeviceNetworkEvents.RemoteIP"]
+    }
+  },
+  "ipv6-addr": {
+    "fields": {
+      "value": ["DeviceNetworkEvents.LocalIP", "DeviceNetworkEvents.RemoteIP"]
+    }
+  },
+  "network-traffic": {
+    "fields": {
+      "src_port": ["DeviceNetworkEvents.LocalPort"],
+      "dst_port": ["DeviceNetworkEvents.RemotePort"],
+      "protocols[*]": ["DeviceNetworkEvents.Protocol"],
+      "src_ref.value": ["DeviceNetworkEvents.LocalIP","DeviceNetworkInfo.MacAddress"],
+      "dst_ref.value": ["DeviceNetworkEvents.RemoteIP"]
+    }
+  },
+  "url": {
+    "fields": {
+      "value": ["DeviceNetworkEvents.RemoteUrl"]
+    }
+  },
+  "file": {
+    "fields": {
+      "name": [
+        "DeviceFileEvents.FileName",
+        "DeviceFileEvents.InitiatingProcessFileName",
+        "DeviceFileEvents.InitiatingProcessParentFileName",
+        "DeviceProcessEvents.FileName",
+        "DeviceProcessEvents.InitiatingProcessFileName",
+        "DeviceProcessEvents.InitiatingProcessParentFileName",
+        "DeviceNetworkEvents.InitiatingProcessFileName",
+        "DeviceNetworkEvents.InitiatingProcessParentFileName",
+        "DeviceRegistryEvents.InitiatingProcessFileName",
+        "DeviceRegistryEvents.InitiatingProcessParentFileName"
+      ],
+      "hashes.SHA-1": [
+        "DeviceFileEvents.SHA1",
+        "DeviceFileEvents.InitiatingProcessSHA1",
+        "DeviceProcessEvents.SHA1",
+        "DeviceProcessEvents.InitiatingProcessSHA1",
+        "DeviceNetworkEvents.InitiatingProcessSHA1",
+        "DeviceRegistryEvents.InitiatingProcessSHA1"
+      ],
+      "hashes.SHA-256": [
+        "DeviceFileEvents.SHA256",
+        "DeviceProcessEvents.SHA256",
+        "DeviceProcessEvents.InitiatingProcessSHA256"
+      ],
+      "hashes.MD5": [
+        "DeviceFileEvents.MD5",
+        "DeviceFileEvents.InitiatingProcessMD5",
+        "DeviceProcessEvents.MD5",
+        "DeviceProcessEvents.InitiatingProcessMD5",
+        "DeviceNetworkEvents.InitiatingProcessMD5",
+        "DeviceRegistryEvents.InitiatingProcessMD5"
+      ],
+      "parent_directory_ref.path": [
+        "DeviceFileEvents.FolderPath",
+        "DeviceFileEvents.InitiatingProcessFolderPath",
+        "DeviceProcessEvents.FolderPath",
+        "DeviceProcessEvents.InitiatingProcessFolderPath",
+        "DeviceNetworkEvents.InitiatingProcessFolderPath",
+        "DeviceRegistryEvents.InitiatingProcessFolderPath"]
+    }
+  },
+  "process" : {
+    "fields": {
+      "name": [
+        "DeviceProcessEvents.FileName",
+        "DeviceNetworkEvents.InitiatingProcessFileName",
+        "DeviceNetworkEvents.InitiatingProcessParentFileName",
+        "DeviceRegistryEvents.InitiatingProcessFileName",
+        "DeviceRegistryEvents.InitiatingProcessParentFileName"
+      ],
+      "parent_ref.name": [
+        "DeviceProcessEvents.InitiatingProcessFileName",
+        "DeviceNetworkEvents.InitiatingProcessParentFileName",
+        "DeviceRegistryEvents.InitiatingProcessParentFileName"
+      ],
+      "parent_ref.parent_ref.name": ["DeviceProcessEvents.InitiatingProcessParentFileName"],
+      "command_line": [
+        "DeviceProcessEvents.ProcessCommandLine",
+        "DeviceNetworkEvents.InitiatingProcessCommandLine",
+        "DeviceRegistryEvents.InitiatingProcessCommandLine"
+      ],
+      "parent_ref.command_line": ["DeviceProcessEvents.InitiatingProcessCommandLine"],
+      "pid": [
+        "DeviceProcessEvents.ProcessId",
+        "DeviceNetworkEvents.InitiatingProcessId",
+        "DeviceNetworkEvents.InitiatingProcessParentId",
+        "DeviceRegistryEvents.InitiatingProcessId",
+        "DeviceRegistryEvents.InitiatingProcessParentId"
+      ],
+      "parent_ref.pid": [
+        "DeviceProcessEvents.InitiatingProcessId",
+        "DeviceNetworkEvents.InitiatingProcessParentId",
+        "DeviceRegistryEvents.InitiatingProcessParentId"
+      ],
+      "parent_ref.parent_ref.pid": ["DeviceProcessEvents.InitiatingProcessParentId"],
+      "creator_user_ref.user_id": ["DeviceProcessEvents.AccountSid"],
+      "creator_user_ref.account_login": ["DeviceProcessEvents.AccountName"],
+      "parent_ref.creator_user_ref.user_id": ["DeviceProcessEvents.InitiatingProcessAccountSid"],
+      "parent_ref.creator_user_ref.account_login": ["DeviceProcessEvents.InitiatingProcessAccountName"],
+      "binary_ref.hashes.SHA-1": [
+        "DeviceProcessEvents.SHA1",
+        "DeviceNetworkEvents.InitiatingProcessSHA1",
+        "DeviceRegistryEvents.InitiatingProcessSHA1"
+      ],
+      "binary_ref.hashes.SHA-256": ["DeviceProcessEvents.SHA256"],
+      "binary_ref.hashes.MD5": [
+        "DeviceProcessEvents.MD5",
+        "DeviceNetworkEvents.InitiatingProcessMD5",
+        "DeviceRegistryEvents.InitiatingProcessMD5"
+      ],
+      "parent_ref.binary_ref.hashes.SHA-1": ["DeviceProcessEvents.InitiatingProcessSHA1"],
+      "parent_ref.binary_ref.hashes.SHA-256": ["DeviceProcessEvents.InitiatingProcessSHA256"],
+      "parent_ref.binary_ref.hashes.MD5": ["DeviceProcessEvents.InitiatingProcessMD5"],
+      "created": [
+        "DeviceProcessEvents.ProcessCreationTime",
+        "DeviceNetworkEvents.InitiatingProcessCreationTime",
+        "DeviceNetworkEvents.InitiatingProcessParentCreationTime",
+        "DeviceRegistryEvents.InitiatingProcessCreationTime",
+        "DeviceRegistryEvents.InitiatingProcessParentCreationTime"
+      ],
+      "parent_ref.created": [
+        "DeviceProcessEvents.InitiatingProcessCreationTime",
+        "DeviceNetworkEvents.InitiatingProcessParentCreationTime",
+        "DeviceRegistryEvents.InitiatingProcessParentCreationTime"
+      ],
+      "parent_ref.parent_ref.created": ["DeviceProcessEvents.InitiatingProcessParentCreationTime"],
+      "binary_ref.parent_directory_ref.path": [
+        "DeviceProcessEvents.FolderPath",
+        "DeviceNetworkEvents.InitiatingProcessFolderPath",
+        "DeviceRegistryEvents.InitiatingProcessFolderPath"],
+      "parent_ref.binary_ref.parent_directory_ref.path": ["DeviceProcessEvents.InitiatingProcessFolderPath"]
+    }
+  },
+  "user-account": {
+    "fields": {
+      "user_id": [
+        "DeviceProcessEvents.AccountSid",
+        "DeviceNetworkEvents.InitiatingProcessAccountSid",
+        "DeviceRegistryEvents.InitiatingProcessAccountSid"
+      ],
+      "account_login": [
+        "DeviceProcessEvents.AccountName",
+        "DeviceNetworkEvents.InitiatingProcessAccountName",
+        "DeviceRegistryEvents.InitiatingProcessAccountName"
+      ]
+    }
+  },
+  "windows-registry-key": {
+      "fields": {
+          "key": ["DeviceRegistryEvents.RegistryKey"],
+          "values[*]": ["DeviceRegistryEvents.RegistryValueName"]
+      }
+  },
+  "mac-addr": {
+    "fields": {
+      "value": ["DeviceNetworkInfo.MacAddress"]
+    }
+  },
+  "x-msatp": {
+    "fields": {
+      "computer_name": [
+        "DeviceFileEvents.DeviceName",
+        "DeviceProcessEvents.DeviceName",
+        "DeviceNetworkEvents.DeviceName",
+        "DeviceRegistryEvents.DeviceName"
+      ],
+      "machine_id": [
+        "DeviceFileEvents.DeviceId",
+        "DeviceProcessEvents.DeviceId",
+        "DeviceNetworkEvents.DeviceId",
+        "DeviceRegistryEvents.DeviceId"
+      ]
+    }
+  },
+  "directory": {
+    "fields": {
+      "path": [
+        "DeviceFileEvents.FolderPath",
+        "DeviceFileEvents.InitiatingProcessFolderPath",
+        "DeviceProcessEvents.FolderPath",
+        "DeviceProcessEvents.InitiatingProcessFolderPath",
+        "DeviceNetworkEvents.InitiatingProcessFolderPath",
+        "DeviceRegistryEvents.InitiatingProcessFolderPath"
+      ]
+    }
+  }
+}
