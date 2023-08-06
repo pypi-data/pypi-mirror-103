@@ -1,0 +1,3 @@
+[console_scripts]
+tg-login=tg_login.cli:app
+
