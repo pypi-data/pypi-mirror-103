@@ -1,0 +1,5 @@
+requests
+python-dateutil
+pytz
+boto3==1.13.4
+sendgrid==6.3.1
