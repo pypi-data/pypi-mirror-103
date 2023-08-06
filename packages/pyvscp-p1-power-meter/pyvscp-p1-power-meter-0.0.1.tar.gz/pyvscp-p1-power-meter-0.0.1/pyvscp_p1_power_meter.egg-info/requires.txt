@@ -1,0 +1,13 @@
+pyvscp
+pyvscpclasses
+pyvscptypes
+pyvscphelper
+configparser
+pyserial
+paho-mqtt
+
+[dev]
+check-manifest
+
+[test]
+coverage

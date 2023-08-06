@@ -1,0 +1,13 @@
+LICENSE
+LICENSE.txt
+MANIFEST.in
+README.md
+config.ini
+mqtt-p1-power-meter.py
+setup.cfg
+setup.py
+pyvscp_p1_power_meter.egg-info/PKG-INFO
+pyvscp_p1_power_meter.egg-info/SOURCES.txt
+pyvscp_p1_power_meter.egg-info/dependency_links.txt
+pyvscp_p1_power_meter.egg-info/requires.txt
+pyvscp_p1_power_meter.egg-info/top_level.txt
