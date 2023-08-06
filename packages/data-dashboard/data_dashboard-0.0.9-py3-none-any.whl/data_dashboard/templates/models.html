@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="{{ models_css }}">
+{% extends 'base.html' %}
+
+{% block header %}
+{% block title %}Models{% endblock %}
+{% endblock %}
+
+{% block content %}
+<div class="models-comparison">
+    <div class="models-left">
+        <div class="subtitle" id="subtitle-hoverable">Search Results - All predictions done on Evaluation Split</div>
+        <div class="models-left-upper">{{ models_left_upper }}</div>
+        <div class="subtitle">{{ models_left_bottom_title }}</div>
+        <div class="models-left-bottom">{{ models_left_bottom }}</div>
+    </div>
+    <div class="models-right">
+        <div class="subtitle">{{ models_right_title }}</div>
+        <div class="models-right-plot">{{ models_right_plot }}</div>
+    </div>
+</div>
+
+<div class="subtitle">Predictions Table</div>
+<div class="predictions-table">{{ predictions_table }}</div>
+
+<div>{{ bokeh_script_models_right }}</div>
+<div>{{ bokeh_script_models_left_bottom }}</div>
+<div>{{ bokeh_script_predictions_table }}</div>
+
+{% endblock %}
