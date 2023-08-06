@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: discord-ext-games
+Version: 1.0.9
+Summary: This library provides bunch of games that can be played on discord.
+Home-page: UNKNOWN
+Author: Wiper-R
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6.0
