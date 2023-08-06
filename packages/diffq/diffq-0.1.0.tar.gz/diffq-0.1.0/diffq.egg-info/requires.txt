@@ -1,0 +1,6 @@
+torch
+
+[dev]
+coverage
+flake8
+pdoc3
