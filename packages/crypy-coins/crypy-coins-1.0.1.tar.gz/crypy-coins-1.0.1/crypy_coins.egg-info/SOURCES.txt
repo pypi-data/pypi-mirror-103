@@ -1,0 +1,7 @@
+README.md
+setup.py
+cryppy_coins/__init__.py
+crypy_coins.egg-info/PKG-INFO
+crypy_coins.egg-info/SOURCES.txt
+crypy_coins.egg-info/dependency_links.txt
+crypy_coins.egg-info/top_level.txt
