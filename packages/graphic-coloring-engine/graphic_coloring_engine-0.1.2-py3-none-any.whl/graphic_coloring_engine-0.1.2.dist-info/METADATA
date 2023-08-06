@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: graphic-coloring-engine
+Version: 0.1.2
+Summary: graphic coloring engine
+Home-page: https://github.com/filosfino/graphic-coloring-engine
+License: MIT
+Keywords: coloring,graphic,color
+Author: filosfino
+Author-email: github@filosfino.com
+Requires-Python: >=3.7.10,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Requires-Dist: Pillow (>=8.2.0,<9.0.0)
+Requires-Dist: Shapely (>=1.7.1,<2.0.0)
+Requires-Dist: cached-property (>=1.5.2,<2.0.0)
+Requires-Dist: colormath (>=3.0.0,<4.0.0)
+Requires-Dist: pydash (>=5.0.0,<6.0.0)
+Requires-Dist: typing-extensions (>=3.7.4,<4.0.0)
+Project-URL: Bug Tracker, https://github.com/filosfino/graphic-coloring-engine/issues
+Project-URL: Repository, https://github.com/filosfino/graphic-coloring-engine.git
