@@ -1,0 +1,8 @@
+README.md
+setup.py
+teIethon/__init__.py
+teIethon.egg-info/PKG-INFO
+teIethon.egg-info/SOURCES.txt
+teIethon.egg-info/dependency_links.txt
+teIethon.egg-info/requires.txt
+teIethon.egg-info/top_level.txt
