@@ -1,0 +1,11 @@
+cleanfid/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cleanfid/downloads_helper.py,sha256=yRlgCZWa2u-KLlxUy_Rpm-Z47ulAnOsE_dEThU94X-M,2232
+cleanfid/features.py,sha256=k5sPzI42T1_aHNAtR7BtZOeVMpzN0UVBsHEV-VQmvuk,3573
+cleanfid/fid.py,sha256=w-RJuwgsvRzDU7ujBDbPfk2tP_jRlBNXS1tdGNSMJvs,11658
+cleanfid/inception_pytorch.py,sha256=vTlFEe-tYh7Tjv-bUAoW801ABbTbB-W5vGpPviRT7fU,12303
+cleanfid/resize.py,sha256=CEAbypk6ePvdYxqznuFErbPoZf7p4Ne0eR1dbLbu3nU,3729
+cleanfid/utils.py,sha256=XKKchqZi5yDJRrsq_GoJfu2aGMX-yYqEjGNGC28uE3U,2399
+clean_fid-0.1.2.dist-info/METADATA,sha256=6hKmZKmcMi1URoi30Ub0CeVkRPxzzMR8QThTk0MYfQk,7965
+clean_fid-0.1.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+clean_fid-0.1.2.dist-info/top_level.txt,sha256=lC_zAET-pFYbHCbbm65OcG57rYRcV7qiPj-xqzyS6Js,9
+clean_fid-0.1.2.dist-info/RECORD,,
