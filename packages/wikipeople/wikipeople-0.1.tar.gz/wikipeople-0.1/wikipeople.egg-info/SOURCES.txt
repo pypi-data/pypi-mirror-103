@@ -1,0 +1,10 @@
+README.md
+setup.py
+wikipeople/__init__.py
+wikipeople/wikipeople.py
+wikipeople.egg-info/PKG-INFO
+wikipeople.egg-info/SOURCES.txt
+wikipeople.egg-info/dependency_links.txt
+wikipeople.egg-info/not-zip-safe
+wikipeople.egg-info/requires.txt
+wikipeople.egg-info/top_level.txt
