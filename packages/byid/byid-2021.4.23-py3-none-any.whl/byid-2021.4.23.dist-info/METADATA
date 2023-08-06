@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: byid
+Version: 2021.4.23
+Summary: Fetch metadata records by identifier.
+Home-page: https://github.com/herreio/byid
+Author: Donatus Herre
+Author-email: pypi@herre.io
+License: MIT
+Project-URL: Bug Tracker, https://github.com/herreio/byid/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: tqdm
+Requires-Dist: ijson
+Requires-Dist: xmltodict
+
+# Fetch metadata records by identifier.
+
+

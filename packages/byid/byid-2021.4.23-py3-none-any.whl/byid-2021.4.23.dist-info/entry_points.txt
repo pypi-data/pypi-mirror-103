@@ -1,0 +1,4 @@
+[console_scripts]
+DOI = byid.doi.__main__:main
+DOI-RA = byid.doi.__main__:main_ra
+
