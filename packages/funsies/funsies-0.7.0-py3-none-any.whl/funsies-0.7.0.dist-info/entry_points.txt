@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        funsies=funsies._cli:main
+    
