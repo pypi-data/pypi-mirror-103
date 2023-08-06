@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+typro/__init__.py
+typro/__main__.py
+typro/cli.py
+typro/key_test.py
+typro.egg-info/PKG-INFO
+typro.egg-info/SOURCES.txt
+typro.egg-info/dependency_links.txt
+typro.egg-info/entry_points.txt
+typro.egg-info/requires.txt
+typro.egg-info/top_level.txt
+typro/data/default
+typro/data/root
