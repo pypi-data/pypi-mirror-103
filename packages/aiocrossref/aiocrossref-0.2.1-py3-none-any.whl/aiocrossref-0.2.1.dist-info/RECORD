@@ -1,0 +1,10 @@
+aiocrossref/__init__.py,sha256=QxH1cDfDitOoEjRXbfhHxuAW4byrC9Io5G7Ork5zkBU,66
+aiocrossref/cli.py,sha256=a4yanCS_PKbbcLpYlRqZSyHGjhEJcA-BnXhf6aEZIK0,271
+aiocrossref/client.py,sha256=_9titsy_imBUEi-QyKd06ptCfkUyZXIe5GbNeF_N5Ig,3278
+aiocrossref/exceptions.py,sha256=frRILbsuWLfkHTqyYcA6FvRmxriIDlm5GFs9fyhrdcQ,332
+aiocrossref-0.2.1.dist-info/LICENSE,sha256=LtsTHm6WqG7Ex_KL82-DgLbDzk0IOYPUz-HomBLp75o,1063
+aiocrossref-0.2.1.dist-info/METADATA,sha256=WMr0oRpxzieF-6qzprSmmNpP9BBzlJMb67QneEsVaQ4,3278
+aiocrossref-0.2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aiocrossref-0.2.1.dist-info/entry_points.txt,sha256=rxrB_MXQYISpgUIT0wCK57YX2qHWmc_b3xZpADvkDJc,55
+aiocrossref-0.2.1.dist-info/top_level.txt,sha256=dyd0LI7J3LtR6W4CACqz-iWfxUJoh9hauoLrFE54IgU,12
+aiocrossref-0.2.1.dist-info/RECORD,,
