@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pytechnicolor
+Version: 1.0.2
+Summary: Technicolor Gateway library
+Home-page: https://github.com/shaiu/techicolorgateway
+Author: Shai Ungar
+Author-email: shaiungar@gmail.com
+License: MIT
+Description: ## Technicolor Gateway Scraper library
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
