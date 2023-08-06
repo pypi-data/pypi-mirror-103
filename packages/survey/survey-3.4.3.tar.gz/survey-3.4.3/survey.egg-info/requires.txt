@@ -1,0 +1,5 @@
+wrapio>=1.0.0
+
+[docs]
+sphinx
+sphinx_rtd_theme
