@@ -1,0 +1,54 @@
+# Python Caesar Cipher
+
+> A Caesar Cipher Encryptor / Decryptor
+
+## Features
+
+- Encrypt & Decrypt your text with a given code
+- Brute force the text
+
+## Installation
+
+Open your Terminal (OR) Command Prompt and type this:
+
+```
+pip install Caesar_Cipher
+```
+
+And Done! This is a piece of cake!
+
+## Encrypting Your Text:
+
+### Syntax:
+```py
+Main.Encrypt("Your text here", key upto 26)
+```
+
+### Example:
+```py
+Main.Encrypt("We shall attack at dawn!", 3)
+```
+
+## Decrypting Your Text:
+
+### Syntax:
+```py
+Main.Decrypt("Your text here", key upto 26)
+```
+
+### Example:
+```py
+Main.Decrypt("Zh vkdoo dwwdfn dw gdzq!", 3)
+```
+
+## Brute Forcing Your Text:
+
+### Syntax:
+```py
+Main.BruteForce("Your text here")
+```
+
+### Example:
+```py
+Main.BruteForce("Zh vkdoo dwwdfn dw gdzq!")
+```
