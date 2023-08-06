@@ -1,0 +1,3 @@
+[console_scripts]
+chaintool = chaintool.cli:main
+

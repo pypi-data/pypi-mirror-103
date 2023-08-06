@@ -1,0 +1,644 @@
+# Bash-completions implementation for the chaintool utility. This file should be
+# sourced directly or indirectly by one of your startup scripts.
+
+# One way to do this would be to explicitly source it from such a script (e.g.
+# from your ~/.bash_profile script).
+
+# Or if you have the "bash-completion" package installed, and active for your
+# account, then there will also be other locations where it looks for files
+# like this to source. The bash-completion docs identify where those locations
+# would be for your particular system:
+#     https://github.com/scop/bash-completion/blob/master/README.md
+# See the answer to the "Where should I install my own local completions?" FAQ
+# there. So if you're in this situation, you could put this file in one of
+# those locations.
+
+# ----------
+
+# Note that if you have an old version of bash that doesn't support the
+# "compopt" builtin, then some of the behaviors here won't be quite as nice.
+# Specifically there will be extraneous space characters after directory
+# completions and after some chaintool-placeholder completions, and when doing
+# file completions on a path that uses the "~" character it won't properly
+# detect when that path is a directory. Might be time to update to a recent
+# version of bash! Likely this will only be a problem if you are on macOS;
+# see: https://itnext.io/upgrading-bash-on-macos-7138bd1066ba
+
+# Final note that applies in general to bash completions (not just chaintool):
+# In an "ambiguous" case where multiple things could match what you have
+# typed so far before hitting TAB, by default you must hit TAB twice to see
+# all possible completions. This can get kinda old when you are trying to
+# explore the available options, so you may want to remove the requirement
+# for double-TABbing. You can do this by editing (or creating) your
+# ~/.inputrc file to include this line: set show-all-if-ambiguous on
+
+# ----------
+
+export CHAINTOOL_BASH_COMPLETIONS=1
+
+# Subroutine to populate COMPREPLY with file/directory completions.
+_chaintool_file_completions()
+{
+  local CUR="${COMP_WORDS[$COMP_CWORD]}"
+  if compopt -o filenames 2> /dev/null
+  then
+    # If compopt worked, we can just get filename completions and they will
+    # automagically get trailing slashes (and no extra trailing space) if they
+    # are directories.
+    COMPREPLY=( $(compgen -f -- "$CUR") )
+  else
+    # This is probably an old bash version that doesn't support compopt.
+    # We will try an alternate approach here; works pretty well but any
+    # directory-name completions for import/export will have an annoying
+    # space after the slash.
+    COMPREPLY=()
+    local TEMP_COMPREPLY=$(compgen -f -- "$CUR")
+    if [[ -n "$TEMP_COMPREPLY" ]]
+    then
+      while IFS= read -r COMP
+      do
+        # XXX The quoting here means tilde will subvert correct directory
+        # detection... don't think there's an easy answer.
+        if [[ -d "$COMP" ]]
+        then
+          COMPREPLY+=("$COMP/")
+        else
+          COMPREPLY+=("$COMP")
+        fi
+      done <<< "$TEMP_COMPREPLY"
+    fi
+  fi
+}
+
+# Subroutine to populate COMPREPLY for operations in the "cmd" commandgroup.
+_chaintool_cmd_completions()
+{
+  OPERATION="$1"
+  NO_FLAGS="$2"
+  FIRST_POSITIONAL_INDEX="$3"
+  local CUR="${COMP_WORDS[$COMP_CWORD]}"
+  local GENWORDS=()
+  local IFS=$'\n'
+  local MIGHT_MATCH_NAME=1
+  local GENWORDS_INCLUDE_PLACEHOLDERS=0
+  if [[ "$CUR" == -* ]]
+  then
+    MIGHT_MATCH_NAME=0
+  fi
+  case "$OPERATION" in
+    list)
+      if [[ $NO_FLAGS == 0 ]]
+      then
+        GENWORDS+=( "--help" "--column" )
+      fi
+      ;;
+    set)
+      if [[ $FIRST_POSITIONAL_INDEX == 0 && $MIGHT_MATCH_NAME == 1 ]]
+      then
+        GENWORDS=($("${COMP_WORDS[0]}" cmd list --column))
+      fi
+      if [[ $NO_FLAGS == 0 ]]
+      then
+        GENWORDS+=( "--help" "--quiet" )
+      fi
+      ;;
+    edit)
+      if [[ $FIRST_POSITIONAL_INDEX == 0 && $MIGHT_MATCH_NAME == 1 ]]
+      then
+        GENWORDS=($("${COMP_WORDS[0]}" cmd list --column))
+      fi
+      if [[ $NO_FLAGS == 0 ]]
+      then
+        GENWORDS+=( "--help" "--quiet" )
+      fi
+      ;;
+    print)
+      if [[ $FIRST_POSITIONAL_INDEX == 0 && $MIGHT_MATCH_NAME == 1 ]]
+      then
+        GENWORDS=($("${COMP_WORDS[0]}" cmd list --column))
+      fi
+      if [[ $NO_FLAGS == 0 ]]
+      then
+        GENWORDS+=( "--help" )
+      fi
+      ;;
+    del)
+      if [[ $MIGHT_MATCH_NAME == 1 ]]
+      then
+        GENWORDS=($("${COMP_WORDS[0]}" cmd list --column))
+      fi
+      if [[ $NO_FLAGS == 0 ]]
+      then
+        GENWORDS+=( "--help" "--force" )
+      fi
+      ;;
+    run)
+      if [[ $FIRST_POSITIONAL_INDEX == 0 ]]
+      then
+        if [[ $MIGHT_MATCH_NAME == 1 ]]
+        then
+          GENWORDS=($("${COMP_WORDS[0]}" cmd list --column))
+        fi
+      else
+        if [[ "$CUR" == "" || "$CUR" =~ ^[A-Za-z\+] ]]
+        then
+          local CMDNAME="${COMP_WORDS[$FIRST_POSITIONAL_INDEX]}"
+          GENWORDS=($("${COMP_WORDS[0]}" cmd print $CMDNAME --dump-placeholders run))
+          GENWORDS_INCLUDE_PLACEHOLDERS=1
+        fi
+      fi
+      if [[ $NO_FLAGS == 0 ]]
+      then
+        GENWORDS+=( "--help" )
+      fi
+      ;;
+    vals)
+      if [[ $FIRST_POSITIONAL_INDEX == 0 ]]
+      then
+        if [[ $MIGHT_MATCH_NAME == 1 ]]
+        then
+          GENWORDS=($("${COMP_WORDS[0]}" cmd list --column))
+        fi
+      else
+        if [[ "$CUR" == "" || "$CUR" =~ ^[A-Za-z\+] ]]
+        then
+          local CMDNAME="${COMP_WORDS[$FIRST_POSITIONAL_INDEX]}"
+          GENWORDS=($("${COMP_WORDS[0]}" cmd print $CMDNAME --dump-placeholders vals))
+          GENWORDS_INCLUDE_PLACEHOLDERS=1
+        fi
+      fi
+      if [[ $NO_FLAGS == 0 ]]
+      then
+        GENWORDS+=( "--help" "--quiet" )
+      fi
+      ;;
+  esac
+  if [[ $GENWORDS_INCLUDE_PLACEHOLDERS == 0 ]]
+  then
+    COMPREPLY=($(compgen -W "${GENWORDS[*]}" -- "$CUR"))
+  else
+    CANDIDATES=($(compgen -W "${GENWORDS[*]}" -- "$CUR"))
+    if [ ${#CANDIDATES[*]} -eq 0 ]
+    then
+      COMPREPLY=()
+    else
+      COMPREPLY=($(printf "%q\n" "${CANDIDATES[@]}"))
+      if [[ "$CUR" != -* && ( "$CUR" != +* || "$OPERATION" == "vals" ) ]]
+      then
+        compopt -o nospace 2> /dev/null
+      fi
+      COMPREPLY=($(echo "${COMPREPLY[*]}" | sed 's/^\([^=][^=]*=\)$/\1""/' | sed 's/^\([^+-][^=]*\)$/\1=/'))
+    fi
+  fi
+}
+
+# Subroutine to populate COMPREPLY for operations in the "seq" commandgroup.
+_chaintool_seq_completions()
+{
+  OPERATION="$1"
+  NO_FLAGS="$2"
+  FIRST_POSITIONAL_INDEX="$3"
+  local CUR="${COMP_WORDS[$COMP_CWORD]}"
+  local BEFORE_CUR="${COMP_WORDS[$COMP_CWORD-1]}"
+  local GENWORDS=()
+  local IFS=$'\n'
+  local MIGHT_MATCH_NAME=1
+  local GENWORDS_INCLUDE_PLACEHOLDERS=0
+  if [[ "$CUR" == -* ]]
+  then
+    MIGHT_MATCH_NAME=0
+  fi
+  case "$OPERATION" in
+    list)
+      if [[ $NO_FLAGS == 0 ]]
+      then
+        GENWORDS+=( "--help" "--column" )
+      fi
+      ;;
+    set)
+      if [[ $MIGHT_MATCH_NAME == 1 ]]
+      then
+        if [[ $FIRST_POSITIONAL_INDEX == 0 ]]
+        then
+          GENWORDS=($("${COMP_WORDS[0]}" seq list --column))
+        else
+          GENWORDS=($("${COMP_WORDS[0]}" cmd list --column))
+        fi
+      fi
+      if [[ $NO_FLAGS == 0 ]]
+      then
+        GENWORDS+=( "--help" "--force" "--quiet" )
+      fi
+      ;;
+    edit)
+      if [[ $FIRST_POSITIONAL_INDEX == 0 && $MIGHT_MATCH_NAME == 1 ]]
+      then
+        GENWORDS=($("${COMP_WORDS[0]}" seq list --column))
+      fi
+      if [[ $NO_FLAGS == 0 ]]
+      then
+        GENWORDS+=( "--help" "--force" "--quiet" )
+      fi
+      ;;
+    print)
+      if [[ $FIRST_POSITIONAL_INDEX == 0 && $MIGHT_MATCH_NAME == 1 ]]
+      then
+        GENWORDS=($("${COMP_WORDS[0]}" seq list --column))
+      fi
+      if [[ $NO_FLAGS == 0 ]]
+      then
+        GENWORDS+=( "--help" )
+      fi
+      ;;
+    del)
+      if [[ $MIGHT_MATCH_NAME == 1 ]]
+      then
+        GENWORDS=($("${COMP_WORDS[0]}" seq list --column))
+      fi
+      if [[ $NO_FLAGS == 0 ]]
+      then
+        GENWORDS+=( "--help" )
+      fi
+      ;;
+    run)
+      if [[ $MIGHT_MATCH_NAME == 1 ]]
+      then
+        local SKIP_VALUE=0
+        if [[ $NO_FLAGS == 0 ]]
+        then
+          if [[ "$BEFORE_CUR" == "-s" || "$BEFORE_CUR" == "--skip" ]]
+          then
+            SKIP_VALUE=1
+          else
+            if [[ "$BEFORE_CUR" == "=" ]]
+            then
+              BEFORE_CUR="${COMP_WORDS[$COMP_CWORD-2]}"
+              if [[ "$BEFORE_CUR" == "-s" || "$BEFORE_CUR" == "--skip" ]]
+              then
+                SKIP_VALUE=1
+              fi
+            fi
+          fi
+        fi
+        if [[ $SKIP_VALUE == 1 ]]
+        then
+          if [[ "$CUR" == "=" ]]
+          then
+            CUR=""
+          fi
+          GENWORDS=($("${COMP_WORDS[0]}" cmd list --column))
+        else
+          if [[ $FIRST_POSITIONAL_INDEX == 0 ]]
+          then
+            GENWORDS=($("${COMP_WORDS[0]}" seq list --column))
+          else
+            if [[ "$CUR" == "" || "$CUR" =~ ^[A-Za-z\+] ]]
+            then
+              local SEQNAME="${COMP_WORDS[$FIRST_POSITIONAL_INDEX]}"
+              GENWORDS=($("${COMP_WORDS[0]}" seq print $SEQNAME --dump-placeholders run))
+              GENWORDS_INCLUDE_PLACEHOLDERS=1
+            fi
+          fi
+        fi
+      fi
+      if [[ $NO_FLAGS == 0 ]]
+      then
+        GENWORDS+=( "--help" "--ignore-errors" "--skip=" )
+      fi
+      ;;
+    vals)
+      if [[ $FIRST_POSITIONAL_INDEX == 0 ]]
+      then
+        if [[ $MIGHT_MATCH_NAME == 1 ]]
+        then
+          GENWORDS=($("${COMP_WORDS[0]}" seq list --column))
+        fi
+      else
+        if [[ "$CUR" == "" || "$CUR" =~ ^[A-Za-z\+] ]]
+        then
+          local SEQNAME="${COMP_WORDS[$FIRST_POSITIONAL_INDEX]}"
+          GENWORDS=($("${COMP_WORDS[0]}" seq print $SEQNAME --dump-placeholders vals))
+          GENWORDS_INCLUDE_PLACEHOLDERS=1
+        fi
+      fi
+      if [[ $NO_FLAGS == 0 ]]
+      then
+        GENWORDS+=( "--help" "--quiet" )
+      fi
+      ;;
+  esac
+  if [[ $GENWORDS_INCLUDE_PLACEHOLDERS == 0 ]]
+  then
+    COMPREPLY=($(compgen -W "${GENWORDS[*]}" -- "$CUR"))
+  else
+    CANDIDATES=($(compgen -W "${GENWORDS[*]}" -- "$CUR"))
+    if [ ${#CANDIDATES[*]} -eq 0 ]
+    then
+      COMPREPLY=()
+    else
+      COMPREPLY=($(printf "%q\n" "${CANDIDATES[@]}"))
+      if [[ "$CUR" != -* && ( "$CUR" != +* || "$OPERATION" == "vals" ) ]]
+      then
+        compopt -o nospace 2> /dev/null
+      fi
+      COMPREPLY=($(echo "${COMPREPLY[*]}" | sed 's/^\([^=][^=]*=\)$/\1""/' | sed 's/^\([^+-][^=]*\)$/\1=/'))
+    fi
+  fi
+}
+
+# Subroutine to populate COMPREPLY for operations in the "import" and
+# "export" commandgroups.
+_chaintool_import_export_completions()
+{
+  OPERATION="$1"
+  NO_FLAGS="$2"
+  FIRST_POSITIONAL_INDEX="$3"
+  local CUR="${COMP_WORDS[$COMP_CWORD]}"
+  local OPTLIST
+  if [[ "$OPERATION" == "import" ]]
+  then
+    OPTLIST="--help --overwrite"
+  else
+    OPTLIST="--help"
+  fi
+  # If we've already got the filename, the only remaining valid things are
+  # options.
+  if [[ $FIRST_POSITIONAL_INDEX != 0 ]]
+  then
+    if [[ $NO_FLAGS == 0 ]]
+    then
+      COMPREPLY=( $(compgen -W "$OPTLIST" -- "$CUR") )
+    fi
+    return
+  fi
+  # We haven't got the filename yet.
+  # If "--" has been provided, we know we are not interested in matching
+  # against options, so provide file matches.
+  if [[ $NO_FLAGS == 1 ]]
+  then
+    _chaintool_file_completions
+    return
+  fi
+  if [[ "$CUR" == "" ]]
+  then
+    # TAB was pressed with nothing typed yet. We're in a position that could
+    # accept an option or a filename -- instead of mixing the options with all
+    # filename completions, just show a "<file>" placeholder.
+    COMPREPLY=( $(compgen -W "$OPTLIST <file>" -- "$CUR") )
+  elif [[ "$CUR" == -* ]]
+  then
+    # The first char is a hyphen. Since we are not preceded by a "--" then
+    # this must be an option... don't bother to find filename completions.
+    COMPREPLY=( $(compgen -W "$OPTLIST" -- "$CUR") )
+  else
+    # The first char is not a hyphen. Do the filename completions.
+    _chaintool_file_completions
+  fi
+}
+
+# Subroutine to populate COMPREPLY for operations in the "print" commandgroup.
+_chaintool_print_completions()
+{
+  NO_FLAGS="$1"
+  local CUR="${COMP_WORDS[$COMP_CWORD]}"
+  local OPTLIST=""
+  if [[ $NO_FLAGS == 0 ]]
+  then
+    OPTLIST="--help"
+  fi
+  COMPREPLY=( $(compgen -W "$OPTLIST" -- "$CUR") )
+}
+
+# Subroutine to populate COMPREPLY for operations in the "vals" commandgroup.
+_chaintool_vals_completions()
+{
+  NO_FLAGS="$1"
+  local CUR="${COMP_WORDS[$COMP_CWORD]}"
+  local GENWORDS=()
+  local IFS=$'\n'
+  if [[ "$CUR" == "" || "$CUR" =~ ^[A-Za-z\+] ]]
+  then
+    GENWORDS=($("${COMP_WORDS[0]}" print --dump-placeholders vals))
+  fi
+  if [[ $NO_FLAGS == 0 ]]
+  then
+    GENWORDS+=( "--help" )
+  fi
+  CANDIDATES=($(compgen -W "${GENWORDS[*]}" -- "$CUR"))
+  if [ ${#CANDIDATES[*]} -eq 0 ]
+  then
+    COMPREPLY=()
+  else
+    if [[ "$CUR" != -* ]]
+    then
+      compopt -o nospace 2> /dev/null
+    fi
+    COMPREPLY=($(printf "%q\n" "${CANDIDATES[@]}"))
+    COMPREPLY=($(echo "${COMPREPLY[*]}" | sed 's/^\([^=][^=]*=\)$/\1""/' | sed 's/^\([^+-][^=]*\)$/\1=/'))
+  fi
+}
+
+# Main entry point for chaintool argument completions.
+_chaintool()
+{
+  COMPREPLY=()
+
+  # Memo-ize the word we're trying to complete.
+  local CUR="${COMP_WORDS[$COMP_CWORD]}"
+
+  # If this is the first word (after the program name itself), the only thing
+  # it can be is the help option or a commandgroup.
+  if [[ $COMP_CWORD == 1 ]]
+  then
+    COMPREPLY=( $(compgen -W "--help cmd seq print vals export import x" -- "$CUR") )
+    return 0
+  fi
+
+  # If this after the first word, bail out now if the first word was not a valid
+  # commandgroup. (This includes if it was a help option.)
+  local CMD_GROUP="${COMP_WORDS[1]}"
+  echo "cmd seq print vals export import x" | grep -qw -- "$CMD_GROUP"
+  if [[ $? -ne 0 ]]
+  then
+    return 0
+  fi
+
+  # OK! Things are still pretty simple for the second word. There is a small
+  # number of valid options, or if the commandgroup was cmd/seq then this must
+  # be an operation (if it's not the help option).
+  if [[ $COMP_CWORD == 2 ]]
+  then
+    if [[ "$CMD_GROUP" == "cmd" || "$CMD_GROUP" == "seq" ]]
+    then
+      COMPREPLY=( $(compgen -W "--help list set edit print del run vals" -- "$CUR") )
+    elif [[ "$CMD_GROUP" == "import" || "$CMD_GROUP" == "export" ]]
+    then
+      _chaintool_import_export_completions "$CMD_GROUP" 0 0
+    elif [[ "$CMD_GROUP" == "print" ]]
+    then
+      _chaintool_print_completions 0
+    elif [[ "$CMD_GROUP" == "vals" ]]
+    then
+      _chaintool_vals_completions 0
+    elif [[ "$CMD_GROUP" == "x" ]]
+    then
+      COMPREPLY=( $(compgen -W "--help shortcuts completions" -- "$CUR") )
+    fi
+    return 0
+  fi
+
+  # For the special "x" group, we're done. No valid possibilities after word 2.
+  if [[ "$CMD_GROUP" == "x" ]]
+  then
+    return 0
+  fi
+
+  # After word 2 we will need to do some looking through all args in the
+  # command line up through the COMP_CWORD position. For cmd/seq commandgroups
+  # we'll start at position 3; for anything else we start at position 2. Also,
+  # if we're in the cmd/seq commandgroups, bail out now if the second word was
+  # not a valid operation (this includes if it was a help option). We'll also
+  # bail out if the help option was specified right after operation, or right
+  # after one of the other commandgroups.
+  local SCAN_START
+  if [[ "$CMD_GROUP" == "cmd" || "$CMD_GROUP" == "seq" ]]
+  then
+    local OPERATION="${COMP_WORDS[2]}"
+    echo "list set edit print del run vals" | grep -qw -- "$OPERATION"
+    if [[ $? -ne 0 ]]
+    then
+      return 0
+    fi
+    if [[ $COMP_CWORD != 3 ]]
+    then
+      if [[ "${COMP_WORDS[3]}" == "-h" || "${COMP_WORDS[3]}" == "--help" ]]
+      then
+        return 0
+      fi
+    fi
+    SCAN_START=3
+  else
+    if [[ "${COMP_WORDS[2]}" == "-h" || "${COMP_WORDS[2]}" == "--help" ]]
+    then
+      return 0
+    fi
+    SCAN_START=2
+  fi
+
+  # Note that if "--help" shows up in subsequent args in the command line,
+  # from this point on we will still do completion on other words even though
+  # the help option short-circuits any other activity. Not sure what the best
+  # approach is for dealing with that non-confusingly.
+
+  # We can complete an option if the commandline doesn't have a prior "--",
+  # and we can also complete on a command name, sequence name, or filename
+  # depending on the prior args and the position of the argument. So we need
+  # to look through the arguments now.
+
+  # Also, let's talk about the way argparse is used by chaintool. You can't put
+  # an option in the middle of a "varying number" positional arglist. Those
+  # arglists appear in:
+  #   cmd del, with the list of cmdnames to delete
+  #   cmd run or vals, with the list of placeholders
+  #   seq set, with the list of cmdnames
+  #   seq del, with the list of seqnames to delete
+  #   seq run or vals, with the list of placeholders
+  #   vals, with the list of placeholders
+  # It's actually fine to place an option AFTER such an arglist, but if you
+  # are typing out args generally in order, the least confusing approach
+  # for autocomplete would be to not offer autocomplete for options once such
+  # an arglist has started. To generally detect/enforce that, we'll set NO_FLAGS
+  # if we encounter a positional argument in the scan. This also mirrors what
+  # the helptext indicates.
+
+  # Scan up to just before our current position.
+  local NO_FLAGS=0
+  local FIRST_POSITIONAL_INDEX=0
+  local CHECK_SKIP=0
+  if [[ "$CMD_GROUP" == "seq" && "$OPERATION" == "run" ]]
+  then
+    CHECK_SKIP=1
+  fi
+  if [[ $SCAN_START != $COMP_CWORD ]]
+  then
+    let SCAN_END=$COMP_CWORD-1
+    for INDEX in $(seq $SCAN_START $SCAN_END)
+    do
+      local THIS_WORD="${COMP_WORDS[$INDEX]}"
+      # See if "--" prevents later options.
+      if [[ "$THIS_WORD" == "--" ]]
+      then
+        NO_FLAGS=1
+        CHECK_SKIP=0
+        continue
+      fi
+      # If this word is an option, keep looking.
+      if [[ $NO_FLAGS == 0 && "$THIS_WORD" == -* ]]
+      then
+        continue
+      fi
+      # Otherwise, we've probably found a positional arg. Only exception is
+      # the "skip" arguments for seq run. Note that if the "option=value"
+      # format is used on the command line, rather than "option value",
+      # we'll be getting the = sign as its own word here so we need to check
+      # for that.
+      if [[ $CHECK_SKIP == 1 ]]
+      then
+        local PREV_WORD="${COMP_WORDS[$INDEX-1]}"
+        if [[ "$PREV_WORD" == "-s" || "$PREV_WORD" == "--skip" ]]
+        then
+          continue
+        fi
+        if [[ "$PREV_WORD" == "=" ]]
+        then
+          PREV_WORD="${COMP_WORDS[$INDEX-2]}"
+          if [[ "$PREV_WORD" == "-s" || "$PREV_WORD" == "--skip" ]]
+          then
+            continue
+          fi
+        fi
+      fi
+      if [[ $FIRST_POSITIONAL_INDEX == 0 ]]
+      then
+        FIRST_POSITIONAL_INDEX=$INDEX
+        NO_FLAGS=1
+        # Since we're also setting NO_FLAGS here, we're done.
+        break
+      fi
+    done
+  fi
+
+  # Use the scan results and generate completions.
+  case "$CMD_GROUP" in
+    cmd)
+      _chaintool_cmd_completions "$OPERATION" $NO_FLAGS $FIRST_POSITIONAL_INDEX
+      ;;
+    seq)
+      _chaintool_seq_completions "$OPERATION" $NO_FLAGS $FIRST_POSITIONAL_INDEX
+      ;;
+    import)
+      _chaintool_import_export_completions "$CMD_GROUP" $NO_FLAGS $FIRST_POSITIONAL_INDEX
+      ;;
+    export)
+      _chaintool_import_export_completions "$CMD_GROUP" $NO_FLAGS $FIRST_POSITIONAL_INDEX
+      ;;
+    print)
+      _chaintool_print_completions $NO_FLAGS
+      ;;
+    vals)
+      _chaintool_vals_completions $NO_FLAGS
+      ;;
+  esac
+
+  # Set nospace if we've found the one completion and it ends with an = sign.
+  # Currently this really only catches the case of the --skip= option.
+  if [[ ${#COMPREPLY[@]} -eq 1 && ${COMPREPLY[0]} == *= ]]
+  then
+    compopt -o nospace 2> /dev/null
+  fi
+
+  return 0
+}
+
+complete -F _chaintool chaintool
+
