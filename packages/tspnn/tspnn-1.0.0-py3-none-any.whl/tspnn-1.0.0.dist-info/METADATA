@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: tspnn
+Version: 1.0.0
+Summary: for time series processing
+Home-page: UNKNOWN
+Author: kate
+Author-email: <mail@mail.com>
+License: UNKNOWN
+Requires-Dist: numpy
+
+
+## 推荐的package结构
+
