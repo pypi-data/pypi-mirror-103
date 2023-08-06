@@ -1,0 +1,11 @@
+overrides/__init__.py,sha256=XxNfGbBi73_KxaiihG-9Cgt1Yi3saOKmth9yoWOMAN8,224
+overrides/enforce.py,sha256=I2r1BtvXUXmdo94Lq1BoJdZxYMss6jzle5HC5_LyUpo,2174
+overrides/final.py,sha256=kX8oeO4BbXirbrz97wu5-KVGweGmhS2Wh1GZos-f9Hw,1539
+overrides/overrides.py,sha256=EDhkHXcvFLXamKuOjcReOK9SPw17Y2pHOO6sntEn_O0,6151
+overrides/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+overrides/signature.py,sha256=glu3sx9OJKTfaREaBYmfeIdlgoO-hYkUF8ET71L4UNk,9521
+overrides-5.0.0b0.dist-info/LICENSE,sha256=xllut76FgcGL5zbIRvuRc7aezPbvlMUTWJPsVr2Sugg,11358
+overrides-5.0.0b0.dist-info/METADATA,sha256=bsrymvGheX_zKJcSNfNkWM35sgOyd2p6h909IdqhqBc,4940
+overrides-5.0.0b0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+overrides-5.0.0b0.dist-info/top_level.txt,sha256=06v3aviU3stRPzoenrJ2K_Jz3Ma3R9FQYE-54eTOXYk,10
+overrides-5.0.0b0.dist-info/RECORD,,
