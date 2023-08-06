@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+src/glueather/__init__.py
+src/glueather/__main__.py
+src/glueather/ui_mainwindow.py
+src/glueather/weathermanager.py
+src/glueather.egg-info/PKG-INFO
+src/glueather.egg-info/SOURCES.txt
+src/glueather.egg-info/dependency_links.txt
+src/glueather.egg-info/entry_points.txt
+src/glueather.egg-info/requires.txt
+src/glueather.egg-info/top_level.txt
