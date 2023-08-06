@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+{#    <title>{{ titulo }}</title>#}
+    <style>
+        @page {
+            size: A4;
+            margin: 15mm 20mm 20mm;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            page-break-before: auto;
+            margin-top: 1%;
+        }
+
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            page-break-before: auto;
+            font-size: 12px;
+        }
+        tr{
+            page-break-before: auto;
+        }
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 4px;
+            page-break-before: auto;
+            font-size: 10px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+    </style>
+</head>
+
+<body>
+<header style="display: flex;justify-content: space-between;width: 100%">
+    <div style="display: flex;align-items: center;justify-content: flex-start;width: 100%;">
+        <div style="width: 30%">
+            {% if user.empresa.config.imagem %}
+                <img style="width: 100px" id="company-img" src="{{ user.empresa.config.imagem.url }}"
+                >
+            {% endif %}
+        </div>
+        <div style="width: 70%">
+
+            <h2>{{ user.empresa.razao_social|upper }}</h2>
+        </div>
+    </div>
+</header>
+<h1 style="text-align: center">
+    {% block titulo %}
+        {{ titulo|default:'' }}
+    {% endblock %}
+</h1>
+{% block content %}
+
+{% endblock %}
+<footer style="position: fixed;
+            bottom: 0;
+            margin-bottom: -10mm;
+            height: 5mm;
+            width: 100%;padding-top:2%;margin-top:5%;border-top: 1px solid black;display: flex;justify-content: space-between">
+    <div>
+        <img src="{% static 'img/singular_logo.png' %}"
+             style=" height: 50px">
+
+    </div>
+    <div style="margin-right: 2%">
+        <img src="{% static 'img/singular_logo.png' %}"
+             style=" height: 50px">
+
+    </div>
+</footer>
+</body>
+</html>
