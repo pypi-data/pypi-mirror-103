@@ -1,0 +1,14 @@
+pj_scraper/__init__.py,sha256=VxkEiXw7RJz3NZnJnKqftv5XiVQFmedJdafpJRsUCFE,289
+pj_scraper/__main__.py,sha256=lzHc-IoAyFLq2_j6f7Sd9Q3Lxa5lzXaBNkaC8JZMtVs,71
+pj_scraper/_version.py,sha256=r-gvXl1xffrsR8F0kZZIDVPZhINWa52JlJdVo6tF-Rg,142
+pj_scraper/cli.py,sha256=RJ5zoy93EqN3O38HHgkNS19t3pcIqI_a0efPRQAyGec,282
+pj_scraper/scraper.py,sha256=dz-2QhPlMtnAHPV8Zkgl2bTczwP0IYLcwvbs01pVJnM,5239
+pj_scraper/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pj_scraper/tests/test_scraper.py,sha256=hb4xQRIFTbjbuAyYcQr4oU4FM3M0177Vns1XspG2KHg,4962
+pj_scraper-0.0.4.dist-info/AUTHORS.rst,sha256=M0p6aOWyaJnh9eQp3Yf82d9HNRa7UNjkYdJrwuglDHc,42
+pj_scraper-0.0.4.dist-info/LICENSE,sha256=XAtwV7pvsfmSfcD7FjBsr1mtfunbYxegscey8ILLxsg,1102
+pj_scraper-0.0.4.dist-info/METADATA,sha256=O8cFyuGZrgL-V8qVx9_s6xtiphXF1mSDNuIExeGz7EQ,1470
+pj_scraper-0.0.4.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+pj_scraper-0.0.4.dist-info/entry_points.txt,sha256=Hxlq-4V1HBRwwHjANp8fg7OvUc9ci7-a43imZ26z55o,52
+pj_scraper-0.0.4.dist-info/top_level.txt,sha256=OZbXXw2rg0GTSXqgkCcU3t7w1nwIDADlyocYc0vc1LY,11
+pj_scraper-0.0.4.dist-info/RECORD,,
