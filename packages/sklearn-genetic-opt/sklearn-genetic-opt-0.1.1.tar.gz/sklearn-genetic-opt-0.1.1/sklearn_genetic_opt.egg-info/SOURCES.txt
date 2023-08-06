@@ -1,0 +1,15 @@
+README.md
+setup.py
+sklearn_genetic/__init__.py
+sklearn_genetic/genetic_search.py
+sklearn_genetic/tests/__init__.py
+sklearn_genetic/tests/test_genetic_search.py
+sklearn_genetic/tests/test_utils.py
+sklearn_genetic/utils/__init__.py
+sklearn_genetic/utils/custom_properties.py
+sklearn_genetic/utils/plots.py
+sklearn_genetic_opt.egg-info/PKG-INFO
+sklearn_genetic_opt.egg-info/SOURCES.txt
+sklearn_genetic_opt.egg-info/dependency_links.txt
+sklearn_genetic_opt.egg-info/requires.txt
+sklearn_genetic_opt.egg-info/top_level.txt
