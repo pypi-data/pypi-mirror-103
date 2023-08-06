@@ -1,0 +1,11 @@
+matplotlib
+numpy
+
+[docs]
+pydata_sphinx_theme
+sphinx_automodapi
+numpydoc
+colorspacious
+
+[test]
+pytest
