@@ -1,0 +1,10 @@
+README.md
+mwdb-feeds
+pyproject.toml
+setup.cfg
+setup.py
+mwdb_feeds.egg-info/PKG-INFO
+mwdb_feeds.egg-info/SOURCES.txt
+mwdb_feeds.egg-info/dependency_links.txt
+mwdb_feeds.egg-info/requires.txt
+mwdb_feeds.egg-info/top_level.txt
