@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: singular-report-builder
+Version: 0.0.17
+Summary: Report builder
+Home-page: https://lucas@bitbucket.org/singular-dev/singular_report_builder.git
+Author: Singular Sistemas
+Author-email: ivan@singular.inf.br
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: django
+Requires-Dist: weasyprint
+
+Report builder
+
+

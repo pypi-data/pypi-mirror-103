@@ -1,0 +1,75 @@
+{% extends 'base_layout.html' %}
+{% load static crispy_forms_tags %}
+
+{% block content %}
+    <div class="authentication-wrapper authentication-2 ui-bg-cover ui-bg-overlay-container px-4"
+    >
+        <div class="ui-bg-overlay bg-dark opacity-75">
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <h3 class="card-header"><i class="fa fa-book"></i> {{ titulo }}</h3>
+
+                        <div class="card-body">
+                            {% if include_filtro %}
+                                <form method="get" novalidate>
+                                    {% csrf_token %}
+                                    <div style="display: flex;justify-content: space-around">
+                                        {% block form_filtro %}
+                                            <div>
+                                                <label>Data inicial</label>
+                                                <input id="data_inicial" type="date" class="form-control"
+                                                       name="data_inicial" required
+                                                       value="{{ filtros.data_inicial }}">
+                                            </div>
+
+                                            <div>
+                                                <label>Data final</label>
+                                                <input id="data_final" type="date" class="form-control"
+                                                       name="data_final" required
+                                                       value="{{ filtros.data_final }}">
+                                            </div>
+                                        {% endblock %}
+
+                                        <div style="align-self: center">
+                                            <button class="btn btn-primary">Filtrar</button>
+                                        </div>
+                                        <div style="align-self: center">
+                                            <button id="print-btn" type="button"
+                                                    class="btn btn-primary">Imprimir
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            {% endif %}
+
+                            {% block tabela %}
+
+                            {% endblock %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block scripts %}
+    <script src="{% static 'js/report_builder.js' %}"></script>
+    <script>
+        $('select').select2()
+        let printKwargs = {
+            data_inicial: '{{ filtros.data_inicial }}',
+            data_final: '{{ filtros.data_final }}'
+        }
+        let objectList = []
+        let printUrl = '{{ print_url }}'
+
+        $('#print-btn').click(() => {
+            printReport(printUrl, objectList, printKwargs)
+            $('#ms-preload').hide()
+        })
+    </script>
+{% endblock %}
