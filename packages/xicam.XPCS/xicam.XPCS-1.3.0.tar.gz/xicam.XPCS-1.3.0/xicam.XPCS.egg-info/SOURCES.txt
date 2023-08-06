@@ -1,0 +1,17 @@
+LICENSE.md
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+docs/source/conf.py
+xicam.XPCS.egg-info/PKG-INFO
+xicam.XPCS.egg-info/SOURCES.txt
+xicam.XPCS.egg-info/dependency_links.txt
+xicam.XPCS.egg-info/entry_points.txt
+xicam.XPCS.egg-info/requires.txt
+xicam.XPCS.egg-info/top_level.txt
+xicam/XPCS/__init__.py
+xicam/XPCS/ingestors/__init__.py
+xicam/XPCS/projectors/__init__.py
+xicam/XPCS/projectors/nexus.py

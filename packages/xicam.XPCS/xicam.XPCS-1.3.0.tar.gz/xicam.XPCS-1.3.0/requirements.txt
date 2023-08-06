@@ -1,0 +1,13 @@
+# Dev/Deployment
+xicam
+xicam.SAXS
+sphinx
+sphinx_rtd_theme
+nose
+coverage
+pypi-publisher
+scipy
+scikit-image
+event-model
+scikit-beam
+
