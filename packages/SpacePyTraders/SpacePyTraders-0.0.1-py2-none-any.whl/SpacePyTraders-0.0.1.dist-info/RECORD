@@ -1,0 +1,11 @@
+SpaceTraders/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SpaceTraders/client.py,sha256=gwdR3DV3zYaX8GTRNtrPqu-MjWLDnecdDEH3xXp_MEE,25907
+SpaceTraders/core.py,sha256=kgbBeC8y58w5FnAXPSPZwZEzS6p_KNOHsLy3qpTWjn0,26253
+SpaceTraders/db_handler.py,sha256=X7WcCzILNUj6n2f8EsBVHgZ4eojJPkyogxXqzfwoQao,4006
+SpaceTraders/trackers.py,sha256=qucTRtQTr2sjJsZBsdUNRIs5Pr2l4nTaf1jcuc8dPCc,1635
+SpaceTraders/traders.py,sha256=Aslg2e9HuoS8rboQHVly9m_g63w9QFWDh1oMd3612RI,11306
+SpacePyTraders-0.0.1.dist-info/LICENSE.txt,sha256=L8vFn9ZHT3RRpTtzuzhkgDTutx_NNhMzCw_9YpbZR4Q,35129
+SpacePyTraders-0.0.1.dist-info/METADATA,sha256=bqylnKlAFyu1gbNT6k7-cKnfywVUUt1DirAyf64ESwE,3082
+SpacePyTraders-0.0.1.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+SpacePyTraders-0.0.1.dist-info/top_level.txt,sha256=b64XZPhDcz-zFmh5Q-SKyv2N5-ptPGfrJh-hVhDw4uw,20
+SpacePyTraders-0.0.1.dist-info/RECORD,,
