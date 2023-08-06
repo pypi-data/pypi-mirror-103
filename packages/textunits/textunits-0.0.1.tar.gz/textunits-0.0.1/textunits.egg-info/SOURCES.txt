@@ -1,0 +1,10 @@
+pyproject.toml
+setup.py
+textunits/__init__.py
+textunits/tags_features.py
+textunits/textunits.py
+textunits.egg-info/PKG-INFO
+textunits.egg-info/SOURCES.txt
+textunits.egg-info/dependency_links.txt
+textunits.egg-info/requires.txt
+textunits.egg-info/top_level.txt
