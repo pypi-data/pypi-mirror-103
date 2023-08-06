@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+grahamscandelaunay/grahamscan_delaunay.egg-info/PKG-INFO
+grahamscandelaunay/grahamscan_delaunay.egg-info/SOURCES.txt
+grahamscandelaunay/grahamscan_delaunay.egg-info/dependency_links.txt
+grahamscandelaunay/grahamscan_delaunay.egg-info/top_level.txt
