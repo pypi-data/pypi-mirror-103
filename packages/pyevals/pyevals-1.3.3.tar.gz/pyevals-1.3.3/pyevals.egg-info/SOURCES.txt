@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pyevals/BuildClassification.py
+pyevals/BuildRegression.py
+pyevals/Plots.py
+pyevals/RegressionMetrics.py
+pyevals/__init__.py
+pyevals/exceptions.py
+pyevals/utils.py
+pyevals.egg-info/PKG-INFO
+pyevals.egg-info/SOURCES.txt
+pyevals.egg-info/dependency_links.txt
+pyevals.egg-info/requires.txt
+pyevals.egg-info/top_level.txt
