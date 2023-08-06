@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: unicms
+Version: 0.11.11
+Summary: uniCMS is a Django Web Content Management System
+Home-page: https://github.com/UniversitaDellaCalabria/uniCMS
+Author: Giuseppe De Marco, Francesco Filicetti
+Author-email: giuseppe.demarco@unical.it, francesco.filicetti@unical.it
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: django (<4.0,>=2.0)
+Requires-Dist: django-filter
+Requires-Dist: django-nested-admin (>=3.3.2)
+Requires-Dist: django-taggit
+Requires-Dist: django-taggit-serializer
+Requires-Dist: pillow (>=7.2.0)
+Requires-Dist: python-magic (>=0.4.18)
+Requires-Dist: pymongo (>=3.11.0)
+Requires-Dist: django-rest-framework
+Requires-Dist: uritemplate
+Requires-Dist: pyyaml
+Requires-Dist: pydantic
+Requires-Dist: django-htmlmin (>=0.11.0)
+Requires-Dist: django-redis (>=4.12.1)
+Requires-Dist: unicms-template-italia (>=0.4.6)
+Requires-Dist: markdown
+Requires-Dist: markdownify
+
+UNKNOWN
+
+
