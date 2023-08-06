@@ -1,0 +1,8 @@
+[console_scripts]
+biaffine-dep = supar.cmds.biaffine_dep:main
+biaffine-sdp = supar.cmds.biaffine_sdp:main
+crf-con = supar.cmds.crf_con:main
+crf-dep = supar.cmds.crf_dep:main
+crf2o-dep = supar.cmds.crf2o_dep:main
+vi-sdp = supar.cmds.vi_sdp:main
+
