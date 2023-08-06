@@ -1,0 +1,10 @@
+ipfsspec/__init__.py,sha256=VWdVsgqFjam9-bbWyFzIltbiXMeyeMMq1SCBLHK0QXE,280
+ipfsspec/_version.py,sha256=oAB867YP44DQR_JbnO0U13O3wJRT-2_Dn_XQF0Pcs7E,498
+ipfsspec/core.py,sha256=DQsr_cC4GrqUUNporECY2oXsLOOtw-RXvnVZ3bCE4Fg,8312
+ipfsspec/unixfs_pb2.py,sha256=QqHjF_YKIYrxImBecn8fYt_LUhExNco8tclloifEQSQ,9487
+ipfsspec-0.1.2.dist-info/LICENSE,sha256=h3hSZerE5IbYpK2czp7P2_d8Tpvnye4wq5TpU1mJuoE,1091
+ipfsspec-0.1.2.dist-info/METADATA,sha256=TIMAls987CQQJXMipZXI0IdeJm5LfqUAYE4KBBqgs9Q,1363
+ipfsspec-0.1.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ipfsspec-0.1.2.dist-info/entry_points.txt,sha256=2KR8nId5NjgsyP-CXJvXXi5uUN-fWnyMEO339rk4IlY,47
+ipfsspec-0.1.2.dist-info/top_level.txt,sha256=b_MnQXx2vyaaoxPmnjgHLiTGgtxFYPgt74sMSFsNN40,9
+ipfsspec-0.1.2.dist-info/RECORD,,
