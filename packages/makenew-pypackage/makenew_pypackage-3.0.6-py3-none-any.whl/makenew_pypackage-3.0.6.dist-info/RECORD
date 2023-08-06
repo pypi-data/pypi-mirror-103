@@ -1,0 +1,8 @@
+makenew_pypackage/__init__.py,sha256=Ajv-BzTKJPxMKt1fnGZUcYLMaaI75VgvsRSzyNygEsc,46
+makenew_pypackage/todo.py,sha256=tJ4FQA9L-odvLFdDa8wS-qLM4wBvTnbBVEQjp_mbH0A,56
+makenew_pypackage/todo_test.py,sha256=eCx13JgXdFAo8eZ81GjpdnuF1WDGRGInRrMzHg807qM,156
+poetry.lock,sha256=Hsyc_iRhS8A9aq4FUBvlqnAL_U_25RGC9CMBeyW41_c,56453
+makenew_pypackage-3.0.6.dist-info/LICENSE.txt,sha256=N8PSDxcSI7tdIk33M5cGar_A8SYgMy4fIqnYAGkhyUs,1079
+makenew_pypackage-3.0.6.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+makenew_pypackage-3.0.6.dist-info/METADATA,sha256=uSVmab1tBFYZ8TPk_r711wVm568onbbCHP1JbVkzhQw,7359
+makenew_pypackage-3.0.6.dist-info/RECORD,,
