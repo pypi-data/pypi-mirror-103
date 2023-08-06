@@ -1,0 +1,16 @@
+CHANGES
+=======
+
+0.4.2
+-----
+
+* fix exceptions not export all
+* fix \_wdaproxy import error
+* add command ps
+* add usbmuxd dump script
+* add project link: https://github.com/electricbubble/gidevice
+* update readme about appium run in windows
+* update example
+* add screenrecord example
+* fix cmd:install with url which contains ?
+* update readme
