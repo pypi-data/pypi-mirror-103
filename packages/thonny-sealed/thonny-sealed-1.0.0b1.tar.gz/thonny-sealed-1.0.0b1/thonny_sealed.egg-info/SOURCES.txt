@@ -1,0 +1,16 @@
+LICENSE
+README.rst
+requirements.txt
+setup.py
+thonny_seal/__init__.py
+thonny_seal/__main__.py
+thonny_seal/main.py
+thonny_seal/py.typed
+thonny_sealed.egg-info/PKG-INFO
+thonny_sealed.egg-info/SOURCES.txt
+thonny_sealed.egg-info/dependency_links.txt
+thonny_sealed.egg-info/entry_points.txt
+thonny_sealed.egg-info/requires.txt
+thonny_sealed.egg-info/top_level.txt
+thonnycontrib/thonny_sealed/__init__.py
+thonnycontrib/thonny_sealed/py.typed
