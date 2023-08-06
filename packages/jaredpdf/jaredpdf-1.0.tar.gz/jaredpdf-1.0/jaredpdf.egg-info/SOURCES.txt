@@ -1,0 +1,8 @@
+README.md
+setup.py
+jaredpdf/__init__.py
+jaredpdf/pdf2test.py
+jaredpdf.egg-info/PKG-INFO
+jaredpdf.egg-info/SOURCES.txt
+jaredpdf.egg-info/dependency_links.txt
+jaredpdf.egg-info/top_level.txt
