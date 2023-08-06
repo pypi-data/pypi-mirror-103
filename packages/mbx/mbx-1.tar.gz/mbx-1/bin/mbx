@@ -1,0 +1,130 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+
+import os, sys ; sys.path.insert(0, "olib")
+
+from dbs import listfiles
+from dbs import find as ifind
+from fnd import fnd
+from hdl import Client, cmd
+from hdl import cmd as icmd
+from nms import Names
+from obj import Default, Object, Cfg, fmt, cfg, opts
+from tms import elapsed, fntime, todate
+from trm import exec
+from zzz import mailbox, os, sys, time
+
+__version__ = 1
+
+class Console(Client):
+
+    prompt = True
+
+    def handle(self, e):
+        super().handle(e)
+        e.wait()
+
+    def poll(self):
+        if Console.prompt:
+            return input("> ")
+
+    def raw(self, txt):
+        sys.stdout.write(txt)
+        sys.stdout.write("\n")
+        sys.stdout.flush()
+
+class Email(Default):
+
+
+    Names.names["email"] = "__main__.Email"
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.text = ""
+
+
+def cmd(event):
+    event.reply(",".join(sorted(Names.modules.keys())))
+
+def find(event):
+    args = list(event.gets)
+    nr = -1
+    try:
+        args.extend(event.args)
+    except IndexError:
+        pass
+    got = False
+    for fn, o in ifind("__main__.Email", event.gets, event.index, event.timed):
+        nr += 1
+        txt = "%s %s" % (str(nr), fmt(o, args or o.keys(), skip=event.skip.keys()))
+        if opts("t") or "t" in event.opts:
+            if "Date" in o.keys():
+                fn = os.sep.join(todate(o.Date).split())
+            txt = txt + " %s" % (elapsed(time.time() - fntime(fn)))
+        got = True
+        event.reply(txt)
+    if not got:
+        event.reply("no result")
+
+
+def scan(event):
+    if not event.args:
+        return
+    if os.path.exists(os.path.join(cfg.wd, "store", "__main__.Email")):
+        event.reply("email is already scanned")
+        return
+    fn = os.path.expanduser(event.args[0])
+    event.reply("reading from %s" % fn)
+    nr = 0
+    if os.path.isdir(fn):
+        thing = mailbox.Maildir(fn, create=False)
+    elif os.path.isfile(fn):
+        thing = mailbox.mbox(fn, create=False)
+    else:
+        return
+    try:
+        thing.lock()
+    except FileNotFoundError:
+        pass
+    for m in thing:
+        o = Email()
+        o.update(Object(m))
+        if "Date" in o.keys():
+            sdate = os.sep.join(todate(o.Date).split())
+        else:
+            continue
+        o.text = ""
+        for payload in m.walk():
+            if payload.get_content_type() == 'text/plain':
+                o.text += payload.get_payload()
+        o.text = o.text.replace("\\n", "\n")
+        o.save()
+        nr += 1
+    if nr:
+        event.reply("ok %s" % nr)
+
+def ver(event):
+    event.reply("MBX %s" % __version__)
+
+def main():
+    cfg.name = "mbx"
+    cfg.version = __version__
+    cfg.wd = os.path.expanduser("~/.mbx")
+    c = Console()
+    c.boot()
+    c.add("cmd", cmd)
+    c.add("find", find)
+    c.add("scan", scan)
+    c.add("ver", ver)
+    if cfg.txt:
+        c.prompt = False
+        e = c.event(cfg.otxt)
+        icmd(c, e)
+        e.wait()
+        return
+    if cfg.mods:
+        c.start()
+        c.init(cfg.mods)
+        c.wait()
+
+exec(main)
