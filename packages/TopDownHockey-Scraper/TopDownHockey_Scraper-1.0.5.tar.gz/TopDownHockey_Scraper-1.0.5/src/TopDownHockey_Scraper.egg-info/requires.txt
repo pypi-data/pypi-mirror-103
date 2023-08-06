@@ -1,0 +1,7 @@
+numpy
+pandas
+bs4
+datetime
+requests
+seaborn
+matplotlib
